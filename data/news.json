@@ -1,0 +1,650 @@
+{
+  "fetchedAt": "2026-10-26T22:20:49.226Z",
+  "note": "Headlines are copied from public RSS feeds and link back to the outlet. Civi files each headline by words in the title, and groups titles that share enough of the same words. Civi does not rewrite articles and does not decide whether a story is true.",
+  "sources": [
+    {
+      "name": "Inquirer News",
+      "url": "https://newsinfo.inquirer.net/feed",
+      "official": false,
+      "items": 12
+    },
+    {
+      "name": "Inquirer Business",
+      "url": "https://business.inquirer.net/feed",
+      "official": false,
+      "items": 12
+    },
+    {
+      "name": "Inquirer Global Nation",
+      "url": "https://globalnation.inquirer.net/feed",
+      "official": false,
+      "items": 12
+    },
+    {
+      "name": "Philstar Headlines",
+      "url": "https://www.philstar.com/rss/headlines",
+      "official": false,
+      "items": 10
+    },
+    {
+      "name": "Philstar Nation",
+      "url": "https://www.philstar.com/rss/nation",
+      "official": false,
+      "items": 10
+    },
+    {
+      "name": "Philstar Business",
+      "url": "https://www.philstar.com/rss/business",
+      "official": false,
+      "items": 12
+    },
+    {
+      "name": "Rappler",
+      "url": "https://www.rappler.com/feed/",
+      "official": false,
+      "items": 10
+    },
+    {
+      "name": "Rappler Nation",
+      "url": "https://www.rappler.com/nation/feed/",
+      "official": false,
+      "items": 10
+    },
+    {
+      "name": "Rappler Business",
+      "url": "https://www.rappler.com/business/feed/",
+      "official": false,
+      "items": 10
+    },
+    {
+      "name": "GMA News",
+      "url": "https://data.gmanews.tv/gno/rss/news/feed.xml",
+      "official": false,
+      "items": 12
+    },
+    {
+      "name": "BusinessWorld",
+      "url": "https://www.bworldonline.com/feed/",
+      "official": false,
+      "items": 12
+    },
+    {
+      "name": "Official Gazette",
+      "url": "https://www.officialgazette.gov.ph/feed/",
+      "official": true,
+      "items": 10
+    }
+  ],
+  "briefings": [
+    {
+      "id": "b1",
+      "title": "Lawyer tags VP husband in cyberlibel rap vs journo",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T05:50:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330683/lawyer-tags-vp-husband-in-cyberlibel-rap-vs-journo",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "title": "Palace: Marcos had no hand in P50-M bounty for Bato dela Rosa",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T05:45:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330698/palace-marcos-had-no-hand-in-p50-m-bounty-for-bato-dela-rosa",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "title": "Remulla: Ombudsman to pin down those who ‘gamed’ budget",
+      "topic": "legal",
+      "matched": "ombudsman",
+      "published": "2026-10-27T05:40:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330688/remulla-ombudsman-to-pin-down-those-who-gamed-budget",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "title": "Democrats call for special counsel to probe Trump’s Epstein ties",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T05:20:21.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343998/democrats-call-for-special-counsel-to-probe-trumps-epstein-ties",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "title": "NBI chief wants Davao head prosecutor out of Pulong Duterte’s libel case",
+      "topic": "ids",
+      "matched": "nbi",
+      "published": "2026-10-27T05:20:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330687/nbi-chief-wants-davao-head-prosecutor-out-of-pulongs-libel-case",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b6",
+      "title": "BI intercepts 3 Filipinos bound for Eastern Europe",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T05:15:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343974/bi-intercepts-3-filipinos-bound-for-eastern-europe",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b7",
+      "title": "Train AI on religion to make it ‘good’? Not that simple, some say",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T05:10:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343979/train-ai-on-religion-to-make-it-good-not-that-simple-some-say",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b8",
+      "title": "Flower prices expected to increase as ‘Undas’ nears",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T05:05:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330693/flower-prices-expected-to-increase-as-undas-nears-2",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b9",
+      "title": "Ejercito: Premature to talk about Sara Duterte’s removal",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T05:00:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330686/ejercito-premature-to-talk-about-sara-dutertes-removal",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b10",
+      "title": "Duque’s bid to bar 2 witnesses denied",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T04:55:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330690/duques-bid-to-bar-2-witnesses-denied",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b11",
+      "title": "New diesel price hike set Oct. 27",
+      "topic": "environment",
+      "matched": "diesel price",
+      "published": "2026-10-27T04:50:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618156/new-diesel-price-hike-set-oct-27",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b12",
+      "title": "‘Farmer Mike’ brings artistry to a Halloween tradition",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T04:45:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343976/farmer-mike-brings-artistry-to-a-halloween-tradition",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b13",
+      "title": "Negros traders, labor groups assail wage increase",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T04:40:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330659/negros-traders-labor-groups-assail-wage-increase",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b14",
+      "title": "Villegas urges Palace to stand firm on West Philippine Sea",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T04:35:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330663/villegas-urges-palace-to-stand-firm-on-west-philippine-sea",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b15",
+      "title": "‘Undas’ sideline sustains Koronadal families",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T04:30:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330662/undas-sideline-sustains-koronadal-families",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b16",
+      "title": "Trump slams ‘rigged’ Brazil election after ally loses",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T04:26:49.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343993/trump-slams-rigged-brazil-election-after-ally-loses",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b17",
+      "title": "Taiwan sees growth potential in PH food sector",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T02:14:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618068/taiwan-sees-growth-potential-in-ph-food-sector",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b18",
+      "title": "BFAR invests P34.66M to boost Zamboanga seaweed output",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T02:12:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618065/bfar-invests-p34-66m-to-boost-zamboanga-seaweed-output",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b19",
+      "title": "Households may choose power provider by 2031",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T02:09:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618094/households-may-choose-power-provider-by-2031",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b20",
+      "title": "SRA backs higher tax on drinks with artificial sweeteners",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T02:08:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618095/sra-backs-higher-tax-on-drinks-with-artificial-sweeteners",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b21",
+      "title": "Cirtek unloads electronics unit for $20M",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T02:07:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618098/cirtek-unloads-electronics-unit-for-20m",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b22",
+      "title": "Criminal hubs threaten SE Asia appeal–report",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T02:04:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618097/criminal-hubs-threaten-se-asia-appeal-report",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b23",
+      "title": "BSP may pause rate hikes, says Deutsche Bank",
+      "topic": "taxes",
+      "matched": "bsp",
+      "published": "2026-10-27T02:02:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618096/bsp-may-pause-rate-hikes-says-deutsche-bank",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b24",
+      "title": "Vista Land hits 2025 cash flow goal amid focus on horizontal developments",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T02:01:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618089/vista-land-hits-2025-cash-flow-goal-amid-focus-on-horizontal-developments",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b25",
+      "title": "Microsoft offers voluntary exit packages to 60,000 staff",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-27T01:24:08.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343991/microsoft-offers-voluntary-exit-packages-to-60000-staff",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b26",
+      "title": "PCSO lotto results Oct. 26: ₱305.12M jackpot unwon",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T21:52:43.000Z",
+      "sources": [
+        {
+          "name": "Inquirer News",
+          "url": "https://newsinfo.inquirer.net/2330654/pcso-lotto-results-oct-26-%e2%82%b1305-12m-jackpot-unwon",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b27",
+      "title": "Britain's minimum wage to rise nearly 4%, Times reports",
+      "topic": "jobs",
+      "matched": "minimum wage",
+      "published": "2026-10-26T21:06:36.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/nation/1007270/britain-s-minimum-wage-to-rise-nearly-4-times-reports/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b28",
+      "title": "117 more OFWs return from Saudi Arabia amid Mideast tensions",
+      "topic": "jobs",
+      "matched": "ofw",
+      "published": "2026-10-26T19:51:55.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343971/117-more-ofws-return-from-saudi-arabia-amid-mideast-tensions",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b29",
+      "title": "3 persons injured after dump truck with sand overturns in QC",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T19:37:54.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/metro/1007268/3-persons-injured-after-dump-truck-with-sand-overturns-in-qc/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b30",
+      "title": "Motorcycle taxi rider shot dead in Barili, Cebu -- police report",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T18:33:09.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/regions/1007266/motorcycle-taxi-rider-shot-dead-in-barili-cebu-due-to-grudge-police-report/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b31",
+      "title": "EXPLAINER: What is Human Immunodeficiency Virus or HIV?",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T18:07:56.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/nation/1007265/explainer-what-is-human-immunodeficiency-virus-or-hiv/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b32",
+      "title": "Tagle visits hometown, leads celebration of a new parish in Imus, Cavite",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T17:55:30.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/nation/1007264/tagle-visits-hometown-leads-celebration-of-a-new-parish-in-imus-cavite/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b33",
+      "title": "Identity theft cannot be traced to BIR seal QR code alone, says privacy body",
+      "topic": "taxes",
+      "matched": "bir",
+      "published": "2026-10-26T17:33:19.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/content/1007263/identity-theft-cannot-be-traced-to-bir-seal-qr-code-alone-says-privacy-body/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b34",
+      "title": "PNP to inspect Markle’s personal belongings amid child abuse probe",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T16:59:07.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343963/pnp-inspects-markles-personal-belongings-amid-child-abuse-probe",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b35",
+      "title": "Drug, roadworthiness tests at bus terminals as PH readies for Undas 2026",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T16:56:15.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/nation/1007258/drug-roadworthiness-tests-at-bus-terminals-as-ph-readies-for-undas-2026/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b36",
+      "title": "Mga pamilya ng 2 lalaking nasawi sa ritwal sa Sarangani, walang sinisisi sa nangyaring trahedya",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T16:30:49.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/balitambayan/talakayan/1007259/mga-pamilya-ng-2-lalaking-nasawi-sa-ritwal-sa-sarangani-walang-sinisisi-sa-nangyaring-trahedya/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b37",
+      "title": "22-year-old working student riding home shot dead in Batangas",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T16:09:25.000Z",
+      "sources": [
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/regions/1007257/22-year-old-working-student-riding-home-shot-dead-in-batangas/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b38",
+      "title": "Pope Leo's trip to Uruguay, Argentina and Peru to go ahead, Vatican says",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T16:06:19.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Global Nation",
+          "url": "https://globalnation.inquirer.net/343988/vatican-confirms-pope-leos-november-trip-to-s-america",
+          "official": false
+        },
+        {
+          "name": "GMA News",
+          "url": "https://www.gmanetwork.com/news/topstories/world/1007256/pope-leo-s-trip-to-uruguay-argentina-and-peru-to-go-ahead-vatican-says/story/",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b39",
+      "title": "BPI raising at least P5 billion via new sustainability bonds",
+      "topic": "nation",
+      "matched": "",
+      "published": "2026-10-26T16:00:00.000Z",
+      "sources": [
+        {
+          "name": "Inquirer Business",
+          "url": "https://business.inquirer.net/618093/bpi-to-raise-at-least-p5b-from-new-sustainability-bonds",
+          "official": false
+        },
+        {
+          "name": "Philstar Business",
+          "url": "https://www.philstar.com/business/2026/10/27/2565862/bpi-raising-least-p5-billion-new-sustainability-bonds",
+          "official": false
+        }
+      ]
+    },
+    {
+      "id": "b40",
+      "title": "10 percent of pupils in Grades 1-3 are struggling readers",
+      "topic": "education",
+      "matched": "struggling reader",
+      "published": "2026-10-26T16:00:00.000Z",
+      "sources": [
+        {
+          "name": "Philstar Headlines",
+          "url": "https://www.philstar.com/headlines/2026/10/27/2565918/10-percent-pupils-grades-1-3-are-struggling-readers",
+          "official": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Civi: Community Intelligence Hub</title>
+    <meta name="description" content="Civi sorts public Philippine headlines by topic and keeps a directory of official services. Headlines link back to the outlet." />
+    <meta name="theme-color" content="#0b100e" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#">
+        <svg class="brand-mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#0f4d34" />
+          <path d="M16 6 L26 15 H6 Z" fill="#f0d9a0" />
+          <rect x="10" y="15" width="12" height="10" rx="1" fill="#e8f6ee" />
+          <rect x="14" y="19" width="4" height="6" fill="#0f4d34" />
+        </svg>
+        <span>Civi</span>
+      </a>
+      <form class="search" role="search" onsubmit="return false">
+        <label for="q" class="sr-only" data-i18n="searchLabel">Search</label>
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="q" type="search" autocomplete="off" placeholder="Search" />
+      </form>
+      <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language">FIL</button>
+      <a class="top-link" href="about.html">About</a>
+    </header>
+
+    <div class="shell">
+      <nav class="sidebar" id="sidebar" aria-label="Topics">
+        <div class="sidebar-head">
+          <p class="sidebar-title" data-i18n="topics">Topics</p>
+          <button type="button" class="drawer-close" id="drawer-close" aria-label="Close">✕</button>
+        </div>
+        <a class="side-link" href="#" data-route="home"><span class="side-icon" aria-hidden="true">▦</span><span data-i18n="dashboard">Dashboard</span></a>
+        <ol id="side-topics" class="side-list"></ol>
+        <a class="side-link" href="about.html"><span class="side-icon" aria-hidden="true">ⓘ</span><span data-i18n="about">About Civi</span></a>
+      </nav>
+      <div class="scrim" id="scrim" hidden></div>
+
+      <main id="main" tabindex="-1">
+        <div id="view" aria-live="polite"></div>
+        <p class="disclaimer" data-i18n="disclaimer">Headlines are quoted from public feeds and link back to the outlet. Civi sorts them by words in the headline. It does not check that a story is true, and it is not a government website.</p>
+        <p class="foot quiet">Civi by <a href="https://chainnes.com">chainnes</a> · <span data-i18n="suggest">Suggest a site or report a broken link</span>: <a href="mailto:hello@chainnes.com">hello@chainnes.com</a></p>
+      </main>
+    </div>
+
+    <nav class="tabbar" aria-label="Quick navigation">
+      <a href="#" data-tab="home"><span aria-hidden="true">▦</span><span data-i18n="home">Home</span></a>
+      <a href="#topic/emergency" data-tab="emergency"><span aria-hidden="true">🚨</span><span data-i18n="tabEmergency">Emergency</span></a>
+      <a href="#topic/ids" data-tab="ids"><span aria-hidden="true">🪪</span><span data-i18n="tabIds">IDs</span></a>
+      <a href="#topic/benefits" data-tab="benefits"><span aria-hidden="true">🤝</span><span data-i18n="tabBenefits">Benefits</span></a>
+      <button type="button" id="drawer-open" aria-controls="sidebar" aria-expanded="false"><span aria-hidden="true">☰</span><span data-i18n="tabTopics">Topics</span></button>
+    </nav>
+    <script src="dashboard.js" defer></script>
+  </body>
+</html>

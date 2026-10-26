@@ -1,0 +1,1467 @@
+{
+ "lastChecked": "2026-10-26",
+ "note": "Checked with curl on 2026-10-26 from outside the Philippines. 'reachable-bot-protected' = server answered (HTTP 403 from a bot shield), domain is live.",
+ "topics": [
+  {
+   "id": "emergency",
+   "rank": 1,
+   "name": "Emergency & Disaster",
+   "nameFil": "Emerhensiya at Sakuna",
+   "reason": "Seconds matter: hotlines, typhoon, quake, and flood info come first.",
+   "icon": "🚨",
+   "reasonFil": "Mahalaga ang bawat segundo: hotline, bagyo, lindol, at baha ang una."
+  },
+  {
+   "id": "health",
+   "rank": 2,
+   "name": "Health",
+   "nameFil": "Kalusugan",
+   "reason": "Care, insurance, and health advisories affect every household.",
+   "icon": "🩺",
+   "reasonFil": "Apektado ng kalusugan, insurance, at abiso ang bawat pamilya."
+  },
+  {
+   "id": "ids",
+   "rank": 3,
+   "name": "Government IDs & Documents",
+   "nameFil": "Mga ID at Dokumento",
+   "reason": "Most services need an ID, birth certificate, or clearance first.",
+   "icon": "🪪",
+   "reasonFil": "Kailangan muna ng ID, birth certificate, o clearance sa karamihan ng serbisyo."
+  },
+  {
+   "id": "benefits",
+   "rank": 4,
+   "name": "Social Benefits",
+   "nameFil": "Mga Benepisyo",
+   "reason": "SSS, PhilHealth, Pag-IBIG, and DSWD support money and safety nets.",
+   "icon": "🤝",
+   "reasonFil": "SSS, PhilHealth, Pag-IBIG, at DSWD: pera at proteksyon sa oras ng pangangailangan."
+  },
+  {
+   "id": "legal",
+   "rank": 5,
+   "name": "Laws & Legal Help",
+   "nameFil": "Batas at Tulong Legal",
+   "reason": "Know your rights and where to get free legal aid.",
+   "icon": "⚖️",
+   "reasonFil": "Alamin ang karapatan mo at kung saan may libreng tulong legal."
+  },
+  {
+   "id": "jobs",
+   "rank": 6,
+   "name": "Jobs & Livelihood",
+   "nameFil": "Trabaho at Kabuhayan",
+   "reason": "Official job portals and livelihood help, including for OFWs.",
+   "icon": "💼",
+   "reasonFil": "Opisyal na job portal at tulong sa kabuhayan, kasama ang para sa OFW."
+  },
+  {
+   "id": "education",
+   "rank": 7,
+   "name": "Education & Free Courses",
+   "nameFil": "Edukasyon at Libreng Kurso",
+   "reason": "Free courses and scholarships open new skills and jobs.",
+   "icon": "🎓",
+   "reasonFil": "Libreng kurso at scholarship para sa bagong kasanayan at trabaho."
+  },
+  {
+   "id": "taxes",
+   "rank": 8,
+   "name": "Taxes & Business",
+   "nameFil": "Buwis at Negosyo",
+   "reason": "TIN, business registration, and consumer protection.",
+   "icon": "🧾",
+   "reasonFil": "TIN, rehistro ng negosyo, at proteksyon ng mamimili."
+  },
+  {
+   "id": "local",
+   "rank": 9,
+   "name": "Community & Local Gov",
+   "nameFil": "Komunidad at Lokal na Pamahalaan",
+   "reason": "Portals, complaints, and transparency tools for your community.",
+   "icon": "🏛️",
+   "reasonFil": "Portal, reklamo, at transparency para sa komunidad mo."
+  },
+  {
+   "id": "environment",
+   "rank": 10,
+   "name": "Environment",
+   "nameFil": "Kalikasan",
+   "reason": "Air, water, climate, and energy information.",
+   "icon": "🌿",
+   "reasonFil": "Impormasyon sa hangin, tubig, klima, at enerhiya."
+  },
+  {
+   "id": "tools",
+   "rank": 11,
+   "name": "Free Tools",
+   "nameFil": "Libreng Gamit",
+   "reason": "Free, reputable tools that help with everyday tasks.",
+   "icon": "🧰",
+   "reasonFil": "Libre at mapagkakatiwalaang gamit para sa araw-araw."
+  }
+ ],
+ "hotlines": [
+  {
+   "name": "National Emergency",
+   "number": "911",
+   "href": "tel:911"
+  },
+  {
+   "name": "Citizens' Complaint Hotline",
+   "number": "8888",
+   "href": "tel:8888"
+  },
+  {
+   "name": "Philippine Red Cross",
+   "number": "143",
+   "href": "tel:143"
+  },
+  {
+   "name": "Cybercrime (CICC)",
+   "number": "1326",
+   "href": "tel:1326"
+  },
+  {
+   "name": "NCMH Crisis Hotline",
+   "number": "1553",
+   "href": "tel:1553"
+  }
+ ],
+ "sites": [
+  {
+   "name": "National Emergency Hotline 911",
+   "url": "https://e911.gov.ph",
+   "description": "Official 911 emergency hotline info.",
+   "topic": "emergency",
+   "tags": [
+    "hotline",
+    "police",
+    "fire",
+    "ambulance"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Opisyal na impormasyon tungkol sa 911 emergency hotline."
+  },
+  {
+   "name": "NDRRMC",
+   "url": "https://ndrrmc.gov.ph",
+   "description": "National disaster risk reduction council: situation reports and advisories.",
+   "topic": "emergency",
+   "tags": [
+    "disaster",
+    "advisories"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Pambansang konseho sa sakuna: mga situation report at abiso."
+  },
+  {
+   "name": "PAGASA",
+   "url": "https://www.pagasa.dost.gov.ph",
+   "description": "Weather forecasts, typhoon bulletins, and rainfall warnings.",
+   "topic": "emergency",
+   "tags": [
+    "weather",
+    "typhoon"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Taya ng panahon, bulletin ng bagyo, at babala sa ulan."
+  },
+  {
+   "name": "PHIVOLCS",
+   "url": "https://www.phivolcs.dost.gov.ph",
+   "description": "Earthquake, volcano, and tsunami information.",
+   "topic": "emergency",
+   "tags": [
+    "earthquake",
+    "volcano",
+    "tsunami"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Impormasyon sa lindol, bulkan, at tsunami."
+  },
+  {
+   "name": "Philippine Red Cross",
+   "url": "https://redcross.org.ph",
+   "description": "Emergency response, blood services, and disaster help. Hotline 143.",
+   "topic": "emergency",
+   "tags": [
+    "hotline",
+    "blood",
+    "relief"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Tulong sa emerhensiya, dugo, at sakuna. Hotline 143."
+  },
+  {
+   "name": "Bureau of Fire Protection",
+   "url": "https://bfp.gov.ph",
+   "description": "National fire service.",
+   "topic": "emergency",
+   "tags": [
+    "fire"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Pambansang serbisyo sa sunog."
+  },
+  {
+   "name": "Philippine National Police",
+   "url": "https://pnp.gov.ph",
+   "description": "National police.",
+   "topic": "emergency",
+   "tags": [
+    "police"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Pambansang pulisya."
+  },
+  {
+   "name": "Philippine Coast Guard",
+   "url": "https://coastguard.gov.ph",
+   "description": "Maritime safety, sea travel advisories, and rescue.",
+   "topic": "emergency",
+   "tags": [
+    "sea",
+    "rescue",
+    "advisories"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Kaligtasan sa dagat, abiso sa biyahe sa dagat, at rescue."
+  },
+  {
+   "name": "Office of Civil Defense",
+   "url": "https://ocd.gov.ph",
+   "description": "Civil defense and disaster preparedness.",
+   "topic": "emergency",
+   "tags": [
+    "disaster",
+    "preparedness"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Civil defense at paghahanda sa sakuna."
+  },
+  {
+   "name": "DOST Project NOAH",
+   "url": "https://noah.up.edu.ph",
+   "description": "Hazard maps for floods, landslides, and storm surge.",
+   "topic": "emergency",
+   "tags": [
+    "hazard map",
+    "flood"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Hazard map para sa baha, landslide, at storm surge."
+  },
+  {
+   "name": "Department of Health",
+   "url": "https://doh.gov.ph",
+   "description": "Health advisories, programs, and facility info.",
+   "topic": "health",
+   "tags": [
+    "advisories",
+    "programs"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Mga abiso, programa, at impormasyon sa pasilidad pangkalusugan."
+  },
+  {
+   "name": "PhilHealth",
+   "url": "https://www.philhealth.gov.ph",
+   "description": "National health insurance: membership, benefits, contributions.",
+   "topic": "health",
+   "tags": [
+    "insurance",
+    "benefits"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Pambansang health insurance: membership, benepisyo, at hulog."
+  },
+  {
+   "name": "FDA Philippines",
+   "url": "https://www.fda.gov.ph",
+   "description": "Food and drug safety, product verification, and advisories.",
+   "topic": "health",
+   "tags": [
+    "medicine",
+    "food safety"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Kaligtasan ng pagkain at gamot, pag-verify ng produkto, at abiso."
+  },
+  {
+   "name": "National Center for Mental Health",
+   "url": "https://ncmh.gov.ph",
+   "description": "Mental health services and crisis hotline.",
+   "topic": "health",
+   "tags": [
+    "mental health",
+    "hotline"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Serbisyo sa mental health at crisis hotline."
+  },
+  {
+   "name": "PhilSys (National ID)",
+   "url": "https://philsys.gov.ph",
+   "description": "Register for and track the Philippine National ID.",
+   "topic": "ids",
+   "tags": [
+    "national id"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Magparehistro at i-track ang Philippine National ID."
+  },
+  {
+   "name": "PSA Serbilis / PSAHelpline",
+   "url": "https://psaserbilis.com.ph",
+   "description": "Order birth, marriage, and death certificates online (official PSA channel).",
+   "topic": "ids",
+   "tags": [
+    "birth certificate",
+    "civil registry"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Mag-order ng birth, marriage, at death certificate online (opisyal na channel ng PSA)."
+  },
+  {
+   "name": "Philippine Statistics Authority",
+   "url": "https://psa.gov.ph",
+   "description": "Civil registry, census, and official statistics.",
+   "topic": "ids",
+   "tags": [
+    "civil registry",
+    "statistics"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Civil registry, census, at opisyal na estadistika."
+  },
+  {
+   "name": "DFA Passport Appointment",
+   "url": "https://passport.gov.ph",
+   "description": "Book a passport appointment.",
+   "topic": "ids",
+   "tags": [
+    "passport"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Mag-book ng appointment para sa passport."
+  },
+  {
+   "name": "Department of Foreign Affairs",
+   "url": "https://dfa.gov.ph",
+   "description": "Passports, authentication (apostille), and consular services.",
+   "topic": "ids",
+   "tags": [
+    "passport",
+    "apostille",
+    "ofw"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Passport, authentication (apostille), at serbisyong konsular."
+  },
+  {
+   "name": "LTO",
+   "url": "https://lto.gov.ph",
+   "description": "Driver's licenses and vehicle registration.",
+   "topic": "ids",
+   "tags": [
+    "license",
+    "vehicle"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Lisensya sa pagmamaneho at rehistro ng sasakyan."
+  },
+  {
+   "name": "LTO LTMS Portal",
+   "url": "https://portal.lto.gov.ph",
+   "description": "Online driver's license and vehicle services.",
+   "topic": "ids",
+   "tags": [
+    "license",
+    "online"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Online na serbisyo para sa lisensya at sasakyan."
+  },
+  {
+   "name": "NBI Clearance",
+   "url": "https://clearance.nbi.gov.ph",
+   "description": "Apply for an NBI clearance online.",
+   "topic": "ids",
+   "tags": [
+    "clearance"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Mag-apply ng NBI clearance online."
+  },
+  {
+   "name": "PNP National Police Clearance",
+   "url": "https://pnpclearance.ph",
+   "description": "Apply for a police clearance online.",
+   "topic": "ids",
+   "tags": [
+    "clearance"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Mag-apply ng police clearance online."
+  },
+  {
+   "name": "COMELEC",
+   "url": "https://comelec.gov.ph",
+   "description": "Voter registration and elections.",
+   "topic": "ids",
+   "tags": [
+    "voter",
+    "elections"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Pagpaparehistro ng botante at halalan."
+  },
+  {
+   "name": "Bureau of Immigration",
+   "url": "https://immigration.gov.ph",
+   "description": "Travel, visas, and immigration services.",
+   "topic": "ids",
+   "tags": [
+    "travel",
+    "visa"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Biyahe, visa, at serbisyo sa imigrasyon."
+  },
+  {
+   "name": "SSS",
+   "url": "https://www.sss.gov.ph",
+   "description": "Social Security: contributions, loans, pensions, My.SSS.",
+   "topic": "benefits",
+   "tags": [
+    "pension",
+    "loans"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Social Security: hulog, loan, pensyon, at My.SSS."
+  },
+  {
+   "name": "Pag-IBIG Fund",
+   "url": "https://www.pagibigfund.gov.ph",
+   "description": "Savings, housing loans, and multi-purpose loans.",
+   "topic": "benefits",
+   "tags": [
+    "housing",
+    "loans",
+    "savings"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Ipon, housing loan, at multi-purpose loan."
+  },
+  {
+   "name": "DSWD",
+   "url": "https://www.dswd.gov.ph",
+   "description": "Social welfare programs, 4Ps, and crisis assistance.",
+   "topic": "benefits",
+   "tags": [
+    "4ps",
+    "assistance"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Mga programang panlipunan, 4Ps, at tulong sa krisis."
+  },
+  {
+   "name": "GSIS",
+   "url": "https://www.gsis.gov.ph",
+   "description": "Social insurance for government workers.",
+   "topic": "benefits",
+   "tags": [
+    "pension",
+    "government workers"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Social insurance para sa mga kawani ng gobyerno."
+  },
+  {
+   "name": "OWWA",
+   "url": "https://owwa.gov.ph",
+   "description": "Welfare and benefits for OFWs and their families.",
+   "topic": "benefits",
+   "tags": [
+    "ofw"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Kapakanan at benepisyo para sa mga OFW at kanilang pamilya."
+  },
+  {
+   "name": "NCSC (Senior Citizens)",
+   "url": "https://ncsc.gov.ph",
+   "description": "National Commission of Senior Citizens.",
+   "topic": "benefits",
+   "tags": [
+    "seniors"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Pambansang Komisyon ng mga Senior Citizen."
+  },
+  {
+   "name": "NCDA (Persons with Disability)",
+   "url": "https://ncda.gov.ph",
+   "description": "National Council on Disability Affairs.",
+   "topic": "benefits",
+   "tags": [
+    "pwd"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Pambansang Konseho para sa mga taong may kapansanan."
+  },
+  {
+   "name": "Official Gazette",
+   "url": "https://www.officialgazette.gov.ph",
+   "description": "Official publication of laws, executive orders, and proclamations.",
+   "topic": "legal",
+   "tags": [
+    "laws",
+    "executive orders"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Opisyal na lathala ng mga batas, executive order, at proklamasyon."
+  },
+  {
+   "name": "LawPhil Project",
+   "url": "https://lawphil.net",
+   "description": "Free database of Philippine laws and jurisprudence.",
+   "topic": "legal",
+   "tags": [
+    "laws",
+    "jurisprudence"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng database ng mga batas at desisyon sa Pilipinas."
+  },
+  {
+   "name": "Supreme Court E-Library",
+   "url": "https://elibrary.judiciary.gov.ph",
+   "description": "Supreme Court decisions, laws, and issuances.",
+   "topic": "legal",
+   "tags": [
+    "jurisprudence",
+    "laws"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Mga desisyon, batas, at issuance ng Korte Suprema."
+  },
+  {
+   "name": "Senate of the Philippines",
+   "url": "https://senate.gov.ph",
+   "description": "Senate bills, resolutions, and senators.",
+   "topic": "legal",
+   "tags": [
+    "legislation"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Mga panukalang batas, resolusyon, at senador."
+  },
+  {
+   "name": "House of Representatives",
+   "url": "https://www.congress.gov.ph",
+   "description": "House bills and members.",
+   "topic": "legal",
+   "tags": [
+    "legislation"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Mga panukalang batas at miyembro ng Kamara."
+  },
+  {
+   "name": "Public Attorney's Office",
+   "url": "https://pao.gov.ph",
+   "description": "Free legal help for qualified clients.",
+   "topic": "legal",
+   "tags": [
+    "free legal aid"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Libreng tulong legal para sa mga kwalipikado."
+  },
+  {
+   "name": "Department of Justice",
+   "url": "https://doj.gov.ph",
+   "description": "Justice department services.",
+   "topic": "legal",
+   "tags": [
+    "justice"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Mga serbisyo ng Kagawaran ng Katarungan."
+  },
+  {
+   "name": "Commission on Human Rights",
+   "url": "https://www.chr.gov.ph",
+   "description": "Human rights complaints and assistance.",
+   "topic": "legal",
+   "tags": [
+    "human rights"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Reklamo at tulong sa karapatang pantao."
+  },
+  {
+   "name": "Integrated Bar of the Philippines",
+   "url": "https://ibp.ph",
+   "description": "National lawyers' organization; legal aid program.",
+   "topic": "legal",
+   "tags": [
+    "legal aid",
+    "lawyers"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Pambansang samahan ng mga abogado; may programang legal aid."
+  },
+  {
+   "name": "Chan Robles Virtual Law Library",
+   "url": "https://chanrobles.com",
+   "description": "Free collection of Philippine laws and cases.",
+   "topic": "legal",
+   "tags": [
+    "laws",
+    "jurisprudence"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng koleksyon ng mga batas at kaso sa Pilipinas."
+  },
+  {
+   "name": "National Privacy Commission",
+   "url": "https://privacy.gov.ph",
+   "description": "Data privacy rights and complaints.",
+   "topic": "legal",
+   "tags": [
+    "privacy"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Karapatan sa data privacy at pagrereklamo."
+  },
+  {
+   "name": "DOLE",
+   "url": "https://www.dole.gov.ph",
+   "description": "Labor standards, employment programs, and assistance.",
+   "topic": "jobs",
+   "tags": [
+    "labor",
+    "assistance"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Pamantayan sa paggawa, programa sa trabaho, at tulong."
+  },
+  {
+   "name": "PhilJobNet",
+   "url": "https://philjobnet.gov.ph",
+   "description": "Government job matching portal.",
+   "topic": "jobs",
+   "tags": [
+    "job search"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Portal ng gobyerno para sa paghahanap ng trabaho."
+  },
+  {
+   "name": "Department of Migrant Workers",
+   "url": "https://dmw.gov.ph",
+   "description": "OFW deployment, verified job orders, and assistance.",
+   "topic": "jobs",
+   "tags": [
+    "ofw"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Deployment ng OFW, beripikadong job order, at tulong."
+  },
+  {
+   "name": "Civil Service Commission",
+   "url": "https://csc.gov.ph",
+   "description": "Civil service exams and government jobs.",
+   "topic": "jobs",
+   "tags": [
+    "government jobs",
+    "exams"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Civil service exam at trabaho sa gobyerno."
+  },
+  {
+   "name": "DA (Agriculture)",
+   "url": "https://www.da.gov.ph",
+   "description": "Farmer programs and agriculture support.",
+   "topic": "jobs",
+   "tags": [
+    "farming"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Programa at suporta para sa mga magsasaka."
+  },
+  {
+   "name": "TESDA",
+   "url": "https://www.tesda.gov.ph",
+   "description": "Technical-vocational training and certification.",
+   "topic": "education",
+   "tags": [
+    "tech-voc",
+    "certification"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Pagsasanay at sertipikasyon sa tech-voc."
+  },
+  {
+   "name": "TESDA Online Program",
+   "url": "https://e-tesda.gov.ph",
+   "description": "Free online tech-voc courses.",
+   "topic": "education",
+   "tags": [
+    "free course",
+    "online"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng online na kurso sa tech-voc."
+  },
+  {
+   "name": "DOST-SEI",
+   "url": "https://sei.dost.gov.ph",
+   "description": "Science scholarships and programs.",
+   "topic": "education",
+   "tags": [
+    "scholarships"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Mga scholarship at programa sa agham."
+  },
+  {
+   "name": "DOST-STII",
+   "url": "https://stii.dost.gov.ph",
+   "description": "Science and technology information and library.",
+   "topic": "education",
+   "tags": [
+    "library"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Impormasyon at aklatan sa agham at teknolohiya."
+  },
+  {
+   "name": "DepEd",
+   "url": "https://www.deped.gov.ph",
+   "description": "Basic education: K-12, enrollment, and learning resources.",
+   "topic": "education",
+   "tags": [
+    "k-12"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Batayang edukasyon: K-12, enrollment, at learning resources."
+  },
+  {
+   "name": "CHED",
+   "url": "https://ched.gov.ph",
+   "description": "Higher education, scholarships, and recognized programs.",
+   "topic": "education",
+   "tags": [
+    "college",
+    "scholarships"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Mas mataas na edukasyon, scholarship, at kinikilalang programa."
+  },
+  {
+   "name": "UP Open University",
+   "url": "https://www.upou.edu.ph",
+   "description": "Distance education; free open courses (MODeL).",
+   "topic": "education",
+   "tags": [
+    "free course",
+    "online"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Distance education; may libreng open course (MODeL)."
+  },
+  {
+   "name": "UPOU MODeL",
+   "url": "https://model.upou.edu.ph",
+   "description": "Free massive open online courses by UPOU.",
+   "topic": "education",
+   "tags": [
+    "free course",
+    "online"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng online course mula sa UPOU."
+  },
+  {
+   "name": "National Library of the Philippines",
+   "url": "https://web.nlp.gov.ph",
+   "description": "National library services and collections.",
+   "topic": "education",
+   "tags": [
+    "library"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Serbisyo at koleksyon ng pambansang aklatan."
+  },
+  {
+   "name": "Khan Academy",
+   "url": "https://www.khanacademy.org",
+   "description": "Free lessons in math, science, and more.",
+   "topic": "education",
+   "tags": [
+    "free course",
+    "online"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng aralin sa math, agham, at iba pa."
+  },
+  {
+   "name": "Coursera (free courses)",
+   "url": "https://www.coursera.org/courses?query=free",
+   "description": "Free-to-audit university courses.",
+   "topic": "education",
+   "tags": [
+    "free course",
+    "online"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Mga kurso ng unibersidad na libreng i-audit."
+  },
+  {
+   "name": "freeCodeCamp",
+   "url": "https://www.freecodecamp.org",
+   "description": "Free coding courses and certifications.",
+   "topic": "education",
+   "tags": [
+    "free course",
+    "coding"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng kurso at sertipikasyon sa coding."
+  },
+  {
+   "name": "BIR",
+   "url": "https://www.bir.gov.ph",
+   "description": "Taxes, TIN, and filing.",
+   "topic": "taxes",
+   "tags": [
+    "tax",
+    "tin"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Buwis, TIN, at pag-file."
+  },
+  {
+   "name": "BIR ORUS",
+   "url": "https://orus.bir.gov.ph",
+   "description": "Online registration and update system (TIN, business).",
+   "topic": "taxes",
+   "tags": [
+    "tax",
+    "online"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Online na rehistro at update (TIN, negosyo)."
+  },
+  {
+   "name": "DTI",
+   "url": "https://www.dti.gov.ph",
+   "description": "Trade and consumer protection.",
+   "topic": "taxes",
+   "tags": [
+    "business",
+    "consumer"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Kalakalan at proteksyon ng mamimili."
+  },
+  {
+   "name": "DTI Business Name Registration",
+   "url": "https://bnrs.dti.gov.ph",
+   "description": "Register a business name online.",
+   "topic": "taxes",
+   "tags": [
+    "business",
+    "registration"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Magparehistro ng pangalan ng negosyo online."
+  },
+  {
+   "name": "SEC",
+   "url": "https://www.sec.gov.ph",
+   "description": "Register corporations and check investment scam advisories.",
+   "topic": "taxes",
+   "tags": [
+    "business",
+    "scam advisories"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Magrehistro ng korporasyon at tingnan ang abiso sa investment scam."
+  },
+  {
+   "name": "Bureau of Customs",
+   "url": "https://customs.gov.ph",
+   "description": "Imports, balikbayan boxes, and duties.",
+   "topic": "taxes",
+   "tags": [
+    "customs"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Import, balikbayan box, at buwis sa customs."
+  },
+  {
+   "name": "Cooperative Development Authority",
+   "url": "https://cda.gov.ph",
+   "description": "Register and support cooperatives.",
+   "topic": "taxes",
+   "tags": [
+    "cooperatives"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Magrehistro at suporta sa mga kooperatiba."
+  },
+  {
+   "name": "Bangko Sentral ng Pilipinas",
+   "url": "https://www.bsp.gov.ph",
+   "description": "Banking, consumer protection, and money info.",
+   "topic": "taxes",
+   "tags": [
+    "banking",
+    "consumer"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Bangko, proteksyon ng mamimili, at impormasyon sa pera."
+  },
+  {
+   "name": "GOV.PH",
+   "url": "https://www.gov.ph",
+   "description": "Official government portal.",
+   "topic": "local",
+   "tags": [
+    "portal"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Opisyal na portal ng gobyerno."
+  },
+  {
+   "name": "eGov PH",
+   "url": "https://e.gov.ph",
+   "description": "eGovPH app and online services.",
+   "topic": "local",
+   "tags": [
+    "app",
+    "online"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "eGovPH app at online na serbisyo."
+  },
+  {
+   "name": "8888 Citizens' Complaint Hotline",
+   "url": "https://8888.gov.ph",
+   "description": "File complaints about government services.",
+   "topic": "local",
+   "tags": [
+    "hotline",
+    "complaints"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Magreklamo tungkol sa serbisyo ng gobyerno."
+  },
+  {
+   "name": "Anti-Red Tape Authority",
+   "url": "https://arta.gov.ph",
+   "description": "Report red tape and slow government service.",
+   "topic": "local",
+   "tags": [
+    "complaints"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "I-report ang red tape at mabagal na serbisyo ng gobyerno."
+  },
+  {
+   "name": "Freedom of Information",
+   "url": "https://www.foi.gov.ph",
+   "description": "Request government information online.",
+   "topic": "local",
+   "tags": [
+    "foi",
+    "transparency"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Humiling ng impormasyon mula sa gobyerno online."
+  },
+  {
+   "name": "Open Data Philippines",
+   "url": "https://data.gov.ph",
+   "description": "Public government datasets.",
+   "topic": "local",
+   "tags": [
+    "data"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Pampublikong dataset ng gobyerno."
+  },
+  {
+   "name": "Commission on Audit",
+   "url": "https://coa.gov.ph",
+   "description": "Audit reports of government agencies.",
+   "topic": "local",
+   "tags": [
+    "transparency"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Audit report ng mga ahensya ng gobyerno."
+  },
+  {
+   "name": "PhilGEPS",
+   "url": "https://philgeps.gov.ph",
+   "description": "Government procurement notices.",
+   "topic": "local",
+   "tags": [
+    "procurement"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Mga abiso sa procurement ng gobyerno."
+  },
+  {
+   "name": "DPWH",
+   "url": "https://dpwh.gov.ph",
+   "description": "Public works and road projects.",
+   "topic": "local",
+   "tags": [
+    "roads"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Pampublikong gawain at proyekto sa kalsada."
+  },
+  {
+   "name": "MMDA",
+   "url": "https://mmda.gov.ph",
+   "description": "Metro Manila traffic and advisories.",
+   "topic": "local",
+   "tags": [
+    "traffic",
+    "metro manila"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Trapiko at abiso sa Metro Manila."
+  },
+  {
+   "name": "DENR",
+   "url": "https://denr.gov.ph",
+   "description": "Environment and natural resources.",
+   "topic": "environment",
+   "tags": [
+    "environment"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Kalikasan at likas na yaman."
+  },
+  {
+   "name": "EMB",
+   "url": "https://emb.gov.ph",
+   "description": "Air and water quality and environmental permits.",
+   "topic": "environment",
+   "tags": [
+    "air quality",
+    "permits"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Kalidad ng hangin at tubig, at environmental permit."
+  },
+  {
+   "name": "Biodiversity Management Bureau",
+   "url": "https://bmb.gov.ph",
+   "description": "Protected areas and wildlife.",
+   "topic": "environment",
+   "tags": [
+    "wildlife"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Mga protected area at hayop-gubat."
+  },
+  {
+   "name": "Climate Change Commission",
+   "url": "https://climate.gov.ph",
+   "description": "Climate policy and action.",
+   "topic": "environment",
+   "tags": [
+    "climate"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Polisiya at aksyon sa climate change."
+  },
+  {
+   "name": "Department of Energy",
+   "url": "https://doe.gov.ph",
+   "description": "Energy and fuel prices.",
+   "topic": "environment",
+   "tags": [
+    "energy",
+    "fuel prices"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Enerhiya at presyo ng gasolina."
+  },
+  {
+   "name": "Google Translate",
+   "url": "https://translate.google.com",
+   "description": "Free translation incl. Filipino and Cebuano.",
+   "topic": "tools",
+   "tags": [
+    "translation"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng pagsasalin kasama ang Filipino at Cebuano."
+  },
+  {
+   "name": "Wikipedia (Tagalog)",
+   "url": "https://tl.wikipedia.org",
+   "description": "Free encyclopedia in Tagalog.",
+   "topic": "tools",
+   "tags": [
+    "reference"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng ensiklopedya sa Tagalog."
+  },
+  {
+   "name": "Canva",
+   "url": "https://www.canva.com",
+   "description": "Free design tool for flyers and posters.",
+   "topic": "tools",
+   "tags": [
+    "design"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "Libreng design tool para sa flyer at poster."
+  },
+  {
+   "name": "LibreOffice",
+   "url": "https://www.libreoffice.org",
+   "description": "Free office suite.",
+   "topic": "tools",
+   "tags": [
+    "office"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng office suite."
+  },
+  {
+   "name": "Internet Archive",
+   "url": "https://archive.org",
+   "description": "Free library of books, media, and archived web pages.",
+   "topic": "tools",
+   "tags": [
+    "library",
+    "archive"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Libreng aklatan ng libro, media, at naka-archive na web page."
+  },
+  {
+   "name": "Speedtest",
+   "url": "https://www.speedtest.net",
+   "description": "Check your internet speed.",
+   "topic": "tools",
+   "tags": [
+    "internet"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Tingnan ang bilis ng internet mo."
+  },
+  {
+   "name": "Have I Been Pwned",
+   "url": "https://haveibeenpwned.com",
+   "description": "Check if your email was in a data breach.",
+   "topic": "tools",
+   "tags": [
+    "security"
+   ],
+   "official": false,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "ok",
+   "descFil": "Alamin kung kasama ang email mo sa data breach."
+  },
+  {
+   "name": "CICC (Cybercrime)",
+   "url": "https://cicc.gov.ph",
+   "description": "Report scams and cybercrime; hotline 1326.",
+   "topic": "tools",
+   "tags": [
+    "scams",
+    "hotline"
+   ],
+   "official": true,
+   "free": true,
+   "lastChecked": "2026-10-26",
+   "check": "reachable-bot-protected",
+   "descFil": "I-report ang scam at cybercrime; hotline 1326."
+  }
+ ]
+}
