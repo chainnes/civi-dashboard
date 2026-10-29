@@ -19,16 +19,20 @@ Updated Oct 29, 2026 (PHT).
 3. n8n every 2 h: RSS + Luma → `news_items`, `directory` in Supabase; `/api/feed` and `/api/map?kind=shared` serve live items.
 4. n8n hourly: due briefing users → `briefing_digest` → Resend → `briefing_mark_sent`.
 
-## 3. Supabase schema (run in order)
-| File | Tables | Functions / RLS |
+## 3. Supabase schema
+Canonical SQL is `supabase/migrations/`. The Supabase GitHub integration (working directory `.`) applies new files there to production on merge to `main`. `sql/*.sql` are pointers, not a second schema. Do not edit a migration that has already been applied; add a new timestamped file with `supabase migration new <name>`. No service role key in the SQL or in `supabase/config.toml`.
+
+The first seven migrations match the old `sql/001`–`007` scripts and are idempotent, so they succeed on an empty database and on a database where those scripts already ran in the SQL editor.
+
+| Migration | Tables | Functions / RLS |
 |---|---|---|
-| 001_schema | sources, news_items, hazard_events, kpis, directory, law_refs, solutions, votes, reports | public read policies; `cast_vote`, `post_solution`, `ranked_solutions`, `report_solution`, weights |
-| 002_beta | profiles, lounge_topics/replies/votes/reports, shared_links (+reports), premium_waitlist, rate_events | own-profile read/update, own votes/waitlist; `handle_new_user`, `lounge_*`, `share_link`, `rate_ok` (rate limiter) |
-| 003_seed_lounge | seed topics | — |
-| 004_feedback_referral | translation_feedback | `suggest_translation`, `set_my_referral` |
-| 005_empower | petitions, petition_signatures/updates/reports, reports_issues, report_metoo/flags, foi_requests, user_events, event_flags, project_updates | own signature/metoo/FOI policies; storage policies "upload own folder"; `petition_*`, `report_*`, `event_create`, `project_update_add` |
-| 006_briefing | briefing_prefs, briefing_items, briefing_send_log, email_unsubscribe_tokens, push_subscriptions | owner-only policies (`user_id = auth.uid()`); `briefing_build(_all)`, `briefing_digest`, `briefing_mark_sent`, `briefing_save_prefs`, `briefing_unsubscribe` |
-| 007_ux | favorites, directory_requests | favorites owner-only (max 500); directory_requests insert-only with `status='pending'` (3/day per rate key); `add_favorite`, `request_directory_listing` |
+| `20261029105510_schema.sql` | sources, news_items, hazard_events, kpis, directory, law_refs, solutions, votes, reports | public read policies; `cast_vote`, `post_solution`, `ranked_solutions`, `report_solution`, weights |
+| `20261029105511_beta.sql` | profiles, lounge_topics/replies/votes/reports, shared_links (+reports), premium_waitlist, rate_events | own-profile read/update, own votes/waitlist; `handle_new_user`, `lounge_*`, `share_link`, `rate_ok` (rate limiter) |
+| `20261029105513_seed_lounge.sql` | seed topics | `ON CONFLICT (id) DO UPDATE` (no duplicate starter rows) |
+| `20261029105515_feedback_referral.sql` | translation_feedback | `suggest_translation`, `set_my_referral` |
+| `20261029105517_empower.sql` | petitions, petition_signatures/updates/reports, reports_issues, report_metoo/flags, foi_requests, user_events, event_flags, project_updates | own signature/metoo/FOI policies; storage policies "upload own folder"; `petition_*`, `report_*`, `event_create`, `project_update_add` |
+| `20261029105518_briefing.sql` | briefing_prefs, briefing_items, briefing_send_log, email_unsubscribe_tokens, push_subscriptions | owner-only policies (`user_id = auth.uid()`); `briefing_build(_all)`, `briefing_digest`, `briefing_mark_sent`, `briefing_save_prefs`, `briefing_unsubscribe` |
+| `20261029105520_ux.sql` | favorites, directory_requests | favorites owner-only (max 500); directory_requests insert-only with `status='pending'` (3/day per rate key); `add_favorite`, `request_directory_listing` |
 
 **RLS principle:** anon can read public content and call RPCs; users read/write only their own rows; nobody can read others' private rows; admins use the Supabase dashboard (service role).
 

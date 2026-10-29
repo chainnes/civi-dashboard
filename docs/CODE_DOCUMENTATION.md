@@ -8,7 +8,7 @@ For Chai: how the Civi code is organized, how data flows, what the key functions
 Civi is a static website plus small server functions:
 - **Frontend** (what runs in the browser): `index.html`, `css/hub.css`, `js/*.js`. Plain JavaScript, no build step. Libraries load from CDNs: Leaflet (map), Leaflet.markercluster (pin clusters), Chart.js (charts).
 - **Backend** (what runs on Cloudflare): `functions/api/*.js` = Cloudflare Pages Functions. They talk to Supabase using env vars. The browser never sees keys.
-- **Database**: Supabase (Postgres). Tables, security rules and functions are in `sql/001…007`.
+- **Database**: Supabase (Postgres). Tables, security rules and functions are in `supabase/migrations/` (applied on merge to `main`). `sql/` only points there.
 - **Automation**: n8n workflows in `n8n/` fetch news, events and laws on a schedule and send the opt-in Daily Briefing.
 - **Static data**: `data/*.json` snapshots made by `scripts/*.py`. Used directly by the map, KPIs and directory, and as the demo-mode fallback.
 
@@ -45,7 +45,7 @@ Civi is a static website plus small server functions:
 | `functions/api/assist.js` | **New.** Optional Workers AI: directory keywords and FAQ-only help answers. Returns 503 if no `AI` binding; the browser falls back. Stores nothing. |
 | `functions/api/directory-request.js` | **New.** "Request to add your website": honeypot + URL check, saves a pending request via `request_directory_listing()` RPC (3/day). Admin review before anything is published. |
 | `functions/api/summarize.js`, `translation.js`, `waitlist.js`, `config.js` | AI summaries, translation suggestions, Premium waitlist, public config (donate links). |
-| `sql/001…007` | Database schema, RLS policies, RPC functions. `007_ux.sql` adds `favorites` + `add_favorite()` and `directory_requests` + `request_directory_listing()` (insert-only RLS). |
+| `supabase/migrations/` | Database schema, RLS policies, RPC functions. Applied by the Supabase GitHub integration. `20261029105520_ux.sql` adds `favorites` + `add_favorite()` and `directory_requests` + `request_directory_listing()` (insert-only RLS). `supabase/config.toml` is local CLI config from `supabase init` (no keys). |
 | `n8n/*.json` | Importable n8n workflows (ingest, law ingest, briefing). |
 | `email/briefing.html` | Briefing email template. |
 | `data/*.json` | Snapshots: `geo_regions` (geoBoundaries ADM1), `gazetteer` (PSGC places), `map_items`, `kpis`, `kpis_extra`, `budget_2026`, `projects` (PhilGEPS), `directory_hub`, `gov_directory`, `officials`, `companies`, `howto`, `academy`, `scholarships`, `lounge_seed`, `law_refs`, etc. |

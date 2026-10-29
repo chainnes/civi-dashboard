@@ -1,6 +1,6 @@
 // Civi Daily Briefing API.
 // GET  /api/briefing            -> {prefs, items} for the logged-in user (RLS: own rows only)
-// POST /api/briefing {action:"prefs", ...}      save preferences (email/push need explicit consent flags; see sql/006)
+// POST /api/briefing {action:"prefs", ...}      save preferences (email/push need explicit consent flags; see supabase/migrations/20261029105518_briefing.sql)
 // POST /api/briefing {action:"read", id}         mark an item read
 // POST /api/briefing {action:"push_sub", sub}    store a Web Push subscription (only if push_on with consent)
 // POST /api/briefing {action:"push_unsub", endpoint}

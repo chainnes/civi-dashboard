@@ -48,12 +48,30 @@ Python scripts (scripts/*.py) → data/*.json snapshots (run by you, committed)
 **Demo mode:** if `/api` is unreachable (local preview), Civi reads `/data/*.json` and keeps accounts, posts and favorites in localStorage, clearly labeled.
 
 ## Setup (short version; full beginner guide: `docs/SETUP_GUIDE_FOR_CHAI.md`)
-1. Supabase project (Singapore) → SQL Editor → run `sql/001` … `007` in order. Enable Email + Google auth.
+1. Supabase project (Singapore). Schema deploys from `supabase/migrations/` on merge to `main` (see below). Enable Email + Google auth.
 2. Fix git author on all commits, create a private GitHub repo, push.
 3. Cloudflare Pages → connect repo (no build, output `/`). Env vars: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `VOTER_SALT`, optional `PAYPAL_URL`, `DONATE_URL`, `KOFI_URL`, `VAPID_PUBLIC_KEY`. Binding: Workers AI as `AI`. Redeploy.
 4. Resend: verify `mail.chainnes.com` (SPF/DKIM). n8n: import the 3 workflows in `n8n/`, add Supabase service_role + Resend credentials there only.
 5. privacy@chainnes.com alias, donate QR images in `assets/donate/`, `PAYPAL_URL`.
 6. Hard refresh after each deploy (`Cmd+Shift+R`).
+
+## Database migrations
+
+`supabase/migrations/` is the only schema. `sql/*.sql` files are pointers so the old scripts are not a second copy. Supabase's GitHub integration (working directory `.`, deploy to production on merge to `main`) applies **new** files in that folder when they reach `main`.
+
+| Order | Migration | Replaces |
+|---|---|---|
+| 1 | `supabase/migrations/20261029105510_schema.sql` | `sql/001_schema.sql` |
+| 2 | `supabase/migrations/20261029105511_beta.sql` | `sql/002_beta.sql` |
+| 3 | `supabase/migrations/20261029105513_seed_lounge.sql` | `sql/003_seed_lounge.sql` |
+| 4 | `supabase/migrations/20261029105515_feedback_referral.sql` | `sql/004_feedback_referral.sql` |
+| 5 | `supabase/migrations/20261029105517_empower.sql` | `sql/005_empower.sql` |
+| 6 | `supabase/migrations/20261029105518_briefing.sql` | `sql/006_briefing.sql` |
+| 7 | `supabase/migrations/20261029105520_ux.sql` | `sql/007_ux.sql` |
+
+Those seven files are safe to run on an empty database and on a database where `sql/001`–`007` were already pasted in the SQL editor. They use `IF NOT EXISTS`, `CREATE OR REPLACE`, and `DROP POLICY IF EXISTS` before `CREATE POLICY`. Lounge starter rows use `ON CONFLICT (id) DO UPDATE`, so a second run refreshes the text and does not insert duplicates.
+
+**Later changes:** run `supabase migration new short_name`, edit only that new file, open a pull request, and merge to `main`. Do not edit a migration that has already been applied. Do not commit the service role key or any other secret. `supabase/config.toml` is the local CLI config from `supabase init` and only references `env(...)` names.
 
 ## Local run
 ```

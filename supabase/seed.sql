@@ -1,0 +1,3 @@
+-- Local only (`supabase db reset`). The GitHub integration does not apply this file to production.
+-- Lounge starter topics live in supabase/migrations/20261029105513_seed_lounge.sql so production gets them.
+-- Do not put secrets here.

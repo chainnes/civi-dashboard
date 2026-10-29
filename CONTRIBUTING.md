@@ -14,5 +14,8 @@ Salamat! Civi is open source (MIT) so anyone can use and adapt it.
 - **UI.** Keep animations light and respect `prefers-reduced-motion`; check day and night contrast (WCAG AA).
 - **Service worker.** When you add/change cached files, bump the cache version in `sw.js`.
 
+## Database
+Schema changes are new timestamped files in `supabase/migrations/` (`supabase migration new <name>`). Supabase applies them when the pull request merges to `main`. Do not edit a migration that is already on `main`. Do not commit secrets or the service role key. `sql/` only points at the migrations; do not edit those files.
+
 ## Pull requests
 Small, focused PRs with a short description and screenshots (no keys visible). A maintainer reviews every PR before merge.

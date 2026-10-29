@@ -1,41 +1,8 @@
--- Civi beta 004: translation feedback (community review) + signup referral source. Run AFTER 001-003.
--- Translation suggestions: logged-in users only, rate-limited, users can read only their own rows. Reviewers use the dashboard/service role.
-create table if not exists translation_feedback (id bigserial primary key, user_id uuid references auth.users on delete cascade,
-  lang text not null check (lang ~ '^[a-z]{2,3}$'), str_key text not null check (length(str_key) <= 60), page text check (length(page) <= 40),
-  current_text text check (length(current_text) <= 500), suggestion text not null check (length(suggestion) between 1 and 500),
-  note text check (length(note) <= 300), status text default 'new' check (status in ('new','accepted','rejected')), created_at timestamptz default now());
-alter table translation_feedback enable row level security;
-drop policy if exists "own feedback read" on translation_feedback;
-create policy "own feedback read" on translation_feedback for select using (auth.uid() = user_id);
--- no insert/update/delete policies: inserts go through the RPC below (rate-limited)
-create or replace function suggest_translation(p_lang text, p_key text, p_page text, p_current text, p_suggestion text, p_note text)
-returns bigint language plpgsql security definer set search_path = public as $$
-declare i bigint; begin perform rate_ok('i18n', 30, interval '1 hour');
-  insert into translation_feedback(user_id, lang, str_key, page, current_text, suggestion, note)
-  values (auth.uid(), p_lang, left(p_key,60), left(p_page,40), left(p_current,500), left(p_suggestion,500), left(p_note,300)) returning id into i; return i; end $$;
--- aggregate view for public "most-requested fixes" (no user ids)
-create or replace view translation_feedback_summary with (security_invoker = false) as
-  select lang, str_key, count(*) n, max(created_at) last_at from translation_feedback where status = 'new' group by 1,2;
-revoke all on translation_feedback_summary from anon; grant select on translation_feedback_summary to authenticated;
-
--- Referral source (open-link beta campaign): first-touch ?ref= / utm_source / utm_campaign, stored on the profile.
-alter table profiles add column if not exists ref_source text check (length(ref_source) <= 40);
-alter table profiles add column if not exists ref_campaign text check (length(ref_campaign) <= 60);
-create or replace function handle_new_user() returns trigger language plpgsql security definer set search_path = public as $$
-declare h text := lower(coalesce(new.raw_user_meta_data->>'handle', regexp_replace(split_part(new.email,'@',1),'[^a-z0-9_]','','gi')));
-begin
-  h := left(h, 16); if length(h) < 3 then h := 'user'; end if;
-  while exists(select 1 from profiles where handle = h) loop h := left(h,14) || floor(random()*100)::int; end loop;
-  insert into profiles(id, handle, consent_at, consent_version, ref_source, ref_campaign) values (new.id, h, (new.raw_user_meta_data->>'consent_at')::timestamptz,
-    new.raw_user_meta_data->>'consent_version', left(new.raw_user_meta_data->>'ref_source',40), left(new.raw_user_meta_data->>'ref_campaign',60));
-  return new; end $$;
--- Google sign-ups can't carry metadata, so the app sets it once after first login (only if still empty).
-create or replace function set_my_referral(p_source text, p_campaign text) returns boolean language plpgsql security definer set search_path = public as $$
-begin update profiles set ref_source = left(lower(regexp_replace(p_source,'[^a-zA-Z0-9_.-]','','g')),40), ref_campaign = left(regexp_replace(p_campaign,'[^a-zA-Z0-9_.-]','','g'),60)
-  where id = auth.uid() and ref_source is null; return true; end $$;
--- Aggregate counts only, for the campaign dashboard (service role / SQL editor): select * from signup_sources;
-create or replace view signup_sources as select coalesce(ref_source,'direct') source, coalesce(ref_campaign,'-') campaign, count(*) signups,
-  min(created_at) first_at, max(created_at) last_at from profiles group by 1,2 order by 3 desc;
-revoke all on signup_sources from anon, authenticated;
-revoke all on function suggest_translation(text,text,text,text,text,text), set_my_referral(text,text) from public, anon;
-grant execute on function suggest_translation(text,text,text,text,text,text), set_my_referral(text,text) to authenticated;
+-- Pointer only. This file is not the schema. Running it stops with an error that names the migration.
+-- Canonical SQL: supabase/migrations/20261029105515_feedback_referral.sql
+-- Supabase's GitHub integration applies supabase/migrations/ on merge to main.
+-- Add a new timestamped file with: supabase migration new <name>
+-- Do not edit sql/004_feedback_referral.sql.
+do $$ begin
+  raise exception 'sql/004_feedback_referral.sql moved to supabase/migrations/20261029105515_feedback_referral.sql';
+end $$;

@@ -9,15 +9,34 @@ Hi Chai! Follow these in order. Each step says where to click. Take your time, a
 2. Click **New project**. Name: `civi`. Create a strong database password (save it in your password manager). Region: **Southeast Asia (Singapore)**. Click **Create**.
 3. Wait 1–2 minutes until it says ready.
 
-> Tip: "Unrecognized client_id" error? That comes from trying to connect Supabase through an outside app or integration. Hindi mo kailangan iyon. Always use the Supabase **dashboard** directly.
+> Tip: Schema changes ship through Supabase's GitHub integration (working directory `.`, deploy to production when `main` updates). That is separate from Google login. "Unrecognized client_id" is an OAuth client mismatch, usually Google (Step 3), not the migration deploy.
 
-## Step 2. Run the SQL files 001 to 007
-1. In your project, open **SQL Editor** → **New query**.
-2. Open `sql/001_schema.sql` from the Civi folder in a text editor, copy everything, paste, click **Run**. You should see "Success".
-3. Repeat, one file at a time, in this exact order: `002_beta.sql`, `003_seed_lounge.sql`, `004_feedback_referral.sql`, `005_empower.sql`, `006_briefing.sql`, `007_ux.sql`.
-4. Check **Table Editor**: you should see tables like `profiles`, `petitions`, `favorites`, `directory_requests`.
+## Step 2. Database schema (GitHub integration)
+The schema lives only in `supabase/migrations/`. Supabase's GitHub integration is connected with working directory `.` and **deploy to production on merge to main** turned on. When a pull request merges to `main`, Supabase runs any new file in that folder. You do not paste these into the SQL editor for a normal deploy.
 
-> Tip: kapag nag-error ang isang file, huwag nang ituloy ang susunod. I-screenshot ang error.
+The first seven files are the old `sql/001` … `007` scripts, in the same order. They are safe on an empty database and safe if you already ran those scripts by hand:
+
+1. `supabase/migrations/20261029105510_schema.sql`
+2. `supabase/migrations/20261029105511_beta.sql`
+3. `supabase/migrations/20261029105513_seed_lounge.sql` (28 Lounge starter topics; a second run updates the text and does not add duplicates)
+4. `supabase/migrations/20261029105515_feedback_referral.sql`
+5. `supabase/migrations/20261029105517_empower.sql`
+6. `supabase/migrations/20261029105518_briefing.sql`
+7. `supabase/migrations/20261029105520_ux.sql`
+
+`sql/001_schema.sql` … `sql/007_ux.sql` only point at those files. Do not edit them and do not paste them. Pasting one stops with an error that names the real file.
+
+After the merge that adds these files, open **Table Editor**. You should see tables like `profiles`, `petitions`, `favorites`, `directory_requests`.
+
+**Every later schema change:**
+1. On your computer, in the Civi folder, run `supabase migration new short_name` (install the [Supabase CLI](https://supabase.com/docs/guides/local-development/cli/getting-started) once if you do not have it).
+2. Write the SQL in the new file it creates under `supabase/migrations/`. Use `IF NOT EXISTS`, `CREATE OR REPLACE`, `DROP POLICY IF EXISTS` before `CREATE POLICY`, and `ON CONFLICT DO NOTHING` for seed rows.
+3. Commit, open a pull request, merge to `main`.
+4. Supabase applies only that new file. Do not change a migration that already ran on production. Add another file instead.
+
+Never put the `service_role` key, or any other secret, in a migration or in `supabase/config.toml`. n8n is the only place for the service role key.
+
+> Tip: kapag nag-error ang deploy, huwag gumawa ng bagong file na may parehong pangalan. I-screenshot ang migration name at ang error.
 
 ## Step 3. Google login (OAuth)
 1. Go to https://console.cloud.google.com → create a project "Civi" → **APIs & Services → OAuth consent screen** (External; app name Civi; your email; add `chainnes.com` as authorized domain).
@@ -105,14 +124,14 @@ Update `data/kpis_extra.json` by hand when DBM, BTr or PNP publish new numbers (
 ## Troubleshooting
 | Problem | Fix |
 |---|---|
-| "Unrecognized client_id" when connecting Supabase | You don't connect Supabase through outside apps. Use the dashboard (Step 1–3). |
+| "Unrecognized client_id" | OAuth client mismatch, usually Google (Step 3). Schema deploys through the GitHub integration (Step 2), not through that client id. |
 | Yellow "Demo mode" | `SUPABASE_URL`/`SUPABASE_ANON_KEY` missing or not redeployed. |
 | Google login loops/does nothing | Check redirect URLs in Google Cloud and Supabase (Step 3). |
 | ✨ Ask says "keyword match" | `AI` binding missing; redeploy after adding. |
 | Emails not sending | Resend domain not verified, wrong key in n8n, or user not opted in. |
 | Old version shows | Hard refresh; check `sw.js` cache name was bumped. |
 | git push rejected | `git pull --rebase` first, or `--force-with-lease` after the author fix on your own repo. |
-| SQL error "already exists" | Safe to ignore for `if not exists`; otherwise you ran a file twice out of order. Screenshot it. |
+| SQL error "already exists" | These migrations are written to be re-run. If a merge still errors, screenshot the migration name and the message. Do not rename a file that already ran. |
 | Map tiles slow/blocked | OSM light-use limit: move to MapTiler/Stadia. |
 
 ## Update: AI chatbot and ✨ Ask (Oct 29, 2026)
