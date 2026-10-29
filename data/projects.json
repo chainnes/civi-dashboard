@@ -1,0 +1,443 @@
+{
+ "sample": false,
+ "fetched_at": "2026-10-29T01:17:09.576150+00:00",
+ "source": "PhilGEPS public bid notices (Open Opportunities, first page)",
+ "source_url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashOpportunitiesSearchUI.aspx?menuIndex=3&ClickFrom=OpenOpp&Result=3",
+ "note": "Real public bid notices. Contact persons omitted (RA 10173). DPWH infrastructure/flood-control lists are behind an anti-bot wall, so they are linked, not copied. Not every item is infrastructure.",
+ "links": [
+  {
+   "name": "DPWH Infrastructure Projects (official)",
+   "url": "https://www.dpwh.gov.ph/dpwh/gis/project_monitoring"
+  },
+  {
+   "name": "PhilGEPS (official)",
+   "url": "https://notices.philgeps.gov.ph/"
+  },
+  {
+   "name": "Sumbong sa Pangulo flood control portal (official)",
+   "url": "https://sumbongsapangulo.ph/"
+  }
+ ],
+ "items": [
+  {
+   "id": "pg-13224684",
+   "title": "phase 2..Brgy Fence",
+   "entity": "BARANGAY TUBI-ALA - SURALLAH SOUTH COTABATO",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 195985.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "06/11/2026 10:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "South Cotabato",
+   "ll": [
+    7.2038,
+    124.2378
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13224684&Result=3"
+  },
+  {
+   "id": "pg-13224960",
+   "title": "MATERIALS FOR THE REHABILITATION/IMPROVEMENT OF MULTI-PURPOSE BUILDING OF SITIO ABOG",
+   "entity": "BARANGAY SIMBORIO - PAMPLONA, NEGROS ORIENTAL",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 77550.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "",
+   "ll": [
+    9.739,
+    122.9624
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13224960&Result=3"
+  },
+  {
+   "id": "pg-13225028",
+   "title": "MATERIALS FOR THE REHABILITATION/IMPROVEMENT OF MULTI-PURPOSE BUILDING OF BARANGAY SIMBORIO",
+   "entity": "BARANGAY SIMBORIO - PAMPLONA, NEGROS ORIENTAL",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 116118.75,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "",
+   "ll": [
+    9.739,
+    122.9624
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13225028&Result=3"
+  },
+  {
+   "id": "pg-13225055",
+   "title": "MATERIALS FOR THE CONSTRUCTION OF PATHWAY AT SITIO BUNTOD",
+   "entity": "BARANGAY SIMBORIO - PAMPLONA, NEGROS ORIENTAL",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 72015.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "",
+   "ll": [
+    9.739,
+    122.9624
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13225055&Result=3"
+  },
+  {
+   "id": "pg-13225082",
+   "title": "MATERIALS FOR THE CONSTRUCTION OF PATHWAY AT SITIO COMON",
+   "entity": "BARANGAY SIMBORIO - PAMPLONA, NEGROS ORIENTAL",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 72015.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "",
+   "ll": [
+    9.739,
+    122.9624
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13225082&Result=3"
+  },
+  {
+   "id": "pg-13225121",
+   "title": "MATERIALS FOR THE REHABILITATION OF ABOG FOOTBRIDGE",
+   "entity": "BARANGAY SIMBORIO - PAMPLONA, NEGROS ORIENTAL",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 225925.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "",
+   "ll": [
+    9.739,
+    122.9624
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13225121&Result=3"
+  },
+  {
+   "id": "pg-13225137",
+   "title": "MATERIALS FOR THE IMPROVEMENT OF WATER SYSTEM FROM PROPER TO SITIO KALUBIHAN AND SITIO ARAPILES",
+   "entity": "BARANGAY SIMBORIO - PAMPLONA, NEGROS ORIENTAL",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 131465.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "",
+   "ll": [
+    9.739,
+    122.9624
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13225137&Result=3"
+  },
+  {
+   "id": "pg-13225149",
+   "title": "MATERIALS FOR THE CONSTRUCTION OF SENIOR CITIZEN BUILDING",
+   "entity": "BARANGAY SIMBORIO - PAMPLONA, NEGROS ORIENTAL",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 154220.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "",
+   "ll": [
+    9.739,
+    122.9624
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13225149&Result=3"
+  },
+  {
+   "id": "pg-13269388",
+   "title": "Proposed Installation of 10 Units CCTV Surveillance System",
+   "entity": "BARANGAY KAYQUIT 3 INDANG CAVITE",
+   "category": "Security Surveillance and Detection Equipment",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 134350.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 02:00 PM",
+   "deadline_kind": "Bid closing",
+   "location": "Cavite",
+   "ll": [
+    14.2784,
+    120.8198
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13269388&Result=3"
+  },
+  {
+   "id": "pg-13273948",
+   "title": "SUPPLY & INSTALLATION OF ONE (1) UNIT INDUSTRIAL FAN AT BRGY. MATLANG, ISABEL, LEYTE",
+   "entity": "MUNICIPALITY OF ISABEL, LEYTE",
+   "category": "Industrial Machinery and Equipment",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 751000.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "18/11/2026 10:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "Leyte",
+   "ll": [
+    10.8743,
+    124.7298
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13273948&Result=3"
+  },
+  {
+   "id": "pg-13276801",
+   "title": "1105 CONST. & IMPROVEMENT OF GSO",
+   "entity": "CITY OF ANGELES, PAMPANGA",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 11754586.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "Pampanga",
+   "ll": [
+    15.0231,
+    120.6538
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13276801&Result=3"
+  },
+  {
+   "id": "pg-13276806",
+   "title": "1105 INSTALLATION OF ELEVATOR",
+   "entity": "CITY OF ANGELES, PAMPANGA",
+   "category": "Construction Materials and Supplies",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 2500000.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "Pampanga",
+   "ll": [
+    15.0231,
+    120.6538
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13276806&Result=3"
+  },
+  {
+   "id": "pg-13276809",
+   "title": "1105 OFFICE SUPPLIES (3RD & 4TH QTR.)",
+   "entity": "CITY OF ANGELES, PAMPANGA",
+   "category": "General Merchandise",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 7687206.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "Pampanga",
+   "ll": [
+    15.0231,
+    120.6538
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13276809&Result=3"
+  },
+  {
+   "id": "pg-13276810",
+   "title": "1105 JANITORIAL SUPPLIES (3RD & 4TH QTR.)",
+   "entity": "CITY OF ANGELES, PAMPANGA",
+   "category": "General Merchandise",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 8629563.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "05/11/2026 01:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "Pampanga",
+   "ll": [
+    15.0231,
+    120.6538
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13276810&Result=3"
+  },
+  {
+   "id": "pg-13283329",
+   "title": "Procurement of Motor Vehicles",
+   "entity": "OFFICE OF THE WALI OF BANGSAMORO",
+   "category": "Vehicles",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 5000000.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "06/11/2026 12:00 PM",
+   "deadline_kind": "Bid closing",
+   "location": "Cotabato",
+   "ll": [
+    7.2038,
+    124.2378
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13283329&Result=3"
+  },
+  {
+   "id": "pg-13284757",
+   "title": "SUPPLY AND DELIVERY OF FURNITURES AND OTHER SUPPLIES FOR MUSEO DE BINALONAN",
+   "entity": "MUNICIPALITY OF BINALONAN, PANGASINAN",
+   "category": "Furniture",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 1634670.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "18/11/2026 10:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "Pangasinan",
+   "ll": [
+    16.0307,
+    120.3352
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13284757&Result=3"
+  },
+  {
+   "id": "pg-13284883",
+   "title": "SUPPLY AND INSTALLATION OF AIRCONDITIONING UNITS FOR MUSEO DE BINALONAN",
+   "entity": "MUNICIPALITY OF BINALONAN, PANGASINAN",
+   "category": "Airconditioning and Airconditioning Systems",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 2800000.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "18/11/2026 10:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "Pangasinan",
+   "ll": [
+    16.0307,
+    120.3352
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13284883&Result=3"
+  },
+  {
+   "id": "pg-13299728",
+   "title": "SUPPLY, DELIVERY, AND COMMISSIONING OF LIVELIHOOD EQUIPMENT FOR PROJECT BUTANDING",
+   "entity": "MUNICIPALITY OF DONSOL, SORSOGON",
+   "category": "Industrial Machinery and Equipment",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 1432000.0,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "18/11/2026 02:00 PM",
+   "deadline_kind": "Bid closing",
+   "location": "Sorsogon",
+   "ll": [
+    12.8231,
+    123.8403
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13299728&Result=3"
+  },
+  {
+   "id": "pg-13300127",
+   "title": "PB 01-2027 (EPA-FA) Procurement of Various Drugs and Medicines",
+   "entity": "BICOL REGIONAL HOSPITAL AND MEDICAL CENTER",
+   "category": "Drugs and Medicines",
+   "classification": "Goods",
+   "mode": "Public Bidding",
+   "budget_php": 149990480.72,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "18/11/2026 09:00 AM",
+   "deadline_kind": "Bid closing",
+   "location": "Albay",
+   "ll": [
+    13.2547,
+    123.7504
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13300127&Result=3"
+  },
+  {
+   "id": "pg-13302589",
+   "title": "Upgrading & Rehabilitation of Concrete Pathways Purok I Calixtro",
+   "entity": "BARANGAY SALAMBAO - OBANDO, BULACAN",
+   "category": "Construction Projects",
+   "classification": "Goods - General Support Services",
+   "mode": "Public Bidding",
+   "budget_php": 299991.445,
+   "contractor": null,
+   "contractor_note": "Not yet awarded (open bid). Awardee appears on PhilGEPS after award.",
+   "published": "2026-10-29",
+   "deadline": "06/11/2026 12:00 PM",
+   "deadline_kind": "Bid closing",
+   "location": "Bulacan",
+   "ll": [
+    14.9803,
+    121.0172
+   ],
+   "source": "PhilGEPS Open Opportunities",
+   "url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?menuIndex=3&refID=13302589&Result=3"
+  }
+ ]
+}

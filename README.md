@@ -1,83 +1,100 @@
-# Civi
+# Civi · Philippines Community Intel Hub (beta pilot)
 
-Community Intelligence Hub, the first product from **chainnes** (a solo tech studio in the Philippines).
+Civi is a mobile-first web app (installable PWA) that turns "doom scrolling" into learning about the Philippines: a live map of news, hazards, events and transport; a curated Directory of ~570 verified links; an Academy of step-by-step guides and in-house courses; civic tools (petitions, Sumbong reports, FOI, Project Watch); a respectful community "Usapang Bayan" lounge; and an opt-in Daily Briefing by email or push.
 
-Civi is a national hub for public information. It is meant to gather public updates from across the web — government sites, LGU pages, public advisories, news, and public social posts — and organize them by place and topic. The homepage is now the directory (`index.html`): a mobile-first dashboard of official and community sites, hotlines, and topics. The landing page and waitlist moved to `about.html`. Features on that page are marked **planned**. The product is not open yet. The Philippines drawing is a placeholder, labeled coverage rolling out. It is not a live map and not a list of included places.
+Owner: Charlene "Chai" Cordero · Domain: civi.chainnes.com · Status: closed beta from **Nov 17, 2026**, open beta target **Jan 8, 2027** (backup Jan 12).
 
-Directory copy is in `index.html`, `dashboard.js`, and `data/directory.json`. Landing-page copy is in `about.html`. Waitlist messages and the Supabase placeholders are at the top of `app.js`.
+## License and contributing
 
-## Run locally
+Civi is open source under the [MIT License](LICENSE) (Copyright 2026 chainnes). To contribute, read [CONTRIBUTING.md](CONTRIBUTING.md): fork the repo, copy `.dev.vars.example` to `.dev.vars` (never commit it), and open a small pull request. A maintainer reviews every PR before merge.
 
-From the repository root, so the service worker and manifest resolve:
+## Ground rules (built into the code)
+- **Real data only.** Every figure has a source and an as-of date. No invented stats, earnings or results.
+- **Verified links only.** Each Directory link is checked: `live` (HTTP 2xx/3xx) or `bot-protected` (401/403/429: site up but blocks bots). Dead and parked domains are dropped.
+- **No scraping** of Facebook/Instagram/TikTok. Respect each site's ToS and robots.txt. Facebook events come only from links that users submit.
+- **No keys in the frontend.** Secrets live in Cloudflare env vars or n8n credentials. Never commit `.env`, `.dev.vars`, `.n8n-local-login.txt` or `backups/`.
+- **Privacy (RA 10173).** RLS on every table, minimal data, consent text on every form, salted hashes instead of IPs.
+- **Brand listings are not endorsements.** Promo cards say "Civi doesn't verify individual deals."
+- **Civi never sends email itself.** Emails go through n8n + Resend, only to users who opted in.
 
-```bash
-python3 -m http.server 8080
+## Features
+| Area | What it does |
+|---|---|
+| **Map** (home) | Philippines-only map (buffered inverse mask, no land clipping), smooth fractional zoom, learning labels (region/province/city, toggleable), place search, region stats + real outline (incl. NCR), **Map only** focus mode + per-panel hide toggles, hover cards on desktop, **day/night theme** from Manila sunrise/sunset (Auto/Day/Night), **transport layer** (airports, seaports, LRT/MRT/PNR, bus terminals → official schedule pages + advisories), events from Luma. |
+| **Smart filters** | Collapsible panel: recency, **Location Region › Province › City** tree (Quezon City etc.), Categories, News type, **Event source**, Source type; search box, checkboxes, Select/Unselect all, "Only", chips. Saved in the browser. Bottom sheet on mobile. |
+| **At a Glance** | Collapsible KPI panel: 2026 budget (₱6.793T, DBM), NG debt (₱19.61T end-Aug 2026, BTr), inflation, unemployment, GDP, remittances (link), **PNP focus crimes Q3 2026**, each with source + date. |
+| **Directory** | Carousels by type with "See more", smart "What help do you need?" search (Taglish synonyms + optional Workers AI keywords), favorites, "Request to add your website" form (admin review). Categories include government, officials, civic tech, transport, **Earn & side income (Kumita at raket)**, **Events & things to do**, **Meetups & conferences**, **Promos & sales**, **Must-have apps**, embassies, learning centers, free language courses, **Learn farming (free/paid)**, sports, nature, animals, zoos/pasyalan, scholarships, life & safety and more. |
+| **Academy** | Carousels of lessons + 18 government how-tos (SSS, Pag-IBIG, PhilHealth, passport…) + in-house courses: **Paano Kumita Online** (14 modules) and **7 life/eco/farming courses** (Pagtitipid, Eco-friendly, RA 9003 waste, Prepping, Permaculture, Hydroponics, Urban farming). Each has checklists, official links and as-of dates. Progress is saved on the device. |
+| **Empower** | Petitions, Sumbong (issue reports with EXIF-stripped photos), FOI helper, Project Watch (PhilGEPS), Rights, Scholarships, community events, Impact. |
+| **Lounge** | "Usapang Bayan" community conversations with neutral starter topics and sources; voting, reporting, rate limits. |
+| **Daily Briefing** | Opt-in personalized digest (email via n8n + Resend; optional web push). One-click unsubscribe. |
+| **Help & access** | Start tour, Help/FAQ page, help chatbot (FAQ + optional AI), accessibility options (text size, contrast, reduced motion), 10 languages (English + Tagalog full; others partial, machine-assisted). |
+| **Other** | Favorites / My Saved, Share links, Donate (QR + PayPal.me), Premium waitlist, Simulator. |
+
+## Architecture
+```
+Browser (index.html + js/*.js, Leaflet, Chart.js)  -- no keys
+  │ /data/*.json (static snapshots)       │ /api/* (same origin)
+  ▼                                        ▼
+Cloudflare Pages (static)          Pages Functions (functions/api/*)
+                                     │ SUPABASE_URL + anon key + user JWT cookie → RLS
+                                     │ AI binding (Workers AI): summaries, assist
+                                     ▼
+                              Supabase (Postgres + Auth + Storage, RLS everywhere)
+                                     ▲
+n8n (service_role, schedules) ───────┘  ingest news/events, LawPhil, Daily Briefing → Resend / Web Push
+Python scripts (scripts/*.py) → data/*.json snapshots (run by you, committed)
+```
+**Demo mode:** if `/api` is unreachable (local preview), Civi reads `/data/*.json` and keeps accounts, posts and favorites in localStorage, clearly labeled.
+
+## Setup (short version; full beginner guide: `docs/SETUP_GUIDE_FOR_CHAI.md`)
+1. Supabase project (Singapore) → SQL Editor → run `sql/001` … `007` in order. Enable Email + Google auth.
+2. Fix git author on all commits, create a private GitHub repo, push.
+3. Cloudflare Pages → connect repo (no build, output `/`). Env vars: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `VOTER_SALT`, optional `PAYPAL_URL`, `DONATE_URL`, `KOFI_URL`, `VAPID_PUBLIC_KEY`. Binding: Workers AI as `AI`. Redeploy.
+4. Resend: verify `mail.chainnes.com` (SPF/DKIM). n8n: import the 3 workflows in `n8n/`, add Supabase service_role + Resend credentials there only.
+5. privacy@chainnes.com alias, donate QR images in `assets/donate/`, `PAYPAL_URL`.
+6. Hard refresh after each deploy (`Cmd+Shift+R`).
+
+## Local run
+```
+python3 -m http.server 8799     # demo mode (no /api)
+npx wrangler pages dev .        # with Functions; secrets in .dev.vars (never commit)
 ```
 
-Open http://localhost:8080 for the directory. Open http://localhost:8080/about.html for the landing page and waitlist. Use a local server. Opening `index.html` as a file will not register the service worker.
+## Refresh data
+| Data | Command |
+|---|---|
+| News, KPIs, hazards | `python3 scripts/fetch_data.py && python3 scripts/fetch_hub.py` |
+| Events (Luma; optional Eventbrite/ICS) | `python3 scripts/fetch_events.py` |
+| Directory extra categories | `python3 scripts/directory_more.py` (re-checks every link) |
+| Civic tech + transport links | `python3 scripts/civic_transport.py` |
+| Transport map points | `python3 scripts/build_transport_map.py` (OSM Overpass; occasionally) |
+| Geo boundaries / places | `python3 scripts/build_geo2.py` (rarely) |
+| Gov directory, officials, how-tos | `python3 scripts/build_ux_data.py && python3 scripts/check_links.py` |
+| Budget/debt/crime KPIs | edit `data/kpis_extra.json` by hand with source + date |
+Then bump the cache name in `sw.js`, commit and push.
 
-The waitlist form on `about.html` checks name, email, and role in the browser. Province / City is optional. Until you replace the Supabase placeholders, submit shows an error and does not send anything.
+## Docs
+- `docs/Civi_Project_Documentation.md/.docx`: functional (features, user flows)
+- `docs/TECHNICAL_DOCUMENTATION.md/.docx`: architecture, schema, RLS, functions, n8n, data, i18n, SW, security
+- `docs/CODE_DOCUMENTATION.md/.docx`: every file, key functions, glossary
+- `docs/SETUP_GUIDE_FOR_CHAI.md/.docx`: beginner step-by-step
+- `docs/Civi_Case_Study`, `docs/Civi_Whitepaper`
 
-## Deploy to Cloudflare Pages
+## Known limits
+OSM tiles are for light use only (switch to MapTiler/Stadia before open beta). Non-Tagalog dialects are partial and machine-assisted. Directory requests and reports are reviewed in the Supabase Table Editor (no admin page yet). Some government sites block automated checks; they are marked "site up".
 
-No build step. Framework preset: **None**.
+## Update: Healthy lifestyle (Oct 29, 2026)
+New Academy course **Healthy lifestyle at nutrisyon** (`data/howto_health.json`, 6 modules: Pinggang Pinoy, tubig at tulog, galaw, mental health with NCMH 1553, checkup + PhilHealth YAKAP, food safety/bawas asukal-asin/tipid meals) and Directory set **Health & wellness apps/sites** (12 cards). Not medical advice; consult a doctor. SW cache `civi-beta-8`.
 
-1. Push this repository to the Git host connected to Cloudflare.
-2. Workers & Pages → Create → Pages → Connect to Git.
-3. Build command: leave empty.
-4. Build output directory: `/` (the repository root).
-5. Deploy.
+## Update: UX batch 4 (Oct 29, 2026)
+- **Theme everywhere:** Auto/Day/Night selector in the top bar (Auto follows Manila sunrise/sunset). Applies to every page, popups, menus, tooltips and modals; checked for WCAG AA text contrast in both themes.
+- **Weather today** on the map dashboard: Open-Meteo forecast model (keyless, CC BY 4.0) for Manila or the selected region, with source + time, plus the official PAGASA link.
+- **Dashboard layout:** semi-transparent glass panels docked left/right; the Panels menu lives only on the map, anchored to its button, and closes on outside click.
+- **Filters:** tidy collapsible groups, ranked place suggestions (max 8), auto-zoom when you tick/untick places, "Show points" toggle to hide all points.
+- **Readable popups** (up to 380 px), cleaner **Action Map** legend docked in the right panel ("Community event"; the source is in each point's details).
+- **Featured strip** at the top of every page (`data/featured.json`).
+- **Academy:** category chips, search, and ✨ Ask (Workers AI via `/api/assist` mode `academy`, keyword fallback).
+- Calm motion (CSS only, transform/opacity, 150–300 ms, off with reduced motion). SW cache `civi-beta-9`.
 
-Direct upload of the same files also works:
-
-```bash
-npx wrangler pages deploy . --project-name civi
-```
-
-The repository root also contains later-phase folders (`apps/`, `services/`, `edge/`, `docs/`). A root deploy publishes those paths too. To publish only the site, upload `index.html`, `about.html`, `styles.css`, `app.js`, `dashboard.js`, `data/`, `manifest.json`, `sw.js`, and `icons/`.
-
-## Supabase values
-
-1. Create a Supabase project.
-2. Run `supabase/waitlist.sql` in the SQL editor. If the table already exists, that script adds a nullable `location` column and does not drop rows.
-3. In `app.js`, replace the two constants at the top:
-
-```js
-const SUPABASE_URL = "https://YOUR_PROJECT.supabase.co";
-const SUPABASE_ANON_KEY = "your-anon-key";
-```
-
-Use **Project URL** and the **anon** key (Project Settings → API). The form posts to `{SUPABASE_URL}/rest/v1/waitlist` with `name`, `email`, `role`, and `location` (`null` when Province / City is left blank).
-
-Put only the anon key in `app.js`. It is visible in the browser. Row-level security allows insert and does not allow anon to select, update, or delete. Never put the service role key in this file. Read rows from the Supabase table editor.
-
-`supabase/schema.sql` is a separate, later schema (profiles, posts, insights). The landing page does not use it. The waitlist table still has a nullable `barangay` column from the first schema. The form does not ask for it.
-
-## What is placeholder
-
-| Item | Where | Notes |
-| --- | --- | --- |
-| `SUPABASE_URL` | `app.js` | `https://YOUR_PROJECT.supabase.co` |
-| `SUPABASE_ANON_KEY` | `app.js` | `your-anon-key` |
-| Philippines map | Coverage section on `about.html` | A drawing of Luzon, Visayas, and Mindanao, not a map API and not an official boundary |
-| App icons | `icons/` | Simple generated marks, not a finished logo |
-| Features | Features section on `about.html` | Each one is labeled **planned** |
-
-Public contact on the directory footer and the about page is `hello@chainnes.com`.
-
-Do not add statistics, testimonials, partner logos, endorsements, or user counts unless they are real.
-
-## Other folders
-
-These are not required to run the landing page.
-
-| Path | What it is |
-| --- | --- |
-| `apps/web` | Internal Next.js preview. Not the public site. |
-| `services/ai` | Later FastAPI ingest service |
-| `edge/` | Cloudflare Worker proxy for that later service |
-| `n8n/` | Sample ingest workflow |
-| `docs/CHAINNES.md` | Studio notes |
-| `docs/PHASE1.md` | How the AI service talks to Supabase |
-
-`docker compose up --build` still starts the AI service and n8n when `.env` is filled from `.env.example`. That stack is separate from this page.
+**AI chatbot / ✨ Ask:** needs only the Cloudflare **Workers AI binding named `AI`**, with no external API key. Cloudflare → Workers & Pages → your Civi project → Settings → Bindings → Add → Workers AI → Variable name `AI` → Save → redeploy. Without it, Civi uses its built-in keyword/FAQ matching.

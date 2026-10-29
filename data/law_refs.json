@@ -1,0 +1,2680 @@
+{
+ "fetched_at": "2026-10-28T13:14:45.335441+00:00",
+ "items": [
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12322",
+   "date": "August 2, 2026",
+   "title": "An Act Allowing the Department of Education the Flexibility to Determine the Pedagogical Approaches to be Implemented in the Basic Education Curriculum, Amending for the Purpose Section 5 of Republic Act No. 10533, or the \"Enhance Basic Education Act of 2013\"",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12322_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12321",
+   "date": "July 22, 2026",
+   "title": "An Act Institutionalizing Support for Public Basic Education Schools in Geographically Isolated and Disadvantaged Areas (GIDA) and Underserved Communities, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12321_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12320",
+   "date": "May 26, 2026",
+   "title": "An Act Declaring the Month of April of Every Year as the \"Philippine Veterans' Month\"",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12320_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12319",
+   "date": "May 18, 2026",
+   "title": "An Act Granting Philippine Citizenship to Elizabeth Jeanetter Means",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12319_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12318",
+   "date": "May 18, 2026",
+   "title": "An Act Granting Philippine Citizenship to Maodo Diouf",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12318_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12317",
+   "date": "March 25, 2026",
+   "title": "An Act Resetting the First Regular Elections in the Bangsamoro Autonomous Region in Muslim Mindanao, Amending for the Purpose Section 13, Article XVI of Republic Act No. 11054, as Amended, Otherwise Known as the \"Organic Law for the Bangsamoro Autonomous Region in Muslim Mindanao\"",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12317_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12316",
+   "date": "March 25, 2026",
+   "title": "An Act Authorizing the President to Suspend or Reduce Excise Tax on Petroleum Products, Amending for the Purpose Section 148 of the National Internal Revenue Code of 1997, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12316_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12315",
+   "date": "March 4, 2026",
+   "title": "An Act Extending the Term of the Second Congressional Commission on Education, Amending for the Purpose Republic Act No. 11899 or the “Second Congressional Commission on Education (EDCOM II) Act”",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12315_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12314",
+   "date": "January 5, 2026",
+   "title": "Appropriating Funds for the Operation of the Government of the Republic of the Philippines From January One to December Thirty One, Two Thousand and Twenty Six",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12314_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12314",
+   "date": "January 5, 2026",
+   "title": "An Act Appropriating Funds for the Operation of the Government of the Republic of the Philippines From January One to December Thirty One, Two Thousand and Twenty Six",
+   "url": "https://lawphil.net/statutes/repacts/ra2026/ra_12314_2026.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12313",
+   "date": "October 23, 2025",
+   "title": "An Act Institutionalizing the Lifelong Learning Development Framework, Broadening the Mandate of the Philippine Qualifications Framework – National Coordinating Council (PQF-NCC), Amending for the Purpose Republic Act No. 10968, Otherwise Known as the “PQF Act”, Appropriating Funds Therefor and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12313_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12312",
+   "date": "October 23, 2025",
+   "title": "An Act Banning and Declaring Illegal Offshore Gaming Operations in the Philippines and Other Operations Related Thereto, Repealing for the Purpose Republic Act Numbered Eleven Thousand Five Hundred Ninety, Otherwise Known as “An Act Taxing Philippine Offshore Gaming Operations”, and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12312_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12311",
+   "date": "October 3, 2025",
+   "title": "An Act Renewing For Another Twenty-five (25) Years The Franchise Granted To Intercontinental Broadcasting Corporation Under Republic Act No. 8954, Entitled “An Act Granting The Intercontinental Broadcasting Corporation A Franchise To Construct, Install, Establish, Operate And Maintain Radio And Television Broadcasting Stations In The Philippines”",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12311_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12310",
+   "date": "October 3, 2025",
+   "title": "An Act Expanding The Philippine Science High School (PSHS) System, Further Strengthening Its Governance And Management, Repealing For The Purpose Republic Act No. 8496 Or The “Philippine Science High School System Act Of 1997”, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12310_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12309",
+   "date": "September 28, 2025",
+   "title": "An Act Granting Free Funeral Services to Poor Families, Appropriating Funds Therefor, and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12309_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12308",
+   "date": "September 25, 2025",
+   "title": "An Act Enhancing Animal Industry Development and Competitiveness, Strengthening the Bureau of Animal Industry, and Creating for the Purpose the Animal Competitiveness Enhancement Fund",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12308_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12307",
+   "date": "September 18, 2025",
+   "title": "An Act Creating Eleven (11) Additional Branches of the Municipal Trial Court in Cities in the Eleventh Judicial Region to Be Stationed in the City of Davao, and Appropriating Funds Therefor, Amending for the Purpose Section 29 of Batas Pambansa Blg. 129, Otherwise Known as “The Judiciary Reorganization Act of 1980\", as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12307_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12306",
+   "date": "September 18, 2025",
+   "title": "An Act Granting the Pampanga Rural Electric Service Cooperative (PRESCO), Inc. a Franchise to Construct, Install, Establish, Operate. Own, Manage and Maintain a Distribution System for the Conveyance of Electric Power to the End-users in Thirty-four (34) Barangays in the Municipalities of Mexico. Arayat, Sta. Ana, and Magalang, Province of Pampanga",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12306_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12305",
+   "date": "September 18, 2025",
+   "title": "Providing for a Comprehensive Legal Framework for Nuclear Safety, Security, and Safeguards in the Peaceful Utilization of Nuclear Energy in the Philippines. Establishing the Philippine Atomic Energy Regulatory Authority, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12305_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12304",
+   "date": "September 18, 2025",
+   "title": "An Act Providing for Equitable Access to Shari'ah Courts Amending for the Purpose REpublic Act No. 9997, Otherwise Known as the \"National Commission on Muslim Filipinos Act of 2006\",",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12304_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12303",
+   "date": "September 12, 2025",
+   "title": "An Act Granting Benguet Electric Cooperative (BENECO) a Franchise to Construct, Install, Establish, Operate, Own, Manage and Maintain a Distribution System for the Conveyance of Electric Power to the End-users in the Municipalities of Atok, Bakun, Bokod, Buguias, Itogon, Kabayan, Kapangan, Kibungan, La Trinidad, Mankayan, Sablan, Tuba, and Tublay, Province of Benguet: and in Baguio City",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12303_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12302",
+   "date": "September 12, 2025",
+   "title": "An Act Granting the Aklan Electric Cooperative (AKELCO), Inc. a Franchise to Construct, Install, Establish, Operate, Own, Manage and Maintain a Distribution System for the Conveyance of Electric Power to the End-users in the Seventeen (17) Municipalities of the Province of Aklan; the Municipalities of Pandan and Libertad of the Province of Antique; and in Barangay Damayan, Municipality of Sapian, Province of Capiz",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12302_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12297",
+   "date": "September 15, 2025",
+   "title": "An Act Establishing the Baybay City High School for Sports in Baybay City, Province of Leyete, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12297_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12286",
+   "date": "September 8, 2025",
+   "title": "An Act Converting the Guimaras State University Mosqueda and Baterna Extension Campuses Located in the Municipalities of Jordan and San Lorenzo, Respectively, Both in the Province of Guimaras, Into Regular Campuses and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12286_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12285",
+   "date": "September 7, 2025",
+   "title": "An Act Converting the Extension Campus of the Cebu Normal University in the Municipality of Balamban, Province of Cebu Into a Regular Campus and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12285_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12284",
+   "date": "September 7, 2025",
+   "title": "An Act Converting the Extension Campus of the Cebu Normal University in the Municipality of Medellin, Province of Cebu Into a Regular Campus and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12284_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12283",
+   "date": "September 7, 2025",
+   "title": "An Act Establishing a College of Medicine in the Sultan Kudarat State University in the City of Tacurong, Province of Sultan Kudarat and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12283_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12282",
+   "date": "September 7, 2025",
+   "title": "An Act Converting the Zamboanga Del Sur School of Arts and Trades Located in Barangay Kawit, Pagadian City, Province of Zamboanga Del Sur Into a State College to Be Known as the Zamboanga Del Sur Polytechnic State College and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12282_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12281",
+   "date": "September 7, 2025",
+   "title": "An Act Renaming Barangay New Alabang Village in the City of Muntinlupa as Barangay Ayala Alabang",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12281_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12280",
+   "date": "September 7, 2025",
+   "title": "An Act Creating a Barangay in the City of San Fernando, Province of Pampanga, to Be Known as Barangay Pulung Bulu",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12280_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12279",
+   "date": "September 7, 2025",
+   "title": "An Act Creating a Barangay in the Municipality of Norzagaray, Province of Bulacan to Be Known as Barangay Friendship Village Resources or Barangay FVR",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12279_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12278",
+   "date": "September 7, 2025",
+   "title": "An Act Granting a Franchise to First Lagna Electric Cooperative, Inc. (FLECO) to Construct, Install, Establish, Operate, Own, Manage and Maintain Distribution Systems for the Conveyance of Electric Power to the End-users in the Municipalities of Cavinti, Pagsanjan, Lumban, Kalayaan, Paete, Pakil, Pangil, Siniloan, Famy, Mabitac, and Sta. Maria, Province of Laguna",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12278_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12277",
+   "date": "September 7, 2025",
+   "title": "An Act Granting the Camarines Sur Iv Electric Cooperative, Inc. (CASURECO IV) a Franchise to Construct, Install, Establish, Operate, Own, Manage and Maintain Distribution System for the Conveyance of Electric Power to the End-users in the Municipalities of Ocampo, Tigaon, Sagñay, Goa, San Jose, Lagonoy, Presentacion, Garchitorena, and Caramoan, in the Province of Camarines Sur",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12277_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12276",
+   "date": "September 7, 2025",
+   "title": "An Act Renewing for Another Twenty-five (25) Years the Franchise Granted to PEC Broadcasting Corporation Under Republic Act No. 8685. Entitled \"An Act Granting to Pec Broadcasting Corporation, a Franchise to Construct, Establish, Install, Maintain and Operate Radio and Television Stations in the Philippines”",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12276_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12275",
+   "date": "September 7, 2025",
+   "title": "An Act Declaring the Kuyamis Festival as the Official Festival of the Province of Misamis Oriental",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12275_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12274",
+   "date": "September 7, 2025",
+   "title": "An Act Declaring April 1 of Every Year a Special Working Holiday in the Municipality of Sta. Cruz, Province of Occidental Mindoro, to Be Known as \"Araw Ng Sta. Cruz,\" in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12274_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12273",
+   "date": "September 7, 2025",
+   "title": "An Act Declaring April 24 of Every Year a Special Working Holiday in the Municipality of Sulop, Province of Davao Del Sur, to Be Known as \"Araw Ng Sulop\", in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12273_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12272",
+   "date": "September 7, 2025",
+   "title": "An Act Declaring October 5 of Every Year a Special Working Holiday in the Municipality of Sta. Cruz, Province of Davao Del Sur, to Be Known as \"Araw Ng Sta. Cruz', in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12272_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12271",
+   "date": "September 7, 2025",
+   "title": "An Act Declaring January 16 of Every Year a Special Non-working Holiday in the City of Navotas in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12271_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12270",
+   "date": "September 7, 2025",
+   "title": "An Act Declaring June 22 of Every Year a Special Working Holiday in the Municipality of Matanao, Province of Davao Del Sur, in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12270_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12269",
+   "date": "September 7, 2025",
+   "title": "An Act Declaring May 28 of Every Year a Special Working Holiday in the Municipality of Malalag, Province of Davao Del Sur. to Be Known as \"Araw Ng Malalag',In Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12269_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12268",
+   "date": "September 7, 2025",
+   "title": "An Act Declaring June 18 of Every Year a Special Working Holiday in the Municipality of Kiblawan, Province of Davao Del Sur, in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12268_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12267",
+   "date": "September 7, 2025",
+   "title": "An Act Creating Four (4) Additional Branches of the Regional Trial Court in the Fourth Judicial Region, Two (2) of Which to Be Stationed in the Municipality of Coron and One (1) Each to Be Stationed in the Municipalities of Brooke's Point and Roxas, All in the Province of Palawan, Amending for the Purpose Section 14(E) of Batas Pambansa Blg. 129, Otherwise Known as \"The Judiciary Reorganization Act of 1980\", as Amended and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12267_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12266",
+   "date": "September 7, 2025",
+   "title": "An Act Creating One (1) Additional Branch of the Regional Trial Court in the Ninth Judicial Region to Be Stationed in the Municipality of Labason. Province of Zamboanga Del Norte, and Appropriating Funds Therefor, Amending for the Purpose Section 14(J) of Batas Pambansa Blg. 129, Otherwise Known as \"The Judiciary Reorganization Act of 1980\". as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12266_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12265",
+   "date": "September 7, 2025",
+   "title": "An Act Recognizing Singapore School Manila Green Campus as An Educational Institution of International Character, and Granting Certain Prerogatives Conducive to Its Development and Growth",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12265_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12264",
+   "date": "September 5, 2025",
+   "title": "An Act Recognizing Singapore School Manila as An Educational Institution of International Character, and Granting Certain Prerogatives Conducive to Its Development and Growth",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12264_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12263",
+   "date": "September 5, 2025",
+   "title": "An Act Recognizing Singapore School Clark as An Educational Institution of International Character, and Granting Certain Prerogatives Conducive to Its Development and Growth",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12263_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12262",
+   "date": "September 5, 2025",
+   "title": "An Act Recognizing Singapore School Cebu as An Educational Institution of International Character, and Granting Certain Prerogatives Conducive to Its Development and Growth",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12262_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12261",
+   "date": "September 5, 2025",
+   "title": "An Act Establishing in the Municipality of Liloy, Province of Zamboanga Del Norte, a Level Ii General Hospital to Be Known as the Liloy General Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12261_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12260",
+   "date": "September 5, 2025",
+   "title": "An Act Establishing in the Municipality of San Miguel, Province of Zamboanga Del Sur. a District Hospital to Be Known as the Zamboanga Del Sur Second District Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12260_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12259",
+   "date": "September 5, 2025",
+   "title": "An Act Converting the Patag Elementary Schoolin Barangay Patag, Municipality of Irosin, Province of Sorsogon Into An Integrated School to Be Known as the Patag Integrated School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12259_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12258",
+   "date": "September 5, 2025",
+   "title": "An Act Establishing a National Science High School in the Municipality of Tanay, Province of Rizal, to Be Known as the Tanay National Science High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12258_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12257",
+   "date": "September 5, 2025",
+   "title": "An Act Converting the Alegria Elementary School in Barangay Alegria, Municipality of Barcelona, Province of Sorsogon, Into An Integrated School to Be Known as the Alegria Integrated School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12257_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12256",
+   "date": "September 5, 2025",
+   "title": "An Act Establishing a National High School in Barangay Doos Del Norte, Municipality of Hindang, Province of Leyte to Be Known as the Doos Del Norte National High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12256_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12255",
+   "date": "September 5, 2025",
+   "title": "An Act Declaring the Philippine State College of Aeronautics as the National Professional Institution for Aviation, Renaming It as the National Aviation Academy of the Philippines, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12255_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12254",
+   "date": "September 5, 2025",
+   "title": "An Act Institutionalizing the Transition of the Government to E-Governance, Strengthening the ICT Academy, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12254_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12253",
+   "date": "September 5, 2025",
+   "title": "An Act Enhancing the Fiscal Regime for the Large-scale Metallic Mining Industry, Amending for the Purpose Sections 34(B), 287, and the Subjects of Title VI and Chapter VII Thereof, and Creating New Sections 151-a, 151-b, 151-c, 151-d, and 287-a, All Under Republic Act No. 8424, Otherwise Known as the National Internal Revenue Code of 1997, as Amended, Appropriating Funds Therefor, and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12253_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12252",
+   "date": "September 3, 2025",
+   "title": "An Act Liberalizing the Lease of Private Lands By Foreign Investors, Establishing the Stability of Long-term Lease Contracts, Amending for the Purpose of Republic Act No. 7652, Wisewiese Known as the \"Investors’ Lease Act\"",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12252_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12251",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring September 21 of Every Year a Special Working Holiday in the Municipality of San Mateo, Province of Rizal, to Be Known as \"Araw Ng Bayan Ng San Mateo\", in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12251_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12250",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring August 30 of Every Year a Special Working Holiday in the City of San Juan, to Be Known as \"Araw Ng Pinaglabanan\", in the Commemoration of the Battle of Pinaglabanan, Which Occurred on August 30, 1896",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12250_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12249",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring June 24 of Every Year a Special Working Holiday in the Municipality of Balayan, Province of Batangas, in Celebration of the “Parada and Lechon”",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12249_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12248",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring June 15 of Every Year a Special Non-working Holiday in the City of General Santos in Commemoration of Its Charter Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12248_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12247",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring September 18 of Every Year a Special Working Holiday in the Municipality of Bansalan, Province of Davao Del Sur, in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12247_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12246",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring March 7 of Every Year a Special Working Holiday in the Island Garden City of Samal, Province of Davao Del Norte, in Commemoration of Its Foundation Day",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12246_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12245",
+   "date": "August 29, 2025",
+   "title": "An Act Creating Two (2) Additional Branches of the Regional Trial Court in the Second Judicial Region to Be Stationed in the City of Ilagan and in the Municipality of Tumauini, Province of Isabela, and Appropriating Funds Therefor, Amending for the Purpose Section 14 (B) of Batas Pambansa Blg. 129, Otherwise Known as “The Judiciary Reorganization Act of 1980”, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12245_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12244",
+   "date": "August 29, 2025",
+   "title": "An Act Creating Two (2) Additional Branches of the Municipal Trial Court in the Cities in the Eleventh Judicial Region to Be Stationed in the City of Tagum, Province of Davao Del Norte, and Appropriating Funds Therefor, Amending for the Purpose Section 29 of Batas Pambansa Blg. 129, Otherwise Known as “The Judiciary Reorganization Act of 1980”, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12244_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12243",
+   "date": "August 29, 2025",
+   "title": "An Act Creating Two (2) Additional Branches of the Regional Trial Court and Two (2) Additional Branches of the Municipal Trial Court in the Cities in the Eleventh Judicial Region to Be Stationed in the City of Mati, Province of Davao Oriental, and Appropriating Funds Therefor, Amending for the Purpose Section 14 (L) and Section 29 of Batas Pambansa Blg. 129, Otherwise Known as “The Judiciary Reorganization Act of 1980”, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12243_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12242",
+   "date": "August 29, 2025",
+   "title": "An Act Creating One (1) Additional Branch of the Regional Trial Court in the Second Judicial Region to Be Stationed in the Municipality of Alicia, Province of Isabela, and Appropriating Funds Therefor, Amending for the Purpose Section 14 (B) of Batas Pambansa Blg. 129, Otherwise Known as “The Judiciary Reorganization Act of 1980”, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12242_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12241",
+   "date": "August 29, 2025",
+   "title": "An Act Creating One (1) Additional Branch of the Regional Trial Court in the Seventh Judicial Region to Be Stationed in the Municipality of Moalboal, Province of Cebu, and Appropriating Funds Therefor, Amending for the Purpose Section 14 (H) of Batas Pambansa Blg. 129, Otherwise Known as “The Judiciary Reorganization Act of 1980”, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12241_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12240",
+   "date": "August 29, 2025",
+   "title": "An Act Establishing in the Municipality of Baler, Province of Aurora, a Level Iii General Hospital to Be Known as the Aurora Medical Center, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12240_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12239",
+   "date": "August 29, 2025",
+   "title": "An Act Establishing a High School for Sports in the Municipality of Bagac, Province of Bataan to Be Known as the Bataan High School for Sports, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12239_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12238",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring a Waters Surrounding Panaon Island Situated in the Province of Southern Leyte, a Protected Seascape Under the National Integrated Protected Areas System, to Be Referred to as the Panaon Island Protected Seascape, Providing for Its Management, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12238_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12237",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring a Parcel of Land Located in the Municipalities of Mayantoc and San Jose in the Province of Tarlac, a Protected Area With the Category of Protected Landscape Under the National Integrated Protected Areas System, to Be Referred to as the Mt. Sawtooth Protected Landscape, Providing for Its Management, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12237_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12236",
+   "date": "August 29, 2025",
+   "title": "An Act Declaring Maasin City and the Municipalities of Malitbog and Padre Burgos, All in the Province of Southern Leyte, as Tourism Zones",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12236_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12235",
+   "date": "August 29, 2025",
+   "title": "An Act Amending Sections 134 and 168 of Republic Act No. 8424, Otherwise Known as the National Internal Revenue Code of 1997, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12235_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12234",
+   "date": "August 24, 2025",
+   "title": "An Act Establishing A Comprehensive and Inclusive Data Transmission and Connectivity Framework For The Philippines",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12234_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12233",
+   "date": "August 14, 2025",
+   "title": "An Act Defining the Scope and Extent of the Fiscal Autonomy of the Judicial Branch of the Government and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12233_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12232",
+   "date": "August 13, 2025",
+   "title": "An Act Setting the Term of Office of Barangay Officials and Members of the Sangguniang Kabataan, and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12232_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12231",
+   "date": "August 4, 2025",
+   "title": "An Act Optimizing The National Government For Efficient Public Service Delivery",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12231_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12230",
+   "date": "August 4, 2025",
+   "title": "An Act Declaring A Parcel of Land Located In The Municipality of San Francisco In The Province of Quezon, A Protected Area With The Category of Protected Landscape Under The National Integrated Protected Areas System, To Be Referred To As The San Francisco Protected Landscape, Providing For Its Management, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12230_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12229",
+   "date": "July 23, 2025",
+   "title": "An Act Declaring A Parcel of Land Located In The Municipality of San Francisco In The Province of Quezon, A Protected Area With The Category of Protected Landscape Under The National Integrated Protected Areas System, To Be Referred To As The San Francisco Protected Landscape, Providing For Its Management, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12229_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12228",
+   "date": "July 9, 2025",
+   "title": "An Act Declaring The Seventh Day of November of Every Year A Special National Working Holiday In Commemoration of The Establishment of The First Philippine Mosque and The Introduction of Islam In The Philippines",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12228_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12227",
+   "date": "July 9, 2025",
+   "title": "An Act Declaring A Parcel of Land Located In The Municipalities of Polangui and Oas, and Cities of Ligao and Tabaco, In The Province of Albay, A Protected Area With The Category of Protected Landscape Under The National Integrated Protected Areas System, To Be Referred To As The Mt. Masaraga Protected Landscape, Providing For Its Management, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12227_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12226",
+   "date": "July 9, 2025",
+   "title": "An Act Declaring A Parcel of Land Located In The Municipality of San Andres In The Province of Quezon, A Protected Area With The Category of Protected Landscape and Seascape Under The National Integrated Protected Areas System, To Be Referred To As The Alibijaban Protected Landscape and Seascape, Providing For Its Management, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12226_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12225",
+   "date": "July 9, 2025",
+   "title": "An Act Declaring A Parcel of Land Located In The Municipality of Nueva Valencia In The Province of Guimaras, A Protected Area With The Category of Natural Park Under The National Integrated Protected Areas System, To Be Referred To As The Taklong and Tandog Group of Islands Natural Park, Providing For Its Management, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12225_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12224",
+   "date": "June 18, 2025",
+   "title": "An Act Declaring the First Day of February of Every Year as the National Day of Awareness on Hijab and Other Traditional Garments and Attire",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12224_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12223",
+   "date": "June 5, 2025",
+   "title": "An Act Establishing a National High School in Barangay Kasanyanga, Zamboanga City to Be Known as the Kasanyanga National High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12223_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12222",
+   "date": "June 5, 2025",
+   "title": "An Act Establishing a National High School in Barangay Tumitus, Zamboanga City to Be Known as the Tumitus National High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12222_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12221",
+   "date": "June 5, 2025",
+   "title": "An Act Establishing a National High School in Barangay Palusapis, Science City of Muñoz, Province of Nueva Ecija to Be Known as the Inday Melencio National High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12221_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12220",
+   "date": "May 29, 2025",
+   "title": "An Act Declaring July 8 of Every Year a Special Working Holiday in the City of Isabela, Province of Basilan, in Celebration of the Feast of St. Elizabeth of Portugal, to Be Known as Fiesta Alegria De Isabela",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12220_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12219",
+   "date": "May 29, 2025",
+   "title": "An Act Declaring October 27 of Every Year a Special Working Holiday in the Province of Sarangani in Recognition of the Unique Contribution of the Indigenous Peoples of Sarangani to the Rich and Diverse Cultural Heritage of the Philippines",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12219_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12218",
+   "date": "May 29, 2025",
+   "title": "An Act Declaring January 6 of Every Year a Special Working Holiday in Quezon City, to Be Known as “Tandang Sora Day”, in Commemoration of the Birth Anniversary of Melchora Aquino, Also Known in Philippine History as the “Mother of the Katipunan”",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12218_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12217",
+   "date": "May 29, 2025",
+   "title": "An Act Declaring September 14 of Every Year a Special Working Holiday in the Municipality of Sta. Cruz, Province of Occidental Mindoro, in Celebration of the “Feast Day of the Holy Cross”",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12217_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12216",
+   "date": "May 29, 2025",
+   "title": "An Act Strengthening the National Housing Authority By Extending Its Corporate Term and Rationalizing Its Powers, Repealing Presidential Decree No. 757, Series of 1975, as Amended, and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12216_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12215",
+   "date": "May 29, 2025",
+   "title": "An Act Regulating the Practice of the Agriculture Profession in the Philippines, Creating for the Purpose a Professional Regulatory Board for Agriculturists, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12215_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12214",
+   "date": "May 29, 2025",
+   "title": "An Act Amending Sections 22, 24, 25, 27, 28, 32, 34, 38, 39, 42, 51, 52, 56, 57, 127, 149, 174, 176, 179, 190, 199, and 259 of Republic Act No. 8424, Otherwise Known as the National Internal Revenue Code of 1997, as Amended, and for Other Purpose",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12214_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12213",
+   "date": "May 21, 2025",
+   "title": "An Act Increasing the Bed Capacity of the Southern Tagalog Regional Hospital in the City of Bacoor, Province of Cavite, From One Hundred (100) to Three Hundred (300) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12213_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12212",
+   "date": "May 21, 2025",
+   "title": "An Act Increasing the Bed Capacity of the Wao District Hospital in the Municipality of Wao, Province of Lanao Del Sur, From Fifty (50) to One Hundred (100) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12212_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12211",
+   "date": "May 21, 2025",
+   "title": "An Act Establishing in the City of Lucena, Province of Quezon, a General Hospital to Be Known as the Lucena City Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12211_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12210",
+   "date": "May 21, 2025",
+   "title": "An Act Increasing the Bed Capacity of the Philippine General Hospital From One Thousand Three Hundred Thirty-four (1,334) to Two Thousand Two Hundred (2,200) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12210_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12209",
+   "date": "May 8, 2025",
+   "title": "An Act Rationalizing the Safety Measures and Penalties Relative to the Operation of Motorcycles, Amending for the Purpose Republic Act No. 11235, Otherwise Known as the ‘Motorcycle Crime Prevention Act’",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12209_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12208",
+   "date": "May 8, 2025",
+   "title": "An Act Establishing in the City of Calamba, Province of Laguna, a General Hospital to Be Known as Calamba City General Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12208_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12207",
+   "date": "May 8, 2025",
+   "title": "An Act Increasing the Bed Capacity of the Amai Pakpak Medical Center In the City of Marawi, Province of Lanao Del Sur, From Four Hundred (400) To Eight Hundred (800) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12207_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12206",
+   "date": "May 8, 2025",
+   "title": "An Act Establishing In the Municipality of Ramon Magsaysay, Province of Zamboanga Del Sur, A District Hospital To Be Known As Zamboanga Del Sur First District Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12206_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12205",
+   "date": "May 8, 2025",
+   "title": "An Act Increasing the Bed Capacity of the Laguna Provincial Hospital – San Pedro District Hospital In the City of San Pedro, Province of Laguna, From Fifteen (15) To Fifty (50) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12205_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12204",
+   "date": "May 8, 2025",
+   "title": "An Act Increasing the Bed Capacity of the Amang Rodriguez Memorial Medical Center In the City of Marikina, Metro Manila, From Five Hundred (500) To One Thousand (1,000) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12204_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12203",
+   "date": "May 8, 2025",
+   "title": "An Act Increasing the Bed Capacity of the Region 1 Medical Center In the City of Dagupan, Province of Pangasinan, From Six Hundred (600) To One Thousand Five Hundred (1,500) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12203_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12202",
+   "date": "May 8, 2025",
+   "title": "An Act Granting Philippine Citizenship To Job Callarackal Oommen",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12202_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12201",
+   "date": "May 8, 2025",
+   "title": "An Act Granting Philippine Citizenship To Grace Tan To",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12201_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12200",
+   "date": "May 8, 2025",
+   "title": "An Act Declaring November 12 of Every Year A Special Non-working Holiday In the City of Valenzuela, In Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12200_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12199",
+   "date": "May 8, 2025",
+   "title": "An Act Further Strengthening the Early Childhood Care and Development System, Repealing For the Purpose Republic Act No. 10410, Otherwise Known As the ‘Early Years Act (EYA) of 2013’, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12199_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12198",
+   "date": "May 8, 2025",
+   "title": "An Act Estblishing A National High School In Barangay Latuan, Zamboanga City To Be Known As the Latuan National High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12198_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12197",
+   "date": "May 8, 2025",
+   "title": "An Act Establishing A National High School In Barangay Curuan, Zamboanga City To Be Known As the Sapa Manok Curuan National High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12197_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12196",
+   "date": "May 8, 2025",
+   "title": "An Act Separating the Vitali National High School – Sinoropan Annex In Barangay Licomo, Zamboanga City, From the Vitali National High School, Converting It Into An Independent National High School To Be Known As the Sinoropan National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12196_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12195",
+   "date": "May 8, 2025",
+   "title": "An Act Separating the Pasay City North High School – Tramo Campus In Barangay 57, Tramo, Pasay City, Metro Manila From the Pasay City North High School, Converting It Into An Independent National High School To Be Known As the Pasay City National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12195_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12194",
+   "date": "May 2, 2025",
+   "title": "An Act Upgrading the District Office of the Land Transportation Office In Ligao City, Province of Albay, From A Class “D” To A Class “B” District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12194_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12193",
+   "date": "May 2, 2025",
+   "title": "An Act Upgrading the Office of the Land Transportation Office (LTO) In the City of Baguio Into A Class “A” District Office, Providing Positions Thereto, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12193_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12192",
+   "date": "May 2, 2025",
+   "title": "An Act Upgrading the District Office of the Land Transportation Office Located In Laoag City, Province of Ilocos Norte, Into A Class “A” District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12192_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12191",
+   "date": "May 2, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office In the Municipality of Bayambang, Province of Pangasinan, Into A Class “C” District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12191_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12190",
+   "date": "May 2, 2025",
+   "title": "An Act Upgrading the Classification of the Partido District Office of the Land Transportation Office In the Municipality of Tigaon, Province of Camarines Sur, From Class “D” To Class “C” and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12190_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12189",
+   "date": "May 2, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office In the Municipality of Sanchez Mira, Province of Cagayan, Into A Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12189_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12188",
+   "date": "May 2, 2025",
+   "title": "An Act Converting the District Office of the Land Transportation Office In Sorsogon City, Province of Sorsogon, Into A Class “B” District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12188_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12187",
+   "date": "May 2, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office In the Municipality of Trento, Province of Agusan Del Sur, Into A Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12187_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12186",
+   "date": "May 2, 2025",
+   "title": "An Act Converting the District Office of the Land Transportation Office In San Carlos City, Province of Pangasinan, Into A Class “B” District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12186_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12185",
+   "date": "May 2, 2025",
+   "title": "An Act Establishing A District Office of the Land Transportation Office In the Municipality of Ubay, In the Second District of Bohol, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12185_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12184",
+   "date": "May 2, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office In Taguig City Into A Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12184_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12183",
+   "date": "May 2, 2025",
+   "title": "An Act Upgrading the Land Transportation Office (LTO) Dapa District Office Into A Class “C” LTO District Office, Renaming the Same As Siargao LTO District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12183_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12182",
+   "date": "May 2, 2025",
+   "title": "An Act Establishing A National High School In Barangay Calabasa, Zamboanga City To Be Known As the Calabasa National High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12182_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12181",
+   "date": "May 2, 2025",
+   "title": "An Act Adjusting the Monthly Benefits of the Retirees of the Department of Foreign Affairs",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12181_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12180",
+   "date": "April 24, 2025",
+   "title": "An Act Providing For the Modernization of the Philippine Institute of Volcanology and Seismology (PHIVOLCS), and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12180_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12179",
+   "date": "April 18, 2025",
+   "title": "An Act Amending Section 50 of Republic Act No. 9136, Otherwise Known As the “Electric Power Industry Reform Act of 2001”",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12179_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12178",
+   "date": "April 15, 2025",
+   "title": "An Act Declaring the Sixteenth Day of May of Every Year A Special Working Holiday To Be Known As the “National Education Support Personnel Day”, Mandating the Department of Education and the Commission on Higher Education To Lead In Its Observance, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12178_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12177",
+   "date": "April 15, 2025",
+   "title": "An Act Providing Free Legal Assistance To Military and Uniformed Personnel Facing Any Charge Arising From Incidents Related To the Performance of Official Duty, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12177_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12176",
+   "date": "April 15, 2025",
+   "title": "An Act Increasing the Bed Capacity of the Tomas Lachica District Hospital In the Municipality of Jose Abad Santos, Province of Davao Occidental, From Twenty-five (25) To Fifty (50) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12176_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12175",
+   "date": "April 15, 2025",
+   "title": "An Act Establishing In the Municipality of Santo Tomas, Province of Davao Del Norte, A Municipal Hospital To Be Known As the Santo Tomas Municipal Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12175_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12174",
+   "date": "April 15, 2025",
+   "title": "An Act Prohibiting the Development, Production, Stockpiling, and Use of Chemical Weapons, Providing For Their Destruction, Imposing Penalties For Violations, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12174_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12173",
+   "date": "April 11, 2025",
+   "title": "An Act Upgrading The District Office of The Land Transportation Office In The City of Mati, Province of Davao Oriental, From Class “D” To Class “C” and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12173_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12172",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office in the Municipality of Naic, Province of Cavite, Into a Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12172_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12171",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Satellite Office of the Land Transportation Office in the Municipality of San Jacinto, Ticao Island, Province of Masbate, Into a Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12171_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12170",
+   "date": "April 11, 2025",
+   "title": "An Act Upgrading the District Office of the Land Transportation Office in the City of Alaminos, Province of Pangasinan, From a Class “D” to a Class “B” District Office , and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12170_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12169",
+   "date": "April 11, 2025",
+   "title": "An Act Upgrading the District Office of the Land Transportation Office in the Municipality of Agoo, Province of La Union, From a Class “C” to a Class “B” District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12169_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12168",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office Located in the Municipality of Rodriguez (Montalban), Province of Rizal, Into a District Office to Be Known as the LTO Montalban District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12168_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12167",
+   "date": "April 11, 2025",
+   "title": "An Act Establishing a District Office of the Land Transportation Office in the Municipality of Ilog, Province of Negros Occidental, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12167_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12166",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the District Office of the Land Transportation Office in Naga City, Province of Camarines Sur Into a Regular Class “A” District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12166_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12165",
+   "date": "April 11, 2025",
+   "title": "An Act Establishing a District Office of the Land Transportation Office in the Municipality of Kalamansig, Province of Sultan Kudarat, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12165_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12164",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Existing Land Transportation Office (LTO) Extension Office in the Municipality of Pili, Province of Camarines Sur Into a Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12164_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12163",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Existing Land Transportation Office (LTO) Extension Office in the Municipality of Dolores, Province of Eastern Samar, Into a Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12163_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12162",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Existing Land Transportation Office (LTO) Extension Office in the Municipality of San Miguel in the Second District, Province of Iloilo Into a Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12162_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12161",
+   "date": "April 11, 2025",
+   "title": "An Act Requiring the Proper and Immediate Burial of Muslim Cadavers in Accordance With the Islamic Rites",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12161_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12160",
+   "date": "April 11, 2025",
+   "title": "An Act Requiring the Proper and Immediate Burial of Muslim Cadavers in Accordance With the Islamic Rites",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12160_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12159",
+   "date": "April 11, 2025",
+   "title": "An Act Changing the Name of Eastern Bontoc National Agricultural and Vocational High School in Barangay Lingoy, Municipality of Barlig, Mountain Province to Barlig National Agricultural and Vocational High School",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12159_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12158",
+   "date": "April 11, 2025",
+   "title": "An Act Declaring March 21 of Every Year a Special Non-working Holiday in the City of Calapan, Province of Oriental Mindoro, in Commemoration of Its Charter Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12158_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12157",
+   "date": "April 11, 2025",
+   "title": "An Act Upgrading the Office of the Land Transportation Office (LTO) in the Municipality Lamut, Province of Ifugao, Into a Class “C” District Office, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12157_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12156",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Land Transportation Office (LTO) Extension Office in the Municipality of Buug, Province of Zamboanga Sibugay, Into a Regular LTO District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12156_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12155",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Existing Land Transportation Office (LTO) Extension Office in the Municipality of San Pascual, Province of Batangas Into a Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12155_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12154",
+   "date": "April 11, 2025",
+   "title": "An Act Converting the Extension of Office of the Land Transportation Office in the Municipality of Catanauan, Province of Quezon, Into a District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12154_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12153",
+   "date": "April 11, 2025",
+   "title": "An Act Establishing a Land Transportation Office District Office in the Municipality of Padre Garcia, Province of Batangas, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12153_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12152",
+   "date": "April 11, 2025",
+   "title": "An Act Establishing a District Office of the Land Transportation Office in the Municipality of San Dionisio, Province of Iloilo, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12152_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12151",
+   "date": "April 11, 2025",
+   "title": "An Act Establishing a District Office of the Land Transportation Office in the Municipality of Pototan in the Third Legislative District of the Province of Iloilo and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12151_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12150",
+   "date": "April 11, 2025",
+   "title": "An Act Granting Philippine Citizenship To Stephen Decatur Haine",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12150_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12149",
+   "date": "April 11, 2025",
+   "title": "An Act Granting Philippine Citizenship To Booles Shemishoo Ashooriyan",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12149_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12148",
+   "date": "April 11, 2025",
+   "title": "An Act Strengthening the Don Honorio Ventura State University By Renaming It As the Pampanga State University, Expanding Its Curricular Offerings, and the Composition of the Governing Board, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12148_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12147",
+   "date": "April 11, 2025",
+   "title": "An Act Establishing A Regular Campus of the Don Honorio Ventura State University In the City of San Fernando, Province of Pampanga and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12147_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12146",
+   "date": "April 11, 2025",
+   "title": "An Act Renewing for Another Twenty-five (25) Years the Franchise Granted to the Manila Electric Company Under Republic Act No. 9209, Entitled, “An Act Granting the Manila Electric Company a Franchise to Construct, Operate and Maintain a Distribution System for the Conveyance of Electric Power to the End-users in the Cities/Municipalities of Metro Manila, Bulacan, Cavite and Rizal, and Certain Cities/Municipalities/Barangays in Batangas, Laguna, Quezon and Pampanga”",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12146_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12145",
+   "date": "April 10, 2025",
+   "title": "An Act Reorganizing the National Economic and Development Authority (Neda) Into the Department of Economy, Planning, and Development (Depdev), and Reconstituting the Neda Board Into the Economy and Development Council, Repealing for the Purpose Executive Order No. 230, Series of 1987, and Amending Executive Order No. 292, Series of 1987, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12145_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12144",
+   "date": "April 6, 2025",
+   "title": "An Act Including Tagum City, the Island Garden City of Samal, and the Municipalities of Asuncion, Kapalong, New Corella, San Isidro, and Talaingod in the Province of Davao Del Norte, and the Municipalities of Compostela, Laak, Mabini, Maco, Maragusan, Mawab, Monkayo, Montevista, Nabunturan, New Bataan, and Pantukan in the Province of Davao De Oro to the Franchise Area of the Davao Light and Power Company, Inc., Amending for the Purpose Republic Act No. 11515, Entitled “An Act Extending for Another Twenty-five (25) Years the Franchise Granted to the Davao Light and Power Company Inc., Under Republic Act No. 8960, Entitled ‘An Act Further Extending the Term of the Franchise Granted to the Davao Light and Power Company Inc. to Construct, Operate and Maintain An Electric Light, Heat and Power System in Davao City and the Municipalities of Carmen, Panabo, Dujali, and Santo Tomas, Province of Davao Del Norte, for a Period of Twenty-five (25) Years and for Other Purposes”",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12144_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12143",
+   "date": "March 27, 2025",
+   "title": "An Act Declaring March 7 of Every Year a Special Non-working Holiday in the Province of Basilan, in Commemoration of Its Foundation Anniversary to Be Known as “Araw Ng Basilan”, and in Recognition of the “Tennun Pakaradjaan” as the Official Festival of the Province of Basilan",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12143_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12142",
+   "date": "March 27, 2025",
+   "title": "An Act Declaring November 28 of Every Year a Special Non-working Holiday in the Province of Sarangani in Commemoration of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12142_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12141",
+   "date": "March 27, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office Located in the Municipality of Burgos, Province of Ilocos Norte, Into a Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12141_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12140",
+   "date": "March 27, 2025",
+   "title": "An Act Establishing a District Office of the Land Transportation Office in the Municipality of Pandan, Province of Antique, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12140_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12139",
+   "date": "March 27, 2025",
+   "title": "An Act Converting the District Office of the Land Transportation Office in the Municipality of Rosales, Province of Pangasinan, Into a Class “A” District Office , and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12139_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12138",
+   "date": "March 27, 2025",
+   "title": "An Act Establishing a Land Transportation Office District Office in the Municipality of Consolacion, Province of Cebu, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12138_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12137",
+   "date": "March 27, 2025",
+   "title": "An Act Establishing a Land Transportation Office District Office in the Municipality of Cordova, Province of Cebu, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12137_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12136",
+   "date": "March 27, 2025",
+   "title": "An Act Converting the Las Piñas Land Transportation Office (LTO) Licensing Extension Office Into a Regular LTO Licensing Center and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12136_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12135",
+   "date": "March 27, 2025",
+   "title": "An Act Establishing a District Office of the Land Transportation Office in the Municipality of Liloy, Province of Zamboanga Del Norte, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12135_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12134",
+   "date": "March 14, 2025",
+   "title": "An Act Establishing a Regular District Office of the Land Transportation Office In the Municipality of Maayon, In the First District of the Province of Capiz, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12134_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12133",
+   "date": "March 14, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office In the Municipality of Naguilian, Province of La Union, Into A ‘Class D’ District Office, To Be Known As the LTO District Office of the Naguilan, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12133_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12132",
+   "date": "March 14, 2025",
+   "title": "An Act Upgrading the District Office of the Land Transportation Office Located In the Municipality of Lingayen, Province of Pangasinan, Into A Class ‘B’ District Office, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12132_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12131",
+   "date": "March 14, 2025",
+   "title": "An Act Upgrading the District Office of the Land Transportation Office In Candon City, Province of Ilocos Sur, Into A Class ‘B’ District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12131_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12130",
+   "date": "March 14, 2025",
+   "title": "An Act Converting the Land Transportation Office Urdaneta District Office Into A Class ‘A’ District Office, Renaming the Same As the Land Transportation Office Binalonan District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12130_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12129",
+   "date": "March 14, 2025",
+   "title": "An Act Upgrading the District Office of the Land Transportation Office In the City of Digos, Province of Davao Del Sur, From Class ‘D’ To Class ‘C’ and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12129_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12128",
+   "date": "March 14, 2025",
+   "title": "An Act Converting the Extension Office of the Land Transportation Office In the Municipality of Taal, Province of Batangas, Into A District Office To Be Known As the Taal Land Transportation Office District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12128_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12127",
+   "date": "March 14, 2025",
+   "title": "An Act Converting the Land Transportation Office Extension Office In the Municipality of Gattaran, Province of Cagayan, Into A Regular LTO District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12127_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12126",
+   "date": "March 14, 2025",
+   "title": "An Act Establishing A Land Transportation Office (LTO) District Office In the Municipality of Sulop, Province of Davao Del Sur, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12126_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12125",
+   "date": "March 14, 2025",
+   "title": "An Act Converting the Sindangan Extension Office of the Land Transportation Office (LTO) Located In the Municipality of Sindangan, Province of Zamboanga Del Norte, Into A Regular District Office and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12125_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12124",
+   "date": "March 3, 2025",
+   "title": "An Act Institutionalizing the Expanded Tertiary Education Equivalency and Accreditation Program and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12124_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12123",
+   "date": "February 18, 2025",
+   "title": "An Act Resetting the First Regular Elections in the bangsamoro Autonomous Region in Muslim Mindanao Amending for the purpose Section 13, Article XVI of Republic Act No. 11054. As Amended, otherwise known as the \"Organic Law for the Bangsamoro Autonomous Region in Muslim Mindanao\"",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12123_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12122",
+   "date": "February 18, 2025",
+   "title": "An Act Fixing the Term of Office of the Philippine Coast Guard Commandant and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12122_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12121",
+   "date": "February 13, 2025",
+   "title": "An Act Creating Additional Branches of the Regional Trial Court and Metropolitan Trial Court in the National Capital Judicial Region to Be Stationed in the City of San Juan, Converting Four (4) Branches of the Regional Trial Court in Pasig City Into Four (4) Branches of the Regional Trial Court in the City of San Juan, and Appropriating Funds Therefor. Amending for the Purpose Sections 14(E) and 27 of Batas Pambansa Blg. 129, Otherwise Known as \"The Judiciary Reorganization Act of 1980\", Asamended",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12121_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12120",
+   "date": "January 3, 2025",
+   "title": "An Act Promoting the Development of the Philippine Natural Gas Industry, Consolidating for the Purpose All Laws Relating to the Transmission, Distribution, and Supply of Natural Gas, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12120_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12119",
+   "date": "January 3, 2025",
+   "title": "An Act Establishing the Baguio City Sports High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12119_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12118",
+   "date": "January 3, 2025",
+   "title": "An Act Establishing Baguio City High School for the Arts and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12118_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12117",
+   "date": "January 3, 2025",
+   "title": "An Act Renaming the Mindanao Central Sanitarium in Pasobolong, Zamboanga City to Zamboanga Regional Medical Center",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12117_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12116",
+   "date": "",
+   "title": "An Act Appropriating Funds for the Operation of the Government of the Republic of the Philippines From January One to December Thirty One, Two Thousand and Twenty Five",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12116_2025.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12115",
+   "date": "December 20, 2024",
+   "title": "An Act Granting Philippine Citizenship To Aleksandr Sergeyevich Korovin",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12115_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12114",
+   "date": "December 13, 2024",
+   "title": "An Act Creating Five (5) Additional Branches of the Regional Trial Court in the Fourth Judicial Region to Be Stationed in the Municipalities of Rosario and San Juan, Province of Batangas, and Appropriating Funds Therefor, Amending for the Purpose Section 14 (E) of Batas Pambansa Blg. 129, Otherwise Known as “The Judiciary Reorganization Act of 1980”, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12114_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12113",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing the City of San Jose, Province of Nueva Ecija, a Level II General Hospital to Be Known as the Sen. Edgardo J. Angara General Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12113_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12112",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing in the Municipality of Rodriguez (Montalban), Province of Rizal, a Level II Hospital to Be Known as the Northern Tagalog Regional Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12112_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12111",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a Multi-species Marine Hatchery in the Municipality of Sta. Catalina, Province of Ilocos Sur, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12111_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12110",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a Multi-species Marine Hatchery in the Municipality of Argao, Province of Cebu, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12110_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12109",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a Satellite Multi-species Marines Hatchery in the Municipality of Minalabac, Province of Camarines Sur, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12109_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12108",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a Coastal Aquaculture Center to Support and Rehabilitate the Bureau of Fisheries and Aquatic Resources Northern Mindanao Brackish Water Aquaculture Fish Farm in the Municipality of Lala, Province of Lanao Del Norte, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12108_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12107",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a Multi-species Marine Hatchery in the City of Baybay, Province of Leyte, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12107_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12106",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a Multi-species Marine Hatchery in the Municipality of Liloy, Province of Zamboanga Del Norte, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12106_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12105",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring January 8 of Every Year a Special Working Holiday in the Municipality of Pavia, Province of Iloilo, to Be Known as “Pavia Day”, to Commemorate Its Founding Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12105_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12104",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring January 22 of Every Year a Special Working Holiday in the Municipality of Guiguinto, Province of Bulacan, in Celebration of the Halamanan Festival",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12104_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12103",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring April 16 of Every Year a Special Nonworking Holiday in the City of Marikina, Amending for the Purpose Republic Act No. 10788, Entitled “An Act Declaring April 16 of Every Year a Special Holiday and No Class Day in Schools in the City of Marikina in Commemoration of Its Founding Anniversary to Be Known as ‘Marikina City Day’”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12103_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12102",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring November 3 of Every Year a Special Working Holiday in the Municipality of Kalibo, Province of Aklan, to Be Known as the “Kalibo Foundation Day”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12102_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12101",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring November 7 of Every Year a Special Working Holiday in the Municipality of Cuenca, Province of Batangas, to Be Known as “Cuenca Foundation Day”, in Commemoration of Its Founding Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12101_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12100",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring July 28 of Every Year a Special Nonworking Holiday in Cabadbaran City, Province of Agusan Del Norte, to Be Known as “Cabadbaran Day”, in Commemoration of Its Foundation Day",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12100_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12099",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring November 23 of Every Year a Special Nonworking Holiday in the Province of Benguet to Be Known as ‘Benguet Day’ in Commemoration of Its Foundation Day",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12099_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12098",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring April 4 of Every Year a Special Nonworking Holiday in the City of Antipolo, Province of Rizal, in Commemoration of Its Cityhood Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12098_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12097",
+   "date": "December 13, 2024",
+   "title": "An Act Declaring June 20 of Every Year a Special Working Holiday in the Municipality of Guinayangan, Province of Quezon, in Commemoration of Its Founding Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12097_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12096",
+   "date": "December 13, 2024",
+   "title": "An Act Separating the Liloy National High School - Silucap Extension in Barangay Silucap, Municipalaty of Liloy, Province of Zamboanga Del Norte From the Liloy National High School, Converting It Into An Independent National High School to Be Knwon as The Silucap National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12096_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12095",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a National High School in Barangay Maputi, Municipality of Banaybanay, Province of Davao Oriental to Be Knwon as The Maputi National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12095_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12094",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a National High School in Barangay Manikling, Municipality of San Isidro, Province of Davai Oriental to Be Known as The Manikling National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12094_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12093",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a National High School in Barangay San Francisco , Municiapalty of Sta. Ignacia, Province of Tarlac to Be Known as The Sta. Ignacia National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12093_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12092",
+   "date": "December 13, 2024",
+   "title": "An Act Converting the Calateo Elementary School in Barangay Calateo, Municipality of Juban, Province of Sorsogon Into An Integrated School to Be Known as The Calateo Initegrated School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12092_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12091",
+   "date": "December 13, 2024",
+   "title": "An Act Separating the Bokong National High School - Tabak Annex in Barangay Upper Pulacan, Municipality of Labangan, Province of Zamboanga Del Sur From the Bokong National High School, Converting It Into An Independent National High School to Be Known as The Tabak National High School,And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12091_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12090",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a National Science and Technology High School in the City of Bacoor Province of Cavite to be Known as The Bacoor City National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12090_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12089",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing an Integrated School in Ciudad de Strike, Barangay Molino I, City of Bacoor, Province of Cavite to be Know as The Ciudad de Strike Integrated School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12089_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12088",
+   "date": "December 13, 2024",
+   "title": "An Act Establishing a National High School in Barangay Surop, Municipality of Governor Genroso, Province of Davao Oriental to be Known as The Surop National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12088_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12087",
+   "date": "December 13, 2024",
+   "title": "An Act Separating the Paulino Dari National High School - Liguac Extension in Barangay Liguac, Municipality of Pitogo, Province of Zamboanga del Sur from the Paulino Dari National High School, Converting it into an Independent National High School to be Known as The Liguac National High School , and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12087_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12086",
+   "date": "December 13, 2024",
+   "title": "An Act Separating the Lapuyan National High School - Karpok Extension in Barangay Karpok, Municipality of Lapuyan, Province of Zamboanga del Sur from the Lapuyan National High School, Converting it into an Independent National High School to be Known as The Karpok National High Schoo/b> , and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12086_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12085",
+   "date": "December 13, 2024",
+   "title": "An Act Changing the Name of San Sebastian Fisheries High School in Barangay San Sebastian, Municipality of Lagonoy, Province of Camarines Sur to San Sebastian National High School",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12085_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12084",
+   "date": "December 13, 2024",
+   "title": "An Act Changing the Name of New Partido High School in Barangay Catagbacan, Municipality of Goa, Province of Camarines Sur to New Partido National High School",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12084_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12083",
+   "date": "December 13, 2024",
+   "title": "An Act Separating the Bucana Elementary School - Hatib Asamuddin Extension in Barangay Bucana, Municipality of Siocon, Province of Zamboanga del Norte from the Bucana Elementary School, Converting it into an Independent Elementary School to be Known as The Hatib Asamuddin Elementary School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12083_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12082",
+   "date": "December 13, 2024",
+   "title": "An Act Separating the Siocon Central School - J.P. Brillantes Extension in Barangay Jose P. Brillantes Extension in Barangay Jose P. Brillantes, Sr., Municipality of Siocon Province of Zamboanga del Norte from the Siocon Central School, Converting it into an Idependent Elementary School to be Known as the Jose P. Brillantes Elementary School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12082_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12081",
+   "date": "December 13, 2024",
+   "title": "An Act Separating the Binagasbasan National High School - Denrica High School Annex in Barangay Denrica, Municipality of Garchitorena, Province of Camarines Sur from The Binagasbasan National High School, Converting it into an Independent National High School to be Known as The Denrica National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12081_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12080",
+   "date": "December 6, 2024",
+   "title": "An Act Strengthening The Promotion And Delivery Of Mental Health Services In Basic Education By Developing School-based Mental Health Programs, Establishing Schools Division Mental Health And Well-being Offices And Care Centers, Prescribing The Creation Of New Plantilla Positions, And Hiring And Deploying Schools Division Counselors, School Counselors, And School Counselor Associates In The Department Of Education, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12080_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12079",
+   "date": "December 6, 2024",
+   "title": "An Act Creating A Vat Refund Mechanism For Non-resident Tourists, Adding A New Section 112-a To The National Internal Revenue Code Of 1997, As Amended, For The Purpose",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12079_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12078",
+   "date": "December 6, 2024",
+   "title": "An Act Amending Republic Act No. 8178 Or The “Agricultural Tariffication Act”, As Amended By Republic Act No. 11203",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12078_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12077",
+   "date": "December 6, 2024",
+   "title": "An Act Providing For A Moratorium On The Payment Of Student Loans During Disasters And Other Emergencies",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12077_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12076",
+   "date": "December 6, 2024",
+   "title": "An Act Establishing Evacuation Centers For Every City And Municipality, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12076_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12075",
+   "date": "November 12, 2024",
+   "title": "An Act Establishing a Multi-Species Marine Hatchery in the City of Zamboanga, and Appropriating Funds therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12075_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12074",
+   "date": "November 12, 2024",
+   "title": "An Act Establishing a Freshwater Fish Hatchery in the Municipality of Talacogon, Province of Agusan Del Sur, and Appropriating Funds therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12074_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12073",
+   "date": "November 7, 2024",
+   "title": "An Act Declaring August 1 Of Every Year A Special Working Holiday To Be Known As The “Araw Ng Paglalathala At Pagtatanyag Ng Kasarinlan Ng Pilipinas”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12073_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12072",
+   "date": "November 7, 2024",
+   "title": "An Act Separating The Bacungan National High School Mangop Extension In Barangay Mangop, Municipality Of Leon B. Postigo, Province Of Zamboanga Del Norte From The Bacungan National High School, Converting It Into An Independent National High School To Be Known As The Mangop National High School, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12072_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12071",
+   "date": "November 8, 2024",
+   "title": "An Act Establishing In The Municipality Of Bay, Province Of Laguna, A Level Iii General Hospital To Be Known As The Laguna Regional Hospital, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12071_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12070",
+   "date": "November 8, 2024",
+   "title": "An Act Establishing The City Of Victorias, Province Of Negros Occidental, A General Hospital To Be Known As The Victorias City General Hospital, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12070_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12069",
+   "date": "November 8, 2024",
+   "title": "An Act Upgrading The Dr. Catalino Gallego Nava Provincial Hospital In The Municipality Of Jordan, Province Of Guimaras, Into A Level Ii Hospital, Renaming It As The Dr. Catalino Gallego Nava Medical Center, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12069_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12068",
+   "date": "November 8, 2024",
+   "title": "An Act Upgrading The Bataan General Hospital And Medical Center In The City Of Balanga, Province Of Bataan, To A Multi-specialty Hospital, Increasing Its Bed Capacity From Five Hundred (500) To One Thousand (1,000) Beds, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12068_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12067",
+   "date": "November 7, 2024",
+   "title": "An Act Declaring February 24 Of Every Year A Special Working Holiday In The Province Of Zamboanga Sibugay To Be Known As “Araw Ng Sibugay”, In Commemoration Of Its Foundation Day",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12067_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12066",
+   "date": "November 8, 2024",
+   "title": "An Act Amending Sections 27, 28, 32, 34, 57, 106, 108, 109, 112, 135, 237, 237-a, 269, 292, 293, 294, 295, 296, 297, 300, 301, 308, 309, 310, And 311, And Adding New Sections 135-a, 295-a, 296-a, And 297-a Of The National Internal Revenue Code Of 1997, As Amended, And For Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12066_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12065",
+   "date": "November 7, 2024",
+   "title": "An Act Providing For The Establishment Of Archipelagic Sea Lanes In The Philippine Archipelagic Waters, Prescribing The Obligations Of Foreign Ships And Aircraft Exercising The Right Of Archipelagic Sea Lanes Passage Through The Designated Archipelagic Sea Lanes, And For Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12065_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12064",
+   "date": "November 7, 2024",
+   "title": "An Act Declaring The Maritime Zones Under The Jurisdiction Of The Republic Of The Philippines",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12064_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12063",
+   "date": "November 7, 2024",
+   "title": "An Act Institutionalizing The Enterprise-based Education And Training Framework And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12063_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12062",
+   "date": "November 6, 2024",
+   "title": "An Act Declaring July 2 Of Every Year A Special Nonworking Holiday In Pasig City To Be Known As The “Araw Ng Pasig”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12062_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12061",
+   "date": "October 31, 2024",
+   "title": "An Act Establishing A Multi-species Marine Hatchery in the Municipality of Tabina, Province of Zamboanga Del Sur, and Appropriating Funds Therefore",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12061_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12060",
+   "date": "October 31, 2024",
+   "title": "Aan Act Establishing A National High School In Barangay Tiblawan, Municipality Of Governor Generoso, Province Of Davao Oriental To Be Known As The Tiblawan National High School, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12060_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12057",
+   "date": "October 31, 2024",
+   "title": "An Act Separating The Paulino Dari National High School-balongbalong Extension In Barangay Balongbalong, Municipality Of Pitogo, Province Of Zamboanga Del Sur From The Paulino Dari National High School, Converting It Into An Independent National High School To Be Known As The Balongbalong National High School, And Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12057_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12056",
+   "date": "October 31, 2024",
+   "title": "An Act Upgrading the Basilan General Hospital in the City of Isabela, Province of Basilan, Into A Level Iii Hospital To Be Known As the Basilan Medical Center, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12056_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12055",
+   "date": "October 31, 2024",
+   "title": "An Act Declaring November 15 Of Every Year A Special Nonworking Holiday In The Province Of Oriental Mindoro, To Be Known As The “Araw Ng Oriental Mindoro”, In Commemoration Of Its Foundation Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12055_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12054",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Two (2) Additional Branches of the Regional Trial Court in the Tenth Judicial Region To Be Stationed in the City of Gingoog, Province of Misamis Oriental, and Appropriating Funds Therefor, Amending For the Purpose Section 14 (K) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12054_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12053",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Three (3) Additional Branches of the Municipal Trial Court in Cities in the First Judicial Region To Be Stationed in the City of San Carlos, Province of Pangasinan, and Appropriating Funds Therefor, Amending For the Purpose Section 29 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12053_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12052",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Three (3) Additional Branches of the Regional Trial Court and Two (2) Additional Branches of the Metropolitan Trial Court in the National Capital Region To Be Stationed in the City of Navotas, and Appropriating Funds Therefor, Amending For the Purpose Section 14 (D) and Section 27 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12052_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12051",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Two (2) Additional Branches of the Municipal Trial Court in Cities in the Sixth Judicial Region To Be Stationed in the City of Bacolod, Province of Negros Occidental, and Appropriating Funds Therefor, Amending For the Purpose Section 29 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12051_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12050",
+   "date": "October 26, 2024",
+   "title": "An Act Creating One (1) Additional Branch of the Municipal Trial Court in Cities in the Tenth Judicial Region To Be Stationed in the City of Malaybalay, Province of Bukidnon, and Appropriating Funds Therefor, Amending For the Purpose Section 29 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12050_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12049",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Two (2) Additional Branches of the Regional Trial Court in the Twelfth Judicial Region To Be Stationed in the Municipality of Tubod, Province of Lanao Del Norte, and Appropriating Funds Therefor, Amending For the Purpose Section 14 (M) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12049_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12048",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Four (4) Additional Branches of the Regional Trial Court and Four (4) Additional Branches of the Municipal Trial Court in Cities in the Eighth Judicial Region To Be Stationed in the City of Ormoc, Province of Leyte, and Appropriating Funds Therefor, Amending For the Purpose Section 14 (I) and Section 29 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12048_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12047",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Two (2) Additional Branches of the Regional Trial Court in the Eleventh Judicial Region To Be Stationed in the Island Garden City of Samal and in the City of Panabo, Province of Davao Del Norte, and Appropriating Funds Therefor, Amending For the Purpose Section 14 (L) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12047_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12046",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Ten (10) Additional Branches of the Regional Trial Court and Eight (8) Additional Branches of the Municipal Trial Court in Cities in the Fourth Judicial Region To Be Stationed in the City of Antipolo, Province of Rizal, and Appropriating Funds Therefor, Amending For the Purpose Section 14 (E) and Section 29 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12046_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12045",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Two (2) Additional Branches of the Regional Trial Court and Two (2) Additional Branches of the Municipal Trial Court in Cities in the Ninth Judicial Region To Be Stationed in the City of Pagadian, Province of Zamboanga Del Sur, and Appropriating Funds Therefor, Amending For the Purpose Section 14 (J) and Section 29 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12045_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12044",
+   "date": "October 26, 2024",
+   "title": "An Act Creating Twelve (12) Additional Branches of the Regional Trial Court in the Fourth Judicial Region To Be Stationed in the Municipality of Los Baños and in the City of Cabuyao, Province of Laguna, and One (1) Additional Branch of the Municipal Trial Court in Cities in the Fourth Judicial Region To Be Stationed in the City of Cabuyao, Province of Laguna, and Appropriating Funds Therefor, Amending For the Purpose Section 14 (E) and Section 29 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”, As Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12044_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12043",
+   "date": "October 26, 2024",
+   "title": "An Act Amending Section 1 of Republic Act No. 11272, Entitled: “An Act Establishing A Specialty Hospital in the City of San Jose Del Monte, Province of Bulacan, To Be Known As St. Bernadette Children and Maternity Hospital, and Appropriating Funds Therefor”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12043_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12042",
+   "date": "October 26, 2024",
+   "title": "An Act Increasing the Bed Capacity of Cong. Simeon G. Toribio Memorial Hospital in the Municipality of Carmen, Province of Bohol, From Forty (40) To Seventy-five (75) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12042_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12041",
+   "date": "October 26, 2024",
+   "title": "An Act Increasing the Bed Capacity of Cong. Simeon G. Toribio Man Act Increasing the Bed Capacity of Teodoro B. Galagar District Hospital in the Municipality of Jagna, Province of Bohol, From Seventy-five (75) To One Hundred (100) Beds, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12041_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12040",
+   "date": "October 26, 2024",
+   "title": "An Act Upgrading the Bangui District Hospital in the Municipality of Bangui, Province of Ilocos Norte, Into A Level Ii District Hospital, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12040_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12039",
+   "date": "October 26, 2024",
+   "title": "An Act Declaring September 1 of Every Year A Special Non-working Holiday in the Province of Bukidnon To Be Known As “Araw Ng Bukidnon”, in Commemoration of Its Founding Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12039_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12038",
+   "date": "October 26, 2024",
+   "title": "An Act Declaring August 1 of Every Year A Special Nonworking Holiday in the Province of Samar To Be Known As “Samar Day”, in Commemoration of Its Foundation Day",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12038_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12037",
+   "date": "October 26, 2024",
+   "title": "An Act Declaring March 2 of Every Year A Special Nonworking Holiday in the Province of La Union To Be Known As “La Union Day”, in Commemoration of Its Founding Anniversary",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12037_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12036",
+   "date": "October 17, 2024",
+   "title": "An Act Creating Four (4) Additional Branches of the Regional Trial Court in the Eighth Judicial Region To Be Stationed in the City of Tacloban, Province of Leyte, and Appropriating Funds Therefor, Amending For the Purpose Section 14(1) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12036_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12035",
+   "date": "October 17, 2024",
+   "title": "An Act Creating Three (3) Additional Branches of the Regional Trial Court in the Tenth Judicial Region To Be Stationed in the City of Valencia, Province of Bukidnon, and Appropriating Funds Therefor, Amending For the Purpose Section 14(K) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12035_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12034",
+   "date": "October 17, 2024",
+   "title": "An Act Creating Six (6) Additional Branches of the Regional Trial Court in the Ninth Judicial Region To Be Stationed in the Municipality of Diplahan, Province of Zamboanga Sibugay, and Appropriating Funds Therefor, Amending For the Purpose Section 14(J) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12034_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12033",
+   "date": "October 17, 2024",
+   "title": "An Act Creating One (1) Additional Branch of the Regional Trial Court in the Eighth Judicial Region To Be Stationed in the City of Baybay, Province of Leyte, and Appropriating Funds Therefor, Amending For the Purpose Section 14(I) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12033_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12032",
+   "date": "October 17, 2024",
+   "title": "An Act Creating Three (3) Additional Branches of the Regional Trial Court in the Tenth Judicial Region To Be Stationed in the Municipality of San Jose, Province of Dinagat Islands, and Two (2) Additional Branches of the Municipal Trial Court in the Tenth Judicial Region To Be Stationed in the Municipalities of San Jose and Basilisa, Province of Dinagat Islands, and Appropriating Funds Therefor, Amending For the Purpose Section 14(K) and Section 30 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12032_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12031",
+   "date": "October 17, 2024",
+   "title": "An Act Creating Two (2) Additional Branches of the Regional Trial Court in the Second Judicial Region To Be Stationed in the Municipality of Cabagan, Province of Isabela, and Appropriating Funds Therefor, Amending For the Purpose Section 14(B) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12031_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12030",
+   "date": "October 17, 2024",
+   "title": "An Act Creating Three (3) Additional Branches of the Metropolitan Trial Court in the National Capital Judicial Region To Be Stationed in the City of Parañaque, Metro Manila, and Appropriating Funds Therefor, Amending For the Purpose Section 27 of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12030_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12029",
+   "date": "October 17, 2024",
+   "title": "An Act Creating Two (2) Additional Branches of the Regional Trial Court in the Fourth Judicial Region To Be Stationed in the Municipality of Silang, Province of Cavite, and Appropriating Funds Therefor, Amending For the Purpose Section 14(E) of Batas Pambansa Blg. 129, Otherwise Known As “The Judiciary Reorganization Act of 1980”",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12029_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12028",
+   "date": "October 16, 2024",
+   "title": "An Act Establishing Academic Recovery and Accessible Learning (ARAL) Program and Appropriating Funds",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12028_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12027",
+   "date": "October 10, 2024",
+   "title": "An Act Discounting the Use of the Mother Tongue as Medium of Instruction From Kindergarten to Grade 3, Providing for Its Optional Implementation in Monolingual Classes, and Amending for the Purpose Sections 4 and 5 of Republic Act No. 10533, Otherwise Known as the \"Enhanced Basic Education Act of 2013\"",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12027_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12026",
+   "date": "October 09, 2024",
+   "title": "An Act Creating Four (4) Additional Branches of the Regional Trial Court in the Fourth Judicial Region to Be stationed in the Municipality of Calauag, Province of Quezon and Appropriating Funds therefor, Amending for the Purpose Section 14(E) of Batas Pambansa Blg. 129, Otherwise Known as \"the Judiciary Reorganization Act of 1980\", as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12026_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12025",
+   "date": "October 09, 2024",
+   "title": "An Act Creating three (3) Additional Branches of the Regional Trial Court in the National Capital Judicial Region to Be stationed in the City of Muntinlupa, and Appropriating Funds therefor, Amending for the Purpose Section 14(D) of Batas Pambansa Blg. 129, Otherwise Known as \"the Judiciary Reorganization Act of 1980\", as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12025_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12024",
+   "date": "October 08, 2024",
+   "title": "An Act Revitalizing and strengthening the Self-Reliant Defense Posture Program and Promoting the Development of a National Defense Industry Pursuant thereto and Providing Funds therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12024_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12023",
+   "date": "October 2, 2024",
+   "title": "An Act Amending Sections 105, 108, 109, 110, 113, 114, 115, 128, 236, and 288 and Adding New Sections 108-a and 108-b of the National Internal Revenue Code of 1997, as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12023_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12022",
+   "date": "September 26, 2024",
+   "title": "An Act Defining the Crimes of Agricultural Economic Sabotage, Prescribing Penalties Therefor, Vesting Jurisdiction Over Such Offenses With the Court of Tax Appeals, Providing Mechanisms for Its Implementation and Enforcement, Repealing for the Purpose Republic Act No. 10845 or the “Anti-agricultural Smuggling Act of 2016",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12022_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12021",
+   "date": "September 25, 2024",
+   "title": "An Act Providing For the Magna Carta of Filipino Seafarers",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12021_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12020",
+   "date": "August 29, 2024",
+   "title": "An Act Granting a Franchise to the Romblon Electric Cooperative, Inc. (ROMELCO) to Construct, Install, Establish, Operate, Own, Manage and Maintain Distribution Systems for the Conveyance of Electric Power to the End-Users in the Municipalities of Banton, Corcuera, and Concepcion, Province of Romblon",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12020_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12019",
+   "date": "August 28, 2024",
+   "title": "An Act Granting Juridical Personality and Legal Capacity to the Board of the Fund for Responding to Loss and Damage Due to Climate Change",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12019_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12018",
+   "date": "August 12, 2024",
+   "title": "An Act Creating three (3) Additional Shari'A Judicial Districts and Twelve (12) Shari'A Circuit Courts therein, and Appropriating Funds therefor, Amending for the Purpose Articles 138, 147, and 150 of Presidential Decree No. 1083, Otherwise Known as the \"Code of Muslim Personal Laws of the Philippines\", as Amended, and the Relevant Provisions of Batas Pambansa Blg. 129, Otherwise Known as the \"Judiciary Reorganization Act of 1980\", as Amended",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12018_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12017",
+   "date": "August 09, 2024",
+   "title": "An Act Granting a Franchise to the Leyte II Electric Cooperative Inc. (Leyeco II) to Construct, Install, Establish, Operate, Own, Manage, and Maintain Distribution Systems for the Conveyance of Electric Power to the End-Users in the City of Tacloban and Municipalities of Babatngon and Palo, Province of Leyte",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12017_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12016",
+   "date": "August 01, 2024",
+   "title": "An Act Amending Republic Act No. 10583, Otherwise Known as \"An Act Converting the Mountain Province state Polytechnic College in the Municipality of Bontoc, Mountain Province Into a state University to Be Known as the Mountain Province state University, With Campuses in the Municipalities of Tadian, Bauko, Paracelis and Barlig, All Located in Mountain Province and Appropriating Funds therefor\"",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12016_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12015",
+   "date": "August 1, 2024",
+   "title": "An Act Creating a District Engineering Office in the Second Legislative District of Davao City, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12015_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12014",
+   "date": "August 1, 2024",
+   "title": "An Act Creating a District Engineering Office in the Second Legislative District of the Province of Davao Del Norte, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12014_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12013",
+   "date": "August 1, 2024",
+   "title": "An Act Separating the San Pablo National High School-Sacbulan Extension in Barangay Sacbulan, Municipality of San Pablo, Province of Zamboanga Del Sur from the San Pablo National High School, Converting it Into an Independent National High School to Be Known As Sacbulan National High School and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12013_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12012",
+   "date": "August 1, 2024",
+   "title": "An Act Separating the Jose Abad Santos National High School-Tabayon Extension in Barangay Tabayon, Municipality of Jose Abad Santos, Province of Davao Occidental From the Jose Abad Santos High School, Converting it Into an Independent National High School to Be Known As the Tabayon National High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12012_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12011",
+   "date": "July 26, 2024",
+   "title": "An Act Granting Negros Electric and Power Corp. a Franchise to Establish, Operate, and Maintain, for Commercial Purposes and in the Public Interest, a Distribution System for the Conveyance of Electric Power to the End-users in the Cities of Bacolod, Silay, Talisay, and Bago and the Municipalities of Murcia and Don Salvador Benedicto, All in the Province of Negros Occidental, and Ensuring Continuous and Uninterrupted Supply of Electricity in the Franchise Area",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12011_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12010",
+   "date": "July 26, 2024",
+   "title": "An Act Defining and Penalizing Financial Account Scamming and Other Offenses, and Providing For the Enforcement Mechanisms Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12010_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12009",
+   "date": "July 20, 2024",
+   "title": "An Act Revising Republic Act No. 9184, Otherwise Known As the “Government Procurement Reform Act”, and For Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12008",
+   "date": "June 13, 2024",
+   "title": "An Act Establishing An Elementary School in Progressive 15, Barangay Molino 2, City of Bacoor, Province of Cavite, to Be Known as the Progressive Elementary School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12008_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12007",
+   "date": "June 13, 2024",
+   "title": "An Act Establishing a Senior High School in Progressive Village 3, Barangay Bayanan, City of Bacoor, Province of Cavite, to Be Known as the Progressive Senior High School, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12007_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12006",
+   "date": "June 14, 2024",
+   "title": "An Act Mandating Private Higher Education Institutions to Waive College Entrance Examination Fees and Charges of Certain Students Qualified to Apply for College Admission",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12006_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12005",
+   "date": "June 13, 2024",
+   "title": "An Act Creating a District Engineering Office in the Third Legislative District of the Province of Iloilo, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12005_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12004",
+   "date": "June 13, 2024",
+   "title": "An Act Creating a District Engineering Office in the Third Legislative District of the Province of Bulacan, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12004_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12003",
+   "date": "June 13, 2024",
+   "title": "An Act Creating a District Engineering Office in the Third Legislative District of the Province of Bataan, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12003_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12002",
+   "date": "June 13, 2024",
+   "title": "An Act Creating a District Engineering Office in the First Legislative District of the Province of Negros Occidental, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12002_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12001",
+   "date": "June 13, 2024",
+   "title": "An Act Instituting Reforms in Real Property Valuation and Assessment in the Philippines, Reorganizing the Bureau of Local Government Finance, Granting of Tax Amnesty on Real Property and Special LeviesOn Real Property, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12001_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 12000",
+   "date": "June 11, 2024",
+   "title": "An Act Establishing the Negros Island Region",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12000_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11998",
+   "date": "June 7, 2024",
+   "title": "An Act Creating a District Engineering Office in the Fourth Legislative District of the Province of Bukidnon, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11998_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11997",
+   "date": "May 24, 2024",
+   "title": "An Act Institutionalizing the Grant of a Teaching Allowance for Public School Teachers and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11997_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11996",
+   "date": "May 31, 2024",
+   "title": "An Act Protecting the Welfare of Workers in the Movie and Television Industry",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11996_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11995",
+   "date": "May 22, 2024",
+   "title": "An Act Institutionalizing the Philippine Ecosystem and Natural Capital Accounting System, Mandating Its Use in Policy and Decision-making, Designating the Agencies Responsible For Its Implementation, Providing Institutional Arrangements Among Responsible Agencies, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11995_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11994",
+   "date": "April 4, 2024",
+   "title": "An Act Creating An Additional District Engineering Office in Zamboanga City, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11994_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11993",
+   "date": "April 3, 2024",
+   "title": "An Act Dividing Barangay 176 Also Known as Barangay Bagong Silang in the City of Caloocan Into Six (6) Separate and Independent Barangays to Be Known as Barangay 176-a, Barangay 176-b, Barangay 176-c, Barangay 176-d, Barangay 176-e, and Barangay 176-f",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11993_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11992",
+   "date": "March 21, 2024",
+   "title": "An Act Creating a District Engineering Office in the Second Legislative District of the Province of Southern Leyte, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11992_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11991",
+   "date": "March 21, 2024",
+   "title": "An Act Re-numbering the Cebu First, Second, Third and Fourth District Engineering Offices to Conform and Correspond, Respectively, With the Numbering of the Legislative Districts in the Province of Cebu Thereby Repealing Republic Acts Numbered 9043 and 9218",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11991_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11990",
+   "date": "March 21, 2024",
+   "title": "An Act Naming the National Highway, Stretching From Barangay San Juan Bautista, Traversing Through Barangays Tagongtong, Abucayan, Hiwacloy, Digdigon, Balaynan and Payatan in the Municipality of Goa, Barangays Lupi, Tierra Nevada, Binalay, Camagong, Salvacion, San Roque, San Ramon, Sagrada, La Medalla, Magsaysay and San Vicente in the Municipality of Tinambac, Up to Barangay Nalayahan in the Municipality of Siruma, All in the Province of Camarines Sur, as Speaker Arnulfo “Noli” Fuentebella Highway",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11990_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11989",
+   "date": "March 21, 2024",
+   "title": "An Act Renaming the Tambacan Bridge Traversing the Iligan River Located in Barangay Tambacan, City of Iligan in the Northern Mindanao Region, as the Mariano Lluch Badelles Sr. Bridge",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11989_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11988",
+   "date": "March 21, 2024",
+   "title": "An Act Renaming the Urdaneta City Bypass Road, Traversing Barangays Nancayasan, Santo Domingo, Santa Lucia, Camantiles, and Anonas in the City of Urdaneta, Province of Pangasinan, to Ambassador Eduardo ”Danding” M. Cojuangco Jr. Avenue",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11988_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11987",
+   "date": "March 21, 2024",
+   "title": "An Act Renaming the Bohol Island Circumferental, which Commences in Barangay Poblacion III towards the North of the City of Tagbiliran, and returns to Barangay Poblacion III from Eastern Side of the City of Tagbilaran in the Province of Bohol, as the President Carlos P. Garcia Circumferential Road",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11987_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11986",
+   "date": "March 21, 2024",
+   "title": "An Act Creating a Barangay in the Municipality of Barobo, Province of Surigao Del Sur to be known as Barangay Guinhalinan",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11986_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11985",
+   "date": "March 11, 2024",
+   "title": "An Act Strengthening and Revitalizing the Salt Industry in the Philippines, Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11985_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11984",
+   "date": "March 11, 2024",
+   "title": "An Act Mandating Public and Private Educational Institutions to allow Disadvantaged Students with Unpaid Tuition and other School Fees to take the Periodic and Final Examinations and other purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11984_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11983",
+   "date": "March 11, 2024",
+   "title": "An Act Providing for a New Passport Law, Repealing for the Purpose Republic Act NO. 8239, Otherwise known as the \"Philippine Passport Act of 1996\" , as amended, and providing funds therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11983_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11982",
+   "date": "February 26, 2024",
+   "title": "An Act Granting Benefits to Filipino Octogenarians and Nonagenarians, Amending for the Purpose Republic Act No. 10868, Otherwise Known as the “Centenarians Act of 2016”, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11982_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11981",
+   "date": "February 26, 2024",
+   "title": "An Act Mandating the Formulation, Funding, Implementation, Monitoring, and Evaluation of a Comprehensive and Multi-year “Tatak Pinoy” (Proudly Filipino) Strategy, Establishing a Tatak Pinoy Council, Appropriating Funds Therefor, and for Other Purpose",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11981_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11980",
+   "date": "February 15, 2024",
+   "title": "An Act Strengthening the Bulacan State University, Expanding Its Curricular Offerings and the Composition of the Governing Board, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11980_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11979",
+   "date": "February 15, 2024",
+   "title": "An Act Converting the Campus of the Polytechnic University of the Philippines Located in the City of Paranaque, Into a Regular Campus of the Polytechnic University of the Philippines: to Be Known as the Polytechnic University of the Philippines-paranaque City Campus, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11979_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11978",
+   "date": "February 15, 2024",
+   "title": "An Act Establishing a College of Medicine in the Don Mariano Marcos Memorial State University-south La Union Campus Located in the Municipality of Agoo, Province of La Union, to Be Known as the Don Mariano Marcos Memorial State University-south La Union Campus-college of Medicine, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11978_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11977",
+   "date": "February 15, 2024",
+   "title": "An Act Establishing in the Municipality of Floridablanca, Province of Pampanga, a Campus of the Pampanga State Agricultural University, to Be Known as the “Pampanga State Agricultural University-Floridablanca Campus”, and Appropriating Funds Therefor",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11977_2024.html"
+  },
+  {
+   "source": "LawPhil",
+   "kind": "Republic Act",
+   "number": "RA 11976",
+   "date": "January 5, 2024",
+   "title": "An Act Introducing Administrative Tax Reforms, Amending Sections 21, 22, 51, 56, 57, 58, 76, 77, 81, 90, 91, 103, 106, 108, 109, 110, 112, 113, 114, 115, 116, 117, 118, 119, 120, 128, 200, 204, 229, 235, 236, 237, 238, 241, 243, 245, 248, and 169; and Repealing Section 34(K) of the National Revenue Code of 1997, As Amended, and for Other Purposes",
+   "url": "https://lawphil.net/statutes/repacts/ra2024/ra_11976_2024.html"
+  }
+ ],
+ "portals": [
+  {
+   "name": "Official Gazette",
+   "url": "https://www.officialgazette.gov.ph/",
+   "note": "link only (bot challenge blocks automated fetch)"
+  },
+  {
+   "name": "LawPhil",
+   "url": "https://lawphil.net/",
+   "note": "indexed (Republic Acts)"
+  },
+  {
+   "name": "Supreme Court E-Library",
+   "url": "https://elibrary.judiciary.gov.ph/",
+   "note": "link only (reachable; search is interactive)"
+  },
+  {
+   "name": "Senate of the Philippines",
+   "url": "https://web.senate.gov.ph/",
+   "note": "link only (bot challenge)"
+  },
+  {
+   "name": "House of Representatives",
+   "url": "https://www.congress.gov.ph/",
+   "note": "link only (bot challenge)"
+  }
+ ]
+}

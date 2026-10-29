@@ -1,0 +1,18 @@
+{
+ "fetched_at": "2026-10-28T23:54:03.649053+00:00",
+ "source": "GDACS",
+ "items": [
+  {
+   "title": "Red notification for tropical cyclone CHAMPI-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.291 million .",
+   "link": "http://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338",
+   "published": "Wed, 14 Oct 2026 14:31:53 GMT",
+   "summary": "From 14/10/2026 to 25/10/2026, a Tropical Storm (maximum wind speed of 296 km/h) CHAMPI-26 was active in NWPacific. The cyclone affects these countries: Philippines, Guam, Northern Mariana Islands, Japan, China, South Korea (vulnerability Medium). Estimated population affected by category 1 (120 km/"
+  },
+  {
+   "title": "Drought is on going in Brunei, Indonesia, Cambodia, Malaysia, Papua New Guinea, Philippines",
+   "link": "http://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018545",
+   "published": "Thu, 30 Apr 2026 13:07:47 GMT",
+   "summary": "The  Drought notification level is Green."
+  }
+ ]
+}

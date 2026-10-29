@@ -1,0 +1,15 @@
+{"hazards":[
+{"k":"Floods","icon":"🌊","prep":["Know your barangay evacuation center and route","Keep a go-bag: water, food 3 days, meds, flashlight, IDs in plastic","Move valuables and power off mains before water rises","Never walk or drive through floodwater (leptospirosis, currents)"]},
+{"k":"Typhoons / Storms","icon":"🌀","prep":["Follow PAGASA Tropical Cyclone Wind Signals","Secure roofs, trim branches, store water","Charge power banks; keep a battery radio","Evacuate early if told by LGU"]},
+{"k":"Earthquakes","icon":"🌐","prep":["Duck, Cover, Hold","Anchor heavy furniture; know exits","After shaking, watch for tsunami signs near coasts: move to high ground","Join PHIVOLCS / NDRRMC drills"]},
+{"k":"El Niño / La Niña","icon":"☀️","prep":["El Niño: conserve water, fire safety, heat stroke care","La Niña: more rain, flood and landslide risk","Farmers: follow DA/PAGASA climate advisories"]},
+{"k":"Amihan / Habagat","icon":"💨","prep":["Amihan (NE monsoon, ~Nov–Mar): cooler, rough seas east side","Habagat (SW monsoon, ~Jun–Sep): heavy rain west side, floods","Check gale warnings before sea travel"]},
+{"k":"Water","icon":"🚰","prep":["Store clean water (≈ 4 L/person/day guide)","Boil or treat water after floods","Fix leaks; harvest rainwater for non-drinking use"]},
+{"k":"Power","icon":"⚡","prep":["Keep flashlights & power banks charged","Unplug appliances during outages and surges","Generator only outdoors (carbon monoxide)"]},
+{"k":"Oceans","icon":"🐠","prep":["Respect marine protected areas and no-take zones","No single-use plastics on the beach","Heed small-craft/gale warnings"]}],
+"living":[
+{"k":"Plants & Trees","icon":"🌳","items":["Narra (national tree)","Mangroves (coastal flood buffers)","Philippine native trees for reforestation"]},
+{"k":"Mountains","icon":"⛰️","items":["Mt. Apo","Mt. Pulag","Sierra Madre range (typhoon shield)"]},
+{"k":"Islands & Seas","icon":"🏝️","items":["Tubbataha Reefs","Palawan","Coral Triangle"]},
+{"k":"Wildlife","icon":"🦅","items":["Philippine Eagle","Tamaraw","Philippine Tarsier"]}],
+"note":"Guides are general preparedness tips summarised from common PAGASA/PHIVOLCS/NDRRMC guidance. Always follow your LGU and official advisories."}

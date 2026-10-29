@@ -1,0 +1,14 @@
+{"online":[
+{"name":"TESDA Online Program (e-TESDA)","url":"https://e-tesda.gov.ph/","by":"TESDA","tags":"Free TVET courses"},
+{"name":"DOST Science Education Institute","url":"https://sei.dost.gov.ph/","by":"DOST-SEI","tags":"Scholarships, science ed"},
+{"name":"Coursera (free-to-audit courses)","url":"https://www.coursera.org/courses?query=free","by":"Coursera","tags":"Audit free"},
+{"name":"edX","url":"https://www.edx.org/","by":"edX","tags":"Audit free"},
+{"name":"freeCodeCamp","url":"https://www.freecodecamp.org/","by":"freeCodeCamp","tags":"Coding, free certs"},
+{"name":"Khan Academy","url":"https://www.khanacademy.org/","by":"Khan Academy","tags":"Math, science"},
+{"name":"IBM SkillsBuild","url":"https://skillsbuild.org/","by":"IBM","tags":"AI, data, free"},
+{"name":"AWS Skill Builder digital training","url":"https://aws.amazon.com/training/digital/","by":"AWS","tags":"Cloud, free tier"}],
+"offline":[
+{"name":"TESDA training centers & scholarships","url":"https://www.tesda.gov.ph/","by":"TESDA","tags":"In-person TVET"},
+{"name":"DOST regional programs","url":"https://www.dost.gov.ph/","by":"DOST","tags":"Regional offices, programs"},
+{"name":"PAGASA weather & climate info","url":"https://www.pagasa.dost.gov.ph/","by":"PAGASA","tags":"Learn hazard signals"},
+{"name":"PHIVOLCS earthquake & volcano info","url":"https://www.phivolcs.dost.gov.ph/","by":"PHIVOLCS","tags":"Drills, hazard maps"}]}

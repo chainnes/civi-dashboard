@@ -1,0 +1,134 @@
+{
+ "title": "FY 2026 General Appropriations Act (GAA) \u2013 expenditure program by department/special purpose fund",
+ "unit": "PHP billions",
+ "source": "DBM, BESF 2026 Table B.6.c (CY 2026 GAA)",
+ "url": "https://www.dbm.gov.ph/wp-content/uploads/BESF/BESF2026/Selected-BESF/Table%20B.6.c.pdf",
+ "fetched": "2026-10-29",
+ "total": 6793.2,
+ "note": "Department lines are DBM figures. 'Other departments & offices' is the remainder (Congress, OP, OVP, DOF, DFA, DOE, DOT, COA, COMELEC, contingent fund, AFP modernization, net lending, etc.). Locked items are mandatory or automatic in the sim.",
+ "items": [
+  {
+   "name": "Education (DepEd)",
+   "b": 1015.3,
+   "area": "edu"
+  },
+  {
+   "name": "State universities & colleges (SUCs)",
+   "b": 144.1,
+   "area": "edu"
+  },
+  {
+   "name": "Public works (DPWH)",
+   "b": 530.9,
+   "area": "infra"
+  },
+  {
+   "name": "Interior & local govt (DILG, incl. PNP)",
+   "b": 310.5,
+   "area": "security"
+  },
+  {
+   "name": "National defense (DND)",
+   "b": 310.0,
+   "area": "security"
+  },
+  {
+   "name": "Health (DOH)",
+   "b": 304.6,
+   "area": "health"
+  },
+  {
+   "name": "Social welfare (DSWD)",
+   "b": 270.2,
+   "area": "social"
+  },
+  {
+   "name": "Agriculture (DA)",
+   "b": 186.5,
+   "area": "food"
+  },
+  {
+   "name": "Transportation (DOTr)",
+   "b": 137.8,
+   "area": "infra"
+  },
+  {
+   "name": "Labor & employment (DOLE)",
+   "b": 61.8,
+   "area": "jobs"
+  },
+  {
+   "name": "Justice (DOJ)",
+   "b": 45.5,
+   "area": "justice"
+  },
+  {
+   "name": "Science & technology (DOST)",
+   "b": 32.1,
+   "area": "jobs"
+  },
+  {
+   "name": "Environment (DENR)",
+   "b": 28.3,
+   "area": "env"
+  },
+  {
+   "name": "Agrarian reform (DAR)",
+   "b": 18.2,
+   "area": "food"
+  },
+  {
+   "name": "ICT (DICT)",
+   "b": 18.2,
+   "area": "infra"
+  },
+  {
+   "name": "Migrant workers (DMW)",
+   "b": 11.7,
+   "area": "jobs"
+  },
+  {
+   "name": "Trade & industry (DTI)",
+   "b": 10.2,
+   "area": "jobs"
+  },
+  {
+   "name": "The Judiciary",
+   "b": 70.6,
+   "area": "justice"
+  },
+  {
+   "name": "Disaster fund (NDRRM Fund)",
+   "b": 39.8,
+   "area": "disaster"
+  },
+  {
+   "name": "Gov't corporations support (BSGC)",
+   "b": 274.7,
+   "area": "other"
+  },
+  {
+   "name": "Other departments & offices",
+   "b": 386.7,
+   "area": "other"
+  }
+ ],
+ "locked": [
+  {
+   "name": "Debt interest payments",
+   "b": 950.0
+  },
+  {
+   "name": "Allocations to LGUs (ALGU, incl. NTA)",
+   "b": 1392.9
+  },
+  {
+   "name": "Pension & gratuity fund",
+   "b": 165.5
+  },
+  {
+   "name": "Misc. personnel benefits fund",
+   "b": 77.0
+  }
+ ]
+}

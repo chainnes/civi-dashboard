@@ -1,0 +1,478 @@
+{
+"as_of": "2026-10-29",
+"note": "Curated from official agency sites. For the complete list of all offices, see gov.ph. Links checked by scripts/check_links.py.",
+"items": [
+{
+"name": "Department of Agriculture",
+"abbr": "DA",
+"url": "https://www.da.gov.ph/",
+"cat": "Executive departments",
+"desc": "Farming, fisheries, food supply programs",
+"link": "live"
+},
+{
+"name": "Department of Agrarian Reform",
+"abbr": "DAR",
+"url": "https://www.dar.gov.ph/",
+"cat": "Executive departments",
+"desc": "Land reform, farmer beneficiaries",
+"link": "live"
+},
+{
+"name": "Department of Budget and Management",
+"abbr": "DBM",
+"url": "https://www.dbm.gov.ph/",
+"cat": "Executive departments",
+"desc": "National budget, GAA, BESF",
+"link": "live"
+},
+{
+"name": "Department of Education",
+"abbr": "DepEd",
+"url": "https://www.deped.gov.ph/",
+"cat": "Executive departments",
+"desc": "Basic education K-12",
+"link": "bot-protected"
+},
+{
+"name": "Department of Energy",
+"abbr": "DOE",
+"url": "https://doe.gov.ph/",
+"cat": "Executive departments",
+"desc": "Power, fuel prices, energy policy",
+"link": "live"
+},
+{
+"name": "Department of Environment and Natural Resources",
+"abbr": "DENR",
+"url": "https://www.denr.gov.ph/",
+"cat": "Executive departments",
+"desc": "Forests, mining, environment permits",
+"link": "bot-protected"
+},
+{
+"name": "Department of Finance",
+"abbr": "DOF",
+"url": "https://www.dof.gov.ph/",
+"cat": "Executive departments",
+"desc": "Fiscal policy, taxes, debt",
+"link": "live"
+},
+{
+"name": "Department of Foreign Affairs",
+"abbr": "DFA",
+"url": "https://dfa.gov.ph/",
+"cat": "Executive departments",
+"desc": "Passports, consular services, foreign relations",
+"link": "bot-protected"
+},
+{
+"name": "Department of Health",
+"abbr": "DOH",
+"url": "https://doh.gov.ph/",
+"cat": "Executive departments",
+"desc": "Public health, hospitals, health advisories",
+"link": "bot-protected"
+},
+{
+"name": "Department of Human Settlements and Urban Development",
+"abbr": "DHSUD",
+"url": "https://dhsud.gov.ph/",
+"cat": "Executive departments",
+"desc": "Housing, land use",
+"link": "bot-protected"
+},
+{
+"name": "Department of Information and Communications Technology",
+"abbr": "DICT",
+"url": "https://dict.gov.ph/",
+"cat": "Executive departments",
+"desc": "ICT, free Wi-Fi, eGov",
+"link": "bot-protected"
+},
+{
+"name": "Department of the Interior and Local Government",
+"abbr": "DILG",
+"url": "https://www.dilg.gov.ph/",
+"cat": "Executive departments",
+"desc": "LGUs, barangays, police oversight",
+"link": "check:000"
+},
+{
+"name": "Department of Justice",
+"abbr": "DOJ",
+"url": "https://www.doj.gov.ph/",
+"cat": "Executive departments",
+"desc": "Prosecution, legal services",
+"link": "bot-protected"
+},
+{
+"name": "Department of Labor and Employment",
+"abbr": "DOLE",
+"url": "https://www.dole.gov.ph/",
+"cat": "Executive departments",
+"desc": "Workers' rights, jobs, labor standards",
+"link": "bot-protected"
+},
+{
+"name": "Department of Migrant Workers",
+"abbr": "DMW",
+"url": "https://dmw.gov.ph/",
+"cat": "Executive departments",
+"desc": "OFW deployment and protection",
+"link": "live"
+},
+{
+"name": "Department of National Defense",
+"abbr": "DND",
+"url": "https://www.dnd.gov.ph/",
+"cat": "Executive departments",
+"desc": "Defense, AFP, civil defense",
+"link": "bot-protected"
+},
+{
+"name": "Department of Public Works and Highways",
+"abbr": "DPWH",
+"url": "https://www.dpwh.gov.ph/",
+"cat": "Executive departments",
+"desc": "Roads, bridges, flood control",
+"link": "live"
+},
+{
+"name": "Department of Science and Technology",
+"abbr": "DOST",
+"url": "https://www.dost.gov.ph/",
+"cat": "Executive departments",
+"desc": "Science, PAGASA, PHIVOLCS, scholarships",
+"link": "live"
+},
+{
+"name": "Department of Social Welfare and Development",
+"abbr": "DSWD",
+"url": "https://www.dswd.gov.ph/",
+"cat": "Executive departments",
+"desc": "4Ps, aid, social protection",
+"link": "live"
+},
+{
+"name": "Department of Tourism",
+"abbr": "DOT",
+"url": "https://tourism.gov.ph/",
+"cat": "Executive departments",
+"desc": "Tourism",
+"link": "bot-protected"
+},
+{
+"name": "Department of Trade and Industry",
+"abbr": "DTI",
+"url": "https://www.dti.gov.ph/",
+"cat": "Executive departments",
+"desc": "Business names, consumer protection",
+"link": "live"
+},
+{
+"name": "Department of Transportation",
+"abbr": "DOTr",
+"url": "https://dotr.gov.ph/",
+"cat": "Executive departments",
+"desc": "Rail, aviation, maritime, land transport",
+"link": "bot-protected"
+},
+{
+"name": "Department of Economy, Planning, and Development",
+"abbr": "DEPDev",
+"url": "https://depdev.gov.ph/",
+"cat": "Executive departments",
+"desc": "Economic planning (formerly NEDA)",
+"link": "bot-protected"
+},
+{
+"name": "Presidential Communications Office",
+"abbr": "PCO",
+"url": "https://pco.gov.ph/",
+"cat": "Executive departments",
+"desc": "Official communications",
+"link": "bot-protected"
+},
+{
+"name": "Bureau of Internal Revenue",
+"abbr": "BIR",
+"url": "https://www.bir.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Taxes, TIN, registration",
+"link": "live"
+},
+{
+"name": "Bureau of Customs",
+"abbr": "BOC",
+"url": "https://customs.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Imports, balikbayan boxes",
+"link": "bot-protected"
+},
+{
+"name": "Bureau of the Treasury",
+"abbr": "BTr",
+"url": "https://www.treasury.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Government debt, bonds, RTBs",
+"link": "live"
+},
+{
+"name": "Social Security System",
+"abbr": "SSS",
+"url": "https://www.sss.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Private-sector social insurance, loans",
+"link": "live"
+},
+{
+"name": "Government Service Insurance System",
+"abbr": "GSIS",
+"url": "https://www.gsis.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Government workers' insurance",
+"link": "live"
+},
+{
+"name": "Pag-IBIG Fund (HDMF)",
+"abbr": "Pag-IBIG",
+"url": "https://www.pagibigfund.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Savings, MP2, housing and cash loans",
+"link": "live"
+},
+{
+"name": "PhilHealth",
+"abbr": "PhilHealth",
+"url": "https://www.philhealth.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "National health insurance",
+"link": "live"
+},
+{
+"name": "Philippine Statistics Authority",
+"abbr": "PSA",
+"url": "https://psa.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Statistics, civil registry, PhilSys ID",
+"link": "bot-protected"
+},
+{
+"name": "PAGASA",
+"abbr": "PAGASA",
+"url": "https://www.pagasa.dost.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Weather, typhoon bulletins",
+"link": "live"
+},
+{
+"name": "PHIVOLCS",
+"abbr": "PHIVOLCS",
+"url": "https://www.phivolcs.dost.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Earthquakes, volcanoes, tsunamis",
+"link": "live"
+},
+{
+"name": "Office of Civil Defense / NDRRMC",
+"abbr": "OCD",
+"url": "https://ocd.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Disaster risk reduction and response",
+"link": "bot-protected"
+},
+{
+"name": "Land Transportation Office",
+"abbr": "LTO",
+"url": "https://lto.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Driver's licenses, vehicle registration",
+"link": "bot-protected"
+},
+{
+"name": "LTFRB",
+"abbr": "LTFRB",
+"url": "https://ltfrb.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Public transport franchises, fares",
+"link": "bot-protected"
+},
+{
+"name": "TESDA",
+"abbr": "TESDA",
+"url": "https://www.tesda.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Technical-vocational training, free courses",
+"link": "live"
+},
+{
+"name": "Commission on Higher Education",
+"abbr": "CHED",
+"url": "https://ched.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Colleges, universities, scholarships",
+"link": "bot-protected"
+},
+{
+"name": "National Bureau of Investigation",
+"abbr": "NBI",
+"url": "https://nbi.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Investigations, NBI clearance",
+"link": "live"
+},
+{
+"name": "Philippine National Police",
+"abbr": "PNP",
+"url": "https://pnp.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Police services, police clearance",
+"link": "bot-protected"
+},
+{
+"name": "Bureau of Fire Protection",
+"abbr": "BFP",
+"url": "https://bfp.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Fire safety, fire permits",
+"link": "bot-protected"
+},
+{
+"name": "Bangko Sentral ng Pilipinas",
+"abbr": "BSP",
+"url": "https://www.bsp.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Central bank, peso, consumer finance complaints",
+"link": "bot-protected"
+},
+{
+"name": "Securities and Exchange Commission",
+"abbr": "SEC",
+"url": "https://www.sec.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Corporations, investment scam advisories",
+"link": "bot-protected"
+},
+{
+"name": "Overseas Workers Welfare Administration",
+"abbr": "OWWA",
+"url": "https://owwa.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "OFW welfare and assistance",
+"link": "bot-protected"
+},
+{
+"name": "National Privacy Commission",
+"abbr": "NPC",
+"url": "https://privacy.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Data Privacy Act (RA 10173) complaints",
+"link": "live"
+},
+{
+"name": "Metropolitan Manila Development Authority",
+"abbr": "MMDA",
+"url": "https://mmda.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Metro Manila traffic, flood control",
+"link": "bot-protected"
+},
+{
+"name": "National Housing Authority",
+"abbr": "NHA",
+"url": "https://nha.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Public housing",
+"link": "bot-protected"
+},
+{
+"name": "Philippine Charity Sweepstakes Office",
+"abbr": "PCSO",
+"url": "https://www.pcso.gov.ph/",
+"cat": "Agencies & GOCCs",
+"desc": "Medical assistance",
+"link": "bot-protected"
+},
+{
+"name": "Commission on Elections",
+"abbr": "COMELEC",
+"url": "https://comelec.gov.ph/",
+"cat": "Constitutional bodies & courts",
+"desc": "Elections, voter registration",
+"link": "bot-protected"
+},
+{
+"name": "Commission on Audit",
+"abbr": "COA",
+"url": "https://www.coa.gov.ph/",
+"cat": "Constitutional bodies & courts",
+"desc": "Audit reports of government agencies",
+"link": "bot-protected"
+},
+{
+"name": "Civil Service Commission",
+"abbr": "CSC",
+"url": "https://www.csc.gov.ph/",
+"cat": "Constitutional bodies & courts",
+"desc": "Government jobs, civil service exam",
+"link": "live"
+},
+{
+"name": "Office of the Ombudsman",
+"abbr": "Ombudsman",
+"url": "https://www.ombudsman.gov.ph/",
+"cat": "Constitutional bodies & courts",
+"desc": "Complaints against public officials",
+"link": "live"
+},
+{
+"name": "Commission on Human Rights",
+"abbr": "CHR",
+"url": "https://chr.gov.ph/",
+"cat": "Constitutional bodies & courts",
+"desc": "Human rights complaints",
+"link": "check:000"
+},
+{
+"name": "Supreme Court of the Philippines",
+"abbr": "SC",
+"url": "https://sc.judiciary.gov.ph/",
+"cat": "Constitutional bodies & courts",
+"desc": "Decisions, courts",
+"link": "check:000"
+},
+{
+"name": "Senate of the Philippines",
+"abbr": "Senate",
+"url": "https://web.senate.gov.ph/",
+"cat": "Legislature",
+"desc": "Senators, bills, hearings",
+"link": "bot-protected"
+},
+{
+"name": "House of Representatives",
+"abbr": "House",
+"url": "https://www.congress.gov.ph/",
+"cat": "Legislature",
+"desc": "Representatives, bills",
+"link": "bot-protected"
+},
+{
+"name": "Official Gazette",
+"abbr": "OG",
+"url": "https://www.officialgazette.gov.ph/",
+"cat": "Legislature",
+"desc": "Laws, EOs, proclamations (official record)",
+"link": "bot-protected"
+},
+{
+"name": "GOV.PH national directory",
+"abbr": "gov.ph",
+"url": "https://www.gov.ph/",
+"cat": "Legislature",
+"desc": "Official portal; full list of agencies",
+"link": "live"
+}
+]
+}

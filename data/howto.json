@@ -1,0 +1,262 @@
+{
+"as_of": "2026-10-29",
+"note": "Steps are a simple guide as of the date shown. Requirements and fees change: always check the official site before you go.",
+"items": [
+{
+"id": "mysss",
+"cat": "Benefits & loans",
+"title": "Create a My.SSS account",
+"src": "https://www.sss.gov.ph/",
+"steps": [
+"Get your SSS number first (online SS number application on the SSS site) if you don't have one.",
+"Go to the SSS website or the My.SSS app and choose Register.",
+"Enter your SS number, name, birth date and an email you can open.",
+"Confirm through the link/OTP sent to your email or phone, then set your password.",
+"Log in to check contributions, loans and benefits. UMID/ID card applications are done through SSS; follow its current instructions."
+],
+"tip": "SSS never asks for your password by text or chat.",
+"link": "live"
+},
+{
+"id": "ssscl",
+"cat": "Benefits & loans",
+"title": "Claim SSS benefits (sickness, maternity, unemployment, retirement)",
+"src": "https://www.sss.gov.ph/",
+"steps": [
+"Log in to My.SSS and enroll a disbursement account (bank or e-wallet listed by SSS).",
+"Check you have the required number of paid contributions for that benefit.",
+"File the benefit online in My.SSS (or at a branch if required) and upload the documents asked.",
+"Track the claim status in My.SSS; payment goes to your enrolled account."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "mp2",
+"cat": "Benefits & loans",
+"title": "Save with Pag-IBIG MP2",
+"src": "https://www.pagibigfund.gov.ph/",
+"steps": [
+"Be an active Pag-IBIG member (get your MID number via Virtual Pag-IBIG).",
+"Enroll in MP2 online through Virtual Pag-IBIG and save your MP2 account number.",
+"Pay through Virtual Pag-IBIG, accredited partners or a branch.",
+"Dividends are announced yearly by Pag-IBIG; the term is 5 years."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "pagloan",
+"cat": "Benefits & loans",
+"title": "Apply for a Pag-IBIG Multi-Purpose or Housing Loan",
+"src": "https://www.pagibigfund.gov.ph/",
+"steps": [
+"Check eligibility (number of monthly savings and active membership) on the Pag-IBIG site.",
+"Prepare a valid ID and proof of income.",
+"Apply online through Virtual Pag-IBIG (multi-purpose/calamity) or submit housing loan requirements to a branch or developer.",
+"Wait for approval; proceeds go to your Pag-IBIG Loyalty Card Plus or bank account."
+],
+"tip": "Beware of fixers. Pag-IBIG processing is done only through official channels.",
+"link": "live"
+},
+{
+"id": "philhealth",
+"cat": "Benefits & loans",
+"title": "Register with PhilHealth and use benefits",
+"src": "https://www.philhealth.gov.ph/",
+"steps": [
+"Register through the PhilHealth Member Portal or a PhilHealth office to get your PIN.",
+"Update your contribution category (employed, self-employed, OFW, etc.).",
+"Add qualified dependents.",
+"When admitted to an accredited facility, present your PhilHealth ID/PIN so benefits are deducted from your bill."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "philsys",
+"cat": "Government IDs & documents",
+"title": "Get your PhilSys National ID",
+"src": "https://philsys.gov.ph/",
+"steps": [
+"Register at a PhilSys registration center (check PSA/PhilSys announcements for sites near you).",
+"Bring a valid supporting document (e.g., PSA birth certificate).",
+"Have your biometrics taken.",
+"Get your ePhilID or download the digital National ID when available; the physical card is delivered later."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "passport",
+"cat": "Government IDs & documents",
+"title": "Apply for a Philippine passport (DFA)",
+"src": "https://passport.gov.ph/",
+"steps": [
+"Book an appointment only at the official DFA site (passport.gov.ph).",
+"Pay the fee through the listed payment channels.",
+"Bring your confirmation, PSA birth certificate (first-time) and a valid ID on your schedule.",
+"Choose delivery or pick-up and track your passport."
+],
+"tip": "Only use passport.gov.ph. Fake booking sites exist.",
+"link": "bot-protected"
+},
+{
+"id": "nbi",
+"cat": "Government IDs & documents",
+"title": "Get an NBI clearance",
+"src": "https://clearance.nbi.gov.ph/",
+"steps": [
+"Register at clearance.nbi.gov.ph.",
+"Fill in your details and choose an NBI branch and schedule.",
+"Pay through the listed channels.",
+"Go to the branch for photo and fingerprints; with a 'HIT' you may need to return later."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "police",
+"cat": "Government IDs & documents",
+"title": "Get a police clearance",
+"src": "https://pnpclearance.ph/",
+"steps": [
+"Register at the National Police Clearance System site.",
+"Book a station and schedule, then pay online or at the station.",
+"Bring two valid IDs; photo and fingerprints are taken at the station."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "tin",
+"cat": "Work & business",
+"title": "Register with BIR as a freelancer (TIN, Form 1901, 8% option)",
+"src": "https://www.bir.gov.ph/",
+"steps": [
+"Register through BIR's ORUS online system or at your RDO using BIR Form 1901 (self-employed/professionals).",
+"Choose your tax type. If gross sales/receipts are ₱3M or less, you may opt for the 8% income tax rate in your first quarter return.",
+"Get your Certificate of Registration (Form 2303), register books of accounts and get authorized invoices.",
+"File and pay quarterly/annual returns on time (eFPS/eBIRForms or accredited agents)."
+],
+"tip": "Tax rules change. Check BIR issuances or ask your RDO. Not tax advice.",
+"link": "live"
+},
+{
+"id": "freelance",
+"cat": "Work & business",
+"title": "Start freelancing safely",
+"src": "https://dict.gov.ph/",
+"steps": [
+"Learn a skill with free courses (TESDA Online, DICT trainings).",
+"Make an honest portfolio: show your real work only.",
+"Use reputable platforms; never pay to 'get hired' and never share OTPs.",
+"Use written contracts and milestone payments.",
+"Register with BIR and keep records of income."
+],
+"tip": "If a job offer sounds too good, check SEC and DMW advisories.",
+"link": "bot-protected"
+},
+{
+"id": "business",
+"cat": "Work & business",
+"title": "Register a small business",
+"src": "https://bnrs.dti.gov.ph/",
+"steps": [
+"Register your business name with DTI BNRS online (sole proprietor) or SEC (corporation/partnership).",
+"Get a barangay clearance where your business is located.",
+"Apply for a Mayor's/Business Permit at your city or municipal hall (BPLO).",
+"Register with BIR (Form 1901 or 1903), get invoices and books.",
+"Register employees with SSS, PhilHealth and Pag-IBIG if you hire."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "license",
+"cat": "Government IDs & documents",
+"title": "Get a driver's license (LTO LTMS)",
+"src": "https://portal.lto.gov.ph/",
+"steps": [
+"Create an account on the LTO LTMS portal.",
+"Take the required Theoretical Driving Course at an accredited driving school or LTO.",
+"Apply for a Student Permit, then complete the Practical Driving Course.",
+"Pass the written and practical exams at LTO for your Non-Professional/Professional license."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "voter",
+"cat": "Government IDs & documents",
+"title": "Register as a voter (COMELEC)",
+"src": "https://comelec.gov.ph/",
+"steps": [
+"Check COMELEC announcements for the registration period (it stops before elections).",
+"Fill out the application form (available online) and go to your local Election Officer with a valid ID.",
+"Have your biometrics taken.",
+"Check your precinct before election day."
+],
+"tip": "",
+"link": "bot-protected"
+},
+{
+"id": "psa",
+"cat": "Government IDs & documents",
+"title": "Request a PSA birth certificate",
+"src": "https://www.psaserbilis.com.ph/",
+"steps": [
+"Order online through PSA Serbilis (official PSA online service) or go to a PSA CRS outlet.",
+"Fill in the details exactly as registered.",
+"Pay through listed channels; delivery or pick-up follows.",
+"For errors, ask your Local Civil Registrar about correction (RA 9048/10172)."
+],
+"tip": "",
+"link": "live"
+},
+{
+"id": "scholar",
+"cat": "Life & safety",
+"title": "Apply for scholarships: tips",
+"src": "https://ched.gov.ph/",
+"steps": [
+"List scholarships that fit you (see Civi Scholarships: local and abroad).",
+"Check eligibility and deadlines on the official page only.",
+"Prepare documents early: grades, PSA birth certificate, income proof, essay.",
+"Submit before the deadline and keep copies.",
+"Never pay 'processing fees' to unofficial agents."
+],
+"tip": "",
+"link": "bot-protected"
+},
+{
+"id": "disaster",
+"cat": "Life & safety",
+"title": "Prepare a disaster go-bag",
+"src": "https://ocd.gov.ph/",
+"steps": [
+"Pack water, ready-to-eat food, flashlight, batteries and a whistle.",
+"Add first aid kit, maintenance medicines, face masks, and hygiene items.",
+"Keep copies of IDs and documents in a waterproof bag, plus some cash.",
+"Know your evacuation center and family meeting place.",
+"Follow PAGASA, PHIVOLCS and your LGU for warnings."
+],
+"tip": "",
+"link": "bot-protected"
+},
+{
+"id": "foi",
+"cat": "Life & safety",
+"title": "Request government documents (FOI)",
+"src": "https://www.foi.gov.ph/",
+"steps": [
+"Find the agency on foi.gov.ph.",
+"Describe exactly the document you want and why.",
+"Submit and track your request online.",
+"Agencies normally reply within the period set by the FOI rules; you can appeal a denial."
+],
+"tip": "",
+"link": "bot-protected"
+}
+]
+}

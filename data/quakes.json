@@ -1,0 +1,402 @@
+{
+ "fetched_at": "2026-10-28T23:54:03.649053+00:00",
+ "source": "USGS FDSN",
+ "items": [
+  {
+   "mag": 4.9,
+   "place": "1 km WSW of Butulan, Philippines",
+   "time": 1793189689242,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttnq",
+   "lon": 125.4182,
+   "lat": 5.6073,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.8,
+   "place": "29 km SSW of Sarangani, Philippines",
+   "time": 1793179976341,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttmz",
+   "lon": 125.3884,
+   "lat": 5.1505,
+   "depth_km": 84.25
+  },
+  {
+   "mag": 5.2,
+   "place": "6 km NW of Balangonan, Philippines",
+   "time": 1793149914979,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttlc",
+   "lon": 125.3054,
+   "lat": 5.6079,
+   "depth_km": 45.941
+  },
+  {
+   "mag": 5.1,
+   "place": "7 km N of Balangonan, Philippines",
+   "time": 1793144631480,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttkk",
+   "lon": 125.3536,
+   "lat": 5.6402,
+   "depth_km": 57.848
+  },
+  {
+   "mag": 4.9,
+   "place": "70 km WNW of Callaguip, Philippines",
+   "time": 1793117273845,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tth4",
+   "lon": 119.8508,
+   "lat": 18.2708,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.5,
+   "place": "89 km SSE of Pondaguitan, Philippines",
+   "time": 1793047285106,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttc6",
+   "lon": 126.5418,
+   "lat": 5.6361,
+   "depth_km": 75.119
+  },
+  {
+   "mag": 4.7,
+   "place": "72 km S of Basco, Philippines",
+   "time": 1792842488678,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4m9",
+   "lon": 122.0872,
+   "lat": 19.805,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.6,
+   "place": "73 km ENE of Kinablangan, Philippines",
+   "time": 1792791664400,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4h0",
+   "lon": 127.1813,
+   "lat": 7.9163,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.5,
+   "place": "18 km WNW of Bantogon, Philippines",
+   "time": 1792746576956,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4b3",
+   "lon": 123.8685,
+   "lat": 6.5678,
+   "depth_km": 591.289
+  },
+  {
+   "mag": 5.2,
+   "place": "68 km NE of Cabatuan, Philippines",
+   "time": 1792571861317,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3t6",
+   "lon": 125.5898,
+   "lat": 13.0297,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.4,
+   "place": "26 km WSW of Balangonan, Philippines",
+   "time": 1792499540697,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3ln",
+   "lon": 125.1404,
+   "lat": 5.4726,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.6,
+   "place": "7 km SE of San Julian, Philippines",
+   "time": 1792476259173,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3k7",
+   "lon": 125.5048,
+   "lat": 11.7067,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.7,
+   "place": "10 km SE of Lamitan, Philippines",
+   "time": 1792153105421,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2pp",
+   "lon": 125.7789,
+   "lat": 6.0268,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.9,
+   "place": "31 km ENE of Kinablangan, Philippines",
+   "time": 1792142024909,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2p2",
+   "lon": 126.799,
+   "lat": 7.8392,
+   "depth_km": 73.712
+  },
+  {
+   "mag": 4.6,
+   "place": "67 km N of Namuac, Philippines",
+   "time": 1792039272999,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2er",
+   "lon": 121.2525,
+   "lat": 19.2179,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.8,
+   "place": "8 km SE of Sarangani, Philippines",
+   "time": 1791904904242,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u21y",
+   "lon": 125.5183,
+   "lat": 5.3478,
+   "depth_km": 65.699
+  },
+  {
+   "mag": 4.7,
+   "place": "124 km N of Pagudpud, Philippines",
+   "time": 1791871284155,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1zc",
+   "lon": 120.7047,
+   "lat": 19.6853,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.6,
+   "place": "109 km SSE of Pondaguitan, Philippines",
+   "time": 1791686135917,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1i0",
+   "lon": 126.6164,
+   "lat": 5.4706,
+   "depth_km": 121.25
+  },
+  {
+   "mag": 4.3,
+   "place": "25 km ENE of Kinablangan, Philippines",
+   "time": 1791558523482,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2sv",
+   "lon": 126.7484,
+   "lat": 7.8151,
+   "depth_km": 63.258
+  },
+  {
+   "mag": 4.6,
+   "place": "17 km NNE of Santa Cruz, Philippines",
+   "time": 1791537438680,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u14r",
+   "lon": 120.7766,
+   "lat": 13.2209,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.4,
+   "place": "1 km WNW of Obong, Philippines",
+   "time": 1791531118275,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2sn",
+   "lon": 123.4932,
+   "lat": 9.7446,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.3,
+   "place": "65 km S of Pondaguitan, Philippines",
+   "time": 1791488688396,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2ri",
+   "lon": 126.2447,
+   "lat": 5.7716,
+   "depth_km": 9.641
+  },
+  {
+   "mag": 4.4,
+   "place": "48 km SSW of Katubao, Philippines",
+   "time": 1791448498336,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2r0",
+   "lon": 124.7412,
+   "lat": 5.4633,
+   "depth_km": 7.815
+  },
+  {
+   "mag": 5.5,
+   "place": "13 km SW of Burias, Philippines",
+   "time": 1791446879721,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0x4",
+   "lon": 125.1838,
+   "lat": 5.6177,
+   "depth_km": 57.803
+  },
+  {
+   "mag": 4,
+   "place": "5 km NE of Ambuclao, Philippines",
+   "time": 1791392291980,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2jf",
+   "lon": 120.7807,
+   "lat": 16.5245,
+   "depth_km": 156.118
+  },
+  {
+   "mag": 4.7,
+   "place": "44 km E of Sarangani, Philippines",
+   "time": 1791391369025,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0t4",
+   "lon": 125.8638,
+   "lat": 5.4326,
+   "depth_km": 114.635
+  },
+  {
+   "mag": 5,
+   "place": "51 km NNE of Semporna, Malaysia",
+   "time": 1791292282867,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzwg",
+   "lon": 118.825,
+   "lat": 4.8949,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.8,
+   "place": "191 km ESE of Sarangani, Philippines",
+   "time": 1791180855888,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzmk",
+   "lon": 126.9394,
+   "lat": 4.4975,
+   "depth_km": 51.291
+  },
+  {
+   "mag": 4.8,
+   "place": "78 km WSW of San Nicolas, Philippines",
+   "time": 1790953819741,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz1q",
+   "lon": 119.4496,
+   "lat": 14.5886,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.4,
+   "place": "15 km ESE of Cabacao, Philippines",
+   "time": 1790865782229,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyug",
+   "lon": 120.789,
+   "lat": 13.2775,
+   "depth_km": 35
+  },
+  {
+   "mag": 4.2,
+   "place": "10 km SW of Conner, Philippines",
+   "time": 1790836974093,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyqf",
+   "lon": 121.262,
+   "lat": 17.7218,
+   "depth_km": 10
+  },
+  {
+   "mag": 5.3,
+   "place": "42 km WSW of Palimbang, Philippines",
+   "time": 1790832850575,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyq7",
+   "lon": 123.8339,
+   "lat": 6.0524,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.1,
+   "place": "145 km SW of Palimbang, Philippines",
+   "time": 1790798930048,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0su",
+   "lon": 123.3749,
+   "lat": 5.1753,
+   "depth_km": 578.989
+  },
+  {
+   "mag": 4.5,
+   "place": "143 km S of Sarangani, Philippines",
+   "time": 1790788039818,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyqh",
+   "lon": 125.322,
+   "lat": 4.1113,
+   "depth_km": 9.995
+  },
+  {
+   "mag": 4.5,
+   "place": "96 km SSE of Sarangani, Philippines",
+   "time": 1790735442563,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tygz",
+   "lon": 125.7613,
+   "lat": 4.5858,
+   "depth_km": 139.721
+  },
+  {
+   "mag": 4.8,
+   "place": "10 km SE of Mamburao, Philippines",
+   "time": 1790732045777,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tygs",
+   "lon": 120.6699,
+   "lat": 13.1618,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.7,
+   "place": "48 km N of Dicabisagan, Philippines",
+   "time": 1790714750870,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyf0",
+   "lon": 122.4467,
+   "lat": 17.5234,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.4,
+   "place": "40 km ENE of Barcelona, Philippines",
+   "time": 1790689255302,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0it",
+   "lon": 126.768,
+   "lat": 8.3025,
+   "depth_km": 9.188
+  },
+  {
+   "mag": 4.2,
+   "place": "89 km E of Pondaguitan, Philippines",
+   "time": 1790686358837,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0ip",
+   "lon": 126.9739,
+   "lat": 6.2374,
+   "depth_km": 117.244
+  },
+  {
+   "mag": 4.4,
+   "place": "61 km SSW of Lumatil, Philippines",
+   "time": 1790678897405,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0ij",
+   "lon": 124.7329,
+   "lat": 5.3371,
+   "depth_km": 71.722
+  },
+  {
+   "mag": 4.9,
+   "place": "121 km SE of Pondaguitan, Philippines",
+   "time": 1790607700212,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty5m",
+   "lon": 127.0124,
+   "lat": 5.6524,
+   "depth_km": 86.642
+  },
+  {
+   "mag": 4.3,
+   "place": "65 km SSW of Sarangani, Philippines",
+   "time": 1790587179525,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzql",
+   "lon": 125.3049,
+   "lat": 4.8292,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.6,
+   "place": "64 km ENE of Pilar, Philippines",
+   "time": 1790583373147,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty3w",
+   "lon": 126.6698,
+   "lat": 9.9976,
+   "depth_km": 10
+  },
+  {
+   "mag": 4.9,
+   "place": "40 km W of Palauig, Philippines",
+   "time": 1790556882901,
+   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty1l",
+   "lon": 119.5249,
+   "lat": 15.4079,
+   "depth_km": 10
+  }
+ ]
+}

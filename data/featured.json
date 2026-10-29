@@ -1,0 +1,174 @@
+{
+ "as_of": "2026-10-29",
+ "note": "Curated by the Civi team. Internal links open Civi pages; external links were opened and verified on the as-of date.",
+ "pages": {
+  "map": [
+   {
+    "i": "🌀",
+    "t": "Weather & typhoon advisories",
+    "tl": "Panahon at bagyo",
+    "u": "https://bagong.pagasa.dost.gov.ph/weather"
+   },
+   {
+    "i": "🚆",
+    "t": "Transport layer & advisories",
+    "tl": "Transportasyon at abiso",
+    "u": "#/map"
+   },
+   {
+    "i": "✊",
+    "t": "Community events near you",
+    "tl": "Mga event sa komunidad",
+    "u": "#/map?layer=action"
+   },
+   {
+    "i": "📰",
+    "t": "Daily Briefing",
+    "tl": "Daily Briefing",
+    "u": "#/briefing"
+   }
+  ],
+  "directory": [
+   {
+    "i": "🆘",
+    "t": "Emergency hotlines (911)",
+    "tl": "Emergency hotlines (911)",
+    "u": "#/directory?q=emergency"
+   },
+   {
+    "i": "💸",
+    "t": "Kumita at raket (side income)",
+    "tl": "Kumita at raket",
+    "u": "#/directory?q=kumita"
+   },
+   {
+    "i": "📱",
+    "t": "Must-have apps in PH",
+    "tl": "Apps na dapat meron ka",
+    "u": "#/directory?q=apps"
+   },
+   {
+    "i": "♻️",
+    "t": "Recycle & drop-off programs",
+    "tl": "Recycle at drop-off",
+    "u": "#/directory?q=recycle"
+   },
+   {
+    "i": "➕",
+    "t": "Request to add your website",
+    "tl": "Idagdag ang website mo",
+    "u": "#/directory?add=1"
+   }
+  ],
+  "lounge": [
+   {
+    "i": "🤝",
+    "t": "How Usapang Bayan works",
+    "tl": "Paano gumagana ang Usapang Bayan",
+    "u": "#/help"
+   },
+   {
+    "i": "⚖️",
+    "t": "Find the law behind a topic (LawPhil)",
+    "tl": "Hanapin ang batas (LawPhil)",
+    "u": "https://lawphil.net/"
+   },
+   {
+    "i": "🚩",
+    "t": "Report a post (3 reports hide it)",
+    "tl": "I-report ang post",
+    "u": "#/help"
+   }
+  ],
+  "academy": [
+   {
+    "i": "💻",
+    "t": "Paano Kumita Online (14 modules)",
+    "tl": "Paano Kumita Online",
+    "u": "#/howto?id=earn01"
+   },
+   {
+    "i": "🥗",
+    "t": "Healthy lifestyle at nutrisyon",
+    "tl": "Healthy lifestyle at nutrisyon",
+    "u": "#/howto?id=health01"
+   },
+   {
+    "i": "🧭",
+    "t": "Career roles 101",
+    "tl": "Career roles 101",
+    "u": "#/howto?id=car01"
+   },
+   {
+    "i": "🏪",
+    "t": "Start a business (step by step)",
+    "tl": "Paano magsimula ng negosyo",
+    "u": "#/howto?id=biz01"
+   },
+   {
+    "i": "🏭",
+    "t": "Industries in the Philippines",
+    "tl": "Mga industriya sa Pilipinas",
+    "u": "#/howto?id=ind01"
+   },
+   {
+    "i": "🎒",
+    "t": "Prepping: go-bag & family plan",
+    "tl": "Paghahanda sa sakuna",
+    "u": "#/howto?id=life04"
+   },
+   {
+    "i": "🪪",
+    "t": "Create a My.SSS account",
+    "tl": "Gumawa ng My.SSS account",
+    "u": "#/howto?id=mysss"
+   }
+  ],
+  "empower": [
+   {
+    "i": "📝",
+    "t": "Start or sign a petition",
+    "tl": "Petisyon",
+    "u": "#/petitions"
+   },
+   {
+    "i": "📣",
+    "t": "Sumbong: report a local issue",
+    "tl": "Sumbong",
+    "u": "#/sumbong"
+   },
+   {
+    "i": "📄",
+    "t": "FOI request helper",
+    "tl": "FOI request",
+    "u": "#/foi"
+   },
+   {
+    "i": "🏗️",
+    "t": "Project Watch",
+    "tl": "Project Watch",
+    "u": "#/projects"
+   }
+  ],
+  "default": [
+   {
+    "i": "🗺️",
+    "t": "Explore the map",
+    "tl": "Tingnan ang mapa",
+    "u": "#/map"
+   },
+   {
+    "i": "📇",
+    "t": "What help do you need?",
+    "tl": "Anong tulong ang kailangan mo?",
+    "u": "#/directory"
+   },
+   {
+    "i": "🎓",
+    "t": "Learn something new",
+    "tl": "Matuto ng bago",
+    "u": "#/academy"
+   }
+  ]
+ }
+}

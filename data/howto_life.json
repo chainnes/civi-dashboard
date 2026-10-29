@@ -1,0 +1,353 @@
+{
+ "as_of": "2026-10-29",
+ "course": "Buhay, kalikasan at pagsasaka (Life, eco & farming)",
+ "note": "Simple in-house guides as of 2026-10-29. Links listed were opened and verified on 2026-10-29 (bot-protected = site up but blocks automated checks). No statistics or results are promised; follow official advisories.",
+ "items": [
+  {
+   "id": "life01",
+   "cat": "Buhay at kabuhayan",
+   "title": "Frugal living: budgeting and saving",
+   "title_tl": "Pagtitipid: budget at ipon",
+   "src": "https://www.pagibigfund.gov.ph/mp2/",
+   "steps": [
+    "Isulat lahat ng kita at gastos sa isang buwan (notebook o app). Know where your money goes.",
+    "Try the 50/30/20 guide: about 50% needs, 30% wants, 20% ipon/utang. It's a rule of thumb, adjust to your situation.",
+    "Unahin ang emergency fund (target: a few months of basic expenses) bago mag-invest.",
+    "Kuryente: tanggalin sa saksakan ang hindi gamit, gumamit ng LED at inverter, at basahin ang energy tips ng Meralco (company.meralco.com.ph).",
+    "Tubig: ayusin agad ang tagas, mag-ipon ng tubig-ulan para sa halaman at paglilinis.",
+    "Ipon na may tubo: Pag-IBIG MP2 is a government-backed voluntary savings program; check current rules on the Pag-IBIG MP2 page.",
+    "Iwasan ang 5-6 at online lending na hindi rehistrado; check the SEC list before borrowing.",
+    "Checklist: ☐ budget sheet ☐ emergency fund started ☐ 1 bill reduced ☐ MP2 or savings account opened"
+   ],
+   "tip": "Hindi kailangang perpekto; consistency beats size. Walang garantisadong tubo sa kahit anong investment.",
+   "links": [
+    [
+     "Pag-IBIG MP2",
+     "https://www.pagibigfund.gov.ph/mp2/",
+     "live"
+    ],
+    [
+     "Meralco",
+     "https://company.meralco.com.ph/",
+     "live"
+    ],
+    [
+     "BSP financial education",
+     "https://www.bsp.gov.ph/SitePages/InclusiveFinance/FinancialEducation.aspx",
+     "bot-protected"
+    ],
+    [
+     "MWSS",
+     "https://mwss.gov.ph/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Pag-IBIG Fund",
+    "PDIC",
+    "Money: GCash"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "life02",
+   "cat": "Buhay at kabuhayan",
+   "title": "Eco-friendly living",
+   "title_tl": "Eco-friendly na pamumuhay",
+   "src": "https://emb.gov.ph/",
+   "steps": [
+    "Magdala ng eco-bag, tumbler at baunan para bawas single-use plastic.",
+    "Bumili ng refill o bulk kung kaya; iwas sachet.",
+    "Energy: patayin ang ilaw/aircon kapag walang tao; set aircon around 24–25°C; i-unplug ang chargers.",
+    "Water: shorter showers, timba sa paghugas ng sasakyan, ayusin ang tagas.",
+    "Commute, bike or walk kung ligtas; mag-carpool.",
+    "Magtanim: kahit paso sa bintana (see the Permaculture and Urban farming courses).",
+    "Know the rules: EMB (DENR) handles air, water and solid waste laws.",
+    "Checklist: ☐ eco-bag ☐ tumbler ☐ 1 energy habit ☐ 1 water habit ☐ 1 plant"
+   ],
+   "tip": "Small, repeatable habits matter more than one-time big purchases.",
+   "links": [
+    [
+     "DENR-EMB",
+     "https://emb.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "DENR",
+     "https://www.denr.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "Meralco",
+     "https://company.meralco.com.ph/",
+     "live"
+    ]
+   ],
+   "related": [
+    "DENR",
+    "EMB (air & water quality)",
+    "Greenpeace Philippines"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "life03",
+   "cat": "Buhay at kabuhayan",
+   "title": "Waste management at home (RA 9003)",
+   "title_tl": "Tamang pagtatapon ng basura (RA 9003)",
+   "src": "https://lawphil.net/statutes/repacts/ra2001/ra_9003_2001.html",
+   "steps": [
+    "RA 9003 (Ecological Solid Waste Management Act of 2001) requires segregation at source.",
+    "Biodegradable (nabubulok): tira-tirang pagkain, balat ng prutas, dahon → compost.",
+    "Recyclable (nare-recycle): malinis na bote, lata, papel, karton, ilang plastic → ibenta sa junk shop o dalhin sa MRF.",
+    "Residual (hindi nabubulok/hindi recyclable): sachets, diapers → para sa kolekta ng LGU.",
+    "Special waste: baterya, bumbilya, gamot, pintura, e-waste → huwag ihalo; itanong sa barangay/LGU kung saan dadalhin.",
+    "Compost: lalagyan na may butas, salit-salitan ng 'green' (food scraps) at 'brown' (tuyong dahon, karton); haluin linggo-linggo; panatilihing mamasa-masa, hindi basa.",
+    "Alamin ang schedule ng kolekta at ang MRF (Materials Recovery Facility) ng barangay mo.",
+    "Saan dadalhin (verified Oct 29, 2026): SM Trash to Cash (recyclables → cash, first Fri & Sat ng buwan), CORA Eco-Ikot (sachets at recyclables → points), Globe E-Waste Zero at SM Cyberzone bins (e-waste), brand take-back gaya ng Nespresso capsules. Tingnan ang 'Recycle & drop-off programs' sa Directory.",
+    "Checklist: ☐ 4 na lalagyan ☐ compost bin ☐ alam ang collection day ☐ e-waste set aside"
+   ],
+   "tip": "Bawal ang open burning ng basura sa ilalim ng RA 9003.",
+   "links": [
+    [
+     "RA 9003 full text (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra2001/ra_9003_2001.html",
+     "live"
+    ],
+    [
+     "DENR-EMB",
+     "https://emb.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "SM Trash to Cash",
+     "https://www.smprime.com/company_releases/take-small-steps-for-big-change-sm-waste-free-future-illustrates-doable-actions-for-a-cleaner-greener-planet/",
+     "bot-protected"
+    ],
+    [
+     "SM Cyberzone e-waste drop boxes",
+     "https://www.smcyberzone.com/updates-and-reviews/cyberzone-partners-with-sm-cares-to-power-sustainability-initiatives",
+     "bot-protected"
+    ],
+    [
+     "Globe E-Waste Zero",
+     "https://www.globe.com.ph/about-us/newsroom/sustainability/e-waste-zero-globes-drive-environmental-sustainability",
+     "bot-protected"
+    ],
+    [
+     "CORA Eco-Ikot Center",
+     "https://www.wearecora.org/eco-ikot",
+     "live"
+    ],
+    [
+     "Smart Recycle PH",
+     "https://smartrecycle.ph/",
+     "live"
+    ],
+    [
+     "Nespresso capsule recycling",
+     "https://www.nespresso.ph/how-to-recycle-coffee-capsules",
+     "live"
+    ]
+   ],
+   "related": [
+    "EMB (air & water quality)",
+    "DENR",
+    "Recycle & drop-off programs"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "life04",
+   "cat": "Buhay at kabuhayan",
+   "title": "Prepping and survival basics",
+   "title_tl": "Paghahanda sa sakuna at survival",
+   "src": "https://ndrrmc.gov.ph/",
+   "steps": [
+    "Go-bag (per person): tubig, ready-to-eat food, flashlight, extra batteries, radyo, powerbank, first-aid kit, gamot, kopya ng IDs sa ziplock, cash, damit, kumot, whistle, face mask, hygiene items.",
+    "Family plan: meeting place, contact list (sulat sa papel), sino ang susundo sa mga bata/lolo't lola, evacuation center ng barangay.",
+    "Bagyo: bantayan ang PAGASA signals; i-charge ang devices; itali ang maluluwag na gamit; lumikas kapag inutusan.",
+    "Lindol: Duck, Cover and Hold; lumayo sa salamin; pagkatapos, lumabas nang maingat at mag-ingat sa aftershocks. Follow PHIVOLCS.",
+    "Baha: huwag lumusong o magmaneho sa baha; patayin ang main switch kung papasok ang tubig; mag-ingat sa leptospirosis.",
+    "Sunog: alamin ang dalawang daan palabas; gumapang sa usok; tawag sa 911 o BFP.",
+    "First aid: kumuha ng first-aid training sa Philippine Red Cross.",
+    "Checklist: ☐ go-bag ☐ family plan ☐ alam ang evacuation center ☐ emergency numbers saved ☐ first-aid kit"
+   ],
+   "tip": "Emergency hotline: 911. Sundin lagi ang opisyal na abiso ng LGU at NDRRMC.",
+   "links": [
+    [
+     "NDRRMC",
+     "https://ndrrmc.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "Office of Civil Defense",
+     "https://ocd.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "PAGASA",
+     "https://www.pagasa.dost.gov.ph/",
+     "live"
+    ],
+    [
+     "PHIVOLCS",
+     "https://www.phivolcs.dost.gov.ph/",
+     "live"
+    ],
+    [
+     "Philippine Red Cross",
+     "https://redcross.org.ph/",
+     "live"
+    ],
+    [
+     "BFP",
+     "https://bfp.gov.ph/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "NDRRMC",
+    "PAGASA",
+    "PHIVOLCS",
+    "Philippine Red Cross",
+    "Bureau of Fire Protection"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "life05",
+   "cat": "Pagsasaka at kalikasan",
+   "title": "What is permaculture?",
+   "title_tl": "Ano ang permaculture?",
+   "src": "https://permacultureprinciples.com/",
+   "steps": [
+    "Permaculture = designing homes, gardens and communities that work like nature. Term coined by Bill Mollison and David Holmgren.",
+    "3 ethics: Earth care (alagaan ang lupa), People care (alagaan ang tao), Fair share (hatian ang sobra, limit sa konsumo).",
+    "Holmgren's 12 principles (simple): 1 Observe and interact (obserbahan muna). 2 Catch and store energy (ipunin ang ulan, araw). 3 Obtain a yield (dapat may ani). 4 Self-regulate and accept feedback. 5 Use renewables. 6 Produce no waste. 7 Design from patterns to details. 8 Integrate rather than segregate (pagsamahin). 9 Small and slow solutions. 10 Use and value diversity. 11 Use edges and value the marginal. 12 Creatively use and respond to change.",
+    "Zones (0–5): 0 bahay, 1 pinakamalapit (herbs, gulay araw-araw), 2 prutas/manok, 3 pananim, 4 semi-wild, 5 wild/kalikasan.",
+    "Sectors: saan galing ang araw, hangin, baha, tubig-ulan at ingay; ilagay ang tanim at gamit ayon dito.",
+    "Balcony start (PH climate): paso ng kangkong, pechay, sili, tanglad, oregano; recycled containers; mulch para hindi matuyo sa init.",
+    "Backyard start: compost (see Waste guide), rain barrel, native/adapted plants (malunggay, kamote, saluyot, alugbati), layered 'food forest' (puno → shrub → herbs → groundcover).",
+    "Checklist: ☐ 1 week observation ☐ sun/water map ☐ compost ☐ 3 easy crops ☐ rain catchment"
+   ],
+   "tip": "Start small. Related: Eco-friendly living, Waste management, Urban farming.",
+   "links": [
+    [
+     "Permaculture Principles (Holmgren)",
+     "https://permacultureprinciples.com/",
+     "live"
+    ],
+    [
+     "Holmgren Design",
+     "https://holmgren.com.au/",
+     "live"
+    ],
+    [
+     "Permaculture Research Institute",
+     "https://www.permaculturenews.org/",
+     "live"
+    ],
+    [
+     "DA-ATI",
+     "https://ati2.da.gov.ph/",
+     "live"
+    ]
+   ],
+   "related": [
+    "Permaculture principles (Holmgren)",
+    "Agricultural Training Institute",
+    "ATI e-Extension (e-learning)"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "life06",
+   "cat": "Pagsasaka at kalikasan",
+   "title": "Hydroponics for beginners",
+   "title_tl": "Hydroponics para sa baguhan",
+   "src": "https://e-extension.gov.ph/",
+   "steps": [
+    "Hydroponics = pagtatanim sa tubig na may nutrients, walang lupa.",
+    "Kratky (pinakamadali, walang kuryente): container na may lid, net cup, growing medium (e.g. coco coir), nutrient solution; hayaang may air gap habang bumababa ang tubig.",
+    "DWC (Deep Water Culture): parang Kratky pero may air pump at air stone para may oxygen ang ugat.",
+    "NFT (Nutrient Film Technique): manipis na daloy ng nutrient sa PVC/gutter channels gamit ang pump; mas advanced.",
+    "Nutrients: gumamit ng hydroponic nutrient mix at sundin ang label. Bantayan ang pH (karaniwan ~5.5–6.5 para sa leafy greens) at EC/TDS gamit ang meter.",
+    "PH-climate crops: lettuce (sa malilim/mas malamig), pechay, kangkong, mustasa, basil; protektahan sa matinding init at ulan.",
+    "Materials: styro box o timba, net cups, coco coir, nutrient A+B, pH kit, (optional) air pump at TDS meter.",
+    "Checklist: ☐ Kratky setup ☐ seedlings ☐ pH check weekly ☐ harvest log"
+   ],
+   "tip": "Libreng hydroponics at urban-ag courses: DA-ATI e-Extension. Related: Urban farming course.",
+   "links": [
+    [
+     "ATI e-Extension",
+     "https://e-extension.gov.ph/",
+     "live"
+    ],
+    [
+     "DA-ATI",
+     "https://ati2.da.gov.ph/",
+     "live"
+    ],
+    [
+     "FAO eLearning Academy",
+     "https://elearning.fao.org/",
+     "live"
+    ]
+   ],
+   "related": [
+    "ATI e-Extension (e-learning)",
+    "Agricultural Training Institute",
+    "FAO eLearning Academy"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "life07",
+   "cat": "Pagsasaka at kalikasan",
+   "title": "Planning an urban farm",
+   "title_tl": "Paano mag-plano ng urban farming",
+   "src": "https://ati2.da.gov.ph/",
+   "steps": [
+    "Space & sun: ilang oras ng araw ang natatanggap (karamihan ng gulay: ~6 oras)? Sukatin ang espasyo; check kung kaya ng balcony ang bigat.",
+    "Containers & vertical: recycled bottles, timba, sako; vertical racks o hanging pots para makatipid sa espasyo.",
+    "Budget: simulan sa murang materyales at seeds; i-record ang gastos at ani.",
+    "Water: rain barrel, drip mula sa recycled bottles, magdilig sa umaga.",
+    "Lupa: garden soil + compost (see Waste guide); mulch.",
+    "Pest IPM: obserbahan araw-araw, tanggalin nang mano-mano, companion plants (marigold, tanglad), at iwasan ang sobrang pesticide.",
+    "Harvest plan: staggered planting (magtanim kada 2 linggo) para tuloy-tuloy ang ani.",
+    "Learn more: DA-ATI urban agriculture trainings, ATI e-Extension (libre).",
+    "Checklist: ☐ sun map ☐ 5 containers ☐ compost ☐ water plan ☐ planting calendar"
+   ],
+   "tip": "Related: Permaculture, Hydroponics, Learn farming (Directory).",
+   "links": [
+    [
+     "DA-ATI",
+     "https://ati2.da.gov.ph/",
+     "live"
+    ],
+    [
+     "ATI e-Extension",
+     "https://e-extension.gov.ph/",
+     "live"
+    ],
+    [
+     "PhilRice",
+     "https://www.philrice.gov.ph/",
+     "live"
+    ],
+    [
+     "UPLB",
+     "https://uplb.edu.ph/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Agricultural Training Institute",
+    "ATI e-Extension (e-learning)",
+    "PhilRice"
+   ],
+   "link": "live"
+  }
+ ]
+}

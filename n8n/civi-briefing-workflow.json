@@ -1,0 +1,425 @@
+{
+ "name": "Civi Daily Briefing → in-app + email (Resend) + push",
+ "nodes": [
+  {
+   "name": "Hourly (PHT)",
+   "type": "n8n-nodes-base.scheduleTrigger",
+   "typeVersion": 1.2,
+   "position": [
+    0,
+    0
+   ],
+   "parameters": {
+    "rule": {
+     "interval": [
+      {
+       "field": "cronExpression",
+       "expression": "5 * * * *"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Fetch email template",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    220,
+    0
+   ],
+   "parameters": {
+    "method": "GET",
+    "url": "={{ $env.CIVI_SITE_URL }}/email/briefing.html",
+    "authentication": "none",
+    "nodeCredentialType": null,
+    "options": {
+     "response": {
+      "response": {
+       "responseFormat": "text"
+      }
+     }
+    }
+   },
+   "credentials": null
+  },
+  {
+   "name": "Due email users (opt-in only)",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    440,
+    0
+   ],
+   "parameters": {
+    "method": "GET",
+    "url": "={{ $env.SUPABASE_URL }}/rest/v1/briefing_email_due?select=user_id",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "supabaseApi",
+    "options": {}
+   },
+   "credentials": {
+    "supabaseApi": {
+     "id": "",
+     "name": "Supabase service_role (n8n only)"
+    }
+   }
+  },
+  {
+   "name": "Build digest + unsubscribe token",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    660,
+    0
+   ],
+   "parameters": {
+    "method": "POST",
+    "url": "={{ $env.SUPABASE_URL }}/rest/v1/rpc/briefing_digest",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "supabaseApi",
+    "options": {},
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify({ p_user: $json.user_id }) }}"
+   },
+   "credentials": {
+    "supabaseApi": {
+     "id": "",
+     "name": "Supabase service_role (n8n only)"
+    }
+   }
+  },
+  {
+   "name": "Render email",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    880,
+    0
+   ],
+   "parameters": {
+    "mode": "runOnceForEachItem",
+    "jsCode": "// Renders the email from the shared template (same function as js/briefing.js). No tracking pixels.\nconst tpl = $('Fetch email template').first().json.data;\nconst SITE = $env.CIVI_SITE_URL; // e.g. https://civi.chainnes.com (n8n env var)\nfunction briefingEmailHTML(tpl, items, o) {\n  const D = { \"&rsquo;\": \"’\", \"&lsquo;\": \"‘\", \"&ldquo;\": \"“\", \"&rdquo;\": \"”\", \"&amp;\": \"&\", \"&quot;\": '\"', \"&#39;\": \"'\", \"&#8217;\": \"’\", \"&hellip;\": \"…\", \"&nbsp;\": \" \" };\n  const e = s => String(s ?? \"\").replace(/&(?:[a-z]+|#\\d+);/g, m => D[m] ?? m).replace(/[&<>\"']/g, c => ({ \"&\": \"&amp;\", \"<\": \"&lt;\", \">\": \"&gt;\", '\"': \"&quot;\", \"'\": \"&#39;\" }[c]));\n  const col = s => { let h = 0; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) % 360; return `hsl(${h},70%,40%)`; };\n  const rows = items.filter(i => /^https:\\/\\//.test(i.url)).map((i, n) => `<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-top:1px solid #e3e9f1\"><tr>\n    <td valign=\"top\" style=\"width:28px;padding:14px 0;font-size:18px;font-weight:bold;color:#0b6fa4\">${n + 1}</td><td style=\"padding:14px 0\">\n    <span style=\"display:inline-block;width:18px;height:18px;line-height:18px;border-radius:9px;background:${col(i.source)};color:#fff;font-size:9px;font-weight:bold;text-align:center;vertical-align:middle\">${e(String(i.source).replace(/[^A-Za-z0-9]/g, \"\").slice(0, 2).toUpperCase())}</span>\n    <span style=\"font-size:12px;color:#51627a;vertical-align:middle\">&nbsp;${e(i.source)}</span>\n    <div style=\"margin-top:6px\"><a href=\"${e(i.url)}\" style=\"color:#0b1626;font-size:16px;font-weight:bold;text-decoration:none;line-height:1.35\">${e(i.title)}</a></div>\n    ${i.summary ? `<div style=\"font-size:13px;color:#51627a;margin-top:4px;line-height:1.45\">${e(i.summary).slice(0, 260)}${i.summary_is_ai ? ' <i style=\"color:#a05a00\">(machine-generated summary)</i>' : \"\"}</div>` : \"\"}\n    <div style=\"margin-top:6px\"><a href=\"${e(i.url)}\" style=\"font-size:12px;color:#0b6fa4\">Read at source &rarr;</a></div></td></tr></table>`).join(\"\");\n  const map = { PREHEADER: `${items.length} stories for ${o.scope}`, DATE: o.date, SCOPE: o.scope, ITEMS: rows, SITE: o.site, UNSUB_URL: o.unsub, SETTINGS_URL: o.site + \"/#/briefing/settings\" };\n  return tpl.replace(/\\{\\{(\\w+)\\}\\}/g, (_, k) => k === \"ITEMS\" ? map.ITEMS : e(map[k] ?? \"\"));\n}\n\nconst d = $json; if (!d || !d.email || !Array.isArray(d.items) || !d.items.length) return { json: { skip: true, user_id: d && d.user_id } };\nconst unsub = `${SITE}/api/briefing/unsubscribe?t=${d.token}`;\nconst date = new Date().toLocaleDateString('en-PH', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: 'Asia/Manila' });\nconst html = briefingEmailHTML(tpl, d.items, { date, scope: d.scope, site: SITE, unsub });\nconst text = `Your Civi Briefing, ${date}\\n\\n` + d.items.map((i, n) => `${n + 1}. ${i.title} (${i.source})\\n${i.url}`).join('\\n\\n') + `\\n\\nUnsubscribe: ${unsub}\\nSettings: ${SITE}/#/briefing/settings\\nPrivacy: privacy@chainnes.com`;\nreturn { json: { skip: false, user_id: d.user_id, n: d.items.length, payload: {\n  from: $env.BRIEFING_FROM, to: [d.email], subject: `Your Civi Briefing · ${d.items[0].title.slice(0, 60)}`, html, text,\n  headers: { 'List-Unsubscribe': `<${unsub}>, <mailto:privacy@chainnes.com?subject=unsubscribe>`, 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click' } } } };\n"
+   }
+  },
+  {
+   "name": "Has stories?",
+   "type": "n8n-nodes-base.if",
+   "typeVersion": 2,
+   "position": [
+    1100,
+    0
+   ],
+   "parameters": {
+    "conditions": {
+     "options": {
+      "caseSensitive": true,
+      "typeValidation": "loose"
+     },
+     "combinator": "and",
+     "conditions": [
+      {
+       "leftValue": "={{ $json.skip }}",
+       "rightValue": false,
+       "operator": {
+        "type": "boolean",
+        "operation": "false",
+        "singleValue": true
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Send via Resend",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    1320,
+    -80
+   ],
+   "parameters": {
+    "method": "POST",
+    "url": "https://api.resend.com/emails",
+    "authentication": "genericCredentialType",
+    "nodeCredentialType": "httpHeaderAuth",
+    "options": {
+     "batching": {
+      "batch": {
+       "batchSize": 2,
+       "batchInterval": 1100
+      }
+     }
+    },
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($json.payload) }}",
+    "genericAuthType": "httpHeaderAuth"
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "",
+     "name": "Resend API key (Authorization: Bearer re_...)"
+    }
+   }
+  },
+  {
+   "name": "Mark sent + log",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    1540,
+    -80
+   ],
+   "parameters": {
+    "method": "POST",
+    "url": "={{ $env.SUPABASE_URL }}/rest/v1/rpc/briefing_mark_sent",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "supabaseApi",
+    "options": {},
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify({ p_user: $('Render email').item.json.user_id, p_channel: 'email', p_items: $('Render email').item.json.n, p_status: $json.id ? 'sent' : 'error', p_provider_id: $json.id || '' }) }}"
+   },
+   "credentials": {
+    "supabaseApi": {
+     "id": "",
+     "name": "Supabase service_role (n8n only)"
+    }
+   }
+  },
+  {
+   "name": "Daily 06:00 PHT",
+   "type": "n8n-nodes-base.scheduleTrigger",
+   "typeVersion": 1.2,
+   "position": [
+    0,
+    260
+   ],
+   "parameters": {
+    "rule": {
+     "interval": [
+      {
+       "field": "cronExpression",
+       "expression": "0 6 * * *"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Build in-app briefings (all users)",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    220,
+    260
+   ],
+   "parameters": {
+    "method": "POST",
+    "url": "={{ $env.SUPABASE_URL }}/rest/v1/rpc/briefing_build_all",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "supabaseApi",
+    "options": {},
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "{}"
+   },
+   "credentials": {
+    "supabaseApi": {
+     "id": "",
+     "name": "Supabase service_role (n8n only)"
+    }
+   }
+  },
+  {
+   "name": "Daily 07:30 PHT (push)",
+   "type": "n8n-nodes-base.scheduleTrigger",
+   "typeVersion": 1.2,
+   "position": [
+    0,
+    460
+   ],
+   "parameters": {
+    "rule": {
+     "interval": [
+      {
+       "field": "cronExpression",
+       "expression": "30 7 * * *"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Push targets (opt-in only)",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    220,
+    460
+   ],
+   "parameters": {
+    "method": "GET",
+    "url": "={{ $env.SUPABASE_URL }}/rest/v1/briefing_push_targets?select=*",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "supabaseApi",
+    "options": {}
+   },
+   "credentials": {
+    "supabaseApi": {
+     "id": "",
+     "name": "Supabase service_role (n8n only)"
+    }
+   }
+  },
+  {
+   "name": "Send Web Push (optional)",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    440,
+    460
+   ],
+   "disabled": true,
+   "parameters": {
+    "mode": "runOnceForAllItems",
+    "jsCode": "// OPTIONAL Web Push. Needs n8n env NODE_FUNCTION_ALLOW_EXTERNAL=web-push (self-hosted n8n, `npm i web-push`) and env VAPID_PUBLIC_KEY / VAPID_PRIVATE_KEY / VAPID_SUBJECT.\n// Disabled by default. Sends only a short title + link to the user's own briefing; no personal data in the payload.\nconst webpush = require('web-push');\nwebpush.setVapidDetails($env.VAPID_SUBJECT || 'mailto:privacy@chainnes.com', $env.VAPID_PUBLIC_KEY, $env.VAPID_PRIVATE_KEY);\nconst out = [];\nfor (const it of $input.all()) { const s = it.json;\n  try { await webpush.sendNotification({ endpoint: s.endpoint, keys: { p256dh: s.p256dh, auth: s.auth } },\n      JSON.stringify({ title: `Your Civi Briefing · ${s.n} new`, body: String(s.top_title || '').slice(0, 120), url: '/#/briefing' }), { TTL: 6 * 3600 });\n    out.push({ json: { user_id: s.user_id, status: 'sent' } });\n  } catch (e) { out.push({ json: { user_id: s.user_id, status: e.statusCode === 410 || e.statusCode === 404 ? 'gone' : 'error', endpoint: s.endpoint } }); }\n}\nreturn out;  // TIP: delete 'gone' endpoints from push_subscriptions.\n"
+   }
+  },
+  {
+   "name": "README",
+   "type": "n8n-nodes-base.stickyNote",
+   "typeVersion": 1,
+   "position": [
+    -40,
+    -300
+   ],
+   "parameters": {
+    "width": 760,
+    "height": 240,
+    "content": "## Civi Daily Briefing\n1. Credentials: **Supabase API** (host = SUPABASE_URL, key = service_role, n8n only) and **Header Auth** for Resend (`Authorization` / `Bearer re_...`).\n2. n8n env vars: `SUPABASE_URL`, `CIVI_SITE_URL`, `BRIEFING_FROM` (e.g. `Civi Briefing <briefing@mail.chainnes.com>`, verified domain). Push (optional): `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `NODE_FUNCTION_ALLOW_EXTERNAL=web-push`.\n3. Settings > Timezone = Asia/Manila.\n4. Email goes ONLY to users in `briefing_email_due` (email_on + consent). Every email has List-Unsubscribe one-click + footer link.\n5. Test with your own account first, then activate."
+   }
+  }
+ ],
+ "connections": {
+  "Hourly (PHT)": {
+   "main": [
+    [
+     {
+      "node": "Fetch email template",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Fetch email template": {
+   "main": [
+    [
+     {
+      "node": "Due email users (opt-in only)",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Due email users (opt-in only)": {
+   "main": [
+    [
+     {
+      "node": "Build digest + unsubscribe token",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Build digest + unsubscribe token": {
+   "main": [
+    [
+     {
+      "node": "Render email",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Render email": {
+   "main": [
+    [
+     {
+      "node": "Has stories?",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Send via Resend": {
+   "main": [
+    [
+     {
+      "node": "Mark sent + log",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Daily 06:00 PHT": {
+   "main": [
+    [
+     {
+      "node": "Build in-app briefings (all users)",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Daily 07:30 PHT (push)": {
+   "main": [
+    [
+     {
+      "node": "Push targets (opt-in only)",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Push targets (opt-in only)": {
+   "main": [
+    [
+     {
+      "node": "Send Web Push (optional)",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Has stories?": {
+   "main": [
+    [
+     {
+      "node": "Send via Resend",
+      "type": "main",
+      "index": 0
+     }
+    ],
+    []
+   ]
+  }
+ },
+ "settings": {
+  "timezone": "Asia/Manila",
+  "executionOrder": "v1"
+ },
+ "active": false
+}

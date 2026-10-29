@@ -1,0 +1,15 @@
+{
+ "fetched_at": "2026-10-28T23:54:52.394980+00:00",
+ "sources": {
+  "geoBoundaries ADM1": "ok (17)",
+  "geoBoundaries ADM2": "ok (87)",
+  "PSGC gazetteer": "ok (252 names)",
+  "PSA LFS": "ok (32)",
+  "PSA CPI": "ok (33)",
+  "FX": "ok (64)",
+  "WB gdp_growth": "ok (8)",
+  "WB poverty": "ok (1)",
+  "WB population": "ok (8)",
+  "map items": "ok (84, 60 geotagged)"
+ }
+}
