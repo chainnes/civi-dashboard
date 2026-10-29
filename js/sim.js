@@ -17,7 +17,7 @@ async function viewSim() {
   const B = await data("budget_2026"); const st = JSON.parse(sessionStorage.getItem("civi.sim") || "null") || { pct: {}, pol: [] };
   const save = () => sessionStorage.setItem("civi.sim", JSON.stringify(st));
   const fmt = b => "₱" + (b >= 1000 ? (b / 1000).toFixed(2) + "T" : b.toFixed(1) + "B");
-  page(`<div class="row spread"><div><span class="chip ok">Civi Sims · beta</span><h1 style="margin:6px 0">🏛️ Kung Ikaw ang Presidente</h1>
+  page(`<div class="row spread"><div><span class="chip ok">Civi Sims · beta</span><h1 style="margin:6px 0">🏛️ ${esc(t("sim_title"))}</h1>
    <p class="sub">If you were President: you have the real FY 2026 national budget of <b>${fmt(B.total)}</b>. Move money between departments, pick up to 3 policies, and see what might change.</p></div></div>
    <div class="disc">📊 Budget figures: <a href="${esc(B.url)}" target="_blank" rel="noopener">${esc(B.source)}</a> (₱ billions, fetched ${esc(B.fetched)}). ${esc(B.note)}<br>⚠️ <b>Outcomes are illustrative, not forecasts.</b> They use a simple made-up scoring model to show trade-offs, not real economics. Policy costs are rough round numbers for the game.</div>
    <div class="sim-grid"><section class="card glass"><h2 style="margin-top:0">1 · Budget</h2><div id="simDepts"></div>
@@ -25,7 +25,7 @@ async function viewSim() {
      <button class="btn ghost sm" id="simReset" style="margin-top:8px">Reset to GAA</button></section>
     <section class="card glass"><h2 style="margin-top:0">2 · Policies <small style="color:var(--mute)">(max 3)</small></h2><div id="simPol"></div></section>
     <section class="card glass"><h2 style="margin-top:0">3 · Results <span class="chip warn">illustrative</span></h2><div id="simBal"></div><canvas id="simChart" height="260"></canvas><div id="simOut"></div>
-     <h2>4 · Share your suggestion</h2><label>Your message to fellow Filipinos (optional)<textarea id="simMsg" maxlength="800" placeholder="Bakit ganito ang budget mo?"></textarea></label>
+     <h2>4 · Share your suggestion</h2><label>Your message to fellow Filipinos (optional)<textarea id="simMsg" maxlength="800" placeholder="${esc(t("sim_ph"))}"></textarea></label>
      <button class="btn" id="simShare">💬 Share to Lounge (Government)</button><div id="simAfter"></div>
      <p style="font-size:11px;color:var(--mute)">Shared suggestions are <b>public posts on Civi</b>, visible to everyone. Civi does not send them to the President or any government office.</p></section></div>`);
   let chart;
@@ -54,7 +54,7 @@ async function viewSim() {
   $("#simReset").onclick = () => { st.pct = {}; st.pol = []; save(); draw(); };
   $("#simShare").onclick = async () => {
     if (needLogin()) return; const T = state._simT, ch = T.items.filter(i => st.pct[i.name]).sort((a, b) => Math.abs(st.pct[b.name]) - Math.abs(st.pct[a.name]));
-    const title = ("Kung ako ang Presidente: " + (ch.length ? ch.slice(0, 2).map(i => `${st.pct[i.name] > 0 ? "+" : ""}${st.pct[i.name]}% ${i.name.replace(/ \(.*/, "")}`).join(", ") : "keep the 2026 budget") + (st.pol.length ? ` + ${st.pol.length} policies` : "")).slice(0, 160);
+    const title = (t("sim_share_as") + (ch.length ? ch.slice(0, 2).map(i => `${st.pct[i.name] > 0 ? "+" : ""}${st.pct[i.name]}% ${i.name.replace(/ \(.*/, "")}`).join(", ") : "keep the 2026 budget") + (st.pol.length ? ` + ${st.pol.length} policies` : "")).slice(0, 160);
     const body = [$("#simMsg").value.trim(), "", "Budget changes vs FY 2026 GAA (DBM): " + (ch.map(i => `${i.name} ${st.pct[i.name] > 0 ? "+" : ""}${st.pct[i.name]}%`).join("; ") || "none"),
       "Policies: " + (st.pol.map(id => POLICIES.find(p => p.id === id).n).join("; ") || "none"), `Total: ${fmt(T.spend)} (${T.gap > 0 ? "+" : "-"}${fmt(Math.abs(T.gap))} vs GAA)`,
       "Made with Civi Sims (illustrative game, not a forecast). Public suggestion, not sent to any government office."].join("\n").slice(0, 1500);
@@ -64,7 +64,7 @@ async function viewSim() {
     // Optional: user emails it themselves. Civi never sends email. Addresses from official pages (checked Oct 29, 2026):
     // op-proper.gov.ph/contact-us lists mro@ (documents), pace@ (assistance/referral), hrmo@ (careers) - none is for policy suggestions;
     // 8888.gov.ph/contact-us lists 8888complaint@op.gov.ph (complaints). So we leave "To:" blank and link both official pages.
-    const mail = `mailto:?subject=${encodeURIComponent("Budget suggestion from a Filipino citizen: " + title.replace(/^Kung ako ang Presidente: /, ""))}&body=${encodeURIComponent("Dear Mr. President / Office of the President,\n\n" + body.replace(/\nMade with Civi Sims.*$/, "") + "\n\nRespectfully,\n[Your name]")}`;
+    const mail = `mailto:?subject=${encodeURIComponent("Budget suggestion from a Filipino citizen: " + title.replace(t("sim_share_as"), ""))}&body=${encodeURIComponent("Dear Mr. President / Office of the President,\n\n" + body.replace(/\nMade with Civi Sims.*$/, "") + "\n\nRespectfully,\n[Your name]")}`;
     $("#simAfter").innerHTML = `<div class="card glass" style="margin-top:10px"><p>✅ Posted in <a href="#/lounge">Lounge → Government</a>.</p>
       <h4>📨 Send to Malacañang (optional)</h4><p style="font-size:12px">Opens <b>your own</b> email app with your suggestion filled in. Pick the right official address from the Office of the President's pages:
        <a href="https://op-proper.gov.ph/contact-us/" target="_blank" rel="noopener">Office of the President – Contact Us</a> · <a href="https://8888.gov.ph/contact-us/" target="_blank" rel="noopener">8888 Citizens' Complaint Center</a> (for complaints about government service).</p>

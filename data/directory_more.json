@@ -1605,7 +1605,8 @@
   },
   {
    "cat": "Earn: Iwas scam",
-   "name": "Iwas scam: never pay to get a job",
+   "name": "Never pay to get a job",
+   "name_tl": "Huwag magbayad para makakuha ng trabaho",
    "abbr": "SEC",
    "url": "https://www.sec.gov.ph/advisories-2/",
    "label": "Government",
@@ -1615,7 +1616,8 @@
   },
   {
    "cat": "Earn: Iwas scam",
-   "name": "Iwas scam: report online job scams to CICC",
+   "name": "Report online job scams to CICC",
+   "name_tl": "I-report ang online na job scam sa CICC",
    "abbr": "CICC",
    "url": "https://cicc.gov.ph/report/",
    "label": "Government",

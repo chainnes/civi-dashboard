@@ -43,13 +43,14 @@ const SYN = { career: "career roles job family jobs", karera: "career roles jobs
   bahay: "pag-ibig nha dhsud housing", house: "pag-ibig nha dhsud housing", license: "lto driver license", lisensya: "lto driver license", police: "pnp nbi clearance police", pulis: "pnp police",
   mental: "mental health hotline ncmh", lungkot: "mental health hotline", volunteer: "volunteer ngo", tulong: "dswd aid assistance volunteer ngo", aid: "dswd aid assistance", stocks: "pse company listed", barko: "ferry ppa marina coast pcg water 2go", ferry: "ferry ppa marina coast water", eroplano: "airport flight airline naia caap", flight: "airport flight airline naia caap", lipad: "flight airline airport", tren: "lrt mrt pnr rail train", train: "lrt mrt pnr rail", bus: "bus ltfrb dotr victory ceres genesis pitx", jeep: "ltfrb sakay route", biyahe: "transport land air water schedule sakay", byahe: "transport land air water schedule sakay", schedule: "schedule transport flight ferry", iskedyul: "schedule transport", commute: "sakay lrt mrt bus route", civictech: "community-built volunteer bettergov", opensource: "community-built github bettergov", transparency: "bettergov transparency bantay",  invest: "pse sec bsp company", sports: "sports fitness pba uaap volleyball football", isports: "sports", palaro: "sports", takbo: "running race marathon run", run: "running race marathon", fun: "running race", marathon: "running race marathon", hiking: "hiking mountain pinoymountaineer", akyat: "hiking mountain", bundok: "hiking mountain", basketball: "pba gilas sbp", scholarship: "scholarships scholarship ched dost", iskolar: "scholarships scholarship", hotline: "life safety emergency hotline", shopping: "shopping e-commerce mall", online: "shopping e-commerce", sine: "cinema entertainment tickets", movie: "cinema entertainment", concert: "tickets concert", kuryente: "meralco electricity utilities", tubig: "water maynilad manila utilities", internet: "telecom globe smart dito converge", load: "telecom globe smart dito", padala: "courier phlpost lbc parcel", parcel: "courier phlpost lbc parcel tracking", hayop: "animal pets welfare", aso: "pets animal welfare", pusa: "pets animal welfare", zoo: "zoos parks pasyalan", pasyalan: "zoos parks pasyalan museum", museum: "museum culture", kalikasan: "nature wildlife environment", news: "media news", balita: "media news", simbahan: "faith church community", senior: "senior citizens ncsc", pwd: "pwd disability ncda", babae: "women pcw vawc", bata: "children cwc bantay", negosyo: "business sec dti bnrs find", kumpanya: "business sec company find", kooperatiba: "cooperative cda", esports: "gaming esports", libro: "books libraries", lgbt: "lgbtq support", katutubo: "indigenous ncip" };
 const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-function score(item, words) { const hay = norm([item.name, item.abbr, item.desc, item.cat, item.industry, item.role, item.ticker].join(" ")); let s = 0;
+function score(item, words) { const hay = norm([item.name, item.name_tl, item.abbr, item.desc, item.cat, item.industry, item.role, item.ticker].join(" ")); let s = 0;
   words.forEach(w => { if (w.length < 2) return; if (new RegExp("\\b" + w.replace(/[.*+?^${}()|[\]\\]/g, "")).test(hay)) s += 3; else if (hay.includes(w)) s += 1; }); return s; }
 const STOP = new Set("ng sa ang na mga ko ako ka mo si ni kay at ay para po the a an of for to my i me in on is and or how what ano paano saan".split(" "));
 const expand = q => { const ws = norm(q).split(/[^a-z0-9-]+/).filter(w => w && !STOP.has(w)); return [...new Set(ws.flatMap(w => [w, ...(SYN[w] || Object.entries(SYN).find(([k]) => k.length > 3 && w.startsWith(k))?.[1] || "").split(" ").filter(Boolean)]))]; };
 const shortD = (x, n = 90) => { x = String(x || ""); return x.length > n ? x.slice(0, Math.max(40, x.lastIndexOf(" ", n - 2))) + "…" : x; };
-const dirCard = i => `<div class="card glass dcard">${favBtn(i._type || "directory", i.abbr || i.name, i.name, i.url)}<span class="chip">${esc(i.industry || i.cat || i.role)}</span>${i.ticker ? ` <span class="chip ok">PSE: ${esc(i.ticker)}</span>` : ""}${i.link === "bot-protected" ? ` <span class="chip" title="${esc(t("botprot"))}">✓ ${t("site_up")}</span>` : i.link === "live" ? ` <span class="chip ok">✓ ${t("link_ok")}</span>` : i.link ? ` <span class="chip warn">${t("link_check")}</span>` : ""}
-  <h4 style="padding-right:34px">${esc(i.role ? i.role + ": " + i.name : i.name)}${i.abbr && i.abbr !== i.name ? ` <small style="color:var(--mute)">(${esc(i.abbr)})</small>` : ""}</h4>
+const dirName = i => (state.lang === "tl" && i.name_tl) ? i.name_tl : i.name;
+const dirCard = i => `<div class="card glass dcard">${favBtn(i._type || "directory", i.abbr || i.name, dirName(i), i.url)}<span class="chip">${esc(t(i.industry || i.cat || i.role))}</span>${i.ticker ? ` <span class="chip ok">PSE: ${esc(i.ticker)}</span>` : ""}${i.link === "bot-protected" ? ` <span class="chip" title="${esc(t("botprot"))}">✓ ${t("site_up")}</span>` : i.link === "live" ? ` <span class="chip ok">✓ ${t("link_ok")}</span>` : i.link ? ` <span class="chip warn">${t("link_check")}</span>` : ""}
+  <h4 style="padding-right:34px">${esc(i.role ? i.role + ": " + dirName(i) : dirName(i))}${i.abbr && i.abbr !== i.name ? ` <small style="color:var(--mute)">(${esc(i.abbr)})</small>` : ""}</h4>
   ${i.phone ? `<div class="v" style="font-size:20px;color:var(--lime)">☎ <a href="tel:${esc(i.phone)}" style="color:inherit">${esc(i.phone)}</a></div>` : ""}<p class="dshort" title="${esc(i.desc || i.note || "")}">${esc(shortD(i.desc || i.note))}</p>${i.src ? `<p class="dsrc">${t("source")}: ${esc(i.src)}</p>` : ""}<a href="${esc(i.url)}" target="_blank" rel="noopener">${t("official_site")} ↗</a></div>`;
 const schCard = x => `<div class="card glass dcard"><span class="chip ${x.scope === "Local" ? "ok" : ""}">${esc(x.scope)}</span> <span class="chip">${esc((x.levels || []).join("/"))}</span><h4>${esc(x.name)}</h4><p class="dshort" title="${esc(x.eligibility || "")}">${esc(x.provider || "")} · ${esc(shortD(x.coverage, 70))}</p><a href="${esc(x.url)}" target="_blank" rel="noopener">${t("official_site")} ↗</a></div>`;
 async function viewDirectory2() {
@@ -112,9 +113,26 @@ function requestListing(cats) {
 const CIVIC = [["Read the national budget", "https://www.dbm.gov.ph/", "DBM publishes the GAA and budget documents."], ["File an FOI request", "https://www.foi.gov.ph/", "Ask executive agencies for documents."],
   ["Know your data rights (RA 10173)", "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html", "Rights to be informed, access, correct, erase."], ["Find laws and cases", "https://lawphil.net/", "LawPhil: statutes and jurisprudence, free."],
   ["Check government bids", "https://notices.philgeps.gov.ph/", "PhilGEPS procurement notices."], ["Explore official statistics", "https://openstat.psa.gov.ph/", "PSA OpenSTAT tables & API."], ["Open Data Philippines", "https://data.gov.ph/", "Government datasets."]];
-const howAll = async () => { const [h, e, lf, hl] = await Promise.all([data("howto"), data("howto_earn").catch(() => ({ items: [] })), data("howto_life").catch(() => ({ items: [] })), data("howto_health").catch(() => ({ items: [] }))]); const W = await data("howto_work").catch(() => ({ items: [] })), G = await data("howto_gov").catch(() => ({ items: [] })); return { ...h, items: [...h.items, ...e.items.map(x => ({ ...x, _note: e.note })), ...lf.items.map(x => ({ ...x, _note: lf.note })), ...hl.items.map(x => ({ ...x, _note: hl.note })), ...W.items.map(x => ({ ...x, _note: W.note })), ...G.items.map(x => ({ ...x, _note: G.note }))] }; };
-const howTitle = h => (state.lang === "tl" && h.title_tl) ? h.title_tl : h.title;
-const howCard = h => `<div class="card glass">${favBtn("howto", h.id, h.title, "#/howto?id=" + h.id)}<span class="chip ok">${t("howto")}</span><h4 style="padding-right:34px">${esc(howTitle(h))}</h4><p>${h.steps.length} ${t("steps")} · ${t("asof")} ${esc(state._howAsOf || "")}</p><a class="btn sm" href="#/howto?id=${esc(h.id)}">${t("start_guide")} ▶</a></div>`;
+const howAll = async () => {
+  const [h, e, lf, hl] = await Promise.all([data("howto"), data("howto_earn").catch(() => ({ items: [] })), data("howto_life").catch(() => ({ items: [] })), data("howto_health").catch(() => ({ items: [] }))]);
+  const W = await data("howto_work").catch(() => ({ items: [] })), G = await data("howto_gov").catch(() => ({ items: [] }));
+  const stamp = file => (file.items || []).map(x => ({ ...x, _note: file.note || "", _note_tl: file.note_tl || "" }));
+  return { ...h, note_tl: h.note_tl || "", items: [...stamp(h), ...stamp(e), ...stamp(lf), ...stamp(hl), ...stamp(W), ...stamp(G)] };
+};
+const howTl = () => state.lang === "tl";
+const howPick = (en, tl) => (howTl() && tl != null && tl !== "" && !(Array.isArray(tl) && !tl.length) ? tl : en);
+const cleanStep = s => {
+  const parts = String(s == null ? "" : s).split(/\s*[☐□▢☑]\s*/).map(x => x.trim()).filter(Boolean);
+  if (parts.length <= 1) return (parts[0] || "").replace(/\s{2,}/g, " ");
+  if (/^checklist\b/i.test(parts[0])) return `${parts[0].replace(/:?\s*$/, ":")} ${parts.slice(1).join(" · ")}`.replace(/\s{2,}/g, " ");
+  return parts.join(" · ");
+};
+const howTitle = h => howPick(h.title, h.title_tl);
+const howSteps = h => (howPick(h.steps, h.steps_tl) || []).map(cleanStep);
+const howTip = h => { const tip = howPick(h.tip, h.tip_tl); return tip ? cleanStep(tip) : ""; };
+const howNote = h => howPick(h._note || "", h._note_tl || "");
+const howRelated = h => { const q = h.related || []; const labels = howPick(h.related_en || q, h.related_tl || h.related_en || q); return q.map((query, i) => ({ q: query, label: labels[i] || query })); };
+const howCard = h => `<div class="card glass">${favBtn("howto", h.id, howTitle(h), "#/howto?id=" + h.id)}<span class="chip ok">${t("howto")}</span><h4 style="padding-right:34px">${esc(howTitle(h))}</h4><p>${(h.steps || []).length} ${t("steps")} · ${t("asof")} ${esc(state._howAsOf || "")}</p><a class="btn sm" href="#/howto?id=${esc(h.id)}">${t("start_guide")} ▶</a></div>`;
 async function viewAcademy2() {
   const [a, how] = await Promise.all([data("academy"), howAll()]); state._howAsOf = how.as_of; const hc = [...new Set(how.items.map(h => h.cat))];
   page(`<h1>🎓 ${t("nav_academy")}</h1><p class="sub">${t("acad_sub")}</p>
@@ -124,10 +142,10 @@ async function viewAcademy2() {
    ${hc.map((c, n) => rowc("h" + n, "🧭 " + esc(t(c)), how.items.filter(h => h.cat === c).map(howCard))).join("")}
    ${rowc("civic", "🏛️ " + t("civic_knowhow"), CIVIC.map(([n, u, d]) => `<div class="card glass">${favBtn("academy", n, n, u)}<h4 style="padding-right:34px">${n}</h4><p>${d}</p><a href="${u}" target="_blank" rel="noopener">${t("start")} ↗</a></div>`))}
    ${rowc("courses", "💻 " + t("free_courses"), (a.online || []).map(c => `<div class="card glass">${favBtn("academy", c.name, c.name, c.url)}<span class="chip">${esc(c.by)}</span><h4 style="padding-right:34px">${esc(c.name)}</h4><p>${esc(c.tags || "")}</p><a href="${esc(c.url)}" target="_blank" rel="noopener">${t("open")} ↗</a></div>`))}
-   </div><div class="card glass sims" style="margin-top:14px"><span class="chip ok">Beta</span><h4>🎮 Civi Sims</h4><p><a href="#/sim"><b>Kung Ikaw ang Presidente ▶</b></a> ${t("sim_blurb")}</p></div>`);
+   </div><div class="card glass sims" style="margin-top:14px"><span class="chip ok">Beta</span><h4>🎮 Civi Sims</h4><p><a href="#/sim"><b>${esc(t("sim_title"))} ▶</b></a> ${t("sim_blurb")}</p></div>`);
   wireCarousels();
   let cat = "", words = [], aiLab = "";
-  const hText = h => norm([h.title, h.title_tl, h.cat, t(h.cat), ...(h.steps || []), h.tip, ...(h.related || [])].join(" "));
+  const hText = h => norm([h.title, h.title_tl, h.cat, t(h.cat), ...(h.steps || []), ...(h.steps_tl || []), h.tip, h.tip_tl, ...(h.related || []), ...(h.related_tl || [])].join(" "));
   const show = () => { const hits = how.items.filter(h => (!cat || h.cat === cat) && (!words.length || words.some(w => hText(h).includes(w))))
       .sort((a, b) => words.filter(w => hText(b).includes(w)).length - words.filter(w => hText(a).includes(w)).length);
     const filt = cat || words.length; $("#acRows").hidden = !!filt;
@@ -138,16 +156,58 @@ async function viewAcademy2() {
     const r = await api("assist", { method: "POST", body: { mode: "academy", q } }); // Workers AI via the AI binding; local keyword fallback
     if (r.keywords?.length) { words = [...expand(q), ...r.keywords.flatMap(expand)]; aiLab = "AI: " + r.keywords.join(", "); } else { words = expand(q); aiLab = t("kw_mode"); } show(); };
 }
+Object.assign(CIVI_I18N.en, { guide_level: "Guide", lessons: "Lessons", course_done: "Lesson complete", prev_lesson: "Previous", next_lesson: "Next",
+  quiz_title: "Quick quiz", quiz_check: "Check answers", quiz_pass: "Passed. Finish every step too, so this module counts.", quiz_retry: "{ok}/{n} correct — try again.", quiz_passed: "Already passed", quiz_progress: "Course progress", modules: "modules", badge_civics: "Civi Civics Badge", badge_gov: "I know how our government works", quiz_sources: "Sources are listed above. Checked 2026-10-29. No current official is named.",
+  sim_title: "If You Were President", sim_ph: "Why this budget?", sim_share_as: "If I were President: ",
+  "Paano Kumita Online": "How to earn online", "Paano tumatakbo ang gobyerno natin": "How our government works", "Mga industriya sa Pilipinas": "Industries in the Philippines", "Buhay at kabuhayan": "Life and livelihood", "Pagsasaka at kalikasan": "Farming and nature", "Paano magsimula ng negosyo": "How to start a business", "Earn: Iwas scam": "Earn: Avoid scams", "Zoos, parks & pasyalan": "Zoos, parks and places to visit" });
+Object.assign(CIVI_I18N.tl, { guide_level: "Gabay", lessons: "Mga aralin", course_done: "Tapos na ang aralin", prev_lesson: "Nakaraan", next_lesson: "Susunod",
+  quiz_title: "Mabilisang quiz", quiz_check: "Suriin ang sagot", quiz_pass: "Pasado. Tapusin din ang lahat ng hakbang para mabilang ito.", quiz_retry: "{ok}/{n} tama — subukan ulit.", quiz_passed: "Pasado na", quiz_progress: "Progreso ng kurso", modules: "mga module", badge_civics: "Civi Civics Badge", badge_gov: "Alam ko kung paano tumatakbo ang gobyerno natin", quiz_sources: "Nasa itaas ang mga source. Sinuri noong 2026-10-29. Walang pinangalanang kasalukuyang opisyal.",
+  sim_title: "Kung Ikaw ang Presidente", sim_ph: "Bakit ganito ang budget mo?", sim_share_as: "Kung ako ang Presidente: ",
+  "Paano Kumita Online": "Paano kumita online", "Paano tumatakbo ang gobyerno natin": "Paano tumatakbo ang gobyerno natin", "Mga industriya sa Pilipinas": "Mga industriya sa Pilipinas", "Buhay at kabuhayan": "Buhay at kabuhayan", "Pagsasaka at kalikasan": "Pagsasaka at kalikasan", "Paano magsimula ng negosyo": "Paano magsimula ng negosyo", "Career roles 101": "Mga role sa trabaho", "Earn: Iwas scam": "Kumita: Iwas scam", "Zoos, parks & pasyalan": "Zoo, parke at mga pasyalan" });
 async function viewHowto() {
   const how = await howAll(), id = new URLSearchParams(location.hash.split("?")[1] || "").get("id"), h = how.items.find(x => x.id === id);
   if (!h) return viewAcademy2();
-  const done = JSON.parse(localStorage.getItem("civi.howto." + h.id) || "[]");
-  page(`<p><a href="#/academy">← ${t("nav_academy")}</a></p><div class="card glass" style="max-width:760px">${favBtn("howto", h.id, h.title, "#/howto?id=" + h.id)}<span class="chip ok">${t("howto")}</span> <span class="chip">${esc(t(h.cat))}</span>
-   <h1 style="padding-right:34px">${esc(howTitle(h))}</h1>${h.title_tl && howTitle(h) !== h.title_tl ? `<p class="sub">${esc(h.title_tl)}</p>` : ""}<div class="disc">📅 ${t("asof")} ${esc(how.as_of)}. ${esc(h._note || how.note)} ${t("not_advice")}</div>
-   <ol class="steps">${h.steps.map((s, n) => `<li><label class="row" style="align-items:flex-start;gap:8px"><input type="checkbox" data-step="${n}" ${done.includes(n) ? "checked" : ""} style="width:auto;margin-top:3px" aria-label="${esc(t("mark_done"))} ${n + 1}"><span>${esc(s)}</span></label></li>`).join("")}</ol>
-   ${h.tip ? `<div class="disc">💡 ${esc(h.tip)}</div>` : ""}${h.related ? `<p>🔗 ${t("see_more")}: ${h.related.map(r => `<a href="#/directory?q=${encodeURIComponent(r)}">${esc(r)}</a>`).join(" · ")}</p>` : ""}${h.links ? `<p>🌐 ${h.links.map(([n, u, st]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>${st === "bot-protected" ? ` <small title="${esc(t("botprot"))}">✓</small>` : ""}`).join(" · ")}</p>` : ""}<p><a class="btn" href="${esc(h.src)}" target="_blank" rel="noopener">${t("check_official")} ↗</a> <span class="chip ${h.link === "live" ? "ok" : ""}">${esc(new URL(h.src).hostname)}</span></p>
-   ${window.civiQuizHTML ? window.civiQuizHTML(h, how) : ""}<p class="sub" style="font-size:11px">${t("progress_local")}</p></div>`);
-  $$("[data-step]").forEach(c => c.onchange = () => { localStorage.setItem("civi.howto." + h.id, JSON.stringify($$("[data-step]:checked").map(x => +x.dataset.step))); window.civiQuizCheck?.(h, how); });
+  const lessons = how.items.filter(x => x.cat === h.cat);
+  const idx = Math.max(0, lessons.findIndex(x => x.id === h.id));
+  const prev = lessons[idx - 1], next = lessons[idx + 1];
+  const steps = howSteps(h), tip = howTip(h), rel = howRelated(h);
+  const readDone = x => { try { return JSON.parse(localStorage.getItem("civi.howto." + x.id) || "[]"); } catch { return []; } };
+  const done = new Set(readDone(h));
+  const finished = x => (x.steps || []).length > 0 && readDone(x).length >= x.steps.length;
+  const courseN = () => lessons.filter(finished).length;
+  let host = ""; try { host = new URL(h.src).hostname.replace(/^www\./, ""); } catch {}
+  const outline = lessons.map((x, i) => `<a class="${x.id === h.id ? "on" : ""}" href="#/howto?id=${esc(x.id)}"><span>${i + 1}</span>${esc(howTitle(x))}${finished(x) ? " ✓" : ""}</a>`).join("");
+  page(`<p><a href="#/academy">← ${t("nav_academy")}</a></p>
+   <article class="course">
+     <button type="button" class="btn ghost sm course-toc" id="tocBtn" aria-expanded="false" aria-controls="toc">${t("lessons")}</button>
+     <nav id="toc" class="course-side glass" aria-label="${esc(t("lessons"))}"><b>${esc(t(h.cat) === h.cat ? h.cat : t(h.cat))}</b><progress id="courseBar" max="${lessons.length}" value="${courseN()}" aria-label="${esc(t("lessons"))}"></progress><div class="toc-list">${outline}</div></nav>
+     <div class="course-main card glass">
+       <header class="course-head">${favBtn("howto", h.id, howTitle(h), "#/howto?id=" + h.id)}
+         <h1>${esc(howTitle(h))}</h1>
+         <p class="course-meta"><span>${steps.length} ${t("steps")}</span><span>${t("guide_level")}</span><a href="${esc(h.src)}" target="_blank" rel="noopener">${esc(host)} ↗</a></p>
+         <progress id="lessonBar" max="${steps.length}" value="${done.size}"></progress><span id="lessonPct" class="sub">${done.size}/${steps.length}</span>
+       </header>
+       <div class="disc">📅 ${t("asof")} ${esc(how.as_of)}. ${esc(howNote(h))} ${t("not_advice")}</div>
+       <ol class="steps" id="lessonSteps">${steps.map((s, n) => `<li class="step-card"><span class="step-n" aria-hidden="true">${n + 1}</span><input class="step-box" type="checkbox" id="st-${esc(h.id)}-${n}" data-step="${n}" ${done.has(n) ? "checked" : ""}><label class="step-t" for="st-${esc(h.id)}-${n}">${esc(s)}</label></li>`).join("")}</ol>
+       ${tip ? `<div class="disc">💡 ${esc(tip)}</div>` : ""}
+       ${rel.length ? `<p>🔗 ${t("see_more")}: ${rel.map(r => `<a href="#/directory?q=${encodeURIComponent(r.q)}">${esc(r.label)}</a>`).join(" · ")}</p>` : ""}
+       ${h.links ? `<p>🌐 ${h.links.map(([n, u, st]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>${st === "bot-protected" ? ` <small title="${esc(t("botprot"))}">✓</small>` : ""}`).join(" · ")}</p>` : ""}
+       <div id="lessonBadge" class="course-badge" role="status" ${done.size >= h.steps.length ? "" : "hidden"}>✓ ${esc(t("course_done"))}</div>
+       ${window.civiQuizHTML ? window.civiQuizHTML(h, how) : ""}
+       <div class="course-nav"><a class="btn ghost ${prev ? "" : "is-off"}" ${prev ? `href="#/howto?id=${esc(prev.id)}"` : 'aria-disabled="true" tabindex="-1"'}>‹ ${t("prev_lesson")}</a><a class="btn ${next ? "" : "is-off"}" ${next ? `href="#/howto?id=${esc(next.id)}"` : 'aria-disabled="true" tabindex="-1"'}>${t("next_lesson")} ›</a></div>
+       <p class="sub" style="font-size:11px">${t("progress_local")}</p>
+     </div>
+   </article>`);
+  const sync = () => {
+    const ids = $$("#lessonSteps [data-step]:checked").map(x => +x.dataset.step);
+    localStorage.setItem("civi.howto." + h.id, JSON.stringify(ids));
+    const bar = $("#lessonBar"), pct = $("#lessonPct"), badge = $("#lessonBadge");
+    if (bar) bar.value = ids.length; if (pct) pct.textContent = `${ids.length}/${steps.length}`; if (badge) badge.hidden = ids.length < steps.length;
+    const cb = $("#courseBar"); if (cb) cb.value = courseN();
+    window.civiQuizCheck?.(h, how);
+  };
+  $$("#lessonSteps [data-step]").forEach(c => c.onchange = sync);
+  $("#tocBtn").onclick = () => { const open = $("#toc").classList.toggle("open"); $("#tocBtn").setAttribute("aria-expanded", open); };
   window.civiQuizBind?.(h, how);
 }
 
