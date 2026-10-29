@@ -1,7 +1,7 @@
 /* UX batch 4 (loaded last): global Auto/Day/Night theme selector in the top bar, Featured strip on every page,
    Weather today (Open-Meteo, keyless, + PAGASA link). No keys; the browser sends only the map point's coordinates to Open-Meteo. */
 (function () {
-const X = { en: { theme: "Theme", featured: "Featured", acad_q: "Search guides or ask: e.g. paano mag-ipon, passport, hydroponics", all: "All",
+const X = { en: { theme: "Theme", featured: "Featured", acad_q: "Search guides or ask: e.g. how to save, passport, hydroponics", all: "All",
   th_next: "Click to change", wx_title: "Weather today", wx_feels: "Feels like", wx_rain: "Rain chance", wx_wind: "Wind", wx_src: "Model forecast by Open-Meteo (not PAGASA)", wx_asof: "as of", wx_pagasa: "Official forecasts & warnings: PAGASA", wx_fail: "Weather unavailable right now." },
  tl: { theme: "Tema", featured: "Tampok", acad_q: "Maghanap ng gabay o magtanong: hal. paano mag-ipon, passport, hydroponics", all: "Lahat",
   th_next: "I-click para palitan", wx_title: "Panahon ngayon", wx_feels: "Pakiramdam", wx_rain: "Tsansa ng ulan", wx_wind: "Hangin", wx_src: "Forecast model ng Open-Meteo (hindi PAGASA)", wx_asof: "as of", wx_pagasa: "Opisyal na forecast at babala: PAGASA", wx_fail: "Hindi makuha ang panahon ngayon." } };

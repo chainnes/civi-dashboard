@@ -1,7 +1,7 @@
 {
  "as_of": "2026-10-29",
- "course": "Careers, negosyo at industriya",
- "note": "Simple guide as of 2026-10-29. Hindi ito legal, tax o career advice; laging i-check ang official site o kumunsulta sa eksperto. Links were opened and verified on 2026-10-29 (✓ = site up but blocks automated checks).",
+ "course": "Careers, business, and industry",
+ "note": "Simple guide as of 2026-10-29. This is not legal, tax, or career advice; always check the official site or consult a professional. Links were opened and verified on 2026-10-29 (✓ = site up but blocks automated checks).",
  "items": [
   {
    "id": "car01",
@@ -10,12 +10,19 @@
    "title_tl": "Ano ang job family?",
    "src": "https://philjobnet.gov.ph/",
    "steps": [
+    "A job family is a group of related jobs, for example Health, IT, Sales, Admin, Skilled trades, or Education.",
+    "Every job has three questions: What does the person do? What skills does it take? How do you start?",
+    "Look at vacancies on PhilJobNet (DOLE) to see what employers are hiring for now.",
+    "Pick 2 job families that interest you. · Find 3 job posts on PhilJobNet."
+   ],
+   "steps_tl": [
     "Ang job family ay grupo ng magkakaugnay na trabaho, hal. Health, IT, Sales, Admin, Skilled trades, Education.",
     "Bawat trabaho ay may 3 tanong: Ano ang ginagawa? Anong skills? Paano magsimula?",
     "Tingnan ang mga bakanteng trabaho sa PhilJobNet (DOLE) para makita kung ano ang hinahanap ngayon.",
-    "☐ Pumili ng 2 job family na interesado ka ☐ Maghanap ng 3 job post sa PhilJobNet"
+    "Pumili ng 2 job family na interesado ka · Maghanap ng 3 job post sa PhilJobNet"
    ],
-   "tip": "Walang 'mababang' trabaho: lahat ng role ay kailangan para gumana ang komunidad.",
+   "tip": "There is no lesser job. Every role is needed for a community to work.",
+   "tip_tl": "Walang 'mababang' trabaho: lahat ng role ay kailangan para gumana ang komunidad.",
    "links": [
     [
      "PhilJobNet (DOLE)",
@@ -32,21 +39,36 @@
     "jobs",
     "PhilJobNet"
    ],
-   "link": "live"
+   "related_en": [
+    "jobs",
+    "PhilJobNet"
+   ],
+   "link": "live",
+   "related_tl": [
+    "mga trabaho",
+    "PhilJobNet"
+   ]
   },
   {
    "id": "car02",
    "cat": "Career roles 101",
-   "title": "Skilled trades & TESDA roles",
+   "title": "Skilled trades and TESDA roles",
    "title_tl": "Skilled trades at TESDA",
    "src": "https://www.tesda.gov.ph/",
    "steps": [
+    "Examples: electrician, welder, cook, caregiver, automotive technician, hairdresser.",
+    "Why it matters: these roles keep homes, food, vehicles, and care running.",
+    "Skills: hands-on work, safety, and attention to detail. A start: TESDA training and a National Certificate (NC) assessment.",
+    "Find the course you want on the TESDA site. · Find the nearest training center."
+   ],
+   "steps_tl": [
     "Halimbawa: electrician, welder, cook, caregiver, automotive, hairdressing.",
     "Bakit mahalaga: sila ang nagpapatakbo ng bahay, pagkain, sasakyan at pag-aalaga.",
     "Skills: hands-on, safety, attention to detail. Simula: TESDA training at National Certificate (NC) assessment.",
-    "☐ Hanapin ang kursong gusto mo sa TESDA ☐ Alamin ang pinakamalapit na training center"
+    "Hanapin ang kursong gusto mo sa TESDA · Alamin ang pinakamalapit na training center"
    ],
-   "tip": "Maraming TESDA course ay libre o may scholarship; i-check ang site.",
+   "tip": "Many TESDA courses are free or have a scholarship. Check the site.",
+   "tip_tl": "Maraming TESDA course ay libre o may scholarship; i-check ang site.",
    "links": [
     [
      "TESDA",
@@ -58,7 +80,15 @@
     "tesda",
     "kurso"
    ],
-   "link": "live"
+   "related_en": [
+    "TESDA",
+    "courses"
+   ],
+   "link": "live",
+   "related_tl": [
+    "TESDA",
+    "mga kurso"
+   ]
   },
   {
    "id": "car03",
@@ -67,13 +97,21 @@
    "title_tl": "Office, IT at digital na trabaho",
    "src": "https://www.ibpap.org/",
    "steps": [
+    "Examples: customer service, virtual assistant, data entry, web developer, IT support, bookkeeper.",
+    "Why it matters: these roles help a business talk to customers and keep records and systems in order.",
+    "Skills: communication in English and Filipino, computer basics, and organization. For IT, coding or troubleshooting.",
+    "A start: free online courses, a small portfolio, and applications on PhilJobNet or freelance sites.",
+    "Make a simple resume. · Learn 1 new tool this week."
+   ],
+   "steps_tl": [
     "Halimbawa: customer service, virtual assistant, data entry, web developer, IT support, bookkeeper.",
     "Bakit mahalaga: tumutulong sa negosyo na makausap ang customer at maayos ang records at systems.",
     "Skills: komunikasyon sa English/Filipino, computer basics, organisasyon; para sa IT, coding o troubleshooting.",
     "Simula: libreng online courses, maliit na portfolio, at apply sa PhilJobNet o freelance sites.",
-    "☐ Gumawa ng simpleng resume ☐ Matuto ng 1 bagong tool ngayong linggo"
+    "Gumawa ng simpleng resume · Matuto ng 1 bagong tool ngayong linggo"
    ],
-   "tip": "Mag-ingat sa job scam: hindi dapat magbayad para matanggap.",
+   "tip": "Watch for job scams. You should not have to pay to be hired.",
+   "tip_tl": "Mag-ingat sa job scam: hindi dapat magbayad para matanggap.",
    "links": [
     [
      "IBPAP (IT-BPM industry)",
@@ -90,7 +128,15 @@
     "freelance",
     "jobs"
    ],
-   "link": "live"
+   "related_en": [
+    "freelance",
+    "jobs"
+   ],
+   "link": "live",
+   "related_tl": [
+    "freelance",
+    "mga trabaho"
+   ]
   },
   {
    "id": "car04",
@@ -99,12 +145,19 @@
    "title_tl": "Kalusugan, edukasyon at public service",
    "src": "https://psa.gov.ph/",
    "steps": [
+    "Examples: nurse, midwife, barangay health worker, teacher, social worker, police officer, firefighter.",
+    "Why it matters: they care for, teach, and protect the public.",
+    "A start: these often need a degree and a board exam or license (PRC), or civil service eligibility. Check the official requirements.",
+    "List the requirements of 1 role you want."
+   ],
+   "steps_tl": [
     "Halimbawa: nurse, midwife, barangay health worker, teacher, social worker, pulis, bumbero.",
     "Bakit mahalaga: sila ang nag-aalaga, nagtuturo at nagpoprotekta sa publiko.",
     "Simula: kadalasang kailangan ng degree at board exam/lisensya (PRC) o civil service eligibility; i-check ang official requirements.",
-    "☐ Ilista ang requirements ng 1 role na gusto mo"
+    "Ilista ang requirements ng 1 role na gusto mo"
    ],
-   "tip": "Labor at employment stats ay makikita sa PSA.",
+   "tip": "Labor and employment statistics are published by the PSA.",
+   "tip_tl": "Labor at employment stats ay makikita sa PSA.",
    "links": [
     [
      "PSA (labor statistics)",
@@ -121,21 +174,36 @@
     "jobs",
     "scholarship"
    ],
-   "link": "live"
+   "related_en": [
+    "jobs",
+    "scholarship"
+   ],
+   "link": "live",
+   "related_tl": [
+    "mga trabaho",
+    "scholarship"
+   ]
   },
   {
    "id": "biz01",
    "cat": "Paano magsimula ng negosyo",
-   "title": "Step 1: Idea at simpleng plano",
+   "title": "Step 1: Idea and a simple plan",
    "title_tl": "Hakbang 1: Ideya at plano",
    "src": "https://business.gov.ph/",
    "steps": [
+    "Answer: What will you sell? Who will buy it? How much capital do you need, and what is the price?",
+    "Try small first (for example a pre-order with people you know) before spending a lot.",
+    "Use Business.gov.ph to see the registration steps.",
+    "Write a 1-page plan. · Add up the capital you need."
+   ],
+   "steps_tl": [
     "Sagutin: Ano ang ibebenta? Sino ang bibili? Magkano ang puhunan at presyo?",
     "Subukan muna nang maliit (hal. pre-order sa kakilala) bago gumastos nang malaki.",
     "Gamitin ang Business.gov.ph para makita ang mga hakbang sa pagrehistro.",
-    "☐ Isulat ang 1-pahinang plano ☐ Kuwentahin ang puhunan"
+    "Isulat ang 1-pahinang plano · Kuwentahin ang puhunan"
    ],
-   "tip": "Huwag mangutang nang malaki para sa unang subok.",
+   "tip": "Do not borrow a large amount for the first trial.",
+   "tip_tl": "Huwag mangutang nang malaki para sa unang subok.",
    "links": [
     [
      "Business.gov.ph",
@@ -152,21 +220,36 @@
     "negosyo",
     "business"
    ],
-   "link": "live"
+   "related_en": [
+    "business",
+    "business registration"
+   ],
+   "link": "live",
+   "related_tl": [
+    "negosyo",
+    "business"
+   ]
   },
   {
    "id": "biz02",
    "cat": "Paano magsimula ng negosyo",
-   "title": "Step 2: Iparehistro ang pangalan o kumpanya",
-   "title_tl": "Hakbang 2: DTI, SEC o CDA",
+   "title": "Step 2: Register the name or the company",
+   "title_tl": "Hakbang 2: DTI, SEC, o CDA",
    "src": "https://bnrs.dti.gov.ph/",
    "steps": [
+    "Sole proprietor (just you): a business name on DTI BNRS online.",
+    "Corporation, OPC, or partnership: SEC.",
+    "Cooperative: CDA.",
+    "Choose the type of business. · Check whether the name is available."
+   ],
+   "steps_tl": [
     "Sole proprietor (ikaw lang): business name sa DTI BNRS online.",
     "Corporation, OPC o partnership: SEC.",
     "Kooperatiba: CDA.",
-    "☐ Pumili ng uri ng negosyo ☐ I-check kung available ang pangalan"
+    "Pumili ng uri ng negosyo · I-check kung available ang pangalan"
    ],
-   "tip": "Sa official site lang mag-register; may opisyal na fee na makikita roon.",
+   "tip": "Register only on the official site. The official fee is listed there.",
+   "tip_tl": "Sa official site lang mag-register; may opisyal na fee na makikita roon.",
    "links": [
     [
      "DTI BNRS (business name)",
@@ -189,20 +272,36 @@
     "sec",
     "cda"
    ],
-   "link": "live"
+   "related_en": [
+    "DTI",
+    "SEC",
+    "CDA"
+   ],
+   "link": "live",
+   "related_tl": [
+    "DTI",
+    "SEC",
+    "CDA"
+   ]
   },
   {
    "id": "biz03",
    "cat": "Paano magsimula ng negosyo",
-   "title": "Step 3: Barangay clearance at Mayor's permit",
-   "title_tl": "Hakbang 3: Barangay at Mayor's permit",
+   "title": "Step 3: Barangay clearance and Mayor's permit",
+   "title_tl": "Hakbang 3: Barangay clearance at Mayor's permit",
    "src": "https://business.gov.ph/",
    "steps": [
+    "Get a barangay business clearance for the place where the business will operate.",
+    "Apply for a Mayor's or Business Permit at the city or municipal hall (BPLO). Requirements differ by LGU.",
+    "Ask your LGU's BPLO for the list of requirements."
+   ],
+   "steps_tl": [
     "Kumuha ng barangay business clearance kung saan ang puwesto.",
     "Mag-apply ng Mayor's / Business Permit sa City o Municipal Hall (BPLO). Iba-iba ang requirements bawat LGU.",
-    "☐ Tanungin ang BPLO ng inyong LGU ang listahan ng requirements"
+    "Tanungin ang BPLO ng inyong LGU ang listahan ng requirements"
    ],
-   "tip": "Renew taun-taon ang business permit, kadalasan tuwing Enero.",
+   "tip": "Renew the business permit every year, usually in January.",
+   "tip_tl": "Renew taun-taon ang business permit, kadalasan tuwing Enero.",
    "links": [
     [
      "Business.gov.ph",
@@ -214,22 +313,38 @@
     "permit",
     "negosyo"
    ],
-   "link": "live"
+   "related_en": [
+    "permit",
+    "business"
+   ],
+   "link": "live",
+   "related_tl": [
+    "permit",
+    "negosyo"
+   ]
   },
   {
    "id": "biz04",
    "cat": "Paano magsimula ng negosyo",
-   "title": "Step 4: BIR registration (kasama freelancer)",
+   "title": "Step 4: BIR registration (including freelancers)",
    "title_tl": "Hakbang 4: BIR (pati freelancer)",
    "src": "https://www.bir.gov.ph/",
    "steps": [
+    "Anyone with business or freelance income must register with the BIR, even if the work is only online.",
+    "Use BIR ORUS (online) for registration and a TIN.",
+    "Freelancer or self-employed: learn the right tax option and the filing deadlines on the BIR site.",
+    "Issue an official invoice or receipt and keep records.",
+    "Register on ORUS. · List the filing deadlines."
+   ],
+   "steps_tl": [
     "Lahat ng may kita sa negosyo o freelance ay dapat mag-register sa BIR, kahit online lang.",
     "Gamitin ang ORUS (online) ng BIR para sa registration at TIN.",
     "Freelancer/self-employed: alamin ang tamang tax option at filing deadlines sa BIR site.",
     "Mag-issue ng official invoice/resibo at itago ang records.",
-    "☐ Mag-register sa ORUS ☐ Ilista ang filing deadlines"
+    "Mag-register sa ORUS · Ilista ang filing deadlines"
    ],
-   "tip": "Kung nalilito, kumunsulta sa lisensyadong accountant.",
+   "tip": "If this is confusing, consult a licensed accountant.",
+   "tip_tl": "Kung nalilito, kumunsulta sa lisensyadong accountant.",
    "links": [
     [
      "BIR",
@@ -247,20 +362,36 @@
     "tax",
     "freelance"
    ],
-   "link": "live"
+   "related_en": [
+    "BIR",
+    "tax",
+    "freelance"
+   ],
+   "link": "live",
+   "related_tl": [
+    "BIR",
+    "buwis",
+    "freelance"
+   ]
   },
   {
    "id": "biz05",
    "cat": "Paano magsimula ng negosyo",
-   "title": "Step 5: SSS, PhilHealth, Pag-IBIG",
+   "title": "Step 5: SSS, PhilHealth, and Pag-IBIG",
    "title_tl": "Hakbang 5: SSS, PhilHealth, Pag-IBIG",
    "src": "https://www.sss.gov.ph/",
    "steps": [
+    "If you are self-employed or an owner, register as a self-employed or voluntary member.",
+    "When you have employees, register as an employer and remit their contributions.",
+    "Update your membership with all three agencies."
+   ],
+   "steps_tl": [
     "Self-employed o may-ari: mag-register bilang self-employed/voluntary member.",
     "Kapag may empleyado: i-register sila bilang employer at maghulog ng kontribusyon.",
-    "☐ I-update ang membership sa 3 ahensya"
+    "I-update ang membership sa 3 ahensya"
    ],
-   "tip": "Ang hulog ngayon ay proteksyon mo sa sakit, loan at pagtanda.",
+   "tip": "Contributions now are protection for illness, loans, and old age.",
+   "tip_tl": "Ang hulog ngayon ay proteksyon mo sa sakit, loan at pagtanda.",
    "links": [
     [
      "SSS",
@@ -283,20 +414,36 @@
     "philhealth",
     "pag-ibig"
    ],
-   "link": "live"
+   "related_en": [
+    "SSS",
+    "PhilHealth",
+    "Pag-IBIG"
+   ],
+   "link": "live",
+   "related_tl": [
+    "SSS",
+    "PhilHealth",
+    "Pag-IBIG"
+   ]
   },
   {
    "id": "biz06",
    "cat": "Paano magsimula ng negosyo",
-   "title": "Step 6: Negosyo Center at BMBE",
+   "title": "Step 6: Negosyo Center and BMBE",
    "title_tl": "Hakbang 6: Negosyo Center at BMBE",
    "src": "https://www.dti.gov.ph/",
    "steps": [
+    "A Negosyo Center (DTI) gives free help with registration, training, and mentoring.",
+    "BMBE (RA 9178) is for small businesses (assets up to ₱3 million) and includes an income-tax exemption. Apply at a Negosyo Center.",
+    "Find the nearest Negosyo Center on the DTI site."
+   ],
+   "steps_tl": [
     "Negosyo Center (DTI): libreng tulong sa registration, training at mentoring.",
     "BMBE (RA 9178): para sa maliliit na negosyo (assets hanggang ₱3M); may income tax exemption. Mag-apply sa Negosyo Center.",
-    "☐ Hanapin ang pinakamalapit na Negosyo Center sa DTI site"
+    "Hanapin ang pinakamalapit na Negosyo Center sa DTI site"
    ],
-   "tip": "I-check ang kasalukuyang patakaran sa DTI bago umasa sa benepisyo.",
+   "tip": "Check the current rules on the DTI site before you rely on a benefit.",
+   "tip_tl": "I-check ang kasalukuyang patakaran sa DTI bago umasa sa benepisyo.",
    "links": [
     [
      "DTI (Negosyo Center, BMBE)",
@@ -308,7 +455,15 @@
     "dti",
     "negosyo"
    ],
-   "link": "live"
+   "related_en": [
+    "DTI",
+    "business"
+   ],
+   "link": "live",
+   "related_tl": [
+    "DTI",
+    "negosyo"
+   ]
   },
   {
    "id": "ind01",
@@ -317,11 +472,17 @@
    "title_tl": "Agrikultura at pangingisda",
    "src": "https://www.da.gov.ph/",
    "steps": [
+    "What it is: growing crops, raising animals, and fishing.",
+    "Why it matters: the country's food, and the livelihood of many provinces.",
+    "Example roles: farmer, agri-technician, fish farmer, food processor, agri-entrepreneur."
+   ],
+   "steps_tl": [
     "Ano: pagtatanim, paghahayupan, pangingisda.",
     "Bakit mahalaga: pagkain ng bansa at kabuhayan ng maraming probinsya.",
     "Halimbawang role: magsasaka, agri-technician, fish farmer, food processor, agri-entrepreneur."
    ],
-   "tip": "May libreng farming training ang ATI/DA; tingnan ang Academy farming guides.",
+   "tip": "ATI and DA offer free farming training. See the Academy farming guides.",
+   "tip_tl": "May libreng farming training ang ATI/DA; tingnan ang Academy farming guides.",
    "links": [
     [
      "Department of Agriculture",
@@ -338,7 +499,15 @@
     "farming",
     "agriculture"
    ],
-   "link": "live"
+   "related_en": [
+    "farming",
+    "agriculture"
+   ],
+   "link": "live",
+   "related_tl": [
+    "pagsasaka",
+    "agrikultura"
+   ]
   },
   {
    "id": "ind02",
@@ -347,11 +516,17 @@
    "title_tl": "Pagmamanupaktura at konstruksyon",
    "src": "https://boi.gov.ph/",
    "steps": [
+    "Manufacturing: electronics, food, garments. Roles: machine operator, QA inspector, technician, engineer.",
+    "Construction: houses, roads, bridges. Roles: mason, carpenter, electrician, foreman, civil engineer.",
+    "The BOI assists investments in industry."
+   ],
+   "steps_tl": [
     "Manufacturing: electronics, pagkain, damit. Role: machine operator, QA inspector, technician, engineer.",
     "Construction: bahay, kalsada, tulay. Role: mason, karpintero, electrician, foreman, civil engineer.",
     "BOI ang tumutulong sa mga investment sa industriya."
    ],
-   "tip": "Maraming role dito ay may TESDA NC path.",
+   "tip": "Many roles here have a TESDA National Certificate path.",
+   "tip_tl": "Maraming role dito ay may TESDA NC path.",
    "links": [
     [
      "Board of Investments",
@@ -368,7 +543,15 @@
     "tesda",
     "jobs"
    ],
-   "link": "live"
+   "related_en": [
+    "TESDA",
+    "jobs"
+   ],
+   "link": "live",
+   "related_tl": [
+    "TESDA",
+    "mga trabaho"
+   ]
   },
   {
    "id": "ind03",
@@ -377,11 +560,17 @@
    "title_tl": "IT-BPM at digital",
    "src": "https://www.ibpap.org/",
    "steps": [
+    "What it is: call centers, back office, software, animation, and health information.",
+    "Why it matters: it is one of the country's largest sources of jobs and of dollar earnings.",
+    "Roles: customer service representative, team lead, developer, QA tester, data analyst, virtual assistant."
+   ],
+   "steps_tl": [
     "Ano: call center, back office, software, animation, health information.",
     "Bakit mahalaga: isa sa pinakamalaking pinagkukunan ng trabaho at dolyar ng bansa.",
     "Role: customer service rep, team lead, developer, QA tester, data analyst, VA."
    ],
-   "tip": "Industry info: IBPAP; gobyerno: DICT.",
+   "tip": "Industry information: IBPAP. Government: DICT.",
+   "tip_tl": "Industry info: IBPAP; gobyerno: DICT.",
    "links": [
     [
      "IBPAP",
@@ -398,7 +587,15 @@
     "freelance",
     "jobs"
    ],
-   "link": "live"
+   "related_en": [
+    "freelance",
+    "jobs"
+   ],
+   "link": "live",
+   "related_tl": [
+    "freelance",
+    "mga trabaho"
+   ]
   },
   {
    "id": "ind04",
@@ -408,11 +605,18 @@
    "src": "https://tourism.gov.ph/",
    "steps": [
     "Tourism: hotel, resort, tour guide, travel agent, chef.",
+    "Healthcare: nurse, caregiver, medical technologist, barangay health worker.",
+    "Creative: design, video, music, writing, crafts, content creation.",
+    "Pick 1 industry and list 3 roles you want to try."
+   ],
+   "steps_tl": [
+    "Tourism: hotel, resort, tour guide, travel agent, chef.",
     "Healthcare: nurse, caregiver, med tech, barangay health worker.",
     "Creative: design, video, music, writing, crafts, content creation.",
-    "☐ Pumili ng 1 industriya at ilista ang 3 role na gusto mong subukan"
+    "Pumili ng 1 industriya at ilista ang 3 role na gusto mong subukan"
    ],
-   "tip": "Gamitin ang PSA at DTI para sa opisyal na datos ng industriya.",
+   "tip": "Use the PSA and DTI for official industry data.",
+   "tip_tl": "Gamitin ang PSA at DTI para sa opisyal na datos ng industriya.",
    "links": [
     [
      "Department of Tourism",
@@ -434,7 +638,17 @@
     "jobs",
     "events"
    ],
-   "link": "live"
+   "related_en": [
+    "jobs",
+    "events"
+   ],
+   "link": "live",
+   "related_tl": [
+    "mga trabaho",
+    "mga event"
+   ]
   }
- ]
+ ],
+ "course_tl": "Mga karera, negosyo, at industriya",
+ "note_tl": "Simpleng gabay noong 2026-10-29. Hindi ito legal, tax, o career advice; laging tingnan ang opisyal na site o kumunsulta sa eksperto. Binuksan at sinuri ang mga link noong 2026-10-29 (✓ = gumagana ang site pero hinaharangan ang automated check)."
 }

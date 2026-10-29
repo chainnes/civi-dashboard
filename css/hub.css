@@ -139,10 +139,14 @@ details.rights summary{cursor:pointer;font-size:14px}details.rights li{font-size
 .fav{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.35);border:1px solid var(--line);color:var(--amber);border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:15px;line-height:1}.fav.on{background:var(--amber);color:#000}
 .pc .fav{position:static;float:right;width:26px;height:26px}
 .smart{display:flex;gap:8px;align-items:center;padding:12px;margin:10px 0}.smart input{font-size:16px;padding:10px 12px}.smart-res{margin:6px 0 10px}
-.steps{counter-reset:s;list-style:none;padding:0;margin:0}.steps li{counter-increment:s;padding:8px 0;position:relative;font-size:14px;line-height:1.45}.steps li::before{content:counter(s);position:absolute;left:0;top:8px;width:22px;height:22px;border-radius:50%;background:var(--cyan);color:#00131d;font-weight:800;display:grid;place-items:center;font-size:11px}
-.step-row{display:flex;flex-wrap:nowrap;align-items:flex-start;gap:10px;margin:0 0 0 30px}
-.step-row input{width:18px;height:18px;min-width:18px;flex:0 0 18px;margin:2px 0 0;accent-color:var(--cyan)}
-.step-row span{flex:1 1 auto;min-width:0}
+.steps{list-style:none;padding:0;margin:8px 0}
+.steps > li.step-card{display:grid;grid-template-columns:28px 22px minmax(0,1fr);column-gap:10px;align-items:start;padding:10px 12px;margin:0 0 8px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.04);font-size:14px;line-height:1.45}
+.steps > li.step-card::before{content:none;display:none}
+.step-n{width:28px;height:28px;border-radius:50%;background:var(--cyan);color:#00131d;font-weight:800;display:grid;place-items:center;font-size:12px;line-height:1}
+html[data-theme=day] .step-n{color:#fff}
+html[data-theme=day] .steps > li.step-card{background:#fff}
+.step-box{width:18px;height:18px;margin:5px 0 0;accent-color:var(--cyan);justify-self:center}
+.step-t{min-width:0;margin:0;padding-top:4px;cursor:pointer}
 #map.icons-off .leaflet-marker-pane{visibility:hidden}
 .tn .nm{display:inline-flex;align-items:center;gap:2px;flex:0 0 auto;font-size:12px;cursor:pointer}
 .tn .nm input{width:14px;height:14px;margin:0}
@@ -163,7 +167,7 @@ html[data-theme=day] .course-badge{color:#2b6e10;border-color:rgba(43,110,16,.35
 html[data-theme=day] .toc-list a.on{background:rgba(0,98,138,.1)}
 @media(min-width:800px){.course{grid-template-columns:260px minmax(0,1fr)}.course-toc{display:none}.course-side{position:sticky;top:74px;max-height:calc(100vh - 96px);overflow:auto}}
 @media(max-width:799px){.course-side{display:none}.course-side.open{display:flex}}
-@media(prefers-reduced-motion:reduce){.course-side,.course-badge,.step-row{transition:none}}
+@media(prefers-reduced-motion:reduce){.course-side,.course-badge,.step-card{transition:none}}
 /* tour */
 .tour-hl{position:fixed;z-index:2500;border-radius:12px;box-shadow:0 0 0 9999px rgba(0,0,0,.6),0 0 0 3px var(--lime);pointer-events:none;transition:all .3s}
 .tour-box{position:fixed;z-index:2600;max-width:340px;padding:14px 16px}
