@@ -1,5 +1,6 @@
-name = "civi-mvp"
+name = "chai-civi"
 pages_build_output_dir = "."
-compatibility_date = "2026-05-01"
+compatibility_date = "2025-07-18"
+
 [ai]
 binding = "AI"
