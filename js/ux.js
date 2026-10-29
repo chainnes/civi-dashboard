@@ -48,38 +48,85 @@ function score(item, words) { const hay = norm([item.name, item.abbr, item.desc,
 const STOP = new Set("ng sa ang na mga ko ako ka mo si ni kay at ay para po the a an of for to my i me in on is and or how what ano paano saan".split(" "));
 const expand = q => { const ws = norm(q).split(/[^a-z0-9-]+/).filter(w => w && !STOP.has(w)); return [...new Set(ws.flatMap(w => [w, ...(SYN[w] || Object.entries(SYN).find(([k]) => k.length > 3 && w.startsWith(k))?.[1] || "").split(" ").filter(Boolean)]))]; };
 const shortD = (x, n = 90) => { x = String(x || ""); return x.length > n ? x.slice(0, Math.max(40, x.lastIndexOf(" ", n - 2))) + "…" : x; };
-const dirCard = i => `<div class="card glass dcard">${favBtn(i._type || "directory", i.abbr || i.name, i.name, i.url)}<span class="chip">${esc(i.industry || i.cat || i.role)}</span>${i.ticker ? ` <span class="chip ok">PSE: ${esc(i.ticker)}</span>` : ""}${i.link === "bot-protected" ? ` <span class="chip" title="${esc(t("botprot"))}">✓ ${t("site_up")}</span>` : i.link === "live" ? ` <span class="chip ok">✓ ${t("link_ok")}</span>` : i.link ? ` <span class="chip warn">${t("link_check")}</span>` : ""}
-  <h4 style="padding-right:34px">${esc(i.role ? i.role + ": " + i.name : i.name)}${i.abbr && i.abbr !== i.name ? ` <small style="color:var(--mute)">(${esc(i.abbr)})</small>` : ""}</h4>
-  ${i.phone ? `<div class="v" style="font-size:20px;color:var(--lime)">☎ <a href="tel:${esc(i.phone)}" style="color:inherit">${esc(i.phone)}</a></div>` : ""}<p class="dshort" title="${esc(i.desc || i.note || "")}">${esc(shortD(i.desc || i.note))}</p>${i.src ? `<p class="dsrc">${t("source")}: ${esc(i.src)}</p>` : ""}<a href="${esc(i.url)}" target="_blank" rel="noopener">${t("official_site")} ↗</a></div>`;
-const schCard = x => `<div class="card glass dcard"><span class="chip ${x.scope === "Local" ? "ok" : ""}">${esc(x.scope)}</span> <span class="chip">${esc((x.levels || []).join("/"))}</span><h4>${esc(x.name)}</h4><p class="dshort" title="${esc(x.eligibility || "")}">${esc(x.provider || "")} · ${esc(shortD(x.coverage, 70))}</p><a href="${esc(x.url)}" target="_blank" rel="noopener">${t("official_site")} ↗</a></div>`;
+Object.assign(CIVI_I18N.en, { view_service: "View service", ai_suggested: "AI suggested", dir_cats: "Categories", dir_all: "All services", community_run: "Community-run", data_updates: "Data subject to update", ask_ai: "Ask AI" });
+Object.assign(CIVI_I18N.tl, { view_service: "Tingnan ang serbisyo", ai_suggested: "Mungkahi ng AI", dir_cats: "Mga kategorya", dir_all: "Lahat ng serbisyo", community_run: "Community-run", data_updates: "Puwedeng magbago ang datos", ask_ai: "Magtanong sa AI" });
+const DIR_GROUPS = [["Emergencies", ["Emergency & hotlines", "Life & safety", "Consumer complaints"]], ["Government", ["Executive departments", "Agencies & GOCCs", "Constitutional bodies & courts", "Legislature", "Public officials", "Government services", "Legal aid & rights", "Data, laws & documents", "Civic tech & community-built"]], ["Health", ["Health", "Health & wellness apps/sites", "Mental health"]], ["Work & money", ["OFW services", "Jobs & livelihood", "Earn: Iwas scam", "Earn: Small gigs", "Earn: Freelance", "Earn: Surveys & micro-tasks", "Earn: Sell online", "Earn: Content creation", "Earn: Rider & delivery", "Earn: Teach & tutor", "Money & finance", "Find any business", "Companies (PSE-listed)"]], ["Learning", ["Learning & scholarships", "Learning centers & tutorials", "Free language & online courses", "Learn farming: Free", "Learn farming: Paid / audit-free", "Scholarships"]], ["Getting around", ["Transport: Land", "Transport: Air", "Transport: Water", "Telecom & utilities", "Post & couriers", "Must-have apps in PH"]], ["Community", ["Volunteer & NGOs", "Embassies", "Sports & fitness", "Events & activities", "Events & things to do", "Promos, sales & discounts", "Meetups & conferences", "Places & travel"]], ["Environment", ["Recycle & drop-off programs"]], ["Transparency", ["FY 2026 budget"]]];
+const dirHost = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+const groupOf = cat => { for (const [name, subs] of DIR_GROUPS) if (subs.includes(cat)) return name; return "More"; };
+const svcCard = i => `<article class="svc">${favBtn(i._type || "directory", i.abbr || i.name, i.name, i.url)}<h3>${esc(i.role ? i.role + ": " + i.name : i.name)}</h3><div class="tags"><span class="chip">${esc(i.group || "")}</span><span class="chip">${esc(t(i.cat) === i.cat ? i.cat : t(i.cat))}</span>${i.official ? `<span class="okmark" title="${esc(t("official"))}">✓</span>` : ""}</div><div class="dom">${esc(dirHost(i.url))}</div>${i.phone ? `<div class="dom">☎ <a href="tel:${esc(i.phone)}">${esc(i.phone)}</a></div>` : ""}<p class="dshort" title="${esc(i.desc || i.note || "")}">${esc(shortD(i.desc || i.note || ""))}</p>${i.community ? `<p class="dsrc">${esc(t("community_run"))}. ${esc(t("data_updates"))}.</p>` : ""}<a class="btn sm svc-go" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(t("view_service"))}</a></article>`;
+const schCard = x => `<div class="card glass dcard"><span class="chip ${x.scope === "Local" ? "ok" : ""}">${esc(x.scope)}</span> <span class="chip">${esc((x.levels || []).join("/"))}</span><h4>${esc(x.name)}</h4><p class="dshort" title="${esc(x.eligibility || "")}">${esc(x.provider || "")} · ${esc(shortD(x.coverage, 70))}</p><a class="btn sm" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(t("view_service"))}</a></div>`;
 async function viewDirectory2() {
   const [hub, gov, off, co, ct, dm, sch] = await Promise.all([data("directory_hub"), data("gov_directory"), data("officials"), data("companies"), data("civic_transport").catch(() => ({ items: [] })), data("directory_more").catch(() => ({ items: [] })), data("scholarships").catch(() => ({ items: [] }))]);
-  const all = [...hub.items.map(i => ({ ...i, _type: "directory" })), ...gov.items.map(i => ({ ...i, _type: "directory" })), ...(ct.items || []).map(i => ({ ...i, _type: "directory" })), ...(dm.items || []).map(i => ({ ...i, _type: "directory" })), ...off.items.map(i => ({ ...i, cat: "Public officials", _type: "official" })), ...co.items.map(i => ({ ...i, cat: "Companies (PSE-listed)", desc: `${i.industry} · ${co.source}`, _type: "company" }))];
-  const order = ["Emergency & hotlines", "Must-have apps in PH", "Executive departments", "Agencies & GOCCs", "Constitutional bodies & courts", "Legislature", "Public officials", "Civic tech & community-built", "Transport: Land", "Transport: Air", "Transport: Water", "Government services", "Legal aid & rights", "Health", "Health & wellness apps/sites", "Mental health", "OFW services", "Jobs & livelihood", "Earn: Iwas scam", "Earn: Small gigs", "Earn: Freelance", "Earn: Surveys & micro-tasks", "Earn: Sell online", "Earn: Content creation", "Earn: Rider & delivery", "Earn: Teach & tutor", "Learning & scholarships", "Learning centers & tutorials", "Free language & online courses", "Learn farming: Free", "Learn farming: Paid / audit-free", "Recycle & drop-off programs", "Embassies", "Consumer complaints", "Volunteer & NGOs", "Scholarships", "Life & safety", "Sports & fitness", "Money & finance", "Find any business", "Telecom & utilities", "Post & couriers", "Companies (PSE-listed)", "Data, laws & documents", "Events & activities", "Events & things to do", "Promos, sales & discounts", "Meetups & conferences", "Places & travel"];
-  const cats = [...new Set([...order.filter(c => all.some(i => i.cat === c)), ...all.map(i => i.cat)])];
-  const sub = decodeURIComponent(location.hash.split("?")[0].split("/")[2] || "");
-  if (sub) { const c = cats.find(x => x === sub) || cats.find(x => norm(x) === norm(sub)), list = all.filter(i => i.cat === c);
-    page(`<p><button class="btn ghost sm" id="dirBack">‹ ${t("back")}</button></p><h1>📇 ${esc(t(c || sub))} <span class="chip">${list.length}</span></h1>
-     ${list.length ? `<div class="grid">${list.map(dirCard).join("")}</div>` : `<p>${t("no_match")}</p>`}`);
-    $("#dirBack").onclick = () => { if (sessionStorage.getItem("civi.dirFrom") === "1") history.back(); else location.hash = "#/directory"; }; return; }
+  const mark = (list, official) => list.map(i => ({ ...i, official: official || i.label === "Government", group: groupOf(i.cat), _type: i._type || "directory" }));
+  const all = [...mark(hub.items, true), ...mark(gov.items, true), ...mark(ct.items || [], true), ...mark(dm.items || [], false), ...mark(off.items.map(i => ({ ...i, cat: "Public officials", _type: "official" })), true), ...mark(co.items.map(i => ({ ...i, cat: "Companies (PSE-listed)", desc: `${i.industry} · ${co.source}`, _type: "company" })), false), { name: "BetterGov FY 2026 Budget Dashboard", url: "https://2026-budget.bettergov.ph/", cat: "FY 2026 budget", desc: "Community-run dashboard of the FY 2026 national budget. Not a government website.", community: true, official: false, group: "Transparency", _type: "directory" }];
+  const known = new Set(DIR_GROUPS.flatMap(g => g[1]));
+  const extra = [...new Set(all.map(i => i.cat))].filter(c => !known.has(c));
+  const groups = [...DIR_GROUPS.map(([name, subs]) => ({ name, subs: subs.filter(s => all.some(i => i.cat === s)) })), ...(extra.length ? [{ name: "More", subs: extra }] : [])].filter(g => g.subs.length);
+  const cats = groups.flatMap(g => g.subs);
+  const hashSub = decodeURIComponent((location.hash.split("?")[0].split("/")[2] || ""));
+  const q0 = new URLSearchParams((location.hash.split("?")[1] || "")).get("q") || "";
+  let group = "", sub = "", words = q0 ? expand(q0) : [], aiChips = [], aiNote = "", shown = 12, recShown = 4;
+  if (hashSub) { const g = groups.find(x => x.subs.some(s => s === hashSub || norm(s) === norm(hashSub))); if (g) { group = g.name; sub = g.subs.find(s => s === hashSub || norm(s) === norm(hashSub)); } }
+  const RECYCLE = "Recycle & drop-off programs";
+  const browsing = () => !group && !sub && !words.length;
+  const inGroup = i => !group || i.group === group;
+  const hits = () => all.filter(i => (!sub || i.cat === sub) && inGroup(i) && (!words.length || score(i, words) >= 3 || words.some(w => w.length > 2 && norm(i.name + " " + (i.desc || "") + " " + i.cat).includes(w))));
+  const sideBtn = (name, on, kind, val) => `<button type="button" class="${on ? "on" : ""}" data-kind="${kind}" data-v="${esc(val)}">${esc(name)}</button>`;
   page(`<h1>📇 ${t("dir_title")}</h1><p class="sub">${t("directory_sub")}</p>
-   <div class="smart glass" role="search"><span style="font-size:22px" aria-hidden="true">🤝</span><input type="search" id="needQ" placeholder="${esc(t("need_ph"))}" aria-label="${esc(t("need_q"))}"><button class="btn" id="needAI" title="${esc(t("ai_hint"))}">✨ ${t("ask")}</button></div>
-   <div id="needRes" class="smart-res" aria-live="polite"></div>
-   <div class="disc">${t("d_emerg")} ${t("dir_disc")} ${t("off_asof")} ${esc(off.as_of)}. ${t("ct_disc")} ${t("asof")} ${esc(ct.as_of || "")}. ${t("d_third")} ${t("dm_note")}</div>
-   <div class="row" style="flex-wrap:wrap;margin-bottom:8px"><button class="btn ghost sm" id="reqAdd">➕ ${t("req_btn")}</button></div>
-   <div id="rows">${(sch.items || []).length ? rowc("sch", "🎓 " + esc(t("scholarships")), sch.items.map(schCard), "", "#/scholarships") : ""}${cats.map((c, n) => rowc("d" + n, esc(t(c)), all.filter(i => i.cat === c).map(dirCard), "", "#/directory/" + encodeURIComponent(c))).join("")}</div>
-   <p class="sub" style="font-size:11px">${esc(gov.note)} ${esc(co.note)} <a href="${esc(co.url)}" target="_blank" rel="noopener">PSE EDGE ↗</a></p>`);
-  wireCarousels(); $$("[data-savescroll]").forEach(a => a.onclick = () => { sessionStorage.setItem("civi.dirScroll", scrollY); sessionStorage.setItem("civi.dirFrom", "1"); });
-  { const y = +sessionStorage.getItem("civi.dirScroll"); if (y && sessionStorage.getItem("civi.dirFrom") === "1") { sessionStorage.removeItem("civi.dirFrom"); requestAnimationFrame(() => scrollTo(0, y)); } }
+   <form class="dir-search glass" role="search" id="dirSearch"><input type="search" id="needQ" placeholder="${esc(t("need_ph"))}" aria-label="${esc(t("need_q"))}" value="${esc(q0)}"><button type="submit" class="btn" id="needAI">${esc(t("ask_ai"))}</button></form>
+   <div id="aiLine" class="ai-line" aria-live="polite"></div>
+   <div class="disc">${t("d_emerg")} ${t("dir_disc")} ${t("d_third")} ${t("dm_note")}</div>
+   <div class="row" style="margin-bottom:8px"><button type="button" class="btn ghost sm" id="dirCats" aria-expanded="false" aria-controls="dirSide">${esc(t("dir_cats"))}</button><button type="button" class="btn ghost sm" id="reqAdd">➕ ${t("req_btn")}</button></div>
+   <div id="dirChips" class="dir-chips" role="tablist"></div>
+   <div id="schRow"></div>
+   <div class="dir-layout">
+     <nav id="dirSide" class="dir-side glass" aria-label="${esc(t("dir_cats"))}"></nav>
+     <div>
+       <section id="recycleBox" aria-label="${esc(t(RECYCLE))}"></section>
+       <p id="svcCount" class="sub"></p>
+       <div id="svcGrid" class="svc-grid"></div>
+       <button type="button" class="btn ghost" id="svcMore" hidden>${t("see_more")}</button>
+       <p class="sub" style="font-size:11px;margin-top:12px">${esc(gov.note || "")} ${esc(co.note || "")} ${co.url ? `<a href="${esc(co.url)}" target="_blank" rel="noopener">PSE EDGE ↗</a>` : ""}</p>
+     </div>
+   </div>`);
+  if ((sch.items || []).length) { $("#schRow").innerHTML = rowc("sch", "🎓 " + esc(t("scholarships")), sch.items.map(schCard), "", "#/scholarships"); wireCarousels($("#schRow")); }
+  const paintSide = () => {
+    $("#dirSide").innerHTML = sideBtn(t("dir_all"), !group && !sub, "all", "") + groups.map(g => `<details ${g.name === group || g.subs.includes(sub) ? "open" : ""}><summary>${esc(g.name)}</summary>${g.subs.map(s => sideBtn(t(s) === s ? s : t(s), sub === s, "sub", s)).join("")}</details>`).join("");
+    $("#dirChips").innerHTML = sideBtn(t("dir_all"), !group, "all", "") + groups.map(g => sideBtn(g.name, group === g.name, "group", g.name)).join("");
+    $$("#dirSide [data-kind], #dirChips [data-kind]").forEach(b => b.onclick = () => {
+      if (b.dataset.kind === "all") { group = ""; sub = ""; } else if (b.dataset.kind === "group") { group = b.dataset.v; sub = ""; } else { sub = b.dataset.v; group = groupOf(sub); }
+      shown = 12; recShown = 4; $("#dirSide").classList.remove("open"); $("#dirCats").setAttribute("aria-expanded", "false");
+      const next = sub ? "#/directory/" + encodeURIComponent(sub) : "#/directory";
+      if (location.hash.split("?")[0] !== next) history.replaceState(null, "", next);
+      paint();
+    });
+  };
+  const paint = () => {
+    paintSide();
+    const list = hits();
+    const home = browsing();
+    $("#schRow").hidden = !home;
+    const rec = all.filter(i => i.cat === RECYCLE);
+    const showRec = (home || sub === RECYCLE || (group === "Environment" && !sub)) && !words.length;
+    $("#recycleBox").hidden = !showRec;
+    $("#recycleBox").innerHTML = showRec ? `<h2>${esc(t(RECYCLE))} <span class="chip">${rec.length}</span></h2><div class="svc-grid">${rec.slice(0, recShown).map(svcCard).join("")}</div>${rec.length > recShown ? `<button type="button" class="btn ghost sm" id="recMore">${t("see_more")}</button>` : ""}` : "";
+    $("#recMore") && ($("#recMore").onclick = () => { recShown += 6; paint(); });
+    const grid = list.filter(i => !(showRec && i.cat === RECYCLE));
+    $("#svcCount").textContent = grid.length ? String(grid.length) : "";
+    $("#svcGrid").innerHTML = grid.length ? grid.slice(0, shown).map(svcCard).join("") : (showRec ? "" : `<p>${t("no_match")}</p>`);
+    const more = $("#svcMore"); more.hidden = grid.length <= shown; 
+    $("#aiLine").innerHTML = aiChips.length ? `<span class="chip ok">${esc(t("ai_suggested"))}</span> ${aiChips.map(k => `<button type="button" class="chip" data-ai="${esc(k)}">${esc(k)}</button>`).join(" ")}` : (aiNote ? `<span class="sub">${esc(aiNote)}</span>` : "");
+    $$("#aiLine [data-ai]").forEach(b => b.onclick = () => { $("#needQ").value = b.dataset.ai; words = expand(b.dataset.ai); aiChips = []; aiNote = ""; shown = 12; paint(); });
+  };
+  paint();
+  $("#svcMore").onclick = () => { shown += 12; paint(); };
+  $("#dirCats").onclick = () => { const open = $("#dirSide").classList.toggle("open"); $("#dirCats").setAttribute("aria-expanded", open); };
   $("#reqAdd").onclick = () => requestListing(cats); if (new URLSearchParams(location.hash.split("?")[1] || "").get("add")) requestListing(cats);
-  const show = (words, label) => { if (!words.length) { $("#needRes").innerHTML = ""; $("#rows").hidden = false; return; }
-    const hits = all.map(i => [i, score(i, words)]).filter(x => x[1] >= 3).sort((a, b) => b[1] - a[1]).slice(0, 24).map(x => x[0]);
-    $("#rows").hidden = !!hits.length; $("#needRes").innerHTML = `<h2>${t("best_matches")} <span class="chip">${hits.length}</span>${label ? ` <span class="chip ok">${esc(label)}</span>` : ""} <button class="btn ghost sm" id="needClr">${t("clear_all")}</button></h2>${hits.length ? `<div class="grid">${hits.map(dirCard).join("")}</div>` : `<p>${t("no_match")}</p>`}`;
-    $("#needClr").onclick = () => { $("#needQ").value = ""; show([]); }; };
-  let tmr; $("#needQ").oninput = e => { clearTimeout(tmr); tmr = setTimeout(() => show(expand(e.target.value)), 120); }; { const q0 = new URLSearchParams(location.hash.split("?")[1] || "").get("q"); if (q0) { $("#needQ").value = q0; show(expand(q0)); } }
-  $("#needAI").onclick = async () => { const q = $("#needQ").value.trim(); if (!q) return $("#needQ").focus(); $("#needRes").innerHTML = `<p>✨ ${t("thinking")}</p>`;
+  let tmr; $("#needQ").oninput = e => { clearTimeout(tmr); tmr = setTimeout(() => { words = expand(e.target.value); aiChips = []; aiNote = ""; shown = 12; paint(); }, 120); };
+  $("#dirSearch").onsubmit = async e => { e.preventDefault(); const q = $("#needQ").value.trim(); if (!q) return $("#needQ").focus(); $("#aiLine").innerHTML = `<span class="sub">✨ ${esc(t("thinking"))}</span>`;
     const r = await api("assist", { method: "POST", body: { mode: "directory", q } });
-    if (r.keywords?.length) show([...expand(q), ...r.keywords.flatMap(expand)], "AI: " + r.keywords.join(", ")); else show(expand(q), t("kw_mode")); };
+    if (r.keywords?.length) { aiChips = r.keywords; aiNote = ""; words = [...expand(q), ...r.keywords.flatMap(expand)]; } else { aiChips = []; aiNote = t("kw_mode"); words = expand(q); }
+    shown = 12; paint(); };
 }
 
 function requestListing(cats) {
