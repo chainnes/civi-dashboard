@@ -1,11 +1,11 @@
 /* Map UX batch 3: focus mode + per-panel show/hide, hover cards, hierarchical location filter, day/night by PH sunrise/sunset,
    transport layer + advisories. Loaded after hub.js. No API keys; tiles are OSM standard (keyless, light use only). */
 (function () {
-const X = { en: { f_esrc: "Event source", map_only: "Map only", panels: "Panels", p_glance: "At a Glance", p_fpanel: "Filters", p_tools: "Search bar & zoom", p_legend: "Legend bar", p_footer: "Footer links", p_chat: "Help chat button", p_transport: "Transport advisories", p_dock: "Side menu", p_sun: "Sunrise/sunset", restore: "Show panels (Esc)", hide_panel: "Hide panel",
+const X = { en: { f_esrc: "Event source", map_only: "Map only", panels: "Panels", p_glance: "At a Glance", p_fpanel: "Filters", p_tools: "Search bar & zoom", p_legend: "Legend bar", p_footer: "Footer links", p_chat: "Help chat button", p_transport: "Transport advisories", p_dock: "Side menu", p_sun: "Sunrise/sunset", p_topbar: "Top bar (logo, theme, language, log in)", p_filters: "Filter groups", hide_filter: "Hide this filter", fg_hidden: "hidden filters", restore: "Show panels (Esc)", hide_panel: "Hide panel",
   th_auto: "Auto (PH sunrise/sunset)", th_day: "Day", th_night: "Night", sunrise: "Sunrise", sunset: "Sunset", layers: "Map layers", l_transport: "Transport (airports, ports, rail, bus)", l_pins: "Show points (news, hazards, events)",
   tr_title: "Transport", tr_disc: "Links go to official pages only. Civi does not copy schedules or live status; always check the official site.", check_official: "Check the official site", loc_hint: "Region › Province › City/Municipality. Only places with items are listed.", more_events: "Find more events (link-only)",
   ev_link_disc: "Link-only: these sites have no public API Civi may use, so Civi does not copy their listings. Share an event link to add it to the map." },
- tl: { f_esrc: "Pinagmulan ng event", map_only: "Mapa lang", panels: "Mga panel", restore: "Ibalik ang mga panel (Esc)", hide_panel: "Itago ang panel", th_auto: "Auto (pagsikat/paglubog ng araw sa PH)", th_day: "Araw", th_night: "Gabi", sunrise: "Pagsikat", sunset: "Paglubog",
+ tl: { f_esrc: "Pinagmulan ng event", map_only: "Mapa lang", panels: "Mga panel", restore: "Ibalik ang mga panel (Esc)", hide_panel: "Itago ang panel", p_topbar: "Itaas na bar (logo, tema, wika, log in)", p_filters: "Mga filter", hide_filter: "Itago ang filter na ito", fg_hidden: "nakatagong filter", th_auto: "Auto (pagsikat/paglubog ng araw sa PH)", th_day: "Araw", th_night: "Gabi", sunrise: "Pagsikat", sunset: "Paglubog",
   layers: "Mga layer ng mapa", l_transport: "Transportasyon (airport, pantalan, tren, bus)", tr_title: "Transportasyon", tr_disc: "Sa opisyal na pahina lang ang mga link. Hindi kinokopya ng Civi ang schedule o live status; laging i-check ang opisyal na site.", more_events: "Iba pang event (link lang)" } };
 for (const l in X) CIVI_I18N[l] = Object.assign(CIVI_I18N[l] || {}, X[l]);
 const fine = () => matchMedia("(hover: hover) and (pointer: fine)").matches, reduce = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -96,24 +96,28 @@ const EV_LINKS = [["Luma (Manila)", "https://luma.com/manila"], ["Eventbrite Phi
   ["Allevents (Manila)", "https://allevents.in/manila"], ["Ticketnet", "https://www.ticketnet.com.ph/"], ["SM Tickets", "https://smtickets.com/"], ["TicketWorld", "https://ticketworld.com.ph/"], ["Klook PH", "https://www.klook.com/en-PH/"], ["DOT: philippines.travel", "https://philippines.travel/"], ["Google Developer Groups", "https://gdg.community.dev/"]];
 
 /* ---------- focus mode + per-panel toggles ---------- */
-const PANELS = [["glance", "#glance"], ["fpanel", "#fpanel"], ["transport", "#trPanel"], ["tools", ".map-tools"], ["legend", "#hudBottom"], ["footer", ".footer.onmap"], ["chat", "#chatFab"], ["sun", "#sunInd"], ["dock", "#dock"]];
+const PANELS = [["glance", "#glance"], ["fpanel", "#fpanel"], ["transport", "#trPanel"], ["tools", ".map-tools"], ["legend", "#hudBottom"], ["footer", ".footer.onmap"], ["chat", "#chatFab"], ["sun", "#sunInd"], ["dock", "#dock"], ["topbar", ".topbar"]];
 const HKEY = "civi.panels.hidden"; const hidden = () => new Set(JSON.parse(localStorage.getItem(HKEY) || '["dock_x"]'));
 function syncPanels() { const h = hidden(), f = document.body.classList.contains("map-focus");
   PANELS.forEach(([k, s]) => $$(s).forEach(el => el.classList.toggle("pp-hide", f || h.has(k)))); $("#mobTog")?.classList.toggle("pp-hide", f);
-  $$(".mobile-toggle").forEach(el => el.classList.toggle("pp-hide", f)); const b = $("#focusBtn"); if (b) { b.classList.toggle("on", f); b.setAttribute("aria-pressed", f); b.innerHTML = f ? `⤢ ${t("restore")}` : `🗺️ ${t("map_only")}`; } }
+  $$(".mobile-toggle").forEach(el => el.classList.toggle("pp-hide", f)); const b = $("#focusBtn"); if (b) { b.classList.toggle("on", f); b.setAttribute("aria-pressed", f); b.innerHTML = f ? "⤢" : "🗺️"; const l = f ? t("restore") : t("map_only") + " (Esc)"; b.title = l; b.setAttribute("aria-label", l); } }
 const setHidden = (k, v) => { const h = hidden(); v ? h.add(k) : h.delete(k); localStorage.setItem(HKEY, JSON.stringify([...h])); syncPanels(); renderMenu(); };
-function renderMenu() { const m = $("#panelMenu"); if (!m) return; const h = hidden(); m.innerHTML = PANELS.map(([k]) => `<label><input type="checkbox" data-pk="${k}" ${h.has(k) ? "" : "checked"}> ${t("p_" + k)}</label>`).join("") + `<hr><label class="sub">${t("panels")}: ${t("restore")}</label>`;
-  $$("[data-pk]", m).forEach(c => c.onchange = () => setHidden(c.dataset.pk, !c.checked)); }
+function renderMenu() { const m = $("#panelMenu"); if (!m) return; const h = hidden(); m.innerHTML = PANELS.map(([k]) => `<label><input type="checkbox" data-pk="${k}" ${h.has(k) ? "" : "checked"}> ${t("p_" + k)}</label>`).join("") + (window.civiFgMenu ? window.civiFgMenu() : "") + `<hr><label class="sub">Esc: ${t("map_only")} / ${t("restore")}</label>`;
+  $$("[data-pk]", m).forEach(c => c.onchange = () => setHidden(c.dataset.pk, !c.checked)); window.civiFgWire?.(m); }
+window.civiRenderPanelMenu = renderMenu;
 const focus = v => { document.body.classList.toggle("map-focus", v ?? !document.body.classList.contains("map-focus")); syncPanels(); setTimeout(() => map?.invalidateSize(), 350); };
-document.addEventListener("keydown", e => { if (e.key === "Escape" && document.body.classList.contains("map-focus")) focus(false); });
+document.addEventListener("keydown", e => { if (e.key !== "Escape" || !document.body.classList.contains("on-map")) return;
+  if (/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName) || $("#chat") || $(".tour-box") || !$("#modal")?.classList.contains("hidden") || !$("#panelMenu")?.hidden) { const m = $("#panelMenu"); if (m && !m.hidden) { m.hidden = true; $("#panelsBtn")?.setAttribute("aria-expanded", "false"); } return; }
+  focus(); });
 window.addEventListener("hashchange", () => { if (!/^#\/map|^#?$/.test(location.hash)) { document.body.classList.remove("map-focus", "on-map"); $("#mapCtl")?.remove(); $("#actPanel")?.remove(); $$(".pp-hide").forEach(e => e.classList.remove("pp-hide")); } });
 
 window.civiMapExtras = async ({ map: M, all, mask, home }) => { window._civiHome = home;
   document.body.classList.add("on-map");
   $("#mapCtl")?.remove();
   document.body.insertAdjacentHTML("beforeend", `<div id="mapCtl" class="glass map-ctl" role="toolbar" aria-label="Map view"><button class="btn sm" id="focusBtn" aria-pressed="false"></button>
-    <div class="pm-wrap"><button class="btn ghost sm" id="panelsBtn" aria-expanded="false" aria-controls="panelMenu">▦ ${t("panels")}</button><div id="panelMenu" class="glass pmenu" hidden></div></div>
+    <div class="pm-wrap"><button class="btn ghost sm" id="panelsBtn" aria-expanded="false" aria-controls="panelMenu" aria-label="${esc(t("panels"))}" title="${esc(t("panels"))}">▦</button><div id="panelMenu" class="glass pmenu" hidden></div></div>
     <span id="sunInd" class="sun-ind"></span></div>`);
+  $("#mapBottom")?.remove(); const mb = document.createElement("div"); mb.id = "mapBottom"; mb.className = "map-bottom"; $("#view").appendChild(mb); [$("#hudBottom"), $(".footer.onmap")].forEach(el => el && mb.appendChild(el));
   const pb = $("#panelsBtn"), pmn = $("#panelMenu"); pb.onclick = () => { pmn.hidden = !pmn.hidden; pb.setAttribute("aria-expanded", !pmn.hidden); renderMenu(); };
   document.addEventListener("click", e => { if (!e.target.closest(".pm-wrap")) { pmn.hidden = true; pb.setAttribute("aria-expanded", "false"); } });
   $("#focusBtn").onclick = () => focus(); window._civiMask = mask; applyTheme(mask);

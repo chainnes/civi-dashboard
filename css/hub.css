@@ -157,7 +157,7 @@ html.hc{--glass:#000;--line:#fff;--mute:#e6e6e6;--ink:#fff}html.hc .glass{backdr
 @media(max-width:899px){.maplbl.r span{font-size:9px;letter-spacing:.8px}.maplbl.p span{font-size:9.5px}.dock a{font-size:10px;padding:6px 3px}.dock a i{font-size:18px}}
 /* ---- UX batch 3: focus mode, panels, hover cards, location tree, day/night, transport ---- */
 .pp-hide{opacity:0!important;visibility:hidden!important;pointer-events:none!important;transform:translateY(-6px)}
-.hud,.map-tools,.hud-bottom,.footer.onmap,.chat-fab,#dock,.mobile-toggle,#trPanel,.sun-ind{transition:opacity .3s ease,visibility .3s,transform .3s ease}
+.hud,.map-tools,.hud-bottom,.footer.onmap,.chat-fab,#dock,.topbar,.mobile-toggle,#trPanel,.sun-ind{transition:opacity .3s ease,visibility .3s,transform .3s ease}
 .map-ctl{position:fixed;z-index:900;left:96px;bottom:14px;display:flex;gap:6px;align-items:center;padding:6px;flex-wrap:wrap;max-width:calc(100% - 520px)}
 .map-ctl select{width:auto;padding:4px 6px;font-size:12px}.sun-ind{font-size:11.5px;white-space:nowrap}.sun-ind .mute{color:var(--mute)}
 .pm-wrap{position:relative}.pmenu{position:absolute;bottom:40px;left:0;min-width:220px;padding:10px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;z-index:950}.pmenu label{display:flex;gap:6px;align-items:center}.pmenu input{width:auto}
@@ -245,3 +245,38 @@ html[data-theme=day] body .skip{color:#fff}
 #themeSel{max-width:150px;padding:6px 8px;font-size:12.5px}
 @media(max-width:899px){#themeSel{max-width:54px;padding:6px 4px}.top-actions{gap:4px}#lang{max-width:96px}.map-tools{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.map-tools::-webkit-scrollbar{display:none}.map-tools .pq-wrap{min-width:150px}}
 #authBtn{white-space:nowrap}
+/* UI batch 5: compact corner controls, top bar can hide, docked side panels, one bottom row (legend + footer) that never overlaps */
+.theme-tog{width:34px;height:34px;padding:0;font-size:16px;display:inline-grid;place-items:center;border-radius:50%}
+.map-ctl{left:10px!important;right:auto;top:auto;bottom:14px;max-width:none!important;flex-direction:column;flex-wrap:nowrap;padding:5px;gap:5px;border-radius:14px;z-index:1200}
+.map-ctl>.btn,.map-ctl .pm-wrap>.btn{width:36px;height:36px;padding:0;font-size:17px;display:grid;place-items:center;border-radius:10px}
+.map-ctl .sun-ind{display:none}
+.pmenu{bottom:0!important;top:auto!important;left:46px!important;min-width:250px;max-height:min(70vh,520px);overflow:auto}
+.pmenu hr{width:100%;border:0;border-top:1px solid var(--line);margin:4px 0}.pm-h{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--mute)}
+@media(min-width:900px){#dock{max-height:calc(100% - 150px);overflow:auto}
+ .hud.left{left:96px;top:74px;max-height:calc(100% - 140px)}.hud.right{right:10px;top:74px;max-height:calc(100% - 140px)}
+ body.on-map:has(.topbar.pp-hide) .hud,body.on-map:has(.topbar.pp-hide) #dock{top:10px}
+ body.on-map:has(.topbar.pp-hide) .hud{max-height:calc(100% - 76px)}
+ body.on-map:has(#dock.pp-hide) .hud.left{left:10px}}
+.topbar.pp-hide{transform:translateY(-12px)}
+.map-bottom{position:fixed;z-index:520;bottom:14px;left:64px;right:84px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;align-items:center;pointer-events:none}
+.map-bottom>*{pointer-events:auto;position:static!important;transform:none!important;margin:0!important;left:auto!important;right:auto!important;bottom:auto!important}
+.map-bottom>.pp-hide{display:none!important}
+.map-bottom .hud-bottom,.map-bottom .footer{padding:5px 10px;font-size:11.5px;row-gap:4px}
+@media(min-width:900px){body.on-map .chat-fab{bottom:14px;right:14px;width:48px;height:48px}}
+@media(max-width:899px){.map-bottom{display:none}.map-ctl{top:auto!important;bottom:88px!important}
+ body.on-map:has(.topbar.pp-hide) .mobile-toggle{top:12px}.pmenu{left:46px!important;bottom:0!important;max-height:60vh}}
+.fg summary{display:flex;align-items:center;gap:6px}.fg-x{margin-left:auto;background:transparent;border:0;color:var(--mute);cursor:pointer;font-size:12px;padding:2px 6px;border-radius:6px}
+.fg-x:hover,.fg-x:focus-visible{color:var(--ink);background:rgba(255,255,255,.08)}#fgHiddenNote{cursor:pointer;margin-bottom:6px}
+[data-theme=day] .fg-x{color:#3d4b5c}[data-theme=day] .fg-x:hover{background:rgba(0,0,0,.06);color:#0b1520}
+@media(prefers-reduced-motion:reduce){.topbar,.map-ctl,.map-bottom>*{transition:none!important}.pmenu{animation:none!important}}
+/* page background + width fixes (no dark block behind long pages, no clipped carousels) */
+html[data-theme=day]{background:#e6edf4}html,body{min-height:100%}body{height:auto}
+main.page{max-width:none;width:auto;margin-right:0;overflow-x:clip}
+@media(min-width:900px){main.page{padding-right:24px}}
+.rowc,.carousel{min-width:0;max-width:100%}
+.beta{background:#ffc24b!important;color:#1a1200!important;font-weight:800}
+html[data-theme=day] body .beta{background:#7a4f00!important;color:#fff!important}
+.carousel{overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+@media(max-width:899px){.map-ctl{top:66px!important;bottom:auto!important;flex-direction:row}.pmenu{left:0!important;top:44px!important;bottom:auto!important}
+ body.on-map:has(.topbar.pp-hide) .map-ctl{top:10px!important}}
+@media(max-width:899px){body.on-map .map-tools{right:72px!important;left:8px!important;transform:none!important;width:auto!important;max-width:none!important;overflow-x:auto}body.on-map .chat-fab{bottom:140px;width:48px;height:48px}}

@@ -2,15 +2,18 @@
    Weather today (Open-Meteo, keyless, + PAGASA link). No keys; the browser sends only the map point's coordinates to Open-Meteo. */
 (function () {
 const X = { en: { theme: "Theme", featured: "Featured", acad_q: "Search guides or ask: e.g. paano mag-ipon, passport, hydroponics", all: "All",
-  wx_title: "Weather today", wx_feels: "Feels like", wx_rain: "Rain chance", wx_wind: "Wind", wx_src: "Model forecast by Open-Meteo (not PAGASA)", wx_asof: "as of", wx_pagasa: "Official forecasts & warnings: PAGASA", wx_fail: "Weather unavailable right now." },
+  th_next: "Click to change", wx_title: "Weather today", wx_feels: "Feels like", wx_rain: "Rain chance", wx_wind: "Wind", wx_src: "Model forecast by Open-Meteo (not PAGASA)", wx_asof: "as of", wx_pagasa: "Official forecasts & warnings: PAGASA", wx_fail: "Weather unavailable right now." },
  tl: { theme: "Tema", featured: "Tampok", acad_q: "Maghanap ng gabay o magtanong: hal. paano mag-ipon, passport, hydroponics", all: "Lahat",
-  wx_title: "Panahon ngayon", wx_feels: "Pakiramdam", wx_rain: "Tsansa ng ulan", wx_wind: "Hangin", wx_src: "Forecast model ng Open-Meteo (hindi PAGASA)", wx_asof: "as of", wx_pagasa: "Opisyal na forecast at babala: PAGASA", wx_fail: "Hindi makuha ang panahon ngayon." } };
+  th_next: "I-click para palitan", wx_title: "Panahon ngayon", wx_feels: "Pakiramdam", wx_rain: "Tsansa ng ulan", wx_wind: "Hangin", wx_src: "Forecast model ng Open-Meteo (hindi PAGASA)", wx_asof: "as of", wx_pagasa: "Opisyal na forecast at babala: PAGASA", wx_fail: "Hindi makuha ang panahon ngayon." } };
 for (const l in X) CIVI_I18N[l] = Object.assign(CIVI_I18N[l] || {}, X[l]);
 
 /* theme selector: every page */
-function themeSel() { if ($("#themeSel")) return; const ta = $(".top-actions"); if (!ta) return;
-  ta.insertAdjacentHTML("afterbegin", `<select id="themeSel" aria-label="${esc(t("theme"))}" title="${esc(t("theme"))}"><option value="auto">🌗 ${t("th_auto")}</option><option value="day">☀️ ${t("th_day")}</option><option value="night">🌙 ${t("th_night")}</option></select>`);
-  const s = $("#themeSel"); s.value = window.civiThemeMode?.() || "auto"; s.onchange = () => { localStorage.setItem("civi.theme", s.value); window.civiApplyTheme?.(); }; }
+function themeSel() { $("#themeSel")?.remove(); if ($("#themeTog")) return syncTheme(); const ta = $(".top-actions"); if (!ta) return;
+  ta.insertAdjacentHTML("afterbegin", `<button id="themeTog" class="btn ghost sm theme-tog" type="button"></button>`);
+  $("#themeTog").onclick = () => { const order = ["auto", "day", "night"], cur = window.civiThemeMode?.() || "auto"; localStorage.setItem("civi.theme", order[(order.indexOf(cur) + 1) % 3]); window.civiApplyTheme?.(); syncTheme(); }; syncTheme(); }
+/* compact icon toggle: Auto (follows PH sunrise/sunset) -> Day -> Night */
+function syncTheme() { const b = $("#themeTog"); if (!b) return; const m = window.civiThemeMode?.() || "auto", ic = { auto: "🌗", day: "☀️", night: "🌙" }[m];
+  const lab = `${t("theme")}: ${t("th_" + m)}. ${t("th_next")}`; b.textContent = ic; b.title = lab; b.setAttribute("aria-label", lab); b.dataset.mode = m; }
 themeSel(); addEventListener("hashchange", () => setTimeout(themeSel, 0));
 
 /* featured strip */

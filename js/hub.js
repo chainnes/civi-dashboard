@@ -390,7 +390,7 @@ const ROUTES = { map: viewMap, directory: viewDirectory, lounge: viewLounge, aca
   privacy: () => page(`<div class="prose">${LEGAL.privacy}</div>`), terms: () => page(`<div class="prose">${LEGAL.terms}</div>`), disclaimer: () => page(`<div class="prose">${LEGAL.disclaimer}</div>`) };
 function route() {
   charts.forEach(c => c.destroy()); charts = []; if (map) { map.remove(); map = null; cluster = null; }
-  const r = (location.hash.replace("#/", "") || "map").split("?")[0]; $$("#dock a").forEach(a => a.classList.toggle("on", a.dataset.r === r));
+  const r = (location.hash.replace("#/", "") || "map").split("?")[0].split("/")[0]; $$("#dock a").forEach(a => a.classList.toggle("on", a.dataset.r === r));
   (ROUTES[r] || viewMap)(); applyI18n();
 }
 $("#lang").innerHTML = CIVI_LANGS.map(([c, n]) => `<option value="${c}">${n}${c === "en" ? "" : " ·MT"}</option>`).join("");
