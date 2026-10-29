@@ -1,0 +1,20 @@
+{
+  "name": "civi-news",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-26",
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true
+    }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "NEWS",
+      "id": "c0a515e716c444bb80cf48840267904b"
+    }
+  ],
+  "triggers": {
+    "crons": ["15 * * * *"]
+  }
+}
