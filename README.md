@@ -50,7 +50,7 @@ Python scripts (scripts/*.py) → data/*.json snapshots (run by you, committed)
 ## Setup (short version; full beginner guide: `docs/SETUP_GUIDE_FOR_CHAI.md`)
 1. Supabase project (Singapore). Schema deploys from `supabase/migrations/` on merge to `main` (see below). Enable Email + Google auth.
 2. Fix git author on all commits, create a private GitHub repo, push.
-3. Cloudflare Pages → connect repo (no build, output `/`). Env vars: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `VOTER_SALT`, optional `PAYPAL_URL`, `DONATE_URL`, `KOFI_URL`, `VAPID_PUBLIC_KEY`. Do not add a Workers AI binding until the note below. Redeploy.
+3. Cloudflare Pages → connect repo (no build, output `/`). Env vars: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `VOTER_SALT`, optional `PAYPAL_URL`, `DONATE_URL`, `KOFI_URL`, `VAPID_PUBLIC_KEY`. The Workers AI binding `AI` is in `wrangler.toml`. Do not add it again under Settings → Bindings; dashboard bindings are locked when `wrangler.toml` manages them. Redeploy.
 4. Resend: verify `mail.chainnes.com` (SPF/DKIM). n8n: import the 3 workflows in `n8n/`, add Supabase service_role + Resend credentials there only.
 5. privacy@chainnes.com alias, donate QR images in `assets/donate/`, `PAYPAL_URL`.
 6. Hard refresh after each deploy (`Cmd+Shift+R`).
@@ -115,4 +115,4 @@ New Academy course **Healthy lifestyle at nutrisyon** (`data/howto_health.json`,
 - **Academy:** category chips, search, and ✨ Ask (Workers AI via `/api/assist` mode `academy`, keyword fallback).
 - Calm motion (CSS only, transform/opacity, 150–300 ms, off with reduced motion). SW cache `civi-beta-9`.
 
-**AI chatbot / ✨ Ask:** `wrangler.toml` does not declare Workers AI. `/api/assist` and `/api/summarize` answer `{ "message": "Chatbot unavailable", "fallback": true }` with status 503, and the page keeps keyword and FAQ matching. To turn it back on, enable Workers AI in the Cloudflare account (accept the terms), then Workers & Pages → civi-ph → Settings → Bindings → Add → Workers AI → variable name `AI` → Save → Retry deployment. Leave `[ai]` out of `wrangler.toml` until that dashboard binding deploys. If publish fails again with the binding present, remove it and redeploy.
+**AI chatbot / ✨ Ask:** `wrangler.toml` declares `[ai] binding = "AI"`. No external API key. Dashboard bindings are locked while `wrangler.toml` manages them, so do not add Workers AI again under Settings → Bindings. If `env.AI` is missing, `/api/assist` and `/api/summarize` answer `{ "message": "Chatbot unavailable", "fallback": true }` with status 503, and the page keeps keyword and FAQ matching.

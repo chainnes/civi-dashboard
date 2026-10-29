@@ -88,7 +88,7 @@ If you already pushed before the author fix: `git push --force-with-lease` (only
 1. Cloudflare → **Workers & Pages → Create → Pages → Connect to Git** → choose the repo.
 2. Framework preset: **None**. Build command: *(empty)*. Output directory: `/`. Deploy.
 3. **Settings → Variables and Secrets** (Production): `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `VOTER_SALT` (any long random text), `PAYPAL_URL`; optional `DONATE_URL`, `KOFI_URL`, `VAPID_PUBLIC_KEY`.
-4. Skip Workers AI on this first deploy. Adding the `AI` binding before the account has Workers AI enabled fails Function publish. See **Re-enable the AI chatbot** at the end.
+4. Workers AI is declared in `wrangler.toml` as `[ai] binding = "AI"`. Turn on Workers AI for the account and accept the terms before the first deploy. Do not add the binding under **Settings → Bindings**; dashboard bindings are locked when `wrangler.toml` manages them. If the binding is missing at runtime, `/api/assist` and `/api/summarize` return 503 and the page uses keyword/FAQ matching.
 5. **Custom domains** → `civi.chainnes.com`.
 6. **Deployments → Retry/Redeploy** so the variables apply.
 
@@ -127,16 +127,14 @@ Update `data/kpis_extra.json` by hand when DBM, BTr or PNP publish new numbers (
 | "Unrecognized client_id" | OAuth client mismatch, usually Google (Step 3). Schema deploys through the GitHub integration (Step 2), not through that client id. |
 | Yellow "Demo mode" | `SUPABASE_URL`/`SUPABASE_ANON_KEY` missing or not redeployed. |
 | Google login loops/does nothing | Check redirect URLs in Google Cloud and Supabase (Step 3). |
-| ✨ Ask says "keyword match" | Expected until Workers AI is re-enabled (see the note at the end). |
+| ✨ Ask says "keyword match" | `env.AI` is missing, so `/api/assist` returns 503 and the page uses keyword/FAQ matching. The binding is `[ai] binding = "AI"` in `wrangler.toml`. Do not add a second one in the dashboard; dashboard bindings are locked when `wrangler.toml` manages them. |
 | Emails not sending | Resend domain not verified, wrong key in n8n, or user not opted in. |
 | Old version shows | Hard refresh; check `sw.js` cache name was bumped. |
 | git push rejected | `git pull --rebase` first, or `--force-with-lease` after the author fix on your own repo. |
 | SQL error "already exists" | These migrations are written to be re-run. If a merge still errors, screenshot the migration name and the message. Do not rename a file that already ran. |
 | Map tiles slow/blocked | OSM light-use limit: move to MapTiler/Stadia. |
 
-## Re-enable the AI chatbot
-Workers AI is not in `wrangler.toml`. A Git deploy that declared `[ai] binding = "AI"` failed at "Failed to publish your Function" (the account may not have Workers AI enabled, or the binding clashed with the dashboard). Until you add it back, `/api/assist` and `/api/summarize` return 503 `{ "message": "Chatbot unavailable", "fallback": true }`. ✨ Ask and the help chat still use keyword and FAQ matching.
-
-When you want AI again: Cloudflare dashboard → turn on Workers AI and accept the terms → **Workers & Pages** → **civi-ph** → **Settings** → **Bindings** → **Add** → **Workers AI** → variable name `AI` → **Save** → **Retry deployment**. Do not put `[ai]` back in `wrangler.toml` until a deploy with that dashboard binding succeeds. Test: Academy → "paano mag-ipon" → ✨ Ask should show a green "AI: …" chip.
+## Workers AI
+`wrangler.toml` declares `[ai] binding = "AI"` for the `civi-ph` Pages project. No API key. Dashboard bindings are locked while `wrangler.toml` manages them, so do not add Workers AI again under **Settings → Bindings**. Turn on Workers AI for the account and accept the terms, then redeploy from Git. If `env.AI` is missing, `/api/assist` and `/api/summarize` return 503 `{ "message": "Chatbot unavailable", "fallback": true }`. ✨ Ask and the help chat still use keyword and FAQ matching. Test: Academy → "paano mag-ipon" → ✨ Ask should show a green "AI: …" chip when the binding is present.
 
 Weather on the map uses Open-Meteo, which needs no key. If Civi becomes a paid/commercial service, review Open-Meteo's terms (they have a commercial plan).

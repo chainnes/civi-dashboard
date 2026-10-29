@@ -1,5 +1,5 @@
 // Cloudflare Pages Function: POST /api/summarize  {headlines: string[]}
-// Uses Workers AI only when the dashboard binding `AI` exists. No keys in the frontend.
+// Uses Workers AI only when the `AI` binding from wrangler.toml is present. No keys in the frontend.
 const aiUnavailable = () => Response.json({ error: "chatbot_unavailable", message: "Chatbot unavailable", summary: null, fallback: true }, { status: 503 });
 export async function onRequestPost({ request, env }) {
   const { headlines = [] } = await request.json().catch(() => ({}));

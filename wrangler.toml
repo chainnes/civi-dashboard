@@ -1,3 +1,6 @@
 name = "civi-ph"
 pages_build_output_dir = "."
 compatibility_date = "2025-07-18"
+
+[ai]
+binding = "AI"
