@@ -1,8 +1,9 @@
 // POST /api/assist {mode:"directory"|"academy"|"help", q} -> optional Workers AI helper via the AI binding only (no keys anywhere).
 // directory: returns {keywords:[...]} used to filter the client-side directory. help: returns {answer} from the FAQ context only.
 // No data is stored. If AI is not bound, returns 503 and the browser uses its built-in keyword/FAQ matching.
+const aiUnavailable = () => Response.json({ error: "chatbot_unavailable", message: "Chatbot unavailable", fallback: true }, { status: 503 });
 export async function onRequestPost({ request, env }) {
-  if (!env.AI) return Response.json({ fallback: true }, { status: 503 });
+  if (!env.AI) return aiUnavailable();
   const b = await request.json().catch(() => ({})); const q = String(b.q || "").slice(0, 300); if (!q) return Response.json({ error: "bad_input" }, { status: 400 });
   try {
     if (b.mode === "directory" || b.mode === "academy") {
@@ -17,5 +18,5 @@ export async function onRequestPost({ request, env }) {
       { role: "system", content: "You are Civi's help assistant. Answer in the user's language, in 2-4 short sentences, ONLY from this FAQ about the Civi app. If the answer is not in it, say you don't know and suggest the Help page or privacy@chainnes.com. Never give legal, medical or financial advice.\n\nFAQ:\n" + ctx },
       { role: "user", content: q }] });
     return Response.json({ answer: String(out.response || "").slice(0, 1200), ai: true });
-  } catch { return Response.json({ fallback: true }, { status: 503 }); }
+  } catch { return aiUnavailable(); }
 }

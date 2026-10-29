@@ -14,8 +14,10 @@ const toast = m => { const e = $("#toast"); e.textContent = m; e.classList.remov
 async function api(path, opts = {}) {
   try {
     const r = await fetch("/api/" + path, { credentials: "same-origin", headers: { "content-type": "application/json" }, ...opts, body: opts.body && JSON.stringify(opts.body) });
+    const d = await r.json().catch(() => ({}));
+    if (d.fallback) return d;
     if (r.status === 503 || r.status === 404 || r.status === 501 || r.status === 405) return { demo: true };
-    const d = await r.json().catch(() => ({})); if (!r.ok) return { error: d.error || r.status }; return d;
+    if (!r.ok) return { error: d.error || r.status }; return d;
   } catch { return { demo: true }; }
 }
 const data = async n => state.cache[n] ||= await fetch(`/data/${n}.json`).then(r => r.json());

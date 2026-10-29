@@ -8,7 +8,7 @@ Updated Oct 29, 2026 (PHT).
 | Frontend | Static HTML + vanilla JS (`js/*.js`), Leaflet + MarkerCluster, Chart.js | Hash router (`#/map`, `#/directory`, `#/academy`, `#/howto?id=`…). No build step, no keys. |
 | Static data | `data/*.json` | Snapshots produced by `scripts/*.py`; cached by the service worker. |
 | API | Cloudflare Pages Functions (`functions/api/*`) | Same-origin; forwards the user's Supabase JWT (HttpOnly cookie) so RLS applies. |
-| AI | Workers AI binding `AI` | Summaries (`/api/summarize`), assist keywords (`/api/assist`). Optional; keyword fallback. |
+| AI | Optional dashboard binding `AI` (not in `wrangler.toml`) | Summaries (`/api/summarize`) and assist (`/api/assist`). Missing binding returns 503 `Chatbot unavailable`; the page uses keyword/FAQ matching. |
 | DB/Auth/Storage | Supabase (Postgres, Auth: Email + Google, Storage for Sumbong photos) | RLS on every table; writes through SECURITY DEFINER RPCs with rate limits. |
 | Automation | n8n (self-hosted for push) | Ingest, law refs, Daily Briefing. Holds the service_role key and Resend key. |
 | Email | Resend (domain `mail.chainnes.com`) | Sent only by n8n to opted-in users. Civi's app never sends email. |
@@ -39,7 +39,7 @@ The first seven migrations match the old `sql/001`–`007` scripts and are idemp
 ## 4. Pages Functions (`functions/`)
 `_lib.js` (Supabase REST helper `sb`, `currentUser`, `withCookies`, `hashId` salted with `VOTER_SALT`, `geotag`) and `api/`: `auth/[[path]]` (login/logout/OAuth callback cookies), `config` (public flags like `PAYPAL_URL`), `map`, `feed`, `share`, `lounge`, `empower`, `favorites`, `directory-request`, `briefing`, `briefing/unsubscribe`, `translation`, `waitlist`, `summarize`, `assist`. POST handlers check same-origin.
 
-Env vars: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `VOTER_SALT`, optional `PAYPAL_URL`, `DONATE_URL`, `KOFI_URL`, `VAPID_PUBLIC_KEY`; binding `AI`. The service_role key is **never** in Pages.
+Env vars: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `VOTER_SALT`, optional `PAYPAL_URL`, `DONATE_URL`, `KOFI_URL`, `VAPID_PUBLIC_KEY`. Workers AI is a dashboard binding named `AI`, added only after the account has Workers AI enabled. The service_role key is **never** in Pages.
 
 ## 5. n8n workflows (`n8n/`)
 | Workflow | Schedule | Steps |
