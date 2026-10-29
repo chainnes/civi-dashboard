@@ -88,7 +88,7 @@ If you already pushed before the author fix: `git push --force-with-lease` (only
 1. Cloudflare → **Workers & Pages → Create → Pages → Connect to Git** → choose the repo.
 2. Framework preset: **None**. Build command: *(empty)*. Output directory: `/`. Deploy.
 3. **Settings → Variables and Secrets** (Production): `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `VOTER_SALT` (any long random text), `PAYPAL_URL`; optional `DONATE_URL`, `KOFI_URL`, `VAPID_PUBLIC_KEY`.
-4. **Settings → Bindings → Add → Workers AI**, variable name `AI`.
+4. Skip Workers AI on this first deploy. Adding the `AI` binding before the account has Workers AI enabled fails Function publish. See **Re-enable the AI chatbot** at the end.
 5. **Custom domains** → `civi.chainnes.com`.
 6. **Deployments → Retry/Redeploy** so the variables apply.
 
@@ -127,19 +127,16 @@ Update `data/kpis_extra.json` by hand when DBM, BTr or PNP publish new numbers (
 | "Unrecognized client_id" | OAuth client mismatch, usually Google (Step 3). Schema deploys through the GitHub integration (Step 2), not through that client id. |
 | Yellow "Demo mode" | `SUPABASE_URL`/`SUPABASE_ANON_KEY` missing or not redeployed. |
 | Google login loops/does nothing | Check redirect URLs in Google Cloud and Supabase (Step 3). |
-| ✨ Ask says "keyword match" | `AI` binding missing; redeploy after adding. |
+| ✨ Ask says "keyword match" | Expected until Workers AI is re-enabled (see the note at the end). |
 | Emails not sending | Resend domain not verified, wrong key in n8n, or user not opted in. |
 | Old version shows | Hard refresh; check `sw.js` cache name was bumped. |
 | git push rejected | `git pull --rebase` first, or `--force-with-lease` after the author fix on your own repo. |
 | SQL error "already exists" | These migrations are written to be re-run. If a merge still errors, screenshot the migration name and the message. Do not rename a file that already ran. |
 | Map tiles slow/blocked | OSM light-use limit: move to MapTiler/Stadia. |
 
-## Update: AI chatbot and ✨ Ask (Oct 29, 2026)
-The help chatbot, Directory ✨ Ask and Academy ✨ Ask need **only** the Cloudflare **Workers AI binding named `AI`**. No OpenAI or other API key, and nothing to paste into the code.
-1. Cloudflare dashboard → **Workers & Pages** → your Civi project → **Settings** → **Bindings**.
-2. **Add** → **Workers AI** → Variable name: `AI` (capital letters) → **Save**.
-3. **Deployments** → **Retry deployment** (bindings apply on the next deploy).
-4. Test: Academy → type "paano mag-ipon" → ✨ Ask. You should see a green "AI: …" chip. If you see "keyword match", the binding isn't active yet (still works, just simpler).
-> Tip: Workers AI has a free daily allowance on Cloudflare; check Workers AI usage in the dashboard.
+## Re-enable the AI chatbot
+Workers AI is not in `wrangler.toml`. A Git deploy that declared `[ai] binding = "AI"` failed at "Failed to publish your Function" (the account may not have Workers AI enabled, or the binding clashed with the dashboard). Until you add it back, `/api/assist` and `/api/summarize` return 503 `{ "message": "Chatbot unavailable", "fallback": true }`. ✨ Ask and the help chat still use keyword and FAQ matching.
+
+When you want AI again: Cloudflare dashboard → turn on Workers AI and accept the terms → **Workers & Pages** → **chai-civi** → **Settings** → **Bindings** → **Add** → **Workers AI** → variable name `AI` → **Save** → **Retry deployment**. Do not put `[ai]` back in `wrangler.toml` until a deploy with that dashboard binding succeeds. Test: Academy → "paano mag-ipon" → ✨ Ask should show a green "AI: …" chip.
 
 Weather on the map uses Open-Meteo, which needs no key. If Civi becomes a paid/commercial service, review Open-Meteo's terms (they have a commercial plan).
