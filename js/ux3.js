@@ -32,6 +32,13 @@ async function weather(p) { if (p) wxPlace = p; const g = $("#glance"); if (!g) 
   const [la, lo] = wxPlace.ll; w.innerHTML = `<h3><span>🌤️ ${t("wx_title")} · ${esc(wxPlace.name)}</span></h3><p class="sub">…</p>`;
   try { const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${la.toFixed(3)}&longitude=${lo.toFixed(3)}&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FManila&forecast_days=1`);
     if (!r.ok) throw 0; const d = await r.json(), c = d.current, [ic, lab] = WMO[c.weather_code] || ["🌡️", "—"];
+    if (typeof c.temperature_2m === "number" && Number.isFinite(c.temperature_2m)) {
+      const m = /^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/.exec(c.time || "");
+      window._civiWx = { place: wxPlace.name, temp: Math.round(c.temperature_2m), lab, when: m ? `${m[1]} ${m[2]} PHT` : "",
+        rain: typeof d.daily?.precipitation_probability_max?.[0] === "number" ? d.daily.precipitation_probability_max[0] : null,
+        wind: typeof c.wind_speed_10m === "number" ? Math.round(c.wind_speed_10m) : null };
+      document.dispatchEvent(new CustomEvent("civi:wx"));
+    }
     w.innerHTML = `<h3><span>🌤️ ${t("wx_title")} · ${esc(wxPlace.name)}</span></h3><div class="wx"><span class="wx-i" aria-hidden="true">${ic}</span><div><div class="wx-t">${Math.round(c.temperature_2m)}°C <small>${esc(lab)}</small></div>
       <div class="wx-m">${t("wx_feels")} ${Math.round(c.apparent_temperature)}°C · H ${Math.round(d.daily.temperature_2m_max[0])}° / L ${Math.round(d.daily.temperature_2m_min[0])}° · 💧 ${c.relative_humidity_2m}%</div>
       <div class="wx-m">${t("wx_rain")} ${d.daily.precipitation_probability_max[0] ?? "—"}% · ${t("wx_wind")} ${Math.round(c.wind_speed_10m)} km/h</div></div></div>

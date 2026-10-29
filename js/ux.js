@@ -186,6 +186,7 @@ document.body.insertAdjacentHTML("beforeend", `<button class="chat-fab" id="chat
 /* ---------- onboarding tour (no deps) ---------- */
 const TOUR = [["#dock", "tour1"], [".map-tools", "tour2"], ["#fpanel", "tour3"], ["#glance", "tour4"], ["#briefBtn", "tour5"], ["#lang", "tour6"], ["#chatFab", "tour7"]];
 function startTour(i = 0) {
+  if ($("#welcome")) { window._civiTourPending = i; return; }
   $$(".tour-hl,.tour-box").forEach(e => e.remove()); if (i >= TOUR.length) return localStorage.setItem("civi.tour", "done");
   const [sel, key] = TOUR[i], el = $(sel); if (!el || !el.offsetParent && getComputedStyle(el).position !== "fixed") return startTour(i + 1);
   const r = el.getBoundingClientRect(); if (!r.width) return startTour(i + 1);

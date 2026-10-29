@@ -299,3 +299,26 @@ html[data-theme=day] body .beta{background:#7a4f00!important;color:#fff!importan
 .dshort{margin:4px 0 6px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .dsrc{font-size:10px;color:var(--mute);margin:0 0 4px}
 .card.dcard .v{font-size:16px!important}
+
+/* Labels toggle: hide only the text-label pane (region / province / city names). */
+.leaflet-labels-pane{pointer-events:none;transition:opacity .2s ease}
+#map.labels-off .leaflet-labels-pane{opacity:0;visibility:hidden}
+@media (prefers-reduced-motion:reduce){.leaflet-labels-pane{transition:none}}
+
+/* Welcome popup on the map. Fade is opacity only. */
+.welcome{position:fixed;inset:0;z-index:2700;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:12px;padding-bottom:max(12px,env(safe-area-inset-bottom));background:rgba(3,6,12,.55);opacity:0;pointer-events:none;transition:opacity .2s ease}
+.welcome.in{opacity:1;pointer-events:auto}
+.welcome-card{width:min(460px,100%);max-height:min(78vh,560px);min-height:0;overflow:hidden;padding:16px 16px 14px;display:flex;flex-direction:column}
+.welcome h2{margin:0 0 2px;font-size:22px;line-height:1.25}
+.welcome h3{margin:0 0 8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.welcome-date{margin:0 0 12px;color:var(--mute);font-size:13px}
+.welcome-list{list-style:none;margin:0 0 14px;padding:0 4px 0 0;display:flex;flex-direction:column;gap:8px;overflow:auto;min-height:0}
+.welcome-list li{padding:8px 10px;border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--glass) 70%,transparent)}
+.welcome-list a{font-weight:700;text-decoration:none}
+.welcome-meta{margin-top:3px;font-size:11.5px;color:var(--mute);line-height:1.4}
+.welcome-meta a{font-weight:600}
+.welcome-acts{display:flex;flex-direction:column;gap:8px;flex-shrink:0}
+.welcome-acts .btn{width:100%}
+@media(min-width:700px){.welcome{justify-content:center;padding:24px}.welcome-acts{flex-direction:row;flex-wrap:wrap}.welcome-acts .btn{width:auto}}
+html[data-theme=day] .welcome{background:rgba(20,40,70,.38)}
+@media (prefers-reduced-motion:reduce){.welcome{transition:none}}

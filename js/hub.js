@@ -105,7 +105,7 @@ async function viewMap() {
     <div class="pq-wrap"><input type="search" id="placeQ" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="placeSug" placeholder="📍 ${esc(t("find_place"))}" aria-label="${esc(t("find_place"))}"><ul id="placeSug" class="glass pq-sug" role="listbox" hidden></ul></div>
     <button class="btn ghost sm" id="zIn" aria-label="Zoom in">＋</button><button class="btn ghost sm" id="zOut" aria-label="Zoom out">－</button>
     <button class="btn ghost sm" id="zHome" aria-label="${esc(t("whole_ph"))}" title="${esc(t("whole_ph"))}">🇵🇭</button>
-    <button class="btn ghost sm on" id="lblTog" aria-pressed="true" title="${esc(t("labels"))}">🏷️ ${t("labels")}</button>
+    <button type="button" class="btn ghost sm on" id="lblTog" aria-pressed="true" title="${esc(t("labels"))}">🏷️ ${t("labels")}</button>
   </div>
   <div class="mobile-toggle"><button class="btn sm" data-sheet="glance" aria-label="${esc(t("kpis"))}">📊</button><button class="btn sm" data-sheet="fpanel" aria-label="${esc(t("filters"))}">⚙️</button></div>
   <div class="hud-bottom glass" id="hudBottom"></div>
@@ -133,18 +133,34 @@ async function viewMap() {
           <div class="row" style="margin-top:8px"><button class="btn sm" data-only-region="${esc(n)}">${t("show_only")}</button><button class="btn ghost sm" data-zoom-region>${t("zoom_here")}</button></div></div>`).openOn(map);
         setTimeout(() => { $("[data-only-region]")?.addEventListener("click", () => { onlyIn("region", n); map.closePopup(); }); $("[data-zoom-region]")?.addEventListener("click", () => { map.flyToBounds(l.getBounds(), { duration: reduce ? 0 : .8 }); map.closePopup(); }); }); } });
       l.bindTooltip(f.properties.name, { sticky: true }); } }).addTo(map);
-  // learning labels: regions (zoomed out), provinces (mid), cities (zoomed in)
-  const lbl = (ll, txt, cls) => L.marker(ll, { interactive: false, keyboard: false, icon: L.divIcon({ className: "maplbl " + cls, html: `<span>${esc(txt)}</span>`, iconSize: null }) });
+  // learning labels live on their own pane. The toolbar toggle only hides that pane.
+  map.createPane("labels");
+  const labelsPane = map.getPane("labels");
+  labelsPane.style.zIndex = 640;
+  labelsPane.style.pointerEvents = "none";
+  const lbl = (ll, txt, cls) => L.marker(ll, { pane: "labels", interactive: false, keyboard: false, icon: L.divIcon({ className: "maplbl " + cls, html: `<span>${esc(txt)}</span>`, iconSize: null }) });
   const LB = { region: regionLayer.getLayers().map(l => lbl(l.getBounds().getCenter(), l.feature.properties.name, "r")), province: [], city: [] };
   const PL = await data("places"); // real city/municipality centroids (geoBoundaries ADM2/ADM3)
   Object.entries(PL.provinces).forEach(([n, v]) => !n.startsWith("NCR") && LB.province.push(lbl(v.ll, n, "p"))); PL.places.filter(p => p.lvl === "city").forEach(p => LB.city.push(lbl(p.ll, p.n, "c")));
-  labelLayer = L.layerGroup().addTo(map);
+  labelLayer = L.layerGroup({ pane: "labels" }).addTo(map);
   const labelsOn = () => localStorage.getItem("civi.labels") !== "0";
-  const drawLabels = () => { labelLayer.clearLayers(); if (!labelsOn()) return; const z = map.getZoom(), b = map.getBounds().pad(.1);
-    const show = z < 7 ? ["region"] : z < 9 ? ["region", "province"] : ["province", "city"]; show.forEach(k => LB[k].forEach(m => b.contains(m.getLatLng()) && labelLayer.addLayer(m))); $("#map").dataset.z = Math.floor(z); };
+  const drawLabels = () => {
+    labelLayer.clearLayers();
+    const z = map.getZoom(), b = map.getBounds().pad(.1);
+    const show = z < 7 ? ["region"] : z < 9 ? ["region", "province"] : ["province", "city"];
+    show.forEach(k => LB[k].forEach(m => b.contains(m.getLatLng()) && labelLayer.addLayer(m)));
+    $("#map").dataset.z = Math.floor(z);
+  };
+  const lt = $("#lblTog");
+  const syncLt = () => {
+    const on = labelsOn();
+    $("#map").classList.toggle("labels-off", !on);
+    lt.classList.toggle("on", on);
+    lt.setAttribute("aria-pressed", on ? "true" : "false");
+  };
+  syncLt();
   map.on("zoomend moveend", drawLabels); drawLabels();
-  const lt = $("#lblTog"); const syncLt = () => { lt.classList.toggle("on", labelsOn()); lt.setAttribute("aria-pressed", labelsOn()); }; syncLt();
-  lt.onclick = () => { localStorage.setItem("civi.labels", labelsOn() ? "0" : "1"); syncLt(); drawLabels(); };
+  lt.onclick = () => { localStorage.setItem("civi.labels", labelsOn() ? "0" : "1"); syncLt(); };
   $("#zIn").onclick = () => map.zoomIn(.75); $("#zOut").onclick = () => map.zoomOut(.75); $("#zHome").onclick = home;
   // place search -> flyTo
   const places = [...regionLayer.getLayers().map(l => ({ n: l.feature.properties.name, lvl: "region", b: l.getBounds() })), ...PL.places.map(p => ({ n: p.n, lvl: "city", ll: p.ll, region: p.p + ", " + p.r })), ...Object.entries(PL.provinces).map(([n, v]) => ({ n, lvl: "province", ll: v.ll, region: v.r })), { n: "QC", lvl: "city", ll: PL.places.find(p => p.n === "Quezon City")?.ll, region: "Quezon City" }].filter(p => p.b || p.ll);
@@ -167,7 +183,137 @@ async function viewMap() {
   renderFilters(all); drawPins(all); renderKpis(kpis); renderCatChart(kpis); renderLatest(all); renderMapList(all);
   $("#hudBottom").innerHTML = `${legendMini()} · <span>${t("updated")} ${ago(items.fetched_at)}</span>`;
   window.civiMapExtras?.({ map, all, geo, mask: maskLayer, home });
+  queueWelcome({ all, kpis });
 }
+/* ---------- welcome popup (map start; uses data the dashboard already loaded) ---------- */
+const WELCOME_DAY = "civi.welcome.day";
+const manilaDay = (d = new Date()) => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Manila", year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
+const welcomeHiddenToday = () => localStorage.getItem(WELCOME_DAY) === manilaDay();
+const onMapPage = () => /^#\/map|^#?$/.test(location.hash) && $("#map");
+function asOfLabel(s) {
+  if (!s) return "";
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s) || /PHT$/.test(s)) return s;
+  const d = new Date(s);
+  if (isNaN(d.getTime())) return "";
+  return new Intl.DateTimeFormat("en-PH", { timeZone: "Asia/Manila", dateStyle: "medium", timeStyle: "short" }).format(d) + " PHT";
+}
+function welcomeRow(row) {
+  if (!row || !row.text) return "";
+  const when = asOfLabel(row.when);
+  const href = row.url ? esc(row.url) : "";
+  const ext = href.startsWith("http");
+  const title = href ? `<a href="${href}" ${ext ? 'target="_blank" rel="noopener"' : ""}>${esc(row.text)}</a>` : `<span>${esc(row.text)}</span>`;
+  const meta = [row.source, when && "as of " + when].filter(Boolean).join(" · ");
+  const more = row.more || "";
+  return `<li ${row.k ? `data-k="${esc(row.k)}"` : ""}>${title}${meta || more ? `<div class="welcome-meta">${esc(meta)}${more}</div>` : ""}</li>`;
+}
+function hazardRows(all) {
+  return (all || []).filter(i => i && i.kind === "hazard" && i.title && i.url).sort((a, b) => new Date(b.time) - new Date(a.time)).slice(0, 2)
+    .map(i => ({ text: i.title, url: i.url, source: i.source || "", when: i.time }));
+}
+function quakeRow(kpis) {
+  const h = kpis && kpis.items && kpis.items.hazards_30d;
+  if (!h || typeof h.value !== "number" || !Number.isFinite(h.value)) return null;
+  return { k: "quakes", text: h.label ? `${h.value} · ${h.label}` : String(h.value), url: h.url || "", source: h.source || "", when: kpis.fetched_at || "" };
+}
+function featuredRows(F) {
+  const page = F && F.pages && F.pages.map;
+  if (!Array.isArray(page)) return [];
+  return page.filter(f => f && f.t && f.u).slice(0, 2).map(f => {
+    let source = "Civi";
+    try { if (/^https?:/i.test(f.u)) source = new URL(f.u).host.replace(/^www\./, ""); } catch {}
+    return { text: `${f.i ? f.i + " " : ""}${state.lang === "tl" && f.tl ? f.tl : f.t}`, url: f.u, source, when: F.as_of || "" };
+  });
+}
+function wxRow(wx) {
+  if (!wx || typeof wx.temp !== "number" || !Number.isFinite(wx.temp)) return null;
+  const bits = [`${wx.place ? wx.place + ": " : ""}${wx.temp}°C`];
+  if (wx.lab && wx.lab !== "—") bits.push(wx.lab);
+  const extra = [];
+  if (typeof wx.rain === "number") extra.push(`rain ${wx.rain}%`);
+  if (typeof wx.wind === "number") extra.push(`wind ${wx.wind} km/h`);
+  return { k: "wx", text: bits.join(", "), url: "https://open-meteo.com/", source: "Open-Meteo (CC BY 4.0)", when: wx.when || "",
+    more: ` · <a href="https://bagong.pagasa.dost.gov.ph/weather" target="_blank" rel="noopener">PAGASA ↗</a>${extra.length ? " · " + esc(extra.join(" · ")) : ""}` };
+}
+let welcomeShown = false;
+function queueWelcome(ctx) {
+  if (welcomeHiddenToday() || welcomeShown) return;
+  setTimeout(() => { openWelcome(ctx); }, 0);
+}
+async function openWelcome(ctx) {
+  if ($("#welcome") || welcomeHiddenToday() || welcomeShown || !onMapPage()) return;
+  welcomeShown = true;
+  let featured = null;
+  try { featured = await data("featured"); } catch {}
+  if ($("#welcome") || welcomeHiddenToday() || !onMapPage()) return;
+  const rows = [...hazardRows(ctx.all), quakeRow(ctx.kpis), wxRow(window._civiWx), ...featuredRows(featured)].filter(Boolean);
+  const dateLine = new Intl.DateTimeFormat("en-PH", { timeZone: "Asia/Manila", weekday: "long", year: "numeric", month: "long", day: "numeric" }).format(new Date());
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const prev = document.activeElement;
+  document.body.insertAdjacentHTML("beforeend", `<div id="welcome" class="welcome" role="dialog" aria-modal="true" aria-labelledby="welcomeH" aria-describedby="welcomeSum">
+    <div class="welcome-card glass">
+      <h2 id="welcomeH">Kumusta, Pilipinas! 👋</h2>
+      <p class="welcome-date">${esc(dateLine)} · PHT</p>
+      ${rows.length ? `<h3 id="welcomeSum">Latest summary</h3><ul id="welcomeList" class="welcome-list">${rows.map(welcomeRow).join("")}</ul>` : `<p id="welcomeSum" class="sr-only">Latest summary</p>`}
+      <div class="welcome-acts">
+        <button type="button" class="btn" id="welcomeGo">Tingnan ang dashboard</button>
+        <button type="button" class="btn ghost" id="welcomeDay">Huwag nang ipakita ngayong araw</button>
+      </div>
+    </div>
+  </div>`);
+  const el = $("#welcome");
+  const show = () => el.classList.add("in");
+  if (reduce) show(); else requestAnimationFrame(() => requestAnimationFrame(show));
+  $("#welcomeGo").onclick = () => closeWelcome(false);
+  $("#welcomeDay").onclick = () => closeWelcome(true);
+  el.addEventListener("click", e => { if (e.target === el) closeWelcome(false); });
+  el.querySelector(".welcome-card").addEventListener("click", e => e.stopPropagation());
+  $$("#welcome a").forEach(a => a.addEventListener("click", () => closeWelcome(false, { resumeTour: false })));
+  const trap = e => {
+    if (!$("#welcome")) return;
+    if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); closeWelcome(false); return; }
+    if (e.key !== "Tab") return;
+    const f = $$("button, a[href]", $("#welcome")).filter(n => !n.disabled);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  };
+  el._trap = trap;
+  document.addEventListener("keydown", trap, true);
+  $("#welcomeGo").focus();
+  el._prev = prev;
+  if ($(".tour-box")) { window._civiTourPending = window._civiTourPending ?? 0; $$(".tour-hl,.tour-box").forEach(n => n.remove()); }
+}
+function closeWelcome(skipDay, opts) {
+  const el = $("#welcome");
+  if (!el || el._closing) return;
+  el._closing = true;
+  if (skipDay) localStorage.setItem(WELCOME_DAY, manilaDay());
+  if (el._trap) document.removeEventListener("keydown", el._trap, true);
+  const finish = () => {
+    if (!el.isConnected) return;
+    const prev = el._prev;
+    el.remove();
+    if (prev && prev.isConnected && typeof prev.focus === "function") prev.focus();
+    const step = window._civiTourPending;
+    window._civiTourPending = null;
+    if (opts && opts.resumeTour === false) return;
+    if (step != null && onMapPage() && typeof startTour === "function") startTour(step);
+  };
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches || !el.classList.contains("in")) return finish();
+  el.classList.remove("in");
+  const timer = setTimeout(finish, 280);
+  el.addEventListener("transitionend", e => { if (e.propertyName !== "opacity") return; clearTimeout(timer); finish(); }, { once: true });
+}
+document.addEventListener("civi:wx", () => {
+  const ul = $("#welcomeList"); const row = wxRow(window._civiWx);
+  if (!ul || !row || ul.querySelector("[data-k=wx]")) return;
+  const q = ul.querySelector("[data-k=quakes]");
+  const html = welcomeRow(row);
+  if (q) q.insertAdjacentHTML("afterend", html); else ul.insertAdjacentHTML("beforeend", html);
+  $$("#welcomeList [data-k=wx] a").forEach(a => a.addEventListener("click", () => closeWelcome(false, { resumeTour: false })));
+});
 const legendMini = () => `<span><span class="legend-dot" style="--c:#38e1ff"></span>${t("lg_cluster")}</span><span><span class="legend-dot" style="--c:#ff5d7a"></span>${t("lg_pin")}</span><span><span class="legend-dot" style="--c:#38e1ff;border-radius:2px;opacity:.5"></span>${t("lg_region")}</span>`;
 function refresh() { const a = state._all; renderFilters(a); drawPins(a); renderLatest(a); renderMapList(a); }
 function selectRegion(n) { // real region outline + fitBounds (replaces the old bounds rectangle)
@@ -391,8 +537,10 @@ const page = html => { const v = $("#view"); v.className = "page"; v.innerHTML =
 const ROUTES = { map: viewMap, directory: viewDirectory, lounge: viewLounge, academy: viewAcademy, share: viewShare, more: viewMore,
   privacy: () => page(`<div class="prose">${LEGAL.privacy}</div>`), terms: () => page(`<div class="prose">${LEGAL.terms}</div>`), disclaimer: () => page(`<div class="prose">${LEGAL.disclaimer}</div>`) };
 function route() {
+  const r = (location.hash.replace("#/", "") || "map").split("?")[0].split("/")[0];
+  if (r !== "map") closeWelcome(false, { resumeTour: false });
   charts.forEach(c => c.destroy()); charts = []; if (map) { map.remove(); map = null; cluster = null; }
-  const r = (location.hash.replace("#/", "") || "map").split("?")[0].split("/")[0]; $$("#dock a").forEach(a => a.classList.toggle("on", a.dataset.r === r));
+  $$("#dock a").forEach(a => a.classList.toggle("on", a.dataset.r === r));
   (ROUTES[r] || viewMap)(); applyI18n();
 }
 $("#lang").innerHTML = CIVI_LANGS.map(([c, n]) => `<option value="${c}">${n}${c === "en" ? "" : " ·MT"}</option>`).join("");
