@@ -34,7 +34,7 @@ async function weather(p) { if (p) wxPlace = p; const g = $("#glance"); if (!g) 
     if (!r.ok) throw 0; const d = await r.json(), c = d.current, [ic, lab] = WMO[c.weather_code] || ["🌡️", "—"];
     if (typeof c.temperature_2m === "number" && Number.isFinite(c.temperature_2m)) {
       const m = /^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/.exec(c.time || "");
-      window._civiWx = { place: wxPlace.name, temp: Math.round(c.temperature_2m), lab, when: m ? `${m[1]} ${m[2]} PHT` : "",
+      window._civiWx = { place: wxPlace.name, temp: Math.round(c.temperature_2m), lab, when: m ? `${m[1]}T${m[2]}` : "",
         rain: typeof d.daily?.precipitation_probability_max?.[0] === "number" ? d.daily.precipitation_probability_max[0] : null,
         wind: typeof c.wind_speed_10m === "number" ? Math.round(c.wind_speed_10m) : null };
       document.dispatchEvent(new CustomEvent("civi:wx"));

@@ -31,6 +31,7 @@ function applyI18n() {
   $$("[data-i18n]").forEach(e => e.textContent = t(e.dataset.i18n));
   const b = $("#mtBanner"); if (state.lang !== "en") { b.textContent = "⚠ " + t("mt"); b.classList.remove("hidden"); } else b.classList.add("hidden");
   document.documentElement.lang = state.lang; renderAuthBtn();
+  if ($("#welcome")) paintWelcome(false);
 }
 function renderAuthBtn() { const b = $("#authBtn"); b.textContent = state.user ? `@${state.user.handle} · ${t("logout")}` : t("login"); }
 async function loadMe() {
@@ -190,12 +191,24 @@ const WELCOME_DAY = "civi.welcome.day";
 const manilaDay = (d = new Date()) => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Manila", year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
 const welcomeHiddenToday = () => localStorage.getItem(WELCOME_DAY) === manilaDay();
 const onMapPage = () => /^#\/map|^#?$/.test(location.hash) && $("#map");
-function asOfLabel(s) {
-  if (!s) return "";
-  if (/^\d{4}-\d{2}-\d{2}$/.test(s) || /PHT$/.test(s)) return s;
+const WELCOME_LOCALE = { en: "en", tl: "fil-PH", ceb: "ceb-PH", ilo: "ilo-PH", hil: "hil-PH", war: "war-PH", pam: "pam-PH", bcl: "bcl-PH", pag: "pag-PH", tsg: "tsg-PH", mdh: "mdh-PH" };
+const welcomeLocale = () => WELCOME_LOCALE[state.lang] || "en";
+function manilaInstant(s) {
+  if (!s) return null;
+  const hasZone = /(?:[zZ]|[+-]\d{2}:?\d{2})$/.test(s);
+  const wall = /^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?/.exec(s);
+  if (wall && !hasZone) return new Date(Date.UTC(+wall[1], +wall[2] - 1, +wall[3], wall[4] != null ? +wall[4] - 8 : -8, wall[5] != null ? +wall[5] : 0));
   const d = new Date(s);
-  if (isNaN(d.getTime())) return "";
-  return new Intl.DateTimeFormat("en-PH", { timeZone: "Asia/Manila", dateStyle: "medium", timeStyle: "short" }).format(d) + " PHT";
+  return isNaN(d.getTime()) ? null : d;
+}
+function asOfLabel(s) {
+  const d = manilaInstant(s);
+  if (!d) return "";
+  const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(s);
+  return new Intl.DateTimeFormat(welcomeLocale(), dateOnly ? { timeZone: "Asia/Manila", dateStyle: "medium" } : { timeZone: "Asia/Manila", dateStyle: "medium", timeStyle: "short" }).format(d);
+}
+function welcomeToday() {
+  return new Intl.DateTimeFormat(welcomeLocale(), { timeZone: "Asia/Manila", weekday: "long", year: "numeric", month: "long", day: "numeric" }).format(new Date());
 }
 function welcomeRow(row) {
   if (!row || !row.text) return "";
@@ -203,7 +216,7 @@ function welcomeRow(row) {
   const href = row.url ? esc(row.url) : "";
   const ext = href.startsWith("http");
   const title = href ? `<a href="${href}" ${ext ? 'target="_blank" rel="noopener"' : ""}>${esc(row.text)}</a>` : `<span>${esc(row.text)}</span>`;
-  const meta = [row.source, when && "as of " + when].filter(Boolean).join(" · ");
+  const meta = [row.source && `${t("welcome_source")}: ${row.source}`, when && `${t("welcome_asof")} ${when}`].filter(Boolean).join(" · ");
   const more = row.more || "";
   return `<li ${row.k ? `data-k="${esc(row.k)}"` : ""}>${title}${meta || more ? `<div class="welcome-meta">${esc(meta)}${more}</div>` : ""}</li>`;
 }
@@ -230,12 +243,35 @@ function wxRow(wx) {
   const bits = [`${wx.place ? wx.place + ": " : ""}${wx.temp}°C`];
   if (wx.lab && wx.lab !== "—") bits.push(wx.lab);
   const extra = [];
-  if (typeof wx.rain === "number") extra.push(`rain ${wx.rain}%`);
-  if (typeof wx.wind === "number") extra.push(`wind ${wx.wind} km/h`);
+  if (typeof wx.rain === "number") extra.push(`${t("welcome_rain")} ${wx.rain}%`);
+  if (typeof wx.wind === "number") extra.push(`${t("welcome_wind")} ${wx.wind} km/h`);
   return { k: "wx", text: bits.join(", "), url: "https://open-meteo.com/", source: "Open-Meteo (CC BY 4.0)", when: wx.when || "",
     more: ` · <a href="https://bagong.pagasa.dost.gov.ph/weather" target="_blank" rel="noopener">PAGASA ↗</a>${extra.length ? " · " + esc(extra.join(" · ")) : ""}` };
 }
-let welcomeShown = false;
+let welcomeShown = false, welcomeCtx = null;
+function welcomeRows() {
+  if (!welcomeCtx) return [];
+  return [...hazardRows(welcomeCtx.all), quakeRow(welcomeCtx.kpis), wxRow(window._civiWx), ...featuredRows(welcomeCtx.featured)].filter(Boolean);
+}
+function bindWelcome() {
+  $("#welcomeGo").onclick = () => closeWelcome(false);
+  $("#welcomeDay").onclick = () => closeWelcome(true);
+  $$("#welcome a").forEach(a => a.addEventListener("click", () => closeWelcome(false, { resumeTour: false })));
+}
+function paintWelcome(focusBtn) {
+  const el = $("#welcome");
+  if (!el) return;
+  const rows = welcomeRows();
+  el.querySelector(".welcome-card").innerHTML = `<h2 id="welcomeH">${esc(t("welcome_hi"))}</h2>
+    <p class="welcome-date">${esc(welcomeToday())} · ${esc(t("welcome_date_label"))}</p>
+    ${rows.length ? `<h3 id="welcomeSum">${esc(t("welcome_summary"))}</h3><ul id="welcomeList" class="welcome-list">${rows.map(welcomeRow).join("")}</ul>` : `<p id="welcomeSum" class="sr-only">${esc(t("welcome_summary"))}</p>`}
+    <div class="welcome-acts">
+      <button type="button" class="btn" id="welcomeGo">${esc(t("welcome_view"))}</button>
+      <button type="button" class="btn ghost" id="welcomeDay">${esc(t("welcome_hide"))}</button>
+    </div>`;
+  bindWelcome();
+  if (focusBtn) $("#welcomeGo").focus();
+}
 function queueWelcome(ctx) {
   if (welcomeHiddenToday() || welcomeShown) return;
   setTimeout(() => { openWelcome(ctx); }, 0);
@@ -246,29 +282,16 @@ async function openWelcome(ctx) {
   let featured = null;
   try { featured = await data("featured"); } catch {}
   if ($("#welcome") || welcomeHiddenToday() || !onMapPage()) return;
-  const rows = [...hazardRows(ctx.all), quakeRow(ctx.kpis), wxRow(window._civiWx), ...featuredRows(featured)].filter(Boolean);
-  const dateLine = new Intl.DateTimeFormat("en-PH", { timeZone: "Asia/Manila", weekday: "long", year: "numeric", month: "long", day: "numeric" }).format(new Date());
+  welcomeCtx = { all: ctx.all, kpis: ctx.kpis, featured };
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const prev = document.activeElement;
-  document.body.insertAdjacentHTML("beforeend", `<div id="welcome" class="welcome" role="dialog" aria-modal="true" aria-labelledby="welcomeH" aria-describedby="welcomeSum">
-    <div class="welcome-card glass">
-      <h2 id="welcomeH">Kumusta, Pilipinas! 👋</h2>
-      <p class="welcome-date">${esc(dateLine)} · PHT</p>
-      ${rows.length ? `<h3 id="welcomeSum">Latest summary</h3><ul id="welcomeList" class="welcome-list">${rows.map(welcomeRow).join("")}</ul>` : `<p id="welcomeSum" class="sr-only">Latest summary</p>`}
-      <div class="welcome-acts">
-        <button type="button" class="btn" id="welcomeGo">Tingnan ang dashboard</button>
-        <button type="button" class="btn ghost" id="welcomeDay">Huwag nang ipakita ngayong araw</button>
-      </div>
-    </div>
-  </div>`);
+  document.body.insertAdjacentHTML("beforeend", `<div id="welcome" class="welcome" role="dialog" aria-modal="true" aria-labelledby="welcomeH" aria-describedby="welcomeSum"><div class="welcome-card glass"></div></div>`);
   const el = $("#welcome");
+  paintWelcome(false);
   const show = () => el.classList.add("in");
   if (reduce) show(); else requestAnimationFrame(() => requestAnimationFrame(show));
-  $("#welcomeGo").onclick = () => closeWelcome(false);
-  $("#welcomeDay").onclick = () => closeWelcome(true);
   el.addEventListener("click", e => { if (e.target === el) closeWelcome(false); });
   el.querySelector(".welcome-card").addEventListener("click", e => e.stopPropagation());
-  $$("#welcome a").forEach(a => a.addEventListener("click", () => closeWelcome(false, { resumeTour: false })));
   const trap = e => {
     if (!$("#welcome")) return;
     if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); closeWelcome(false); return; }
@@ -307,12 +330,8 @@ function closeWelcome(skipDay, opts) {
   el.addEventListener("transitionend", e => { if (e.propertyName !== "opacity") return; clearTimeout(timer); finish(); }, { once: true });
 }
 document.addEventListener("civi:wx", () => {
-  const ul = $("#welcomeList"); const row = wxRow(window._civiWx);
-  if (!ul || !row || ul.querySelector("[data-k=wx]")) return;
-  const q = ul.querySelector("[data-k=quakes]");
-  const html = welcomeRow(row);
-  if (q) q.insertAdjacentHTML("afterend", html); else ul.insertAdjacentHTML("beforeend", html);
-  $$("#welcomeList [data-k=wx] a").forEach(a => a.addEventListener("click", () => closeWelcome(false, { resumeTour: false })));
+  if (!$("#welcome") || $("#welcomeList [data-k=wx]")) return;
+  paintWelcome(document.activeElement?.id === "welcomeGo");
 });
 const legendMini = () => `<span><span class="legend-dot" style="--c:#38e1ff"></span>${t("lg_cluster")}</span><span><span class="legend-dot" style="--c:#ff5d7a"></span>${t("lg_pin")}</span><span><span class="legend-dot" style="--c:#38e1ff;border-radius:2px;opacity:.5"></span>${t("lg_region")}</span>`;
 function refresh() { const a = state._all; renderFilters(a); drawPins(a); renderLatest(a); renderMapList(a); }
