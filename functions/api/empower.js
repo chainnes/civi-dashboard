@@ -1,5 +1,5 @@
 // Empower hub API. GET /api/empower?kind=petitions|reports|project_updates|events|impact|foi
-// POST {action, ...} (login required, same-origin; all writes go through RLS / security-definer RPCs in sql/005_empower.sql).
+// POST {action, ...} (login required, same-origin; all writes go through RLS / security-definer RPCs in supabase/migrations/20261029105517_empower.sql).
 // Civi NEVER sends letters, FOI requests or emails: it only stores drafts/status the user owns.
 import { json, configured, notConfigured, sb, currentUser, sameOrigin, fail } from "../_lib.js";
 const VIEWS = { petitions: "petitions_public?select=*&order=created_at.desc&limit=200", reports: "reports_public?select=*&order=created_at.desc&limit=500",

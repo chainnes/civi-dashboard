@@ -16,7 +16,7 @@ async function bState() {
   const r = await api("briefing"); if (r.demo || r.error) return { demo: true, prefs: bLocal.get(), items: null };
   return { demo: false, prefs: { ...BDEF, ...(r.prefs || {}) }, items: r.items, vapid: r.vapid_public_key };
 }
-// Demo/offline builder: same rules as sql/006 briefing_build, from bundled JSON. No invented text: titles, summaries and links are copied from the source item.
+// Demo/offline builder: same rules as briefing_build in supabase/migrations/20261029105518_briefing.sql, from bundled JSON. No invented text: titles, summaries and links are copied from the source item.
 async function buildDemoBriefing(p) {
   const [m, laws, sch] = await Promise.all([data("map_items"), data("law_refs").catch(() => ({ items: [] })), data("scholarships").catch(() => ({ items: [] }))]);
   const local = it => p.areas.some(a => a && (it.title + " " + (it.place || "") + " " + (it.summary || "")).toLowerCase().includes(a));
