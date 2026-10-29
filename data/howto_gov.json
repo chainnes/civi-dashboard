@@ -6,7 +6,7 @@
   "id": "gov",
   "title": "Civi Civics Badge",
   "title_tl": "Badge: Alam ko kung paano tumatakbo ang gobyerno",
-  "needs": "Tapusin lahat ng 12 module (lahat ng hakbang + pumasa sa quiz)."
+  "needs": "Tapusin lahat ng 25 module (lahat ng hakbang + pumasa sa quiz)."
  },
  "items": [
   {
@@ -764,6 +764,868 @@
       "Ombudsman",
       "DTI",
       "DepEd"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov13",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Who can run? Qualifications & who can vote",
+   "title_tl": "Sino ang puwedeng tumakbo at bumoto",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Botante (Art. V): Pilipino, hindi diskwalipikado ng batas, 18 taong gulang pataas, nakatira sa Pilipinas nang 1 taon at sa lugar kung saan boboto nang 6 na buwan bago ang eleksyon. Walang literacy o property requirement.",
+    "Pangulo at VP (Art. VII Sec. 2–3): natural-born, rehistradong botante, marunong bumasa at sumulat, 40 taong gulang pataas, nakatira sa PH nang 10 taon bago ang eleksyon.",
+    "Senador (Art. VI Sec. 3): natural-born, 35 taong gulang pataas, marunong bumasa at sumulat, rehistradong botante, nakatira sa PH nang 2 taon.",
+    "Congressman (Art. VI Sec. 6): natural-born, 25 taong gulang pataas, marunong bumasa at sumulat, rehistradong botante sa distrito (maliban sa party-list), nakatira roon nang 1 taon.",
+    "SK officials (RA 10742): 18 hanggang 24 taong gulang sa araw ng eleksyon. Ang Katipunan ng Kabataan ay mga 15 hanggang 30 taong gulang na nakatira sa barangay nang 6 na buwan at rehistrado.",
+    "☐ Ihambing ang qualifications sa listahan ng kandidato sa susunod na eleksyon"
+   ],
+   "tip": "Ang 'qualifications' ay minimum lang — ikaw ang magdedesisyon kung sino ang karapat-dapat.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "RA 10742 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra2016/ra_10742_2016.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "COMELEC"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ilang taon dapat ang kandidato sa pagka-Pangulo?",
+     "o": [
+      "35",
+      "40",
+      "45"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilang taon ang minimum na edad ng botante?",
+     "o": [
+      "16",
+      "18",
+      "21"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilang taon ang minimum ng Senador?",
+     "o": [
+      "25",
+      "30",
+      "35"
+     ],
+     "a": 2
+    }
+   ]
+  },
+  {
+   "id": "gov14",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Succession & emergency powers",
+   "title_tl": "Pagpapalit ng Pangulo at emergency powers",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Art. VII Sec. 8: Kapag namatay, permanenteng nabaldado, natanggal o nagbitiw ang Pangulo, ang VP ang magiging Pangulo sa natitirang termino.",
+    "Kung pareho silang wala: ang Senate President, o kung hindi kaya, ang Speaker ng House ang 'acting President' hanggang may mapili.",
+    "Art. VII Sec. 18 (Commander-in-Chief): puwedeng tumawag ng Armed Forces para pigilan ang karahasan, invasion o rebellion.",
+    "Martial law o suspensyon ng writ of habeas corpus: hindi hihigit sa 60 araw; dapat mag-report sa Kongreso sa loob ng 48 oras. Puwedeng bawiin ito ng Kongreso sa boto ng majority (magkasamang boto).",
+    "Puwedeng suriin ng Supreme Court kung may sapat na batayan, at dapat magdesisyon sa loob ng 30 araw mula ma-file ang petisyon.",
+    "Hindi sinususpinde ng martial law ang Constitution at ang pagpapatakbo ng korte at Kongreso.",
+    "☐ Basahin ang buong Art. VII Sec. 18"
+   ],
+   "tip": "Ang mga limitasyong ito ay aral mula sa kasaysayan — bahagi ng checks and balances.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Official Gazette",
+     "https://www.officialgazette.gov.ph/constitutions/1987-constitution/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Constitution"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Sino ang papalit kapag nagbitiw ang Pangulo?",
+     "o": [
+      "Senate President",
+      "Vice-President",
+      "Chief Justice"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Hanggang ilang araw ang martial law bago kailangang palawigin?",
+     "o": [
+      "30",
+      "60",
+      "90"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Sino ang puwedeng bumawi sa martial law?",
+     "o": [
+      "Kongreso",
+      "COMELEC",
+      "LGU"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov15",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Congress up close: CA, tribunals & committees",
+   "title_tl": "Kongreso: Commission on Appointments, tribunals, committees",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Commission on Appointments (Art. VI Sec. 18): Senate President (ex officio chairman) + 12 Senators + 12 House members. Kinukumpirma ang ilang appointment ng Pangulo (hal. department secretaries, ambassadors, mataas na opisyal ng AFP).",
+    "Electoral Tribunals (Art. VI Sec. 17): may Senate Electoral Tribunal (SET) at House of Representatives Electoral Tribunal (HRET). 9 miyembro bawat isa: 3 Justice ng Supreme Court + 6 na miyembro ng kapulungan. Sila ang huhusga sa protesta sa eleksyon ng mga miyembro.",
+    "Committees: dito pinag-aaralan ang bawat bill (hal. finance/appropriations, health, education). Dito rin ang 'inquiries in aid of legislation'.",
+    "Leaders: Senate President at Speaker ng House — hinahalal ng mga miyembro.",
+    "Regular session: Art. VI Sec. 15 — nagbubukas taun-taon sa ika-4 na Lunes ng Hulyo; dito rin ang State of the Nation Address (SONA) ng Pangulo.",
+    "☐ Hanapin ang listahan ng committees sa senate.gov.ph o congress.gov.ph"
+   ],
+   "tip": "Ang mga committee hearings ay kadalasang naka-livestream — magandang paraan para makita kung paano gumagana ang Kongreso.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Senate",
+     "https://www.senate.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "House",
+     "https://www.congress.gov.ph/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Senate",
+    "House"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Sino ang chairman ng Commission on Appointments?",
+     "o": [
+      "Speaker",
+      "Senate President",
+      "Pangulo"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilan ang Justice sa bawat Electoral Tribunal?",
+     "o": [
+      "3",
+      "6",
+      "9"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Kailan nagbubukas ang regular session?",
+     "o": [
+      "Ika-4 na Lunes ng Hulyo",
+      "Enero 1",
+      "Hunyo 30"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov16",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Accountability: impeachment, SALN & ethics",
+   "title_tl": "Pananagutan: impeachment, SALN at ethics",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Art. XI Sec. 1: 'Public office is a public trust.' Dapat silang may pananagutan sa taumbayan.",
+    "Impeachable (Art. XI Sec. 2): Pangulo, VP, mga Justice ng Supreme Court, mga miyembro ng Constitutional Commissions, at Ombudsman.",
+    "Grounds: culpable violation of the Constitution, treason, bribery, graft and corruption, other high crimes, o betrayal of public trust.",
+    "Proseso: 1/3 ng lahat ng miyembro ng House para ma-impeach; 2/3 ng lahat ng Senador para ma-convict. Hindi puwedeng mag-initiate laban sa parehong opisyal nang higit sa isang beses sa loob ng 1 taon. Ang parusa: pagtanggal at diskwalipikasyon.",
+    "SALN (Art. XI Sec. 17): ang mga public officer ay nagsusumite ng sworn statement of assets, liabilities and net worth.",
+    "RA 6713 (Code of Conduct and Ethical Standards): pamantayan ng kilos ng government employees, hal. pagiging tapat, pag-iwas sa conflict of interest.",
+    "Ang ibang opisyal (hindi impeachable) ay puwedeng imbestigahan ng Ombudsman at kasuhan sa Sandiganbayan.",
+    "☐ Alamin kung paano humingi ng kopya ng SALN"
+   ],
+   "tip": "Ang impeachment ay pampulitika at legal na proseso; ang kasong kriminal ay hiwalay pa rin.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "RA 6713 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra1989/ra_6713_1989.html",
+     "live"
+    ],
+    [
+     "Ombudsman",
+     "https://www.ombudsman.gov.ph/",
+     "live"
+    ]
+   ],
+   "related": [
+    "Ombudsman",
+    "SALN"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ilang boto ng Senado para ma-convict sa impeachment?",
+     "o": [
+      "Majority",
+      "2/3",
+      "3/4"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Alin ang HINDI impeachable?",
+     "o": [
+      "Ombudsman",
+      "Mayor",
+      "Pangulo"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ano ang SALN?",
+     "o": [
+      "Statement of assets, liabilities and net worth",
+      "Uri ng buwis",
+      "Bill sa Kongreso"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov17",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Departments deep dive: economy & money",
+   "title_tl": "Departamento: ekonomiya at pera",
+   "src": "https://www.dbm.gov.ph/",
+   "steps": [
+    "DOF (Department of Finance): namamahala sa kita ng gobyerno at utang. Nasa ilalim nito ang BIR (internal taxes) at Bureau of Customs.",
+    "DBM: naghahanda ng budget at naglalabas ng pondo sa mga ahensya.",
+    "Economic planning (dating NEDA; i-check ang kasalukuyang pangalan sa official site): gumagawa ng Philippine Development Plan.",
+    "BSP (Bangko Sentral ng Pilipinas): ang 'independent central monetary authority' sa Art. XII Sec. 20 — pera, interest rates, bangko.",
+    "DTI: negosyo, consumer protection, business name registration. DA: agrikultura at pagkain. DOE: energy.",
+    "PSA (Philippine Statistics Authority): census, inflation data, at civil registry (birth/marriage certificates).",
+    "☐ Hanapin ang pinakabagong inflation data sa PSA"
+   ],
+   "tip": "Kapag may balita tungkol sa presyo, tingnan ang PSA at BSP data, hindi lang opinyon.",
+   "links": [
+    [
+     "DBM",
+     "https://www.dbm.gov.ph/",
+     "live"
+    ],
+    [
+     "BSP",
+     "https://www.bsp.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "PSA",
+     "https://psa.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "BIR",
+    "PSA",
+    "DTI"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Saan nasa ilalim ang BIR?",
+     "o": [
+      "DOF",
+      "DBM",
+      "DTI"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Sino ang central monetary authority?",
+     "o": [
+      "BSP",
+      "DOF",
+      "SEC"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Saan kumukuha ng birth certificate?",
+     "o": [
+      "PSA",
+      "DFA",
+      "DILG"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov18",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Departments deep dive: services & social protection",
+   "title_tl": "Departamento: serbisyo at social protection",
+   "src": "https://www.sss.gov.ph/",
+   "steps": [
+    "DSWD: social welfare, ayuda sa kalamidad, Pantawid Pamilyang Pilipino Program (4Ps).",
+    "DOH: pampublikong kalusugan, ospital ng gobyerno, health programs. PhilHealth: national health insurance.",
+    "SSS: social security ng private employees, self-employed at voluntary members (kasama freelancers). GSIS: para sa government employees.",
+    "Pag-IBIG Fund: savings at housing loans. DHSUD: housing at urban development.",
+    "DepEd (basic education), CHED (kolehiyo), TESDA (technical-vocational).",
+    "DOLE: karapatan ng manggagawa at labor standards. DMW: overseas Filipino workers; ang OWWA ay para sa welfare ng OFWs.",
+    "☐ I-check kung updated ang SSS, PhilHealth at Pag-IBIG contributions mo"
+   ],
+   "tip": "Freelancer ka? Puwede kang mag-member sa SSS, PhilHealth at Pag-IBIG bilang self-employed o voluntary member.",
+   "links": [
+    [
+     "SSS",
+     "https://www.sss.gov.ph/",
+     "live"
+    ],
+    [
+     "GSIS",
+     "https://www.gsis.gov.ph/",
+     "live"
+    ],
+    [
+     "PhilHealth",
+     "https://www.philhealth.gov.ph/",
+     "live"
+    ],
+    [
+     "Pag-IBIG",
+     "https://www.pagibigfund.gov.ph/",
+     "live"
+    ]
+   ],
+   "related": [
+    "SSS",
+    "PhilHealth",
+    "Pag-IBIG"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Aling ahensya ang social security ng private workers?",
+     "o": [
+      "GSIS",
+      "SSS",
+      "DBM"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Para kanino ang GSIS?",
+     "o": [
+      "Government employees",
+      "OFWs",
+      "Estudyante"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Aling ahensya ang may 4Ps?",
+     "o": [
+      "DSWD",
+      "DOH",
+      "DepEd"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov19",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Departments deep dive: security, justice & infrastructure",
+   "title_tl": "Departamento: seguridad, hustisya at imprastraktura",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "DND: national defense; nasa ilalim ang Armed Forces of the Philippines (AFP).",
+    "DILG: local governments; nasa ilalim ang PNP, Bureau of Fire Protection at BJMP.",
+    "DOJ: prosecution ng kaso, NBI, Public Attorney's Office (PAO, libreng abogado para sa kwalipikado), Bureau of Corrections.",
+    "DFA: foreign relations, embassies at passport.",
+    "DPWH: kalsada, tulay, flood control. DOTr: transportasyon (LTO, LTFRB, MRT/LRT, airports). DICT: internet, eGov at cybersecurity.",
+    "DENR: kalikasan, gubat, mining. Ang PAGASA (sa ilalim ng DOST) ay para sa weather; ang NDRRMC/OCD ay para sa disaster risk reduction.",
+    "☐ I-save ang hotline ng pulis, bumbero at barangay mo"
+   ],
+   "tip": "Para sa emergency, ang national hotline ay 911.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Official Gazette",
+     "https://www.officialgazette.gov.ph/constitutions/1987-constitution/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "PNP",
+    "PAO",
+    "DPWH"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Saan nasa ilalim ang AFP?",
+     "o": [
+      "DILG",
+      "DND",
+      "DOJ"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Aling opisina ang nagbibigay ng libreng abogado sa kwalipikado?",
+     "o": [
+      "PAO",
+      "PNP",
+      "DFA"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Aling departamento ang gumagawa ng kalsada at tulay?",
+     "o": [
+      "DOTr",
+      "DPWH",
+      "DENR"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "gov20",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Provinces, cities & municipalities",
+   "title_tl": "Probinsya, lungsod at munisipyo",
+   "src": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+   "steps": [
+    "Art. X Sec. 1: Ang mga political subdivisions ay provinces, cities, municipalities at barangays; may autonomous regions sa Muslim Mindanao at Cordilleras.",
+    "Uri ng lungsod (RA 7160): Highly Urbanized City (HUC), Independent Component City (ICC), at Component City. Ang HUC ay hindi saklaw ng probinsya.",
+    "RA 7160 Sec. 452: HUC — hindi bababa sa 200,000 na populasyon at may kitang itinakda ng batas.",
+    "Mayor (Sec. 444/455): chief executive; nagpapatupad ng ordinance, nagbibigay ng business permit, naghahanda ng executive budget.",
+    "Sangguniang Panlalawigan/Panlungsod/Bayan: legislative body; nag-aapruba ng ordinances at local budget.",
+    "Ang mga lokal na departamento: treasurer, assessor, budget officer, engineer, health officer, social welfare officer, at DRRM office.",
+    "☐ Alamin kung HUC, component city o munisipyo ang lugar mo"
+   ],
+   "tip": "Ang business permit, cedula, real property tax at building permit ay sa LGU, hindi sa national agency.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "RA 7160 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "LGU",
+    "business permit"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ano ang HUC?",
+     "o": [
+      "Highly Urbanized City",
+      "Housing Unit Council",
+      "High Court"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Sino ang chief executive ng munisipyo?",
+     "o": [
+      "Mayor",
+      "Vice Mayor",
+      "Governor"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Saan kumukuha ng business permit?",
+     "o": [
+      "LGU",
+      "DFA",
+      "COA"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov21",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "The barangay up close",
+   "title_tl": "Ang barangay nang malapitan",
+   "src": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+   "steps": [
+    "Sec. 384: Ang barangay ang 'basic political unit' — pangunahing nagpaplano at nagpapatupad ng programa sa komunidad.",
+    "Sangguniang Barangay (Sec. 390–391): Punong Barangay, 7 kagawad, at SK chairperson. Gumagawa ng barangay ordinance at budget.",
+    "Barangay Assembly (Sec. 397): lahat ng residente na 15 taong gulang pataas, nakatira roon nang 6 na buwan, at rehistrado. Nagpupulong nang hindi bababa sa 2 beses kada taon para pakinggan ang ulat ng Sangguniang Barangay.",
+    "Katarungang Pambarangay (Sec. 399+): ang Lupong Tagapamayapa ay pinamumunuan ng Punong Barangay, kasama ang 10–20 miyembro. Tumutulong mag-ayos ng alitan bago umabot sa korte.",
+    "Barangay clearance, certificate of residency, at tulong sa kalamidad ay kadalasang dito nagsisimula.",
+    "☐ Alamin kung kailan ang susunod na Barangay Assembly"
+   ],
+   "tip": "Ang barangay assembly ang pinakamalapit na lugar para tanungin kung saan napunta ang pondo ng barangay.",
+   "links": [
+    [
+     "RA 7160 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+     "live"
+    ],
+    [
+     "RA 12232 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra2025/ra_12232_2025.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "barangay"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ilang kagawad mayroon sa Sangguniang Barangay?",
+     "o": [
+      "5",
+      "7",
+      "10"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilang beses kada taon nagpupulong ang Barangay Assembly (minimum)?",
+     "o": [
+      "1",
+      "2",
+      "4"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Sino ang namumuno sa Lupong Tagapamayapa?",
+     "o": [
+      "Punong Barangay",
+      "Mayor",
+      "Pulis"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov22",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Sangguniang Kabataan (SK)",
+   "title_tl": "Sangguniang Kabataan",
+   "src": "https://lawphil.net/statutes/repacts/ra2016/ra_10742_2016.html",
+   "steps": [
+    "RA 10742 (SK Reform Act of 2015) ang batas ng SK.",
+    "Katipunan ng Kabataan: lahat ng Pilipino na 15 hanggang 30 taong gulang, nakatira sa barangay nang 6 na buwan, at rehistrado.",
+    "SK officials: SK chairperson at mga SK members, 18–24 taong gulang sa araw ng eleksyon.",
+    "Ang SK chairperson ay ex-officio member ng Sangguniang Barangay.",
+    "RA 12232: 4 na taon ang termino ng SK; isang termino lang sa parehong posisyon.",
+    "Gawain: mga programa para sa kabataan — edukasyon, sports, kalusugan, kapaligiran, civic engagement.",
+    "☐ Kung 15–30 ka, alamin kung rehistrado ka sa Katipunan ng Kabataan"
+   ],
+   "tip": "Ang SK ay magandang unang hakbang sa public service para sa kabataan.",
+   "links": [
+    [
+     "RA 10742 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra2016/ra_10742_2016.html",
+     "live"
+    ],
+    [
+     "RA 12232 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra2025/ra_12232_2025.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "SK"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Anong edad ang Katipunan ng Kabataan?",
+     "o": [
+      "15–30",
+      "18–24",
+      "13–21"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Anong edad ang SK officials?",
+     "o": [
+      "15–30",
+      "18–24",
+      "21–35"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilang termino sa parehong SK position?",
+     "o": [
+      "1",
+      "2",
+      "3"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov23",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Local finance & local budget",
+   "title_tl": "Pondo at budget ng LGU",
+   "src": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+   "steps": [
+    "Kita ng LGU: real property tax, business tax, fees at charges, at share sa national taxes (dating tinatawag na IRA, ngayon National Tax Allotment o NTA).",
+    "Ang local budget ay ipinapasa ng Sanggunian bilang appropriation ordinance, batay sa executive budget ng Governor/Mayor/Punong Barangay.",
+    "RA 7160 Sec. 287: hindi bababa sa 20% ng internal revenue allotment ay para sa development projects.",
+    "May Local Development Council (kasama ang NGO/CSO) na gumagawa ng development plan.",
+    "COA ang nag-a-audit ng LGUs; public ang annual audit reports.",
+    "☐ Hanapin ang COA audit report ng LGU mo"
+   ],
+   "tip": "Ang 'full disclosure' ng budget ng LGU ay madalas naka-post sa bulletin board o website ng LGU.",
+   "links": [
+    [
+     "RA 7160 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+     "live"
+    ],
+    [
+     "COA",
+     "https://www.coa.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "DBM",
+     "https://www.dbm.gov.ph/",
+     "live"
+    ]
+   ],
+   "related": [
+    "COA",
+    "LGU"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Anong porsyento ng IRA/NTA ang para sa development projects (minimum)?",
+     "o": [
+      "10%",
+      "20%",
+      "30%"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Paano ipinapasa ang local budget?",
+     "o": [
+      "Appropriation ordinance",
+      "Executive order",
+      "Republic Act"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Sino ang nag-a-audit sa LGU?",
+     "o": [
+      "COA",
+      "DILG",
+      "CSC"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov24",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Autonomous regions: BARMM",
+   "title_tl": "Autonomous region: BARMM",
+   "src": "https://bangsamoro.gov.ph/",
+   "steps": [
+    "Art. X Sec. 15: Magkakaroon ng autonomous regions sa Muslim Mindanao at sa Cordilleras.",
+    "RA 11054 (Bangsamoro Organic Law, 2018) ang lumikha ng Bangsamoro Autonomous Region in Muslim Mindanao (BARMM).",
+    "May parliamentary na sistema ang BARMM: may Bangsamoro Parliament at Chief Minister.",
+    "Nananatili sa national government ang ilang kapangyarihan (hal. depensa, foreign affairs).",
+    "Hanggang ngayon, wala pang autonomous region sa Cordilleras.",
+    "☐ Basahin ang overview sa bangsamoro.gov.ph"
+   ],
+   "tip": "Ang autonomy ay paraan para igalang ang kultura at kasaysayan ng rehiyon habang nasa iisang bansa.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "RA 11054 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra2018/ra_11054_2018.html",
+     "live"
+    ],
+    [
+     "Bangsamoro Government",
+     "https://bangsamoro.gov.ph/",
+     "live"
+    ]
+   ],
+   "related": [
+    "BARMM"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Anong batas ang lumikha ng BARMM?",
+     "o": [
+      "RA 7160",
+      "RA 11054",
+      "RA 10742"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Anong sistema ang BARMM?",
+     "o": [
+      "Parliamentary",
+      "Monarchy",
+      "Federal"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Saang dalawang lugar binanggit ng Constitution ang autonomous regions?",
+     "o": [
+      "Muslim Mindanao at Cordilleras",
+      "Visayas at Luzon",
+      "NCR at Cebu"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov25",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Changing the Constitution",
+   "title_tl": "Paano binabago ang Constitution",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Art. XVII: Puwedeng magmungkahi ng amendment o revision ang (1) Kongreso sa boto ng 3/4 ng lahat ng miyembro (constituent assembly), o (2) constitutional convention.",
+    "People's initiative: petisyon ng hindi bababa sa 12% ng lahat ng rehistradong botante, at bawat legislative district ay may hindi bababa sa 3%. Para lang ito sa amendments.",
+    "Kahit anong paraan, kailangan itong aprubahan ng mayorya ng boto sa isang plebiscite.",
+    "☐ Pag-usapan: anong bahagi ng Constitution ang gusto mong panatilihin at bakit?"
+   ],
+   "tip": "Ang plebiscite ay nagbibigay sa taumbayan ng huling desisyon.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Official Gazette",
+     "https://www.officialgazette.gov.ph/constitutions/1987-constitution/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Constitution"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ilang porsyento ng botante para sa people's initiative?",
+     "o": [
+      "5%",
+      "12%",
+      "20%"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Anong boto ng Kongreso para magmungkahi ng amendment?",
+     "o": [
+      "Majority",
+      "2/3",
+      "3/4"
+     ],
+     "a": 2
+    },
+    {
+     "q": "Ano ang huling hakbang bago maging epektibo ang amendment?",
+     "o": [
+      "Plebiscite",
+      "SONA",
+      "Veto"
      ],
      "a": 0
     }
