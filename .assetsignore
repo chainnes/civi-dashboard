@@ -1,0 +1,15 @@
+# Not served as the public site. Pages compiles /functions into the Function
+# and should not also publish it (or sql, scripts, n8n, docs) as static files.
+/functions
+/sql
+/scripts
+/n8n
+/docs
+/wrangler.toml
+/.dev.vars
+/.dev.vars.example
+/.env
+/.env.*
+/.git
+/.wrangler
+/node_modules
