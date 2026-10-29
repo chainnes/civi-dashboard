@@ -107,6 +107,7 @@ async function viewMap() {
     <button class="btn ghost sm" id="zIn" aria-label="Zoom in">＋</button><button class="btn ghost sm" id="zOut" aria-label="Zoom out">－</button>
     <button class="btn ghost sm" id="zHome" aria-label="${esc(t("whole_ph"))}" title="${esc(t("whole_ph"))}">🇵🇭</button>
     <button type="button" class="btn ghost sm on" id="lblTog" aria-pressed="true" title="${esc(t("labels"))}">🏷️ ${t("labels")}</button>
+    <button type="button" class="btn ghost sm on" id="icoTog" aria-pressed="true" title="${esc(t("icons"))}">📍 ${t("icons")}</button>
   </div>
   <div class="mobile-toggle"><button class="btn sm" data-sheet="glance" aria-label="${esc(t("kpis"))}">📊</button><button class="btn sm" data-sheet="fpanel" aria-label="${esc(t("filters"))}">⚙️</button></div>
   <div class="hud-bottom glass" id="hudBottom"></div>
@@ -139,29 +140,38 @@ async function viewMap() {
   const labelsPane = map.getPane("labels");
   labelsPane.style.zIndex = 640;
   labelsPane.style.pointerEvents = "none";
-  const lbl = (ll, txt, cls) => L.marker(ll, { pane: "labels", interactive: false, keyboard: false, icon: L.divIcon({ className: "maplbl " + cls, html: `<span>${esc(txt)}</span>`, iconSize: null }) });
+  const lbl = (ll, txt, cls) => { const m = L.marker(ll, { pane: "labels", interactive: false, keyboard: false, icon: L.divIcon({ className: "maplbl " + cls, html: `<span>${esc(txt)}</span>`, iconSize: null }) }); m._name = txt; return m; };
   const LB = { region: regionLayer.getLayers().map(l => lbl(l.getBounds().getCenter(), l.feature.properties.name, "r")), province: [], city: [] };
   const PL = await data("places"); // real city/municipality centroids (geoBoundaries ADM2/ADM3)
   Object.entries(PL.provinces).forEach(([n, v]) => !n.startsWith("NCR") && LB.province.push(lbl(v.ll, n, "p"))); PL.places.filter(p => p.lvl === "city").forEach(p => LB.city.push(lbl(p.ll, p.n, "c")));
   labelLayer = L.layerGroup({ pane: "labels" }).addTo(map);
   const labelsOn = () => localStorage.getItem("civi.labels") !== "0";
+  const iconsOn = () => localStorage.getItem("civi.icons") !== "0";
+  const nameOff = () => { try { return new Set(JSON.parse(localStorage.getItem("civi.label.names") || "[]")); } catch { return new Set(); } };
+  window.civiNameOff = nameOff;
   const drawLabels = () => {
     labelLayer.clearLayers();
-    const z = map.getZoom(), b = map.getBounds().pad(.1);
+    const z = map.getZoom(), b = map.getBounds().pad(.1), hide = nameOff();
     const show = z < 7 ? ["region"] : z < 9 ? ["region", "province"] : ["province", "city"];
-    show.forEach(k => LB[k].forEach(m => b.contains(m.getLatLng()) && labelLayer.addLayer(m)));
+    show.forEach(k => LB[k].forEach(m => !hide.has(m._name) && b.contains(m.getLatLng()) && labelLayer.addLayer(m)));
     $("#map").dataset.z = Math.floor(z);
   };
-  const lt = $("#lblTog");
+  window.civiDrawLabels = drawLabels;
+  const lt = $("#lblTog"), it = $("#icoTog");
   const syncLt = () => {
     const on = labelsOn();
     $("#map").classList.toggle("labels-off", !on);
     lt.classList.toggle("on", on);
     lt.setAttribute("aria-pressed", on ? "true" : "false");
+    const io = iconsOn();
+    $("#map").classList.toggle("icons-off", !io);
+    it.classList.toggle("on", io);
+    it.setAttribute("aria-pressed", io ? "true" : "false");
   };
   syncLt();
   map.on("zoomend moveend", drawLabels); drawLabels();
   lt.onclick = () => { localStorage.setItem("civi.labels", labelsOn() ? "0" : "1"); syncLt(); };
+  it.onclick = () => { localStorage.setItem("civi.icons", iconsOn() ? "0" : "1"); syncLt(); };
   $("#zIn").onclick = () => map.zoomIn(.75); $("#zOut").onclick = () => map.zoomOut(.75); $("#zHome").onclick = home;
   // place search -> flyTo
   const places = [...regionLayer.getLayers().map(l => ({ n: l.feature.properties.name, lvl: "region", b: l.getBounds() })), ...PL.places.map(p => ({ n: p.n, lvl: "city", ll: p.ll, region: p.p + ", " + p.r })), ...Object.entries(PL.provinces).map(([n, v]) => ({ n, lvl: "province", ll: v.ll, region: v.r })), { n: "QC", lvl: "city", ll: PL.places.find(p => p.n === "Quezon City")?.ll, region: "Quezon City" }].filter(p => p.b || p.ll);

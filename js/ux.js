@@ -138,16 +138,52 @@ async function viewAcademy2() {
     const r = await api("assist", { method: "POST", body: { mode: "academy", q } }); // Workers AI via the AI binding; local keyword fallback
     if (r.keywords?.length) { words = [...expand(q), ...r.keywords.flatMap(expand)]; aiLab = "AI: " + r.keywords.join(", "); } else { words = expand(q); aiLab = t("kw_mode"); } show(); };
 }
+Object.assign(CIVI_I18N.en, { guide_level: "Guide", lessons: "Lessons", course_done: "Lesson complete", prev_lesson: "Previous", next_lesson: "Next" });
+Object.assign(CIVI_I18N.tl, { guide_level: "Gabay", lessons: "Mga aralin", course_done: "Tapos na ang aralin", prev_lesson: "Nakaraan", next_lesson: "Susunod" });
 async function viewHowto() {
   const how = await howAll(), id = new URLSearchParams(location.hash.split("?")[1] || "").get("id"), h = how.items.find(x => x.id === id);
   if (!h) return viewAcademy2();
-  const done = JSON.parse(localStorage.getItem("civi.howto." + h.id) || "[]");
-  page(`<p><a href="#/academy">← ${t("nav_academy")}</a></p><div class="card glass" style="max-width:760px">${favBtn("howto", h.id, h.title, "#/howto?id=" + h.id)}<span class="chip ok">${t("howto")}</span> <span class="chip">${esc(t(h.cat))}</span>
-   <h1 style="padding-right:34px">${esc(howTitle(h))}</h1>${h.title_tl && howTitle(h) !== h.title_tl ? `<p class="sub">${esc(h.title_tl)}</p>` : ""}<div class="disc">📅 ${t("asof")} ${esc(how.as_of)}. ${esc(h._note || how.note)} ${t("not_advice")}</div>
-   <ol class="steps">${h.steps.map((s, n) => `<li><label class="row" style="align-items:flex-start;gap:8px"><input type="checkbox" data-step="${n}" ${done.includes(n) ? "checked" : ""} style="width:auto;margin-top:3px" aria-label="${esc(t("mark_done"))} ${n + 1}"><span>${esc(s)}</span></label></li>`).join("")}</ol>
-   ${h.tip ? `<div class="disc">💡 ${esc(h.tip)}</div>` : ""}${h.related ? `<p>🔗 ${t("see_more")}: ${h.related.map(r => `<a href="#/directory?q=${encodeURIComponent(r)}">${esc(r)}</a>`).join(" · ")}</p>` : ""}${h.links ? `<p>🌐 ${h.links.map(([n, u, st]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>${st === "bot-protected" ? ` <small title="${esc(t("botprot"))}">✓</small>` : ""}`).join(" · ")}</p>` : ""}<p><a class="btn" href="${esc(h.src)}" target="_blank" rel="noopener">${t("check_official")} ↗</a> <span class="chip ${h.link === "live" ? "ok" : ""}">${esc(new URL(h.src).hostname)}</span></p>
-   ${window.civiQuizHTML ? window.civiQuizHTML(h, how) : ""}<p class="sub" style="font-size:11px">${t("progress_local")}</p></div>`);
-  $$("[data-step]").forEach(c => c.onchange = () => { localStorage.setItem("civi.howto." + h.id, JSON.stringify($$("[data-step]:checked").map(x => +x.dataset.step))); window.civiQuizCheck?.(h, how); });
+  const lessons = how.items.filter(x => x.cat === h.cat);
+  const idx = Math.max(0, lessons.findIndex(x => x.id === h.id));
+  const prev = lessons[idx - 1], next = lessons[idx + 1];
+  const readDone = x => { try { return JSON.parse(localStorage.getItem("civi.howto." + x.id) || "[]"); } catch { return []; } };
+  const done = new Set(readDone(h));
+  const finished = x => x.steps.length > 0 && readDone(x).length >= x.steps.length;
+  const courseN = () => lessons.filter(finished).length;
+  let host = ""; try { host = new URL(h.src).hostname.replace(/^www\./, ""); } catch {}
+  const outline = lessons.map((x, i) => `<a class="${x.id === h.id ? "on" : ""}" href="#/howto?id=${esc(x.id)}"><span>${i + 1}</span>${esc(howTitle(x))}${finished(x) ? " ✓" : ""}</a>`).join("");
+  page(`<p><a href="#/academy">← ${t("nav_academy")}</a></p>
+   <article class="course">
+     <button type="button" class="btn ghost sm course-toc" id="tocBtn" aria-expanded="false" aria-controls="toc">${t("lessons")}</button>
+     <nav id="toc" class="course-side glass" aria-label="${esc(t("lessons"))}"><b>${esc(t(h.cat) === h.cat ? h.cat : t(h.cat))}</b><progress id="courseBar" max="${lessons.length}" value="${courseN()}" aria-label="${esc(t("lessons"))}"></progress><div class="toc-list">${outline}</div></nav>
+     <div class="course-main card glass">
+       <header class="course-head">${favBtn("howto", h.id, h.title, "#/howto?id=" + h.id)}
+         <h1>${esc(howTitle(h))}</h1>
+         ${h.title_tl && howTitle(h) !== h.title_tl ? `<p class="sub">${esc(h.title_tl)}</p>` : ""}
+         <p class="course-meta"><span>${h.steps.length} ${t("steps")}</span><span>${t("guide_level")}</span><a href="${esc(h.src)}" target="_blank" rel="noopener">${esc(host)} ↗</a></p>
+         <progress id="lessonBar" max="${h.steps.length}" value="${done.size}"></progress><span id="lessonPct" class="sub">${done.size}/${h.steps.length}</span>
+       </header>
+       <div class="disc">📅 ${t("asof")} ${esc(how.as_of)}. ${esc(h._note || how.note)} ${t("not_advice")}</div>
+       <ol class="steps" id="lessonSteps">${h.steps.map((s, n) => `<li><label class="step-row"><input type="checkbox" data-step="${n}" ${done.has(n) ? "checked" : ""} aria-label="${esc(t("mark_done"))} ${n + 1}"><span>${esc(s)}</span></label></li>`).join("")}</ol>
+       ${h.tip ? `<div class="disc">💡 ${esc(h.tip)}</div>` : ""}
+       ${h.related ? `<p>🔗 ${t("see_more")}: ${h.related.map(r => `<a href="#/directory?q=${encodeURIComponent(r)}">${esc(r)}</a>`).join(" · ")}</p>` : ""}
+       ${h.links ? `<p>🌐 ${h.links.map(([n, u, st]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>${st === "bot-protected" ? ` <small title="${esc(t("botprot"))}">✓</small>` : ""}`).join(" · ")}</p>` : ""}
+       <div id="lessonBadge" class="course-badge" role="status" ${done.size >= h.steps.length ? "" : "hidden"}>✓ ${esc(t("course_done"))}</div>
+       ${window.civiQuizHTML ? window.civiQuizHTML(h, how) : ""}
+       <div class="course-nav"><a class="btn ghost ${prev ? "" : "is-off"}" ${prev ? `href="#/howto?id=${esc(prev.id)}"` : 'aria-disabled="true" tabindex="-1"'}>‹ ${t("prev_lesson")}</a><a class="btn ${next ? "" : "is-off"}" ${next ? `href="#/howto?id=${esc(next.id)}"` : 'aria-disabled="true" tabindex="-1"'}>${t("next_lesson")} ›</a></div>
+       <p class="sub" style="font-size:11px">${t("progress_local")}</p>
+     </div>
+   </article>`);
+  const sync = () => {
+    const ids = $$("#lessonSteps [data-step]:checked").map(x => +x.dataset.step);
+    localStorage.setItem("civi.howto." + h.id, JSON.stringify(ids));
+    const bar = $("#lessonBar"), pct = $("#lessonPct"), badge = $("#lessonBadge");
+    if (bar) bar.value = ids.length; if (pct) pct.textContent = `${ids.length}/${h.steps.length}`; if (badge) badge.hidden = ids.length < h.steps.length;
+    const cb = $("#courseBar"); if (cb) cb.value = courseN();
+    window.civiQuizCheck?.(h, how);
+  };
+  $$("#lessonSteps [data-step]").forEach(c => c.onchange = sync);
+  $("#tocBtn").onclick = () => { const open = $("#toc").classList.toggle("open"); $("#tocBtn").setAttribute("aria-expanded", open); };
   window.civiQuizBind?.(h, how);
 }
 
