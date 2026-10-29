@@ -290,3 +290,12 @@ html[data-theme=day] body .beta{background:#7a4f00!important;color:#fff!importan
 .gov-badge span{font-size:28px}
 @keyframes govIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.gov-q.reveal,.gov-badge{animation:none}}
+
+/* Directory cleanup (Oct 29): compact cards, short descriptions, scholarships carousel */
+#rows .carousel{grid-auto-columns:minmax(190px,220px);gap:10px}
+.card.dcard{padding:10px 12px;font-size:12.5px}
+.card.dcard h4{font-size:14px;margin:6px 0 4px;line-height:1.25}
+.card.dcard .chip{font-size:10px;padding:1px 6px}
+.dshort{margin:4px 0 6px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dsrc{font-size:10px;color:var(--mute);margin:0 0 4px}
+.card.dcard .v{font-size:16px!important}
