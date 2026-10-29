@@ -137,6 +137,6 @@ Update `data/kpis_extra.json` by hand when DBM, BTr or PNP publish new numbers (
 ## Re-enable the AI chatbot
 Workers AI is not in `wrangler.toml`. A Git deploy that declared `[ai] binding = "AI"` failed at "Failed to publish your Function" (the account may not have Workers AI enabled, or the binding clashed with the dashboard). Until you add it back, `/api/assist` and `/api/summarize` return 503 `{ "message": "Chatbot unavailable", "fallback": true }`. ✨ Ask and the help chat still use keyword and FAQ matching.
 
-When you want AI again: Cloudflare dashboard → turn on Workers AI and accept the terms → **Workers & Pages** → **chai-civi** → **Settings** → **Bindings** → **Add** → **Workers AI** → variable name `AI` → **Save** → **Retry deployment**. Do not put `[ai]` back in `wrangler.toml` until a deploy with that dashboard binding succeeds. Test: Academy → "paano mag-ipon" → ✨ Ask should show a green "AI: …" chip.
+When you want AI again: Cloudflare dashboard → turn on Workers AI and accept the terms → **Workers & Pages** → **civi-ph** → **Settings** → **Bindings** → **Add** → **Workers AI** → variable name `AI` → **Save** → **Retry deployment**. Do not put `[ai]` back in `wrangler.toml` until a deploy with that dashboard binding succeeds. Test: Academy → "paano mag-ipon" → ✨ Ask should show a green "AI: …" chip.
 
 Weather on the map uses Open-Meteo, which needs no key. If Civi becomes a paid/commercial service, review Open-Meteo's terms (they have a commercial plan).
