@@ -1,0 +1,840 @@
+{
+ "as_of": "2026-10-29",
+ "course": "Paano tumatakbo ang gobyerno natin",
+ "note": "Civic education guide, checked 2026-10-29 against the 1987 Constitution (LawPhil/Official Gazette), RA 7160 and RA 12232 (LawPhil), DBM and agency sites (✓ = site up but blocks automated checks). Hindi ito legal advice; laging i-check ang official source. Walang pinangalanang kasalukuyang opisyal — tingnan ang official sites.",
+ "badge": {
+  "id": "gov",
+  "title": "Civi Civics Badge",
+  "title_tl": "Badge: Alam ko kung paano tumatakbo ang gobyerno",
+  "needs": "Tapusin lahat ng 12 module (lahat ng hakbang + pumasa sa quiz)."
+ },
+ "items": [
+  {
+   "id": "gov01",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "The 1987 Constitution: the basics",
+   "title_tl": "Ang 1987 Constitution: ang batayan",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Ang Constitution ang pinakamataas na batas ng bansa. Lahat ng batas at gawain ng gobyerno ay dapat sumunod dito.",
+    "Art. II: Ang Pilipinas ay isang 'democratic and republican State'. 'Sovereignty resides in the people and all government authority emanates from them' — sa taumbayan galing ang kapangyarihan.",
+    "Art. III (Bill of Rights): hal. due process, freedom of speech at expression, karapatang magtipon at magpetisyon, karapatan sa impormasyon sa mga bagay na may pampublikong interes.",
+    "Hinahati ng Constitution ang kapangyarihan sa tatlong sangay (Legislative Art. VI, Executive Art. VII, Judicial Art. VIII) para may 'checks and balances'.",
+    "May independent bodies din: Constitutional Commissions (Art. IX), Ombudsman (Art. XI), Commission on Human Rights (Art. XIII).",
+    "Art. X: Local Government — may local autonomy ang mga probinsya, lungsod, munisipyo at barangay.",
+    "☐ Basahin ang Art. II at III sa LawPhil o Official Gazette"
+   ],
+   "tip": "Libre at public ang buong text ng Constitution — basahin ang mismong source, hindi lang post sa social media.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Official Gazette",
+     "https://www.officialgazette.gov.ph/constitutions/1987-constitution/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Constitution",
+    "Official Gazette"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Saan galing ang kapangyarihan ng gobyerno ayon sa Art. II?",
+     "o": [
+      "Sa Pangulo",
+      "Sa taumbayan",
+      "Sa Kongreso"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Anong Article ang Bill of Rights?",
+     "o": [
+      "Art. III",
+      "Art. VI",
+      "Art. X"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Ilan ang pangunahing sangay ng gobyerno?",
+     "o": [
+      "2",
+      "3",
+      "5"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "gov02",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Executive branch: President, VP & Cabinet",
+   "title_tl": "Ehekutibo: Pangulo, Bise at Gabinete",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Art. VII: 'The executive power shall be vested in the President.' Siya ang nagpapatupad ng batas, head of state at head of government.",
+    "Ang Pangulo at Bise-Pangulo ay hinahalal sa direktang boto para sa 6 na taon, simula tanghali ng June 30 pagkatapos ng eleksyon.",
+    "Ang Pangulo ay hindi na puwedeng tumakbo ulit (no re-election). Ang VP ay hindi puwedeng magsilbi nang higit sa 2 sunod na termino.",
+    "Puwedeng gawing miyembro ng Cabinet ang VP; hindi na ito kailangan ng confirmation.",
+    "Kapangyarihan ng Pangulo: control sa lahat ng executive departments, Commander-in-Chief ng Armed Forces, magtalaga ng opisyal (ang ilan ay kailangan ng Commission on Appointments), mag-veto ng bill, magsumite ng budget, makipagkasundo sa ibang bansa (treaty kailangan ng 2/3 ng Senado).",
+    "Cabinet = mga Secretary ng departamento, itinatalaga ng Pangulo. Sila ang 'alter ego' na nagpapatakbo ng bawat ahensya.",
+    "☐ Alamin kung sino ang kasalukuyang Pangulo at Cabinet sa official na site (hindi sa post)"
+   ],
+   "tip": "Para malaman ang kasalukuyang mga opisyal, laging tingnan ang official government sites — nagbabago ito pagkatapos ng eleksyon o appointment.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Official Gazette",
+     "https://www.officialgazette.gov.ph/constitutions/1987-constitution/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Malacañang",
+    "Official Gazette"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ilang taon ang termino ng Pangulo?",
+     "o": [
+      "4",
+      "6",
+      "3"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Puwede bang ma-reelect ang Pangulo?",
+     "o": [
+      "Oo, isang beses",
+      "Hindi",
+      "Oo, walang limit"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Sino ang Commander-in-Chief ng Armed Forces?",
+     "o": [
+      "Senate President",
+      "Pangulo",
+      "Chief Justice"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "gov03",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Legislative branch: Senate & House",
+   "title_tl": "Lehislatibo: Senado at Kamara",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Art. VI: Ang Congress ay binubuo ng Senate at House of Representatives. Sila ang gumagawa ng batas, nag-aapruba ng budget, at nag-iimbestiga 'in aid of legislation'.",
+    "Senate: 24 Senators na hinahalal 'at large' (buong bansa). Termino: 6 na taon, hindi hihigit sa 2 sunod na termino.",
+    "House: hindi hihigit sa 250 miyembro maliban kung itinakda ng batas — mula sa legislative districts at party-list. Ang party-list ay 20% ng kabuuang bilang ng representatives.",
+    "House members: 3 taon bawat termino, hindi hihigit sa 3 sunod na termino.",
+    "Ang appropriation, revenue at tariff bills ay dapat magmula sa House; puwedeng mag-propose o mag-concur ng amendments ang Senate.",
+    "Impeachment: ang House ang may 'exclusive power to initiate'; ang Senate ang may 'sole power to try and decide'.",
+    "☐ Hanapin ang district representative mo at ang mga bill na inihain niya sa congress.gov.ph"
+   ],
+   "tip": "Ang isang bill ay public record — puwede mong basahin ang status nito sa senate.gov.ph at congress.gov.ph.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Senate of the Philippines",
+     "https://www.senate.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "House of Representatives",
+     "https://www.congress.gov.ph/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Senate",
+    "House of Representatives"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ilan ang Senador?",
+     "o": [
+      "12",
+      "24",
+      "250"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilang taon ang termino ng isang congressman?",
+     "o": [
+      "3",
+      "6",
+      "4"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Saang kapulungan dapat magmula ang budget (appropriation) bill?",
+     "o": [
+      "Senate",
+      "House of Representatives",
+      "Supreme Court"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "gov04",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "How a bill becomes a law",
+   "title_tl": "Paano nagiging batas ang isang bill",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "1) Filing: ang Senator o Representative ay naghahain ng bill. First Reading: binabasa ang number, title at author, at ipinapasa sa committee.",
+    "2) Committee: pinag-aaralan, may public hearings, at puwedeng amyendahan. Naglalabas ng committee report.",
+    "3) Second Reading: debate at amendments sa plenaryo, tapos botohan.",
+    "4) Third Reading (Art. VI Sec. 26): botohan na lang — walang amendment. Ang printed copy ay dapat ibigay 3 araw bago, maliban kung sertipikado ng Pangulo na urgent.",
+    "5) Ipapadala sa kabilang kapulungan at dadaan din sa parehong proseso. Kung magkaiba ang bersyon, Bicameral Conference Committee ang mag-aayos.",
+    "6) Enrolled bill → Pangulo. Kung pirmahan, batas na. Kung i-veto, ibabalik; puwedeng i-override ng 2/3 ng bawat kapulungan.",
+    "7) Kung hindi kumilos ang Pangulo sa loob ng 30 araw mula matanggap, nagiging batas ito na parang pinirmahan (lapse into law).",
+    "8) Nagiging epektibo ang batas pagkatapos ng publication (karaniwan 15 araw pagkatapos ng publication, maliban kung iba ang sinabi ng batas).",
+    "☐ Sundan ang isang bill sa senate.gov.ph mula filing hanggang status"
+   ],
+   "tip": "Puwede kang dumalo o magsumite ng position paper sa committee hearing — dito pinakamadaling makaimpluwensya.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Senate (legislative process)",
+     "https://www.senate.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "Official Gazette",
+     "https://www.officialgazette.gov.ph/constitutions/1987-constitution/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "Senate",
+    "bills"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ano ang nangyayari sa Third Reading?",
+     "o": [
+      "Debate at amendments",
+      "Botohan lang, walang amendment",
+      "Pagpirma ng Pangulo"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilang araw ang Pangulo para kumilos bago mag-lapse into law ang bill?",
+     "o": [
+      "15",
+      "30",
+      "60"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Anong boto ang kailangan para i-override ang veto?",
+     "o": [
+      "Majority",
+      "2/3 ng bawat kapulungan",
+      "Unanimous"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "gov05",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Judicial branch: the courts",
+   "title_tl": "Hudikatura: ang mga korte",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Art. VIII: 'The judicial power shall be vested in one Supreme Court and in such lower courts as may be established by law.'",
+    "Supreme Court: 1 Chief Justice at 14 Associate Justices (15 lahat). Puwedeng mag-en banc o sa division na 3, 5 o 7.",
+    "Itinatalaga ng Pangulo ang mga Justice at judge mula sa listahan ng Judicial and Bar Council (JBC); hindi na kailangan ng confirmation.",
+    "Naglilingkod sila 'during good behavior' hanggang 70 taong gulang o hanggang hindi na kaya ang tungkulin.",
+    "Judicial review: kayang ideklarang unconstitutional ang batas o gawain ng gobyerno.",
+    "Mga lower courts (sa batas): Court of Appeals, Sandiganbayan (graft cases ng opisyal), Court of Tax Appeals, Regional Trial Courts, Municipal/Metropolitan Trial Courts, Shari'a courts.",
+    "☐ Alamin ang pagkakaiba ng civil at criminal case"
+   ],
+   "tip": "Hindi ito legal advice. Para sa kaso, kumunsulta sa abogado o sa Public Attorney's Office (PAO).",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "Supreme Court",
+    "PAO"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ilan ang miyembro ng Supreme Court?",
+     "o": [
+      "9",
+      "15",
+      "24"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Sino ang gumagawa ng listahan ng nominees para sa judges?",
+     "o": [
+      "Senate",
+      "Judicial and Bar Council",
+      "COMELEC"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Anong edad ang mandatory retirement ng Justices?",
+     "o": [
+      "65",
+      "70",
+      "75"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "gov06",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Constitutional commissions & independent offices",
+   "title_tl": "Constitutional commissions at independent offices",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Art. IX: Ang tatlong Constitutional Commissions ay ang Civil Service Commission (CSC), Commission on Elections (COMELEC) at Commission on Audit (COA). Independent sila.",
+    "Ang mga chairman at commissioners ay may termino na 7 taon, walang reappointment.",
+    "CSC: central personnel agency ng gobyerno — civil service exams, merit system, at disiplina ng government employees.",
+    "COMELEC: nagpapatupad ng lahat ng batas tungkol sa eleksyon, plebiscite, initiative, referendum at recall; nagre-register ng political parties.",
+    "COA: nag-a-audit ng kita, gastos at ari-arian ng gobyerno. Public ang audit reports nila.",
+    "Ombudsman (Art. XI): 'protectors of the people' — nag-iimbestiga ng reklamo laban sa public officials. Itinatalaga mula sa listahan ng JBC, 7-taong termino walang reappointment.",
+    "Commission on Human Rights (Art. XIII): independent office na nag-iimbestiga ng human rights violations. Chairman + 4 Members.",
+    "☐ Basahin ang isang COA audit report ng LGU mo"
+   ],
+   "tip": "Tandaan: technically, CSC, COMELEC at COA lang ang 'Constitutional Commissions' sa Art. IX; ang Ombudsman at CHR ay hiwalay na independent offices.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "CSC",
+     "https://www.csc.gov.ph/",
+     "live"
+    ],
+    [
+     "COMELEC",
+     "https://comelec.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "COA",
+     "https://www.coa.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "Ombudsman",
+     "https://www.ombudsman.gov.ph/",
+     "live"
+    ],
+    [
+     "CHR",
+     "https://chr.gov.ph/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "COMELEC",
+    "COA",
+    "Ombudsman"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Alin ang HINDI kasama sa 3 Constitutional Commissions ng Art. IX?",
+     "o": [
+      "COA",
+      "CHR",
+      "CSC"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilang taon ang termino ng commissioners?",
+     "o": [
+      "5",
+      "6",
+      "7"
+     ],
+     "a": 2
+    },
+    {
+     "q": "Sino ang nag-a-audit ng gastos ng gobyerno?",
+     "o": [
+      "COA",
+      "COMELEC",
+      "CSC"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov07",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "National departments & what they do",
+   "title_tl": "Mga departamento at ang trabaho nila",
+   "src": "https://www.dbm.gov.ph/",
+   "steps": [
+    "Ang executive departments ay pinamumunuan ng Secretary na itinatalaga ng Pangulo (kailangan ng Commission on Appointments). Ilang halimbawa:",
+    "DBM – budget ng gobyerno · DOF – kita at pananalapi (BIR, Customs ay nasa ilalim nito) · NEDA/DEPDev – economic planning.",
+    "DILG – local governments at pulis (PNP) · DOJ – hustisya at prosecution · DND – depensa (AFP) · DFA – foreign affairs at passport.",
+    "DepEd – basic education · CHED at TESDA – higher at technical education · DOH – kalusugan (kasama PhilHealth policy).",
+    "DOLE – trabaho at manggagawa · DTI – negosyo at consumer protection · DA – agrikultura · DENR – kalikasan · DPWH – imprastraktura · DOTr – transportasyon · DSWD – social welfare (hal. 4Ps).",
+    "DICT – digital at ICT · DOST – science · DOE – energy · DOT – tourism · DHSUD – housing · DMW – migrant workers.",
+    "Ang mga pangalan at istruktura ay puwedeng magbago sa bagong batas o executive order — i-check sa official site.",
+    "☐ Pumili ng 3 departamento na may kinalaman sa buhay mo at bisitahin ang site nila"
+   ],
+   "tip": "Kapag may problema ka, alamin muna kung LGU o national agency ang may hawak — mas mabilis ang aksyon.",
+   "links": [
+    [
+     "DBM",
+     "https://www.dbm.gov.ph/",
+     "live"
+    ],
+    [
+     "DILG",
+     "https://www.dilg.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "Official Gazette",
+     "https://www.officialgazette.gov.ph/constitutions/1987-constitution/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "DBM",
+    "DILG",
+    "DSWD"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Aling department ang may hawak ng budget?",
+     "o": [
+      "DOF",
+      "DBM",
+      "DTI"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Saan nasa ilalim ang PNP?",
+     "o": [
+      "DND",
+      "DILG",
+      "DOJ"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Aling ahensya ang para sa social welfare (hal. 4Ps)?",
+     "o": [
+      "DSWD",
+      "DOLE",
+      "DOH"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov08",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Local government structure (RA 7160)",
+   "title_tl": "Istruktura ng LGU (Local Government Code)",
+   "src": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+   "steps": [
+    "Ang Local Government Code of 1991 (RA 7160) ang batas na nagtatakda ng kapangyarihan at istruktura ng LGUs.",
+    "Antas: Province → City/Municipality → Barangay. May highly urbanized at independent component cities na hiwalay sa probinsya.",
+    "Province: Governor (executive), Vice Governor (namumuno sa Sangguniang Panlalawigan), Board Members (legislative).",
+    "City/Municipality: Mayor (executive), Vice Mayor (namumuno sa Sangguniang Panlungsod/Bayan), Councilors (gumagawa ng ordinance).",
+    "Barangay: Punong Barangay (barangay captain), 7 Sangguniang Barangay members (kagawad), SK Chairperson; may barangay secretary at treasurer na itinatalaga.",
+    "Sangguniang Kabataan (SK): para sa kabataan; ang SK chairperson ay ex-officio member ng Sangguniang Barangay.",
+    "Kita ng LGU: lokal na buwis at fees, at ang share sa national taxes (National Tax Allotment).",
+    "☐ Alamin ang pangalan ng LGU officials ninyo sa official site o bulletin board ng munisipyo"
+   ],
+   "tip": "Ang ordinance ay batas ng LGU; ang batas ng Kongreso ay para sa buong bansa.",
+   "links": [
+    [
+     "RA 7160 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+     "live"
+    ],
+    [
+     "DILG",
+     "https://www.dilg.gov.ph/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "DILG",
+    "LGU"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Sino ang namumuno sa Sangguniang Panlungsod?",
+     "o": [
+      "Mayor",
+      "Vice Mayor",
+      "Governor"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ano ang tawag sa batas na ginagawa ng LGU?",
+     "o": [
+      "Republic Act",
+      "Ordinance",
+      "Executive Order"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Anong batas ang Local Government Code?",
+     "o": [
+      "RA 7160",
+      "RA 10173",
+      "RA 12232"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov09",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Local officials: terms & duties",
+   "title_tl": "Mga lokal na opisyal: termino at tungkulin",
+   "src": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+   "steps": [
+    "Art. X Sec. 8 ng Constitution: ang elective local officials (maliban sa barangay) ay may 3-taong termino, hindi hihigit sa 3 sunod na termino.",
+    "Barangay at SK (RA 12232, Aug 13, 2025): 4 na taon ang termino. Barangay officials: hindi hihigit sa 3 sunod na termino sa parehong posisyon. SK officials: isang termino lang sa parehong posisyon.",
+    "Ayon sa RA 12232, ang susunod na regular barangay at SK elections ay sa unang Lunes ng November 2026, tapos kada 4 na taon.",
+    "Governor/Mayor: nagpapatupad ng ordinances, naghahanda ng local budget, nag-a-appoint ng department heads, emergency at disaster response.",
+    "Vice Governor/Vice Mayor: namumuno sa Sanggunian; pumapalit kapag bakante ang Governor/Mayor.",
+    "Councilors/Board Members: gumagawa ng ordinance at resolution, nag-aapruba ng local budget.",
+    "Punong Barangay: nagpapatupad ng batas sa barangay, namumuno sa Lupon Tagapamayapa (Katarungang Pambarangay) para sa pag-aayos ng alitan.",
+    "☐ Kung may alitan sa kapitbahay, alamin ang proseso ng barangay conciliation"
+   ],
+   "tip": "Maraming maliit na kaso ang kailangang dumaan muna sa barangay (Katarungang Pambarangay) bago sa korte.",
+   "links": [
+    [
+     "RA 7160 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+     "live"
+    ],
+    [
+     "RA 12232 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra2025/ra_12232_2025.html",
+     "live"
+    ],
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "barangay",
+    "SK"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ilang taon ang termino ng Mayor?",
+     "o": [
+      "3",
+      "4",
+      "6"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Ilang taon ang termino ng barangay officials ayon sa RA 12232?",
+     "o": [
+      "3",
+      "4",
+      "6"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ilang termino ang puwede sa parehong SK position?",
+     "o": [
+      "1",
+      "2",
+      "3"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov10",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "The national budget process",
+   "title_tl": "Paano ginagawa ang national budget",
+   "src": "https://www.dbm.gov.ph/",
+   "steps": [
+    "1) Budget Preparation: ang DBM ay naglalabas ng Budget Call; nagsusumite ng proposal ang mga ahensya. Ang resulta: National Expenditure Program (NEP).",
+    "2) Budget Legislation: Art. VII Sec. 22 — isusumite ng Pangulo ang budget sa Kongreso sa loob ng 30 araw mula sa pagbubukas ng regular session. Dadaan ito bilang General Appropriations Bill (nagsisimula sa House).",
+    "3) Pagkatapos ng approval ng Kongreso at pirma ng Pangulo (may line-item veto), nagiging General Appropriations Act (GAA).",
+    "Art. VI Sec. 25: hindi puwedeng taasan ng Kongreso ang kabuuang appropriation na inirekomenda ng Pangulo. Kung walang bagong GAA sa simula ng taon, 're-enacted' ang dating budget.",
+    "4) Budget Execution: naglalabas ang DBM ng allotments at cash (hal. SARO, NCA) para gastusin ng ahensya.",
+    "5) Budget Accountability: COA ang nag-a-audit; may mga report ng performance.",
+    "Bisitahin ang DBM site para sa People's Budget (simpleng bersyon ng budget).",
+    "☐ Hanapin ang budget ng isang ahensya sa GAA ngayong taon"
+   ],
+   "tip": "Public ang budget documents — puwede mong i-check kung saan napupunta ang buwis mo.",
+   "links": [
+    [
+     "DBM",
+     "https://www.dbm.gov.ph/",
+     "live"
+    ],
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "DBM",
+    "budget"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ano ang tawag sa budget proposal ng Pangulo?",
+     "o": [
+      "GAA",
+      "NEP",
+      "SARO"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Kailan isusumite ang budget sa Kongreso?",
+     "o": [
+      "Sa loob ng 30 araw mula pagbubukas ng regular session",
+      "Tuwing Disyembre",
+      "Kahit kailan"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Sino ang nag-a-audit ng paggastos?",
+     "o": [
+      "DBM",
+      "COA",
+      "DOF"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "gov11",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "How citizens can participate",
+   "title_tl": "Paano makikilahok ang mamamayan",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Bumoto: mag-register sa COMELEC at bumoto sa bawat eleksyon. Ang balota ay ang pinakadirektang boses mo.",
+    "Barangay Assembly: pulong ng mga residente ng barangay (RA 7160) — dito puwedeng magtanong tungkol sa proyekto at gastos.",
+    "Initiative at referendum (Art. VI Sec. 32 at RA 7160): puwedeng magmungkahi o mag-apruba ng batas/ordinance ang mamamayan sa petisyon. Recall: paraan para alisin ang lokal na opisyal.",
+    "Local Special Bodies: may puwesto ang NGOs/CSOs sa Local Development Council at iba pa (RA 7160).",
+    "Right to information (Art. III Sec. 7): humingi ng public records; sa executive branch may Freedom of Information (FOI) process.",
+    "Mag-ulat ng katiwalian sa Ombudsman; mag-report ng serbisyo sa 8888 Citizens' Complaint Center.",
+    "Magsumite ng position paper sa committee hearing, o sumali sa public consultation ng ahensya.",
+    "☐ I-check ang registration status mo sa COMELEC ☐ Dumalo sa susunod na Barangay Assembly"
+   ],
+   "tip": "Magalang at may ebidensya — mas pinakikinggan ang reklamong may petsa, lugar at dokumento.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "COMELEC",
+     "https://comelec.gov.ph/",
+     "bot-protected"
+    ],
+    [
+     "Ombudsman",
+     "https://www.ombudsman.gov.ph/",
+     "live"
+    ],
+    [
+     "RA 7160 (LawPhil)",
+     "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+     "live"
+    ]
+   ],
+   "related": [
+    "COMELEC",
+    "Ombudsman",
+    "FOI"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Saan ka magre-register para bumoto?",
+     "o": [
+      "DILG",
+      "COMELEC",
+      "CSC"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Ano ang tawag sa paraan para alisin ang lokal na opisyal bago matapos ang termino?",
+     "o": [
+      "Recall",
+      "Veto",
+      "Impeachment"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Saan nire-report ang katiwalian ng public official?",
+     "o": [
+      "Ombudsman",
+      "DTI",
+      "DepEd"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "gov12",
+   "cat": "Paano tumatakbo ang gobyerno natin",
+   "course": "gov",
+   "title": "Glossary: terms & definitions",
+   "title_tl": "Glossary: mga termino at kahulugan",
+   "src": "https://lawphil.net/consti/cons1987.html",
+   "steps": [
+    "Bill – panukalang batas na hindi pa naipapasa. Republic Act (RA) – batas na ipinasa ng Kongreso.",
+    "Ordinance – batas ng LGU. Resolution – pahayag o desisyon ng isang Sanggunian o kapulungan, hindi laging may bisa ng batas.",
+    "Executive Order (EO) – utos ng Pangulo para sa pagpapatupad ng batas sa executive branch.",
+    "Veto – pagtanggi ng Pangulo sa bill. Line-item veto – pag-veto ng partikular na item sa appropriation, revenue o tariff bill.",
+    "Impeachment – proseso ng pagtanggal sa matataas na opisyal (hal. Pangulo, Justices, Commissioners, Ombudsman) dahil sa seryosong pagkakasala.",
+    "Quorum – sapat na bilang ng miyembro para makapagnegosyo (majority sa Kongreso).",
+    "Plebiscite – botohan ng mamamayan para aprubahan ang pagbabago (hal. amendment sa Constitution, paglikha ng LGU).",
+    "Party-list – sistema ng representasyon sa House para sa mga sektor; 20% ng House.",
+    "GAA – General Appropriations Act, ang taunang budget. NTA – share ng LGU sa national taxes.",
+    "Term limit – pinakamaraming sunod na termino na puwede sa isang posisyon.",
+    "☐ Ipaliwanag sa kaibigan ang 3 termino gamit ang sarili mong salita"
+   ],
+   "tip": "Kapag may bagong salita sa balita, hanapin ang depinisyon sa mismong batas o official site.",
+   "links": [
+    [
+     "1987 Constitution (LawPhil)",
+     "https://lawphil.net/consti/cons1987.html",
+     "live"
+    ],
+    [
+     "Official Gazette",
+     "https://www.officialgazette.gov.ph/constitutions/1987-constitution/",
+     "bot-protected"
+    ]
+   ],
+   "related": [
+    "glossary"
+   ],
+   "link": "live",
+   "quiz": [
+    {
+     "q": "Ano ang tawag sa batas ng LGU?",
+     "o": [
+      "Ordinance",
+      "Republic Act",
+      "Executive Order"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Ano ang plebiscite?",
+     "o": [
+      "Botohan ng mamamayan para aprubahan ang pagbabago",
+      "Pagpupulong ng Gabinete",
+      "Uri ng buwis"
+     ],
+     "a": 0
+    },
+    {
+     "q": "Ilang porsyento ng House ang party-list?",
+     "o": [
+      "10%",
+      "20%",
+      "50%"
+     ],
+     "a": 1
+    }
+   ]
+  }
+ ]
+}
