@@ -1,0 +1,59 @@
+-- 007_ux.sql: Favorites ("My Saved"). Run after 001-006. RLS: each user sees and edits only their own rows.
+create table if not exists public.favorites (
+  user_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  type text not null check (type in ('directory','academy','howto','news','petition','scholarship','topic','official','company')),
+  item_id text not null check (char_length(item_id) <= 200),
+  title text check (char_length(title) <= 200),
+  url text check (url is null or url ~ '^(https?://|#/)'),
+  created_at timestamptz not null default now(),
+  primary key (user_id, type, item_id)
+);
+alter table public.favorites enable row level security;
+drop policy if exists fav_select on public.favorites; create policy fav_select on public.favorites for select using (user_id = auth.uid());
+drop policy if exists fav_delete on public.favorites; create policy fav_delete on public.favorites for delete using (user_id = auth.uid());
+-- inserts go through the RPC (caps each user at 500 saved items)
+create or replace function public.add_favorite(p_type text, p_item_id text, p_title text, p_url text) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if auth.uid() is null then raise exception 'login_required'; end if;
+  if (select count(*) from favorites where user_id = auth.uid()) >= 500 then raise exception 'rate_limited: max 500 saved items'; end if;
+  insert into favorites(user_id, type, item_id, title, url) values (auth.uid(), p_type, p_item_id, left(p_title, 200), p_url)
+  on conflict (user_id, type, item_id) do update set title = excluded.title, url = excluded.url;
+end $$;
+revoke all on function public.add_favorite(text,text,text,text) from public, anon;
+grant execute on function public.add_favorite(text,text,text,text) to authenticated;
+grant select, delete on public.favorites to authenticated;
+
+-- Directory "Request to add your website". NOT auto-published: an admin reviews each request (status pending -> approved/rejected).
+create table if not exists public.directory_requests (
+  id uuid primary key default gen_random_uuid(),
+  name text not null check (char_length(name) between 2 and 120),
+  url text not null check (url ~ '^https?://[^\s/$.?#].[^\s]*$' and char_length(url) <= 300),
+  category text not null check (char_length(category) <= 80),
+  location text check (char_length(location) <= 120),
+  description text not null check (char_length(description) between 10 and 500),
+  contact_email text check (contact_email is null or contact_email ~* '^[^@\s]+@[^@\s]+\.[^@\s]+$'),
+  consent boolean not null check (consent),
+  status text not null default 'pending' check (status in ('pending','approved','rejected')),
+  submitter uuid default auth.uid(),
+  rate_key text not null,
+  created_at timestamptz not null default now()
+);
+alter table public.directory_requests enable row level security;
+-- No select/update/delete policies: users cannot read or change requests (admins use the Supabase dashboard / service_role).
+drop policy if exists dr_insert on public.directory_requests;
+create policy dr_insert on public.directory_requests for insert to anon, authenticated with check (status = 'pending');
+create or replace function public.request_directory_listing(p_name text, p_url text, p_category text, p_location text, p_description text, p_email text, p_consent boolean, p_rate_key text) returns uuid
+language plpgsql security definer set search_path = public as $$
+declare v uuid;
+begin
+  if not coalesce(p_consent,false) then raise exception 'consent_required'; end if;
+  if (select count(*) from directory_requests where rate_key = p_rate_key and created_at > now() - interval '1 day') >= 3 then raise exception 'rate_limited'; end if;
+  insert into directory_requests(name,url,category,location,description,contact_email,consent,rate_key)
+  values (p_name,p_url,p_category,nullif(p_location,''),p_description,nullif(p_email,''),true,p_rate_key) returning id into v;
+  return v;
+end $$;
+revoke all on function public.request_directory_listing(text,text,text,text,text,text,boolean,text) from public;
+grant execute on function public.request_directory_listing(text,text,text,text,text,text,boolean,text) to anon, authenticated;
+grant insert on public.directory_requests to anon, authenticated;
+-- Contact emails are kept only to ask about the request and are deleted 90 days after review (RA 10173).

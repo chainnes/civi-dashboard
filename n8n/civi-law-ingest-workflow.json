@@ -1,0 +1,188 @@
+{
+ "name": "Civi law refs \u2192 Supabase (LawPhil, weekly)",
+ "nodes": [
+  {
+   "name": "Weekly Mon 6am PHT",
+   "type": "n8n-nodes-base.scheduleTrigger",
+   "typeVersion": 1.2,
+   "position": [
+    0,
+    0
+   ],
+   "parameters": {
+    "rule": {
+     "interval": [
+      {
+       "field": "weeks",
+       "triggerAtDay": [
+        1
+       ],
+       "triggerAtHour": 6
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Years",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    220,
+    0
+   ],
+   "parameters": {
+    "jsCode": "const y=new Date().getFullYear();return [y,y-1].map(year=>({json:{year}}));"
+   }
+  },
+  {
+   "name": "Fetch LawPhil RA index",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    440,
+    0
+   ],
+   "parameters": {
+    "url": "=https://lawphil.net/statutes/repacts/ra{{$json.year}}/ra{{$json.year}}.html",
+    "options": {
+     "response": {
+      "response": {
+       "responseFormat": "text",
+       "outputPropertyName": "data"
+      }
+     },
+     "batching": {
+      "batch": {
+       "batchSize": 1,
+       "batchInterval": 2000
+      }
+     }
+    }
+   }
+  },
+  {
+   "name": "Merge year",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    660,
+    0
+   ],
+   "parameters": {
+    "jsCode": "const ys=$('Years').all();return $input.all().map((i,k)=>({json:{year:ys[k].json.year,data:i.json.data}}));"
+   }
+  },
+  {
+   "name": "Parse",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    880,
+    0
+   ],
+   "parameters": {
+    "jsCode": "const out=[];for(const it of $input.all()){const y=it.json.year,h=it.json.data||'';\nconst re=new RegExp('<a href=\"(ra_(\\\\d+)_'+y+'\\\\.html)\">Republic Act No\\\\. \\\\d+</a><br />([^<]+)</td><td>\\\\s*([\\\\s\\\\S]*?)\\\\s*</td>','g');let m;\nwhile((m=re.exec(h))){out.push({json:{source:'LawPhil',kind:'Republic Act',number:'RA '+m[2],enacted:m[3].trim(),title:m[4].replace(/<[^>]+>/g,'').replace(/\\\\s+/g,' ').trim(),url:'https://lawphil.net/statutes/repacts/ra'+y+'/'+m[1]}});}}return out;"
+   }
+  },
+  {
+   "name": "Upsert law_refs",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    1100,
+    0
+   ],
+   "parameters": {
+    "method": "POST",
+    "url": "={{$env.SUPABASE_URL}}/rest/v1/law_refs?on_conflict=url",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "sendHeaders": true,
+    "headerParameters": {
+     "parameters": [
+      {
+       "name": "apikey",
+       "value": "={{$env.SUPABASE_SERVICE_ROLE_KEY}}"
+      },
+      {
+       "name": "Prefer",
+       "value": "resolution=merge-duplicates,return=minimal"
+      }
+     ]
+    },
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($input.all().map(i => i.json)) }}",
+    "options": {}
+   },
+   "executeOnce": true,
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "",
+     "name": "Supabase service role (Authorization: Bearer <service_role key>)"
+    }
+   }
+  }
+ ],
+ "connections": {
+  "Weekly Mon 6am PHT": {
+   "main": [
+    [
+     {
+      "node": "Years",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Years": {
+   "main": [
+    [
+     {
+      "node": "Fetch LawPhil RA index",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Fetch LawPhil RA index": {
+   "main": [
+    [
+     {
+      "node": "Merge year",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Merge year": {
+   "main": [
+    [
+     {
+      "node": "Parse",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Parse": {
+   "main": [
+    [
+     {
+      "node": "Upsert law_refs",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  }
+ },
+ "settings": {
+  "timezone": "Asia/Manila"
+ }
+}

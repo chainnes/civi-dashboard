@@ -1,0 +1,48 @@
+{
+"note": "Hand-entered from official publications; each has a source and as-of date. Update when the agency publishes a newer figure.",
+"items": [
+{
+"key": "budget",
+"label": "2026 national budget (GAA)",
+"value": "₱6.793T",
+"when": "FY 2026",
+"source": "DBM BESF 2026 Table B.6.c",
+"url": "https://www.dbm.gov.ph/wp-content/uploads/BESF/BESF2026/Selected-BESF/Table%20B.6.c.pdf",
+"official": true,
+"group": "money"
+},
+{
+"key": "debt",
+"label": "National Government outstanding debt",
+"value": "₱19.61T",
+"when": "end-Aug 2026 (released 30 Sep 2026)",
+"sub": "67.53% domestic · 32.47% external",
+"source": "Bureau of the Treasury press release",
+"url": "https://www.treasury.gov.ph/wp-content/uploads/2026/09/NG-Debt-Press-Release-August-2026.pdf",
+"official": true,
+"group": "money"
+},
+{
+"key": "remit",
+"label": "OFW cash remittances",
+"value": "See BSP",
+"when": "monthly",
+"source": "BSP Overseas Filipinos' Remittances",
+"url": "https://www.bsp.gov.ph/SitePages/Statistics/ExternalAccounts.aspx",
+"official": true,
+"group": "money",
+"linkonly": true
+},
+{
+"key": "crime",
+"label": "Focus crimes recorded (PNP, 8 crimes)",
+"value": "7,233",
+"when": "Jul–Sep 2026 (PNP briefing 5 Oct 2026)",
+"sub": "▼ 29.75% vs Jul–Sep 2025 (10,296). Recorded incidents, not a per-capita rate.",
+"source": "PNP data, as reported by GMA News",
+"url": "https://www.gmanetwork.com/news/topstories/nation/1004772/pnp-focus-crimes-dropped-by-29-75-in-q3-2026-compared-to-q3-2025/story/",
+"official": true,
+"group": "people"
+}
+]
+}

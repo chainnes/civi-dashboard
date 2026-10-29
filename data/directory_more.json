@@ -1,0 +1,3207 @@
+{
+ "as_of": "2026-10-29",
+ "note": "Curated high-utility sites. Brand listings are informational, not endorsements. Hotlines shown only when found on the official page.",
+ "items": [
+  {
+   "cat": "Sports & fitness",
+   "name": "Active Pinoy",
+   "abbr": "",
+   "url": "https://activepinoy.com/",
+   "label": "Private",
+   "desc": "Event listings and registration for runs, rides and races. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "IRONMAN Philippines",
+   "abbr": "",
+   "url": "https://www.ironman.com/races",
+   "label": "Private",
+   "desc": "IRONMAN triathlon races, including Philippine events. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "MILO Philippines (MILO Marathon info)",
+   "abbr": "",
+   "url": "https://www.milo.com.ph/",
+   "label": "Private",
+   "desc": "MILO Philippines site; the nationwide MILO Marathon is announced here. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "PATAFA (athletics)",
+   "abbr": "PATAFA",
+   "url": "https://patafa.ph/",
+   "label": "NGO",
+   "desc": "National federation for track and field / athletics. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Philippine Basketball Association",
+   "abbr": "PBA",
+   "url": "https://www.pba.ph/",
+   "label": "Private",
+   "desc": "Professional basketball league: schedules, scores and standings. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Philippine Football Federation",
+   "abbr": "PFF",
+   "url": "https://pff.org.ph/",
+   "label": "NGO",
+   "desc": "National football federation: leagues, national teams and grassroots. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Philippine Olympic Committee",
+   "abbr": "POC",
+   "url": "https://olympic.ph/",
+   "label": "NGO",
+   "desc": "National Olympic Committee of the Philippines; Team Philippines news and games. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Philippine Volleyball Federation",
+   "abbr": "PNVF",
+   "url": "https://pnvf.ph/",
+   "label": "NGO",
+   "desc": "National volleyball federation. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Pinoy Fitness running calendar",
+   "abbr": "",
+   "url": "https://www.pinoyfitness.com/",
+   "label": "Private",
+   "desc": "Running and fitness news with a race / fun-run calendar for the Philippines. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "PinoyMountaineer",
+   "abbr": "",
+   "url": "https://www.pinoymountaineer.com/",
+   "label": "Community-built",
+   "desc": "Long-running guide to Philippine mountains, trails and hiking safety. Community-built.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Premier Volleyball League",
+   "abbr": "PVL",
+   "url": "https://pvl.ph/",
+   "label": "Private",
+   "desc": "Professional volleyball league: schedules and results. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Race Roster",
+   "abbr": "",
+   "url": "https://raceroster.com/",
+   "label": "Private",
+   "desc": "Online race registration platform used by many PH running events. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "RunRio",
+   "abbr": "",
+   "url": "https://runrio.com/",
+   "label": "Private",
+   "desc": "Organizer of running events and race registrations in the Philippines. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Samahang Basketbol ng Pilipinas / Gilas",
+   "abbr": "SBP",
+   "url": "https://www.sbp.ph/",
+   "label": "NGO",
+   "desc": "National basketball federation and Gilas Pilipinas national team. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Sports & fitness",
+   "name": "Spartan Race Philippines",
+   "abbr": "",
+   "url": "https://ph.spartan.com/",
+   "label": "Private",
+   "desc": "Obstacle course race events in the Philippines. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Health",
+   "name": "DOH Health Facility finder (NHFR)",
+   "abbr": "NHFR",
+   "url": "https://nhfr.doh.gov.ph/",
+   "label": "Government",
+   "desc": "National Health Facility Registry: find licensed hospitals and clinics. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Health",
+   "name": "FDA Philippines",
+   "abbr": "FDA",
+   "url": "https://www.fda.gov.ph/",
+   "label": "Government",
+   "desc": "Check registered food, drugs and cosmetics; advisories on unregistered products. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Mental health",
+   "name": "Hopeline PH",
+   "abbr": "",
+   "url": "https://www.ngf-mindstrong.org/",
+   "label": "NGO",
+   "desc": "Natasha Goulbourn Foundation's Hopeline suicide-prevention support. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Mental health",
+   "name": "In Touch Community Services",
+   "abbr": "",
+   "url": "https://in-touch.org/",
+   "label": "NGO",
+   "desc": "Counselling and crisis line services in the Philippines. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learning & scholarships",
+   "name": "Philippine Science High School",
+   "abbr": "PSHS",
+   "url": "https://pshs.edu.ph/",
+   "label": "Government",
+   "desc": "Science high school system; national competitive exam. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learning & scholarships",
+   "name": "UP Open University",
+   "abbr": "UPOU",
+   "url": "https://www.upou.edu.ph/",
+   "label": "Government",
+   "desc": "Distance-education university with open online courses (MODeL). Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learning & scholarships",
+   "name": "University of the Philippines",
+   "abbr": "UP",
+   "url": "https://up.edu.ph/",
+   "label": "Government",
+   "desc": "National university system. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Books & libraries",
+   "name": "Fully Booked",
+   "abbr": "",
+   "url": "https://www.fullybookedonline.com/",
+   "label": "Private",
+   "desc": "Bookstore chain with online shop. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Books & libraries",
+   "name": "National Book Store",
+   "abbr": "",
+   "url": "https://nationalbookstore.com/",
+   "label": "Private",
+   "desc": "Bookstore and school-supplies chain with online shop. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Books & libraries",
+   "name": "National Library of the Philippines",
+   "abbr": "NLP",
+   "url": "https://web.nlp.gov.ph/",
+   "label": "Government",
+   "desc": "National library: catalog, e-resources and public libraries. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Jobs & livelihood",
+   "name": "JobStreet Philippines",
+   "abbr": "",
+   "url": "https://ph.jobstreet.com/",
+   "label": "Private",
+   "desc": "Private job board. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Jobs & livelihood",
+   "name": "Kalibrr",
+   "abbr": "",
+   "url": "https://www.kalibrr.com/",
+   "label": "Private",
+   "desc": "Private job board and hiring platform. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Jobs & livelihood",
+   "name": "LinkedIn Jobs Philippines",
+   "abbr": "",
+   "url": "https://www.linkedin.com/jobs/",
+   "label": "Private",
+   "desc": "Professional network job listings. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Jobs & livelihood",
+   "name": "OnlineJobs.ph",
+   "abbr": "",
+   "url": "https://www.onlinejobs.ph/",
+   "label": "Private",
+   "desc": "Job board for Filipino remote/freelance workers. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Money & finance",
+   "name": "GCash Help Center",
+   "abbr": "",
+   "url": "https://help.gcash.com/",
+   "label": "Private",
+   "desc": "Official help center for GCash users. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Money & finance",
+   "name": "Insurance Commission",
+   "abbr": "IC",
+   "url": "https://www.insurance.gov.ph/",
+   "label": "Government",
+   "desc": "Regulator of insurance, pre-need and HMOs; licensed company lists. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Money & finance",
+   "name": "Maya Support",
+   "abbr": "",
+   "url": "https://support.maya.ph/",
+   "label": "Private",
+   "desc": "Official help center for Maya users. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Money & finance",
+   "name": "PDIC",
+   "abbr": "PDIC",
+   "url": "https://www.pdic.gov.ph/",
+   "label": "Government",
+   "desc": "Bank deposit insurance (up to ₱1M per depositor per bank). Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Find any business",
+   "name": "PhilGEPS",
+   "abbr": "PhilGEPS",
+   "url": "https://www.philgeps.gov.ph/",
+   "label": "Government",
+   "desc": "Government procurement portal: bids and registered suppliers. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Find any business",
+   "name": "SEC Check with SEC",
+   "abbr": "",
+   "url": "https://checkwithsec.sec.gov.ph/",
+   "label": "Government",
+   "desc": "Official SEC search for registered corporations. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Find any business",
+   "name": "See full list: PEZA ecozones",
+   "abbr": "PEZA",
+   "url": "https://www.peza.gov.ph/",
+   "label": "Government",
+   "desc": "Full list of economic zones and registered locators is on PEZA's site. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Arts, culture & tourism",
+   "name": "Cultural Center of the Philippines",
+   "abbr": "CCP",
+   "url": "https://culturalcenter.gov.ph/",
+   "label": "Government",
+   "desc": "Performing arts center: shows and programs. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Arts, culture & tourism",
+   "name": "Department of Tourism",
+   "abbr": "DOT",
+   "url": "https://beta.tourism.gov.ph/",
+   "label": "Government",
+   "desc": "Tourism department: accredited establishments and advisories. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Arts, culture & tourism",
+   "name": "Intramuros Administration",
+   "abbr": "IA",
+   "url": "https://intramuros.gov.ph/",
+   "label": "Government",
+   "desc": "Visit info for historic Intramuros, Manila. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Arts, culture & tourism",
+   "name": "National Historical Commission",
+   "abbr": "NHCP",
+   "url": "https://nhcp.gov.ph/",
+   "label": "Government",
+   "desc": "Historical markers, shrines and Philippine history. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Arts, culture & tourism",
+   "name": "National Museum of the Philippines",
+   "abbr": "NMP",
+   "url": "https://www.nationalmuseum.gov.ph/",
+   "label": "Government",
+   "desc": "Free-admission national museums; visit info. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Arts, culture & tourism",
+   "name": "See full list: Philippines travel destinations",
+   "abbr": "",
+   "url": "https://philippines.travel/destinations",
+   "label": "Government",
+   "desc": "Full list of destinations on the DOT tourism site. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Environment & weather",
+   "name": "Biodiversity Management Bureau",
+   "abbr": "BMB",
+   "url": "https://bmb.gov.ph/",
+   "label": "Government",
+   "desc": "Protected areas and wildlife. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Agriculture & food",
+   "name": "DA price monitoring",
+   "abbr": "",
+   "url": "https://www.da.gov.ph/price-monitoring/",
+   "label": "Government",
+   "desc": "Daily prevailing retail prices of food in Metro Manila markets. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Agriculture & food",
+   "name": "Fertilizer and Pesticide Authority",
+   "abbr": "FPA",
+   "url": "https://fpa.da.gov.ph/",
+   "label": "Government",
+   "desc": "Registered fertilizers and pesticides. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Agriculture & food",
+   "name": "National Food Authority",
+   "abbr": "NFA",
+   "url": "https://nfa.gov.ph/",
+   "label": "Government",
+   "desc": "Rice buffer stocking and food security. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Agriculture & food",
+   "name": "PhilRice",
+   "abbr": "PhilRice",
+   "url": "https://www.philrice.gov.ph/",
+   "label": "Government",
+   "desc": "Rice research and farmer resources. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Housing",
+   "name": "Pag-IBIG acquired assets",
+   "abbr": "",
+   "url": "https://www.pagibigfundservices.com/",
+   "label": "Government",
+   "desc": "Pag-IBIG online services and foreclosed property listings. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Youth & volunteering",
+   "name": "Gawad Kalinga",
+   "abbr": "GK",
+   "url": "https://gk1world.com/",
+   "label": "NGO",
+   "desc": "Community development NGO. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Youth & volunteering",
+   "name": "National Youth Commission",
+   "abbr": "NYC",
+   "url": "https://nyc.gov.ph/",
+   "label": "Government",
+   "desc": "Youth policy and programs. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Digital & tech",
+   "name": "CICC (cybercrime)",
+   "abbr": "CICC",
+   "url": "https://cicc.gov.ph/report/",
+   "label": "Government",
+   "desc": "Report scams and cybercrime; hotline 1326. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Digital & tech",
+   "name": "QBO Innovation Hub",
+   "abbr": "",
+   "url": "https://qbo.com.ph/",
+   "label": "Private",
+   "desc": "Startup innovation hub. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "ABS-CBN News",
+   "abbr": "",
+   "url": "https://news.abs-cbn.com/",
+   "label": "Private",
+   "desc": "Broadcast news outlet. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "BusinessWorld",
+   "abbr": "",
+   "url": "https://www.bworldonline.com/",
+   "label": "Private",
+   "desc": "Business newspaper. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "GMA News",
+   "abbr": "",
+   "url": "https://www.gmanetwork.com/news/",
+   "label": "Private",
+   "desc": "Broadcast news outlet. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "Inquirer.net",
+   "abbr": "",
+   "url": "https://www.inquirer.net/",
+   "label": "Private",
+   "desc": "Newspaper news site. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "PTV",
+   "abbr": "PTV",
+   "url": "https://ptvnews.ph/",
+   "label": "Government",
+   "desc": "State TV network news. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "Philippine Information Agency",
+   "abbr": "PIA",
+   "url": "https://pia.gov.ph/",
+   "label": "Government",
+   "desc": "Government news and regional information. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "Philippine News Agency",
+   "abbr": "PNA",
+   "url": "https://www.pna.gov.ph/",
+   "label": "Government",
+   "desc": "State news agency. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "Philstar",
+   "abbr": "",
+   "url": "https://www.philstar.com/",
+   "label": "Private",
+   "desc": "Newspaper news site. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Media & news",
+   "name": "Rappler",
+   "abbr": "",
+   "url": "https://www.rappler.com/",
+   "label": "Private",
+   "desc": "Online news outlet. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Faith & community",
+   "name": "CBCP News",
+   "abbr": "CBCP",
+   "url": "https://cbcpnews.net/",
+   "label": "NGO",
+   "desc": "News of the Catholic Bishops' Conference of the Philippines. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Faith & community",
+   "name": "Iglesia ni Cristo",
+   "abbr": "INC",
+   "url": "https://iglesianicristo.net/",
+   "label": "NGO",
+   "desc": "Official site of the Iglesia ni Cristo. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Faith & community",
+   "name": "National Council of Churches in the Philippines",
+   "abbr": "NCCP",
+   "url": "https://nccphilippines.org/",
+   "label": "NGO",
+   "desc": "Ecumenical council of Protestant churches. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Faith & community",
+   "name": "PCEC",
+   "abbr": "PCEC",
+   "url": "https://pcec.org.ph/",
+   "label": "NGO",
+   "desc": "Philippine Council of Evangelical Churches. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Faith & community",
+   "name": "PhilCEGS / National Commission on Muslim Filipinos",
+   "abbr": "NCMF",
+   "url": "https://ncmf.gov.ph/",
+   "label": "Government",
+   "desc": "Government agency for Muslim Filipino affairs, Hajj. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Shopping & e-commerce",
+   "name": "Ayala Malls",
+   "abbr": "",
+   "url": "https://www.ayalamalls.com/",
+   "label": "Private",
+   "desc": "Mall directory, hours and events. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Shopping & e-commerce",
+   "name": "DTI e-Commerce Bureau",
+   "abbr": "",
+   "url": "https://ecommerce.dti.gov.ph/",
+   "label": "Government",
+   "desc": "Online shopping rules and consumer protection (Internet Transactions Act). Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Shopping & e-commerce",
+   "name": "Lazada Philippines",
+   "abbr": "",
+   "url": "https://www.lazada.com.ph/",
+   "label": "Private",
+   "desc": "Online marketplace. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Shopping & e-commerce",
+   "name": "Robinsons Malls",
+   "abbr": "",
+   "url": "https://www.robinsonsmalls.com/",
+   "label": "Private",
+   "desc": "Mall directory, hours and events. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Shopping & e-commerce",
+   "name": "SM Supermalls",
+   "abbr": "",
+   "url": "https://www.smsupermalls.com/",
+   "label": "Private",
+   "desc": "Mall directory, hours and events. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Shopping & e-commerce",
+   "name": "Shopee Philippines",
+   "abbr": "",
+   "url": "https://shopee.ph/",
+   "label": "Private",
+   "desc": "Online marketplace. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Shopping & e-commerce",
+   "name": "TikTok Shop",
+   "abbr": "",
+   "url": "https://shop.tiktok.com/",
+   "label": "Private",
+   "desc": "TikTok's in-app shopping. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Shopping & e-commerce",
+   "name": "Zalora Philippines",
+   "abbr": "",
+   "url": "https://www.zalora.com.ph/",
+   "label": "Private",
+   "desc": "Online fashion store. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "Ayala Malls Cinemas",
+   "abbr": "",
+   "url": "https://www.sureseats.com/",
+   "label": "Private",
+   "desc": "Ayala cinema schedules and tickets (SureSeats). Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "Eventbrite Philippines",
+   "abbr": "",
+   "url": "https://www.eventbrite.com/d/philippines/events/",
+   "label": "Private",
+   "desc": "Event listings and tickets. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "GMA Network",
+   "abbr": "",
+   "url": "https://www.gmanetwork.com/",
+   "label": "Private",
+   "desc": "TV network shows and schedules. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "MTRCB",
+   "abbr": "MTRCB",
+   "url": "https://mtrcb.gov.ph/",
+   "label": "Government",
+   "desc": "Movie and TV review and classification board: ratings for films and shows. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "Now showing: Robinsons Movieworld",
+   "abbr": "",
+   "url": "https://www.robinsonsmovieworld.com/",
+   "label": "Private",
+   "desc": "Official now-showing schedules for Robinsons cinemas. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "SM Cinema",
+   "abbr": "",
+   "url": "https://www.smcinema.com/",
+   "label": "Private",
+   "desc": "Cinema schedules and tickets. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "SM Tickets",
+   "abbr": "",
+   "url": "https://smtickets.com/",
+   "label": "Private",
+   "desc": "Concert and event ticketing. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "Spotify Philippines",
+   "abbr": "",
+   "url": "https://open.spotify.com/",
+   "label": "Private",
+   "desc": "Music and podcast streaming. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "TV5",
+   "abbr": "",
+   "url": "https://www.tv5.com.ph/",
+   "label": "Private",
+   "desc": "TV network shows and schedules. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "TicketWorld",
+   "abbr": "",
+   "url": "https://www.ticketworld.com.ph/",
+   "label": "Private",
+   "desc": "Concert and event ticketing. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "Ticketnet",
+   "abbr": "",
+   "url": "https://www.ticketnet.com.ph/",
+   "label": "Private",
+   "desc": "Concert and event ticketing. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "Viu Philippines",
+   "abbr": "",
+   "url": "https://www.viu.com/ott/ph/",
+   "label": "Private",
+   "desc": "Asian drama streaming service. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Entertainment & tickets",
+   "name": "iWantTFC",
+   "abbr": "",
+   "url": "https://www.iwanttfc.com/",
+   "label": "Private",
+   "desc": "ABS-CBN streaming service. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Gaming & esports",
+   "name": "PAGCOR",
+   "abbr": "PAGCOR",
+   "url": "https://www.pagcor.ph/",
+   "label": "Government",
+   "desc": "Gaming regulator; check licensed operators. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "Converge ICT",
+   "abbr": "",
+   "url": "https://www.convergeict.com/",
+   "label": "Private",
+   "desc": "Fiber internet provider. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "DITO",
+   "abbr": "",
+   "url": "https://dito.ph/",
+   "label": "Private",
+   "desc": "Telco: plans, load and support. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "Globe",
+   "abbr": "",
+   "url": "https://www.globe.com.ph/",
+   "label": "Private",
+   "desc": "Telco: plans, load and support. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "MWSS Regulatory Office",
+   "abbr": "",
+   "url": "https://ro.mwss.gov.ph/",
+   "label": "Government",
+   "desc": "Metro Manila water rates and concessionaire complaints. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "Manila Water",
+   "abbr": "",
+   "url": "https://www.manilawater.com/",
+   "label": "Private",
+   "desc": "East Metro Manila water: service advisories and bills. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "Maynilad",
+   "abbr": "",
+   "url": "https://www.mayniladwater.com.ph/",
+   "label": "Private",
+   "desc": "West Metro Manila water: service interruptions and bills. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "Meralco",
+   "abbr": "",
+   "url": "https://company.meralco.com.ph/",
+   "label": "Private",
+   "desc": "Electricity distributor: bills, outages, rates. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "PLDT Home",
+   "abbr": "",
+   "url": "https://pldthome.com/",
+   "label": "Private",
+   "desc": "Home internet and landline. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Telecom & utilities",
+   "name": "Smart",
+   "abbr": "",
+   "url": "https://smart.com.ph/",
+   "label": "Private",
+   "desc": "Telco: plans, load and support. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Pets & animals",
+   "name": "Bureau of Animal Industry",
+   "abbr": "BAI",
+   "url": "https://www.bai.gov.ph/",
+   "label": "Government",
+   "desc": "Animal welfare law, vet services and animal health. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Pets & animals",
+   "name": "CARA Welfare Philippines",
+   "abbr": "CARA",
+   "url": "https://caraphil.org/",
+   "label": "NGO",
+   "desc": "Animal welfare NGO; spay/neuter clinic. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Pets & animals",
+   "name": "PAWS",
+   "abbr": "PAWS",
+   "url": "https://paws.org.ph/",
+   "label": "NGO",
+   "desc": "Animal welfare: adoption, rescue, education. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Seniors, PWD, women & children",
+   "name": "Council for the Welfare of Children",
+   "abbr": "CWC",
+   "url": "https://cwc.gov.ph/",
+   "label": "Government",
+   "desc": "Child rights policy and programs. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Seniors, PWD, women & children",
+   "name": "National Commission of Senior Citizens",
+   "abbr": "NCSC",
+   "url": "https://ncsc.gov.ph/",
+   "label": "Government",
+   "desc": "Senior citizen programs and benefits. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Bankers Association of the Philippines",
+   "abbr": "BAP",
+   "url": "https://www.bap.org.ph/",
+   "label": "NGO",
+   "desc": "Banking industry association. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Chamber of Mines of the Philippines",
+   "abbr": "COMP",
+   "url": "https://www.chamberofmines.org.ph/",
+   "label": "NGO",
+   "desc": "Mining industry association. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Employers Confederation of the Philippines",
+   "abbr": "ECOP",
+   "url": "https://ecop.org.ph/",
+   "label": "NGO",
+   "desc": "Employers' organization. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Federation of Filipino-Chinese Chambers",
+   "abbr": "FFCCCII",
+   "url": "https://ffcccii.org/",
+   "label": "NGO",
+   "desc": "Business federation. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "IBPAP (IT-BPM)",
+   "abbr": "IBPAP",
+   "url": "https://www.ibpap.org/",
+   "label": "NGO",
+   "desc": "IT and business process management industry association. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Makati Business Club",
+   "abbr": "MBC",
+   "url": "https://mbc.com.ph/",
+   "label": "NGO",
+   "desc": "Business leaders' organization. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Philippine Chamber of Commerce and Industry",
+   "abbr": "PCCI",
+   "url": "https://www.philippinechamber.com/",
+   "label": "NGO",
+   "desc": "National business chamber. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Philippine Exporters Confederation",
+   "abbr": "PHILEXPORT",
+   "url": "https://philexport.ph/",
+   "label": "NGO",
+   "desc": "Exporters' association. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Philippine Retailers Association",
+   "abbr": "PRA",
+   "url": "https://www.pra.com.ph/",
+   "label": "NGO",
+   "desc": "Retail industry association. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Industry associations",
+   "name": "Philippine Software Industry Association",
+   "abbr": "PSIA",
+   "url": "https://psia.org.ph/",
+   "label": "NGO",
+   "desc": "Software industry association. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Food & dining",
+   "name": "GrabFood",
+   "abbr": "",
+   "url": "https://food.grab.com/ph/en/",
+   "label": "Private",
+   "desc": "Food delivery. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Food & dining",
+   "name": "foodpanda Philippines",
+   "abbr": "",
+   "url": "https://www.foodpanda.ph/",
+   "label": "Private",
+   "desc": "Food delivery. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "CHED Tulong Dunong / StuFAPs",
+   "abbr": "",
+   "url": "https://ched.gov.ph/stufaps/",
+   "label": "Government",
+   "desc": "CHED student financial assistance programs. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "Civi Scholarships page (26 programs)",
+   "abbr": "",
+   "url": "#/scholarships",
+   "label": "Government",
+   "desc": "Open Civi's full list of local and abroad scholarships. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "DOST-SEI scholarships (incl. JLSS)",
+   "abbr": "",
+   "url": "https://www.sei.dost.gov.ph/index.php/programs-and-projects/scholarships",
+   "label": "Government",
+   "desc": "DOST science undergraduate scholarships. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "GT Foundation",
+   "abbr": "",
+   "url": "https://www.gtfoundation.org/",
+   "label": "NGO",
+   "desc": "GT Foundation scholarship and education programs. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "Gokongwei Brothers Foundation",
+   "abbr": "",
+   "url": "https://www.gokongweibrothersfoundation.org/",
+   "label": "NGO",
+   "desc": "Scholarships for STEM and education. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "Makati City Government",
+   "abbr": "",
+   "url": "https://www.makati.gov.ph/",
+   "label": "Government",
+   "desc": "Makati LGU services incl. scholarships. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "Manila City Government",
+   "abbr": "",
+   "url": "https://manila.gov.ph/",
+   "label": "Government",
+   "desc": "City of Manila services incl. scholarships. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "Quezon City scholarship (QC Gov)",
+   "abbr": "",
+   "url": "https://quezoncity.gov.ph/",
+   "label": "Government",
+   "desc": "QC LGU services incl. Youth Development scholarship. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "TESDA scholarships (TWSP / PESFA)",
+   "abbr": "",
+   "url": "https://www.tesda.gov.ph/About/TESDA/47",
+   "label": "Government",
+   "desc": "TESDA training scholarship programs. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Scholarships",
+   "name": "Taguig City Government",
+   "abbr": "",
+   "url": "https://www.taguig.gov.ph/",
+   "label": "Government",
+   "desc": "Taguig LGU services incl. scholarships. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Life & safety",
+   "name": "Bantay Bata 163",
+   "abbr": "",
+   "url": "https://www.abs-cbnfoundation.com/bantay-bata-163",
+   "label": "NGO",
+   "desc": "Child welfare helpline 163. NGO.",
+   "link": "bot-protected",
+   "checked": "2026-10-29",
+   "phone": "163"
+  },
+  {
+   "cat": "Life & safety",
+   "name": "PNP Women and Children Protection Center",
+   "abbr": "WCPC",
+   "url": "https://wcpc.pnp.gov.ph/",
+   "label": "Government",
+   "desc": "Report violence against women and children. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Life & safety",
+   "name": "Safe Spaces Act (RA 11313) text",
+   "abbr": "",
+   "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11313_2019.html",
+   "label": "Government",
+   "desc": "Full text of the anti gender-based sexual harassment law. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Life & safety",
+   "name": "UP-PGH National Poison Management and Control Center",
+   "abbr": "NPMCC",
+   "url": "https://www.pgh.gov.ph/",
+   "label": "Government",
+   "desc": "PGH services incl. poison control. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Nature & wildlife",
+   "name": "Conservation International Philippines",
+   "abbr": "",
+   "url": "https://www.conservation.org/philippines",
+   "label": "NGO",
+   "desc": "Conservation NGO. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Nature & wildlife",
+   "name": "Forest Management Bureau",
+   "abbr": "FMB",
+   "url": "https://forestry.denr.gov.ph/",
+   "label": "Government",
+   "desc": "Forestry data and programs. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Nature & wildlife",
+   "name": "Mines and Geosciences Bureau",
+   "abbr": "MGB",
+   "url": "https://mgb.gov.ph/",
+   "label": "Government",
+   "desc": "Geohazard maps and mining regulation. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Nature & wildlife",
+   "name": "NAMRIA",
+   "abbr": "NAMRIA",
+   "url": "https://www.namria.gov.ph/",
+   "label": "Government",
+   "desc": "National mapping agency: maps and geospatial data. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Nature & wildlife",
+   "name": "Oceana Philippines",
+   "abbr": "",
+   "url": "https://ph.oceana.org/",
+   "label": "NGO",
+   "desc": "Ocean conservation NGO. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Nature & wildlife",
+   "name": "Palawan Council for Sustainable Development",
+   "abbr": "PCSD",
+   "url": "https://pcsd.gov.ph/",
+   "label": "Government",
+   "desc": "Environment governance for Palawan. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Nature & wildlife",
+   "name": "Philippine Eagle Foundation",
+   "abbr": "PEF",
+   "url": "https://www.philippineeaglefoundation.org/",
+   "label": "NGO",
+   "desc": "Philippine Eagle conservation and Eagle Center in Davao. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Nature & wildlife",
+   "name": "Save Philippine Seas",
+   "abbr": "",
+   "url": "https://savephilippineseas.org/",
+   "label": "NGO",
+   "desc": "Marine conservation NGO. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Animal protection & sanctuaries",
+   "name": "Animal Welfare Act (RA 10631) text",
+   "abbr": "",
+   "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10631_2013.html",
+   "label": "Government",
+   "desc": "Full text of the amended Animal Welfare Act. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Animal protection & sanctuaries",
+   "name": "Biyaya Animal Care",
+   "abbr": "",
+   "url": "https://www.biyaya.org/",
+   "label": "NGO",
+   "desc": "Animal rescue and adoption. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Animal protection & sanctuaries",
+   "name": "Katala Foundation",
+   "abbr": "",
+   "url": "https://www.katala.org/",
+   "label": "NGO",
+   "desc": "Cockatoo and Palawan wildlife conservation. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Animal protection & sanctuaries",
+   "name": "PETA Asia",
+   "abbr": "",
+   "url": "https://www.petaasia.com/",
+   "label": "NGO",
+   "desc": "Animal rights organization. NGO.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Avilon Zoo",
+   "abbr": "",
+   "url": "https://avilon.com.ph/",
+   "label": "Private",
+   "desc": "Private zoo in Rodriguez, Rizal. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Ayala Museum",
+   "abbr": "",
+   "url": "https://www.ayalamuseum.org/",
+   "label": "Private",
+   "desc": "Art and history museum in Makati. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Cebu Safari and Adventure Park",
+   "abbr": "",
+   "url": "https://cebusafari.com/",
+   "label": "Private",
+   "desc": "Safari park in Carmen, Cebu. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Crocodile Park Davao",
+   "abbr": "",
+   "url": "https://crocodilepark.ph/",
+   "label": "Private",
+   "desc": "Wildlife park in Davao City. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Enchanted Kingdom",
+   "abbr": "",
+   "url": "https://www.enchantedkingdom.ph/",
+   "label": "Private",
+   "desc": "Theme park in Sta. Rosa, Laguna. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Klook Philippines",
+   "abbr": "",
+   "url": "https://www.klook.com/en-PH/",
+   "label": "Private",
+   "desc": "Activity and tour booking platform. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "La Mesa Ecopark",
+   "abbr": "",
+   "url": "https://lamesaecopark.com/",
+   "label": "Private",
+   "desc": "Nature park in Quezon City. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Manila Ocean Park",
+   "abbr": "",
+   "url": "https://www.manilaoceanpark.com/",
+   "label": "Private",
+   "desc": "Oceanarium in Manila. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Manila Zoo",
+   "abbr": "",
+   "url": "https://manila.gov.ph/manila-zoo/",
+   "label": "Government",
+   "desc": "City-run zoo in Malate. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Masungi Georeserve",
+   "abbr": "",
+   "url": "https://www.masungigeoreserve.com/",
+   "label": "NGO",
+   "desc": "Conservation area with guided trails (booking required). NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "National Parks Development Committee (Rizal Park)",
+   "abbr": "NPDC",
+   "url": "https://npdc.gov.ph/",
+   "label": "Government",
+   "desc": "Rizal Park and other national parks. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "The Mind Museum",
+   "abbr": "",
+   "url": "https://www.themindmuseum.org/",
+   "label": "Private",
+   "desc": "Science museum in BGC. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Zoos, parks & pasyalan",
+   "name": "Traveloka Philippines",
+   "abbr": "",
+   "url": "https://www.traveloka.com/en-ph/",
+   "label": "Private",
+   "desc": "Travel and activity booking platform. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Post & couriers",
+   "name": "J&T Express Philippines",
+   "abbr": "",
+   "url": "https://www.jtexpress.ph/",
+   "label": "Private",
+   "desc": "Courier; parcel tracking. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Post & couriers",
+   "name": "LBC Express",
+   "abbr": "",
+   "url": "https://www.lbcexpress.com/",
+   "label": "Private",
+   "desc": "Courier and remittance; parcel tracking. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Post & couriers",
+   "name": "Lalamove Philippines",
+   "abbr": "",
+   "url": "https://www.lalamove.com/en-ph/",
+   "label": "Private",
+   "desc": "On-demand delivery. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Post & couriers",
+   "name": "PHLPost",
+   "abbr": "PHLPost",
+   "url": "https://phlpost.gov.ph/",
+   "label": "Government",
+   "desc": "Philippine Postal Corporation: mail, parcels and tracking. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Indigenous peoples",
+   "name": "NCIP",
+   "abbr": "NCIP",
+   "url": "https://ncip.gov.ph/",
+   "label": "Government",
+   "desc": "National Commission on Indigenous Peoples. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Cooperatives & microfinance",
+   "name": "Cooperative Development Authority",
+   "abbr": "CDA",
+   "url": "https://cda.gov.ph/",
+   "label": "Government",
+   "desc": "Registration and regulation of cooperatives. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "LGBTQ+ support",
+   "name": "LoveYourself",
+   "abbr": "",
+   "url": "https://www.loveyourself.ph/",
+   "label": "NGO",
+   "desc": "Community health org: free HIV testing and support. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Iwas scam",
+   "name": "Iwas scam: never pay to get a job",
+   "abbr": "SEC",
+   "url": "https://www.sec.gov.ph/advisories-2/",
+   "label": "Government",
+   "desc": "Safety first: legit platforms never ask for a fee, 'starter kit' or deposit to work. Avoid anything that pays you for recruiting people (pyramid/networking). Check SEC investor advisories before joining any 'investment' or 'earn' scheme. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Iwas scam",
+   "name": "Iwas scam: report online job scams to CICC",
+   "abbr": "CICC",
+   "url": "https://cicc.gov.ph/report/",
+   "label": "Government",
+   "desc": "Report online scams to the Cybercrime Investigation and Coordinating Center (hotline 1326). Use only verified payouts (PayPal, GCash, bank) inside the platform; never move payment off-platform. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "Contra",
+   "abbr": "",
+   "url": "https://contra.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Commission-free freelance portfolio and job platform. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "DICT Rural Impact Sourcing",
+   "abbr": "DICT",
+   "url": "https://www.dict.gov.ph/rural-impact-sourcing/",
+   "label": "Government",
+   "desc": "Free government digital-jobs and freelancing training program. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "Fiverr",
+   "abbr": "",
+   "url": "https://www.fiverr.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Freelance marketplace where you sell fixed-price services (gigs); withdraw via PayPal or bank. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "Freelancer.com",
+   "abbr": "",
+   "url": "https://www.freelancer.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Freelance project bidding marketplace open to PH freelancers. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "OnlineJobs.ph",
+   "abbr": "",
+   "url": "https://www.onlinejobs.ph/",
+   "label": "Private, not an endorsement",
+   "desc": "Job board for Filipino remote workers hired directly by employers; free for jobseekers. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "PeoplePerHour",
+   "abbr": "",
+   "url": "https://www.peopleperhour.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Freelance marketplace for hourly and fixed-price work. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "Toptal",
+   "abbr": "",
+   "url": "https://www.toptal.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Screened network for experienced developers, designers and finance experts. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "Upwork",
+   "abbr": "",
+   "url": "https://www.upwork.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Global freelancing marketplace; clients pay through the platform, withdraw to PH bank, PayPal or other methods. Private, not an endorsement.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Freelance",
+   "name": "Workana",
+   "abbr": "",
+   "url": "https://www.workana.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Freelance marketplace for remote projects. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "Appen",
+   "abbr": "",
+   "url": "https://www.appen.com/",
+   "label": "Private, not an endorsement",
+   "desc": "AI data projects (rating, transcription, annotation) open to many countries including PH; availability varies by project. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "Clickworker",
+   "abbr": "",
+   "url": "https://www.clickworker.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Micro-tasks (tagging, writing, surveys) paid per task; payouts via PayPal or bank. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "Google Opinion Rewards",
+   "abbr": "",
+   "url": "https://surveys.google.com/google-opinion-rewards/",
+   "label": "Private, not an endorsement",
+   "desc": "Short Google surveys on your phone; rewards are Google Play credit, not cash. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "Outlier (AI training)",
+   "abbr": "",
+   "url": "https://outlier.ai/",
+   "label": "Private, not an endorsement",
+   "desc": "Paid AI-training tasks for writers and subject experts; availability varies. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "Prolific",
+   "abbr": "",
+   "url": "https://www.prolific.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Academic research studies paid per study; payouts via PayPal. Availability depends on study eligibility. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "Swagbucks (incl. watch-to-earn)",
+   "abbr": "",
+   "url": "https://www.swagbucks.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Long-running rewards site (since 2008): surveys and short watch-video tasks. Watch-to-earn rewards are very small; never pay to join any 'watch and earn' app. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "TELUS Digital AI Community",
+   "abbr": "",
+   "url": "https://www.telusdigital.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Remote AI data and search-rating projects (formerly Lionbridge AI / TELUS International); availability varies by project. Private, not an endorsement.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "Toluna Philippines",
+   "abbr": "",
+   "url": "https://ph.toluna.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Survey panel; points redeemable for rewards. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Surveys & micro-tasks",
+   "name": "YouGov Philippines",
+   "abbr": "",
+   "url": "https://ph.yougov.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Opinion surveys for PH panel members; points redeemable for rewards. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Rider & delivery",
+   "name": "Grab driver & rider sign-up",
+   "abbr": "Grab",
+   "url": "https://www.grab.com/ph/driver/",
+   "label": "Private, not an endorsement",
+   "desc": "Official Grab page to apply as a car, bike or delivery partner. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Rider & delivery",
+   "name": "Lalamove driver sign-up",
+   "abbr": "",
+   "url": "https://www.lalamove.com/en-ph/driver",
+   "label": "Private, not an endorsement",
+   "desc": "Official page to apply as a Lalamove delivery driver. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Small gigs",
+   "name": "Kalibrr (part-time & gigs)",
+   "abbr": "",
+   "url": "https://www.kalibrr.com/",
+   "label": "Private, not an endorsement",
+   "desc": "PH job platform that also lists part-time and project roles. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Small gigs",
+   "name": "Lazada Affiliate Program",
+   "abbr": "",
+   "url": "https://adsense.lazada.com.ph/",
+   "label": "Private, not an endorsement",
+   "desc": "Earn commissions by sharing Lazada product links. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Small gigs",
+   "name": "Shopee Affiliate Program",
+   "abbr": "",
+   "url": "https://affiliate.shopee.ph/",
+   "label": "Private, not an endorsement",
+   "desc": "Earn commissions by sharing Shopee product links. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Small gigs",
+   "name": "TikTok Shop Affiliate",
+   "abbr": "",
+   "url": "https://affiliate.tiktok.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Creator program for earning commissions on TikTok Shop products. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "BIR (register as online seller)",
+   "abbr": "BIR",
+   "url": "https://www.bir.gov.ph/",
+   "label": "Government",
+   "desc": "Online sellers must register with BIR and issue receipts; see BIR's site for the current rules. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Carousell PH",
+   "abbr": "",
+   "url": "https://www.carousell.ph/",
+   "label": "Private, not an endorsement",
+   "desc": "Marketplace for reselling preloved and new items. Private, not an endorsement.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "DTI Business Name Registration",
+   "abbr": "DTI",
+   "url": "https://bnrs.dti.gov.ph/",
+   "label": "Government",
+   "desc": "Register a business name online before selling as a sole proprietor. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Etsy (sell)",
+   "abbr": "",
+   "url": "https://www.etsy.com/sell",
+   "label": "Private, not an endorsement",
+   "desc": "Sell handmade, vintage or digital products; listing and transaction fees apply. Private, not an endorsement.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "FDA (License to Operate for food businesses)",
+   "abbr": "FDA",
+   "url": "https://www.fda.gov.ph/",
+   "label": "Government",
+   "desc": "Home-based food and other regulated products may need an FDA License to Operate and product registration. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Facebook Marketplace (how it works)",
+   "abbr": "",
+   "url": "https://www.facebook.com/marketplace/learn-more/",
+   "label": "Private, not an endorsement",
+   "desc": "Buy and sell locally, including preloved items; meet in safe public places and avoid advance payments. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "GCash for Business",
+   "abbr": "",
+   "url": "https://www.gcash.com/business",
+   "label": "Private, not an endorsement",
+   "desc": "Merchant sign-up to accept GCash payments. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Go Negosyo",
+   "abbr": "",
+   "url": "https://www.gonegosyo.net/",
+   "label": "NGO",
+   "desc": "Mentoring and learning resources for Filipino entrepreneurs. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Gumroad",
+   "abbr": "",
+   "url": "https://gumroad.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Sell digital products (e-books, templates, art); platform takes a fee per sale. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Ko-fi",
+   "abbr": "",
+   "url": "https://ko-fi.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Accept tips, memberships and digital product sales. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Lazada Seller Center",
+   "abbr": "",
+   "url": "https://sellercenter.lazada.com.ph/",
+   "label": "Private, not an endorsement",
+   "desc": "Open a Lazada store and sell online. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Maya Business",
+   "abbr": "",
+   "url": "https://www.maya.ph/business",
+   "label": "Private, not an endorsement",
+   "desc": "Merchant sign-up to accept card and QR payments. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Redbubble",
+   "abbr": "",
+   "url": "https://www.redbubble.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Print-on-demand: upload designs and earn a margin when products sell. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "SB Corporation",
+   "abbr": "SB Corp",
+   "url": "https://www.sbcorp.gov.ph/",
+   "label": "Government",
+   "desc": "Government lender for micro and small businesses (e.g. RISE UP loans). Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Shopee Seller Centre",
+   "abbr": "",
+   "url": "https://seller.shopee.ph/",
+   "label": "Private, not an endorsement",
+   "desc": "Open a Shopee shop and sell online. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "Shopify",
+   "abbr": "",
+   "url": "https://www.shopify.com/ph",
+   "label": "Private, not an endorsement",
+   "desc": "Paid platform to build your own online store. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Sell online",
+   "name": "TikTok Shop Seller Center",
+   "abbr": "",
+   "url": "https://seller-ph.tiktok.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Sell products through TikTok Shop Philippines. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Teach & tutor",
+   "name": "Cambly tutors",
+   "abbr": "",
+   "url": "https://www.cambly.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Teach English conversation online. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Teach & tutor",
+   "name": "Preply (teach)",
+   "abbr": "",
+   "url": "https://preply.com/en/teach",
+   "label": "Private, not an endorsement",
+   "desc": "Online tutoring marketplace for languages and subjects. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Teach & tutor",
+   "name": "italki (teach)",
+   "abbr": "",
+   "url": "https://teach.italki.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Online language teaching marketplace. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Content creation",
+   "name": "Adobe Stock Contributor",
+   "abbr": "",
+   "url": "https://contributor.stock.adobe.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Sell your photos, videos and illustrations on Adobe Stock. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Content creation",
+   "name": "Facebook monetization eligibility",
+   "abbr": "",
+   "url": "https://www.facebook.com/business/help/1348682518563619",
+   "label": "Private, not an endorsement",
+   "desc": "Meta's official monetization eligibility rules for creators. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Content creation",
+   "name": "Shutterstock Contributor",
+   "abbr": "",
+   "url": "https://submit.shutterstock.com/",
+   "label": "Private, not an endorsement",
+   "desc": "Sell your photos, videos and illustrations as stock content. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Content creation",
+   "name": "TikTok Creator Academy",
+   "abbr": "",
+   "url": "https://www.tiktok.com/creator-academy/",
+   "label": "Private, not an endorsement",
+   "desc": "Official guides on TikTok creator monetization programs and eligibility. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Earn: Content creation",
+   "name": "YouTube Partner Program",
+   "abbr": "",
+   "url": "https://www.youtube.com/creators/how-things-work/video-monetization/",
+   "label": "Private, not an endorsement",
+   "desc": "Official eligibility and requirements for earning from YouTube videos. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Allevents Davao",
+   "abbr": "",
+   "url": "https://allevents.in/davao",
+   "label": "Private",
+   "desc": "Aggregated public events in Davao. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Allevents Manila",
+   "abbr": "",
+   "url": "https://allevents.in/manila",
+   "label": "Private",
+   "desc": "Aggregated public events in Manila. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Ayala Malls events",
+   "abbr": "",
+   "url": "https://www.ayalamalls.com/events",
+   "label": "Private",
+   "desc": "Official events listing for Ayala Malls. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Cebu City Government",
+   "abbr": "",
+   "url": "https://www.cebucity.gov.ph/",
+   "label": "Government",
+   "desc": "Official Cebu City site with city events. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "City of Manila",
+   "abbr": "",
+   "url": "https://manila.gov.ph/",
+   "label": "Government",
+   "desc": "Official Manila site with city events. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Cultural Center of the Philippines",
+   "abbr": "",
+   "url": "https://culturalcenter.gov.ph/",
+   "label": "Government",
+   "desc": "CCP performances, exhibits and events. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Davao City Government",
+   "abbr": "",
+   "url": "https://www.davaocity.gov.ph/",
+   "label": "Government",
+   "desc": "Official Davao City site with city events. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Eventbrite Philippines",
+   "abbr": "",
+   "url": "https://www.eventbrite.com/d/philippines/events/",
+   "label": "Private",
+   "desc": "Public event listings in the Philippines. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Iloilo City Government",
+   "abbr": "",
+   "url": "https://iloilocity.gov.ph/",
+   "label": "Government",
+   "desc": "Official Iloilo City site with city events. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Klook PH activities",
+   "abbr": "",
+   "url": "https://www.klook.com/en-PH/",
+   "label": "Private",
+   "desc": "Book tours, activities and attraction tickets. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Legazpi Sunday Market (Makati)",
+   "abbr": "",
+   "url": "https://legazpi.ph/",
+   "label": "Private",
+   "desc": "Weekend market info. Check schedule before going. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Makati City Government",
+   "abbr": "",
+   "url": "https://www.makati.gov.ph/",
+   "label": "Government",
+   "desc": "Official Makati site with city events. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Megaworld Lifestyle Malls",
+   "abbr": "",
+   "url": "https://www.megaworldlifestylemalls.com/",
+   "label": "Private",
+   "desc": "Official site with events at Megaworld malls (Uptown, Venice, Eastwood...). Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Mercato Centrale",
+   "abbr": "",
+   "url": "https://www.mercatocentrale.ph/",
+   "label": "Private",
+   "desc": "Food markets and pop-up night markets. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "National Museum of the Philippines",
+   "abbr": "",
+   "url": "https://www.nationalmuseum.gov.ph/",
+   "label": "Government",
+   "desc": "Free museums, exhibits and events. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Quezon City Government",
+   "abbr": "",
+   "url": "https://quezoncity.gov.ph/",
+   "label": "Government",
+   "desc": "Official QC site with city events and announcements. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Robinsons Malls",
+   "abbr": "",
+   "url": "https://www.robinsonsmalls.com/",
+   "label": "Private",
+   "desc": "Official Robinsons Malls site with mall events. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "SM Supermalls",
+   "abbr": "",
+   "url": "https://www.smsupermalls.com/",
+   "label": "Private",
+   "desc": "Official SM Supermalls site with mall events and promos. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "SM Tickets",
+   "abbr": "",
+   "url": "https://smtickets.com/",
+   "label": "Private",
+   "desc": "Official ticketing for concerts, shows and events. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Ticket2Me",
+   "abbr": "",
+   "url": "https://www.ticket2me.net/",
+   "label": "Private",
+   "desc": "Ticketing for events, runs and concerts. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "TicketWorld",
+   "abbr": "",
+   "url": "https://premier.ticketworld.com.ph/",
+   "label": "Private",
+   "desc": "Ticketing for theater, concerts and events. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Events & things to do",
+   "name": "Ticketnet",
+   "abbr": "",
+   "url": "https://www.ticketnet.com.ph/",
+   "label": "Private",
+   "desc": "Official ticketing for concerts, shows and sports. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "AWS User Group PH (site)",
+   "abbr": "",
+   "url": "https://www.awsug.ph/",
+   "label": "Community-built",
+   "desc": "AWS community in the Philippines. Community-built.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "AWS User Group Philippines",
+   "abbr": "",
+   "url": "https://www.meetup.com/awsugph/",
+   "label": "Private",
+   "desc": "AWS community meetups in the Philippines. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "DEVCON Philippines",
+   "abbr": "",
+   "url": "https://devcon.ph/",
+   "label": "Private",
+   "desc": "Developer community events and summits. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "Google Developer Groups",
+   "abbr": "",
+   "url": "https://gdg.community.dev/",
+   "label": "Private",
+   "desc": "Find GDG chapters and events in PH cities. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "IBPAP",
+   "abbr": "",
+   "url": "https://www.ibpap.org/",
+   "label": "Private",
+   "desc": "IT-BPM industry association; summits and events. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "Luma Manila",
+   "abbr": "",
+   "url": "https://luma.com/manila",
+   "label": "Private",
+   "desc": "Tech, startup and community events in Manila. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "Meetup Philippines",
+   "abbr": "",
+   "url": "https://www.meetup.com/find/?location=ph--Manila",
+   "label": "Private",
+   "desc": "Find community meetups and interest groups. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "PICC events",
+   "abbr": "",
+   "url": "https://www.picc.gov.ph/",
+   "label": "Government",
+   "desc": "Philippine International Convention Center events. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "PythonPH",
+   "abbr": "",
+   "url": "https://python.ph/",
+   "label": "Private",
+   "desc": "Python Philippines community events and PyCon. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "SMX Convention Center",
+   "abbr": "",
+   "url": "https://www.smxconventioncenter.com/",
+   "label": "Private",
+   "desc": "Expos and conventions at SMX venues. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Meetups & conferences",
+   "name": "World Trade Center Metro Manila",
+   "abbr": "",
+   "url": "https://www.wtcmanila.com.ph/",
+   "label": "Private",
+   "desc": "Expos and trade shows calendar. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "AirAsia promos",
+   "abbr": "",
+   "url": "https://www.airasia.com/en/gb/promotions",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "Ayala Malls promos",
+   "abbr": "",
+   "url": "https://www.ayalamalls.com/promos",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "BPI card promos",
+   "abbr": "",
+   "url": "https://www.bpi.com.ph/personal/rewards-and-promotions",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "GCash promos",
+   "abbr": "",
+   "url": "https://www.gcash.com/promos",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "Grab PH promos",
+   "abbr": "",
+   "url": "https://www.grab.com/ph/promo/",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "Lazada PH campaigns",
+   "abbr": "",
+   "url": "https://www.lazada.com.ph/",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "Lazada promotions",
+   "abbr": "",
+   "url": "https://www.lazada.com.ph/wow/i/ph/promotion/",
+   "label": "Private",
+   "desc": "Official promo page. Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "Metrobank promos",
+   "abbr": "",
+   "url": "https://www.metrobank.com.ph/promos",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "Robinsons Malls promos",
+   "abbr": "",
+   "url": "https://www.robinsonsmalls.com/",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "SM Supermalls promos",
+   "abbr": "",
+   "url": "https://www.smsupermalls.com/",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Promos, sales & discounts",
+   "name": "Shopee PH promos",
+   "abbr": "",
+   "url": "https://shopee.ph/m/sale",
+   "label": "Private",
+   "desc": "Official promo page. Check the official page for current promo mechanics; Civi doesn't verify individual deals. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Chat: Messenger",
+   "abbr": "",
+   "url": "https://www.messenger.com/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Chat: Viber",
+   "abbr": "",
+   "url": "https://www.viber.com/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Delivery: Lalamove",
+   "abbr": "",
+   "url": "https://www.lalamove.com/en-ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Delivery: foodpanda",
+   "abbr": "",
+   "url": "https://www.foodpanda.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Gov: BIR ORUS",
+   "abbr": "",
+   "url": "https://orus.bir.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Gov: DFA passport appointment",
+   "abbr": "",
+   "url": "https://passport.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Gov: LTMS (LTO portal)",
+   "abbr": "",
+   "url": "https://portal.lto.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Gov: My.SSS",
+   "abbr": "",
+   "url": "https://www.sss.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Gov: PhilHealth member portal",
+   "abbr": "",
+   "url": "https://www.philhealth.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Gov: Virtual Pag-IBIG",
+   "abbr": "",
+   "url": "https://www.pagibigfundservices.com/virtualpagibig/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Gov: eGovPH",
+   "abbr": "",
+   "url": "https://e.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Gov: eTravel",
+   "abbr": "",
+   "url": "https://etravel.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Health: KonsultaMD",
+   "abbr": "",
+   "url": "https://www.konsulta.md/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Health: NowServing",
+   "abbr": "",
+   "url": "https://nowserving.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Health: mWell",
+   "abbr": "",
+   "url": "https://www.mwell.com.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Learning: TESDA Online Program",
+   "abbr": "",
+   "url": "https://e-tesda.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Money: GCash",
+   "abbr": "",
+   "url": "https://www.gcash.com/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Money: GoTyme Bank",
+   "abbr": "",
+   "url": "https://www.gotyme.com.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Money: MariBank",
+   "abbr": "",
+   "url": "https://www.maribank.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Money: Maya",
+   "abbr": "",
+   "url": "https://www.maya.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Money: PDIC (deposit insurance)",
+   "abbr": "",
+   "url": "https://www.pdic.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Safety: NDRRMC",
+   "abbr": "",
+   "url": "https://ndrrmc.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Safety: PAGASA",
+   "abbr": "",
+   "url": "https://www.pagasa.dost.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Safety: PHIVOLCS",
+   "abbr": "",
+   "url": "https://www.phivolcs.dost.gov.ph/",
+   "label": "Government",
+   "desc": "Official site/app page. Download only from the official app stores. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Safety: Philippine Red Cross",
+   "abbr": "",
+   "url": "https://redcross.org.ph/",
+   "label": "NGO",
+   "desc": "Official site/app page. Download only from the official app stores. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Shopping: Lazada",
+   "abbr": "",
+   "url": "https://www.lazada.com.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Shopping: Shopee",
+   "abbr": "",
+   "url": "https://shopee.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Transport: Angkas",
+   "abbr": "",
+   "url": "https://angkas.com/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Transport: Easytrip RFID",
+   "abbr": "",
+   "url": "https://www.easytrip.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Transport: Grab",
+   "abbr": "",
+   "url": "https://www.grab.com/ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Transport: JoyRide",
+   "abbr": "",
+   "url": "https://joyride.com.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Transport: Move It",
+   "abbr": "",
+   "url": "https://www.moveit.com.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Transport: Sakay.ph",
+   "abbr": "",
+   "url": "https://sakay.ph/",
+   "label": "Community-built",
+   "desc": "Official site/app page. Download only from the official app stores. Community-built.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Must-have apps in PH",
+   "name": "Transport: beep card",
+   "abbr": "",
+   "url": "https://www.beep.com.ph/",
+   "label": "Private",
+   "desc": "Official site/app page. Download only from the official app stores. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learning centers & tutorials",
+   "name": "Kumon Philippines",
+   "abbr": "",
+   "url": "https://www.kumon.com.ph/",
+   "label": "Private",
+   "desc": "After-school math and reading program; find a center near you. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learning centers & tutorials",
+   "name": "UP Open University",
+   "abbr": "UPOU",
+   "url": "https://www.upou.edu.ph/",
+   "label": "Government",
+   "desc": "Free MOOCs and distance learning. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Free language & online courses",
+   "name": "Alliance Française de Manille",
+   "abbr": "",
+   "url": "https://www.alliance.ph/",
+   "label": "NGO",
+   "desc": "French language courses and cultural events. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Free language & online courses",
+   "name": "Coursera (apply for financial aid per course)",
+   "abbr": "",
+   "url": "https://www.coursera.org/",
+   "label": "Private",
+   "desc": "Online courses; financial aid can be requested on most courses. Private.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Free language & online courses",
+   "name": "DICT digital skills",
+   "abbr": "DICT",
+   "url": "https://www.dict.gov.ph/",
+   "label": "Government",
+   "desc": "Government ICT and digital-skills trainings. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Free language & online courses",
+   "name": "Goethe-Institut Philippinen",
+   "abbr": "",
+   "url": "https://www.goethe.de/manila",
+   "label": "NGO",
+   "desc": "German courses, exams and cultural events. NGO.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Free language & online courses",
+   "name": "Japan Foundation Manila (Nihongo)",
+   "abbr": "JFM",
+   "url": "https://www.jfmo.org.ph/",
+   "label": "Government",
+   "desc": "Japanese-language courses, JLPT info and cultural events. Japanese government foundation. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Free language & online courses",
+   "name": "TESDA Online Program",
+   "abbr": "TOP",
+   "url": "https://e-tesda.gov.ph/",
+   "label": "Government",
+   "desc": "Free online TESDA courses. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Embassies",
+   "name": "Australian Embassy, Philippines",
+   "abbr": "",
+   "url": "https://philippines.embassy.gov.au/",
+   "label": "Government",
+   "desc": "Visa info, Australia Awards scholarships and services. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Embassies",
+   "name": "Embassy of Japan in the Philippines",
+   "abbr": "",
+   "url": "https://www.ph.emb-japan.go.jp/",
+   "label": "Government",
+   "desc": "Visas, scholarships (MEXT) and consular services. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Embassies",
+   "name": "See full list: foreign embassies & PH posts (DFA)",
+   "abbr": "DFA",
+   "url": "https://dfa.gov.ph/",
+   "label": "Government",
+   "desc": "DFA keeps the full list of embassies and consulates. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Embassies",
+   "name": "U.S. Embassy in the Philippines",
+   "abbr": "",
+   "url": "https://ph.usembassy.gov/",
+   "label": "Government",
+   "desc": "Visas, American citizen services and exchange programs. Government.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Embassies",
+   "name": "UK in the Philippines",
+   "abbr": "",
+   "url": "https://www.gov.uk/world/philippines",
+   "label": "Government",
+   "desc": "British Embassy Manila: visas, Chevening and services. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "ATI e-Extension (e-learning)",
+   "abbr": "ATI",
+   "url": "https://e-extension.gov.ph/",
+   "label": "Government",
+   "desc": "Free DA-ATI online agriculture courses with certificates. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "Agricultural Training Institute",
+   "abbr": "ATI",
+   "url": "https://ati2.da.gov.ph/",
+   "label": "Government",
+   "desc": "DA-ATI trainings, urban agriculture and organic farming programs. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "TESDA Online Program (agri courses)",
+   "abbr": "TOP",
+   "url": "https://e-tesda.gov.ph/",
+   "label": "Government",
+   "desc": "Free TESDA online courses; check catalog for agriculture topics. Organic Agriculture NC II is taken at TESDA-accredited centers. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "UP Open University (MOOCs)",
+   "abbr": "UPOU",
+   "url": "https://www.upou.edu.ph/",
+   "label": "Government",
+   "desc": "Free MOOCs, including some agriculture and environment topics. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "FAO eLearning Academy",
+   "abbr": "FAO",
+   "url": "https://elearning.fao.org/",
+   "label": "NGO",
+   "desc": "Free self-paced UN FAO courses on food security, agriculture and nutrition. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "PhilRice",
+   "abbr": "PhilRice",
+   "url": "https://www.philrice.gov.ph/",
+   "label": "Government",
+   "desc": "Rice farming knowledge, trainings and Pinoy Rice Knowledge Bank. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "IRRI",
+   "abbr": "IRRI",
+   "url": "https://www.irri.org/",
+   "label": "NGO",
+   "desc": "International Rice Research Institute (Los Baños): research and training. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "Permaculture principles (Holmgren)",
+   "abbr": "",
+   "url": "https://permacultureprinciples.com/",
+   "label": "NGO",
+   "desc": "Free explanations of the 3 ethics and 12 permaculture principles. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Paid / audit-free",
+   "name": "Coursera agriculture courses",
+   "abbr": "",
+   "url": "https://www.coursera.org/courses?query=agriculture",
+   "label": "Private, not an endorsement",
+   "desc": "Many courses can be audited free; certificates are paid (financial aid available). Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Paid / audit-free",
+   "name": "edX agriculture courses",
+   "abbr": "",
+   "url": "https://www.edx.org/learn/agriculture",
+   "label": "Private, not an endorsement",
+   "desc": "Audit-free tracks on many courses; verified certificates are paid. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Paid / audit-free",
+   "name": "SEARCA",
+   "abbr": "SEARCA",
+   "url": "https://www.searca.org/",
+   "label": "Government",
+   "desc": "Regional agriculture center (UPLB campus); trainings and scholarships, some paid. Government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learn farming: Free",
+   "name": "Permaculture Research Institute",
+   "abbr": "PRI",
+   "url": "https://www.permaculturenews.org/",
+   "label": "NGO",
+   "desc": "Articles and resources on permaculture design; paid PDC courses also offered. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Recycle & drop-off programs",
+   "name": "SM Trash to Cash",
+   "abbr": "",
+   "url": "https://www.smprime.com/company_releases/take-small-steps-for-big-change-sm-waste-free-future-illustrates-doable-actions-for-a-cleaner-greener-planet/",
+   "label": "Private, not an endorsement",
+   "desc": "Bring clean, dry recyclables (paper, plastics, PET bottles) to SM malls every first Friday and Saturday, 10am–2pm, in exchange for cash (per SM Prime, Mar 2026). Check your mall before going. Private, not an endorsement.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Recycle & drop-off programs",
+   "name": "SM Cyberzone e-waste drop boxes",
+   "abbr": "",
+   "url": "https://www.smcyberzone.com/updates-and-reviews/cyberzone-partners-with-sm-cares-to-power-sustainability-initiatives",
+   "label": "Private, not an endorsement",
+   "desc": "E-waste drop boxes for old gadgets, chargers and accessories in Cyberzone branches and other SM malls (Aug 2025 release). Private, not an endorsement.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Recycle & drop-off programs",
+   "name": "Globe E-Waste Zero",
+   "abbr": "",
+   "url": "https://www.globe.com.ph/about-us/newsroom/sustainability/e-waste-zero-globes-drive-environmental-sustainability",
+   "label": "Private, not an endorsement",
+   "desc": "Drop old, broken electronics at 120+ drop-off points (mostly Globe stores and malls) or request door-to-door pick-up. Private, not an endorsement.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Recycle & drop-off programs",
+   "name": "CORA Eco-Ikot Center",
+   "abbr": "",
+   "url": "https://www.wearecora.org/eco-ikot",
+   "label": "NGO",
+   "desc": "Exchange clean, dry, segregated recyclables (incl. sachets) for points redeemable for vegetables, e-cash and other items. NGO.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Recycle & drop-off programs",
+   "name": "Smart Recycle PH",
+   "abbr": "",
+   "url": "https://smartrecycle.ph/",
+   "label": "Private, not an endorsement",
+   "desc": "Recycling guides and services for households (metals, e-waste, tarpaulin, glass, paper, plastics, cartons) plus a list of drop-off centers. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Recycle & drop-off programs",
+   "name": "Nespresso capsule recycling",
+   "abbr": "",
+   "url": "https://www.nespresso.ph/how-to-recycle-coffee-capsules",
+   "label": "Private, not an endorsement",
+   "desc": "Brand take-back: return used Nespresso aluminum capsules for recycling. Private, not an endorsement.",
+   "link": "live",
+   "checked": "2026-10-29"
+  }
+ ]
+}

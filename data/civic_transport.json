@@ -1,0 +1,357 @@
+{
+ "as_of": "2026-10-29",
+ "note": "Links only to official/own pages. Civi does not copy schedules or fares; always check the official site. Community-built sites are not government.",
+ "items": [
+  {
+   "cat": "Civic tech & community-built",
+   "name": "BetterGov.ph",
+   "abbr": "BetterGov",
+   "url": "https://bettergov.ph/",
+   "desc": "Volunteer-run portal that organizes government services, hotlines and info (per its own site). Community-built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "BetterGov Transparency Dashboard",
+   "abbr": "",
+   "url": "https://transparency.bettergov.ph/",
+   "desc": "Search and browse PhilGEPS procurement, tax and budget records (per its own site). Community-built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "BetterGov.ph on GitHub",
+   "abbr": "",
+   "url": "https://github.com/bettergovph",
+   "desc": "Open-source code of the volunteer-led BetterGov civic tech projects. Community-built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "Sakay.ph",
+   "abbr": "",
+   "url": "https://www.sakay.ph/",
+   "desc": "Metro Manila commute directions: jeepneys, trains, buses, P2P, UV Express, Pasig River Ferry (per its own site). Privately built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "Bantay Kita",
+   "abbr": "",
+   "url": "https://www.bantaykita.ph/",
+   "desc": "Civil society group for empowered communities and transparency (per its own site). Not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "OSSPH (Open Source Software PH)",
+   "abbr": "OSSPH",
+   "url": "https://ossph.org/",
+   "desc": "Open source: Filipino developer community supporting OSS projects and maintainers (per its own site). Community-built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "Python Philippines",
+   "abbr": "PythonPH",
+   "url": "https://python.ph/",
+   "desc": "Developer community: PH community for Python enthusiasts and users (per its own site). Community-built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "DEVCON Philippines",
+   "abbr": "DEVCON",
+   "url": "https://devcon.ph/",
+   "desc": "Developer community: volunteer tech community with free code camps and events (per its own site). Community-built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "OpenStreetMap Philippines",
+   "abbr": "OSM PH",
+   "url": "https://wiki.openstreetmap.org/wiki/Philippines",
+   "desc": "Maps / open data: volunteer mapping of the Philippines on OpenStreetMap. Community-built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "Humanitarian OpenStreetMap Team",
+   "abbr": "HOT",
+   "url": "https://www.hotosm.org/",
+   "desc": "Maps / disaster: global volunteer mapping for humanitarian response, with PH projects. Community-built, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "VERA Files",
+   "abbr": "",
+   "url": "https://verafiles.org/",
+   "desc": "Fact-check / media: independent nonprofit media organization doing fact checks. Not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "Tsek.ph",
+   "abbr": "",
+   "url": "https://www.tsek.ph/",
+   "desc": "Fact-check: collaborative fact-checking project of PH newsrooms and universities. Not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "PCIJ",
+   "abbr": "PCIJ",
+   "url": "https://www.pcij.org/",
+   "desc": "Transparency / investigative journalism: Philippine Center for Investigative Journalism. Not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Civic tech & community-built",
+   "name": "Rappler Fact Check",
+   "abbr": "",
+   "url": "https://www.rappler.com/newsbreak/fact-check/",
+   "desc": "Fact-check: Rappler newsroom's fact checks of false claims (per its own site). Private media, not government.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "LRT-1 (LRMC)",
+   "abbr": "LRT-1",
+   "url": "https://lrmc.ph/",
+   "desc": "Private operator of LRT-1. Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "LRT-2 (LRTA)",
+   "abbr": "LRTA",
+   "url": "https://www.lrta.gov.ph/",
+   "desc": "Light Rail Transit Authority, operator of LRT-2. Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "MRT-3",
+   "abbr": "MRT-3",
+   "url": "https://mrt3.com/",
+   "desc": "Official MRT-3 site (DOTr). Check the official site for the latest schedule and fares.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "Philippine National Railways",
+   "abbr": "PNR",
+   "url": "https://pnr.gov.ph/",
+   "desc": "PNR train service and advisories. Check the official site for the latest schedule and fares.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "DOTr (EDSA Busway, P2P, rail)",
+   "abbr": "DOTr",
+   "url": "https://dotr.gov.ph/",
+   "desc": "Department of Transportation: EDSA Busway/Carousel, P2P and rail advisories. Check the official site for the latest schedule and fares.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "LTFRB",
+   "abbr": "LTFRB",
+   "url": "https://ltfrb.gov.ph/",
+   "desc": "Franchises, routes and fare matrices for buses, jeepneys and UV Express. Check the official site for the latest schedule and fares.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "Sakay.ph route planner",
+   "abbr": "",
+   "url": "https://www.sakay.ph/",
+   "desc": "Commute directions for Metro Manila. Privately built, not government. Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "Victory Liner",
+   "abbr": "",
+   "url": "https://www.victoryliner.com/",
+   "desc": "Provincial bus line (North Luzon). Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "Genesis Transport",
+   "abbr": "",
+   "url": "https://www.genesis.com.ph/",
+   "desc": "Provincial bus line (Genesis/JoyBus). Check the official site for the latest schedule and fares.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "Ceres Liner",
+   "abbr": "",
+   "url": "https://ceresliner.com/",
+   "desc": "Bus schedules and online booking for southern Cebu (per its own site). Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Land",
+   "name": "PITX terminal",
+   "abbr": "PITX",
+   "url": "https://www.pitx.ph/",
+   "desc": "Parañaque Integrated Terminal Exchange (provincial buses). Check the official site for the latest schedule and fares.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Air",
+   "name": "NAIA / MIAA",
+   "abbr": "MIAA",
+   "url": "https://www.miaa.gov.ph/",
+   "desc": "Manila International Airport Authority: NAIA flight info and advisories. Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Air",
+   "name": "CAAP",
+   "abbr": "CAAP",
+   "url": "https://www.caap.gov.ph/",
+   "desc": "Civil Aviation Authority: regional airports and aviation advisories.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Air",
+   "name": "Philippine Airlines",
+   "abbr": "PAL",
+   "url": "https://www.philippineairlines.com/",
+   "desc": "Flight status, schedules and travel advisories. Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Air",
+   "name": "Cebu Pacific",
+   "abbr": "",
+   "url": "https://www.cebupacificair.com/",
+   "desc": "Flight status and travel advisories. Check the official site for the latest schedule and fares.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Air",
+   "name": "AirAsia Philippines",
+   "abbr": "",
+   "url": "https://www.airasia.com/",
+   "desc": "Flights and travel advisories. Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Air",
+   "name": "PAGASA weather (travel)",
+   "abbr": "PAGASA",
+   "url": "https://www.pagasa.dost.gov.ph/",
+   "desc": "Typhoon and weather bulletins that can cancel flights and trips.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Air",
+   "name": "PHIVOLCS (volcano/ash advisories)",
+   "abbr": "PHIVOLCS",
+   "url": "https://www.phivolcs.dost.gov.ph/",
+   "desc": "Volcano and earthquake bulletins that can affect travel.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Water",
+   "name": "Philippine Ports Authority",
+   "abbr": "PPA",
+   "url": "https://www.ppa.com.ph/",
+   "desc": "Ports and port advisories. Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Water",
+   "name": "MARINA",
+   "abbr": "MARINA",
+   "url": "https://marina.gov.ph/",
+   "desc": "Maritime Industry Authority: shipping regulation and advisories.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Water",
+   "name": "Philippine Coast Guard",
+   "abbr": "PCG",
+   "url": "https://coastguard.gov.ph/",
+   "desc": "Sailing advisories and suspensions during bad weather.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Water",
+   "name": "2GO",
+   "abbr": "",
+   "url": "https://2go.com.ph/",
+   "desc": "Ferry travel and logistics (per its own site). Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Water",
+   "name": "Starlite Ferries",
+   "abbr": "",
+   "url": "https://starliteferries.com/",
+   "desc": "Ferry booking: Batangas, Mindoro, Aklan, Romblon, Capiz and more (per its own site). Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Water",
+   "name": "OceanJet",
+   "abbr": "",
+   "url": "https://www.oceanjet.net/",
+   "desc": "Fast ferry trips (per its own site). Check the official site for the latest schedule and fares.",
+   "link": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Transport: Water",
+   "name": "Montenegro Lines",
+   "abbr": "",
+   "url": "https://www.montenegrolines.com/",
+   "desc": "Ferry and RoRo routes. Check the official site for the latest schedule and fares.",
+   "link": "bot-protected",
+   "checked": "2026-10-29"
+  }
+ ]
+}

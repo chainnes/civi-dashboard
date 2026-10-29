@@ -1,0 +1,61 @@
+{
+ "fetched_at": "2026-10-28T23:54:03.649053+00:00",
+ "source": "Open-Meteo Marine",
+ "items": [
+  {
+   "sea": "Manila Bay",
+   "lat": 14.45,
+   "lon": 120.75,
+   "current": {
+    "time": "2026-10-29T07:45",
+    "interval": 900,
+    "wave_height": 0.34,
+    "sea_surface_temperature": 29.9
+   }
+  },
+  {
+   "sea": "Visayan Sea",
+   "lat": 11.6,
+   "lon": 123.6,
+   "current": {
+    "time": "2026-10-29T07:45",
+    "interval": 900,
+    "wave_height": 0.48,
+    "sea_surface_temperature": 30.0
+   }
+  },
+  {
+   "sea": "Philippine Sea (E. Samar)",
+   "lat": 11.5,
+   "lon": 126.2,
+   "current": {
+    "time": "2026-10-29T07:45",
+    "interval": 900,
+    "wave_height": 1.38,
+    "sea_surface_temperature": 30.0
+   }
+  },
+  {
+   "sea": "Sulu Sea",
+   "lat": 8.5,
+   "lon": 120.5,
+   "current": {
+    "time": "2026-10-29T07:45",
+    "interval": 900,
+    "wave_height": 0.56,
+    "sea_surface_temperature": 30.1
+   }
+  },
+  {
+   "sea": "West Philippine Sea",
+   "lat": 15.0,
+   "lon": 119.3,
+   "current": {
+    "time": "2026-10-29T07:45",
+    "interval": 900,
+    "wave_height": 1.66,
+    "sea_surface_temperature": 30.3
+   }
+  }
+ ]
+}

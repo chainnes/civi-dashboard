@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Civi · Philippines Hub (beta)</title>
+<meta name="description" content="Civi: knowledge as the people's tool. A public, open-data dashboard of the Philippines. Beta pilot by Chainnes.">
+<meta name="theme-color" content="#05080f"><link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icons/icon.svg">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<link rel="stylesheet" href="/css/hub.css">
+</head>
+<body>
+<a href="#view" class="skip" data-i18n="skip_main">Skip to main content</a>
+<header class="topbar glass">
+  <a href="#/map" class="brand"><span class="logo">◉</span> Civi <span class="beta">BETA</span></a>
+  <div class="top-actions">
+    <a id="briefBtn" class="btn ghost sm" href="#/briefing" title="Your Daily Briefing" aria-label="Your Daily Briefing">📰</a>
+    <select id="lang" aria-label="Language"></select>
+    <button id="authBtn" class="btn ghost" data-i18n="login">Log in</button>
+  </div>
+</header>
+<nav class="dock glass" id="dock" aria-label="Main">
+  <a href="#/map" data-r="map"><i>🗺️</i><span data-i18n="nav_map">Map</span></a>
+  <a href="#/directory" data-r="directory"><i>📇</i><span data-i18n="nav_directory">Directory</span></a>
+  <a href="#/lounge" data-r="lounge"><i>💬</i><span data-i18n="nav_lounge">Lounge</span></a>
+  <a href="#/academy" data-r="academy"><i>🎓</i><span data-i18n="nav_academy">Academy</span></a>
+  <a href="#/empower" data-r="empower"><i>✊</i><span data-i18n="nav_empower">Empower</span></a>
+  <a href="#/share" data-r="share"><i>🔗</i><span data-i18n="nav_share">Share</span></a>
+  <a href="#/saved" data-r="saved"><i>★</i><span data-i18n="nav_saved">Saved</span></a>
+  <a href="#/help" data-r="help"><i>❓</i><span data-i18n="nav_help">Help</span></a>
+  <a href="#/more" data-r="more"><i>✨</i><span data-i18n="nav_more">More</span></a>
+</nav>
+<div id="mtBanner" class="mt-banner hidden"></div>
+<main id="view" tabindex="-1"></main>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-card glass" id="modalCard"></div></div>
+<div id="toast" class="toast hidden"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/js/i18n.js"></script>
+<script src="/js/extras.js"></script>
+<script src="/js/hub.js"></script>
+<script src="/js/map2.js"></script>
+<script src="/js/sim.js"></script>
+<script src="/js/empower.js"></script>
+<script src="/js/briefing.js"></script>
+<script src="/js/i18n_ux.js"></script>
+<script src="/js/ux.js"></script>
+<script src="/js/ux3.js"></script>
+</body>
+</html>

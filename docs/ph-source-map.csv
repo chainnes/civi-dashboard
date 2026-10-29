@@ -1,0 +1,48 @@
+name,category,url,http_check_2026-10-29,robots,formats,update_freq,access_class,how_to_access,priority
+LawPhil (statutes + jurisprudence),Laws & cases,https://lawphil.net,200,none (404),HTML,weekly-monthly,A,Polite scrape of index pages; link back,1
+SC E-Library,Cases,https://elibrary.judiciary.gov.ph,200,none (404),HTML,daily,A,Polite scrape of decision lists; link back,2
+Supreme Court main site,Cases & issuances,https://sc.judiciary.gov.ph,timeout,unknown,HTML/PDF,daily,B,Link only (unreachable from bot),
+Sandiganbayan,Cases,https://sb.judiciary.gov.ph,timeout,unknown,HTML/PDF,weekly,B,Link only (unreachable),
+Court of Tax Appeals,Cases,https://cta.judiciary.gov.ph,200,none,HTML/PDF,weekly,A,Polite scrape of decisions list,
+Official Gazette,Laws & issuances,https://www.officialgazette.gov.ph,403,403,HTML/RSS (blocked),daily,B,Link only - bot-blocked,
+Senate legislative info,Laws/bills,https://web.senate.gov.ph,403,blocks bots,HTML,daily,B,Link only,
+House of Representatives,Laws/bills,https://www.congress.gov.ph,403,blocks bots,HTML/PDF,daily,B,Link only,
+DBM issuances + budget docs (GAA/NEP/BESF),Budget & issuances,https://www.dbm.gov.ph,200,none,HTML/PDF/XLSX,per release,A,Scrape lists; download PDFs/XLSX,3
+DBM Transparency Seal,Projects/budget,https://www.dbm.gov.ph/index.php/transparency-seal,200,none,HTML/PDF,quarterly,A,Scrape,
+OpenBudget PH,Budget,https://openbudget.gov.ph,timeout,unknown,HTML/CSV,yearly,B,Link only (down from bot),
+DILG issuances,Issuances,https://www.dilg.gov.ph,timeout,unknown,HTML/PDF,weekly,B,Link only (unreachable),
+CSC issuances,Issuances,https://www.csc.gov.ph,200,403,HTML/PDF,weekly,B,Page loads but robots blocked - link only,
+DepEd orders/memos,Issuances,https://www.deped.gov.ph,403,403,HTML/PDF,daily,B,Link only,
+DOH issuances,Issuances,https://doh.gov.ph,403,403,HTML/PDF,weekly,B,Link only,
+CHED memos,Issuances,https://ched.gov.ph,403,403,HTML/PDF,weekly,B,Link only,
+BIR issuances (RR/RMC),Issuances,https://www.bir.gov.ph,200,200 allows,HTML/PDF,weekly,A,Scrape issuance lists,6
+BSP circulars + statistics,Issuances & stats,https://www.bsp.gov.ph,200,200 allows,HTML/XLSX,daily-monthly,A,Scrape circulars; XLSX stats,7
+SEC memos,Issuances,https://www.sec.gov.ph,403,403,HTML/PDF,weekly,B,Link only,
+DOF,Budget/fiscal,https://www.dof.gov.ph,200,403,HTML/PDF,weekly,B,Robots unreadable - link only,
+DOE,Energy issuances/prices,https://doe.gov.ph,200,200,HTML/PDF/XLSX,weekly,A,Scrape oil price & circulars,
+DTI,Issuances/prices,https://www.dti.gov.ph,200,partial disallow,HTML/PDF,weekly,A,Scrape allowed paths only (SRP lists),
+PhilGEPS notices,Procurement,https://notices.philgeps.gov.ph,200,none,HTML,daily,A,Polite scrape of public bid notices; bulk via request,5
+DPWH infra projects,Projects,https://www.dpwh.gov.ph,200,200 allows,HTML/PDF,monthly,A,Scrape project lists,8
+DEPDev (ex-NEDA) + PIP,Projects/plans,https://depdev.gov.ph,403,blocks bots,HTML/PDF,monthly,B,Link only,
+COA audit reports,Audit,https://www.coa.gov.ph,403,403,PDF,yearly,B,Link only; bulk via FOI,
+PSA website,Statistics,https://psa.gov.ph,403,blocks bots,HTML/XLSX,monthly,B,Link only,
+PSA OpenSTAT PXWeb API,Statistics,https://openstat.psa.gov.ph/PXWeb/api/v1/en/,200 (API),UI blocked; API open,JSON/CSV API,monthly,A,Use PXWeb JSON API,4
+PSGC codes,Geography,https://psa.gov.ph/classification/psgc,403,blocks bots,XLSX,quarterly,B,Manual quarterly XLSX download then load to Supabase,
+Open Data Philippines,Open data,https://data.gov.ph,200,200,SPA; CSV/XLSX per dataset,irregular,A,Browse/download datasets (API path returns app shell),
+eGov PH / eGovPH app,eGov services,https://e.gov.ph,200,none,HTML/app (login),n/a,C,Citizen services need eGovPH account - not for ingestion,
+DICT,eGov,https://dict.gov.ph,403,403,HTML,weekly,B,Link only,
+FOI portal,Requests,https://www.foi.gov.ph,403,403,web form,n/a,D,Submit FOI request (account + valid ID) on foi.gov.ph,
+PAGASA,Disaster,https://www.pagasa.dost.gov.ph,200,none,HTML/bulletins,hourly,A,Scrape bulletins (already in Civi),9
+PANAHON (PAGASA),Disaster,https://www.panahon.gov.ph,200,200,map/JSON,hourly,A,Read public endpoints politely,
+PHIVOLCS earthquakes,Disaster,https://earthquake.phivolcs.dost.gov.ph,200,none,HTML table,real-time,A,Scrape latest quakes table,10
+NDRRMC sitreps,Disaster,https://ndrrmc.gov.ph,403,403,PDF,per event,B,Link only; use GDACS/ReliefWeb,
+DENR,Environment,https://denr.gov.ph,403,blocks bots,HTML/PDF,weekly,B,Link only,
+DENR-EMB air/water,Environment,https://emb.gov.ph,403,blocks bots,HTML/PDF,monthly,B,Link only,
+Project NOAH,Hazard maps,https://noah.up.edu.ph,200,200,map/GeoJSON,static,A,Use public hazard layers with attribution,
+GeoRiskPH HazardHunter,Hazard maps,https://hazardhunter.georisk.gov.ph,200,200,interactive map,static,B,Interactive only - link,
+NAMRIA Geoportal,Geography,https://www.geoportal.gov.ph,200,200,WMS/maps,static,C,Some layers need free account,
+COMELEC,Elections,https://comelec.gov.ph,403,403,HTML/PDF,per election,B,Link only; results bulk via request,
+HDX Philippines (OCHA),Disaster/open data,https://data.humdata.org/group/phl,200 (API 519 datasets),allows,CKAN JSON/CSV,weekly,A,CKAN API - incl. PH admin boundaries,
+World Bank API (PHL),Statistics,https://api.worldbank.org/v2/country/PHL,200,none,JSON API,yearly,A,Free API,
+YouTube Data API,Media,https://developers.google.com/youtube/v3,n/a,n/a,JSON API,real-time,C,Free API key,
+Bulk PhilGEPS/COA/PSA microdata,Data requests,https://www.foi.gov.ph,n/a,n/a,CSV on request,n/a,D,FOI request or agency data-sharing MOU; PSA microdata via PSA request form,

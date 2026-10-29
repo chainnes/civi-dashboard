@@ -1,0 +1,429 @@
+{
+ "note": "Civi starter topics: neutral framing with links to primary sources. Not legal advice. Users add their own views.",
+ "items": [
+  {
+   "id": "seed-01",
+   "title": "Should the MRT/LRT be privatized or stay government-run?",
+   "cat": "Transport & Infrastructure",
+   "starter": "Supporters say private operators can fund maintenance and improve service; critics worry about fare hikes and weaker public accountability. The 2022 amendment to the Public Service Act changed which sectors count as 'public utilities', which affects foreign participation in transport.",
+   "sources": [
+    {
+     "title": "RA 11659 – Public Service Act amendments (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11659_2022.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-02",
+   "title": "Mining in the Sierra Madre: development or destruction?",
+   "cat": "Environment",
+   "starter": "The Sierra Madre is a major forest and watershed; mining is governed by the Philippine Mining Act. Debate centers on jobs and revenue versus forest loss, flooding risk and indigenous land rights. Check DENR and community sources for specific permits.",
+   "sources": [
+    {
+     "title": "RA 7942 – Philippine Mining Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7942_1995.html"
+    },
+    {
+     "title": "DENR",
+     "url": "https://www.denr.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-03",
+   "title": "Is the government ready for El Niño and La Niña?",
+   "cat": "Disaster & Weather",
+   "starter": "Readiness questions include water supply, crop insurance, and local climate action plans required under the Climate Change Act. PAGASA issues the official ENSO advisories.",
+   "sources": [
+    {
+     "title": "RA 9729 – Climate Change Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9729_2009.html"
+    },
+    {
+     "title": "PAGASA",
+     "url": "https://www.pagasa.dost.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-04",
+   "title": "Peso vs US dollar: who wins and who loses when the peso weakens?",
+   "cat": "Economy & Jobs",
+   "starter": "A weaker peso raises the peso value of OFW remittances and exports, but makes imported fuel and food costlier. Use the live USD→PHP panel on the Civi map and BSP's official reference rate.",
+   "sources": [
+    {
+     "title": "Civi KPI panel (Frankfurter/ECB rates)",
+     "url": "https://www.frankfurter.app/"
+    },
+    {
+     "title": "PSA OpenSTAT (inflation)",
+     "url": "https://openstat.psa.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-05",
+   "title": "Should the Philippines legalize divorce?",
+   "cat": "Laws & Policy",
+   "starter": "The Philippines and Vatican City are commonly cited as the only states without general divorce law; annulment and legal separation exist under the Family Code. Divorce bills have been filed in several Congresses. Share the bill number you are discussing.",
+   "sources": [
+    {
+     "title": "Family Code (LawPhil)",
+     "url": "https://lawphil.net/executive/execord/eo1987/eo_209_1987.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-06",
+   "title": "Jeepney modernization: phase out or upgrade?",
+   "cat": "Transport & Infrastructure",
+   "starter": "The PUV modernization program requires franchise consolidation and newer units. Drivers and operators raise costs and loans; commuters raise safety and emissions. Post official LTFRB/DOTr issuances when citing deadlines.",
+   "sources": [
+    {
+     "title": "LTFRB",
+     "url": "https://ltfrb.gov.ph/"
+    },
+    {
+     "title": "DOTr",
+     "url": "https://dotr.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-07",
+   "title": "West Philippine Sea: diplomacy, alliances, or self-reliance?",
+   "cat": "Security",
+   "starter": "The 2016 arbitral award (PCA Case 2013-19) and the 2024 Philippine Maritime Zones Act are the key legal references. Debate covers how to assert rights while avoiding conflict.",
+   "sources": [
+    {
+     "title": "PCA Case 2013-19",
+     "url": "https://pca-cpa.org/en/cases/7/"
+    },
+    {
+     "title": "RA 12064 – Philippine Maritime Zones Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12064_2024.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-08",
+   "title": "Maharlika Investment Fund: smart investment or risky bet?",
+   "cat": "Economy & Jobs",
+   "starter": "The fund was created by RA 11954 (2023). Discussion points: governance safeguards, where the seed capital came from, and transparency of returns.",
+   "sources": [
+    {
+     "title": "RA 11954 – Maharlika Investment Fund Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2023/ra_11954_2023.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-09",
+   "title": "SIM card registration: did it stop scams?",
+   "cat": "Security",
+   "starter": "RA 11934 requires SIM registration. Users can share experiences with scam texts since then; please don't post anyone's personal numbers.",
+   "sources": [
+    {
+     "title": "RA 11934 – SIM Registration Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11934_2022.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-10",
+   "title": "Is the new procurement law enough to stop corruption?",
+   "cat": "Government",
+   "starter": "RA 12009 (2024) revised the Government Procurement Reform Act. PhilGEPS publishes bid notices that anyone can check.",
+   "sources": [
+    {
+     "title": "RA 12009 – New Government Procurement Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "title": "PhilGEPS",
+     "url": "https://notices.philgeps.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-11",
+   "title": "Where does our national budget go?",
+   "cat": "Government",
+   "starter": "DBM publishes the General Appropriations Act and budget documents. Pick a department and compare allocations year to year.",
+   "sources": [
+    {
+     "title": "DBM",
+     "url": "https://www.dbm.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-12",
+   "title": "Flood control projects: are they working in your area?",
+   "cat": "Transport & Infrastructure",
+   "starter": "Share photos (no faces), locations and official project pages. DPWH lists projects; compare with what you see on the ground.",
+   "sources": [
+    {
+     "title": "DPWH",
+     "url": "https://www.dpwh.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-13",
+   "title": "Online scams and cybercrime: what actually helps?",
+   "cat": "Security",
+   "starter": "The Cybercrime Prevention Act (RA 10175) is the main law. Share verified reporting channels and prevention tips; never share victims' details.",
+   "sources": [
+    {
+     "title": "RA 10175 – Cybercrime Prevention Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2012/ra_10175_2012.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-14",
+   "title": "Data privacy: do apps and agencies protect our data?",
+   "cat": "Laws & Policy",
+   "starter": "RA 10173 gives you rights to be informed, access, correct and erase personal data. The National Privacy Commission handles complaints.",
+   "sources": [
+    {
+     "title": "RA 10173 – Data Privacy Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html"
+    },
+    {
+     "title": "National Privacy Commission",
+     "url": "https://privacy.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-15",
+   "title": "Ease of doing business: is red tape really lower?",
+   "cat": "Government",
+   "starter": "RA 11032 set processing-time limits for government transactions and created ARTA. Share your real experience (time, office, outcome).",
+   "sources": [
+    {
+     "title": "RA 11032 – Ease of Doing Business Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2018/ra_11032_2018.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-16",
+   "title": "Electric vehicles: realistic for Filipino roads?",
+   "cat": "Environment",
+   "starter": "RA 11697 (2022) is the EV Industry Development Act. Topics: charging stations, prices, power supply.",
+   "sources": [
+    {
+     "title": "RA 11697 – EVIDA (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11697_2022.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-17",
+   "title": "Child marriage ban: how is it enforced?",
+   "cat": "Laws & Policy",
+   "starter": "RA 11596 (2021) prohibits child marriage. Discuss awareness and enforcement in communities.",
+   "sources": [
+    {
+     "title": "RA 11596 (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2021/ra_11596_2021.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-18",
+   "title": "Reproductive health: is the RH Law fully implemented?",
+   "cat": "Health",
+   "starter": "RA 10354 (2012) set a national policy on responsible parenthood and reproductive health. Share local access experiences.",
+   "sources": [
+    {
+     "title": "RA 10354 – RH Law (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2012/ra_10354_2012.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-19",
+   "title": "Vaping and tobacco: stricter rules needed?",
+   "cat": "Health",
+   "starter": "RA 9211 (2003) regulates tobacco packaging and ads; later laws added vape rules. Share the specific rule you're debating.",
+   "sources": [
+    {
+     "title": "RA 9211 – Tobacco Regulation Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9211_2003.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-20",
+   "title": "Fair competition: are prices high because of monopolies?",
+   "cat": "Economy & Jobs",
+   "starter": "RA 10667 created the Philippine Competition Commission. Discuss sectors where you see little choice.",
+   "sources": [
+    {
+     "title": "RA 10667 – Philippine Competition Act (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra2015/ra_10667_2015.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-21",
+   "title": "Should LGUs get more power and budget?",
+   "cat": "Government",
+   "starter": "The Local Government Code (RA 7160) defines LGU powers. Debate decentralization vs national oversight.",
+   "sources": [
+    {
+     "title": "RA 7160 – Local Government Code (LawPhil)",
+     "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-22",
+   "title": "Rising prices: what's hitting your household most?",
+   "cat": "Economy & Jobs",
+   "starter": "PSA publishes monthly inflation by commodity group. Share which items hurt most and where you live (city level only).",
+   "sources": [
+    {
+     "title": "PSA OpenSTAT – CPI",
+     "url": "https://openstat.psa.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-23",
+   "title": "Jobs: is underemployment the real problem?",
+   "cat": "Economy & Jobs",
+   "starter": "PSA's Labor Force Survey reports unemployment and underemployment rates monthly. Share what kind of work is available near you.",
+   "sources": [
+    {
+     "title": "PSA OpenSTAT – Labor Force Survey",
+     "url": "https://openstat.psa.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-24",
+   "title": "Education: what should DepEd fix first?",
+   "cat": "Education",
+   "starter": "Common topics: classroom shortage, learning recovery, teacher workload, curriculum. Cite DepEd orders when possible.",
+   "sources": [
+    {
+     "title": "DepEd",
+     "url": "https://www.deped.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-25",
+   "title": "Gilas Pilipinas and PH sports funding: enough support for athletes?",
+   "cat": "Sports",
+   "starter": "Discuss funding, grassroots programs and facilities. Cite PSC or federation sources.",
+   "sources": [
+    {
+     "title": "Philippine Sports Commission",
+     "url": "https://psc.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-26",
+   "title": "OPM and local films: how do we support Filipino artists?",
+   "cat": "Entertainment",
+   "starter": "Talk about streaming, cinema quotas, festivals and piracy. Share links to official artist pages.",
+   "sources": [
+    {
+     "title": "FDCP",
+     "url": "https://www.fdcp.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-27",
+   "title": "Disaster prep at barangay level: what does your barangay do?",
+   "cat": "Disaster & Weather",
+   "starter": "NDRRMC and local DRRM offices run preparedness. Share drills, evacuation centers and gaps (no personal info).",
+   "sources": [
+    {
+     "title": "NDRRMC",
+     "url": "https://ndrrmc.gov.ph/"
+    },
+    {
+     "title": "PHIVOLCS",
+     "url": "https://www.phivolcs.dost.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  },
+  {
+   "id": "seed-28",
+   "title": "Freedom of Information: should FOI become a law?",
+   "cat": "Laws & Policy",
+   "starter": "An FOI program for the executive branch exists via the eFOI portal; debate is whether Congress should pass an FOI law covering all branches.",
+   "sources": [
+    {
+     "title": "eFOI portal",
+     "url": "https://www.foi.gov.ph/"
+    }
+   ],
+   "by": "Civi starter",
+   "neutral": true
+  }
+ ]
+}

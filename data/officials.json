@@ -1,0 +1,56 @@
+{
+"as_of": "2026-10-29",
+"note": "Only top offices are named, each with a source. Office holders change: always check the official link.",
+"items": [
+{
+"role": "President",
+"name": "Ferdinand R. Marcos Jr.",
+"url": "https://pco.gov.ph/",
+"src": "Presidential Communications Office",
+"link": "bot-protected"
+},
+{
+"role": "Vice President",
+"name": "Sara Z. Duterte",
+"url": "https://www.ovp.gov.ph/",
+"src": "Office of the Vice President",
+"note": "Impeachment trial ongoing in the Senate (as of Oct 2026).",
+"link": "check:404"
+},
+{
+"role": "Senate President",
+"name": "Sherwin T. Gatchalian",
+"url": "https://data.ipu.org/parliament/PH/PH-UC01/",
+"src": "IPU Parline (elected 17 Jun 2026)",
+"link": "live"
+},
+{
+"role": "Speaker of the House",
+"name": "Faustino \"Bojie\" Dy III",
+"url": "https://www.congress.gov.ph/",
+"src": "House of Representatives",
+"link": "bot-protected"
+},
+{
+"role": "All 24 Senators",
+"name": "Official list",
+"url": "https://web.senate.gov.ph/senators/senlist.asp",
+"src": "Senate of the Philippines",
+"link": "bot-protected"
+},
+{
+"role": "All House members",
+"name": "Official list",
+"url": "https://www.congress.gov.ph/members/",
+"src": "House of Representatives",
+"link": "bot-protected"
+},
+{
+"role": "Cabinet secretaries",
+"name": "See each department site above",
+"url": "https://www.gov.ph/",
+"src": "GOV.PH",
+"link": "live"
+}
+]
+}

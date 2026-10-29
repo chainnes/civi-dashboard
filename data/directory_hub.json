@@ -1,0 +1,849 @@
+{
+ "note": "Official sites only, each checked live on 2026-10-29. Hotlines only when published by the agency/DOH; verify before relying on them. 'Bot-protected' = site is up but blocks automated checks.",
+ "items": [
+  {
+   "cat": "Emergency & hotlines",
+   "name": "911 – National Emergency Hotline",
+   "url": "https://e911.gov.ph/",
+   "desc": "Police, fire, medical emergencies nationwide.",
+   "phone": "911"
+  },
+  {
+   "cat": "Emergency & hotlines",
+   "name": "8888 – Citizens' Complaint Hotline",
+   "url": "https://8888.gov.ph/",
+   "desc": "Complaints about government service, red tape, corruption.",
+   "phone": "8888"
+  },
+  {
+   "cat": "Emergency & hotlines",
+   "name": "Philippine Red Cross",
+   "url": "https://www.redcross.org.ph/",
+   "desc": "Emergency response, blood services, disaster relief. Get hotline numbers from their site."
+  },
+  {
+   "cat": "Emergency & hotlines",
+   "name": "NDRRMC",
+   "url": "https://ndrrmc.gov.ph/",
+   "desc": "National disaster risk reduction and management; official situation reports."
+  },
+  {
+   "cat": "Emergency & hotlines",
+   "name": "PAGASA",
+   "url": "https://www.pagasa.dost.gov.ph/",
+   "desc": "Official weather, typhoon and rainfall advisories."
+  },
+  {
+   "cat": "Emergency & hotlines",
+   "name": "PHIVOLCS",
+   "url": "https://www.phivolcs.dost.gov.ph/",
+   "desc": "Official earthquake, volcano and tsunami bulletins."
+  },
+  {
+   "cat": "Government services",
+   "name": "eGovPH",
+   "url": "https://e.gov.ph/",
+   "desc": "Official eGov super-app portal for government services."
+  },
+  {
+   "cat": "Government services",
+   "name": "PhilSys National ID",
+   "url": "https://philsys.gov.ph/",
+   "desc": "National ID registration and info."
+  },
+  {
+   "cat": "Government services",
+   "name": "DFA Passport appointment",
+   "url": "https://www.passport.gov.ph/",
+   "desc": "Passport appointments."
+  },
+  {
+   "cat": "Government services",
+   "name": "NBI Clearance",
+   "url": "https://clearance.nbi.gov.ph/",
+   "desc": "Online NBI clearance application."
+  },
+  {
+   "cat": "Government services",
+   "name": "SSS",
+   "url": "https://www.sss.gov.ph/",
+   "desc": "Social Security System: contributions, loans, benefits."
+  },
+  {
+   "cat": "Government services",
+   "name": "PhilHealth",
+   "url": "https://www.philhealth.gov.ph/",
+   "desc": "Health insurance membership and benefits."
+  },
+  {
+   "cat": "Government services",
+   "name": "Pag-IBIG Fund",
+   "url": "https://www.pagibigfund.gov.ph/",
+   "desc": "Housing loans and savings."
+  },
+  {
+   "cat": "Government services",
+   "name": "PSA civil registry (PSA Serbilis)",
+   "url": "https://www.psaserbilis.com.ph/",
+   "desc": "PSA's online channel for birth, marriage, death certificates."
+  },
+  {
+   "cat": "Government services",
+   "name": "eFOI – Freedom of Information",
+   "url": "https://www.foi.gov.ph/",
+   "desc": "Request documents from executive agencies."
+  },
+  {
+   "cat": "Government services",
+   "name": "National Privacy Commission",
+   "url": "https://privacy.gov.ph/",
+   "desc": "Data privacy complaints and guidance (RA 10173)."
+  },
+  {
+   "cat": "Jobs & livelihood",
+   "name": "PhilJobNet (DOLE)",
+   "url": "https://philjobnet.gov.ph/",
+   "desc": "Official government job matching portal."
+  },
+  {
+   "cat": "Jobs & livelihood",
+   "name": "CSC – government careers",
+   "url": "https://csc.gov.ph/",
+   "desc": "Civil Service Commission: exams and government job vacancies."
+  },
+  {
+   "cat": "Jobs & livelihood",
+   "name": "TESDA",
+   "url": "https://www.tesda.gov.ph/",
+   "desc": "Skills training and national certificates."
+  },
+  {
+   "cat": "Learning & scholarships",
+   "name": "e-TESDA",
+   "url": "https://e-tesda.gov.ph/",
+   "desc": "Free online TVET courses."
+  },
+  {
+   "cat": "Learning & scholarships",
+   "name": "DOST-SEI scholarships",
+   "url": "https://www.sei.dost.gov.ph/",
+   "desc": "Science scholarships."
+  },
+  {
+   "cat": "Places & travel",
+   "name": "Love the Philippines (DOT)",
+   "url": "https://philippines.travel/",
+   "desc": "Official tourism guide: destinations, activities."
+  },
+  {
+   "cat": "Health",
+   "name": "DOH",
+   "url": "https://doh.gov.ph/",
+   "desc": "Department of Health advisories."
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "LawPhil (statutes + jurisprudence)",
+   "url": "https://lawphil.net",
+   "desc": "Laws & cases · access class A: Polite scrape of index pages; link back",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "SC E-Library",
+   "url": "https://elibrary.judiciary.gov.ph",
+   "desc": "Cases · access class A: Polite scrape of decision lists; link back",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "Supreme Court main site",
+   "url": "https://sc.judiciary.gov.ph",
+   "desc": "Cases & issuances · access class B: Link only (unreachable from bot)",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "Sandiganbayan",
+   "url": "https://sb.judiciary.gov.ph",
+   "desc": "Cases · access class B: Link only (unreachable)",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "Court of Tax Appeals",
+   "url": "https://cta.judiciary.gov.ph",
+   "desc": "Cases · access class A: Polite scrape of decisions list",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "Official Gazette",
+   "url": "https://www.officialgazette.gov.ph",
+   "desc": "Laws & issuances · access class B: Link only - bot-blocked",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "Senate legislative info",
+   "url": "https://web.senate.gov.ph",
+   "desc": "Laws/bills · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "House of Representatives",
+   "url": "https://www.congress.gov.ph",
+   "desc": "Laws/bills · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DBM issuances + budget docs (GAA/NEP/BESF)",
+   "url": "https://www.dbm.gov.ph",
+   "desc": "Budget & issuances · access class A: Scrape lists; download PDFs/XLSX",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DBM Transparency Seal",
+   "url": "https://www.dbm.gov.ph/index.php/transparency-seal",
+   "desc": "Projects/budget · access class A: Scrape",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "OpenBudget PH",
+   "url": "https://openbudget.gov.ph",
+   "desc": "Budget · access class B: Link only (down from bot)",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DILG issuances",
+   "url": "https://www.dilg.gov.ph",
+   "desc": "Issuances · access class B: Link only (unreachable)",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "CSC issuances",
+   "url": "https://www.csc.gov.ph",
+   "desc": "Issuances · access class B: Page loads but robots blocked - link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DepEd orders/memos",
+   "url": "https://www.deped.gov.ph",
+   "desc": "Issuances · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DOH issuances",
+   "url": "https://doh.gov.ph",
+   "desc": "Issuances · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "CHED memos",
+   "url": "https://ched.gov.ph",
+   "desc": "Issuances · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "BIR issuances (RR/RMC)",
+   "url": "https://www.bir.gov.ph",
+   "desc": "Issuances · access class A: Scrape issuance lists",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "BSP circulars + statistics",
+   "url": "https://www.bsp.gov.ph",
+   "desc": "Issuances & stats · access class A: Scrape circulars; XLSX stats",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "SEC memos",
+   "url": "https://www.sec.gov.ph",
+   "desc": "Issuances · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DOF",
+   "url": "https://www.dof.gov.ph",
+   "desc": "Budget/fiscal · access class B: Robots unreadable - link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DOE",
+   "url": "https://doe.gov.ph",
+   "desc": "Energy issuances/prices · access class A: Scrape oil price & circulars",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DTI",
+   "url": "https://www.dti.gov.ph",
+   "desc": "Issuances/prices · access class A: Scrape allowed paths only (SRP lists)",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "PhilGEPS notices",
+   "url": "https://notices.philgeps.gov.ph",
+   "desc": "Procurement · access class A: Polite scrape of public bid notices; bulk via request",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DPWH infra projects",
+   "url": "https://www.dpwh.gov.ph",
+   "desc": "Projects · access class A: Scrape project lists",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DEPDev (ex-NEDA) + PIP",
+   "url": "https://depdev.gov.ph",
+   "desc": "Projects/plans · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "COA audit reports",
+   "url": "https://www.coa.gov.ph",
+   "desc": "Audit · access class B: Link only; bulk via FOI",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "PSA website",
+   "url": "https://psa.gov.ph",
+   "desc": "Statistics · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "PSA OpenSTAT PXWeb API",
+   "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/",
+   "desc": "Statistics · access class A: Use PXWeb JSON API",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "PSGC codes",
+   "url": "https://psa.gov.ph/classification/psgc",
+   "desc": "Geography · access class B: Manual quarterly XLSX download then load to Supabase",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "Open Data Philippines",
+   "url": "https://data.gov.ph",
+   "desc": "Open data · access class A: Browse/download datasets (API path returns app shell)",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "eGov PH / eGovPH app",
+   "url": "https://e.gov.ph",
+   "desc": "eGov services · access class C: Citizen services need eGovPH account - not for ingestion",
+   "access": "C"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DICT",
+   "url": "https://dict.gov.ph",
+   "desc": "eGov · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "FOI portal",
+   "url": "https://www.foi.gov.ph",
+   "desc": "Requests · access class D: Submit FOI request (account + valid ID) on foi.gov.ph",
+   "access": "D"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "PAGASA",
+   "url": "https://www.pagasa.dost.gov.ph",
+   "desc": "Disaster · access class A: Scrape bulletins (already in Civi)",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "PANAHON (PAGASA)",
+   "url": "https://www.panahon.gov.ph",
+   "desc": "Disaster · access class A: Read public endpoints politely",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "PHIVOLCS earthquakes",
+   "url": "https://earthquake.phivolcs.dost.gov.ph",
+   "desc": "Disaster · access class A: Scrape latest quakes table",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "NDRRMC sitreps",
+   "url": "https://ndrrmc.gov.ph",
+   "desc": "Disaster · access class B: Link only; use GDACS/ReliefWeb",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DENR",
+   "url": "https://denr.gov.ph",
+   "desc": "Environment · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "DENR-EMB air/water",
+   "url": "https://emb.gov.ph",
+   "desc": "Environment · access class B: Link only",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "Project NOAH",
+   "url": "https://noah.up.edu.ph",
+   "desc": "Hazard maps · access class A: Use public hazard layers with attribution",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "GeoRiskPH HazardHunter",
+   "url": "https://hazardhunter.georisk.gov.ph",
+   "desc": "Hazard maps · access class B: Interactive only - link",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "NAMRIA Geoportal",
+   "url": "https://www.geoportal.gov.ph",
+   "desc": "Geography · access class C: Some layers need free account",
+   "access": "C"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "COMELEC",
+   "url": "https://comelec.gov.ph",
+   "desc": "Elections · access class B: Link only; results bulk via request",
+   "access": "B"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "HDX Philippines (OCHA)",
+   "url": "https://data.humdata.org/group/phl",
+   "desc": "Disaster/open data · access class A: CKAN API - incl. PH admin boundaries",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "World Bank API (PHL)",
+   "url": "https://api.worldbank.org/v2/country/PHL",
+   "desc": "Statistics · access class A: Free API",
+   "access": "A"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "YouTube Data API",
+   "url": "https://developers.google.com/youtube/v3",
+   "desc": "Media · access class C: Free API key",
+   "access": "C"
+  },
+  {
+   "cat": "Data, laws & documents",
+   "name": "Bulk PhilGEPS/COA/PSA microdata",
+   "url": "https://www.foi.gov.ph",
+   "desc": "Data requests · access class D: FOI request or agency data-sharing MOU; PSA microdata via PSA request form",
+   "access": "D"
+  },
+  {
+   "cat": "Events & activities",
+   "name": "🪩 Dark Romance: 'Til Death Do Us Prom Day 2",
+   "url": "https://luma.com/mocgjidr",
+   "desc": "Pasig · via Luma",
+   "starts_at": "2026-10-31T05:00:00.000Z"
+  },
+  {
+   "cat": "Events & activities",
+   "name": "DevDay Exchange Community: Manila",
+   "url": "https://luma.com/ujq875t4",
+   "desc": "Taguig · via Luma",
+   "starts_at": "2026-11-06T09:00:00.000Z"
+  },
+  {
+   "cat": "Events & activities",
+   "name": "Build with AI: Coding Workshops for SMEs (Manila)",
+   "url": "https://luma.com/4hbe9akr",
+   "desc": "Taguig · via Luma",
+   "starts_at": "2026-11-27T02:00:00.000Z"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "PNVSCA – Philippine National Volunteer Service Coordinating Agency",
+   "url": "https://www.pnvsca.gov.ph/",
+   "desc": "Government agency that coordinates volunteer programs nationwide; find accredited volunteer orgs.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Philippine Red Cross – Volunteer Service",
+   "url": "https://redcross.org.ph/volunteer-service/",
+   "desc": "Sign up as a Red Cross volunteer (disaster response, blood services, first aid).",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Gawad Kalinga",
+   "url": "https://www.gk1world.com/home",
+   "desc": "Community development: housing, child nutrition, farm villages. Volunteer and donate.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Habitat for Humanity Philippines",
+   "url": "https://www.habitat.org.ph/",
+   "desc": "Build homes with families; group and individual volunteer builds.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "WWF-Philippines",
+   "url": "https://www.wwf.org.ph/",
+   "desc": "Conservation (oceans, climate, wildlife). Volunteer and internship programs.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Haribon Foundation",
+   "url": "https://haribon.org.ph/",
+   "desc": "Biodiversity conservation, rainforest restoration, bird conservation. Volunteer tree-planting.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Angat Buhay",
+   "url": "https://www.angatbuhay.ph/",
+   "desc": "Non-profit for nutrition, education and disaster relief through volunteer and partner networks.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "ABS-CBN Foundation (incl. Bantay Kalikasan, Sagip Kapamilya)",
+   "url": "https://www.abs-cbnfoundation.org/",
+   "desc": "Environmental programs (Bantay Kalikasan) and disaster relief (Sagip Kapamilya).",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "GMA Kapuso Foundation",
+   "url": "https://www.gmanetwork.com/kapusofoundation/",
+   "desc": "Relief operations, school building, health missions.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Ayala Foundation",
+   "url": "https://ayalafoundation.org/",
+   "desc": "Education, sustainable livelihood, arts and culture programs.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Philippine Business for Social Progress (PBSP)",
+   "url": "https://www.pbsp.org.ph/",
+   "desc": "Business-led social development foundation; corporate volunteering.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "SM Foundation",
+   "url": "https://www.sm-foundation.org/",
+   "desc": "Scholarships, health missions, school buildings, farmer training.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Caritas Manila",
+   "url": "https://caritasmanila.org.ph/",
+   "desc": "Church-based social services: scholarships, feeding, disaster relief.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "World Vision Philippines",
+   "url": "https://www.worldvision.org.ph/",
+   "desc": "Child sponsorship and community development.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Save the Children Philippines",
+   "url": "https://www.savethechildren.org.ph/",
+   "desc": "Child rights, education, emergency response.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "UNICEF Philippines",
+   "url": "https://www.unicef.org/philippines/",
+   "desc": "UN agency for children: health, nutrition, education, protection.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Plan International Philippines",
+   "url": "https://plan-international.org/philippines/",
+   "desc": "Children's and girls' rights, disaster preparedness.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "ChildHope Philippines",
+   "url": "https://childhope.org.ph/",
+   "desc": "Programs for street children: education, protection, health.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Greenpeace Philippines",
+   "url": "https://www.greenpeace.org/philippines/",
+   "desc": "Environmental campaigns (climate, plastics, oceans). Volunteer network.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "EcoWaste Coalition",
+   "url": "https://ecowastecoalition.org/",
+   "desc": "Zero-waste and toxics watchdog network of community groups.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Institute for Climate and Sustainable Cities (ICSC)",
+   "url": "https://www.icsc.ngo/",
+   "desc": "Climate and energy policy, resilience work with LGUs.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Balay Mindanaw",
+   "url": "https://www.balaymindanaw.org/",
+   "desc": "Mindanao peace-building, governance and community development.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Hands On Manila",
+   "url": "https://handsonmanila.org/",
+   "desc": "Flexible volunteer projects in Metro Manila (sign up per activity).",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "Girl Scouts of the Philippines",
+   "url": "https://girlscouts.org.ph/",
+   "desc": "Youth leadership and community service.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Volunteer & NGOs",
+   "name": "International Coastal Cleanup (Ocean Conservancy)",
+   "url": "https://oceanconservancy.org/work/plastics/cleanups-icc/",
+   "desc": "Global coastal cleanup; find or register a beach/river cleanup in your area.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Legal aid & rights",
+   "name": "Public Attorney's Office (PAO)",
+   "url": "https://www.pao.gov.ph/",
+   "desc": "Free legal assistance for qualified indigent clients.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Legal aid & rights",
+   "name": "Integrated Bar of the Philippines (IBP) – legal aid",
+   "url": "https://www.ibp.ph/",
+   "desc": "National lawyers' organization; chapters run free legal aid.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Legal aid & rights",
+   "name": "Commission on Human Rights (CHR)",
+   "url": "https://chr.gov.ph/",
+   "desc": "File human rights complaints; rights education.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Legal aid & rights",
+   "name": "Office of the Ombudsman",
+   "url": "https://www.ombudsman.gov.ph/",
+   "desc": "File complaints against government officials and employees.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Legal aid & rights",
+   "name": "Philippine Commission on Women (PCW)",
+   "url": "https://www.pcw.gov.ph/",
+   "desc": "Women's rights, VAWC resources and referral info.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Legal aid & rights",
+   "name": "National Council on Disability Affairs (NCDA)",
+   "url": "https://ncda.gov.ph/",
+   "desc": "PWD rights, PWD ID info, accessibility.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Mental health",
+   "name": "NCMH Crisis Hotline (24/7)",
+   "url": "https://ncmh.gov.ph/",
+   "desc": "National Center for Mental Health crisis line. Also 1800-1888-1553 (nationwide, see DOH page).",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29",
+   "phone": "1553",
+   "phone_src": "https://caro.doh.gov.ph/world-suicide-prevention-day/"
+  },
+  {
+   "cat": "Mental health",
+   "name": "MentalHealthPH",
+   "url": "https://mentalhealthph.org/",
+   "desc": "Non-profit mental health advocacy and resource directory.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learning & scholarships",
+   "name": "UniFAST – free tuition & student aid (RA 10931)",
+   "url": "https://unifast.gov.ph/",
+   "desc": "Free higher education, Tertiary Education Subsidy, student loans.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Learning & scholarships",
+   "name": "CHED scholarships",
+   "url": "https://ched.gov.ph/",
+   "desc": "CHED Merit Scholarship and other student financial assistance.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "OFW services",
+   "name": "Department of Migrant Workers (DMW)",
+   "url": "https://dmw.gov.ph/",
+   "desc": "Verify agencies and job orders, OFW documents, assistance.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "OFW services",
+   "name": "OWWA",
+   "url": "https://owwa.gov.ph/",
+   "desc": "OFW welfare: membership, scholarships, repatriation, reintegration.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Consumer complaints",
+   "name": "DTI – consumer complaints",
+   "url": "https://www.dti.gov.ph/",
+   "desc": "File complaints on products, prices, warranties, online sellers.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Consumer complaints",
+   "name": "NTC – telco complaints",
+   "url": "https://www.ntc.gov.ph/",
+   "desc": "Complaints on mobile, internet and text scams.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Consumer complaints",
+   "name": "ERC – power complaints",
+   "url": "https://www.erc.gov.ph/",
+   "desc": "Electricity rates and distribution utility complaints.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Consumer complaints",
+   "name": "LTFRB – public transport complaints",
+   "url": "https://ltfrb.gov.ph/",
+   "desc": "Complaints on PUVs, TNVS (ride-hailing) and fares.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Consumer complaints",
+   "name": "CAB – air passenger rights",
+   "url": "https://www.cab.gov.ph/",
+   "desc": "Flight delays, cancellations, passenger rights complaints.",
+   "status": "live-bot-protected",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Government services",
+   "name": "DSWD",
+   "url": "https://www.dswd.gov.ph/",
+   "desc": "Social welfare: 4Ps, AICS crisis assistance, disaster relief packs.",
+   "status": "live",
+   "checked": "2026-10-29"
+  },
+  {
+   "cat": "Health",
+   "name": "WHO Philippines",
+   "url": "https://www.who.int/philippines",
+   "desc": "Health data and advisories for the Philippines.",
+   "status": "live",
+   "checked": "2026-10-29"
+  }
+ ]
+}

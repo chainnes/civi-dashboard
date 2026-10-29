@@ -1,0 +1,240 @@
+{
+ "name": "Civi ingest \u2192 Supabase (news, directory)",
+ "nodes": [
+  {
+   "name": "Every 2 hours",
+   "type": "n8n-nodes-base.scheduleTrigger",
+   "typeVersion": 1.2,
+   "position": [
+    0,
+    0
+   ],
+   "parameters": {
+    "rule": {
+     "interval": [
+      {
+       "field": "hours",
+       "hoursInterval": 2
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Feeds",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    220,
+    0
+   ],
+   "parameters": {
+    "jsCode": "return [{name:'Rappler',url:'https://www.rappler.com/feed/'},{name:'GMA News',url:'https://data.gmanetwork.com/gno/rss/news/feed.xml'},{name:'Philstar',url:'https://www.philstar.com/rss/headlines'}].map(j=>({json:j}));"
+   }
+  },
+  {
+   "name": "Read RSS",
+   "type": "n8n-nodes-base.rssFeedRead",
+   "typeVersion": 1.1,
+   "position": [
+    440,
+    0
+   ],
+   "parameters": {
+    "url": "={{$json.url}}",
+    "options": {}
+   }
+  },
+  {
+   "name": "Tag (keyword, experimental)",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    660,
+    0
+   ],
+   "parameters": {
+    "jsCode": "const T={\"Disaster & Weather\":/typhoon|storm|flood|quake|volcan|landslide|pagasa|phivolcs|rain|bagyo|ndrrmc|evacua/i,\"Economy & Jobs\":/peso|inflation|economy|gdp|jobs|employment|price|tariff|business|invest|wage/i,\"Governance\":/senate|congress|ombudsman|court|comelec|corruption|government|dpwh|budget|lgu|mayor|governor/i,\"Health\":/health|doh|hospital|dengue|vaccine|disease|philhealth/i,\"Education\":/school|student|deped|ched|tesda|education|teacher/i,\"Environment\":/climate|environment|denr|forest|reef|pollution|mining|wildlife|water|power|energy/i,\"Security & Sea\":/west philippine sea|coast guard|military|afp|police|pnp|crime|drug/i};\nconst R={\"NCR\":/manila|quezon city|makati|pasig|taguig|ncr/i,\"Luzon\":/luzon|cagayan|ilocos|pampanga|bulacan|batangas|cavite|laguna|baguio|bicol|pangasinan|palawan/i,\"Visayas\":/visayas|cebu|iloilo|bohol|leyte|samar|negros|tacloban/i,\"Mindanao\":/mindanao|davao|zamboanga|cotabato|bukidnon|surigao|barmm/i};\nconst NEG=/dead|death|kill|damage|flood|loss|crisis|hike|shortage|corrupt|arrest|injur|missing|decline|fraud|scam/gi, POS=/rise|growth|award|win|launch|open|approve|rescue|aid|boost|complete|grant|recover|improve/gi;\nreturn $input.all().map(i=>{const j=i.json, t=(j.title||'')+' '+(j.contentSnippet||'');\n const s=(t.match(POS)||[]).length-(t.match(NEG)||[]).length;\n return {json:{source:$('Feeds').item?.json?.name||'RSS',title:j.title,link:j.link,published_at:j.isoDate||null,summary:(j.contentSnippet||'').slice(0,300),\n  topics:Object.keys(T).filter(k=>T[k].test(t)).concat([]).length?Object.keys(T).filter(k=>T[k].test(t)):['Other'],\n  regions:Object.keys(R).filter(k=>R[k].test(t)).length?Object.keys(R).filter(k=>R[k].test(t)):['National/Unspecified'],\n  sentiment:s>0?'positive':s<0?'negative':'neutral'}}});"
+   }
+  },
+  {
+   "name": "Upsert news_items",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    880,
+    0
+   ],
+   "parameters": {
+    "method": "POST",
+    "url": "={{$env.SUPABASE_URL}}/rest/v1/news_items?on_conflict=link",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "sendHeaders": true,
+    "headerParameters": {
+     "parameters": [
+      {
+       "name": "apikey",
+       "value": "={{$env.SUPABASE_SERVICE_ROLE_KEY}}"
+      },
+      {
+       "name": "Prefer",
+       "value": "resolution=merge-duplicates,return=minimal"
+      }
+     ]
+    },
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($input.all().map(i => i.json)) }}",
+    "options": {}
+   },
+   "executeOnce": true,
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "",
+     "name": "Supabase service role (Authorization: Bearer <service_role key>)"
+    }
+   }
+  },
+  {
+   "name": "Luma Manila (public)",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    220,
+    220
+   ],
+   "parameters": {
+    "url": "https://api.lu.ma/discover/get-paginated-events?discover_place_api_id=discplace-XeAvnK62YmCW54R&pagination_limit=50",
+    "options": {}
+   }
+  },
+  {
+   "name": "Map to directory",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    440,
+    220
+   ],
+   "parameters": {
+    "jsCode": "return ($input.first().json.entries||[]).map(e=>{const v=e.event,c=(v.geo_address_info||{}).city||'';return {json:{type:'event',name:v.name,location:/manila|makati|taguig|pasig|quezon|mandaluyong|pasay/i.test(c)?'NCR':(c?'Luzon':'Online'),city:c,tags:['general'],roles:['student','professional','volunteer'],source:'Luma',url:'https://luma.com/'+v.url,starts_at:v.start_at,external_id:v.api_id}}});"
+   }
+  },
+  {
+   "name": "Upsert directory",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    660,
+    220
+   ],
+   "parameters": {
+    "method": "POST",
+    "url": "={{$env.SUPABASE_URL}}/rest/v1/directory?on_conflict=source,external_id",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "sendHeaders": true,
+    "headerParameters": {
+     "parameters": [
+      {
+       "name": "apikey",
+       "value": "={{$env.SUPABASE_SERVICE_ROLE_KEY}}"
+      },
+      {
+       "name": "Prefer",
+       "value": "resolution=merge-duplicates,return=minimal"
+      }
+     ]
+    },
+    "sendBody": true,
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($input.all().map(i => i.json)) }}",
+    "options": {}
+   },
+   "executeOnce": true,
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "",
+     "name": "Supabase service role (Authorization: Bearer <service_role key>)"
+    }
+   }
+  }
+ ],
+ "connections": {
+  "Every 2 hours": {
+   "main": [
+    [
+     {
+      "node": "Feeds",
+      "type": "main",
+      "index": 0
+     },
+     {
+      "node": "Luma Manila (public)",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Feeds": {
+   "main": [
+    [
+     {
+      "node": "Read RSS",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Read RSS": {
+   "main": [
+    [
+     {
+      "node": "Tag (keyword, experimental)",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Tag (keyword, experimental)": {
+   "main": [
+    [
+     {
+      "node": "Upsert news_items",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Luma Manila (public)": {
+   "main": [
+    [
+     {
+      "node": "Map to directory",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Map to directory": {
+   "main": [
+    [
+     {
+      "node": "Upsert directory",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  }
+ },
+ "settings": {
+  "timezone": "Asia/Manila"
+ }
+}

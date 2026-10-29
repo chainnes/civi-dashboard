@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>Signing in… · Civi</title><body style="background:#05080f;color:#e6f1ff;font-family:system-ui;display:grid;place-items:center;height:100vh">
+<p id="m">Signing you in…</p>
+<script>
+// Supabase returns tokens in the URL fragment (never sent to servers). We hand them to /api/auth/session, which
+// verifies them and stores them in HttpOnly cookies, then wipe the fragment.
+const h = new URLSearchParams(location.hash.slice(1)); history.replaceState(null, "", "/auth-callback.html");
+if (!h.get("access_token")) document.getElementById("m").textContent = "Sign-in failed or was cancelled. " + (h.get("error_description") || "");
+else fetch("/api/auth/session", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ access_token: h.get("access_token"), refresh_token: h.get("refresh_token"), expires_in: +h.get("expires_in") || 3600 }) })
+  .then(r => { location.replace(r.ok ? "/#/map" : "/#/map?login=failed"); });
+</script>

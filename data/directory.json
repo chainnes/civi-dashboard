@@ -1,0 +1,204 @@
+{
+ "sample": false,
+ "fetched_at": "2026-10-28T13:14:45.335441+00:00",
+ "note": "Real public listings: Luma public events (Manila) and official agency websites. IG/Facebook are not scraped.",
+ "items": [
+  {
+   "type": "event",
+   "name": "🪩 Dark Romance: 'Til Death Do Us Prom Day 2",
+   "location": "NCR",
+   "city": "Pasig",
+   "tags": [
+    "arts"
+   ],
+   "roles": [
+    "student",
+    "professional",
+    "volunteer"
+   ],
+   "source": "Luma",
+   "url": "https://luma.com/mocgjidr",
+   "starts_at": "2026-10-31T05:00:00.000Z",
+   "external_id": "evt-87mCtrCu81p9dHx"
+  },
+  {
+   "type": "event",
+   "name": "DevDay Exchange Community: Manila",
+   "location": "NCR",
+   "city": "Taguig",
+   "tags": [
+    "tech",
+    "civic"
+   ],
+   "roles": [
+    "student",
+    "professional",
+    "volunteer"
+   ],
+   "source": "Luma",
+   "url": "https://luma.com/ujq875t4",
+   "starts_at": "2026-11-06T09:00:00.000Z",
+   "external_id": "evt-Dp96GP9QXCFhuI7"
+  },
+  {
+   "type": "event",
+   "name": "Build with AI: Coding Workshops for SMEs (Manila)",
+   "location": "NCR",
+   "city": "Taguig",
+   "tags": [
+    "tech",
+    "business",
+    "education"
+   ],
+   "roles": [
+    "student",
+    "professional",
+    "volunteer"
+   ],
+   "source": "Luma",
+   "url": "https://luma.com/4hbe9akr",
+   "starts_at": "2026-11-27T02:00:00.000Z",
+   "external_id": "evt-xv0gff1yulZRySr"
+  },
+  {
+   "type": "contact",
+   "name": "NDRRMC",
+   "location": "Nationwide",
+   "tags": [
+    "disaster",
+    "civic"
+   ],
+   "roles": [
+    "citizen",
+    "student",
+    "volunteer",
+    "professional"
+   ],
+   "source": "Website",
+   "url": "https://ndrrmc.gov.ph/",
+   "external_id": "https://ndrrmc.gov.ph/"
+  },
+  {
+   "type": "contact",
+   "name": "PAGASA",
+   "location": "Nationwide",
+   "tags": [
+    "disaster",
+    "environment"
+   ],
+   "roles": [
+    "citizen",
+    "student",
+    "volunteer",
+    "professional"
+   ],
+   "source": "Website",
+   "url": "https://www.pagasa.dost.gov.ph/",
+   "external_id": "https://www.pagasa.dost.gov.ph/"
+  },
+  {
+   "type": "contact",
+   "name": "PHIVOLCS",
+   "location": "Nationwide",
+   "tags": [
+    "disaster"
+   ],
+   "roles": [
+    "citizen",
+    "student",
+    "volunteer",
+    "professional"
+   ],
+   "source": "Website",
+   "url": "https://www.phivolcs.dost.gov.ph/",
+   "external_id": "https://www.phivolcs.dost.gov.ph/"
+  },
+  {
+   "type": "contact",
+   "name": "TESDA",
+   "location": "Nationwide",
+   "tags": [
+    "education",
+    "jobs"
+   ],
+   "roles": [
+    "citizen",
+    "student",
+    "volunteer",
+    "professional"
+   ],
+   "source": "Website",
+   "url": "https://www.tesda.gov.ph/",
+   "external_id": "https://www.tesda.gov.ph/"
+  },
+  {
+   "type": "contact",
+   "name": "DOLE PhilJobNet",
+   "location": "Nationwide",
+   "tags": [
+    "jobs"
+   ],
+   "roles": [
+    "citizen",
+    "student",
+    "volunteer",
+    "professional"
+   ],
+   "source": "Website",
+   "url": "https://philjobnet.gov.ph/",
+   "external_id": "https://philjobnet.gov.ph/"
+  },
+  {
+   "type": "contact",
+   "name": "DOST-SEI",
+   "location": "Nationwide",
+   "tags": [
+    "education",
+    "tech"
+   ],
+   "roles": [
+    "citizen",
+    "student",
+    "volunteer",
+    "professional"
+   ],
+   "source": "Website",
+   "url": "https://www.sei.dost.gov.ph/",
+   "external_id": "https://www.sei.dost.gov.ph/"
+  },
+  {
+   "type": "contact",
+   "name": "DENR",
+   "location": "Nationwide",
+   "tags": [
+    "environment"
+   ],
+   "roles": [
+    "citizen",
+    "student",
+    "volunteer",
+    "professional"
+   ],
+   "source": "Website",
+   "url": "https://www.denr.gov.ph/",
+   "external_id": "https://www.denr.gov.ph/"
+  },
+  {
+   "type": "contact",
+   "name": "DOH",
+   "location": "Nationwide",
+   "tags": [
+    "health"
+   ],
+   "roles": [
+    "citizen",
+    "student",
+    "volunteer",
+    "professional"
+   ],
+   "source": "Website",
+   "url": "https://doh.gov.ph/",
+   "external_id": "https://doh.gov.ph/"
+  }
+ ]
+}

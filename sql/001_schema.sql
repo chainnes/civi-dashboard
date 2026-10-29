@@ -1,0 +1,94 @@
+-- Civi Supabase schema v2. Run once in Supabase SQL editor (Dashboard > SQL).
+-- Security model: the browser NEVER talks to Supabase. Cloudflare Pages Functions call it with the
+-- anon key (env var). RLS: anon may SELECT public tables and EXECUTE the RPCs below; no direct writes.
+-- n8n ingest uses the service_role key (stored only in n8n credentials), which bypasses RLS.
+create extension if not exists vector;
+create extension if not exists pgcrypto;
+
+create table if not exists sources (id bigserial primary key, name text unique not null,
+  kind text check (kind in ('rss','api','luma','eventbrite','website','law')), url text, active boolean default true);
+
+create table if not exists news_items (id bigserial primary key, source text not null, title text not null, link text unique not null,
+  published_at timestamptz, summary text, topics text[], regions text[], sentiment text, ai_summary text,
+  embedding vector(768), fetched_at timestamptz default now());
+
+create table if not exists kpis (id bigserial primary key, day date not null default current_date, name text not null,
+  value numeric not null, unit text, method text not null default 'keyword-count (experimental)', source text,
+  unique (day, name));
+
+create table if not exists hazard_events (id bigserial primary key, kind text, title text, magnitude numeric,
+  lat double precision, lon double precision, occurred_at timestamptz, url text unique, source text, fetched_at timestamptz default now());
+
+create table if not exists directory (id bigserial primary key, type text check (type in ('contact','event','job','certification','company')),
+  name text not null, location text, city text, tags text[], roles text[], source text, url text, starts_at timestamptz,
+  external_id text not null, fetched_at timestamptz default now(), unique (source, external_id));
+
+create table if not exists law_refs (id bigserial primary key, source text not null, kind text, number text, title text not null,
+  enacted text, url text unique not null, keywords tsvector generated always as (to_tsvector('english', title)) stored,
+  fetched_at timestamptz default now());
+create index if not exists law_refs_kw on law_refs using gin (keywords);
+
+create table if not exists solutions (id bigserial primary key, topic text not null, scope text not null default 'barangay'
+    check (scope in ('barangay','city','province','region','national')),
+  region text, lang text default 'en', body text not null check (char_length(body) between 5 and 280),
+  author_hash text not null, embedding vector(768), created_at timestamptz default now());
+
+create table if not exists votes (solution_id bigint references solutions(id) on delete cascade, voter_hash text not null,
+  created_at timestamptz default now(), primary key (solution_id, voter_hash));
+
+create table if not exists reports (solution_id bigint references solutions(id) on delete cascade, reporter_hash text not null,
+  reason text check (char_length(reason) <= 140), created_at timestamptz default now(), primary key (solution_id, reporter_hash));
+
+-- Ranking (documented in README). Hidden when reports >= 3.
+create or replace function topic_weight(t text) returns numeric language sql immutable as $$
+  select case t when 'Disaster & Weather' then 1.5 when 'Health' then 1.4 when 'Security & Sea' then 1.3
+    when 'Environment' then 1.2 when 'Governance' then 1.1 when 'Economy & Jobs' then 1.1 when 'Education' then 1.0 else 0.9 end $$;
+create or replace function scope_weight(s text) returns numeric language sql immutable as $$
+  select case s when 'national' then 1.6 when 'region' then 1.45 when 'province' then 1.3 when 'city' then 1.15 else 1.0 end $$;
+
+create or replace view solution_ranked with (security_invoker = true) as
+select s.id, s.topic, s.scope, s.region, s.lang, s.body, s.created_at,
+  coalesce(v.n,0) votes, coalesce(r.n,0) reports,
+  round(((ln(1+coalesce(v.n,0)) + 1) * topic_weight(s.topic) * scope_weight(s.scope)
+    * exp(-ln(2) * extract(epoch from now()-s.created_at)/3600/72))::numeric, 4) score
+from solutions s
+left join (select solution_id, count(*) n from votes group by 1) v on v.solution_id = s.id
+left join (select solution_id, count(*) n from reports group by 1) r on r.solution_id = s.id
+where coalesce(r.n,0) < 3;
+
+-- RPCs (security definer => they can write even though anon has no write policy). Rate limits enforced here.
+create or replace function post_solution(p_topic text, p_scope text, p_region text, p_lang text, p_body text, p_author text)
+returns bigint language plpgsql security definer set search_path = public as $$
+declare nid bigint; begin
+  if (select count(*) from solutions where author_hash = p_author and created_at > now() - interval '1 hour') >= 5
+    then raise exception 'rate_limited'; end if;
+  insert into solutions(topic, scope, region, lang, body, author_hash) values (p_topic, coalesce(p_scope,'barangay'), p_region, coalesce(p_lang,'en'), p_body, p_author)
+  returning id into nid; return nid; end $$;
+
+create or replace function cast_vote(p_solution bigint, p_voter text) returns text language plpgsql security definer set search_path = public as $$
+begin
+  if (select count(*) from votes where voter_hash = p_voter and created_at > now() - interval '1 hour') >= 30 then return 'rate_limited'; end if;
+  insert into votes(solution_id, voter_hash) values (p_solution, p_voter) on conflict do nothing;
+  return case when found then 'ok' else 'duplicate' end; end $$;
+
+create or replace function report_solution(p_solution bigint, p_reporter text, p_reason text) returns text language plpgsql security definer set search_path = public as $$
+begin
+  if (select count(*) from reports where reporter_hash = p_reporter and created_at > now() - interval '1 day') >= 10 then return 'rate_limited'; end if;
+  insert into reports(solution_id, reporter_hash, reason) values (p_solution, p_reporter, left(p_reason,140)) on conflict do nothing;
+  return case when found then 'ok' else 'duplicate' end; end $$;
+
+-- RLS
+alter table sources enable row level security; alter table news_items enable row level security; alter table kpis enable row level security;
+alter table hazard_events enable row level security; alter table directory enable row level security; alter table law_refs enable row level security;
+alter table solutions enable row level security; alter table votes enable row level security; alter table reports enable row level security;
+do $$ declare t text; begin
+  foreach t in array array['sources','news_items','kpis','hazard_events','directory','law_refs'] loop
+    execute format('drop policy if exists "public read" on %I', t);
+    execute format('create policy "public read" on %I for select to anon, authenticated using (true)', t);
+  end loop; end $$;
+-- solutions/votes/reports: no anon policies => author/voter hashes are never readable; read via ranked_solutions().
+-- The ranked view runs as invoker, so give it the counts through a definer helper instead:
+create or replace function ranked_solutions(p_limit int default 100) returns setof solution_ranked
+language sql security definer set search_path = public as $$ select * from solution_ranked order by score desc limit p_limit $$;
+revoke all on function post_solution, cast_vote, report_solution, ranked_solutions from public;
+grant execute on function post_solution, cast_vote, report_solution, ranked_solutions to anon;

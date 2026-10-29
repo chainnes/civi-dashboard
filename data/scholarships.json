@@ -1,0 +1,452 @@
+{
+ "checked_at": "2026-10-29T01:29:12.217695+00:00",
+ "note": "Official pages only, checked live. Amounts and windows change every cycle: always confirm on the official site.",
+ "items": [
+  {
+   "scope": "Local",
+   "name": "CHED Tulong Dunong Program (TDP)",
+   "provider": "CHED / UniFAST",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Any",
+   "coverage": "Grant-in-aid per semester (amount per current guidelines)",
+   "deadline": "Check official site",
+   "eligibility": "Financially needy students in CHED-recognized HEIs; via CHED regional offices.",
+   "url": "https://unifast.gov.ph/"
+  },
+  {
+   "scope": "Local",
+   "name": "Tertiary Education Subsidy (TES)",
+   "provider": "UniFAST",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Any",
+   "coverage": "Subsidy for education-related expenses",
+   "deadline": "Check official site",
+   "eligibility": "Students in SUCs/LUCs/private HEIs; priority to Listahanan/4Ps households.",
+   "url": "https://unifast.gov.ph/tes.html"
+  },
+  {
+   "scope": "Local",
+   "name": "DOST-SEI Undergraduate Scholarships (RA 7687 / Merit / RA 10612)",
+   "provider": "DOST Science Education Institute",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Science, technology, engineering, math, science teaching",
+   "coverage": "Tuition, stipend, book & other allowances",
+   "deadline": "Check official site (exam usually announced mid-year)",
+   "eligibility": "Incoming college freshmen in priority S&T courses; national exam.",
+   "url": "https://www.sei.dost.gov.ph/"
+  },
+  {
+   "scope": "Local",
+   "name": "DOST-SEI Graduate Scholarships (ASTHRDP / ERDT)",
+   "provider": "DOST Science Education Institute",
+   "country": "Philippines",
+   "levels": [
+    "Masters",
+    "PhD"
+   ],
+   "fields": "Science & engineering",
+   "coverage": "Tuition, stipend, research grants",
+   "deadline": "Check official site",
+   "eligibility": "Graduate students in accredited PH universities in S&T fields.",
+   "url": "https://www.sei.dost.gov.ph/"
+  },
+  {
+   "scope": "Local",
+   "name": "GSIS Scholarship Program (GSP)",
+   "provider": "GSIS",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Any",
+   "coverage": "Tuition + allowance per GSIS guidelines",
+   "deadline": "Check official site",
+   "eligibility": "Dependents of active GSIS members within salary grade limits.",
+   "url": "https://www.gsis.gov.ph/"
+  },
+  {
+   "scope": "Local",
+   "name": "SSS Educational Assistance Loan Program",
+   "provider": "SSS",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Any",
+   "coverage": "Education loan (not a grant)",
+   "deadline": "Check official site",
+   "eligibility": "SSS members for themselves or a beneficiary; loan terms apply.",
+   "url": "https://www.sss.gov.ph/"
+  },
+  {
+   "scope": "Local",
+   "name": "SM College Scholarship",
+   "provider": "SM Foundation",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Selected courses (per call)",
+   "coverage": "Full tuition + monthly allowance",
+   "deadline": "Check official site",
+   "eligibility": "Incoming freshmen from low-income families with good grades.",
+   "url": "https://www.sm-foundation.org/"
+  },
+  {
+   "scope": "Local",
+   "name": "Ayala Foundation scholarships / youth programs",
+   "provider": "Ayala Foundation",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Varies",
+   "coverage": "Varies by program",
+   "deadline": "Check official site",
+   "eligibility": "Check current program calls.",
+   "url": "https://www.ayalafoundation.org/"
+  },
+  {
+   "scope": "Local",
+   "name": "Megaworld Foundation Scholarship",
+   "provider": "Megaworld Foundation",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Selected courses",
+   "coverage": "Tuition + allowance per program",
+   "deadline": "Check official site",
+   "eligibility": "Academically excellent, financially challenged students in partner schools.",
+   "url": "https://www.megaworldfoundation.com/"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Erasmus Mundus Joint Masters",
+   "provider": "European Union",
+   "country": "EU (multi-country)",
+   "levels": [
+    "Masters"
+   ],
+   "fields": "Any (program-specific)",
+   "coverage": "Full: tuition, travel, monthly allowance",
+   "deadline": "Check official site (often Oct–Feb)",
+   "eligibility": "Bachelor's degree; apply directly to each consortium.",
+   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en"
+  },
+  {
+   "scope": "Abroad",
+   "name": "MEXT Japanese Government Scholarship",
+   "provider": "Government of Japan (via Embassy in PH)",
+   "country": "Japan",
+   "levels": [
+    "UG",
+    "Masters",
+    "PhD",
+    "Short"
+   ],
+   "fields": "Any",
+   "coverage": "Full: tuition, monthly stipend, airfare",
+   "deadline": "Check official site (embassy recommendation usually Apr–May)",
+   "eligibility": "Age limits by category; embassy exam/interview.",
+   "url": "https://www.studyinjapan.go.jp/en/"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Manaaki New Zealand Scholarships",
+   "provider": "New Zealand MFAT",
+   "country": "New Zealand",
+   "levels": [
+    "Masters",
+    "PhD",
+    "Short"
+   ],
+   "fields": "Development priority fields",
+   "coverage": "Full: tuition, living, travel",
+   "deadline": "Check official site",
+   "eligibility": "Eligible ASEAN countries incl. PH; return home after.",
+   "url": "https://www.nzscholarships.govt.nz/"
+  },
+  {
+   "scope": "Abroad",
+   "name": "DAAD Scholarships (incl. EPOS)",
+   "provider": "German Academic Exchange Service",
+   "country": "Germany",
+   "levels": [
+    "Masters",
+    "PhD",
+    "Short"
+   ],
+   "fields": "Any (EPOS: development-related)",
+   "coverage": "Monthly stipend, insurance, travel",
+   "deadline": "Check official site",
+   "eligibility": "Programs vary; DAAD scholarship database.",
+   "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Swedish Institute Scholarships for Global Professionals",
+   "provider": "Swedish Institute",
+   "country": "Sweden",
+   "levels": [
+    "Masters"
+   ],
+   "fields": "Any",
+   "coverage": "Tuition, living allowance, travel grant",
+   "deadline": "Check official site (usually Feb)",
+   "eligibility": "Work + leadership experience; eligible country list.",
+   "url": "https://si.se/en/apply/scholarships/"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Stipendium Hungaricum",
+   "provider": "Tempus Public Foundation (Hungary)",
+   "country": "Hungary",
+   "levels": [
+    "UG",
+    "Masters",
+    "PhD",
+    "Short"
+   ],
+   "fields": "Any",
+   "coverage": "Tuition, monthly stipend, housing support",
+   "deadline": "Check official site (usually Nov–Jan)",
+   "eligibility": "PH is a partner country; nominated via sending partner.",
+   "url": "https://stipendiumhungaricum.hu/"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Commonwealth Scholarships",
+   "provider": "Commonwealth Scholarship Commission in the UK",
+   "country": "United Kingdom",
+   "levels": [
+    "Masters",
+    "PhD"
+   ],
+   "fields": "Development-related",
+   "coverage": "Full",
+   "deadline": "Check official site",
+   "eligibility": "Check eligible countries (Commonwealth members); PH is NOT a Commonwealth member, so only shared/distance schemes may apply.",
+   "url": "https://cscuk.fcdo.gov.uk/"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Türkiye Bursları (Türkiye Scholarships)",
+   "provider": "Government of Türkiye",
+   "country": "Türkiye",
+   "levels": [
+    "UG",
+    "Masters",
+    "PhD"
+   ],
+   "fields": "Any",
+   "coverage": "Tuition, stipend, housing, flights, Turkish course",
+   "deadline": "Check official site (usually Jan–Feb)",
+   "eligibility": "Age and grade limits by level.",
+   "url": "https://www.turkiyeburslari.gov.tr/"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Eiffel Excellence Scholarship",
+   "provider": "Campus France",
+   "country": "France",
+   "levels": [
+    "Masters",
+    "PhD"
+   ],
+   "fields": "Engineering, economics, law, politics, sciences",
+   "coverage": "Monthly allowance, travel, insurance",
+   "deadline": "Check official site (French universities nominate, usually by Jan)",
+   "eligibility": "Nominated by a French institution.",
+   "url": "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Orange Knowledge Programme / Netherlands scholarships",
+   "provider": "Nuffic (Netherlands)",
+   "country": "Netherlands",
+   "levels": [
+    "Masters",
+    "Short"
+   ],
+   "fields": "Varies",
+   "coverage": "Varies",
+   "deadline": "Check official site (OKP has ended; see Study in NL for current schemes)",
+   "eligibility": "Check Study in NL for current scholarships.",
+   "url": "https://www.studyinnl.org/finances/scholarships"
+  },
+  {
+   "scope": "Abroad",
+   "name": "ASEAN Undergraduate Scholarship (Singapore)",
+   "provider": "Ministry of Education Singapore",
+   "country": "Singapore",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Any",
+   "coverage": "Tuition (subsidized) + living allowance",
+   "deadline": "Check official site",
+   "eligibility": "ASEAN nationals admitted to Singapore autonomous universities.",
+   "url": "https://www.moe.gov.sg/financial-matters/awards-scholarships"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Brunei Darussalam Government Scholarship",
+   "provider": "Ministry of Foreign Affairs Brunei",
+   "country": "Brunei",
+   "levels": [
+    "UG",
+    "Masters",
+    "PhD"
+   ],
+   "fields": "Any",
+   "coverage": "Full",
+   "deadline": "Check official site (often Jan–Mar)",
+   "eligibility": "Foreign nationals incl. ASEAN; via MFA Brunei / embassy.",
+   "url": "https://www.mfa.gov.bn/"
+  },
+  {
+   "scope": "Local",
+   "name": "OWWA Education for Development Scholarship Program (EDSP)",
+   "provider": "OWWA",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Any 4-5 yr course",
+   "coverage": "Up to ₱60,000 per school year (per OWWA)",
+   "deadline": "Check official site",
+   "eligibility": "Dependents of active OWWA members; qualifying exam.",
+   "url": "https://owwa.gov.ph/",
+   "verified_via": "web fetch (site blocks scripted checks)"
+  },
+  {
+   "scope": "Local",
+   "name": "OWWA ELAP (Education and Livelihood Assistance Program)",
+   "provider": "OWWA",
+   "country": "Philippines",
+   "levels": [
+    "UG"
+   ],
+   "fields": "Any",
+   "coverage": "Education assistance for dependents of deceased OFWs",
+   "deadline": "Check official site",
+   "eligibility": "Children of deceased OWWA-member OFWs.",
+   "url": "https://owwa.gov.ph/",
+   "verified_via": "web fetch (site blocks scripted checks)"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Chevening Scholarships",
+   "provider": "UK Government (FCDO)",
+   "country": "United Kingdom",
+   "levels": [
+    "Masters"
+   ],
+   "fields": "Any",
+   "coverage": "Full: tuition, stipend, flights",
+   "deadline": "Check official site (usually Aug–Nov)",
+   "eligibility": "2+ years work experience; return home for 2 years after.",
+   "url": "https://www.chevening.org/",
+   "verified_via": "web fetch (site blocks scripted checks)"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Fulbright Philippines (Graduate Student / Scholar)",
+   "provider": "PAEF / US Government",
+   "country": "United States",
+   "levels": [
+    "Masters",
+    "PhD"
+   ],
+   "fields": "Any",
+   "coverage": "Tuition, stipend, travel",
+   "deadline": "Check official site",
+   "eligibility": "Filipino citizens; returning-home requirement.",
+   "url": "https://www.fulbright.org.ph/",
+   "verified_via": "web fetch (site blocks scripted checks)"
+  },
+  {
+   "scope": "Abroad",
+   "name": "Global Korea Scholarship (GKS, formerly KGSP)",
+   "provider": "Korean Government (NIIED)",
+   "country": "South Korea",
+   "levels": [
+    "UG",
+    "Masters",
+    "PhD"
+   ],
+   "fields": "Any",
+   "coverage": "Full: tuition, stipend, airfare, Korean language year",
+   "deadline": "Check official site (graduate track often Feb–Mar)",
+   "eligibility": "Via embassy or university track.",
+   "url": "https://www.studyinkorea.go.kr/",
+   "verified_via": "web fetch (site blocks scripted checks)"
+  }
+ ],
+ "dropped": [
+  {
+   "name": "CHED Merit Scholarship Program (CMSP)",
+   "tried": [
+    "https://ched.gov.ph/cmsp/",
+    "https://ched.gov.ph/"
+   ],
+   "result": "[403]"
+  },
+  {
+   "name": "LGU scholarships (city/municipal/provincial)",
+   "tried": [
+    "https://www.dilg.gov.ph/"
+   ],
+   "result": "['unreachable']"
+  },
+  {
+   "name": "Metrobank Foundation scholarships",
+   "tried": [
+    "https://www.mbfoundation.org.ph/",
+    "https://mbfoundation.org.ph/"
+   ],
+   "result": "[403]"
+  },
+  {
+   "name": "Jollibee Group Foundation programs",
+   "tried": [
+    "https://www.jollibeegroupfoundation.org/",
+    "https://jollibeegroupfoundation.org/"
+   ],
+   "result": "['unreachable']"
+  },
+  {
+   "name": "Australia Awards Scholarships – Philippines",
+   "tried": [
+    "https://www.australiaawardsphilippines.org/",
+    "https://www.dfat.gov.au/people-to-people/australia-awards"
+   ],
+   "result": "[503]"
+  },
+  {
+   "name": "Chinese Government Scholarship (CSC)",
+   "tried": [
+    "https://www.campuschina.org/",
+    "https://www.csc.edu.cn/"
+   ],
+   "result": "[412]"
+  },
+  {
+   "name": "ADB–Japan Scholarship Program (ADB-JSP)",
+   "tried": [
+    "https://www.adb.org/work-with-us/careers/japan-scholarship-program"
+   ],
+   "result": "[403]"
+  }
+ ]
+}

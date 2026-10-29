@@ -1,0 +1,232 @@
+{
+"as_of": "2026-10-29",
+"source": "Philippine Stock Exchange (PSE EDGE company directory)",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"note": "A sample of large PSE-listed companies by industry; not an endorsement. Full list on PSE EDGE.",
+"items": [
+{
+"name": "BDO Unibank",
+"ticker": "BDO",
+"industry": "Banking",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Bank of the Philippine Islands",
+"ticker": "BPI",
+"industry": "Banking",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Metropolitan Bank & Trust",
+"ticker": "MBT",
+"industry": "Banking",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Security Bank",
+"ticker": "SECB",
+"industry": "Banking",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Ayala Corporation",
+"ticker": "AC",
+"industry": "Holding firms",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "SM Investments",
+"ticker": "SM",
+"industry": "Holding firms",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "JG Summit Holdings",
+"ticker": "JGS",
+"industry": "Holding firms",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Aboitiz Equity Ventures",
+"ticker": "AEV",
+"industry": "Holding firms",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "GT Capital Holdings",
+"ticker": "GTCAP",
+"industry": "Holding firms",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "DMCI Holdings",
+"ticker": "DMC",
+"industry": "Holding firms",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "LT Group",
+"ticker": "LTG",
+"industry": "Holding firms",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Ayala Land",
+"ticker": "ALI",
+"industry": "Property",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "SM Prime Holdings",
+"ticker": "SMPH",
+"industry": "Property",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Megaworld",
+"ticker": "MEG",
+"industry": "Property",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Jollibee Foods",
+"ticker": "JFC",
+"industry": "Food & beverage",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Universal Robina",
+"ticker": "URC",
+"industry": "Food & beverage",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Monde Nissin",
+"ticker": "MONDE",
+"industry": "Food & beverage",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Century Pacific Food",
+"ticker": "CNPF",
+"industry": "Food & beverage",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Emperador",
+"ticker": "EMI",
+"industry": "Food & beverage",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Puregold Price Club",
+"ticker": "PGOLD",
+"industry": "Retail",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Robinsons Retail",
+"ticker": "RRHI",
+"industry": "Retail",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Wilcon Depot",
+"ticker": "WLCON",
+"industry": "Retail",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "PLDT",
+"ticker": "TEL",
+"industry": "Telecom",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Globe Telecom",
+"ticker": "GLO",
+"industry": "Telecom",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Converge ICT",
+"ticker": "CNVRG",
+"industry": "Telecom",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Manila Electric Co. (Meralco)",
+"ticker": "MER",
+"industry": "Power & utilities",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "ACEN",
+"ticker": "ACEN",
+"industry": "Power & utilities",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Manila Water",
+"ticker": "MWC",
+"industry": "Power & utilities",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Semirara Mining and Power",
+"ticker": "SCC",
+"industry": "Mining & energy",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "International Container Terminal Services",
+"ticker": "ICT",
+"industry": "Transport & logistics",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Cebu Air (Cebu Pacific)",
+"ticker": "CEB",
+"industry": "Transport & logistics",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+},
+{
+"name": "Bloomberry Resorts",
+"ticker": "BLOOM",
+"industry": "Gaming & leisure",
+"url": "https://edge.pse.com.ph/companyDirectory/form.do",
+"link": "live"
+}
+]
+}

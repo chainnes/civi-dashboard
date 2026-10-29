@@ -1,0 +1,292 @@
+{
+ "as_of": "2026-10-29",
+ "course": "Paano Kumita Online (How to Earn Online)",
+ "note": "Steps are a simple guide as of 2026-10-29. No income is promised; rules and fees change, so always check the official site.",
+ "items": [
+  {
+   "id": "earn01",
+   "cat": "Paano Kumita Online",
+   "title": "Getting started: wallets, email and portfolio",
+   "title_tl": "Pagsisimula: wallet, email at portfolio",
+   "src": "https://www.gcash.com/",
+   "steps": [
+    "Use a separate email only for work and gigs; turn on 2-step verification.",
+    "Set up a verified e-wallet (GCash or Maya) with your own valid ID. Never lend your account to others.",
+    "Open a PayPal account in your own name and link a PH bank or e-wallet for withdrawals, if the platform pays via PayPal.",
+    "Make a simple portfolio: 3 to 5 samples of your work (Google Drive, Canva or a free site).",
+    "Write a one-paragraph profile: skills, tools, availability and time zone."
+   ],
+   "tip": "Never share OTPs, passwords or MPINs with anyone, including 'recruiters'.",
+   "related": [
+    "GCash for Business",
+    "Maya Business"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn02",
+   "cat": "Paano Kumita Online",
+   "title": "Iwas scam: red flags and where to report",
+   "title_tl": "Iwas scam: mga red flag at saan magre-report",
+   "src": "https://cicc.gov.ph/report/",
+   "steps": [
+    "Red flag: you must pay a fee, 'starter kit' or deposit to get work. Legit platforms don't charge to apply.",
+    "Red flag: you earn mainly by recruiting people, or 'guaranteed' daily income. That is a pyramid or investment scam.",
+    "Red flag: they ask you to move chat and payment off the platform, or to 'like and follow' for pay then 'top up' to withdraw.",
+    "Check the SEC advisories list before joining any 'earn' or 'investment' group.",
+    "Report online scams to CICC (hotline 1326), investment scams to SEC, and seller/consumer issues to DTI."
+   ],
+   "tip": "If it sounds too easy, it probably is.",
+   "related": [
+    "Iwas scam: never pay to get a job",
+    "Iwas scam: report online job scams to CICC"
+   ],
+   "link": "bot-protected"
+  },
+  {
+   "id": "earn03",
+   "cat": "Paano Kumita Online",
+   "title": "Surveys and micro-tasks",
+   "title_tl": "Survey at micro-task",
+   "src": "https://surveys.google.com/google-opinion-rewards/",
+   "steps": [
+    "Check that the platform accepts the Philippines before signing up; many survey sites do not.",
+    "Sign up with your real details; fake details get accounts banned and payouts cancelled.",
+    "Read the payout method and minimum before working (PayPal, bank or app credit).",
+    "Expect small, irregular amounts; treat it as pocket money, not a salary.",
+    "Track time spent vs. earned to decide if it's worth it."
+   ],
+   "tip": "Google Opinion Rewards pays Google Play credit, not cash.",
+   "related": [
+    "Google Opinion Rewards",
+    "Clickworker",
+    "Appen",
+    "TELUS Digital AI Community",
+    "Prolific",
+    "YouGov Philippines",
+    "Toluna Philippines",
+    "Swagbucks (incl. watch-to-earn)"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn04",
+   "cat": "Paano Kumita Online",
+   "title": "Freelancing basics: profile, proposal, first client",
+   "title_tl": "Freelancing basics: profile, proposal, unang client",
+   "src": "https://www.dict.gov.ph/rural-impact-sourcing/",
+   "steps": [
+    "Pick one skill to start (virtual assistance, writing, design, data entry, social media).",
+    "Take free training (DICT, TESDA Online) to build skills.",
+    "Create a complete profile on one or two platforms; add your portfolio.",
+    "Send short, specific proposals that answer the client's post; don't copy-paste.",
+    "Keep all contracts and payments on-platform until you trust the client."
+   ],
+   "tip": "Read each platform's fees and payout rules before accepting work.",
+   "related": [
+    "Upwork",
+    "OnlineJobs.ph",
+    "Fiverr",
+    "Freelancer.com",
+    "DICT Rural Impact Sourcing"
+   ],
+   "link": "bot-protected"
+  },
+  {
+   "id": "earn05",
+   "cat": "Paano Kumita Online",
+   "title": "Selling online and reselling",
+   "title_tl": "Pagbebenta online at reselling",
+   "src": "https://seller.shopee.ph/",
+   "steps": [
+    "Choose what to sell: preloved items, reselling, or your own products.",
+    "Open a seller account on one marketplace and read its fees and policies.",
+    "Take clear photos, write honest descriptions and set prices that cover fees and shipping.",
+    "Use the platform's checkout; avoid advance payments outside it.",
+    "Register your business (DTI) and with BIR once you sell regularly."
+   ],
+   "tip": "Check that items you resell are not counterfeit or prohibited.",
+   "related": [
+    "Shopee Seller Centre",
+    "Lazada Seller Center",
+    "TikTok Shop Seller Center",
+    "Carousell PH",
+    "Facebook Marketplace (how it works)"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn06",
+   "cat": "Paano Kumita Online",
+   "title": "Affiliate marketing",
+   "title_tl": "Affiliate marketing",
+   "src": "https://affiliate.shopee.ph/",
+   "steps": [
+    "Join an official affiliate program and read its rules.",
+    "Share product links only for items you'd honestly recommend.",
+    "Disclose that you earn a commission from links.",
+    "Commissions are paid only on completed orders, per program terms."
+   ],
+   "tip": "Never buy your own links or spam groups; accounts get banned.",
+   "related": [
+    "Shopee Affiliate Program",
+    "Lazada Affiliate Program",
+    "TikTok Shop Affiliate"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn07",
+   "cat": "Paano Kumita Online",
+   "title": "Content creation and monetization",
+   "title_tl": "Content creation at monetization",
+   "src": "https://www.youtube.com/creators/how-things-work/video-monetization/",
+   "steps": [
+    "Pick a topic you can post about regularly.",
+    "Read each platform's official monetization eligibility (followers, watch time, region) on its own page.",
+    "Use only music and clips you have rights to.",
+    "Monetization requirements change; recheck the official pages."
+   ],
+   "tip": "Civi does not quote follower or income thresholds; read them on the official page.",
+   "related": [
+    "YouTube Partner Program",
+    "TikTok Creator Academy",
+    "Facebook monetization eligibility"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn08",
+   "cat": "Paano Kumita Online",
+   "title": "Digital products",
+   "title_tl": "Digital products",
+   "src": "https://gumroad.com/",
+   "steps": [
+    "Make something reusable: templates, e-books, presets, printables.",
+    "Choose a platform and read its fees and payout options.",
+    "Write a clear description and preview.",
+    "Only sell content you created or have rights to."
+   ],
+   "related": [
+    "Gumroad",
+    "Ko-fi"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn09",
+   "cat": "Paano Kumita Online",
+   "title": "Teaching online",
+   "title_tl": "Pagtuturo online",
+   "src": "https://preply.com/en/teach",
+   "steps": [
+    "Check each platform's requirements (language, degree, certificates, equipment).",
+    "Prepare a quiet space, headset and stable internet.",
+    "Make a short intro video if the platform asks.",
+    "Set your schedule and read the cancellation and payout rules."
+   ],
+   "related": [
+    "Preply (teach)",
+    "italki (teach)",
+    "Cambly tutors"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn10",
+   "cat": "Paano Kumita Online",
+   "title": "Print-on-demand and stock photos",
+   "title_tl": "Print-on-demand at stock photos",
+   "src": "https://submit.shutterstock.com/",
+   "steps": [
+    "Upload only original work you own.",
+    "Get signed releases for recognizable people or private property.",
+    "Follow each site's technical and content guidelines.",
+    "Earnings depend on sales; there is no fixed pay."
+   ],
+   "related": [
+    "Redbubble",
+    "Shutterstock Contributor",
+    "Adobe Stock Contributor",
+    "Etsy (sell)"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn11",
+   "cat": "Paano Kumita Online",
+   "title": "Rider and delivery gigs",
+   "title_tl": "Rider at delivery",
+   "src": "https://www.grab.com/ph/driver/",
+   "steps": [
+    "Apply only through the official app or website.",
+    "Prepare the license, registration and documents the platform lists.",
+    "Never pay 'agents' to get approved.",
+    "Know your coverage: check SSS, PhilHealth and Pag-IBIG as a self-employed member."
+   ],
+   "related": [
+    "Grab driver & rider sign-up",
+    "Lalamove driver sign-up"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn12",
+   "cat": "Paano Kumita Online",
+   "title": "Home-based food business",
+   "title_tl": "Home-based food business",
+   "src": "https://www.fda.gov.ph/",
+   "steps": [
+    "Check with your barangay and city hall for permits.",
+    "Get a sanitary permit and health certificates for food handlers.",
+    "Check FDA rules: some packaged foods need a License to Operate and product registration.",
+    "Register your business name with DTI and register with BIR."
+   ],
+   "tip": "Label ingredients and allergens honestly.",
+   "related": [
+    "FDA (License to Operate for food businesses)",
+    "DTI Business Name Registration"
+   ],
+   "link": "bot-protected"
+  },
+  {
+   "id": "earn13",
+   "cat": "Paano Kumita Online",
+   "title": "Legal and taxes",
+   "title_tl": "Legal at buwis",
+   "src": "https://www.bir.gov.ph/",
+   "steps": [
+    "Register a business name with DTI (sole proprietor) online.",
+    "Register with BIR as self-employed/professional and get your receipts/invoices.",
+    "Ask BIR or an accountant whether the 8% income tax option fits you; it has conditions.",
+    "Keep simple books: income, expenses and receipts, monthly.",
+    "File and pay on time to avoid penalties."
+   ],
+   "tip": "This is a general guide, not tax advice; confirm with BIR or a licensed accountant.",
+   "related": [
+    "DTI Business Name Registration",
+    "BIR (register as online seller)"
+   ],
+   "link": "live"
+  },
+  {
+   "id": "earn14",
+   "cat": "Paano Kumita Online",
+   "title": "Managing your income",
+   "title_tl": "Pag-manage ng kita",
+   "src": "https://www.pagibigfund.gov.ph/",
+   "steps": [
+    "Separate personal and gig money (two wallets or accounts).",
+    "Make a monthly budget: needs, savings, wants.",
+    "Build an emergency fund before big purchases.",
+    "Keep contributing to SSS, PhilHealth and Pag-IBIG as a self-employed/voluntary member.",
+    "Consider Pag-IBIG MP2 savings; read the official terms first."
+   ],
+   "tip": "Irregular income: save a portion of every payout.",
+   "related": [
+    "SB Corporation"
+   ],
+   "link": "live"
+  }
+ ]
+}
