@@ -9,8 +9,8 @@ node_modules/
 .DS_Store
 __pycache__/
 
+# .env.* ignores .env.example; keep the placeholders tracked.
 !.env.example
-.env.example
 !.dev.vars.example
 __MACOSX/
 *.log

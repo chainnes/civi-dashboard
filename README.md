@@ -4,6 +4,10 @@ Civi is a mobile-first web app (installable PWA) that turns "doom scrolling" int
 
 Owner: Charlene "Chai" Cordero · Domain: civi.chainnes.com · Status: closed beta from **Nov 17, 2026**, open beta target **Jan 8, 2027** (backup Jan 12).
 
+## License and contributing
+
+Civi is open source under the [MIT License](LICENSE) (Copyright 2026 chainnes). To contribute, read [CONTRIBUTING.md](CONTRIBUTING.md): fork the repo, copy `.dev.vars.example` to `.dev.vars` (never commit it), and open a small pull request. A maintainer reviews every PR before merge.
+
 ## Ground rules (built into the code)
 - **Real data only.** Every figure has a source and an as-of date. No invented stats, earnings or results.
 - **Verified links only.** Each Directory link is checked: `live` (HTTP 2xx/3xx) or `bot-protected` (401/403/429: site up but blocks bots). Dead and parked domains are dropped.
