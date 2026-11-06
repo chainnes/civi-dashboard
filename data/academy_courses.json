@@ -295,17 +295,11 @@
           "ill_alt_tl": "Isang briefcase"
         },
         {
-          "id": "start",
-          "title": "Start a business",
-          "title_tl": "Magsimula ng negosyo",
+          "id": "register",
+          "title": "Register a small business",
+          "title_tl": "Irehistro ang maliit na negosyo",
           "sections": [
-            "business",
-            "biz01",
-            "biz02",
-            "biz03",
-            "biz04",
-            "biz05",
-            "biz06"
+            "business"
           ],
           "ill": "m-business-start.svg",
           "ill_alt": "A small shop",
@@ -340,6 +334,72 @@
       ],
       "ill_alt": "A small shop",
       "ill_alt_tl": "Maliit na tindahan"
+    },
+    {
+      "id": "start-biz",
+      "icon": "🏪",
+      "ill": "business.svg",
+      "title": "How to start a business in the Philippines",
+      "title_tl": "Paano magsimula ng negosyo sa Pilipinas",
+      "disclaimer": "fin",
+      "ill_alt": "A small shop",
+      "ill_alt_tl": "Maliit na tindahan",
+      "modules": [
+        {
+          "id": "idea",
+          "title": "Step 1: Idea and a simple plan",
+          "title_tl": "Hakbang 1: Ideya at plano",
+          "sections": ["biz01"],
+          "ill": "m-education-paths.svg",
+          "ill_alt": "A one-page plan",
+          "ill_alt_tl": "Isang pahinang plano"
+        },
+        {
+          "id": "name",
+          "title": "Step 2: Register the name or the company",
+          "title_tl": "Hakbang 2: DTI, SEC, o CDA",
+          "sections": ["biz02"],
+          "ill": "m-ids-clear.svg",
+          "ill_alt": "A name registration",
+          "ill_alt_tl": "Rehistrasyon ng pangalan"
+        },
+        {
+          "id": "permit",
+          "title": "Step 3: Barangay clearance and Mayor's permit",
+          "title_tl": "Hakbang 3: Barangay clearance at Mayor's permit",
+          "sections": ["biz03"],
+          "ill": "m-civics-local.svg",
+          "ill_alt": "A municipal hall",
+          "ill_alt_tl": "Munisipyo"
+        },
+        {
+          "id": "bir",
+          "title": "Step 4: BIR registration (including freelancers)",
+          "title_tl": "Hakbang 4: BIR (pati freelancer)",
+          "sections": ["biz04"],
+          "ill": "m-business-tax.svg",
+          "ill_alt": "A tax receipt",
+          "ill_alt_tl": "Resibo ng buwis"
+        },
+        {
+          "id": "contributions",
+          "title": "Step 5: SSS, PhilHealth, and Pag-IBIG",
+          "title_tl": "Hakbang 5: SSS, PhilHealth, Pag-IBIG",
+          "sections": ["biz05"],
+          "ill": "m-benefits-sss.svg",
+          "ill_alt": "A benefits shield",
+          "ill_alt_tl": "Kalasag ng benepisyo"
+        },
+        {
+          "id": "bmbe",
+          "title": "Step 6: Negosyo Center and BMBE",
+          "title_tl": "Hakbang 6: Negosyo Center at BMBE",
+          "sections": ["biz06"],
+          "ill": "m-business-start.svg",
+          "ill_alt": "A small shop",
+          "ill_alt_tl": "Maliit na tindahan"
+        }
+      ]
     },
     {
       "id": "earn",
