@@ -83,15 +83,15 @@
   "academy": [
    {
     "i": "💻",
-    "t": "Earning online (14 sections)",
-    "tl": "Paano kumita online (14 seksyon)",
-    "u": "#/course/work/earn01"
+    "t": "Earning online and scam awareness",
+    "tl": "Kumita online at iwas-scam",
+    "u": "#/course/earn/earn01"
    },
    {
     "i": "🥗",
     "t": "Healthy lifestyle and nutrition",
     "tl": "Malusog na pamumuhay at nutrisyon",
-    "u": "#/howto?id=health01"
+    "u": "#/course/food/food-pinggang"
    },
    {
     "i": "🧭",
@@ -103,13 +103,13 @@
     "i": "🏪",
     "t": "How to start a business in the Philippines",
     "tl": "Paano magsimula ng negosyo sa Pilipinas",
-    "u": "#/course/work/biz01"
+    "u": "#/course/business/biz01"
    },
    {
     "i": "🏭",
     "t": "Industries in the Philippines",
     "tl": "Mga industriya sa Pilipinas",
-    "u": "#/course/work/ind01"
+    "u": "#/course/careers/ind01"
    },
    {
     "i": "🎒",

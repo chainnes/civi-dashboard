@@ -297,9 +297,14 @@ async function viewHowto() {
   const qid = new URLSearchParams((location.hash.split("?")[1] || "")).get("id");
   let course, sec;
   if (parts[0] === "course" && parts[1]) {
-    course = pack.courses.find(c => c.id === parts[1]);
     const want = parts[2] || qid;
-    sec = course && (flatSecs(course).find(s => s.id === want) || flatSecs(course)[0]);
+    course = pack.courses.find(c => c.id === parts[1]);
+    sec = course && flatSecs(course).find(s => s.id === want);
+    if (!sec && want) {
+      const owner = pack.courses.find(c => flatSecs(c).some(s => s.id === want));
+      if (owner) { course = owner; sec = flatSecs(owner).find(s => s.id === want); }
+    }
+    if (course && !sec) sec = flatSecs(course)[0];
   } else if (qid) {
     course = pack.courses.find(c => flatSecs(c).some(s => s.id === qid));
     sec = course && flatSecs(course).find(s => s.id === qid);
