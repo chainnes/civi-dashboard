@@ -316,20 +316,6 @@
           "ill": "m-business-tax.svg",
           "ill_alt": "A receipt",
           "ill_alt_tl": "Isang resibo"
-        },
-        {
-          "id": "industries",
-          "title": "Industries in the Philippines",
-          "title_tl": "Mga industriya sa Pilipinas",
-          "sections": [
-            "ind01",
-            "ind02",
-            "ind03",
-            "ind04"
-          ],
-          "ill": "m-business-industries.svg",
-          "ill_alt": "A factory",
-          "ill_alt_tl": "Isang pabrika"
         }
       ],
       "ill_alt": "A small shop",
@@ -398,6 +384,54 @@
           "ill": "m-business-start.svg",
           "ill_alt": "A small shop",
           "ill_alt_tl": "Maliit na tindahan"
+        }
+      ]
+    },
+    {
+      "id": "industries",
+      "icon": "🏭",
+      "ill": "m-business-industries.svg",
+      "title": "Industries in the Philippines",
+      "title_tl": "Mga industriya sa Pilipinas",
+      "disclaimer": "fin",
+      "ill_alt": "A factory",
+      "ill_alt_tl": "Isang pabrika",
+      "modules": [
+        {
+          "id": "agri",
+          "title": "Agriculture & fisheries",
+          "title_tl": "Agrikultura at pangingisda",
+          "sections": ["ind01"],
+          "ill": "m-planting-grow.svg",
+          "ill_alt": "A seedling in a pot",
+          "ill_alt_tl": "Punla sa paso"
+        },
+        {
+          "id": "making",
+          "title": "Manufacturing & construction",
+          "title_tl": "Pagmamanupaktura at konstruksyon",
+          "sections": ["ind02"],
+          "ill": "m-business-industries.svg",
+          "ill_alt": "A factory",
+          "ill_alt_tl": "Isang pabrika"
+        },
+        {
+          "id": "digital",
+          "title": "IT-BPM & digital",
+          "title_tl": "IT-BPM at digital",
+          "sections": ["ind03"],
+          "ill": "m-earn-ways.svg",
+          "ill_alt": "A laptop",
+          "ill_alt_tl": "Isang laptop"
+        },
+        {
+          "id": "services",
+          "title": "Tourism, healthcare & creative",
+          "title_tl": "Turismo, kalusugan at creative",
+          "sections": ["ind04"],
+          "ill": "m-ofw-leave.svg",
+          "ill_alt": "An airplane",
+          "ill_alt_tl": "Isang eroplano"
         }
       ]
     },
