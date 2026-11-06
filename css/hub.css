@@ -147,7 +147,13 @@ html[data-theme=day] .step-n{color:#fff}
 html[data-theme=day] .steps > li.step-card{background:#fff}
 .step-box{width:18px;height:18px;margin:5px 0 0;accent-color:var(--cyan);justify-self:center}
 .step-t{min-width:0;margin:0;padding-top:4px;cursor:pointer}
-#map.icons-off .leaflet-marker-pane{visibility:hidden}
+#map.draw-off .leaflet-marker-pane,
+#map.draw-off .leaflet-overlay-pane,
+#map.draw-off .leaflet-shadow-pane,
+#map.draw-off .leaflet-tooltip-pane,
+#map.draw-off .leaflet-popup-pane,
+#map.draw-off .leaflet-labels-pane,
+#map.names-off .leaflet-labels-pane{opacity:0;visibility:hidden;pointer-events:none}
 .tn .nm{display:inline-flex;align-items:center;gap:2px;flex:0 0 auto;font-size:12px;cursor:pointer}
 .tn .nm input{width:14px;height:14px;margin:0}
 .course{display:grid;grid-template-columns:1fr;gap:12px;align-items:start}
@@ -328,10 +334,64 @@ html[data-theme=day] body .beta{background:#7a4f00!important;color:#fff!importan
 .dsrc{font-size:10px;color:var(--mute);margin:0 0 4px}
 .card.dcard .v{font-size:16px!important}
 
-/* Labels toggle: hide only the text-label pane (region / province / city names). */
-.leaflet-labels-pane{pointer-events:none;transition:opacity .2s ease}
-#map.labels-off .leaflet-labels-pane{opacity:0;visibility:hidden}
-@media (prefers-reduced-motion:reduce){.leaflet-labels-pane{transition:none}}
+/* Smart Directory: one page, sidebar + 2-col service cards */
+.dir-search{display:flex;gap:8px;align-items:center;padding:8px;margin:10px 0}
+.dir-search input{font-size:16px;padding:12px 14px;border-radius:12px}
+.dir-search .btn{white-space:nowrap}
+.ai-line{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:0;margin:0 0 8px}
+.ai-line .chip{cursor:pointer}
+.dir-chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+.dir-chips::-webkit-scrollbar{display:none}
+.dir-chips button,.dir-side button{font:inherit;font-size:13px;text-align:left;border:0;background:transparent;color:var(--ink);border-radius:8px;padding:6px 8px;cursor:pointer}
+.dir-chips button.on,.dir-side button.on{background:rgba(56,225,255,.16);color:var(--ink);font-weight:700}
+.dir-layout{display:grid;grid-template-columns:1fr;gap:12px;align-items:start}
+.dir-side{padding:8px;max-height:70vh;overflow:auto}
+.dir-side details{border-top:1px solid var(--line);padding:4px 0}
+.dir-side summary{cursor:pointer;font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);padding:6px 8px;list-style:none}
+.dir-side summary::before{content:"▸ "}
+.dir-side details[open] summary::before{content:"▾ "}
+.dir-side summary::-webkit-details-marker{display:none}
+.dir-side button{display:block;width:100%;color:var(--mute)}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.svc{position:relative;display:flex;flex-direction:column;gap:6px;padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(10,18,32,.72);min-width:0}
+.svc h3{margin:0;padding-right:34px;font-size:15px;line-height:1.3}
+.svc .tags{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.svc .okmark{color:#16a34a;font-weight:800;font-size:14px}
+.svc .dom{font-size:12px;color:var(--mute)}
+.svc .svc-go{margin-top:auto;align-self:flex-start}
+html[data-theme=day] .svc{background:#fff}
+html[data-theme=day] .dir-chips button.on,html[data-theme=day] .dir-side button.on{background:rgba(0,98,138,.12)}
+@media(min-width:800px){.dir-layout{grid-template-columns:230px 1fr}.dir-chips,#dirCats{display:none}.svc-grid{grid-template-columns:1fr 1fr}.dir-side{position:sticky;top:74px}}
+@media(max-width:799px){.dir-side{display:none}.dir-side.open{display:block;position:fixed;z-index:800;left:8px;right:8px;top:70px;max-height:min(70vh,520px);background:var(--bg);box-shadow:0 16px 40px rgba(0,0,0,.4)}html[data-theme=day] .dir-side.open{background:#fff}}
+@media(prefers-reduced-motion:reduce){.dir-side,.svc{transition:none}}
+
+/* Labels hides every drawn layer. Location names hides only place-name text. Base tiles stay. */
+.leaflet-labels-pane{pointer-events:none}
+.steps > li.step-card.plain{grid-template-columns:28px minmax(0,1fr)}
+.step-card.plain .step-t{cursor:default}
+.ac-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.ac-card{display:flex;flex-direction:column;min-width:0}
+.ac-go{display:flex;flex-direction:column;gap:6px;color:inherit;text-decoration:none;min-width:0}
+.ac-card h2{margin:0;font-size:16px;line-height:1.3;padding-right:28px}
+#markSec[aria-pressed="true"]{background:rgba(157,255,106,.35)}
+.ac-meta{display:flex;flex-wrap:wrap;gap:8px;margin:0;color:var(--mute);font-size:12.5px}
+.ac-card progress,.toc-mod progress,.course-head progress{width:100%;height:8px;accent-color:var(--cyan)}
+.ac-pct{font-size:13px;font-weight:700}
+.ac-plate{height:88px;border-radius:12px;background:#e7f6fb;display:grid;place-items:center}
+.ac-plate img{width:128px;height:72px;object-fit:contain}
+.ac-plate-sm{height:76px;margin-bottom:8px}
+.ac-hits{list-style:none;padding:0;margin:8px 0}
+.ac-hits li{padding:4px 0}
+.toc-mod{border-top:1px solid var(--line);padding-top:6px}
+.toc-mod summary{cursor:pointer;font-size:12px;font-weight:700;color:var(--mute)}
+.toc-mod summary span{float:right;font-weight:600}
+.course-kicker{margin:8px 0 0;font-weight:700}
+.course-src{font-size:12.5px;line-height:1.5}
+.sims-note{margin-top:16px}
+html[data-theme=day] .ac-card{background:#fff}
+@media(min-width:700px){.ac-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.ac-grid{grid-template-columns:1fr 1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.ac-card,.leaflet-labels-pane{transition:none}}
 
 /* Welcome popup on the map. Fade is opacity only. */
 .welcome{position:fixed;inset:0;z-index:2700;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:12px;padding-bottom:max(12px,env(safe-area-inset-bottom));background:rgba(3,6,12,.55);opacity:0;pointer-events:none;transition:opacity .2s ease}

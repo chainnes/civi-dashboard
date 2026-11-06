@@ -106,8 +106,7 @@ async function viewMap() {
     <div class="pq-wrap"><input type="search" id="placeQ" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="placeSug" placeholder="📍 ${esc(t("find_place"))}" aria-label="${esc(t("find_place"))}"><ul id="placeSug" class="glass pq-sug" role="listbox" hidden></ul></div>
     <button class="btn ghost sm" id="zIn" aria-label="Zoom in">＋</button><button class="btn ghost sm" id="zOut" aria-label="Zoom out">－</button>
     <button class="btn ghost sm" id="zHome" aria-label="${esc(t("whole_ph"))}" title="${esc(t("whole_ph"))}">🇵🇭</button>
-    <button type="button" class="btn ghost sm on" id="lblTog" aria-pressed="true" title="${esc(t("labels"))}">🏷️ ${t("labels")}</button>
-    <button type="button" class="btn ghost sm on" id="icoTog" aria-pressed="true" title="${esc(t("icons"))}">📍 ${t("icons")}</button>
+    <button type="button" class="btn ghost sm on" id="lblTog" aria-pressed="true" title="${esc(t("labels_hint"))}">🏷️ ${t("labels")}</button>
   </div>
   <div class="mobile-toggle"><button class="btn sm" data-sheet="glance" aria-label="${esc(t("kpis"))}">📊</button><button class="btn sm" data-sheet="fpanel" aria-label="${esc(t("filters"))}">⚙️</button></div>
   <div class="hud-bottom glass" id="hudBottom"></div>
@@ -145,8 +144,13 @@ async function viewMap() {
   const PL = await data("places"); // real city/municipality centroids (geoBoundaries ADM2/ADM3)
   Object.entries(PL.provinces).forEach(([n, v]) => !n.startsWith("NCR") && LB.province.push(lbl(v.ll, n, "p"))); PL.places.filter(p => p.lvl === "city").forEach(p => LB.city.push(lbl(p.ll, p.n, "c")));
   labelLayer = L.layerGroup({ pane: "labels" }).addTo(map);
-  const labelsOn = () => localStorage.getItem("civi.labels") !== "0";
-  const iconsOn = () => localStorage.getItem("civi.icons") !== "0";
+  if (!localStorage.getItem("civi.labels.v3")) {
+    if (localStorage.getItem("civi.labels") === "0") { localStorage.setItem("civi.locnames", "0"); localStorage.setItem("civi.labels", "1"); }
+    localStorage.removeItem("civi.icons");
+    localStorage.setItem("civi.labels.v3", "1");
+  }
+  const drawOn = () => localStorage.getItem("civi.labels") !== "0";
+  const namesOn = () => localStorage.getItem("civi.locnames") !== "0";
   const nameOff = () => { try { return new Set(JSON.parse(localStorage.getItem("civi.label.names") || "[]")); } catch { return new Set(); } };
   window.civiNameOff = nameOff;
   const drawLabels = () => {
@@ -157,21 +161,20 @@ async function viewMap() {
     $("#map").dataset.z = Math.floor(z);
   };
   window.civiDrawLabels = drawLabels;
-  const lt = $("#lblTog"), it = $("#icoTog");
+  const lt = $("#lblTog");
   const syncLt = () => {
-    const on = labelsOn();
-    $("#map").classList.toggle("labels-off", !on);
+    const on = drawOn(), names = namesOn();
+    $("#map").classList.toggle("draw-off", !on);
+    $("#map").classList.toggle("names-off", !names);
     lt.classList.toggle("on", on);
     lt.setAttribute("aria-pressed", on ? "true" : "false");
-    const io = iconsOn();
-    $("#map").classList.toggle("icons-off", !io);
-    it.classList.toggle("on", io);
-    it.setAttribute("aria-pressed", io ? "true" : "false");
+    lt.title = t("labels_hint");
+    if (!on) map.closePopup();
   };
+  window.civiSyncDraw = syncLt;
   syncLt();
   map.on("zoomend moveend", drawLabels); drawLabels();
-  lt.onclick = () => { localStorage.setItem("civi.labels", labelsOn() ? "0" : "1"); syncLt(); };
-  it.onclick = () => { localStorage.setItem("civi.icons", iconsOn() ? "0" : "1"); syncLt(); };
+  lt.onclick = () => { localStorage.setItem("civi.labels", drawOn() ? "0" : "1"); syncLt(); };
   $("#zIn").onclick = () => map.zoomIn(.75); $("#zOut").onclick = () => map.zoomOut(.75); $("#zHome").onclick = home;
   // place search -> flyTo
   const places = [...regionLayer.getLayers().map(l => ({ n: l.feature.properties.name, lvl: "region", b: l.getBounds() })), ...PL.places.map(p => ({ n: p.n, lvl: "city", ll: p.ll, region: p.p + ", " + p.r })), ...Object.entries(PL.provinces).map(([n, v]) => ({ n, lvl: "province", ll: v.ll, region: v.r })), { n: "QC", lvl: "city", ll: PL.places.find(p => p.n === "Quezon City")?.ll, region: "Quezon City" }].filter(p => p.b || p.ll);
@@ -569,7 +572,8 @@ function route() {
   const r = (location.hash.replace("#/", "") || "map").split("?")[0].split("/")[0];
   if (r !== "map") closeWelcome(false, { resumeTour: false });
   charts.forEach(c => c.destroy()); charts = []; if (map) { map.remove(); map = null; cluster = null; }
-  $$("#dock a").forEach(a => a.classList.toggle("on", a.dataset.r === r));
+  const dock = r === "howto" || r === "course" ? "academy" : r;
+  $$("#dock a").forEach(a => a.classList.toggle("on", a.dataset.r === dock));
   (ROUTES[r] || viewMap)(); applyI18n();
 }
 $("#lang").innerHTML = CIVI_LANGS.map(([c, n]) => `<option value="${c}">${n}${c === "en" ? "" : " ·MT"}</option>`).join("");

@@ -1,9 +1,9 @@
 /* UX batch 4 (loaded last): global Auto/Day/Night theme selector in the top bar, Featured strip on every page,
    Weather today (Open-Meteo, keyless, + PAGASA link). No keys; the browser sends only the map point's coordinates to Open-Meteo. */
 (function () {
-const X = { en: { theme: "Theme", featured: "Featured", acad_q: "Search guides or ask: e.g. how to save, passport, hydroponics", all: "All",
+const X = { en: { theme: "Theme", featured: "Featured", acad_q: "Search courses: passport, typhoon, PhilHealth", all: "All",
   th_next: "Click to change", wx_title: "Weather today", wx_feels: "Feels like", wx_rain: "Rain chance", wx_wind: "Wind", wx_src: "Model forecast by Open-Meteo (not PAGASA)", wx_asof: "as of", wx_pagasa: "Official forecasts & warnings: PAGASA", wx_fail: "Weather unavailable right now." },
- tl: { theme: "Tema", featured: "Tampok", acad_q: "Maghanap ng gabay o magtanong: hal. paano mag-ipon, passport, hydroponics", all: "Lahat",
+ tl: { theme: "Tema", featured: "Tampok", acad_q: "Maghanap ng kurso: pasaporte, bagyo, PhilHealth", all: "Lahat",
   th_next: "I-click para palitan", wx_title: "Panahon ngayon", wx_feels: "Pakiramdam", wx_rain: "Tsansa ng ulan", wx_wind: "Hangin", wx_src: "Forecast model ng Open-Meteo (hindi PAGASA)", wx_asof: "as of", wx_pagasa: "Opisyal na forecast at babala: PAGASA", wx_fail: "Hindi makuha ang panahon ngayon." } };
 for (const l in X) CIVI_I18N[l] = Object.assign(CIVI_I18N[l] || {}, X[l]);
 
@@ -17,7 +17,7 @@ function syncTheme() { const b = $("#themeTog"); if (!b) return; const m = windo
 themeSel(); addEventListener("hashchange", () => setTimeout(themeSel, 0));
 
 /* featured strip */
-const routeKey = () => { const r = (location.hash.replace("#/", "") || "map").split("?")[0]; return ["petitions", "sumbong", "foi", "projects", "rights", "impact", "scholarships"].includes(r) ? "empower" : r === "howto" ? "academy" : r; };
+const routeKey = () => { const r = (location.hash.replace("#/", "") || "map").split("?")[0].split("/")[0]; return ["petitions", "sumbong", "foi", "projects", "rights", "impact", "scholarships"].includes(r) ? "empower" : (r === "howto" || r === "course") ? "academy" : r; };
 window.civiFeatured = async (key) => { let F; try { F = await data("featured"); } catch { return; } key = key || routeKey(); const items = F.pages[key] || F.pages.default;
   const html = `<span class="ft-l">⭐ ${t("featured")}</span>${items.map(f => `<a class="ft-i" href="${esc(f.u)}" ${f.u.startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>${f.i} ${esc(state.lang === "tl" ? f.tl : f.t)}${f.u.startsWith("http") ? " ↗" : ""}</a>`).join("")}`;
   if (key === "map") { $("#featMap")?.remove(); $("#glance")?.insertAdjacentHTML("afterbegin", `<section class="panel glass featured onmap" id="featMap">${html}</section>`); return; }
