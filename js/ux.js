@@ -226,10 +226,12 @@ async function loadCourses() {
   return { as_of: cat.as_of || how.as_of || "", courses, how };
 }
 const courseFind = c => norm([c.title, c.title_tl, c.id, ...c.modules.flatMap(m => [m.title, m.title_tl, ...m.sections.flatMap(s => [s.title, s.title_tl, ...(s.steps || []), ...(s.steps_tl || [])])])].join(" "));
+const illAlt = o => howPick(o && o.ill_alt, o && o.ill_alt_tl);
+const illImg = (file, alt, cls) => `<div class="${cls}"><img src="/assets/courses/${esc(file || "civics.svg")}" alt="${esc(alt || "")}" width="128" height="72" loading="lazy" decoding="async"></div>`;
 const acCard = c => {
   const st = courseStat(c), secs = flatSecs(c), next = secs.find(s => !sectionComplete(s)) || secs[0], href = courseHref(c, next), when = localStorage.getItem(badgeKey(c.id));
   return `<article class="ac-card card glass" data-find="${esc(courseFind(c))}">${favBtn("course", c.id, howPick(c.title, c.title_tl), href)}
-    <a class="ac-go" href="${href}"><div class="ac-plate"><img src="/assets/courses/${esc(c.ill || "civics.svg")}" alt="" width="128" height="72" loading="lazy" decoding="async"></div>
+    <a class="ac-go" href="${href}">${illImg(c.ill, illAlt(c), "ac-plate")}
     <h2><span aria-hidden="true">${esc(c.icon || "")}</span> ${esc(howPick(c.title, c.title_tl))}</h2>
     <p class="ac-meta"><span>${st.n} ${t("sections")}</span><span>· ${timeLabel(estMin(c))}</span>${when ? `<span>· ✓ ${esc(t("completed"))}</span>` : ""}</p>
     <progress max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress><span class="ac-pct">${st.p}%</span></a></article>`;
@@ -310,10 +312,12 @@ async function viewHowto() {
   secs.forEach(s => { if (s.src && !seen.has(s.src)) { seen.add(s.src); sources.push(s.src); } });
   const asof = sec._asof || pack.as_of;
   const disc = course.disclaimer && t("disc_" + course.disclaimer) !== "disc_" + course.disclaimer ? t("disc_" + course.disclaimer) : t("not_advice");
+  const mod = course.modules.find(m => m.sections.some(s => s.id === sec.id));
+  const modPct = m => { const d = m.sections.filter(sectionComplete).length, n = m.sections.length; return { d, n, p: n ? Math.round(100 * d / n) : 0 }; };
   const outline = course.modules.map(m => {
-    const d = m.sections.filter(sectionComplete).length;
-    return `<details class="toc-mod" ${m.sections.some(s => s.id === sec.id) ? "open" : ""}><summary>${esc(howPick(m.title, m.title_tl))} <span>${d}/${m.sections.length}</span></summary>
-      <progress id="mod-${esc(m.id)}" max="${m.sections.length}" value="${d}" aria-label="${esc(t("module_progress"))}: ${esc(howPick(m.title, m.title_tl))}"></progress>
+    const mp = modPct(m);
+    return `<details class="toc-mod" ${m.sections.some(s => s.id === sec.id) ? "open" : ""}><summary>${esc(howPick(m.title, m.title_tl))} <span>${mp.d}/${mp.n} · ${mp.p}%</span></summary>
+      <progress id="mod-${esc(m.id)}" max="${mp.n}" value="${mp.d}" aria-label="${esc(t("module_progress"))}: ${esc(howPick(m.title, m.title_tl))} ${mp.p}%"></progress>
       <div class="toc-list">${m.sections.map(s => `<a class="${s.id === sec.id ? "on" : ""}" href="${courseHref(course, s)}"><span>${sectionComplete(s) ? "✓" : "·"}</span>${esc(howTitle(s))}</a>`).join("")}</div></details>`;
   }).join("");
   const st = courseStat(course);
@@ -332,13 +336,13 @@ async function viewHowto() {
      <div class="course-main card glass">
        <header class="course-head">
          ${favBtn("howto", sec.id, howTitle(sec), courseHref(course, sec))}
-         <div class="ac-plate ac-plate-sm"><img src="/assets/courses/${esc(course.ill || "civics.svg")}" alt="" width="128" height="72" loading="lazy" decoding="async"></div>
+         ${illImg(mod && mod.ill || course.ill, illAlt(mod) || illAlt(course), "ac-plate ac-plate-sm")}
          <p class="sub course-kicker">${esc(course.icon || "")} ${esc(howPick(course.title, course.title_tl))}</p>
          <h1>${esc(howTitle(sec))}</h1>
          <p class="course-meta"><span>${timeLabel(estMin(course))}</span><span>${st.n} ${t("sections")}</span><span>${idx + 1}/${secs.length}</span></p>
          <p class="course-src"><span>${t("sources")}:</span> ${sources.slice(0, 8).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(hostOf(u))} ↗</a>`).join(" · ")}${sources.length > 8 ? ` <span class="sub">+${sources.length - 8}</span>` : ""}</p>
          <p class="sub">${t("asof")} ${esc(asof)}</p>
-         <progress id="lessonBar" max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress>
+         <progress id="lessonBar" max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress><span id="lessonPct" class="sub">${st.p}%</span>
        </header>
        <div class="disc">📅 ${esc(howNote(sec) || pack.how.note || "")} ${esc(disc)}</div>
        <ol class="steps">${steps.map((s, n) => `<li class="step-card plain"><span class="step-n" aria-hidden="true">${n + 1}</span><p class="step-t">${esc(s)}</p></li>`).join("")}</ol>
@@ -357,7 +361,8 @@ async function viewHowto() {
     const stat = courseStat(course);
     const bar = $("#courseBar"), pct = $("#coursePct"), lesson = $("#lessonBar");
     if (bar) bar.value = stat.d; if (pct) pct.textContent = stat.p + "%"; if (lesson) lesson.value = stat.d;
-    course.modules.forEach(m => { const el = document.getElementById("mod-" + m.id); if (!el) return; el.value = m.sections.filter(sectionComplete).length; const sum = el.parentElement?.querySelector("summary span"); if (sum) sum.textContent = el.value + "/" + el.max; });
+    const lessonPct = $("#lessonPct"); if (lessonPct) lessonPct.textContent = stat.p + "%";
+    course.modules.forEach(m => { const el = document.getElementById("mod-" + m.id); if (!el) return; const d = m.sections.filter(sectionComplete).length; el.value = d; const sum = el.parentElement?.querySelector("summary span"); if (sum) sum.textContent = d + "/" + el.max + " · " + (el.max ? Math.round(100 * d / el.max) : 0) + "%"; });
     $$("#toc .toc-list a").forEach(a => { const id = decodeURIComponent((a.getAttribute("href") || "").split("/").pop()); const s = secs.find(x => x.id === id); if (!s) return; const mark = a.querySelector("span"); if (mark) mark.textContent = sectionComplete(s) ? "✓" : "·"; });
     const on = sectionComplete(sec), btn = $("#markSec");
     if (btn) { btn.setAttribute("aria-pressed", on ? "true" : "false"); btn.textContent = on ? t("completed") + " ✓" : t("mark_complete"); }
