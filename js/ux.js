@@ -43,22 +43,30 @@ const SYN = { career: "career roles job family jobs", karera: "career roles jobs
   bahay: "pag-ibig nha dhsud housing", house: "pag-ibig nha dhsud housing", license: "lto driver license", lisensya: "lto driver license", police: "pnp nbi clearance police", pulis: "pnp police",
   mental: "mental health hotline ncmh", lungkot: "mental health hotline", volunteer: "volunteer ngo", tulong: "dswd aid assistance volunteer ngo", aid: "dswd aid assistance", stocks: "pse company listed", barko: "ferry ppa marina coast pcg water 2go", ferry: "ferry ppa marina coast water", eroplano: "airport flight airline naia caap", flight: "airport flight airline naia caap", lipad: "flight airline airport", tren: "lrt mrt pnr rail train", train: "lrt mrt pnr rail", bus: "bus ltfrb dotr victory ceres genesis pitx", jeep: "ltfrb sakay route", biyahe: "transport land air water schedule sakay", byahe: "transport land air water schedule sakay", schedule: "schedule transport flight ferry", iskedyul: "schedule transport", commute: "sakay lrt mrt bus route", civictech: "community-built volunteer bettergov", opensource: "community-built github bettergov", transparency: "bettergov transparency bantay",  invest: "pse sec bsp company", sports: "sports fitness pba uaap volleyball football", isports: "sports", palaro: "sports", takbo: "running race marathon run", run: "running race marathon", fun: "running race", marathon: "running race marathon", hiking: "hiking mountain pinoymountaineer", akyat: "hiking mountain", bundok: "hiking mountain", basketball: "pba gilas sbp", scholarship: "scholarships scholarship ched dost", iskolar: "scholarships scholarship", hotline: "life safety emergency hotline", shopping: "shopping e-commerce mall", online: "shopping e-commerce", sine: "cinema entertainment tickets", movie: "cinema entertainment", concert: "tickets concert", kuryente: "meralco electricity utilities", tubig: "water maynilad manila utilities", internet: "telecom globe smart dito converge", load: "telecom globe smart dito", padala: "courier phlpost lbc parcel", parcel: "courier phlpost lbc parcel tracking", hayop: "animal pets welfare", aso: "pets animal welfare", pusa: "pets animal welfare", zoo: "zoos parks pasyalan", pasyalan: "zoos parks pasyalan museum", museum: "museum culture", kalikasan: "nature wildlife environment", news: "media news", balita: "media news", simbahan: "faith church community", senior: "senior citizens ncsc", pwd: "pwd disability ncda", babae: "women pcw vawc", bata: "children cwc bantay", negosyo: "business sec dti bnrs find", kumpanya: "business sec company find", kooperatiba: "cooperative cda", esports: "gaming esports", libro: "books libraries", lgbt: "lgbtq support", katutubo: "indigenous ncip" };
 const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-function score(item, words) { const hay = norm([item.name, item.abbr, item.desc, item.cat, item.industry, item.role, item.ticker].join(" ")); let s = 0;
+function score(item, words) { const hay = norm([item.name, item.name_tl, item.abbr, item.desc, item.cat, item.industry, item.role, item.ticker].join(" ")); let s = 0;
   words.forEach(w => { if (w.length < 2) return; if (new RegExp("\\b" + w.replace(/[.*+?^${}()|[\]\\]/g, "")).test(hay)) s += 3; else if (hay.includes(w)) s += 1; }); return s; }
 const STOP = new Set("ng sa ang na mga ko ako ka mo si ni kay at ay para po the a an of for to my i me in on is and or how what ano paano saan".split(" "));
 const expand = q => { const ws = norm(q).split(/[^a-z0-9-]+/).filter(w => w && !STOP.has(w)); return [...new Set(ws.flatMap(w => [w, ...(SYN[w] || Object.entries(SYN).find(([k]) => k.length > 3 && w.startsWith(k))?.[1] || "").split(" ").filter(Boolean)]))]; };
 const shortD = (x, n = 90) => { x = String(x || ""); return x.length > n ? x.slice(0, Math.max(40, x.lastIndexOf(" ", n - 2))) + "…" : x; };
-Object.assign(CIVI_I18N.en, { view_service: "View service", ai_suggested: "AI suggested", dir_cats: "Categories", dir_all: "All services", community_run: "Community-run", data_updates: "Data subject to update", ask_ai: "Ask AI" });
-Object.assign(CIVI_I18N.tl, { view_service: "Tingnan ang serbisyo", ai_suggested: "Mungkahi ng AI", dir_cats: "Mga kategorya", dir_all: "Lahat ng serbisyo", community_run: "Community-run", data_updates: "Puwedeng magbago ang datos", ask_ai: "Magtanong sa AI" });
-const DIR_GROUPS = [["Emergencies", ["Emergency & hotlines", "Life & safety", "Consumer complaints"]], ["Government", ["Executive departments", "Agencies & GOCCs", "Constitutional bodies & courts", "Legislature", "Public officials", "Government services", "Legal aid & rights", "Data, laws & documents", "Civic tech & community-built"]], ["Health", ["Health", "Health & wellness apps/sites", "Mental health"]], ["Work & money", ["OFW services", "Jobs & livelihood", "Earn: Iwas scam", "Earn: Small gigs", "Earn: Freelance", "Earn: Surveys & micro-tasks", "Earn: Sell online", "Earn: Content creation", "Earn: Rider & delivery", "Earn: Teach & tutor", "Money & finance", "Find any business", "Companies (PSE-listed)"]], ["Learning", ["Learning & scholarships", "Learning centers & tutorials", "Free language & online courses", "Learn farming: Free", "Learn farming: Paid / audit-free", "Scholarships"]], ["Getting around", ["Transport: Land", "Transport: Air", "Transport: Water", "Telecom & utilities", "Post & couriers", "Must-have apps in PH"]], ["Community", ["Volunteer & NGOs", "Embassies", "Sports & fitness", "Events & activities", "Events & things to do", "Promos, sales & discounts", "Meetups & conferences", "Places & travel"]], ["Environment", ["Recycle & drop-off programs"]], ["Transparency", ["FY 2026 budget"]]];
+const dirName = i => (state.lang === "tl" && i.name_tl) ? i.name_tl : i.name;
+const dirDesc = i => (state.lang === "tl" && (i.desc_tl || i.note_tl)) ? (i.desc_tl || i.note_tl) : (i.desc || i.note || "");
+Object.assign(CIVI_I18N.en, { view_service: "View service", ai_suggested: "AI suggested", dir_cats: "Categories", dir_all: "All services", community_run: "Community-run", data_updates: "Data subject to update", ask_ai: "Ask AI", "Learning & civic resources": "Learning & civic resources", "Civic know-how": "Civic know-how", "Free courses": "Free courses" });
+Object.assign(CIVI_I18N.tl, { view_service: "Tingnan ang serbisyo", ai_suggested: "Mungkahi ng AI", dir_cats: "Mga kategorya", dir_all: "Lahat ng serbisyo", community_run: "Community-run", data_updates: "Puwedeng magbago ang datos", ask_ai: "Magtanong sa AI", "Learning & civic resources": "Pag-aaral at sibika", "Civic know-how": "Kaalaman sa sibika", "Free courses": "Libreng kurso" });
+const DIR_GROUPS = [["Emergencies", ["Emergency & hotlines", "Life & safety", "Consumer complaints"]], ["Government", ["Executive departments", "Agencies & GOCCs", "Constitutional bodies & courts", "Legislature", "Public officials", "Government services", "Legal aid & rights", "Data, laws & documents", "Civic tech & community-built"]], ["Health", ["Health", "Health & wellness apps/sites", "Mental health"]], ["Work & money", ["OFW services", "Jobs & livelihood", "Earn: Iwas scam", "Earn: Small gigs", "Earn: Freelance", "Earn: Surveys & micro-tasks", "Earn: Sell online", "Earn: Content creation", "Earn: Rider & delivery", "Earn: Teach & tutor", "Money & finance", "Find any business", "Companies (PSE-listed)"]], ["Learning", ["Learning & scholarships", "Learning centers & tutorials", "Free language & online courses", "Learn farming: Free", "Learn farming: Paid / audit-free", "Scholarships"]], ["Learning & civic resources", ["Civic know-how", "Free courses"]], ["Getting around", ["Transport: Land", "Transport: Air", "Transport: Water", "Telecom & utilities", "Post & couriers", "Must-have apps in PH"]], ["Community", ["Volunteer & NGOs", "Embassies", "Sports & fitness", "Events & activities", "Events & things to do", "Promos, sales & discounts", "Meetups & conferences", "Places & travel"]], ["Environment", ["Recycle & drop-off programs"]], ["Transparency", ["FY 2026 budget"]]];
 const dirHost = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
 const groupOf = cat => { for (const [name, subs] of DIR_GROUPS) if (subs.includes(cat)) return name; return "More"; };
-const svcCard = i => `<article class="svc">${favBtn(i._type || "directory", i.abbr || i.name, i.name, i.url)}<h3>${esc(i.role ? i.role + ": " + i.name : i.name)}</h3><div class="tags"><span class="chip">${esc(i.group || "")}</span><span class="chip">${esc(t(i.cat) === i.cat ? i.cat : t(i.cat))}</span>${i.official ? `<span class="okmark" title="${esc(t("official"))}">✓</span>` : ""}</div><div class="dom">${esc(dirHost(i.url))}</div>${i.phone ? `<div class="dom">☎ <a href="tel:${esc(i.phone)}">${esc(i.phone)}</a></div>` : ""}<p class="dshort" title="${esc(i.desc || i.note || "")}">${esc(shortD(i.desc || i.note || ""))}</p>${i.community ? `<p class="dsrc">${esc(t("community_run"))}. ${esc(t("data_updates"))}.</p>` : ""}<a class="btn sm svc-go" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(t("view_service"))}</a></article>`;
+const svcCard = i => { const name = dirName(i), desc = dirDesc(i); return `<article class="svc">${favBtn(i._type || "directory", i.abbr || i.name, name, i.url)}<h3>${esc(i.role ? i.role + ": " + name : name)}</h3><div class="tags"><span class="chip">${esc(t(i.group || ""))}</span><span class="chip">${esc(t(i.cat))}</span>${i.official ? `<span class="okmark" title="${esc(t("official"))}">✓</span>` : ""}</div><div class="dom">${esc(dirHost(i.url))}</div>${i.phone ? `<div class="dom">☎ <a href="tel:${esc(i.phone)}">${esc(i.phone)}</a></div>` : ""}<p class="dshort" title="${esc(desc)}">${esc(shortD(desc))}</p>${i.community ? `<p class="dsrc">${esc(t("community_run"))}. ${esc(t("data_updates"))}.</p>` : ""}<a class="btn sm svc-go" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(t("view_service"))}</a></article>`; };
 const schCard = x => `<div class="card glass dcard"><span class="chip ${x.scope === "Local" ? "ok" : ""}">${esc(x.scope)}</span> <span class="chip">${esc((x.levels || []).join("/"))}</span><h4>${esc(x.name)}</h4><p class="dshort" title="${esc(x.eligibility || "")}">${esc(x.provider || "")} · ${esc(shortD(x.coverage, 70))}</p><a class="btn sm" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(t("view_service"))}</a></div>`;
 async function viewDirectory2() {
-  const [hub, gov, off, co, ct, dm, sch] = await Promise.all([data("directory_hub"), data("gov_directory"), data("officials"), data("companies"), data("civic_transport").catch(() => ({ items: [] })), data("directory_more").catch(() => ({ items: [] })), data("scholarships").catch(() => ({ items: [] }))]);
-  const mark = (list, official) => list.map(i => ({ ...i, official: official || i.label === "Government", group: groupOf(i.cat), _type: i._type || "directory" }));
-  const all = [...mark(hub.items, true), ...mark(gov.items, true), ...mark(ct.items || [], true), ...mark(dm.items || [], false), ...mark(off.items.map(i => ({ ...i, cat: "Public officials", _type: "official" })), true), ...mark(co.items.map(i => ({ ...i, cat: "Companies (PSE-listed)", desc: `${i.industry} · ${co.source}`, _type: "company" })), false), { name: "BetterGov FY 2026 Budget Dashboard", url: "https://2026-budget.bettergov.ph/", cat: "FY 2026 budget", desc: "Community-run dashboard of the FY 2026 national budget. Not a government website.", community: true, official: false, group: "Transparency", _type: "directory" }];
+  const [hub, gov, off, co, ct, dm, sch, acad] = await Promise.all([data("directory_hub"), data("gov_directory"), data("officials"), data("companies"), data("civic_transport").catch(() => ({ items: [] })), data("directory_more").catch(() => ({ items: [] })), data("scholarships").catch(() => ({ items: [] })), data("academy").catch(() => ({ online: [], offline: [] }))]);
+  const mark = (list, official) => list.map(i => ({ ...i, official: official || i.official || i.label === "Government", group: groupOf(i.cat), _type: i._type || "directory" }));
+  const govHost = u => { try { return new URL(u).hostname.endsWith(".gov.ph"); } catch { return false; } };
+  const learn = [
+    ...CIVIC.map(([name, url, desc, name_tl, desc_tl]) => ({ name, name_tl, url, desc, desc_tl, cat: "Civic know-how", official: govHost(url), _type: "directory" })),
+    ...(acad.online || []).map(c => ({ name: c.name, url: c.url, desc: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. External course. Civi does not host it.`, desc_tl: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. Kursong panlabas. Hindi ito hino-host ng Civi.`, cat: "Free courses", official: govHost(c.url), _type: "directory" })),
+    ...(acad.offline || []).map(c => ({ name: c.name, url: c.url, desc: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. Link to the provider.`, desc_tl: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. Link sa provider.`, cat: /PAGASA|PHIVOLCS/i.test(c.name) ? "Civic know-how" : "Free courses", official: govHost(c.url), _type: "directory" }))
+  ];
+  const all = [...mark(hub.items, true), ...mark(gov.items, true), ...mark(ct.items || [], true), ...mark(dm.items || [], false), ...mark(learn, false), ...mark(off.items.map(i => ({ ...i, cat: "Public officials", _type: "official" })), true), ...mark(co.items.map(i => ({ ...i, cat: "Companies (PSE-listed)", desc: `${i.industry} · ${co.source}`, _type: "company" })), false), { name: "BetterGov FY 2026 Budget Dashboard", url: "https://2026-budget.bettergov.ph/", cat: "FY 2026 budget", desc: "Community-run dashboard of the FY 2026 national budget. Not a government website.", community: true, official: false, group: "Transparency", _type: "directory" }];
   const known = new Set(DIR_GROUPS.flatMap(g => g[1]));
   const extra = [...new Set(all.map(i => i.cat))].filter(c => !known.has(c));
   const groups = [...DIR_GROUPS.map(([name, subs]) => ({ name, subs: subs.filter(s => all.some(i => i.cat === s)) })), ...(extra.length ? [{ name: "More", subs: extra }] : [])].filter(g => g.subs.length);
@@ -91,8 +99,8 @@ async function viewDirectory2() {
    </div>`);
   if ((sch.items || []).length) { $("#schRow").innerHTML = rowc("sch", "🎓 " + esc(t("scholarships")), sch.items.map(schCard), "", "#/scholarships"); wireCarousels($("#schRow")); }
   const paintSide = () => {
-    $("#dirSide").innerHTML = sideBtn(t("dir_all"), !group && !sub, "all", "") + groups.map(g => `<details ${g.name === group || g.subs.includes(sub) ? "open" : ""}><summary>${esc(g.name)}</summary>${g.subs.map(s => sideBtn(t(s) === s ? s : t(s), sub === s, "sub", s)).join("")}</details>`).join("");
-    $("#dirChips").innerHTML = sideBtn(t("dir_all"), !group, "all", "") + groups.map(g => sideBtn(g.name, group === g.name, "group", g.name)).join("");
+    $("#dirSide").innerHTML = sideBtn(t("dir_all"), !group && !sub, "all", "") + groups.map(g => `<details ${g.name === group || g.subs.includes(sub) ? "open" : ""}><summary>${esc(t(g.name))}</summary>${g.subs.map(s => sideBtn(t(s), sub === s, "sub", s)).join("")}</details>`).join("");
+    $("#dirChips").innerHTML = sideBtn(t("dir_all"), !group, "all", "") + groups.map(g => sideBtn(t(g.name), group === g.name, "group", g.name)).join("");
     $$("#dirSide [data-kind], #dirChips [data-kind]").forEach(b => b.onclick = () => {
       if (b.dataset.kind === "all") { group = ""; sub = ""; } else if (b.dataset.kind === "group") { group = b.dataset.v; sub = ""; } else { sub = b.dataset.v; group = groupOf(sub); }
       shown = 12; recShown = 4; $("#dirSide").classList.remove("open"); $("#dirCats").setAttribute("aria-expanded", "false");
@@ -156,46 +164,209 @@ function requestListing(cats) {
 }
 
 /* ---------- Academy: carousels + How-To guides ---------- */
-const CIVIC = [["Read the national budget", "https://www.dbm.gov.ph/", "DBM publishes the GAA and budget documents."], ["File an FOI request", "https://www.foi.gov.ph/", "Ask executive agencies for documents."],
-  ["Know your data rights (RA 10173)", "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html", "Rights to be informed, access, correct, erase."], ["Find laws and cases", "https://lawphil.net/", "LawPhil: statutes and jurisprudence, free."],
-  ["Check government bids", "https://notices.philgeps.gov.ph/", "PhilGEPS procurement notices."], ["Explore official statistics", "https://openstat.psa.gov.ph/", "PSA OpenSTAT tables & API."], ["Open Data Philippines", "https://data.gov.ph/", "Government datasets."]];
-const howAll = async () => { const [h, e, lf, hl] = await Promise.all([data("howto"), data("howto_earn").catch(() => ({ items: [] })), data("howto_life").catch(() => ({ items: [] })), data("howto_health").catch(() => ({ items: [] }))]); const W = await data("howto_work").catch(() => ({ items: [] })), G = await data("howto_gov").catch(() => ({ items: [] })); return { ...h, items: [...h.items, ...e.items.map(x => ({ ...x, _note: e.note })), ...lf.items.map(x => ({ ...x, _note: lf.note })), ...hl.items.map(x => ({ ...x, _note: hl.note })), ...W.items.map(x => ({ ...x, _note: W.note })), ...G.items.map(x => ({ ...x, _note: G.note }))] }; };
-const howTitle = h => (state.lang === "tl" && h.title_tl) ? h.title_tl : h.title;
-const howCard = h => `<div class="card glass">${favBtn("howto", h.id, h.title, "#/howto?id=" + h.id)}<span class="chip ok">${t("howto")}</span><h4 style="padding-right:34px">${esc(howTitle(h))}</h4><p>${h.steps.length} ${t("steps")} · ${t("asof")} ${esc(state._howAsOf || "")}</p><a class="btn sm" href="#/howto?id=${esc(h.id)}">${t("start_guide")} ▶</a></div>`;
+const CIVIC = [
+  ["Read the national budget", "https://www.dbm.gov.ph/", "DBM publishes the GAA and budget documents.", "Basahin ang pambansang budget", "Inilalathala ng DBM ang GAA at mga dokumento ng budget."],
+  ["File an FOI request", "https://www.foi.gov.ph/", "Ask executive agencies for documents.", "Mag-file ng FOI request", "Humingi ng dokumento sa mga executive agency."],
+  ["Know your data rights (RA 10173)", "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html", "Rights to be informed, access, correct, and erase.", "Alamin ang data rights (RA 10173)", "Karapatang malaman, ma-access, maitama, at mabura."],
+  ["Find laws and cases", "https://lawphil.net/", "LawPhil: statutes and jurisprudence, free.", "Maghanap ng batas at kaso", "LawPhil: batas at jurisprudence, libre."],
+  ["Check government bids", "https://notices.philgeps.gov.ph/", "PhilGEPS procurement notices.", "Tingnan ang government bids", "Mga abiso ng procurement sa PhilGEPS."],
+  ["Explore official statistics", "https://openstat.psa.gov.ph/", "PSA OpenSTAT tables and API.", "Tingnan ang opisyal na istatistika", "Mga talahanayan at API ng PSA OpenSTAT."],
+  ["Open Data Philippines", "https://data.gov.ph/", "Government datasets.", "Open Data Philippines", "Mga dataset ng gobyerno."]
+];
+const howAll = async () => {
+  const [h, e, lf] = await Promise.all([data("howto"), data("howto_earn").catch(() => ({ items: [] })), data("howto_life").catch(() => ({ items: [] }))]);
+  const W = await data("howto_work").catch(() => ({ items: [] })), G = await data("howto_gov").catch(() => ({ items: [] }));
+  const stamp = file => (file.items || []).map(x => ({ ...x, _note: file.note || "", _note_tl: file.note_tl || "", _asof: file.as_of || "" }));
+  return { ...h, note_tl: h.note_tl || "", items: [...stamp(h), ...stamp(e), ...stamp(lf), ...stamp(W), ...stamp(G)] };
+};
+const howTl = () => state.lang === "tl";
+const howPick = (en, tl) => (howTl() && tl != null && tl !== "" && !(Array.isArray(tl) && !tl.length) ? tl : en);
+const cleanStep = s => {
+  const parts = String(s == null ? "" : s).split(/\s*[☐□▢☑]\s*/).map(x => x.trim()).filter(Boolean);
+  if (parts.length <= 1) return (parts[0] || "").replace(/\s{2,}/g, " ");
+  if (/^checklist\b/i.test(parts[0])) return `${parts[0].replace(/:?\s*$/, ":")} ${parts.slice(1).join(" · ")}`.replace(/\s{2,}/g, " ");
+  return parts.join(" · ");
+};
+const howTitle = h => howPick(h.title, h.title_tl);
+const howSteps = h => (howPick(h.steps, h.steps_tl) || []).map(cleanStep);
+const howTip = h => { const tip = howPick(h.tip, h.tip_tl); return tip ? cleanStep(tip) : ""; };
+const howNote = h => howPick(h._note || "", h._note_tl || "");
+const howRelated = h => { const q = h.related || []; const labels = howPick(h.related_en || q, h.related_tl || h.related_en || q); return q.map((query, i) => ({ q: query, label: labels[i] || query })); };
+const flatSecs = c => c.modules.flatMap(m => m.sections);
+const courseStat = c => { const s = flatSecs(c), d = s.filter(sectionComplete).length; return { d, n: s.length, p: s.length ? Math.round(100 * d / s.length) : 0 }; };
+const estMin = c => flatSecs(c).length * 4;
+const timeLabel = m => { if (m < 60) return `${t("est_time")} ${m} ${t("min_unit")}`; const h = Math.floor(m / 60), r = m % 60; return `${t("est_time")} ${h} ${t("hr_unit")}${r ? " " + r + " " + t("min_unit") : ""}`; };
+const courseHref = (c, sec) => "#/course/" + encodeURIComponent(c.id) + (sec ? "/" + encodeURIComponent(sec.id) : "");
+const badgeKey = id => "civi.badge.course." + id;
+function sectionComplete(sec) {
+  if (!sec) return false;
+  const v = localStorage.getItem("civi.sec." + sec.id);
+  if (v === "1") return true;
+  if (v === "0") return false;
+  try {
+    const old = JSON.parse(localStorage.getItem("civi.howto." + sec.id) || "[]");
+    if (Array.isArray(old) && (sec.steps || []).length && old.length >= sec.steps.length) { localStorage.setItem("civi.sec." + sec.id, "1"); return true; }
+  } catch {}
+  return false;
+}
+function syncCourseBadge(c) {
+  const { d, n } = courseStat(c);
+  if (n && d >= n) { if (!localStorage.getItem(badgeKey(c.id))) localStorage.setItem(badgeKey(c.id), new Date().toISOString().slice(0, 10)); }
+  else localStorage.removeItem(badgeKey(c.id));
+  return localStorage.getItem(badgeKey(c.id)) || "";
+}
+const hostOf = u => { try { return new URL(u, location.origin).hostname.replace(/^www\./, ""); } catch { return ""; } };
+const extAttrs = u => String(u).startsWith("#") ? "" : ' target="_blank" rel="noopener"';
+async function loadCourses() {
+  const [cat, topics, how] = await Promise.all([data("academy_courses"), data("howto_topics").catch(() => ({ items: [] })), howAll()]);
+  const byId = new Map();
+  how.items.forEach(x => byId.set(x.id, x));
+  (topics.items || []).forEach(x => byId.set(x.id, { ...x, _note: topics.note || "", _note_tl: topics.note_tl || "", _asof: topics.as_of || x._asof || "" }));
+  const courses = (cat.courses || []).map(c => ({ ...c, modules: (c.modules || []).map(m => ({ ...m, sections: (m.sections || []).map(id => byId.get(id)).filter(Boolean) })).filter(m => m.sections.length) })).filter(c => c.modules.length);
+  return { as_of: cat.as_of || how.as_of || "", courses, how };
+}
+const courseFind = c => norm([c.title, c.title_tl, c.id, ...c.modules.flatMap(m => [m.title, m.title_tl, ...m.sections.flatMap(s => [s.title, s.title_tl, ...(s.steps || []), ...(s.steps_tl || [])])])].join(" "));
+const acCard = c => {
+  const st = courseStat(c), secs = flatSecs(c), next = secs.find(s => !sectionComplete(s)) || secs[0], href = courseHref(c, next), when = localStorage.getItem(badgeKey(c.id));
+  return `<article class="ac-card card glass" data-find="${esc(courseFind(c))}">${favBtn("course", c.id, howPick(c.title, c.title_tl), href)}
+    <a class="ac-go" href="${href}"><div class="ac-plate"><img src="/assets/courses/${esc(c.ill || "civics.svg")}" alt="" width="128" height="72" loading="lazy" decoding="async"></div>
+    <h2><span aria-hidden="true">${esc(c.icon || "")}</span> ${esc(howPick(c.title, c.title_tl))}</h2>
+    <p class="ac-meta"><span>${st.n} ${t("sections")}</span><span>· ${timeLabel(estMin(c))}</span>${when ? `<span>· ✓ ${esc(t("completed"))}</span>` : ""}</p>
+    <progress max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress><span class="ac-pct">${st.p}%</span></a></article>`;
+};
 async function viewAcademy2() {
-  const [a, how] = await Promise.all([data("academy"), howAll()]); state._howAsOf = how.as_of; const hc = [...new Set(how.items.map(h => h.cat))];
+  const pack = await loadCourses();
   page(`<h1>🎓 ${t("nav_academy")}</h1><p class="sub">${t("acad_sub")}</p>
    <div class="smart glass" role="search"><span style="font-size:22px" aria-hidden="true">🔎</span><input type="search" id="acQ" placeholder="${esc(t("acad_q"))}" aria-label="${esc(t("acad_q"))}"><button class="btn" id="acAI" title="${esc(t("ai_hint"))}">✨ ${t("ask")}</button></div>
-   <div class="acats" role="group" aria-label="${esc(t("categories"))}"><button class="chip on" data-ac="">${t("all")}</button>${hc.map(c => `<button class="chip" data-ac="${esc(c)}">${esc(t(c))}</button>`).join("")}</div>
-   <div id="acRes" aria-live="polite"></div><div id="acRows">
-   ${hc.map((c, n) => rowc("h" + n, "🧭 " + esc(t(c)), how.items.filter(h => h.cat === c).map(howCard))).join("")}
-   ${rowc("civic", "🏛️ " + t("civic_knowhow"), CIVIC.map(([n, u, d]) => `<div class="card glass">${favBtn("academy", n, n, u)}<h4 style="padding-right:34px">${n}</h4><p>${d}</p><a href="${u}" target="_blank" rel="noopener">${t("start")} ↗</a></div>`))}
-   ${rowc("courses", "💻 " + t("free_courses"), (a.online || []).map(c => `<div class="card glass">${favBtn("academy", c.name, c.name, c.url)}<span class="chip">${esc(c.by)}</span><h4 style="padding-right:34px">${esc(c.name)}</h4><p>${esc(c.tags || "")}</p><a href="${esc(c.url)}" target="_blank" rel="noopener">${t("open")} ↗</a></div>`))}
-   </div><div class="card glass sims" style="margin-top:14px"><span class="chip ok">Beta</span><h4>🎮 Civi Sims</h4><p><a href="#/sim"><b>Kung Ikaw ang Presidente ▶</b></a> ${t("sim_blurb")}</p></div>`);
-  wireCarousels();
-  let cat = "", words = [], aiLab = "";
-  const hText = h => norm([h.title, h.title_tl, h.cat, t(h.cat), ...(h.steps || []), h.tip, ...(h.related || [])].join(" "));
-  const show = () => { const hits = how.items.filter(h => (!cat || h.cat === cat) && (!words.length || words.some(w => hText(h).includes(w))))
-      .sort((a, b) => words.filter(w => hText(b).includes(w)).length - words.filter(w => hText(a).includes(w)).length);
-    const filt = cat || words.length; $("#acRows").hidden = !!filt;
-    $("#acRes").innerHTML = filt ? `<h2>${t("best_matches")} <span class="chip">${hits.length}</span>${aiLab ? ` <span class="chip ok">${esc(aiLab)}</span>` : ""}</h2>${hits.length ? `<div class="grid">${hits.map(howCard).join("")}</div>` : `<p>${t("no_match")}</p>`}` : ""; };
-  $$("[data-ac]").forEach(b => b.onclick = () => { cat = b.dataset.ac; $$("[data-ac]").forEach(x => x.classList.toggle("on", x === b)); show(); });
-  let tmr; $("#acQ").oninput = e => { clearTimeout(tmr); tmr = setTimeout(() => { aiLab = ""; words = expand(e.target.value); show(); }, 120); };
-  $("#acAI").onclick = async () => { const q = $("#acQ").value.trim(); if (!q) return $("#acQ").focus(); $("#acRes").innerHTML = `<p>✨ ${t("thinking")}</p>`;
-    const r = await api("assist", { method: "POST", body: { mode: "academy", q } }); // Workers AI via the AI binding; local keyword fallback
-    if (r.keywords?.length) { words = [...expand(q), ...r.keywords.flatMap(expand)]; aiLab = "AI: " + r.keywords.join(", "); } else { words = expand(q); aiLab = t("kw_mode"); } show(); };
+   <p id="acNote" class="sub"></p>
+   <div id="acGrid" class="ac-grid">${pack.courses.map(acCard).join("")}</div>
+   <div id="acHits"></div>
+   <p class="sub sims-note"><a href="#/sim">${esc(t("sim_title"))}</a> — ${esc(t("sim_blurb"))}</p>`);
+  let words = [];
+  const show = () => {
+    const cards = $$("#acGrid .ac-card");
+    let n = 0;
+    cards.forEach(el => { const on = !words.length || words.some(w => (el.dataset.find || "").includes(w)); el.hidden = !on; if (on) n++; });
+    const hits = !words.length ? [] : pack.courses.flatMap(c => flatSecs(c).filter(s => words.some(w => norm(howTitle(s) + " " + (s.title_tl || "")).includes(w))).slice(0, 3).map(s => ({ c, s }))).slice(0, 8);
+    $("#acHits").innerHTML = hits.length ? `<h2>${t("best_matches")}</h2><ul class="ac-hits">${hits.map(({ c, s }) => `<li><a href="${courseHref(c, s)}">${esc(howTitle(s))}</a> <span class="sub">${esc(howPick(c.title, c.title_tl))}</span></li>`).join("")}</ul>` : "";
+    $("#acNote").textContent = words.length ? `${n} ${t("courses_n")}` : "";
+  };
+  let tmr; $("#acQ").oninput = e => { clearTimeout(tmr); tmr = setTimeout(() => { words = expand(e.target.value); show(); }, 120); };
+  $("#acAI").onclick = async () => {
+    const q = $("#acQ").value.trim(); if (!q) return $("#acQ").focus();
+    $("#acNote").textContent = "✨ " + t("thinking");
+    const r = await api("assist", { method: "POST", body: { mode: "academy", q } });
+    words = [...expand(q), ...(r.keywords || []).flatMap(expand)];
+    show();
+    if (r.keywords?.length) $("#acNote").textContent = "AI: " + r.keywords.join(", ");
+  };
 }
+Object.assign(CIVI_I18N.en, { guide_level: "Guide", lessons: "Sections", course_done: "Section complete", prev_lesson: "Previous", next_lesson: "Next",
+  quiz_title: "Quick quiz", quiz_check: "Check answers", quiz_pass: "Passed. Mark the section complete so it counts toward the badge.", quiz_retry: "{ok}/{n} correct — try again.", quiz_passed: "Already passed", quiz_progress: "Course progress", modules: "modules", badge_civics: "Civi Civics Badge", badge_gov: "I know how our government works", quiz_sources: "Sources are listed above. Checked 2026-10-29. No current official is named.",
+  sim_title: "If You Were President", sim_ph: "Why this budget?", sim_share_as: "If I were President: ",
+  acad_sub: "In-house courses for everyday life in the Philippines. One course per topic. Official sources only.",
+  acad_q: "Search courses: passport, typhoon, PhilHealth",
+  sections: "sections", est_time: "est.", min_unit: "min", hr_unit: "hr", mark_complete: "Mark as complete", completed: "Completed",
+  course_progress: "Course progress", module_progress: "Module progress", open_outline: "Sections", courses_n: "courses",
+  disc_safe: "Safety information is general. Follow PAGASA, PHIVOLCS, NDRRMC, OCD, your LGU, and 911. This is not a rescue service.",
+  disc_med: "General information, not medical advice. In an emergency call 911. Ask a licensed professional about your own care.",
+  disc_legal: "General information, not legal advice. Requirements and fees change. Read the official page.",
+  disc_fin: "General information, not financial, tax, or benefits advice. Check the agency for current rules.",
+  badge_course: "Course complete", sources: "Sources", progress_local: "Your section progress is saved only on this device.",
+  "Paano Kumita Online": "How to earn online", "Paano tumatakbo ang gobyerno natin": "How our government works", "Mga industriya sa Pilipinas": "Industries in the Philippines", "Buhay at kabuhayan": "Life and livelihood", "Pagsasaka at kalikasan": "Farming and nature", "Paano magsimula ng negosyo": "How to start a business", "Earn: Iwas scam": "Earn: Avoid scams", "Zoos, parks & pasyalan": "Zoos, parks and places to visit" });
+Object.assign(CIVI_I18N.tl, { guide_level: "Gabay", lessons: "Mga seksyon", course_done: "Tapos na ang seksyon", prev_lesson: "Nakaraan", next_lesson: "Susunod",
+  quiz_title: "Mabilisang quiz", quiz_check: "Suriin ang sagot", quiz_pass: "Pasado. Markahang tapos ang seksyon para mabilang ito sa badge.", quiz_retry: "{ok}/{n} tama — subukan ulit.", quiz_passed: "Pasado na", quiz_progress: "Progreso ng kurso", modules: "mga module", badge_civics: "Civi Civics Badge", badge_gov: "Alam ko kung paano tumatakbo ang gobyerno natin", quiz_sources: "Nasa itaas ang mga source. Sinuri noong 2026-10-29. Walang pinangalanang kasalukuyang opisyal.",
+  sim_title: "Kung Ikaw ang Presidente", sim_ph: "Bakit ganito ang budget mo?", sim_share_as: "Kung ako ang Presidente: ",
+  acad_sub: "Mga kursong ginawa sa Civi para sa araw-araw na buhay sa Pilipinas. Isang kurso bawat paksa. Opisyal na source lang.",
+  acad_q: "Maghanap ng kurso: pasaporte, bagyo, PhilHealth",
+  sections: "seksyon", est_time: "tantiya", min_unit: "min", hr_unit: "oras", mark_complete: "Markahang tapos", completed: "Tapos na",
+  course_progress: "Progreso ng kurso", module_progress: "Progreso ng module", open_outline: "Mga seksyon", courses_n: "mga kurso",
+  disc_safe: "Pangkalahatan ang impormasyon sa kaligtasan. Sundin ang PAGASA, PHIVOLCS, NDRRMC, OCD, ang LGU mo, at ang 911. Hindi ito serbisyong pagsagip.",
+  disc_med: "Pangkalahatang impormasyon, hindi medikal na payo. Kung emergency, tumawag sa 911. Magtanong sa lisensyadong propesyonal tungkol sa sarili mong pangangalaga.",
+  disc_legal: "Pangkalahatang impormasyon, hindi legal na payo. Nagbabago ang requirement at bayad. Basahin ang opisyal na pahina.",
+  disc_fin: "Pangkalahatang impormasyon, hindi payo sa pera, buwis, o benepisyo. Tingnan ang ahensya para sa kasalukuyang patakaran.",
+  badge_course: "Tapos na ang kurso", sources: "Mga source", progress_local: "Sa device na ito lang naka-save ang progreso ng seksyon.",
+  "Paano Kumita Online": "Paano kumita online", "Paano tumatakbo ang gobyerno natin": "Paano tumatakbo ang gobyerno natin", "Mga industriya sa Pilipinas": "Mga industriya sa Pilipinas", "Buhay at kabuhayan": "Buhay at kabuhayan", "Pagsasaka at kalikasan": "Pagsasaka at kalikasan", "Paano magsimula ng negosyo": "Paano magsimula ng negosyo", "Career roles 101": "Mga role sa trabaho", "Earn: Iwas scam": "Kumita: Iwas scam", "Zoos, parks & pasyalan": "Zoo, parke at mga pasyalan" });
 async function viewHowto() {
-  const how = await howAll(), id = new URLSearchParams(location.hash.split("?")[1] || "").get("id"), h = how.items.find(x => x.id === id);
-  if (!h) return viewAcademy2();
-  const done = JSON.parse(localStorage.getItem("civi.howto." + h.id) || "[]");
-  page(`<p><a href="#/academy">← ${t("nav_academy")}</a></p><div class="card glass" style="max-width:760px">${favBtn("howto", h.id, h.title, "#/howto?id=" + h.id)}<span class="chip ok">${t("howto")}</span> <span class="chip">${esc(t(h.cat))}</span>
-   <h1 style="padding-right:34px">${esc(howTitle(h))}</h1>${h.title_tl && howTitle(h) !== h.title_tl ? `<p class="sub">${esc(h.title_tl)}</p>` : ""}<div class="disc">📅 ${t("asof")} ${esc(how.as_of)}. ${esc(h._note || how.note)} ${t("not_advice")}</div>
-   <ol class="steps">${h.steps.map((s, n) => `<li><label class="row" style="align-items:flex-start;gap:8px"><input type="checkbox" data-step="${n}" ${done.includes(n) ? "checked" : ""} style="width:auto;margin-top:3px" aria-label="${esc(t("mark_done"))} ${n + 1}"><span>${esc(s)}</span></label></li>`).join("")}</ol>
-   ${h.tip ? `<div class="disc">💡 ${esc(h.tip)}</div>` : ""}${h.related ? `<p>🔗 ${t("see_more")}: ${h.related.map(r => `<a href="#/directory?q=${encodeURIComponent(r)}">${esc(r)}</a>`).join(" · ")}</p>` : ""}${h.links ? `<p>🌐 ${h.links.map(([n, u, st]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>${st === "bot-protected" ? ` <small title="${esc(t("botprot"))}">✓</small>` : ""}`).join(" · ")}</p>` : ""}<p><a class="btn" href="${esc(h.src)}" target="_blank" rel="noopener">${t("check_official")} ↗</a> <span class="chip ${h.link === "live" ? "ok" : ""}">${esc(new URL(h.src).hostname)}</span></p>
-   ${window.civiQuizHTML ? window.civiQuizHTML(h, how) : ""}<p class="sub" style="font-size:11px">${t("progress_local")}</p></div>`);
-  $$("[data-step]").forEach(c => c.onchange = () => { localStorage.setItem("civi.howto." + h.id, JSON.stringify($$("[data-step]:checked").map(x => +x.dataset.step))); window.civiQuizCheck?.(h, how); });
-  window.civiQuizBind?.(h, how);
+  const pack = await loadCourses();
+  const parts = (location.hash.replace(/^#\//, "").split("?")[0] || "").split("/").map(decodeURIComponent);
+  const qid = new URLSearchParams((location.hash.split("?")[1] || "")).get("id");
+  let course, sec;
+  if (parts[0] === "course" && parts[1]) {
+    course = pack.courses.find(c => c.id === parts[1]);
+    const want = parts[2] || qid;
+    sec = course && (flatSecs(course).find(s => s.id === want) || flatSecs(course)[0]);
+  } else if (qid) {
+    course = pack.courses.find(c => flatSecs(c).some(s => s.id === qid));
+    sec = course && flatSecs(course).find(s => s.id === qid);
+  }
+  if (!course || !sec) return viewAcademy2();
+  const secs = flatSecs(course);
+  const idx = Math.max(0, secs.findIndex(s => s.id === sec.id));
+  const prev = secs[idx - 1], next = secs[idx + 1];
+  const steps = howSteps(sec), tip = howTip(sec), rel = howRelated(sec);
+  const sources = [];
+  const seen = new Set();
+  secs.forEach(s => { if (s.src && !seen.has(s.src)) { seen.add(s.src); sources.push(s.src); } });
+  const asof = sec._asof || pack.as_of;
+  const disc = course.disclaimer && t("disc_" + course.disclaimer) !== "disc_" + course.disclaimer ? t("disc_" + course.disclaimer) : t("not_advice");
+  const outline = course.modules.map(m => {
+    const d = m.sections.filter(sectionComplete).length;
+    return `<details class="toc-mod" ${m.sections.some(s => s.id === sec.id) ? "open" : ""}><summary>${esc(howPick(m.title, m.title_tl))} <span>${d}/${m.sections.length}</span></summary>
+      <progress id="mod-${esc(m.id)}" max="${m.sections.length}" value="${d}" aria-label="${esc(t("module_progress"))}: ${esc(howPick(m.title, m.title_tl))}"></progress>
+      <div class="toc-list">${m.sections.map(s => `<a class="${s.id === sec.id ? "on" : ""}" href="${courseHref(course, s)}"><span>${sectionComplete(s) ? "✓" : "·"}</span>${esc(howTitle(s))}</a>`).join("")}</div></details>`;
+  }).join("");
+  const st = courseStat(course);
+  const when = syncCourseBadge(course);
+  const done = sectionComplete(sec);
+  const secLinks = (sec.links || []).map(([n, u]) => `<a href="${esc(u)}"${extAttrs(u)}>${esc(n)}${String(u).startsWith("#") ? "" : " ↗"}</a>`).join(" · ");
+  page(`<p><a href="#/academy">← ${t("nav_academy")}</a></p>
+   <article class="course">
+     <button type="button" class="btn ghost sm course-toc" id="tocBtn" aria-expanded="false" aria-controls="toc">${t("open_outline")}</button>
+     <nav id="toc" class="course-side glass" aria-label="${esc(t("lessons"))}">
+       <b>${esc(howPick(course.title, course.title_tl))}</b>
+       <progress id="courseBar" max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress>
+       <span id="coursePct" class="sub">${st.p}%</span>
+       ${outline}
+     </nav>
+     <div class="course-main card glass">
+       <header class="course-head">
+         ${favBtn("howto", sec.id, howTitle(sec), courseHref(course, sec))}
+         <div class="ac-plate ac-plate-sm"><img src="/assets/courses/${esc(course.ill || "civics.svg")}" alt="" width="128" height="72" loading="lazy" decoding="async"></div>
+         <p class="sub course-kicker">${esc(course.icon || "")} ${esc(howPick(course.title, course.title_tl))}</p>
+         <h1>${esc(howTitle(sec))}</h1>
+         <p class="course-meta"><span>${timeLabel(estMin(course))}</span><span>${st.n} ${t("sections")}</span><span>${idx + 1}/${secs.length}</span></p>
+         <p class="course-src"><span>${t("sources")}:</span> ${sources.slice(0, 8).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(hostOf(u))} ↗</a>`).join(" · ")}${sources.length > 8 ? ` <span class="sub">+${sources.length - 8}</span>` : ""}</p>
+         <p class="sub">${t("asof")} ${esc(asof)}</p>
+         <progress id="lessonBar" max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress>
+       </header>
+       <div class="disc">📅 ${esc(howNote(sec) || pack.how.note || "")} ${esc(disc)}</div>
+       <ol class="steps">${steps.map((s, n) => `<li class="step-card plain"><span class="step-n" aria-hidden="true">${n + 1}</span><p class="step-t">${esc(s)}</p></li>`).join("")}</ol>
+       ${tip ? `<div class="disc">💡 ${esc(tip)}</div>` : ""}
+       ${rel.length ? `<p>🔗 ${t("see_more")}: ${rel.map(r => `<a href="#/directory?q=${encodeURIComponent(r.q)}">${esc(r.label)}</a>`).join(" · ")}</p>` : ""}
+       ${secLinks ? `<p>🌐 ${secLinks}</p>` : ""}
+       ${sec.src ? `<p class="sub">${t("source")}: <a href="${esc(sec.src)}"${extAttrs(sec.src)}>${esc(hostOf(sec.src) || sec.src)} ↗</a></p>` : ""}
+       <button type="button" class="btn" id="markSec" aria-pressed="${done ? "true" : "false"}">${done ? esc(t("completed")) + " ✓" : esc(t("mark_complete"))}</button>
+       <div id="courseBadge" class="course-badge" role="status" ${when ? "" : "hidden"}>${when ? "🏅 " + esc(t("badge_course")) + " · " + esc(when) : ""}</div>
+       ${window.civiQuizHTML ? window.civiQuizHTML(sec, pack.how) : ""}
+       <div class="course-nav"><a class="btn ghost ${prev ? "" : "is-off"}" ${prev ? `href="${courseHref(course, prev)}"` : 'aria-disabled="true" tabindex="-1"'}>‹ ${t("prev_lesson")}</a><a class="btn ${next ? "" : "is-off"}" ${next ? `href="${courseHref(course, next)}"` : 'aria-disabled="true" tabindex="-1"'}>${t("next_lesson")} ›</a></div>
+       <p class="sub" style="font-size:11px">${t("progress_local")}</p>
+     </div>
+   </article>`);
+  const paint = () => {
+    const stat = courseStat(course);
+    const bar = $("#courseBar"), pct = $("#coursePct"), lesson = $("#lessonBar");
+    if (bar) bar.value = stat.d; if (pct) pct.textContent = stat.p + "%"; if (lesson) lesson.value = stat.d;
+    course.modules.forEach(m => { const el = document.getElementById("mod-" + m.id); if (!el) return; el.value = m.sections.filter(sectionComplete).length; const sum = el.parentElement?.querySelector("summary span"); if (sum) sum.textContent = el.value + "/" + el.max; });
+    $$("#toc .toc-list a").forEach(a => { const id = decodeURIComponent((a.getAttribute("href") || "").split("/").pop()); const s = secs.find(x => x.id === id); if (!s) return; const mark = a.querySelector("span"); if (mark) mark.textContent = sectionComplete(s) ? "✓" : "·"; });
+    const on = sectionComplete(sec), btn = $("#markSec");
+    if (btn) { btn.setAttribute("aria-pressed", on ? "true" : "false"); btn.textContent = on ? t("completed") + " ✓" : t("mark_complete"); }
+    const whenNow = syncCourseBadge(course), badge = $("#courseBadge");
+    if (badge) { badge.hidden = !whenNow; badge.textContent = whenNow ? "🏅 " + t("badge_course") + " · " + whenNow : ""; }
+  };
+  $("#markSec").onclick = () => { localStorage.setItem("civi.sec." + sec.id, sectionComplete(sec) ? "0" : "1"); paint(); window.civiQuizCheck?.(sec, pack.how); };
+  $("#tocBtn").onclick = () => { const open = $("#toc").classList.toggle("open"); $("#tocBtn").setAttribute("aria-expanded", open); };
+  window.civiQuizBind?.(sec, pack.how);
 }
 
 /* ---------- Help, FAQ, chatbot ---------- */
@@ -246,6 +417,6 @@ function startTour(i = 0) {
 }
 addEventListener("keydown", e => { if (e.key === "Escape") { $(".tour-box") && $("#tSkip").click(); $("#chat")?.remove(); closeModal(); } });
 
-Object.assign(ROUTES, { directory: viewDirectory2, academy: viewAcademy2, howto: viewHowto, saved: viewSaved, help: viewHelp, faq: () => { viewHelp(); setTimeout(() => $("#faq")?.scrollIntoView(), 50); } });
+Object.assign(ROUTES, { directory: viewDirectory2, academy: viewAcademy2, howto: viewHowto, course: viewHowto, saved: viewSaved, help: viewHelp, faq: () => { viewHelp(); setTimeout(() => $("#faq")?.scrollIntoView(), 50); } });
 loadMe().then(syncFavsFromServer);
 setTimeout(() => { if (!localStorage.getItem("civi.tour") && (location.hash || "#/map").startsWith("#/map")) { localStorage.setItem("civi.hint", 1); $("#hint")?.remove(); startTour(); } }, 1600);

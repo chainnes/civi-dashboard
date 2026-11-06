@@ -6,8 +6,8 @@ filters="Filters",clear_all="Clear all",f_location="Location (region)",f_newstyp
 rec_all="Any time",rec_24h="24 hours",rec_7d="7 days",rec_30d="30 days",kind_news="News",kind_hazard="Hazard / quake",kind_event="Event",kind_user="User-shared",
 news_by_cat="News by category",latest="Latest",g_money="Government money",g_econ="Economy",g_people="People & safety",k_budget="2026 national budget",k_debt="National Government debt",k_remit="OFW remittances",
 official="official",unofficial="unofficial",kpi_note="Every number links to its official source with its as-of date. Civi does not compute or estimate these.",
-dir_title="Smart Directory",need_q="What help do you need?",need_ph="What help do you need? e.g. nawalan ng trabaho, passport, flood, loan",ask="Ask",ai_hint="Uses AI to understand your words (optional). Without AI, Civi matches keywords.",
-best_matches="Best matches",no_match="No match yet. Try simpler words, like 'loan', 'hospital', 'reklamo'.",thinking="Thinking…",kw_mode="keyword match",dir_disc="Hotlines are shown only when published by the agency itself; confirm on the official site.",off_asof="Officials list as of",
+dir_title="Smart Directory",need_q="What help do you need?",need_ph="What help do you need? e.g. lost a job, passport, flood, loan",ask="Ask",ai_hint="Uses AI to understand your words (optional). Without AI, Civi matches keywords.",
+best_matches="Best matches",no_match="No match yet. Try simpler words, like 'loan', 'hospital', 'complaint'.",thinking="Thinking…",kw_mode="keyword match",dir_disc="Hotlines are shown only when published by the agency itself; confirm on the official site.",off_asof="Officials list as of",
 official_site="Official site",source="Source",site_up="site up",botprot="Site is up but blocks automated link checks",link_ok="link checked",link_check="link could not be auto-checked",
 see_more="See more",see_less="See less",prev="Previous",next="Next",save="Save",unsave="Remove from saved",saved_ok="Saved to your profile ★",saved_local="Saved on this device ★ (log in to keep it in your profile)",removed="Removed",
 my_saved="My Saved",saved_sub_acct="Your saved items are stored in your Civi profile.",saved_sub_local="Saved on this device only. Log in to keep them in your profile.",saved_empty="Nothing saved yet. Tap ☆ on any card to save it here.",saved_on="Saved",open="Open",
@@ -23,7 +23,7 @@ bot_dunno="Sorry, I don't know that yet. Try the Help page FAQ or email privacy@
 tour1="This is the menu: Map, Directory, Lounge, Academy, Empower, Saved, Help.",tour2="Search any region, province or city here. Zoom with + and -, tap 🇵🇭 to see the whole country, and turn place labels on or off.",
 tour3="Filters: tick or untick what you want to see, or tap Only. Collapse this panel to see the whole map.",tour4="Philippines at a glance: budget, debt, inflation, jobs and more, each with its official source. Tap the title to collapse.",
 tour5="Your Daily Briefing: top stories for your topics and place. Email and push are optional.",tour6="Change language here. Non-English text is machine-assisted.",tour7="Need help? Open the help chat anytime. You can restart this tour from Help.",
-lounge_sub="Usapang Bayan: community conversations on topics that matter. Share your view respectfully; starter topics are neutral and link to sources.",
+lounge_sub="Community conversations on topics that matter. Share your view respectfully; starter topics are neutral and link to sources.",
 faq_q1="What is Civi?",faq_a1="Civi is a free community hub with public information about the Philippines: a map of news and hazards, a directory of agencies and services, guides, and community conversations. It is a beta project of Chainnes and is not a government site.",
 faq_q2="Is Civi free?",faq_a2="Yes. Core features are free. Donations help pay for hosting.",
 faq_q3="How do I use the map filters?",faq_a3="Open Filters on the right (⚙️ on mobile). Tick or untick categories, regions, types and sources, or tap Only to see just one. Select all brings everything back. Your choices are remembered on this device.",
@@ -92,9 +92,9 @@ core={
 "pag":dict(nav_saved="Na-save",nav_help="Tulong",filters="Saray filter",select_all="Pilien amin",only="Saya labat",labels="Saray label",whole_ph="Interon Filipinas",save="I-save",need_q="Anton tulong so kaukolan mo?",help_title="Tulong",next="Ontumbok",prev="Ompawil",done="Anggapo la",
  lounge_sub="Usapang Bayan: saray pantongtong na komunidad nipaakar ed importantin isyu. Ibingay so nonot mo a walay respeto; neutral iray starter topic tan walay link ed sources."),
 "tsg":dict(nav_saved="Na-save",nav_help="Tabang",filters="Filter",labels="Label",save="I-save",help_title="Tabang",next="Sunod",prev="Balik",
- lounge_sub="Usapang Bayan: community conversations on topics that matter. Share your view respectfully; starter topics are neutral and link to sources."),
+ lounge_sub="Community conversations on topics that matter. Share your view respectfully; starter topics are neutral and link to sources."),
 "mdh":dict(nav_saved="Na-save",nav_help="Tabang",filters="Filter",labels="Label",save="I-save",help_title="Tabang",
- lounge_sub="Usapang Bayan: community conversations on topics that matter. Share your view respectfully; starter topics are neutral and link to sources.")}
+ lounge_sub="Community conversations on topics that matter. Share your view respectfully; starter topics are neutral and link to sources.")}
 import json
 out="// Generated by scripts/i18n_ux_src.py. Only English is human-written; every other locale is MACHINE-ASSISTED and pending native-speaker review.\n"
 out+="(function(){const X="+json.dumps(dict(en=en,tl=tl,**core),ensure_ascii=False)+";for(const l in X){CIVI_I18N[l]=Object.assign(CIVI_I18N[l]||{},X[l]);}})();\n"

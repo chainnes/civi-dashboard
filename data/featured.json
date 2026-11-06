@@ -37,7 +37,7 @@
    },
    {
     "i": "💸",
-    "t": "Kumita at raket (side income)",
+    "t": "Side income and gigs",
     "tl": "Kumita at raket",
     "u": "#/directory?q=kumita"
    },
@@ -63,7 +63,7 @@
   "lounge": [
    {
     "i": "🤝",
-    "t": "How Usapang Bayan works",
+    "t": "How the Lounge works",
     "tl": "Paano gumagana ang Usapang Bayan",
     "u": "#/help"
    },
@@ -83,14 +83,14 @@
   "academy": [
    {
     "i": "💻",
-    "t": "Paano Kumita Online (14 modules)",
-    "tl": "Paano Kumita Online",
+    "t": "How to Earn Online (14 modules)",
+    "tl": "Paano Kumita Online (14 modules)",
     "u": "#/howto?id=earn01"
    },
    {
     "i": "🥗",
-    "t": "Healthy lifestyle at nutrisyon",
-    "tl": "Healthy lifestyle at nutrisyon",
+    "t": "Healthy lifestyle and nutrition",
+    "tl": "Malusog na pamumuhay at nutrisyon",
     "u": "#/howto?id=health01"
    },
    {
@@ -133,8 +133,8 @@
    },
    {
     "i": "📣",
-    "t": "Sumbong: report a local issue",
-    "tl": "Sumbong",
+    "t": "Report a local issue",
+    "tl": "Sumbong: mag-ulat ng lokal na isyu",
     "u": "#/sumbong"
    },
    {

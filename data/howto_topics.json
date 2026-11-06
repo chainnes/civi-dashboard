@@ -1,0 +1,1163 @@
+{
+  "as_of": "2026-11-06",
+  "note": "New sections for the topic courses. Steps describe what the official page is for. They do not copy fees, contribution counts, or benefit amounts. Check the linked page before you act.",
+  "note_tl": "Mga bagong seksyon ng mga kurso. Inilalarawan ng mga hakbang kung para saan ang opisyal na pahina. Hindi kinokopya ang bayad, bilang ng kontribusyon, o halaga ng benepisyo. Tingnan ang naka-link na pahina bago kumilos.",
+  "items": [
+    {
+      "id": "haz-typhoon",
+      "new": true,
+      "title": "Typhoon",
+      "title_tl": "Bagyo",
+      "src": "https://www.pagasa.dost.gov.ph/",
+      "steps": [
+        "Read the current PAGASA tropical cyclone bulletin. It is the source for the storm's track, the wind signal, and the rainfall warning. Do not rely on a number you remember.",
+        "A Tropical Cyclone Wind Signal means damaging winds are expected. PAGASA publishes what each signal means. Follow the bulletin that is up now.",
+        "Before landfall: charge phones and power banks, store drinking water, secure loose objects, and know your barangay evacuation center.",
+        "Leave when your LGU or NDRRMC tells you to. Do not wait for the wind to arrive.",
+        "After the storm, watch for floods and landslides. Wait for the official all-clear before you go home or into a damaged building."
+      ],
+      "steps_tl": [
+        "Basahin ang kasalukuyang tropical cyclone bulletin ng PAGASA. Doon ang track ng bagyo, wind signal, at rainfall warning. Huwag umasa sa numerong natatandaan mo lang.",
+        "Ang Tropical Cyclone Wind Signal ay nangangahulugang inaasahan ang malakas na hangin. Inilalathala ng PAGASA kung ano ang ibig sabihin ng bawat signal. Sundin ang bulletin na nakataas ngayon.",
+        "Bago ang landfall: i-charge ang telepono at power bank, mag-imbak ng inuming tubig, itali ang maluluwag na gamit, at alamin ang evacuation center ng barangay.",
+        "Umalis kapag sinabi ng LGU o NDRRMC. Huwag hintayin ang hangin.",
+        "Pagkatapos ng bagyo, mag-ingat sa baha at landslide. Hintayin ang opisyal na all-clear bago umuwi o pumasok sa sirang gusali."
+      ],
+      "tip": "Gale and storm warnings for sea travel are also on the PAGASA site. Check them before a boat trip.",
+      "tip_tl": "Nasa site din ng PAGASA ang gale at storm warning para sa biyahe sa dagat. Tingnan bago sumakay ng barko.",
+      "links": [["PAGASA", "https://www.pagasa.dost.gov.ph/", "live"], ["NDRRMC", "https://ndrrmc.gov.ph/", "live"], ["OCD", "https://ocd.gov.ph/", "live"]],
+      "related": ["PAGASA", "NDRRMC"],
+      "related_tl": ["PAGASA", "NDRRMC"]
+    },
+    {
+      "id": "haz-flood",
+      "new": true,
+      "title": "Flood",
+      "title_tl": "Baha",
+      "src": "https://www.pagasa.dost.gov.ph/",
+      "steps": [
+        "Follow PAGASA rainfall and flood advisories and your LGU's flood warnings. Move to higher ground early.",
+        "Do not walk or drive through floodwater. You cannot see holes, open drains, or how fast the water is moving.",
+        "If water is entering the house and you can reach the main switch safely, turn the electricity off. Do not touch switches or appliances while you are wet.",
+        "After wading, wash with soap and clean water. If you get a fever afterward, go to a health center and say you were in floodwater. Leptospirosis is a known risk; DOH publishes the current advice.",
+        "Drink stored or boiled water until your LGU says the supply is safe."
+      ],
+      "steps_tl": [
+        "Sundin ang rainfall at flood advisory ng PAGASA at ang babala ng LGU. Umakyat sa mas mataas na lugar nang maaga.",
+        "Huwag lumusong o magmaneho sa baha. Hindi mo nakikita ang butas, bukas na kanal, o ang bilis ng tubig.",
+        "Kung pumapasok ang tubig at ligtas mong maaabot ang main switch, patayin ang kuryente. Huwag humawak ng switch o appliance habang basa ka.",
+        "Pagkalusong, maghugas gamit ang sabon at malinis na tubig. Kung nilalagnat ka pagkatapos, pumunta sa health center at sabihin na nalusong ka. Kilalang panganib ang leptospirosis; inilalathala ng DOH ang kasalukuyang payo.",
+        "Uminom ng nakaimbak o pinakulang tubig hanggang sabihin ng LGU na ligtas na ang supply."
+      ],
+      "tip": "This is not medical advice. Call 911 for an emergency.",
+      "tip_tl": "Hindi ito medikal na payo. Tumawag sa 911 kung emergency.",
+      "links": [["DOH", "https://doh.gov.ph/", "live"], ["PAGASA", "https://www.pagasa.dost.gov.ph/", "live"]],
+      "related": ["DOH", "flood"],
+      "related_tl": ["DOH", "baha"]
+    },
+    {
+      "id": "haz-quake",
+      "new": true,
+      "title": "Earthquake",
+      "title_tl": "Lindol",
+      "src": "https://www.phivolcs.dost.gov.ph/",
+      "steps": [
+        "During shaking, use Drop, Cover, and Hold: drop to the floor, take cover under a sturdy table, and hold on. PHIVOLCS teaches this.",
+        "Stay away from glass, windows, and heavy objects that can fall. If you are outdoors, move to an open area away from buildings, power lines, and slopes.",
+        "If you are near the coast and the shaking is strong or long, move inland or uphill after it stops. A tsunami is possible. Follow the PHIVOLCS tsunami bulletin. Do not wait to see the wave.",
+        "Afterward, expect aftershocks. Check for injuries and the smell of gas. Use stairs if you must leave a building. Do not use an elevator.",
+        "Get news from PHIVOLCS and your LGU, not from forwarded messages."
+      ],
+      "steps_tl": [
+        "Habang umuuga, gawin ang Drop, Cover, and Hold: yumuko sa sahig, magkubli sa matibay na mesa, at kumapit. Ito ang itinuturo ng PHIVOLCS.",
+        "Lumayo sa salamin, bintana, at mabibigat na bagay na pwedeng mahulog. Kung nasa labas ka, lumipat sa bukas na lugar, malayo sa gusali, linya ng kuryente, at libis.",
+        "Kung malapit ka sa baybayin at malakas o matagal ang pag-uga, lumipat sa loob ng lupa o paakyat pagkatapos. Posible ang tsunami. Sundin ang tsunami bulletin ng PHIVOLCS. Huwag hintayin ang alon.",
+        "Pagkatapos, mag-ingat sa aftershock. Tingnan ang sugat at ang amoy ng gas. Gumamit ng hagdan kung kailangang lumabas. Huwag gumamit ng elevator.",
+        "Kumuha ng balita sa PHIVOLCS at sa LGU, hindi sa pinasa-pasang mensahe."
+      ],
+      "tip": "",
+      "links": [["PHIVOLCS", "https://www.phivolcs.dost.gov.ph/", "live"], ["NDRRMC", "https://ndrrmc.gov.ph/", "live"]],
+      "related": ["PHIVOLCS", "earthquake"],
+      "related_tl": ["PHIVOLCS", "lindol"]
+    },
+    {
+      "id": "haz-fire",
+      "new": true,
+      "title": "Fire",
+      "title_tl": "Sunog",
+      "src": "https://bfp.gov.ph/",
+      "steps": [
+        "Know two ways out of your home. Practice them when there is no fire.",
+        "If there is smoke, stay low and crawl. Close doors behind you.",
+        "Feel a closed door with the back of your hand. If it is hot, use the other exit.",
+        "Call 911 when you are outside. Tell them the address. Do not go back in for things.",
+        "If your clothes catch fire: stop, drop, and roll. Cool a burn with clean running water and get medical help. The Bureau of Fire Protection publishes fire-safety guidance."
+      ],
+      "steps_tl": [
+        "Alamin ang dalawang daan palabas ng bahay. Sanayin ito kapag walang sunog.",
+        "Kung may usok, manatiling mababa at gumapang. Isara ang mga pinto sa likod mo.",
+        "Damhin ang saradong pinto gamit ang likod ng kamay. Kung mainit, gamitin ang ibang labasan.",
+        "Tumawag sa 911 kapag nasa labas ka na. Sabihin ang address. Huwag bumalik para sa mga gamit.",
+        "Kung nasunog ang damit: huminto, dapa, at gumulong. Palamigin ang paso gamit ang malinis na umaagos na tubig at humingi ng tulong medikal. May gabay sa kaligtasan sa sunog ang Bureau of Fire Protection."
+      ],
+      "tip": "This page is not firefighting or medical training. For an emergency, call 911.",
+      "tip_tl": "Hindi ito pagsasanay sa pagpapatay ng sunog o panggagamot. Kung emergency, tumawag sa 911.",
+      "links": [["BFP", "https://bfp.gov.ph/", "live"], ["911", "https://e911.gov.ph/", "live"]],
+      "related": ["911", "BFP"],
+      "related_tl": ["911", "BFP"]
+    },
+    {
+      "id": "haz-volcano",
+      "new": true,
+      "title": "Volcano",
+      "title_tl": "Bulkan",
+      "src": "https://www.phivolcs.dost.gov.ph/",
+      "steps": [
+        "Read the PHIVOLCS bulletin for the specific volcano. Alert levels and danger zones are different for each volcano and they change. Do not memorize an old level.",
+        "Stay out of the permanent danger zone and leave when the LGU orders an evacuation.",
+        "Ashfall: stay indoors, close windows and doors, and cover your nose and mouth when you must go out. Protect stored water.",
+        "Do not drive if you cannot see. Ash makes roads slippery and harms engines.",
+        "Follow DOH advice if you have asthma or eye irritation, and seek care if breathing becomes hard."
+      ],
+      "steps_tl": [
+        "Basahin ang bulletin ng PHIVOLCS para sa partikular na bulkan. Magkaiba at nagbabago ang alert level at danger zone ng bawat bulkan. Huwag isaulo ang lumang level.",
+        "Huwag pumasok sa permanent danger zone at umalis kapag nag-utos ng evacuation ang LGU.",
+        "Ashfall: manatili sa loob, isara ang bintana at pinto, at takpan ang ilong at bibig kung kailangang lumabas. Protektahan ang nakaimbak na tubig.",
+        "Huwag magmaneho kung hindi ka makakita. Madulas ang kalsada dahil sa abo at nasisira ang makina.",
+        "Sundin ang payo ng DOH kung may hika ka o naiirita ang mata, at magpatingin kung nahihirapan kang huminga."
+      ],
+      "tip": "Not medical advice.",
+      "tip_tl": "Hindi medikal na payo.",
+      "links": [["PHIVOLCS", "https://www.phivolcs.dost.gov.ph/", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["PHIVOLCS"],
+      "related_tl": ["PHIVOLCS"]
+    },
+    {
+      "id": "haz-evac",
+      "new": true,
+      "title": "Evacuation",
+      "title_tl": "Paglikas",
+      "src": "https://ocd.gov.ph/",
+      "steps": [
+        "Ask your barangay, before any hazard, where the evacuation center is and how you will get there.",
+        "Bring your go-bag, maintenance medicines, and copies of IDs. Help children, older people, and persons with disabilities leave with you.",
+        "Follow the route and the time your LGU announces. Do not go to a center that the LGU has not opened.",
+        "At the center, register if the staff ask you to, so your family can be accounted for.",
+        "Go home only when the LGU or NDRRMC says it is safe. OCD and NDRRMC publish situation reports."
+      ],
+      "steps_tl": [
+        "Itanong sa barangay, bago pa may panganib, kung nasaan ang evacuation center at paano kayo makakarating.",
+        "Dalhin ang go-bag, maintenance na gamot, at kopya ng mga ID. Tulungan ang mga bata, nakatatanda, at mga person with disability na makaalis.",
+        "Sundin ang ruta at oras na inanunsyo ng LGU. Huwag pumunta sa center na hindi pa binubuksan ng LGU.",
+        "Sa center, magparehistro kung hilingin ng staff, para mabilang ang pamilya.",
+        "Umuwi lang kapag sinabi ng LGU o NDRRMC na ligtas na. Naglalathala ng situation report ang OCD at NDRRMC."
+      ],
+      "tip": "",
+      "links": [["OCD", "https://ocd.gov.ph/", "live"], ["NDRRMC", "https://ndrrmc.gov.ph/", "live"]],
+      "related": ["NDRRMC", "OCD"],
+      "related_tl": ["NDRRMC", "OCD"]
+    },
+    {
+      "id": "haz-firstaid",
+      "new": true,
+      "title": "First aid",
+      "title_tl": "First aid",
+      "src": "https://www.redcross.org.ph/",
+      "steps": [
+        "This page does not teach you to perform medical procedures. Take first-aid and CPR training from the Philippine Red Cross.",
+        "For a life-threatening emergency, call 911.",
+        "While you wait, keep the person still, and use a clean cloth with direct pressure on heavy bleeding if that is all you can safely do.",
+        "Do not give food, drink, or medicine unless a trained responder tells you to.",
+        "Keep a small kit in the go-bag: clean gauze, soap, and the maintenance medicines your household already uses. Replace what you use."
+      ],
+      "steps_tl": [
+        "Hindi itinuturo ng pahinang ito ang paggawa ng medikal na procedure. Kumuha ng pagsasanay sa first aid at CPR sa Philippine Red Cross.",
+        "Para sa emergency na nakamamatay, tumawag sa 911.",
+        "Habang naghihintay, panatilihing hindi gumagalaw ang tao, at gumamit ng malinis na tela na may direktang pressure sa malakas na pagdurugo kung iyon lang ang ligtas mong magagawa.",
+        "Huwag magbigay ng pagkain, inumin, o gamot maliban kung sabihin ng sanay na responder.",
+        "Magtabi ng maliit na kit sa go-bag: malinis na gauze, sabon, at ang maintenance na gamot na ginagamit na ng sambahayan. Palitan ang nagamit."
+      ],
+      "tip": "Not medical advice and not a substitute for Red Cross training.",
+      "tip_tl": "Hindi medikal na payo at hindi kapalit ng pagsasanay ng Red Cross.",
+      "links": [["Philippine Red Cross", "https://www.redcross.org.ph/", "live"], ["911", "https://e911.gov.ph/", "live"]],
+      "related": ["Red Cross", "911"],
+      "related_tl": ["Red Cross", "911"]
+    },
+    {
+      "id": "haz-hotlines",
+      "new": true,
+      "title": "Emergency hotlines",
+      "title_tl": "Mga emergency hotline",
+      "src": "https://e911.gov.ph/",
+      "steps": [
+        "911 is the national emergency hotline for police, fire, and medical emergencies. Save it in your phone.",
+        "Also save the numbers your barangay and city publish. Local numbers change, so copy them from the LGU, not from an old post.",
+        "NDRRMC, PAGASA, PHIVOLCS, the Bureau of Fire Protection, and the Philippine Red Cross publish their own contact pages. Open those pages when you need a non-emergency update.",
+        "Do not post someone else's private number in a group chat. Use the official directory.",
+        "Civi lists the hotlines it has checked under Directory → Emergency & hotlines. Verify on the agency site before you rely on one."
+      ],
+      "steps_tl": [
+        "Ang 911 ang pambansang emergency hotline para sa pulis, bumbero, at medikal na emergency. I-save ito sa telepono.",
+        "I-save din ang mga numerong inilalathala ng barangay at lungsod. Nagbabago ang lokal na numero, kaya kopyahin sa LGU, hindi sa lumang post.",
+        "May sariling contact page ang NDRRMC, PAGASA, PHIVOLCS, ang Bureau of Fire Protection, at ang Philippine Red Cross. Buksan ang mga iyon kapag kailangan ng update na hindi emergency.",
+        "Huwag i-post ang pribadong numero ng iba sa group chat. Gamitin ang opisyal na direktoryo.",
+        "Inilista ng Civi ang mga hotline na nasuri nito sa Direktoryo → Emergency & hotlines. I-verify sa site ng ahensya bago umasa."
+      ],
+      "tip": "Civi is not an emergency service.",
+      "tip_tl": "Hindi emergency service ang Civi.",
+      "links": [["911", "https://e911.gov.ph/", "live"], ["Directory hotlines", "#/directory/Emergency%20%26%20hotlines", "live"]],
+      "related": ["911", "NDRRMC"],
+      "related_tl": ["911", "NDRRMC"]
+    },
+    {
+      "id": "gov-rights",
+      "new": true,
+      "title": "Rights in the Constitution",
+      "title_tl": "Mga karapatan sa Konstitusyon",
+      "src": "https://lawphil.net/consti/cons1987.html",
+      "steps": [
+        "Article III of the 1987 Constitution is the Bill of Rights. Read the article itself. This section is only a map of it.",
+        "It includes due process and equal protection, and freedoms such as speech, religion, and peaceful assembly.",
+        "It protects the privacy of communication and correspondence, with exceptions the Constitution itself states.",
+        "It states rights of people who are arrested, searched, or accused, including the right to be informed of the reason for an arrest and the right to counsel.",
+        "For a real case, talk to a lawyer. The Public Attorney's Office and the Integrated Bar of the Philippines have legal-aid channels for people who qualify."
+      ],
+      "steps_tl": [
+        "Ang Article III ng 1987 Constitution ang Bill of Rights. Basahin ang mismong article. Mapa lang ito.",
+        "Kasama rito ang due process at equal protection, at ang mga kalayaan gaya ng pananalita, relihiyon, at mapayapang pagtitipon.",
+        "Pinoprotektahan nito ang privacy ng komunikasyon at sulat, na may mga eksepsiyon na nakasaad sa mismong Konstitusyon.",
+        "Nakasaad ang mga karapatan ng inaresto, hinalughog, o inakusahan, kabilang ang karapatang malaman ang dahilan ng pag-aresto at ang karapatan sa abogado.",
+        "Para sa totoong kaso, kumausap ng abogado. May legal-aid na channel ang Public Attorney's Office at ang Integrated Bar of the Philippines para sa mga kwalipikado."
+      ],
+      "tip": "Not legal advice.",
+      "tip_tl": "Hindi legal na payo.",
+      "links": [["1987 Constitution", "https://lawphil.net/consti/cons1987.html", "live"], ["PAO", "https://pao.gov.ph/", "live"]],
+      "related": ["PAO", "CHR"],
+      "related_tl": ["PAO", "CHR"]
+    },
+    {
+      "id": "gov-privacy",
+      "new": true,
+      "title": "Your data rights (RA 10173)",
+      "title_tl": "Mga karapatan mo sa datos (RA 10173)",
+      "src": "https://privacy.gov.ph/",
+      "steps": [
+        "The Data Privacy Act of 2012 (RA 10173) covers personal information processed by many public and private organizations. Read the law and the National Privacy Commission site.",
+        "The law gives a data subject the right to be informed, to access, to object, to correct, to erase or block, to data portability, and to damages, as those rights are written in the Act.",
+        "If an organization holds your data, ask them first, in writing, for access or correction. Keep a copy of what you sent.",
+        "You may complain to the National Privacy Commission. Use the process on privacy.gov.ph. Civi does not file it for you.",
+        "Do not send passwords, one-time codes, or photos of IDs to a stranger who claims to be the NPC or your bank."
+      ],
+      "steps_tl": [
+        "Sinasaklaw ng Data Privacy Act of 2012 (RA 10173) ang personal na impormasyon na pinoproseso ng maraming pampubliko at pribadong organisasyon. Basahin ang batas at ang site ng National Privacy Commission.",
+        "Binibigay ng batas sa data subject ang karapatang malaman, ma-access, tumutol, maitama, mabura o ma-block, sa data portability, at sa danyos, ayon sa nakasulat sa Act.",
+        "Kung hawak ng isang organisasyon ang datos mo, unahin silang sulatan para sa access o pagwawasto. Magtabi ng kopya ng ipinadala mo.",
+        "Maaari kang magreklamo sa National Privacy Commission. Gamitin ang proseso sa privacy.gov.ph. Hindi ito ifa-file ng Civi para sa iyo.",
+        "Huwag magpadala ng password, one-time code, o larawan ng ID sa estrangherong nagsasabing NPC o bangko mo."
+      ],
+      "tip": "Not legal advice. The Commission’s forms and deadlines are on its website.",
+      "tip_tl": "Hindi legal na payo. Nasa website ng Commission ang mga form at deadline.",
+      "links": [["National Privacy Commission", "https://privacy.gov.ph/", "live"], ["RA 10173", "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html", "live"]],
+      "related": ["NPC", "privacy"],
+      "related_tl": ["NPC", "privacy"]
+    },
+    {
+      "id": "gov-report",
+      "new": true,
+      "title": "Where to report",
+      "title_tl": "Saan mag-report",
+      "src": "https://8888.gov.ph/",
+      "steps": [
+        "For complaints about government service, red tape, or corruption, the Citizens' Complaint Center is 8888. Use 8888.gov.ph.",
+        "Complaints against a public official or employee can go to the Office of the Ombudsman. Use the process on ombudsman.gov.ph.",
+        "Human-rights complaints can go to the Commission on Human Rights.",
+        "Consumer problems with goods and services usually go to the DTI. Food and drug products go to the FDA. Use the agency that matches the product.",
+        "Write facts you can support. Civi does not forward reports to these offices."
+      ],
+      "steps_tl": [
+        "Para sa reklamo tungkol sa serbisyo ng gobyerno, red tape, o korupsiyon, ang Citizens' Complaint Center ay 8888. Gamitin ang 8888.gov.ph.",
+        "Ang reklamo laban sa opisyal o empleyado ng gobyerno ay maaaring dalhin sa Office of the Ombudsman. Gamitin ang proseso sa ombudsman.gov.ph.",
+        "Ang reklamo sa karapatang pantao ay maaaring dalhin sa Commission on Human Rights.",
+        "Ang problema ng consumer sa produkto at serbisyo ay karaniwang sa DTI. Ang pagkain at gamot ay sa FDA. Gamitin ang ahensyang tumutugma sa produkto.",
+        "Isulat ang katotohanang kaya mong suportahan. Hindi ipinapasa ng Civi ang mga report sa mga opisina na ito."
+      ],
+      "tip": "Not legal advice. Online libel is a crime under the Cybercrime Prevention Act.",
+      "tip_tl": "Hindi legal na payo. Krimen ang online libel sa ilalim ng Cybercrime Prevention Act.",
+      "links": [["8888", "https://8888.gov.ph/", "live"], ["Ombudsman", "https://www.ombudsman.gov.ph/", "live"], ["CHR", "https://chr.gov.ph/", "live"]],
+      "related": ["8888", "Ombudsman"],
+      "related_tl": ["8888", "Ombudsman"]
+    },
+    {
+      "id": "id-brgy",
+      "new": true,
+      "title": "Barangay clearance",
+      "title_tl": "Barangay clearance",
+      "src": "https://www.dilg.gov.ph/",
+      "steps": [
+        "A barangay clearance is issued by the barangay. For a person, that is usually the barangay where you live. For a business, it is the barangay where the business is.",
+        "The papers they ask for, and any fee, are set by that barangay or city. They are not the same everywhere. Ask the barangay hall before you go, and pay only at the official window.",
+        "Bring a valid ID. Ask what else they require that week.",
+        "Beware of fixers. The clearance should come from the barangay, with its own receipt if a fee is charged.",
+        "The Department of the Interior and Local Government oversees local governments. Your barangay is still the office that issues this paper."
+      ],
+      "steps_tl": [
+        "Ang barangay ang nag-iisyu ng barangay clearance. Para sa tao, karaniwan itong barangay kung saan ka nakatira. Para sa negosyo, ang barangay kung nasaan ang negosyo.",
+        "Ang hinihinging papeles, at ang anumang bayad, ay itinakda ng barangay o lungsod na iyon. Hindi pare-pareho sa lahat ng lugar. Magtanong sa barangay hall bago pumunta, at magbayad lang sa opisyal na bintana.",
+        "Magdala ng valid ID. Itanong kung ano pa ang kailangan sa linggong iyon.",
+        "Mag-ingat sa fixer. Dapat galing sa barangay ang clearance, na may sariling resibo kung may bayad.",
+        "Ang Department of the Interior and Local Government ang nangangasiwa sa mga lokal na gobyerno. Ang barangay pa rin ang opisina na nag-iisyu ng papel na ito."
+      ],
+      "tip": "Civi does not list a fee, because the barangay sets it.",
+      "tip_tl": "Hindi naglilista ang Civi ng bayad, dahil ang barangay ang nagtatakda nito.",
+      "links": [["DILG", "https://www.dilg.gov.ph/", "live"]],
+      "related": ["barangay", "DILG"],
+      "related_tl": ["barangay", "DILG"]
+    },
+    {
+      "id": "id-pwd",
+      "new": true,
+      "title": "PWD ID",
+      "title_tl": "PWD ID",
+      "src": "https://ncda.gov.ph/",
+      "steps": [
+        "The PWD ID is issued by the city or municipality, often through the Persons with Disability Affairs Office or the social welfare office. Ask that office what to bring. Lists differ.",
+        "RA 7277, the Magna Carta for Disabled Persons, is the main law. Later laws add benefits. Read the current text and the NCDA page instead of a forwarded list.",
+        "Civi does not state a discount rate or a medical requirement here, because those rules are on the official pages and can change.",
+        "Keep a copy of the ID and the booklet the LGU gives you. Renew when the LGU says it expires.",
+        "The National Council on Disability Affairs publishes disability-rights information."
+      ],
+      "steps_tl": [
+        "Ang lungsod o bayan ang nag-iisyu ng PWD ID, kadalasan sa Persons with Disability Affairs Office o sa social welfare office. Itanong kung ano ang dadalhin. Magkaiba ang mga listahan.",
+        "Ang RA 7277, ang Magna Carta for Disabled Persons, ang pangunahing batas. May idinadagdag na benepisyo ang mga sumunod na batas. Basahin ang kasalukuyang teksto at ang pahina ng NCDA sa halip na pinasa-pasang listahan.",
+        "Hindi nagsasaad ang Civi ng porsyento ng diskuwento o ng medikal na requirement dito, dahil nasa opisyal na pahina ang mga patakaran at maaari itong magbago.",
+        "Magtabi ng kopya ng ID at ng booklet na ibinibigay ng LGU. Mag-renew kapag sinabi ng LGU na paso na.",
+        "Naglalathala ng impormasyon sa karapatan ng may kapansanan ang National Council on Disability Affairs."
+      ],
+      "tip": "Not legal advice.",
+      "tip_tl": "Hindi legal na payo.",
+      "links": [["NCDA", "https://ncda.gov.ph/", "live"], ["RA 7277", "https://lawphil.net/statutes/repacts/ra1992/ra_7277_1992.html", "live"]],
+      "related": ["NCDA", "PWD"],
+      "related_tl": ["NCDA", "PWD"]
+    },
+    {
+      "id": "hl-konsulta",
+      "new": true,
+      "title": "PhilHealth primary care (Konsulta)",
+      "title_tl": "Primary care ng PhilHealth (Konsulta)",
+      "src": "https://www.philhealth.gov.ph/",
+      "steps": [
+        "PhilHealth's primary care benefit has been called Konsulta (Konsultasyong Sulit at Tama). Later PhilHealth pages may use a newer program name. Follow the name and the steps on philhealth.gov.ph today.",
+        "Register as a member first and get a PIN if you do not have one. Then register with an accredited primary care provider. The list of providers is on the PhilHealth site and at PhilHealth offices.",
+        "What the package includes, and any registration window, is published by PhilHealth. Civi does not copy a peso amount or a lab-test list.",
+        "Bring your PhilHealth identification when you visit the provider you registered with.",
+        "If a clinic asks you to pay a fixer to be 'activated', stop and check with PhilHealth."
+      ],
+      "steps_tl": [
+        "Ang primary care benefit ng PhilHealth ay tinawag na Konsulta (Konsultasyong Sulit at Tama). Maaaring gumamit ng mas bagong pangalan ang mga susunod na pahina ng PhilHealth. Sundin ang pangalan at mga hakbang sa philhealth.gov.ph ngayon.",
+        "Magparehistro muna bilang miyembro at kumuha ng PIN kung wala ka pa. Pagkatapos, magparehistro sa accredited na primary care provider. Nasa site ng PhilHealth at sa mga opisina nito ang listahan ng provider.",
+        "Ang laman ng package, at ang anumang registration window, ay inilalathala ng PhilHealth. Hindi kumokopya ang Civi ng halagang piso o ng listahan ng lab test.",
+        "Dalhin ang pagkakakilanlan mo sa PhilHealth kapag bibisita sa provider na pinagparehistruhan mo.",
+        "Kung hinihingan ka ng clinic ng bayad sa fixer para 'ma-activate', tumigil at kumonsulta sa PhilHealth."
+      ],
+      "tip": "Not medical advice. Benefits change. The PhilHealth page wins.",
+      "tip_tl": "Hindi medikal na payo. Nagbabago ang benepisyo. Ang pahina ng PhilHealth ang masusunod.",
+      "links": [["PhilHealth", "https://www.philhealth.gov.ph/", "live"]],
+      "related": ["PhilHealth"],
+      "related_tl": ["PhilHealth"]
+    },
+    {
+      "id": "hl-center",
+      "new": true,
+      "title": "Health centers",
+      "title_tl": "Mga health center",
+      "src": "https://doh.gov.ph/",
+      "steps": [
+        "City and municipal health offices, rural health units, and barangay health stations give primary care in the public system. Your LGU can tell you which one covers your address.",
+        "They are the usual place for immunization, prenatal care, and many DOH programs. Ask what clinic day applies to your need.",
+        "Bring any ID you have and, for a child, the immunization card if you have one. If you have no card, still go. Tell the staff.",
+        "A health center is not an emergency room. For an emergency, call 911 or go to a hospital.",
+        "DOH sets program guidance. The local health office runs the clinic hours."
+      ],
+      "steps_tl": [
+        "Ang city at municipal health office, rural health unit, at barangay health station ang nagbibigay ng primary care sa pampublikong sistema. Masasabi ng LGU kung alin ang sumasaklaw sa address mo.",
+        "Karaniwan silang puntahan para sa bakuna, prenatal care, at maraming programa ng DOH. Itanong kung anong araw ng klinika ang para sa kailangan mo.",
+        "Magdala ng anumang ID, at para sa bata, ang immunization card kung mayroon. Kung wala kang card, pumunta pa rin. Sabihin sa staff.",
+        "Hindi emergency room ang health center. Para sa emergency, tumawag sa 911 o pumunta sa ospital.",
+        "Ang DOH ang nagtatakda ng gabay ng programa. Ang lokal na health office ang nagpapatakbo ng oras ng klinika."
+      ],
+      "tip": "Not medical advice.",
+      "tip_tl": "Hindi medikal na payo.",
+      "links": [["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["DOH", "health center"],
+      "related_tl": ["DOH", "health center"]
+    },
+    {
+      "id": "hl-malasakit",
+      "new": true,
+      "title": "Malasakit Centers",
+      "title_tl": "Mga Malasakit Center",
+      "src": "https://doh.gov.ph/",
+      "steps": [
+        "The Malasakit Centers Act (RA 11463) puts medical and financial assistance in one place inside government hospitals. DOH, PhilHealth, DSWD, and PCSO are the agencies named in the law.",
+        "Ask the hospital whether it has a Malasakit Center and which window to approach. Not every facility has one.",
+        "Bring a valid ID and the documents the desk asks for. Civi does not list an income cutoff or a peso cap, because the agencies publish the current rules.",
+        "PhilHealth benefits and other assistance are separate. Present your PhilHealth identification if you are a member.",
+        "No one should charge you a 'processing fee' in the hallway. Pay only where the hospital or the agency issues an official receipt."
+      ],
+      "steps_tl": [
+        "Pinagsasama ng Malasakit Centers Act (RA 11463) ang medikal at pinansyal na tulong sa isang lugar sa loob ng mga ospital ng gobyerno. Ang DOH, PhilHealth, DSWD, at PCSO ang mga ahensyang pinangalanan sa batas.",
+        "Itanong sa ospital kung may Malasakit Center at kung aling bintana ang lalapitan. Hindi lahat ng pasilidad ay mayroon.",
+        "Magdala ng valid ID at ng mga dokumentong hinihingi ng desk. Hindi naglilista ang Civi ng income cutoff o limitasyon sa piso, dahil inilalathala ng mga ahensya ang kasalukuyang patakaran.",
+        "Hiwalay ang benepisyo ng PhilHealth at ang ibang tulong. Ipakita ang pagkakakilanlan sa PhilHealth kung miyembro ka.",
+        "Walang dapat maningil sa iyo ng 'processing fee' sa pasilyo. Magbayad lang kung saan nag-iisyu ng opisyal na resibo ang ospital o ahensya."
+      ],
+      "tip": "Not medical or financial advice.",
+      "tip_tl": "Hindi medikal o pinansyal na payo.",
+      "links": [["DOH", "https://doh.gov.ph/", "live"], ["RA 11463", "https://lawphil.net/statutes/repacts/ra2019/ra_11463_2019.html", "live"]],
+      "related": ["Malasakit", "DOH"],
+      "related_tl": ["Malasakit", "DOH"]
+    },
+    {
+      "id": "hl-vax",
+      "new": true,
+      "title": "Vaccines",
+      "title_tl": "Mga bakuna",
+      "src": "https://doh.gov.ph/",
+      "steps": [
+        "The Department of Health runs the National Immunization Program through health centers. Which vaccines are offered, and to whom, is on the current DOH page and at your health center.",
+        "Civi does not copy an age-by-age schedule. Schedules are updated. Ask the health center or read the DOH page before you rely on a list.",
+        "Bring the child's immunization card if you have it. Adults should ask which vaccines the center offers for their situation.",
+        "Tell the nurse about allergies and about any reaction to a past dose.",
+        "Vaccines are not emergency care. If someone is very ill, call 911 or go to a hospital."
+      ],
+      "steps_tl": [
+        "Pinapatakbo ng Department of Health ang National Immunization Program sa mga health center. Kung aling bakuna ang inaalok, at para kanino, ay nasa kasalukuyang pahina ng DOH at sa health center mo.",
+        "Hindi kumokopya ang Civi ng iskedyul ayon sa edad. Ina-update ang mga iskedyul. Magtanong sa health center o basahin ang pahina ng DOH bago umasa sa isang listahan.",
+        "Dalhin ang immunization card ng bata kung mayroon. Dapat magtanong ang mga adulto kung aling bakuna ang inaalok ng center para sa sitwasyon nila.",
+        "Sabihin sa nurse ang mga allergy at ang anumang reaksyon sa nakaraang dose.",
+        "Hindi emergency care ang bakuna. Kung may malubhang sakit, tumawag sa 911 o pumunta sa ospital."
+      ],
+      "tip": "Not medical advice.",
+      "tip_tl": "Hindi medikal na payo.",
+      "links": [["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["DOH", "health center"],
+      "related_tl": ["DOH", "health center"]
+    },
+    {
+      "id": "hl-rabies",
+      "new": true,
+      "title": "Animal bites and rabies",
+      "title_tl": "Kagat ng hayop at rabies",
+      "src": "https://doh.gov.ph/",
+      "steps": [
+        "Wash the wound right away with soap and running water for at least 15 minutes. That figure is the World Health Organization's first-aid advice for a possible rabies exposure. Then go to a health center or animal bite treatment center the same day.",
+        "Do not wait to see if the animal was 'just playing'. Rabies is fatal once symptoms start. DOH tells people to seek care immediately.",
+        "Tell the clinic what animal it was, whether the bite broke the skin, and where the animal is now if you know.",
+        "The vaccine and immunoglobulin schedule is decided by the clinic from the current DOH protocol. Civi does not copy dose counts.",
+        "Do not treat a bite with garlic, vinegar, or a tourniquet. Those are not the DOH or WHO steps."
+      ],
+      "steps_tl": [
+        "Hugasan agad ang sugat gamit ang sabon at umaagos na tubig nang hindi bababa sa 15 minuto. Iyon ang first-aid na payo ng World Health Organization para sa posibleng exposure sa rabies. Pagkatapos, pumunta sa health center o animal bite treatment center sa araw ding iyon.",
+        "Huwag hintayin kung 'naglalaro' lang ang hayop. Nakamamatay ang rabies kapag nagsimula na ang sintomas. Sinasabi ng DOH na humingi agad ng tulong.",
+        "Sabihin sa klinika kung anong hayop, kung nabutas ang balat, at kung nasaan ang hayop ngayon kung alam mo.",
+        "Ang iskedyul ng bakuna at immunoglobulin ay pinagpapasyahan ng klinika mula sa kasalukuyang protocol ng DOH. Hindi kumokopya ang Civi ng bilang ng dose.",
+        "Huwag gamutin ang kagat gamit ang bawang, suka, o tourniquet. Hindi iyon ang mga hakbang ng DOH o WHO."
+      ],
+      "tip": "Not medical advice. Go to a clinic the same day. Call 911 if the person is in danger right now.",
+      "tip_tl": "Hindi medikal na payo. Pumunta sa klinika sa araw ding iyon. Tumawag sa 911 kung nasa panganib ang tao ngayon.",
+      "links": [["DOH", "https://doh.gov.ph/", "live"], ["WHO rabies", "https://www.who.int/news-room/fact-sheets/detail/rabies", "live"]],
+      "related": ["DOH", "health center"],
+      "related_tl": ["DOH", "health center"]
+    },
+    {
+      "id": "hl-mind",
+      "new": true,
+      "title": "Mental health hotlines",
+      "title_tl": "Mga hotline para sa mental health",
+      "src": "https://ncmh.gov.ph/",
+      "steps": [
+        "The Mental Health Act (RA 11036) recognizes mental health as part of health care. Read the law and the DOH materials for the rights it states.",
+        "The National Center for Mental Health crisis hotline published for the public is 1553. A directory entry on Civi, checked 2026-10-29 against a DOH page, also lists 1800-1888-1553. Confirm the number on the NCMH or DOH page before you rely on it.",
+        "If someone is in immediate danger, call 911.",
+        "A hotline is support. It is not a full treatment plan. Ask the health center or a licensed professional about care near you.",
+        "Do not share someone else's story in public without their consent."
+      ],
+      "steps_tl": [
+        "Kinikilala ng Mental Health Act (RA 11036) ang mental health bilang bahagi ng pangangalaga sa kalusugan. Basahin ang batas at ang materyales ng DOH para sa mga karapatang nakasaad.",
+        "Ang crisis hotline ng National Center for Mental Health na inilathala para sa publiko ay 1553. Ang isang entry sa direktoryo ng Civi, nasuri noong 2026-10-29 laban sa isang pahina ng DOH, ay naglilista rin ng 1800-1888-1553. Kumpirmahin ang numero sa pahina ng NCMH o DOH bago umasa rito.",
+        "Kung may agarang panganib, tumawag sa 911.",
+        "Suporta ang hotline. Hindi ito buong plano ng paggamot. Magtanong sa health center o sa lisensyadong propesyonal tungkol sa pangangalaga malapit sa iyo.",
+        "Huwag ibahagi sa publiko ang kuwento ng iba nang walang pahintulot nila."
+      ],
+      "tip": "Not medical advice or crisis care by itself.",
+      "tip_tl": "Hindi medikal na payo at hindi sapat na pangangalaga sa krisis nang mag-isa.",
+      "links": [["NCMH", "https://ncmh.gov.ph/", "live"], ["DOH page cited for 1553", "https://caro.doh.gov.ph/world-suicide-prevention-day/", "live"], ["RA 11036", "https://lawphil.net/statutes/repacts/ra2018/ra_11036_2018.html", "live"]],
+      "related": ["NCMH", "mental health"],
+      "related_tl": ["NCMH", "mental health"]
+    },
+    {
+      "id": "ed-als",
+      "new": true,
+      "title": "DepEd and the Alternative Learning System",
+      "title_tl": "DepEd at ang Alternative Learning System",
+      "src": "https://www.deped.gov.ph/",
+      "steps": [
+        "The Department of Education runs basic education. For a child in school, start with the public school that covers your address.",
+        "The Alternative Learning System (ALS) is DepEd's program for learners who are outside formal school. Ask the Schools Division Office or a nearby public school where ALS enrolls.",
+        "Civi does not state an age cutoff. DepEd publishes who may enroll. Read that page or ask the division office.",
+        "Bring whatever school records you still have. If you have none, still ask. The office will tell you what it accepts.",
+        "ALS and formal school are both DepEd. Do not pay a fixer to 'reserve a slot'."
+      ],
+      "steps_tl": [
+        "Ang Department of Education ang nagpapatakbo ng basic education. Para sa batang nasa paaralan, magsimula sa pampublikong paaralang sumasaklaw sa address ninyo.",
+        "Ang Alternative Learning System (ALS) ay programa ng DepEd para sa mga mag-aaral na wala sa pormal na paaralan. Itanong sa Schools Division Office o sa malapit na pampublikong paaralan kung saan nag-eenroll ang ALS.",
+        "Hindi nagsasaad ang Civi ng age cutoff. Inilalathala ng DepEd kung sino ang maaaring mag-enroll. Basahin ang pahinang iyon o magtanong sa division office.",
+        "Dalhin ang anumang school record na natitira. Kung wala, magtanong pa rin. Sasabihin ng opisina kung ano ang tinatanggap nito.",
+        "Parehong DepEd ang ALS at ang pormal na paaralan. Huwag magbayad sa fixer para 'magpareserba ng slot'."
+      ],
+      "tip": "",
+      "links": [["DepEd", "https://www.deped.gov.ph/", "live"]],
+      "related": ["DepEd", "ALS"],
+      "related_tl": ["DepEd", "ALS"]
+    },
+    {
+      "id": "ed-10931",
+      "new": true,
+      "title": "Free tuition in state colleges (RA 10931)",
+      "title_tl": "Libreng tuition sa state college (RA 10931)",
+      "src": "https://unifast.gov.ph/",
+      "steps": [
+        "RA 10931, the Universal Access to Quality Tertiary Education Act, provides free higher education in state universities and colleges and in local universities and colleges for Filipino students who qualify under the law and UniFAST rules.",
+        "Other school fees, and aid such as the Tertiary Education Subsidy, have their own rules. Read them on unifast.gov.ph. Civi does not copy peso amounts.",
+        "The school and UniFAST decide eligibility. Ask the school's scholarship or registrar office which papers they need this term.",
+        "A private college is not automatically free under this law. Ask that school what, if anything, applies.",
+        "CHED and UniFAST are the offices to read. Ignore social-media posts that name a cash amount."
+      ],
+      "steps_tl": [
+        "Ang RA 10931, ang Universal Access to Quality Tertiary Education Act, ay nagbibigay ng libreng higher education sa state universities and colleges at sa local universities and colleges para sa mga estudyanteng Pilipinong kwalipikado sa ilalim ng batas at ng mga patakaran ng UniFAST.",
+        "May sariling patakaran ang ibang bayarin sa paaralan, at ang tulong gaya ng Tertiary Education Subsidy. Basahin ang mga ito sa unifast.gov.ph. Hindi kumokopya ang Civi ng halagang piso.",
+        "Ang paaralan at ang UniFAST ang nagpapasya ng eligibility. Itanong sa scholarship o registrar ng paaralan kung aling papeles ang kailangan sa terminong ito.",
+        "Hindi awtomatikong libre ang pribadong kolehiyo sa ilalim ng batas na ito. Itanong sa paaralang iyon kung ano, kung mayroon, ang naaangkop.",
+        "Ang CHED at UniFAST ang mga opisina na babasahin. Balewalain ang mga post sa social media na may halaga ng pera."
+      ],
+      "tip": "Not legal advice. The UniFAST page is the source for current rules.",
+      "tip_tl": "Hindi legal na payo. Ang pahina ng UniFAST ang source ng kasalukuyang patakaran.",
+      "links": [["UniFAST", "https://unifast.gov.ph/", "live"], ["RA 10931", "https://lawphil.net/statutes/repacts/ra2017/ra_10931_2017.html", "live"], ["CHED", "https://ched.gov.ph/", "live"]],
+      "related": ["UniFAST", "CHED"],
+      "related_tl": ["UniFAST", "CHED"]
+    },
+    {
+      "id": "ed-tesda",
+      "new": true,
+      "title": "TESDA training and scholarships",
+      "title_tl": "Pagsasanay at iskolar ng TESDA",
+      "src": "https://www.tesda.gov.ph/",
+      "steps": [
+        "TESDA regulates technical-vocational education and training. Look up a course and a training center on tesda.gov.ph or at the provincial TESDA office.",
+        "Scholarship programs open and close. The names, slots, and allowances are on the current TESDA announcement. Civi does not copy a peso amount.",
+        "Training and assessment are different steps. Ask the office whether the course you want needs a separate assessment, and what the fee is, if any.",
+        "Free online lessons are on the TESDA Online Program (e-TESDA). A link to that site is in the Directory under Free courses.",
+        "Do not pay a person who promises a 'guaranteed slot' outside the TESDA office."
+      ],
+      "steps_tl": [
+        "Ang TESDA ang nagre-regulate ng technical-vocational education and training. Hanapin ang kurso at training center sa tesda.gov.ph o sa provincial TESDA office.",
+        "Nagbubukas at nagsasara ang mga scholarship. Nasa kasalukuyang anunsyo ng TESDA ang mga pangalan, slot, at allowance. Hindi kumokopya ang Civi ng halagang piso.",
+        "Magkaiba ang pagsasanay at ang assessment. Itanong sa opisina kung kailangan ng hiwalay na assessment ang kursong gusto mo, at kung magkano ang bayad, kung mayroon.",
+        "Nasa TESDA Online Program (e-TESDA) ang mga libreng online na aralin. May link sa site na iyon sa Direktoryo sa ilalim ng Libreng kurso.",
+        "Huwag magbayad sa taong nangangako ng 'siguradong slot' sa labas ng opisina ng TESDA."
+      ],
+      "tip": "",
+      "links": [["TESDA", "https://www.tesda.gov.ph/", "live"], ["e-TESDA", "https://e-tesda.gov.ph/", "live"]],
+      "related": ["TESDA"],
+      "related_tl": ["TESDA"]
+    },
+    {
+      "id": "food-pinggang",
+      "new": true,
+      "title": "Pinggang Pinoy",
+      "title_tl": "Pinggang Pinoy",
+      "src": "https://www.fnri.dost.gov.ph/",
+      "steps": [
+        "Pinggang Pinoy is the food-plate guide of the Food and Nutrition Research Institute (FNRI-DOST). Use the picture on the FNRI site, not a redraw from social media.",
+        "Go foods give energy, such as rice, root crops, bread, and noodles. Grow foods help build the body, such as fish, meat, eggs, and beans. Glow foods are vegetables and fruits.",
+        "FNRI publishes a different plate for children, adolescents, adults, older adults, and pregnant or lactating women. Use the plate for your group.",
+        "Civi does not copy gram weights or calorie numbers. Those are on the FNRI plate for your group.",
+        "Water is part of the guide. If a clinician has given you a different diet, follow that."
+      ],
+      "steps_tl": [
+        "Ang Pinggang Pinoy ay gabay na plato ng pagkain ng Food and Nutrition Research Institute (FNRI-DOST). Gamitin ang larawan sa site ng FNRI, hindi ang redraw mula sa social media.",
+        "Ang Go foods ay nagbibigay ng enerhiya, gaya ng kanin, ugat, tinapay, at noodles. Ang Grow foods ay tumutulong bumuo ng katawan, gaya ng isda, karne, itlog, at beans. Ang Glow foods ay gulay at prutas.",
+        "Naglalathala ang FNRI ng magkakaibang plato para sa mga bata, kabataan, adulto, nakatatanda, at buntis o nagpapasuso. Gamitin ang plato para sa grupo mo.",
+        "Hindi kumokopya ang Civi ng timbang sa gramo o ng bilang ng calorie. Nasa plato ng FNRI ang mga iyon para sa grupo mo.",
+        "Bahagi ng gabay ang tubig. Kung may ibang diyeta ang ibinigay ng clinician, sundin iyon."
+      ],
+      "tip": "General information, not medical or diet advice.",
+      "tip_tl": "Pangkalahatang impormasyon, hindi medikal o diet na payo.",
+      "links": [["FNRI-DOST", "https://www.fnri.dost.gov.ph/", "live"]],
+      "related": ["FNRI"],
+      "related_tl": ["FNRI"]
+    },
+    {
+      "id": "food-safety",
+      "new": true,
+      "title": "Food safety",
+      "title_tl": "Kaligtasan ng pagkain",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/food-safety",
+      "steps": [
+        "The World Health Organization teaches five keys to safer food: keep clean; separate raw and cooked; cook thoroughly; keep food at safe temperatures; use safe water and raw materials.",
+        "Wash hands with soap before you cook and before you eat. Wash boards and knives between raw meat and food that is ready to eat.",
+        "Cook meat and eggs until they are done all the way through. Reheat leftovers until they are steaming hot.",
+        "Civi does not copy a temperature or an hour limit. Use the figures on the WHO page if you need a number, and follow the FDA if you are selling food.",
+        "When you are unsure if a food is still good, throw it out."
+      ],
+      "steps_tl": [
+        "Itinuturo ng World Health Organization ang limang susi sa mas ligtas na pagkain: panatilihing malinis; ihiwalay ang hilaw at luto; lutuing lubos; panatilihin ang pagkain sa ligtas na temperatura; gumamit ng ligtas na tubig at hilaw na sangkap.",
+        "Maghugas ng kamay gamit ang sabon bago magluto at bago kumain. Hugasan ang tabla at kutsilyo sa pagitan ng hilaw na karne at ng pagkaing handa nang kainin.",
+        "Lutuin ang karne at itlog hanggang maluto nang lubusan. Painitin ulit ang tira hanggang umuusok na mainit.",
+        "Hindi kumokopya ang Civi ng temperatura o limitasyon sa oras. Gamitin ang mga bilang sa pahina ng WHO kung kailangan mo ng numero, at sundin ang FDA kung nagbebenta ka ng pagkain.",
+        "Kapag hindi ka sigurado kung mabuti pa ang pagkain, itapon."
+      ],
+      "tip": "Not medical advice. The FDA regulates food that is sold.",
+      "tip_tl": "Hindi medikal na payo. Nire-regulate ng FDA ang pagkaing ibinebenta.",
+      "links": [["WHO food safety", "https://www.who.int/news-room/fact-sheets/detail/food-safety", "live"], ["FDA", "https://www.fda.gov.ph/", "live"]],
+      "related": ["FDA"],
+      "related_tl": ["FDA"]
+    },
+    {
+      "id": "food-budget",
+      "new": true,
+      "title": "Budget meals",
+      "title_tl": "Mga murang pagkain",
+      "src": "https://www.fnri.dost.gov.ph/",
+      "steps": [
+        "Build a plate from one Go food, one Grow food, and one Glow food that you can buy this week. That is the Pinggang Pinoy idea, using what the market actually has.",
+        "Examples that are common in Philippine markets: rice; egg, dried fish, or munggo; and a vegetable such as malunggay, kangkong, or kamote tops. Prices change, so Civi states no price.",
+        "Cook a larger pot when the ingredient is cheaper, cool it, cover it, and eat it within a time you trust. See the storage section.",
+        "Limit sugary drinks. Water is the drink in the FNRI guide.",
+        "If you are pregnant, feeding a young child, or on a prescribed diet, ask a health center before you change what you eat."
+      ],
+      "steps_tl": [
+        "Bumuo ng plato mula sa isang Go food, isang Grow food, at isang Glow food na mabibili mo ngayong linggo. Iyon ang ideya ng Pinggang Pinoy, gamit ang talagang nasa palengke.",
+        "Mga halimbawang karaniwan sa palengke sa Pilipinas: kanin; itlog, tuyo, o munggo; at gulay gaya ng malunggay, kangkong, o talbos ng kamote. Nagbabago ang presyo, kaya walang presyo ang sinasabi ng Civi.",
+        "Magluto ng mas malaking kaldero kapag mas mura ang sangkap, palamigin, takpan, at kainin sa loob ng panahong pinagkakatiwalaan mo. Tingnan ang seksyon sa pag-iimbak.",
+        "Bawasan ang matatamis na inumin. Tubig ang inumin sa gabay ng FNRI.",
+        "Kung buntis ka, nagpapakain ng maliit na bata, o may iniresetang diyeta, magtanong sa health center bago baguhin ang kinakain."
+      ],
+      "tip": "Not medical or diet advice.",
+      "tip_tl": "Hindi medikal o diet na payo.",
+      "links": [["FNRI-DOST", "https://www.fnri.dost.gov.ph/", "live"]],
+      "related": ["FNRI"],
+      "related_tl": ["FNRI"]
+    },
+    {
+      "id": "food-storage",
+      "new": true,
+      "title": "Storing food",
+      "title_tl": "Pag-iimbak ng pagkain",
+      "src": "https://www.fda.gov.ph/",
+      "steps": [
+        "Keep dry food in a cool, dry place, off the floor, in a closed container, so pests and water cannot reach it.",
+        "Keep raw meat away from food that is ready to eat, including in a refrigerator if you have one.",
+        "Do not store bleach, pesticides, or lamp oil in the same container or shelf as food.",
+        "Throw food away if it smells sour, looks moldy, or has been in floodwater.",
+        "The Food and Drug Administration and the WHO food-safety page are the references. Civi does not state an hour limit."
+      ],
+      "steps_tl": [
+        "Itago ang tuyong pagkain sa malamig at tuyong lugar, hindi sa sahig, sa saradong lalagyan, para hindi maabot ng peste at tubig.",
+        "Ilayo ang hilaw na karne sa pagkaing handa nang kainin, kasama na sa refrigerator kung mayroon ka.",
+        "Huwag itabi ang bleach, pestisidyo, o gaas sa parehong lalagyan o estante ng pagkain.",
+        "Itapon ang pagkain kung maasim ang amoy, may amag, o nalubog sa baha.",
+        "Ang Food and Drug Administration at ang pahina ng WHO sa food safety ang mga sanggunian. Hindi nagsasaad ang Civi ng limitasyon sa oras."
+      ],
+      "tip": "",
+      "links": [["FDA", "https://www.fda.gov.ph/", "live"], ["WHO food safety", "https://www.who.int/news-room/fact-sheets/detail/food-safety", "live"]],
+      "related": ["FDA"],
+      "related_tl": ["FDA"]
+    },
+    {
+      "id": "farm-da",
+      "new": true,
+      "title": "Ask the agriculturist first",
+      "title_tl": "Unahing tanungin ang agriculturist",
+      "src": "https://www.da.gov.ph/",
+      "steps": [
+        "Before you buy seeds, fertilizer, or animals, talk to the municipal or city agriculturist. They know what is suited to your place this season.",
+        "The Department of Agriculture and the Agricultural Training Institute publish learning materials. ATI's e-learning site is e-extension.gov.ph.",
+        "Civi does not copy a planting calendar or a fertilizer rate. Those depend on the crop, the soil, and the current DA advisory.",
+        "Buy inputs from a source you can identify. If a deal asks you to recruit other people, treat it as a scam and check with the DA or DTI.",
+        "The later sections on urban farming, permaculture, and hydroponics are general ideas. Your agriculturist still comes first."
+      ],
+      "steps_tl": [
+        "Bago bumili ng binhi, pataba, o hayop, kausapin ang municipal o city agriculturist. Alam nila kung ano ang angkop sa lugar mo ngayong season.",
+        "Naglalathala ng materyales sa pag-aaral ang Department of Agriculture at ang Agricultural Training Institute. Ang e-learning site ng ATI ay e-extension.gov.ph.",
+        "Hindi kumokopya ang Civi ng kalendaryo ng taniman o ng rate ng pataba. Nakadepende ang mga iyon sa pananim, lupa, at kasalukuyang advisory ng DA.",
+        "Bumili ng inputs sa mapagkakakilanlang pinagmulan. Kung hinihiling ng alok na mag-recruit ka ng iba, ituring itong scam at kumonsulta sa DA o DTI.",
+        "Pangkalahatang ideya ang mga susunod na seksyon tungkol sa urban farming, permaculture, at hydroponics. Nauuna pa rin ang agriculturist mo."
+      ],
+      "tip": "",
+      "links": [["Department of Agriculture", "https://www.da.gov.ph/", "live"], ["ATI", "https://ati.da.gov.ph/", "live"], ["e-Extension", "https://e-extension.gov.ph/", "live"]],
+      "related": ["DA", "ATI"],
+      "related_tl": ["DA", "ATI"]
+    },
+    {
+      "id": "home-safe",
+      "new": true,
+      "title": "Home safety",
+      "title_tl": "Kaligtasan sa bahay",
+      "src": "https://bfp.gov.ph/",
+      "steps": [
+        "LPG: check that the hose and regulator are in good condition. If you smell gas, turn the tank off only if you can do it safely, do not switch lights, open windows, leave, and call 911 or your dealer.",
+        "Do not overload an outlet. Do not touch a switch with wet hands. If a breaker keeps tripping, have a licensed electrician look at it.",
+        "Know two exits. If there is smoke, stay low and call 911 from outside. The Bureau of Fire Protection publishes home fire-safety guidance.",
+        "For earthquakes at home, secure tall furniture so it cannot fall on a bed, and practice Drop, Cover, and Hold. Follow PHIVOLCS.",
+        "Store medicines and household chemicals where children cannot reach them, and away from food."
+      ],
+      "steps_tl": [
+        "LPG: tingnan kung maayos ang hose at regulator. Kung amoy gas, patayin ang tangke kung ligtas lang gawin, huwag magbukas ng ilaw, buksan ang bintana, umalis, at tumawag sa 911 o sa dealer.",
+        "Huwag pagsiksikan ang outlet. Huwag humawak ng switch nang basa ang kamay. Kung paulit-ulit na natitrip ang breaker, papatingin sa lisensyadong electrician.",
+        "Alamin ang dalawang labasan. Kung may usok, manatiling mababa at tumawag sa 911 mula sa labas. Naglalathala ng gabay sa sunog sa bahay ang Bureau of Fire Protection.",
+        "Para sa lindol sa bahay, ikabit ang matataas na muwebles para hindi mahulog sa higaan, at sanayin ang Drop, Cover, and Hold. Sundin ang PHIVOLCS.",
+        "Itago ang gamot at kemikal sa bahay kung saan hindi maaabot ng bata, at malayo sa pagkain."
+      ],
+      "tip": "Not a substitute for the fire bureau or a licensed electrician. In an emergency, call 911.",
+      "tip_tl": "Hindi kapalit ng fire bureau o ng lisensyadong electrician. Kung emergency, tumawag sa 911.",
+      "links": [["BFP", "https://bfp.gov.ph/", "live"], ["PHIVOLCS", "https://www.phivolcs.dost.gov.ph/", "live"], ["911", "https://e911.gov.ph/", "live"]],
+      "related": ["BFP", "911"],
+      "related_tl": ["BFP", "911"]
+    },
+    {
+      "id": "sport-move",
+      "new": true,
+      "title": "How much to move",
+      "title_tl": "Gaano karaming galaw",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "The WHO fact sheet on physical activity says adults should do at least 150–300 minutes of moderate-intensity aerobic activity a week, or at least 75–150 minutes of vigorous-intensity activity, plus muscle-strengthening on 2 or more days. Children and adolescents have a different recommendation on that same page.",
+        "If the fact sheet has changed, follow the page. Civi is quoting it so you know where the number comes from, not to replace it.",
+        "Moderate activity lets you talk but not sing. Brisk walking counts. You do not need a gym.",
+        "The Department of Health promotes a healthy lifestyle, and the Philippine Sports Commission promotes community sport. Start with what your barangay, school, or LGU already offers.",
+        "Stop and get medical help for chest pain, fainting, or a pain that stops you walking. This course is not medical advice and not a training plan."
+      ],
+      "steps_tl": [
+        "Sinasabi ng fact sheet ng WHO sa physical activity na ang mga adulto ay dapat gumawa ng hindi bababa sa 150–300 minuto ng moderate-intensity na aerobic activity sa isang linggo, o hindi bababa sa 75–150 minuto ng vigorous-intensity na activity, dagdag ang muscle-strengthening sa 2 o higit pang araw. May ibang rekomendasyon ang mga bata at kabataan sa parehong pahina.",
+        "Kung nagbago ang fact sheet, sundin ang pahina. Sinisipi ito ng Civi para malaman mo kung saan galing ang numero, hindi para palitan ito.",
+        "Sa moderate na activity, kaya mong magsalita pero hindi kumanta. Bilang ang mabilis na paglalakad. Hindi mo kailangan ng gym.",
+        "Itinataguyod ng Department of Health ang malusog na pamumuhay, at itinataguyod ng Philippine Sports Commission ang community sport. Magsimula sa inaalok na ng barangay, paaralan, o LGU.",
+        "Tumigil at humingi ng tulong medikal kung may sakit sa dibdib, hinihimatay, o sakit na pumipigil sa paglalakad. Hindi medikal na payo at hindi training plan ang kursong ito."
+      ],
+      "tip": "Not medical advice. People with a health condition should ask a clinician before a new program.",
+      "tip_tl": "Hindi medikal na payo. Ang may kondisyon sa kalusugan ay dapat magtanong sa clinician bago ang bagong programa.",
+      "links": [["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"], ["DOH", "https://doh.gov.ph/", "live"], ["PSC", "https://psc.gov.ph/", "live"]],
+      "related": ["DOH", "PSC"],
+      "related_tl": ["DOH", "PSC"]
+    },
+    {
+      "id": "sport-bball",
+      "new": true,
+      "title": "Basketball",
+      "title_tl": "Basketball",
+      "src": "https://psc.gov.ph/",
+      "steps": [
+        "Barangay and school courts are the usual place to start. Ask the barangay or the school if there is an open time.",
+        "Warm up before you play. Land softly when you jump. Stop if a knee or ankle injury keeps you from walking.",
+        "Drink water. In hot weather, play earlier or later in the day. DOH heat advice is on the DOH site.",
+        "The Philippine Sports Commission supports community sport. A coach at an LGU or school program is a better teacher than a random drill online.",
+        "This is not a training plan and not medical advice."
+      ],
+      "steps_tl": [
+        "Ang court ng barangay at paaralan ang karaniwang simula. Itanong sa barangay o paaralan kung may bukas na oras.",
+        "Mag-warm up bago maglaro. Dumaong nang marahan kapag tumalon. Tumigil kung ang injury sa tuhod o bukong-bukong ay pumipigil sa paglalakad.",
+        "Uminom ng tubig. Kapag mainit, maglaro nang mas maaga o mas huli sa araw. Nasa site ng DOH ang payo sa init.",
+        "Sinusuportahan ng Philippine Sports Commission ang community sport. Mas mabuting guro ang coach ng programa ng LGU o paaralan kaysa random na drill online.",
+        "Hindi ito training plan at hindi medikal na payo."
+      ],
+      "tip": "",
+      "links": [["PSC", "https://psc.gov.ph/", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["PSC"],
+      "related_tl": ["PSC"]
+    },
+    {
+      "id": "sport-volley",
+      "new": true,
+      "title": "Volleyball",
+      "title_tl": "Volleyball",
+      "src": "https://psc.gov.ph/",
+      "steps": [
+        "Schools, barangays, and covered courts are common places to play. Ask about a community schedule.",
+        "Warm up the shoulders and land with bent knees when you jump. Stop if a joint swells or you cannot put weight on it.",
+        "Play on a clear court. A wet floor is slippery.",
+        "Learn from a school or LGU coach. PSC promotes sport participation.",
+        "Not a training plan and not medical advice. The weekly activity guide is in the first section of this course, from WHO."
+      ],
+      "steps_tl": [
+        "Karaniwang lugar ang paaralan, barangay, at covered court. Magtanong tungkol sa iskedyul ng komunidad.",
+        "I-warm up ang mga balikat at dumaong nang nakayuko ang tuhod kapag tumalon. Tumigil kung namamaga ang kasukasuan o hindi ka makatayo rito.",
+        "Maglaro sa malinis na court. Madulas ang basang sahig.",
+        "Matuto sa coach ng paaralan o LGU. Itinataguyod ng PSC ang pagsali sa isports.",
+        "Hindi training plan at hindi medikal na payo. Nasa unang seksyon ng kursong ito, mula sa WHO, ang lingguhang gabay sa galaw."
+      ],
+      "tip": "",
+      "links": [["PSC", "https://psc.gov.ph/", "live"], ["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"]],
+      "related": ["PSC"],
+      "related_tl": ["PSC"]
+    },
+    {
+      "id": "sport-badminton",
+      "new": true,
+      "title": "Badminton",
+      "title_tl": "Badminton",
+      "src": "https://psc.gov.ph/",
+      "steps": [
+        "Covered courts in schools and barangays are a common place to start. Bring your own water.",
+        "Warm up. A sudden stop can strain an ankle or a knee. Stop if you cannot walk it off.",
+        "Clear the court of bags and water bottles before you play.",
+        "A school or LGU coach can teach footwork more safely than copying a highlight clip.",
+        "Not medical advice. Follow DOH advice in extreme heat."
+      ],
+      "steps_tl": [
+        "Karaniwang simula ang covered court sa paaralan at barangay. Magdala ng sariling tubig.",
+        "Mag-warm up. Ang biglaang paghinto ay maaaring sumakit sa bukong-bukong o tuhod. Tumigil kung hindi mo ito malakad.",
+        "Alisin ang bag at bote ng tubig sa court bago maglaro.",
+        "Mas ligtas na magtuturo ng footwork ang coach ng paaralan o LGU kaysa panggagaya sa highlight clip.",
+        "Hindi medikal na payo. Sundin ang payo ng DOH kapag sobrang init."
+      ],
+      "tip": "",
+      "links": [["PSC", "https://psc.gov.ph/", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["PSC"],
+      "related_tl": ["PSC"]
+    },
+    {
+      "id": "sport-takraw",
+      "new": true,
+      "title": "Sepak takraw",
+      "title_tl": "Sepak takraw",
+      "src": "https://psc.gov.ph/",
+      "steps": [
+        "Sepak takraw is played in many schools and barangays. Ask a PE teacher or the barangay sports coordinator where people practice.",
+        "Warm up the ankles and hips. The sport uses kicks. Stop if an ankle injury keeps you from walking.",
+        "Play on a clear surface. Do not play in the street.",
+        "Learn from someone who already plays with a school or community group. PSC supports community sport.",
+        "Not a training plan and not medical advice."
+      ],
+      "steps_tl": [
+        "Nilalaro ang sepak takraw sa maraming paaralan at barangay. Itanong sa guro ng PE o sa barangay sports coordinator kung saan nagsasanay ang mga tao.",
+        "I-warm up ang mga bukong-bukong at balakang. May sipa ang laro. Tumigil kung ang injury sa bukong-bukong ay pumipigil sa paglalakad.",
+        "Maglaro sa malinis na lugar. Huwag maglaro sa kalye.",
+        "Matuto sa taong naglalaro na sa grupo ng paaralan o komunidad. Sinusuportahan ng PSC ang community sport.",
+        "Hindi training plan at hindi medikal na payo."
+      ],
+      "tip": "",
+      "links": [["PSC", "https://psc.gov.ph/", "live"]],
+      "related": ["PSC"],
+      "related_tl": ["PSC"]
+    },
+    {
+      "id": "sport-run",
+      "new": true,
+      "title": "Running",
+      "title_tl": "Pagtakbo",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "Start with a walk-run you can finish while still able to talk. Add time slowly. The WHO page, not a social-media plan, is the activity guide.",
+        "Run where you can be seen. Face traffic if there is no sidewalk. Use crossings.",
+        "Wear shoes that fit. Stop for chest pain, dizziness, or a pain that changes how you land.",
+        "Carry water in hot weather and avoid the hottest part of the day. Follow DOH heat guidance.",
+        "Not medical advice. Ask a clinician before you start if you have a heart or joint condition."
+      ],
+      "steps_tl": [
+        "Magsimula sa walk-run na kaya mong tapusin habang nakakapagsalita pa. Dahan-dahang dagdagan ang oras. Ang pahina ng WHO, hindi ang plano sa social media, ang gabay sa galaw.",
+        "Tumakbo kung saan ka nakikita. Humarap sa trapiko kung walang sidewalk. Gamitin ang tawiran.",
+        "Magsuot ng sapatos na kasya. Tumigil kung may sakit sa dibdib, hilo, o sakit na nagbabago kung paano ka dumaong.",
+        "Magdala ng tubig kapag mainit at iwasan ang pinakamainit na bahagi ng araw. Sundin ang gabay ng DOH sa init.",
+        "Hindi medikal na payo. Magtanong sa clinician bago magsimula kung may kondisyon sa puso o kasukasuan."
+      ],
+      "tip": "",
+      "links": [["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["DOH"],
+      "related_tl": ["DOH"]
+    },
+    {
+      "id": "sport-walk",
+      "new": true,
+      "title": "Walking",
+      "title_tl": "Paglalakad",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "Brisk walking is moderate activity in the WHO guide. Use it to build toward the weekly amount on the WHO fact sheet.",
+        "Use sidewalks and crossings. If you must walk on the road, face oncoming traffic and stay at the edge.",
+        "Walk in daylight when you can. If it is dark, wear something light-colored and stay where there are other people.",
+        "In extreme heat, walk earlier or later and drink water. Follow DOH and PAGASA advisories.",
+        "A daily walk is not a treatment. If walking causes chest pain, stop and get medical help."
+      ],
+      "steps_tl": [
+        "Ang mabilis na paglalakad ay moderate na activity sa gabay ng WHO. Gamitin ito para umabot sa lingguhang dami sa fact sheet ng WHO.",
+        "Gamitin ang sidewalk at tawiran. Kung kailangang maglakad sa kalsada, humarap sa paparating na trapiko at manatili sa gilid.",
+        "Maglakad sa araw kung kaya. Kung madilim, magsuot ng maliwanag na kulay at manatili kung saan may ibang tao.",
+        "Kapag sobrang init, maglakad nang mas maaga o mas huli at uminom ng tubig. Sundin ang mga advisory ng DOH at PAGASA.",
+        "Hindi lunas ang araw-araw na lakad. Kung ang paglalakad ay nagdudulot ng sakit sa dibdib, tumigil at humingi ng tulong medikal."
+      ],
+      "tip": "Not medical advice.",
+      "tip_tl": "Hindi medikal na payo.",
+      "links": [["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["DOH", "PAGASA"],
+      "related_tl": ["DOH", "PAGASA"]
+    },
+    {
+      "id": "sport-cycle",
+      "new": true,
+      "title": "Cycling",
+      "title_tl": "Pagbibisikleta",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "Ride in the same direction as traffic. Use lights at night. A helmet lowers the chance of a serious head injury; WHO supports helmet use for cycling. Civi does not claim a bicycle-helmet law.",
+        "Check brakes and tires before you leave. Do not wear earphones in both ears in traffic.",
+        "Do not ride through floodwater.",
+        "The activity counts toward the WHO weekly guide. Build distance slowly.",
+        "Not medical advice. Stop for chest pain, dizziness, or a crash you cannot walk away from, and call 911 if you need help."
+      ],
+      "steps_tl": [
+        "Sumakay sa parehong direksyon ng trapiko. Gumamit ng ilaw sa gabi. Binabawasan ng helmet ang tsansa ng malubhang injury sa ulo; sinusuportahan ng WHO ang paggamit ng helmet sa pagbibisikleta. Hindi inaangkin ng Civi na may batas sa helmet ng bisikleta.",
+        "Suriin ang preno at gulong bago umalis. Huwag magsuot ng earphone sa parehong tainga sa trapiko.",
+        "Huwag sumakay sa baha.",
+        "Bilang ito sa lingguhang gabay ng WHO. Dahan-dahang pahabain ang layo.",
+        "Hindi medikal na payo. Tumigil kung may sakit sa dibdib, hilo, o bangga na hindi mo kayang lakarin, at tumawag sa 911 kung kailangan ng tulong."
+      ],
+      "tip": "",
+      "links": [["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["DOH"],
+      "related_tl": ["DOH"]
+    },
+    {
+      "id": "sport-swim",
+      "new": true,
+      "title": "Swimming",
+      "title_tl": "Paglangoy",
+      "src": "https://doh.gov.ph/",
+      "steps": [
+        "Swim where a lifeguard is on duty, or with a person who can help you. Do not swim alone.",
+        "Do not swim in floodwater, in a river or sea during a PAGASA gale warning, or when the Philippine Coast Guard says travel is unsafe.",
+        "Never swim after drinking alcohol. Get out at the first sign of a cramp or of lightning.",
+        "Children need an adult in the water with them, not only watching from far away.",
+        "Swimming can count as aerobic activity in the WHO guide. It is not medical advice. If you cannot swim, take lessons. Do not learn in the open sea."
+      ],
+      "steps_tl": [
+        "Lumangoy kung saan may naka-duty na lifeguard, o kasama ang taong makakatulong sa iyo. Huwag lumangoy nang mag-isa.",
+        "Huwag lumangoy sa baha, sa ilog o dagat kapag may gale warning ang PAGASA, o kapag sinabi ng Philippine Coast Guard na hindi ligtas ang biyahe.",
+        "Huwag lumangoy pagkatapos uminom ng alak. Lumabas sa unang senyales ng cramp o kidlat.",
+        "Kailangan ng bata ng adultong kasama sa tubig, hindi lang nanonood mula sa malayo.",
+        "Maaaring bilangin ang paglangoy bilang aerobic activity sa gabay ng WHO. Hindi ito medikal na payo. Kung hindi ka marunong, kumuha ng leksyon. Huwag matuto sa bukas na dagat."
+      ],
+      "tip": "Not a lifesaving course. In an emergency, call 911.",
+      "tip_tl": "Hindi ito kurso sa pagsagip. Kung emergency, tumawag sa 911.",
+      "links": [["PAGASA", "https://www.pagasa.dost.gov.ph/", "live"], ["DOH", "https://doh.gov.ph/", "live"], ["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"]],
+      "related": ["PAGASA", "Coast Guard"],
+      "related_tl": ["PAGASA", "Coast Guard"]
+    },
+    {
+      "id": "sport-hike",
+      "new": true,
+      "title": "Hiking",
+      "title_tl": "Pag-akyat",
+      "src": "https://www.denr.gov.ph/",
+      "steps": [
+        "Protected areas have rules. Check with the DENR office or the protected-area office before you go. Some places need a permit or a local guide. Ask. Do not assume.",
+        "Read the PAGASA forecast. Do not hike during a typhoon, a heavy-rain warning, or when a trail is flooded.",
+        "Tell someone your route and when you will be back. Bring water, a light, and a way to call for help if there is a signal.",
+        "Stay on the trail. Do not take plants or animals out. That can be illegal inside a protected area.",
+        "Turn back if the weather changes or someone is injured. Call 911 if you can, and tell rescuers the place name."
+      ],
+      "steps_tl": [
+        "May patakaran ang mga protected area. Kumonsulta sa opisina ng DENR o sa protected-area office bago pumunta. May mga lugar na kailangan ng permit o lokal na gabay. Magtanong. Huwag mag-akala.",
+        "Basahin ang forecast ng PAGASA. Huwag umakyat sa panahon ng bagyo, heavy-rain warning, o kapag binaha ang trail.",
+        "Sabihin sa isang tao ang ruta mo at kung kailan ka babalik. Magdala ng tubig, ilaw, at paraan para humingi ng tulong kung may signal.",
+        "Manatili sa trail. Huwag kumuha ng halaman o hayop. Maaari itong labag sa batas sa loob ng protected area.",
+        "Bumalik kung magbago ang panahon o may nasaktan. Tumawag sa 911 kung kaya, at sabihin sa mga tagasagip ang pangalan ng lugar."
+      ],
+      "tip": "Not a mountaineering course. Follow the local office.",
+      "tip_tl": "Hindi ito kurso sa pamumundok. Sundin ang lokal na opisina.",
+      "links": [["DENR", "https://www.denr.gov.ph/", "live"], ["PAGASA", "https://www.pagasa.dost.gov.ph/", "live"]],
+      "related": ["DENR", "PAGASA"],
+      "related_tl": ["DENR", "PAGASA"]
+    },
+    {
+      "id": "sport-arnis",
+      "new": true,
+      "title": "Arnis (RA 9850)",
+      "title_tl": "Arnis (RA 9850)",
+      "src": "https://lawphil.net/statutes/repacts/ra2009/ra_9850_2009.html",
+      "steps": [
+        "Republic Act No. 9850 declares Arnis as the national martial art and sport of the Philippines. Read the Act for what it actually says.",
+        "Learn from a qualified instructor in a school, LGU, or club. Do not practice strikes on another person without that instruction.",
+        "Use the protective gear the instructor requires. Warm up the wrists and shoulders.",
+        "Stop if you are cut, or if a joint will not move normally, and get medical care.",
+        "PSC promotes sports. A barangay demonstration is not a substitute for a class. Not medical advice."
+      ],
+      "steps_tl": [
+        "Idinedeklara ng Republic Act No. 9850 ang Arnis bilang pambansang martial art at sport ng Pilipinas. Basahin ang Act para sa talagang sinasabi nito.",
+        "Matuto sa kwalipikadong instruktor sa paaralan, LGU, o club. Huwag magsanay ng strike sa ibang tao nang wala ang instruksyon na iyon.",
+        "Gamitin ang protective gear na hinihingi ng instruktor. I-warm up ang mga pulso at balikat.",
+        "Tumigil kung ikaw ay nasugatan, o kung ang kasukasuan ay hindi gumagalaw nang normal, at magpatingin.",
+        "Itinataguyod ng PSC ang isports. Hindi kapalit ng klase ang demonstrasyon sa barangay. Hindi medikal na payo."
+      ],
+      "tip": "",
+      "links": [["RA 9850", "https://lawphil.net/statutes/repacts/ra2009/ra_9850_2009.html", "live"], ["PSC", "https://psc.gov.ph/", "live"]],
+      "related": ["PSC"],
+      "related_tl": ["PSC"]
+    },
+    {
+      "id": "sport-dance",
+      "new": true,
+      "title": "Dance",
+      "title_tl": "Sayaw",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "Dance counts as physical activity when it raises your breathing and heart rate. It can be part of the weekly amount on the WHO fact sheet.",
+        "Community halls, schools, and home are enough. You do not need a studio.",
+        "Warm up. Dance on a clear floor in shoes or bare feet that will not slip.",
+        "Stop for chest pain, dizziness, or a sharp pain in a joint.",
+        "Not a dance syllabus and not medical advice. DOH healthy-lifestyle messages still apply: water, rest, and care if you are ill."
+      ],
+      "steps_tl": [
+        "Bilang na physical activity ang sayaw kapag bumibilis ang hininga at tibok ng puso. Maaari itong maging bahagi ng lingguhang dami sa fact sheet ng WHO.",
+        "Sapat na ang community hall, paaralan, at bahay. Hindi mo kailangan ng studio.",
+        "Mag-warm up. Sumayaw sa malinis na sahig na may sapatos o nakapaa na hindi madudulas.",
+        "Tumigil kung may sakit sa dibdib, hilo, o matalim na sakit sa kasukasuan.",
+        "Hindi ito syllabus ng sayaw at hindi medikal na payo. Naaangkop pa rin ang mensahe ng DOH sa malusog na pamumuhay: tubig, pahinga, at pagpapatingin kung may sakit."
+      ],
+      "tip": "",
+      "links": [["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["DOH"],
+      "related_tl": ["DOH"]
+    },
+    {
+      "id": "sport-home",
+      "new": true,
+      "title": "Home workouts",
+      "title_tl": "Ehersisyo sa bahay",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "The WHO guide includes muscle-strengthening. Bodyweight movements at home can be part of that. Civi does not prescribe sets or reps.",
+        "Clear a space. A chair and the floor are enough. Move in a way you can control.",
+        "Breathe. Stop if the pain is sharp, if you feel faint, or if you have chest pain. Call 911 for an emergency.",
+        "If you have high blood pressure, are pregnant, or are recovering from illness, ask a clinician before you start. DOH and your health center are the local source.",
+        "Follow a program from a qualified coach or the WHO page. Do not buy a 'guaranteed body' product."
+      ],
+      "steps_tl": [
+        "Kasama sa gabay ng WHO ang muscle-strengthening. Maaaring maging bahagi niyon ang mga galaw gamit ang bigat ng katawan sa bahay. Hindi nagrereseta ang Civi ng set o rep.",
+        "Maglinis ng espasyo. Sapat ang upuan at sahig. Kumilos sa paraang kaya mong kontrolin.",
+        "Huminga. Tumigil kung matalim ang sakit, kung parang hihimatayin, o kung may sakit sa dibdib. Tumawag sa 911 kung emergency.",
+        "Kung may mataas na presyon, buntis, o nagpapagaling mula sa sakit, magtanong sa clinician bago magsimula. Ang DOH at ang health center mo ang lokal na source.",
+        "Sundin ang programa mula sa kwalipikadong coach o sa pahina ng WHO. Huwag bumili ng produktong 'garantisadong katawan'."
+      ],
+      "tip": "Not medical advice and not a workout prescription.",
+      "tip_tl": "Hindi medikal na payo at hindi reseta ng ehersisyo.",
+      "links": [["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
+      "related": ["DOH"],
+      "related_tl": ["DOH"]
+    },
+    {
+      "id": "ben-gsis",
+      "new": true,
+      "title": "GSIS for government workers",
+      "title_tl": "GSIS para sa manggagawa ng gobyerno",
+      "src": "https://www.gsis.gov.ph/",
+      "steps": [
+        "The Government Service Insurance System covers many government employees. If you work in government, ask your HR office whether you are a GSIS member. Private-sector workers use SSS, which has its own sections in this course.",
+        "Register or update your record on the official GSIS site or through your agency. Use only gsis.gov.ph and your agency's HR.",
+        "Benefits, loans, and the number of contributions required are published by GSIS and change. Civi does not copy amounts or contribution counts.",
+        "File claims through the GSIS channel your HR points you to. Keep copies of what you submit.",
+        "GSIS will not ask for your password by text. Beware of fixers."
+      ],
+      "steps_tl": [
+        "Sinasaklaw ng Government Service Insurance System ang maraming empleyado ng gobyerno. Kung nagtatrabaho ka sa gobyerno, itanong sa HR kung miyembro ka ng GSIS. Ang manggagawa sa pribadong sektor ay gumagamit ng SSS, na may sariling seksyon sa kursong ito.",
+        "Magparehistro o i-update ang rekord sa opisyal na site ng GSIS o sa pamamagitan ng ahensya mo. Gamitin lang ang gsis.gov.ph at ang HR ng ahensya.",
+        "Ang mga benepisyo, loan, at ang bilang ng kontribusyong kailangan ay inilalathala ng GSIS at nagbabago. Hindi kumokopya ang Civi ng halaga o bilang ng kontribusyon.",
+        "Mag-file ng claim sa channel ng GSIS na itinuturo ng HR. Magtabi ng kopya ng isinumite mo.",
+        "Hindi hihingi ng GSIS ang password mo sa text. Mag-ingat sa fixer."
+      ],
+      "tip": "Not financial or benefits advice.",
+      "tip_tl": "Hindi pinansyal o benefits na payo.",
+      "links": [["GSIS", "https://www.gsis.gov.ph/", "live"]],
+      "related": ["GSIS"],
+      "related_tl": ["GSIS"]
+    },
+    {
+      "id": "ofw-verify",
+      "new": true,
+      "title": "Check the job before you pay",
+      "title_tl": "Suriin ang trabaho bago magbayad",
+      "src": "https://dmw.gov.ph/",
+      "steps": [
+        "The Department of Migrant Workers licenses recruitment agencies and publishes job orders. Check the agency and the job on dmw.gov.ph before you pay anyone.",
+        "An unlicensed recruiter is a warning sign. Walk away, even if a relative introduced them.",
+        "Do not hand over your passport as 'collateral'. Read any contract yourself, and ask DMW if a fee you are asked to pay is allowed. Civi does not list a placement fee, because the rule is on the DMW page.",
+        "Keep copies of the contract, receipts, and the agency's license number.",
+        "If you are already abroad and in trouble, contact the DMW or the Philippine embassy or consulate. The DFA consular pages list posts."
+      ],
+      "steps_tl": [
+        "Naglilisensya ng recruitment agency at naglalathala ng job order ang Department of Migrant Workers. Suriin ang ahensya at ang trabaho sa dmw.gov.ph bago magbayad kaninuman.",
+        "Babala ang recruiter na walang lisensya. Umalis, kahit kamag-anak ang nagpakilala.",
+        "Huwag ibigay ang pasaporte bilang 'kolateral'. Basahin mo mismo ang anumang kontrata, at itanong sa DMW kung pinapayagan ang bayad na hinihingi sa iyo. Hindi naglilista ang Civi ng placement fee, dahil nasa pahina ng DMW ang patakaran.",
+        "Magtabi ng kopya ng kontrata, resibo, at numero ng lisensya ng ahensya.",
+        "Kung nasa ibang bansa ka na at may problema, kontakin ang DMW o ang embahada o konsulado ng Pilipinas. Inililista ng mga consular page ng DFA ang mga post."
+      ],
+      "tip": "Not legal advice.",
+      "tip_tl": "Hindi legal na payo.",
+      "links": [["DMW", "https://dmw.gov.ph/", "live"], ["DFA", "https://dfa.gov.ph/", "live"]],
+      "related": ["DMW", "DFA"],
+      "related_tl": ["DMW", "DFA"]
+    },
+    {
+      "id": "ofw-owwa",
+      "new": true,
+      "title": "OWWA membership",
+      "title_tl": "Membership sa OWWA",
+      "src": "https://owwa.gov.ph/",
+      "steps": [
+        "The Overseas Workers Welfare Administration runs welfare programs for documented OFWs. Read the current list on owwa.gov.ph.",
+        "Membership is tied to the rules OWWA publishes. Civi does not copy a contribution amount or a benefit amount.",
+        "Ask how to check your membership status on the official site or at an OWWA office. Do not pay a fixer to 'activate' it.",
+        "Programs such as scholarships for dependents and reintegration change. Use the page that is up now.",
+        "OWWA is not a replacement for the DMW contract check in the previous section."
+      ],
+      "steps_tl": [
+        "Nagpapatakbo ng mga welfare program para sa dokumentadong OFW ang Overseas Workers Welfare Administration. Basahin ang kasalukuyang listahan sa owwa.gov.ph.",
+        "Ang membership ay nakatali sa mga patakarang inilalathala ng OWWA. Hindi kumokopya ang Civi ng halaga ng kontribusyon o benepisyo.",
+        "Itanong kung paano tingnan ang status ng membership sa opisyal na site o sa opisina ng OWWA. Huwag magbayad sa fixer para 'i-activate' ito.",
+        "Nagbabago ang mga programa gaya ng iskolar para sa dependent at reintegration. Gamitin ang pahinang nakataas ngayon.",
+        "Hindi kapalit ng pagsuri ng kontrata sa DMW, sa naunang seksyon, ang OWWA."
+      ],
+      "tip": "Not financial or legal advice.",
+      "tip_tl": "Hindi pinansyal o legal na payo.",
+      "links": [["OWWA", "https://owwa.gov.ph/", "live"], ["DMW", "https://dmw.gov.ph/", "live"]],
+      "related": ["OWWA", "DMW"],
+      "related_tl": ["OWWA", "DMW"]
+    },
+    {
+      "id": "ofw-family",
+      "new": true,
+      "title": "Family left at home",
+      "title_tl": "Pamilyang naiwan",
+      "src": "https://owwa.gov.ph/",
+      "steps": [
+        "Leave copies of the contract, passport bio page, OWWA and DMW numbers, and the employer's details with a trusted adult at home.",
+        "Agree on how you will send news, and on who can decide for a child if you cannot be reached.",
+        "Welfare questions can go to OWWA. Contract and recruitment questions can go to DMW. Use the official sites.",
+        "Be careful with 'investment' offers sent to OFW families. Check with the SEC before you send money. Civi's earning course has a scam section.",
+        "If a loved one abroad is missing or detained, contact DMW and the DFA. Do not pay a stranger who promises a fast release."
+      ],
+      "steps_tl": [
+        "Iwanan ang kopya ng kontrata, bio page ng pasaporte, mga numero ng OWWA at DMW, at mga detalye ng employer sa mapagkakatiwalaang adulto sa bahay.",
+        "Magkasundo kung paano kayo magpapadala ng balita, at kung sino ang makakapagdesisyon para sa bata kung hindi ka makontak.",
+        "Ang mga tanong sa welfare ay maaaring sa OWWA. Ang mga tanong sa kontrata at recruitment ay maaaring sa DMW. Gamitin ang opisyal na site.",
+        "Mag-ingat sa mga alok na 'investment' na ipinapadala sa pamilya ng OFW. Kumonsulta sa SEC bago magpadala ng pera. May seksyon sa scam ang kurso ng Civi sa pagkikita.",
+        "Kung may nawawala o nakadetine na mahal sa buhay sa ibang bansa, kontakin ang DMW at ang DFA. Huwag magbayad sa estrangherong nangangako ng mabilis na paglaya."
+      ],
+      "tip": "Not legal advice.",
+      "tip_tl": "Hindi legal na payo.",
+      "links": [["OWWA", "https://owwa.gov.ph/", "live"], ["DMW", "https://dmw.gov.ph/", "live"], ["DFA", "https://dfa.gov.ph/", "live"]],
+      "related": ["OWWA", "DMW", "SEC"],
+      "related_tl": ["OWWA", "DMW", "SEC"]
+    }
+  ]
+}

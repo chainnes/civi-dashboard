@@ -1,6 +1,6 @@
 {
  "as_of": "2026-10-29",
- "course": "Paano Kumita Online (How to Earn Online)",
+ "course": "How to Earn Online",
  "note": "Steps are a simple guide as of 2026-10-29. No income is promised; rules and fees change, so always check the official site.",
  "items": [
   {
@@ -16,7 +16,15 @@
     "Make a simple portfolio: 3 to 5 samples of your work (Google Drive, Canva or a free site).",
     "Write a one-paragraph profile: skills, tools, availability and time zone."
    ],
+   "steps_tl": [
+    "Gumamit ng hiwalay na email para sa trabaho at gig lang. I-on ang 2-step verification.",
+    "Mag-set up ng verified na e-wallet (GCash o Maya) gamit ang sarili mong valid ID. Huwag ipahiram ang account.",
+    "Magbukas ng PayPal account sa pangalan mo at i-link ang PH bank o e-wallet para sa withdrawal, kung sa PayPal nagbabayad ang platform.",
+    "Gumawa ng simpleng portfolio: 3 hanggang 5 sample ng gawa mo (Google Drive, Canva, o libreng site).",
+    "Sumulat ng isang talatang profile: skills, tools, availability, at time zone."
+   ],
    "tip": "Never share OTPs, passwords or MPINs with anyone, including 'recruiters'.",
+   "tip_tl": "Huwag ibahagi ang OTP, password, o MPIN kaninuman, kasama ang recruiter.",
    "related": [
     "GCash for Business",
     "Maya Business"
@@ -26,8 +34,8 @@
   {
    "id": "earn02",
    "cat": "Paano Kumita Online",
-   "title": "Iwas scam: red flags and where to report",
-   "title_tl": "Iwas scam: mga red flag at saan magre-report",
+   "title": "Avoid scams: red flags and where to report",
+   "title_tl": "Iwas-scam: mga red flag at saan mag-ulat",
    "src": "https://cicc.gov.ph/report/",
    "steps": [
     "Red flag: you must pay a fee, 'starter kit' or deposit to get work. Legit platforms don't charge to apply.",
@@ -36,12 +44,28 @@
     "Check the SEC advisories list before joining any 'earn' or 'investment' group.",
     "Report online scams to CICC (hotline 1326), investment scams to SEC, and seller/consumer issues to DTI."
    ],
-   "tip": "If it sounds too easy, it probably is.",
-   "related": [
-    "Iwas scam: never pay to get a job",
-    "Iwas scam: report online job scams to CICC"
+   "steps_tl": [
+    "Red flag: kailangan mong magbayad ng fee, starter kit, o deposito para makakuha ng trabaho. Hindi naniningil ang lehitimong platform para mag-apply.",
+    "Red flag: kumikita ka pangunahin sa pag-recruit ng tao, o may garantisadong araw-araw na kita. Pyramid o investment scam iyon.",
+    "Red flag: inililipat ka nila ng chat at bayad palabas ng platform, o pinapalike at pina-follow para sa bayad tapos pinapa-top up para makapag-withdraw.",
+    "Tingnan ang listahan ng SEC advisories bago sumali sa anumang earn o investment group.",
+    "I-report ang online scam sa CICC (hotline 1326), ang investment scam sa SEC, at ang usapin ng seller o consumer sa DTI."
    ],
-   "link": "bot-protected"
+   "tip": "If it sounds too easy, it probably is.",
+   "tip_tl": "Kung masyadong madali, malamang hindi totoo.",
+   "related": [
+    "Never pay to get a job",
+    "Report online job scams to CICC"
+   ],
+   "related_en": [
+    "Never pay to get a job",
+    "Report online job scams to CICC"
+   ],
+   "link": "bot-protected",
+   "related_tl": [
+    "Huwag magbayad para makakuha ng trabaho",
+    "I-report ang online na job scam sa CICC"
+   ]
   },
   {
    "id": "earn03",
@@ -56,7 +80,15 @@
     "Expect small, irregular amounts; treat it as pocket money, not a salary.",
     "Track time spent vs. earned to decide if it's worth it."
    ],
+   "steps_tl": [
+    "Tingnan kung tinatanggap ng platform ang Pilipinas bago mag-sign up. Maraming survey site ang hindi.",
+    "Mag-sign up gamit ang totoong detalye. Na-ba-ban ang pekeng detalye at kinakansela ang payout.",
+    "Basahin ang paraan ng payout at ang minimum bago magtrabaho (PayPal, banko, o app credit).",
+    "Asahan ang maliit at hindi regular na halaga. Ituring itong pang-gastos, hindi suweldo.",
+    "I-track ang oras na ginugol kumpara sa kinita para malaman kung sulit."
+   ],
    "tip": "Google Opinion Rewards pays Google Play credit, not cash.",
+   "tip_tl": "Google Play credit ang binabayad ng Google Opinion Rewards, hindi cash.",
    "related": [
     "Google Opinion Rewards",
     "Clickworker",
@@ -73,7 +105,7 @@
    "id": "earn04",
    "cat": "Paano Kumita Online",
    "title": "Freelancing basics: profile, proposal, first client",
-   "title_tl": "Freelancing basics: profile, proposal, unang client",
+   "title_tl": "Mga batayan ng freelancing: profile, proposal, unang kliyente",
    "src": "https://www.dict.gov.ph/rural-impact-sourcing/",
    "steps": [
     "Pick one skill to start (virtual assistance, writing, design, data entry, social media).",
@@ -82,7 +114,15 @@
     "Send short, specific proposals that answer the client's post; don't copy-paste.",
     "Keep all contracts and payments on-platform until you trust the client."
    ],
+   "steps_tl": [
+    "Pumili ng isang skill na sisimulan (virtual assistance, pagsusulat, disenyo, data entry, social media).",
+    "Kumuha ng libreng training (DICT, TESDA Online) para palakasin ang skill.",
+    "Gumawa ng kumpletong profile sa isa o dalawang platform. Idagdag ang portfolio.",
+    "Magpadala ng maikli at tiyak na proposal na sumasagot sa post ng kliyente. Huwag mag-copy-paste.",
+    "Panatilihin ang kontrata at bayad sa loob ng platform hanggang magtiwala ka sa kliyente."
+   ],
    "tip": "Read each platform's fees and payout rules before accepting work.",
+   "tip_tl": "Basahin ang fee at payout rules ng bawat platform bago tumanggap ng trabaho.",
    "related": [
     "Upwork",
     "OnlineJobs.ph",
@@ -105,7 +145,15 @@
     "Use the platform's checkout; avoid advance payments outside it.",
     "Register your business (DTI) and with BIR once you sell regularly."
    ],
+   "steps_tl": [
+    "Piliin kung ano ang ibebenta: preloved, reselling, o sarili mong produkto.",
+    "Magbukas ng seller account sa isang marketplace at basahin ang fee at patakaran nito.",
+    "Kumuha ng malinaw na litrato, sumulat ng tapat na paglalarawan, at magtakda ng presyong kasya ang fee at shipping.",
+    "Gamitin ang checkout ng platform. Iwasan ang advance na bayad sa labas nito.",
+    "Irehistro ang negosyo (DTI) at sa BIR kapag regular ka nang nagbebenta."
+   ],
    "tip": "Check that items you resell are not counterfeit or prohibited.",
+   "tip_tl": "Tiyakin na hindi peke o bawal ang inire-resell mo.",
    "related": [
     "Shopee Seller Centre",
     "Lazada Seller Center",
@@ -127,7 +175,14 @@
     "Disclose that you earn a commission from links.",
     "Commissions are paid only on completed orders, per program terms."
    ],
+   "steps_tl": [
+    "Sumali sa opisyal na affiliate program at basahin ang patakaran nito.",
+    "Magbahagi ng product link lang para sa bagay na tapat mong irerekomenda.",
+    "Sabihin na kumikita ka ng komisyon mula sa link.",
+    "Binabayaran ang komisyon sa natapos na order lang, ayon sa tuntunin ng program."
+   ],
    "tip": "Never buy your own links or spam groups; accounts get banned.",
+   "tip_tl": "Huwag bilhin ang sarili mong link o mag-spam sa mga grupo. Na-ba-ban ang account.",
    "related": [
     "Shopee Affiliate Program",
     "Lazada Affiliate Program",
@@ -139,7 +194,7 @@
    "id": "earn07",
    "cat": "Paano Kumita Online",
    "title": "Content creation and monetization",
-   "title_tl": "Content creation at monetization",
+   "title_tl": "Paggawa ng content at monetization",
    "src": "https://www.youtube.com/creators/how-things-work/video-monetization/",
    "steps": [
     "Pick a topic you can post about regularly.",
@@ -147,7 +202,14 @@
     "Use only music and clips you have rights to.",
     "Monetization requirements change; recheck the official pages."
    ],
+   "steps_tl": [
+    "Pumili ng paksang mailalathala mo nang regular.",
+    "Basahin ang opisyal na eligibility ng monetization ng bawat platform (followers, watch time, rehiyon) sa sarili nitong pahina.",
+    "Gamitin lang ang musika at clip na may karapatan ka.",
+    "Nagbabago ang requirements ng monetization. Balikan ang opisyal na pahina."
+   ],
    "tip": "Civi does not quote follower or income thresholds; read them on the official page.",
+   "tip_tl": "Hindi sinisipi ng Civi ang follower o income threshold. Basahin ito sa opisyal na pahina.",
    "related": [
     "YouTube Partner Program",
     "TikTok Creator Academy",
@@ -159,13 +221,19 @@
    "id": "earn08",
    "cat": "Paano Kumita Online",
    "title": "Digital products",
-   "title_tl": "Digital products",
+   "title_tl": "Mga digital na produkto",
    "src": "https://gumroad.com/",
    "steps": [
     "Make something reusable: templates, e-books, presets, printables.",
     "Choose a platform and read its fees and payout options.",
     "Write a clear description and preview.",
     "Only sell content you created or have rights to."
+   ],
+   "steps_tl": [
+    "Gumawa ng bagay na magagamit ulit: template, e-book, preset, printable.",
+    "Pumili ng platform at basahin ang fee at payout nito.",
+    "Sumulat ng malinaw na paglalarawan at preview.",
+    "Ibenta lang ang content na ikaw ang gumawa o may karapatan ka."
    ],
    "related": [
     "Gumroad",
@@ -185,6 +253,12 @@
     "Make a short intro video if the platform asks.",
     "Set your schedule and read the cancellation and payout rules."
    ],
+   "steps_tl": [
+    "Tingnan ang requirements ng bawat platform (wika, degree, sertipiko, kagamitan).",
+    "Maghanda ng tahimik na lugar, headset, at matatag na internet.",
+    "Gumawa ng maikling intro video kung hinihingi ng platform.",
+    "Itakda ang iskedyul at basahin ang patakaran sa cancellation at payout."
+   ],
    "related": [
     "Preply (teach)",
     "italki (teach)",
@@ -196,13 +270,19 @@
    "id": "earn10",
    "cat": "Paano Kumita Online",
    "title": "Print-on-demand and stock photos",
-   "title_tl": "Print-on-demand at stock photos",
+   "title_tl": "Print-on-demand at stock photo",
    "src": "https://submit.shutterstock.com/",
    "steps": [
     "Upload only original work you own.",
     "Get signed releases for recognizable people or private property.",
     "Follow each site's technical and content guidelines.",
     "Earnings depend on sales; there is no fixed pay."
+   ],
+   "steps_tl": [
+    "Mag-upload lang ng orihinal na gawa na pag-aari mo.",
+    "Kumuha ng pirmadong release para sa makikilalang tao o pribadong ari-arian.",
+    "Sundin ang technical at content guidelines ng bawat site.",
+    "Nakabatay sa benta ang kita. Walang nakapirming bayad."
    ],
    "related": [
     "Redbubble",
@@ -224,6 +304,12 @@
     "Never pay 'agents' to get approved.",
     "Know your coverage: check SSS, PhilHealth and Pag-IBIG as a self-employed member."
    ],
+   "steps_tl": [
+    "Mag-apply sa opisyal na app o website lang.",
+    "Ihanda ang lisensya, rehistrasyon, at dokumentong nakalista sa platform.",
+    "Huwag magbayad ng ahente para maaprubahan.",
+    "Alamin ang coverage mo: tingnan ang SSS, PhilHealth, at Pag-IBIG bilang self-employed na miyembro."
+   ],
    "related": [
     "Grab driver & rider sign-up",
     "Lalamove driver sign-up"
@@ -234,7 +320,7 @@
    "id": "earn12",
    "cat": "Paano Kumita Online",
    "title": "Home-based food business",
-   "title_tl": "Home-based food business",
+   "title_tl": "Negosyong pagkain sa bahay",
    "src": "https://www.fda.gov.ph/",
    "steps": [
     "Check with your barangay and city hall for permits.",
@@ -242,7 +328,14 @@
     "Check FDA rules: some packaged foods need a License to Operate and product registration.",
     "Register your business name with DTI and register with BIR."
    ],
+   "steps_tl": [
+    "Magtanong sa barangay at city hall tungkol sa permit.",
+    "Kumuha ng sanitary permit at health certificate para sa food handler.",
+    "Tingnan ang patakaran ng FDA: ang ilang nakabalot na pagkain ay kailangan ng License to Operate at product registration.",
+    "Irehistro ang business name sa DTI at magparehistro sa BIR."
+   ],
    "tip": "Label ingredients and allergens honestly.",
+   "tip_tl": "Tapat na ilagay sa label ang sangkap at allergen.",
    "related": [
     "FDA (License to Operate for food businesses)",
     "DTI Business Name Registration"
@@ -262,7 +355,15 @@
     "Keep simple books: income, expenses and receipts, monthly.",
     "File and pay on time to avoid penalties."
    ],
+   "steps_tl": [
+    "Irehistro ang business name sa DTI (sole proprietor) online.",
+    "Magparehistro sa BIR bilang self-employed o professional at kumuha ng resibo o invoice.",
+    "Tanungin ang BIR o isang accountant kung bagay sa iyo ang 8% income tax option. May mga kundisyon ito.",
+    "Magtabi ng simpleng libro: kita, gastos, at resibo, buwan-buwan.",
+    "Mag-file at magbayad sa oras para maiwasan ang parusa."
+   ],
    "tip": "This is a general guide, not tax advice; confirm with BIR or a licensed accountant.",
+   "tip_tl": "Pangkalahatang gabay ito, hindi tax advice. Kumpirmahin sa BIR o sa lisensyadong accountant.",
    "related": [
     "DTI Business Name Registration",
     "BIR (register as online seller)"
@@ -282,11 +383,21 @@
     "Keep contributing to SSS, PhilHealth and Pag-IBIG as a self-employed/voluntary member.",
     "Consider Pag-IBIG MP2 savings; read the official terms first."
    ],
+   "steps_tl": [
+    "Ihiwalay ang personal na pera at ang pera ng gig (dalawang wallet o account).",
+    "Gumawa ng buwanang budget: pangangailangan, ipon, luho.",
+    "Bumuo ng emergency fund bago ang malaking bilihin.",
+    "Ipagpatuloy ang hulog sa SSS, PhilHealth, at Pag-IBIG bilang self-employed o voluntary member.",
+    "Isaalang-alang ang Pag-IBIG MP2. Basahin muna ang opisyal na tuntunin."
+   ],
    "tip": "Irregular income: save a portion of every payout.",
+   "tip_tl": "Hindi regular ang kita: magtabi ng bahagi ng bawat payout.",
    "related": [
     "SB Corporation"
    ],
    "link": "live"
   }
- ]
+ ],
+ "course_tl": "Paano Kumita Online",
+ "note_tl": "Simpleng gabay ang mga hakbang noong 2026-10-29. Walang ipinapangakong kita; nagbabago ang patakaran at bayad, kaya laging tingnan ang opisyal na site."
 }

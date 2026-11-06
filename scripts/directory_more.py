@@ -289,8 +289,8 @@ E += [
 # Earn & side income (Kumita at raket): curated, PH-available, pays out to PH. Not endorsements.
 PE = "Private, not an endorsement"
 E += [
-("Earn: Iwas scam","Iwas scam: never pay to get a job","SEC","https://www.sec.gov.ph/advisories-2/",G,"Safety first: legit platforms never ask for a fee, 'starter kit' or deposit to work. Avoid anything that pays you for recruiting people (pyramid/networking). Check SEC investor advisories before joining any 'investment' or 'earn' scheme.",""),
-("Earn: Iwas scam","Iwas scam: report online job scams to CICC","CICC","https://cicc.gov.ph/report/",G,"Report online scams to the Cybercrime Investigation and Coordinating Center (hotline 1326). Use only verified payouts (PayPal, GCash, bank) inside the platform; never move payment off-platform.",""),
+("Earn: Iwas scam","Never pay to get a job","SEC","https://www.sec.gov.ph/advisories-2/",G,"Safety first: legit platforms never ask for a fee, 'starter kit' or deposit to work. Avoid anything that pays you for recruiting people (pyramid/networking). Check SEC investor advisories before joining any 'investment' or 'earn' scheme.",""),
+("Earn: Iwas scam","Report online job scams to CICC","CICC","https://cicc.gov.ph/report/",G,"Report online scams to the Cybercrime Investigation and Coordinating Center (hotline 1326). Use only verified payouts (PayPal, GCash, bank) inside the platform; never move payment off-platform.",""),
 ("Earn: Freelance","Upwork","","https://www.upwork.com/",PE,"Global freelancing marketplace; clients pay through the platform, withdraw to PH bank, PayPal or other methods.",""),
 ("Earn: Freelance","OnlineJobs.ph","","https://www.onlinejobs.ph/",PE,"Job board for Filipino remote workers hired directly by employers; free for jobseekers.",""),
 ("Earn: Freelance","Fiverr","","https://www.fiverr.com/",PE,"Freelance marketplace where you sell fixed-price services (gigs); withdraw via PayPal or bank.",""),
