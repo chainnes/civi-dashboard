@@ -1,4 +1,8 @@
-{"online":[
+{
+ "as_of": "2026-10-29",
+ "note": "External links only. Civi does not host these pages or copy their courses. Open the provider site for current details.",
+ "note_tl": "Mga panlabas na link lang. Hindi hino-host ng Civi ang mga pahinang ito at hindi kinokopya ang mga kurso. Buksan ang site ng provider para sa kasalukuyang detalye.",
+ "online":[
 {"name":"TESDA Online Program (e-TESDA)","url":"https://e-tesda.gov.ph/","by":"TESDA","tags":"Free TVET courses"},
 {"name":"DOST Science Education Institute","url":"https://sei.dost.gov.ph/","by":"DOST-SEI","tags":"Scholarships, science ed"},
 {"name":"Coursera (free-to-audit courses)","url":"https://www.coursera.org/courses?query=free","by":"Coursera","tags":"Audit free"},

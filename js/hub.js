@@ -483,14 +483,8 @@ async function viewLounge() {
 
 /* ---------- ACADEMY ---------- */
 async function viewAcademy() {
-  const a = await data("academy");
-  const civic = [["Read the national budget", "https://www.dbm.gov.ph/", "DBM publishes the GAA and budget documents."], ["File an FOI request", "https://www.foi.gov.ph/", "Ask executive agencies for documents."],
-    ["Know your data rights (RA 10173)", "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html", "Rights to be informed, access, correct, erase."], ["Find laws and cases", "https://lawphil.net/", "LawPhil: statutes and jurisprudence, free."],
-    ["Check government bids", "https://notices.philgeps.gov.ph/", "PhilGEPS procurement notices."], ["Explore official statistics", "https://openstat.psa.gov.ph/", "PSA OpenSTAT tables & API."], ["Open Data Philippines", "https://data.gov.ph/", "Government datasets."]];
-  page(`<h1>🎓 Academy</h1><p class="sub">Free learning: civic know-how and skills. Links go to the original providers.</p>
-   <h2>Civic know-how</h2><div class="grid">${civic.map(([n, u, d]) => `<div class="card glass"><h4>${n}</h4><p>${d}</p><a href="${u}" target="_blank" rel="noopener">Start ↗</a></div>`).join("")}</div>
-   <h2>Free courses</h2><div class="grid">${(a.online || []).map(c => `<div class="card glass"><span class="chip">${esc(c.by)}</span><h4>${esc(c.name)}</h4><p>${esc(c.tags || "")}</p><a href="${esc(c.url)}" target="_blank" rel="noopener">Open ↗</a></div>`).join("")}</div>
-   <div class="card glass sims" style="margin-top:14px"><span class="chip ok">Beta: playable now</span><h4>🎮 Civi Sims</h4><p><a href="#/sim"><b>${esc(t("sim_title"))} ▶</b></a> (budget & policy trade-offs with the real FY 2026 DBM GAA). Coming in Phase 2: <b>Datu</b> of a precolonial barangay, <b>Solarpunk Philippines 2050</b>, and career sims (pilot, banker, investor, farmer, teacher, LGU mayor) to help you discover what you want to do.</p></div>`);
+  page(`<h1>🎓 Academy</h1><p class="sub">In-house courses only. Official link-outs are in the Directory under Learning & civic resources.</p>
+   <p><a href="#/directory/Civic%20know-how">Civic know-how</a> · <a href="#/directory/Free%20courses">Free courses</a></p>`);
 }
 
 /* ---------- SHARE ---------- */
