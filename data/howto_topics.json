@@ -491,7 +491,11 @@
       ],
       "tip": "Not medical advice or crisis care by itself.",
       "tip_tl": "Hindi medikal na payo at hindi sapat na pangangalaga sa krisis nang mag-isa.",
-      "links": [["NCMH", "https://ncmh.gov.ph/", "live"], ["DOH page cited for 1553", "https://caro.doh.gov.ph/world-suicide-prevention-day/", "live"], ["RA 11036", "https://lawphil.net/statutes/repacts/ra2018/ra_11036_2018.html", "live"]],
+      "links": [
+        ["NCMH", "https://ncmh.gov.ph/", "live"],
+        ["DOH page cited for 1553", "https://caro.doh.gov.ph/world-suicide-prevention-day/", "live"],
+        ["RA 11036", "https://lawphil.net/statutes/repacts/ra2018/ra_11036_2018.html", "live"]
+      ],
       "related": ["NCMH", "mental health"],
       "related_tl": ["NCMH", "mental health"]
     },
@@ -542,7 +546,11 @@
       ],
       "tip": "Not legal advice. The UniFAST page is the source for current rules.",
       "tip_tl": "Hindi legal na payo. Ang pahina ng UniFAST ang source ng kasalukuyang patakaran.",
-      "links": [["UniFAST", "https://unifast.gov.ph/", "live"], ["RA 10931", "https://lawphil.net/statutes/repacts/ra2017/ra_10931_2017.html", "live"], ["CHED", "https://ched.gov.ph/", "live"]],
+      "links": [
+        ["UniFAST", "https://unifast.gov.ph/", "live"],
+        ["RA 10931", "https://lawphil.net/statutes/repacts/ra2017/ra_10931_2017.html", "live"],
+        ["CHED", "https://ched.gov.ph/", "live"]
+      ],
       "related": ["UniFAST", "CHED"],
       "related_tl": ["UniFAST", "CHED"]
     },
@@ -695,7 +703,11 @@
         "Pangkalahatang ideya ang mga susunod na seksyon tungkol sa urban farming, permaculture, at hydroponics. Nauuna pa rin ang agriculturist mo."
       ],
       "tip": "",
-      "links": [["Department of Agriculture", "https://www.da.gov.ph/", "live"], ["ATI", "https://ati.da.gov.ph/", "live"], ["e-Extension", "https://e-extension.gov.ph/", "live"]],
+      "links": [
+        ["Department of Agriculture", "https://www.da.gov.ph/", "live"],
+        ["ATI", "https://ati.da.gov.ph/", "live"],
+        ["e-Extension", "https://e-extension.gov.ph/", "live"]
+      ],
       "related": ["DA", "ATI"],
       "related_tl": ["DA", "ATI"]
     },
@@ -732,22 +744,26 @@
       "title_tl": "Gaano karaming galaw",
       "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
       "steps": [
-        "The WHO fact sheet on physical activity says adults should do at least 150–300 minutes of moderate-intensity aerobic activity a week, or at least 75–150 minutes of vigorous-intensity activity, plus muscle-strengthening on 2 or more days. Children and adolescents have a different recommendation on that same page.",
-        "If the fact sheet has changed, follow the page. Civi is quoting it so you know where the number comes from, not to replace it.",
-        "Moderate activity lets you talk but not sing. Brisk walking counts. You do not need a gym.",
-        "The Department of Health promotes a healthy lifestyle, and the Philippine Sports Commission promotes community sport. Start with what your barangay, school, or LGU already offers.",
-        "Stop and get medical help for chest pain, fainting, or a pain that stops you walking. This course is not medical advice and not a training plan."
+        "The WHO fact sheet Physical activity is dated 4 November 2026. Read on 6 Nov 2026, it says adults who do not do at least 150 minutes of moderate-intensity physical activity per week do not meet the global recommendation. On the text read that day, the page did not give a 150–300 minute range or a 75–150 minute vigorous range.",
+        "The same page says any amount of physical activity is better than none, all physical activity counts, all age groups should limit sedentary time, and muscle strengthening benefits everyone. It does not, in the text read that day, set a number of strength days.",
+        "For adolescents aged 11–17, the same page describes an active day as a day with at least 60 minutes of moderate-to-vigorous physical activity. That is a different figure from the adult 150 minutes a week. Follow the page for your age.",
+        "If the fact sheet changes, follow the page. Walking, cycling, sports, and active play are named on the page as ways to be active. You do not need a gym to start.",
+        "Not medical advice. Stop for chest pain, fainting, or a pain that stops you walking, and call 911 in an emergency."
       ],
       "steps_tl": [
-        "Sinasabi ng fact sheet ng WHO sa physical activity na ang mga adulto ay dapat gumawa ng hindi bababa sa 150–300 minuto ng moderate-intensity na aerobic activity sa isang linggo, o hindi bababa sa 75–150 minuto ng vigorous-intensity na activity, dagdag ang muscle-strengthening sa 2 o higit pang araw. May ibang rekomendasyon ang mga bata at kabataan sa parehong pahina.",
-        "Kung nagbago ang fact sheet, sundin ang pahina. Sinisipi ito ng Civi para malaman mo kung saan galing ang numero, hindi para palitan ito.",
-        "Sa moderate na activity, kaya mong magsalita pero hindi kumanta. Bilang ang mabilis na paglalakad. Hindi mo kailangan ng gym.",
-        "Itinataguyod ng Department of Health ang malusog na pamumuhay, at itinataguyod ng Philippine Sports Commission ang community sport. Magsimula sa inaalok na ng barangay, paaralan, o LGU.",
-        "Tumigil at humingi ng tulong medikal kung may sakit sa dibdib, hinihimatay, o sakit na pumipigil sa paglalakad. Hindi medikal na payo at hindi training plan ang kursong ito."
+        "May petsa na 4 Nobyembre 2026 ang fact sheet ng WHO na Physical activity. Nang basahin noong 6 Nob 2026, sinasabi nitong ang mga adultong hindi gumagawa ng hindi bababa sa 150 minuto ng moderate-intensity na physical activity bawat linggo ay hindi umaabot sa pandaigdigang rekomendasyon. Sa tekstong binasa nang araw na iyon, hindi nagbigay ang pahina ng saklaw na 150–300 minuto o ng 75–150 minutong vigorous.",
+        "Sinasabi rin ng pahina na mas mabuti ang kahit anong dami ng physical activity kaysa wala, bilang ang lahat ng physical activity, dapat limitahan ng lahat ng edad ang sedentary na oras, at may pakinabang ang muscle strengthening sa lahat. Hindi nagtakda, sa tekstong binasa, ng bilang ng araw para sa strength.",
+        "Para sa kabataang 11–17, inilalarawan ng parehong pahina ang active day bilang araw na may hindi bababa sa 60 minuto ng moderate-to-vigorous na physical activity. Iba iyon sa 150 minuto bawat linggo ng adulto. Sundin ang pahina para sa iyong edad.",
+        "Kung magbago ang fact sheet, sundin ang pahina. Pinangalanan ng pahina ang paglalakad, pagbibisikleta, isports, at aktibong laro. Hindi mo kailangan ng gym para magsimula.",
+        "Hindi medikal na payo. Tumigil kung may sakit sa dibdib, hinihimatay, o sakit na pumipigil sa paglalakad, at tumawag sa 911 kung emergency."
       ],
-      "tip": "Not medical advice. People with a health condition should ask a clinician before a new program.",
-      "tip_tl": "Hindi medikal na payo. Ang may kondisyon sa kalusugan ay dapat magtanong sa clinician bago ang bagong programa.",
-      "links": [["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"], ["DOH", "https://doh.gov.ph/", "live"], ["PSC", "https://psc.gov.ph/", "live"]],
+      "tip": "Not medical advice. The minutes are the WHO fact sheet as read on 6 Nov 2026.",
+      "tip_tl": "Hindi medikal na payo. Ang mga minuto ay mula sa fact sheet ng WHO nang basahin noong 6 Nob 2026.",
+      "links": [
+        ["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"],
+        ["DOH", "https://doh.gov.ph/", "live"],
+        ["PSC", "https://psc.gov.ph/", "live"]
+      ],
       "related": ["DOH", "PSC"],
       "related_tl": ["DOH", "PSC"]
     },
@@ -949,7 +965,11 @@
       ],
       "tip": "Not a lifesaving course. In an emergency, call 911.",
       "tip_tl": "Hindi ito kurso sa pagsagip. Kung emergency, tumawag sa 911.",
-      "links": [["PAGASA", "https://www.pagasa.dost.gov.ph/", "live"], ["DOH", "https://doh.gov.ph/", "live"], ["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"]],
+      "links": [
+        ["PAGASA", "https://www.pagasa.dost.gov.ph/", "live"],
+        ["DOH", "https://doh.gov.ph/", "live"],
+        ["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"]
+      ],
       "related": ["PAGASA", "Coast Guard"],
       "related_tl": ["PAGASA", "Coast Guard"]
     },
@@ -1011,14 +1031,14 @@
       "title_tl": "Sayaw",
       "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
       "steps": [
-        "Dance counts as physical activity when it raises your breathing and heart rate. It can be part of the weekly amount on the WHO fact sheet.",
+        "Dance counts as physical activity when it raises your breathing and heart rate, including a dance-fitness class such as Zumba. It can be part of the weekly amount on the WHO fact sheet. Civi does not set a class fee.",
         "Community halls, schools, and home are enough. You do not need a studio.",
         "Warm up. Dance on a clear floor in shoes or bare feet that will not slip.",
         "Stop for chest pain, dizziness, or a sharp pain in a joint.",
         "Not a dance syllabus and not medical advice. DOH healthy-lifestyle messages still apply: water, rest, and care if you are ill."
       ],
       "steps_tl": [
-        "Bilang na physical activity ang sayaw kapag bumibilis ang hininga at tibok ng puso. Maaari itong maging bahagi ng lingguhang dami sa fact sheet ng WHO.",
+        "Bilang na physical activity ang sayaw kapag bumibilis ang hininga at tibok ng puso, kasama ang dance-fitness na klase gaya ng Zumba. Maaari itong maging bahagi ng lingguhang dami sa fact sheet ng WHO. Hindi nagtatakda ang Civi ng bayad sa klase.",
         "Sapat na ang community hall, paaralan, at bahay. Hindi mo kailangan ng studio.",
         "Mag-warm up. Sumayaw sa malinis na sahig na may sapatos o nakapaa na hindi madudulas.",
         "Tumigil kung may sakit sa dibdib, hilo, o matalim na sakit sa kasukasuan.",
@@ -1054,6 +1074,162 @@
       "links": [["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"], ["DOH", "https://doh.gov.ph/", "live"]],
       "related": ["DOH"],
       "related_tl": ["DOH"]
+    },
+    {
+      "id": "sport-benefits",
+      "new": true,
+      "title": "Why moving helps",
+      "title_tl": "Bakit nakatutulong ang pagkilos",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "WHO fact sheet Physical activity, dated 4 November 2026 and read on 6 Nov 2026, says regular physical activity provides significant physical and mental health benefits.",
+        "For adults, that page says physical activity contributes to prevention and management of noncommunicable diseases such as cardiovascular diseases, cancer and diabetes, reduces symptoms of depression and anxiety, enhances brain health, and can improve overall well-being.",
+        "The same page says people who are insufficiently active have a 20–30% increased risk of death compared with people who are sufficiently active. That is a global statement on the fact sheet, not a personal risk score.",
+        "For children and adolescents, the same page says physical activity promotes bone health, encourages healthy growth and development of muscle, and improves motor and cognitive development.",
+        "DOH Bicol's page on the 13 September radio episode says obesity is a key risk factor for hypertension and diabetes, and pairs a healthy weight with daily activity. A DOH CAR page says lack of exercise or a sedentary lifestyle may lead to various preventable diseases. It did not name those diseases in the text that was read.",
+        "Not medical advice. These pages do not diagnose you and are not a reason to stop a medicine."
+      ],
+      "steps_tl": [
+        "Sinasabi ng fact sheet ng WHO na Physical activity, may petsa na 4 Nobyembre 2026 at binasa noong 6 Nob 2026, na ang regular na physical activity ay nagbibigay ng mahalagang benepisyo sa pisikal at mental na kalusugan.",
+        "Para sa mga adulto, sinasabi ng pahina na ang physical activity ay nakatutulong sa pag-iwas at pamamahala ng mga noncommunicable disease gaya ng sakit sa puso at ugat, kanser, at diabetes, binabawasan ang sintomas ng depresyon at pagkabalisa, pinapalakas ang kalusugan ng utak, at maaaring magpabuti ng kabuuang kagalingan.",
+        "Sinasabi rin ng pahina na ang mga taong kulang sa aktibidad ay may 20–30% na mas mataas na panganib ng kamatayan kumpara sa mga sapat na aktibo. Pandaigdigang pahayag iyon sa fact sheet, hindi personal na marka ng panganib.",
+        "Para sa mga bata at kabataan, sinasabi ng pahina na ang physical activity ay nagtataguyod ng kalusugan ng buto, malusog na paglaki at pag-unlad ng kalamnan, at pagbuti ng galaw at pag-iisip.",
+        "Sinasabi ng pahina ng DOH Bicol tungkol sa episode ng radyo noong 13 Setyembre na ang obesity ay pangunahing risk factor para sa hypertension at diabetes, at ipinares nito ang malusog na timbang sa araw-araw na aktibidad. Sinasabi ng pahina ng DOH CAR na ang kakulangan sa ehersisyo o sedentary na pamumuhay ay maaaring humantong sa iba't ibang maiiwasang sakit. Hindi pinangalanan ang mga sakit na iyon sa tekstong binasa.",
+        "Hindi medikal na payo. Hindi ka dinidiagnose ng mga pahinang ito at hindi dahilan para itigil ang gamot."
+      ],
+      "tip": "Not medical advice. The 20–30% figure is the WHO fact sheet, not a Philippine statistic.",
+      "tip_tl": "Hindi medikal na payo. Ang 20–30% ay mula sa fact sheet ng WHO, hindi estadistika ng Pilipinas.",
+      "links": [
+        ["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"],
+        [
+          "DOH Bicol",
+          "https://bicol.doh.gov.ph/news-releases/doh-bicol-urges-public-to-practice-healthy-active-lifestyle-at-chikahang-pangkalusugan-maiden-episode/",
+          "live"
+        ],
+        [
+          "DOH CAR",
+          "https://caro.doh.gov.ph/%f0%9d%97%aa%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%96%f0%9d%97%9b-%e2%80%bc%ef%b8%8fdaily-exercise-is-effective-against-diseases%e2%80%bc%ef%b8%8f/",
+          "live"
+        ]
+      ],
+      "related": ["DOH", "WHO"],
+      "related_tl": ["DOH", "WHO"]
+    },
+    {
+      "id": "sport-guides",
+      "new": true,
+      "title": "Official activity guidance",
+      "title_tl": "Opisyal na gabay sa galaw",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "The pages below were read on 6 Nov 2026. They do not all use the same number of minutes. Follow the page you are using.",
+        "WHO fact sheet Physical activity, dated 4 November 2026: the adult figure on that page is at least 150 minutes of moderate-intensity activity a week. The same page says any amount is better than none. See the section How much to move.",
+        "DOH Bicol CHD, on its news page about the 13 September first episode of the radio program Chikahang Pangkalusugan, said the public was reminded to do at least 30 minutes of physical activity every day to maintain a healthy weight. The page names 13 September and does not give a year in the text that was read. That is one regional office's message, not a statute.",
+        "Another DOH Bicol page, Stop Obesity! Move More, Eat Right!, says the recommended moderate-intensity exercise is 150 minutes, or two and a half hours, a week. The excerpt read on 6 Nov 2026 did not include a calendar date.",
+        "A DOH CAR page titled DAILY EXERCISE IS EFFECTIVE AGAINST DISEASES says to set aside 30–60 minutes every day for exercise such as simple walking, cycling, stretching, or dancing. The text that was read did not show a posted date.",
+        "The Philippine Sports Commission site is psc.gov.ph. On 6 Nov 2026 the homepage request from this update was challenged and the page text was not read, so this course does not describe current PSC programs. Open the site."
+      ],
+      "steps_tl": [
+        "Binasa ang mga pahina sa ibaba noong 6 Nob 2026. Hindi pare-pareho ang bilang ng minuto. Sundin ang pahinang ginagamit mo.",
+        "Fact sheet ng WHO na Physical activity, may petsa na 4 Nobyembre 2026: ang bilang para sa adulto sa pahinang iyon ay hindi bababa sa 150 minuto ng moderate-intensity na activity bawat linggo. Sinasabi rin ng pahina na mas mabuti ang kahit anong dami kaysa wala. Tingnan ang seksyong Gaano karaming galaw.",
+        "Sinabi ng DOH Bicol CHD, sa balita nito tungkol sa unang episode noong 13 Setyembre ng programang radyo na Chikahang Pangkalusugan, na pinaalalahanan ang publiko na gumawa ng hindi bababa sa 30 minuto ng physical activity araw-araw para mapanatili ang malusog na timbang. Pinangalanan ng pahina ang 13 Setyembre at walang taon sa tekstong binasa. Mensahe iyon ng isang regional office, hindi isang batas.",
+        "Sinasabi ng isa pang pahina ng DOH Bicol, ang Stop Obesity! Move More, Eat Right!, na ang inirerekomendang moderate-intensity na ehersisyo ay 150 minuto, o dalawa at kalahating oras, bawat linggo. Walang petsa sa siping binasa noong 6 Nob 2026.",
+        "Sinasabi ng pahina ng DOH CAR na pinamagatang DAILY EXERCISE IS EFFECTIVE AGAINST DISEASES na maglaan ng 30–60 minuto araw-araw para sa ehersisyo gaya ng simpleng paglalakad, pagbibisikleta, pag-uunat, o pagsasayaw. Walang nakikitang petsa ng pag-post sa tekstong binasa.",
+        "Ang site ng Philippine Sports Commission ay psc.gov.ph. Noong 6 Nob 2026, hinamon ang kahilingan sa homepage at hindi nabasa ang teksto, kaya hindi inilalarawan ng kursong ito ang kasalukuyang programa ng PSC. Buksan ang site."
+      ],
+      "tip": "Not medical advice. The minute figures on these pages do not match each other.",
+      "tip_tl": "Hindi medikal na payo. Hindi magkatugma ang mga minuto sa mga pahinang ito.",
+      "links": [
+        ["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"],
+        [
+          "DOH Bicol, 13 September episode",
+          "https://bicol.doh.gov.ph/news-releases/doh-bicol-urges-public-to-practice-healthy-active-lifestyle-at-chikahang-pangkalusugan-maiden-episode/",
+          "live"
+        ],
+        ["DOH Bicol, 150 minutes", "https://bicol.doh.gov.ph/news-releases/stop-obesity-move-more-eat-right/", "live"],
+        [
+          "DOH CAR, daily exercise",
+          "https://caro.doh.gov.ph/%f0%9d%97%aa%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%96%f0%9d%97%9b-%e2%80%bc%ef%b8%8fdaily-exercise-is-effective-against-diseases%e2%80%bc%ef%b8%8f/",
+          "live"
+        ],
+        ["PSC", "https://psc.gov.ph/", "live"]
+      ],
+      "related": ["DOH", "WHO", "PSC"],
+      "related_tl": ["DOH", "WHO", "PSC"]
+    },
+    {
+      "id": "sport-safe",
+      "new": true,
+      "title": "How to start safely",
+      "title_tl": "Paano magsimulang ligtas",
+      "src": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "steps": [
+        "The WHO fact sheet read on 6 Nov 2026 says any amount of physical activity is better than none, and all physical activity counts. A short walk counts. You do not need a gym, a class fee, or a perfect plan to begin.",
+        "A DOH CAR page read the same day names simple walking, cycling, stretching, or dancing. The same office's Wais Magpapawis page points to home exercise videos. This course does not copy those videos and does not set a fee.",
+        "Warm up before a game. Land softly when you jump. Stop if a knee, ankle, or other pain keeps you from walking. The sport sections in this course repeat that for each activity.",
+        "Swim only where a lifeguard is on duty or with a person who can help you. For a hike in a protected area, ask DENR or the protected-area office before you go. See those sections.",
+        "Stop and get help for chest pain, fainting, or a pain that stops you walking. In an emergency, call 911. People with a health condition should ask a clinician before a new program.",
+        "Not medical advice and not a training plan. This course does not prescribe sets or reps."
+      ],
+      "steps_tl": [
+        "Sinasabi ng fact sheet ng WHO na binasa noong 6 Nob 2026 na mas mabuti ang kahit anong dami ng physical activity kaysa wala, at bilang ang lahat ng physical activity. Bilang ang maikling lakad. Hindi mo kailangan ng gym, bayad sa klase, o perpektong plano para magsimula.",
+        "Pinangalanan ng pahina ng DOH CAR na binasa nang araw ding iyon ang simpleng paglalakad, pagbibisikleta, pag-uunat, o pagsasayaw. Ang pahinang Wais Magpapawis ng parehong opisina ay tumuturo sa mga video ng ehersisyo sa bahay. Hindi kinokopya ng kursong ito ang mga video at hindi nagtatakda ng bayad.",
+        "Mag-warm up bago maglaro. Dumaong nang marahan kapag tumalon. Tumigil kung ang sakit sa tuhod, bukong-bukong, o iba pang sakit ay pumipigil sa paglalakad. Inuulit iyon ng mga seksyon ng isport sa kursong ito.",
+        "Lumangoy lamang kung saan may naka-duty na lifeguard o kasama ang taong makakatulong. Para sa pag-akyat sa protected area, magtanong sa DENR o sa protected-area office bago pumunta. Tingnan ang mga seksyong iyon.",
+        "Tumigil at humingi ng tulong kung may sakit sa dibdib, hinihimatay, o sakit na pumipigil sa paglalakad. Sa emergency, tumawag sa 911. Ang may kondisyon sa kalusugan ay dapat magtanong sa clinician bago ang bagong programa.",
+        "Hindi medikal na payo at hindi training plan. Hindi nagrereseta ang kursong ito ng sets o reps."
+      ],
+      "tip": "Not medical advice.",
+      "tip_tl": "Hindi medikal na payo.",
+      "links": [
+        ["WHO physical activity", "https://www.who.int/news-room/fact-sheets/detail/physical-activity", "live"],
+        [
+          "DOH CAR, daily exercise",
+          "https://caro.doh.gov.ph/%f0%9d%97%aa%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%96%f0%9d%97%9b-%e2%80%bc%ef%b8%8fdaily-exercise-is-effective-against-diseases%e2%80%bc%ef%b8%8f/",
+          "live"
+        ],
+        ["DOH CAR, Wais Magpapawis", "https://caro.doh.gov.ph/wais-magpapawis-2/", "live"],
+        ["911", "https://e911.gov.ph/", "live"]
+      ],
+      "related": ["DOH", "WHO"],
+      "related_tl": ["DOH", "WHO"]
+    },
+    {
+      "id": "sport-where",
+      "new": true,
+      "title": "Where to start without a gym",
+      "title_tl": "Saan magsimula nang walang gym",
+      "src": "https://caro.doh.gov.ph/%f0%9d%97%aa%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%96%f0%9d%97%9b-%e2%80%bc%ef%b8%8fdaily-exercise-is-effective-against-diseases%e2%80%bc%ef%b8%8f/",
+      "steps": [
+        "This section does not list fees. Ask the place you want to use what it charges, if anything, and when it is open.",
+        "The court sections in this course point to barangay and school courts for basketball, volleyball, badminton, and sepak takraw. Ask the barangay, the school, or the LGU if there is an open time. Do not assume a court is free or unsupervised.",
+        "Walking, dancing at home or in a hall, and bodyweight movement need no court. A DOH CAR page read on 6 Nov 2026 named walking, cycling, stretching, and dancing as everyday examples.",
+        "A hike in a protected area may need a permit or a local guide. The hiking section says to ask DENR or the protected-area office before you go.",
+        "Swim where a lifeguard is on duty, or with a person who can help you. Do not treat the open sea as a free lesson. See the swimming section.",
+        "Not medical advice. Stop for chest pain, fainting, or a pain that stops you walking. Call 911 in an emergency."
+      ],
+      "steps_tl": [
+        "Walang nakalistang bayad sa seksyong ito. Itanong sa lugar na gagamitin mo kung may singil, at kung kailan ito bukas.",
+        "Ang mga seksyon ng court sa kursong ito ay tumuturo sa court ng barangay at paaralan para sa basketball, volleyball, badminton, at sepak takraw. Itanong sa barangay, paaralan, o LGU kung may bukas na oras. Huwag ipagpalagay na libre o walang bantay ang court.",
+        "Hindi kailangan ng court ang paglalakad, pagsasayaw sa bahay o sa hall, at ang galaw gamit ang bigat ng katawan. Pinangalanan ng pahina ng DOH CAR na binasa noong 6 Nob 2026 ang paglalakad, pagbibisikleta, pag-uunat, at pagsasayaw bilang pang-araw-araw na halimbawa.",
+        "Ang pag-akyat sa protected area ay maaaring mangailangan ng permit o lokal na gabay. Sinasabi ng seksyon ng hiking na magtanong sa DENR o sa protected-area office bago pumunta.",
+        "Lumangoy kung saan may naka-duty na lifeguard, o kasama ang taong makakatulong. Huwag ituring na libreng leksyon ang bukas na dagat. Tingnan ang seksyon ng paglangoy.",
+        "Hindi medikal na payo. Tumigil kung may sakit sa dibdib, hinihimatay, o sakit na pumipigil sa paglalakad. Tumawag sa 911 kung emergency."
+      ],
+      "tip": "Not medical advice. Civi does not list court fees.",
+      "tip_tl": "Hindi medikal na payo. Hindi naglilista ang Civi ng bayad sa court.",
+      "links": [
+        [
+          "DOH CAR, daily exercise",
+          "https://caro.doh.gov.ph/%f0%9d%97%aa%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%96%f0%9d%97%9b-%e2%80%bc%ef%b8%8fdaily-exercise-is-effective-against-diseases%e2%80%bc%ef%b8%8f/",
+          "live"
+        ],
+        ["DOH CAR, Wais Magpapawis", "https://caro.doh.gov.ph/wais-magpapawis-2/", "live"],
+        ["DENR", "https://www.denr.gov.ph/", "live"],
+        ["911", "https://e911.gov.ph/", "live"]
+      ],
+      "related": ["DOH", "DENR"],
+      "related_tl": ["DOH", "DENR"]
     },
     {
       "id": "ben-gsis",

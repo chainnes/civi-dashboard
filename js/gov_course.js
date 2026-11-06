@@ -5,7 +5,7 @@
   const passed = id => localStorage.getItem("civi.quiz." + id) === "1";
   const stepsDone = h => { const v = localStorage.getItem("civi.sec." + h.id); if (v === "1") return true; if (v === "0") return false; try { const old = JSON.parse(localStorage.getItem("civi.howto." + h.id) || "[]"); return Array.isArray(old) && (h.steps || []).length > 0 && old.length >= h.steps.length; } catch { return false; } };
   const mods = how => how.items.filter(x => x.course === "gov");
-  const fill = (k, vars) => { let s = window.t ? t(k) : k; if (vars) for (const a in vars) s = s.split("{" + a + "}").join(vars[a]); return s; };
+  const fill = (k, vars) => { let s = typeof t === "function" ? t(k) : k; if (vars) for (const a in vars) s = s.split("{" + a + "}").join(vars[a]); return s; };
   const quizOf = h => (window.state && state.lang === "tl" && Array.isArray(h.quiz_tl) && h.quiz_tl.length) ? h.quiz_tl : (h.quiz || []);
   const badgeHTML = () => `<div class="gov-badge" role="status"><span aria-hidden="true">🏛️🏅</span><div><b>${E(fill("badge_civics"))}</b><br><small>${E(fill("badge_gov"))} · ${E(localStorage.getItem("civi.badge.gov") || "")}</small></div></div>`;
   const progress = how => { const m = mods(how), d = m.filter(x => passed(x.id) && stepsDone(x)).length; return `<p class="sub">📘 ${E(fill("quiz_progress"))}: ${d}/${m.length} ${E(fill("modules"))} <progress max="${m.length}" value="${d}" aria-label="${E(fill("quiz_progress"))}"></progress></p>`; };

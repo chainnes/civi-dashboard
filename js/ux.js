@@ -43,7 +43,7 @@ const SYN = { career: "career roles job family jobs", karera: "career roles jobs
   bahay: "pag-ibig nha dhsud housing", house: "pag-ibig nha dhsud housing", license: "lto driver license", lisensya: "lto driver license", police: "pnp nbi clearance police", pulis: "pnp police",
   mental: "mental health hotline ncmh", lungkot: "mental health hotline", volunteer: "volunteer ngo", tulong: "dswd aid assistance volunteer ngo", aid: "dswd aid assistance", stocks: "pse company listed", barko: "ferry ppa marina coast pcg water 2go", ferry: "ferry ppa marina coast water", eroplano: "airport flight airline naia caap", flight: "airport flight airline naia caap", lipad: "flight airline airport", tren: "lrt mrt pnr rail train", train: "lrt mrt pnr rail", bus: "bus ltfrb dotr victory ceres genesis pitx", jeep: "ltfrb sakay route", biyahe: "transport land air water schedule sakay", byahe: "transport land air water schedule sakay", schedule: "schedule transport flight ferry", iskedyul: "schedule transport", commute: "sakay lrt mrt bus route", civictech: "community-built volunteer bettergov", opensource: "community-built github bettergov", transparency: "bettergov transparency bantay",  invest: "pse sec bsp company", sports: "sports fitness pba uaap volleyball football", isports: "sports", palaro: "sports", takbo: "running race marathon run", run: "running race marathon", fun: "running race", marathon: "running race marathon", hiking: "hiking mountain pinoymountaineer", akyat: "hiking mountain", bundok: "hiking mountain", basketball: "pba gilas sbp", scholarship: "scholarships scholarship ched dost", iskolar: "scholarships scholarship", hotline: "life safety emergency hotline", shopping: "shopping e-commerce mall", online: "shopping e-commerce", sine: "cinema entertainment tickets", movie: "cinema entertainment", concert: "tickets concert", kuryente: "meralco electricity utilities", tubig: "water maynilad manila utilities", internet: "telecom globe smart dito converge", load: "telecom globe smart dito", padala: "courier phlpost lbc parcel", parcel: "courier phlpost lbc parcel tracking", hayop: "animal pets welfare", aso: "pets animal welfare", pusa: "pets animal welfare", zoo: "zoos parks pasyalan", pasyalan: "zoos parks pasyalan museum", museum: "museum culture", kalikasan: "nature wildlife environment", news: "media news", balita: "media news", simbahan: "faith church community", senior: "senior citizens ncsc", pwd: "pwd disability ncda", babae: "women pcw vawc", bata: "children cwc bantay", negosyo: "business sec dti bnrs find", kumpanya: "business sec company find", kooperatiba: "cooperative cda", esports: "gaming esports", libro: "books libraries", lgbt: "lgbtq support", katutubo: "indigenous ncip" };
 const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-function score(item, words) { const hay = norm([item.name, item.name_tl, item.abbr, item.desc, item.cat, item.industry, item.role, item.ticker].join(" ")); let s = 0;
+function score(item, words) { const hay = norm([item.name, item.name_tl, item.abbr, item.desc, item.desc_tl, item.cat, item.industry, item.role, item.ticker].join(" ")); let s = 0;
   words.forEach(w => { if (w.length < 2) return; if (new RegExp("\\b" + w.replace(/[.*+?^${}()|[\]\\]/g, "")).test(hay)) s += 3; else if (hay.includes(w)) s += 1; }); return s; }
 const STOP = new Set("ng sa ang na mga ko ako ka mo si ni kay at ay para po the a an of for to my i me in on is and or how what ano paano saan".split(" "));
 const expand = q => { const ws = norm(q).split(/[^a-z0-9-]+/).filter(w => w && !STOP.has(w)); return [...new Set(ws.flatMap(w => [w, ...(SYN[w] || Object.entries(SYN).find(([k]) => k.length > 3 && w.startsWith(k))?.[1] || "").split(" ").filter(Boolean)]))]; };
@@ -55,16 +55,18 @@ Object.assign(CIVI_I18N.tl, { view_service: "Tingnan ang serbisyo", ai_suggested
 const DIR_GROUPS = [["Emergencies", ["Emergency & hotlines", "Life & safety", "Consumer complaints"]], ["Government", ["Executive departments", "Agencies & GOCCs", "Constitutional bodies & courts", "Legislature", "Public officials", "Government services", "Legal aid & rights", "Data, laws & documents", "Civic tech & community-built"]], ["Health", ["Health", "Health & wellness apps/sites", "Mental health"]], ["Work & money", ["OFW services", "Jobs & livelihood", "Earn: Iwas scam", "Earn: Small gigs", "Earn: Freelance", "Earn: Surveys & micro-tasks", "Earn: Sell online", "Earn: Content creation", "Earn: Rider & delivery", "Earn: Teach & tutor", "Money & finance", "Find any business", "Companies (PSE-listed)"]], ["Learning", ["Learning & scholarships", "Learning centers & tutorials", "Free language & online courses", "Learn farming: Free", "Learn farming: Paid / audit-free", "Scholarships"]], ["Learning & civic resources", ["Civic know-how", "Free courses"]], ["Getting around", ["Transport: Land", "Transport: Air", "Transport: Water", "Telecom & utilities", "Post & couriers", "Must-have apps in PH"]], ["Community", ["Volunteer & NGOs", "Embassies", "Sports & fitness", "Events & activities", "Events & things to do", "Promos, sales & discounts", "Meetups & conferences", "Places & travel"]], ["Environment", ["Recycle & drop-off programs"]], ["Transparency", ["FY 2026 budget"]]];
 const dirHost = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
 const groupOf = cat => { for (const [name, subs] of DIR_GROUPS) if (subs.includes(cat)) return name; return "More"; };
-const svcCard = i => { const name = dirName(i), desc = dirDesc(i); return `<article class="svc">${favBtn(i._type || "directory", i.abbr || i.name, name, i.url)}<h3>${esc(i.role ? i.role + ": " + name : name)}</h3><div class="tags"><span class="chip">${esc(t(i.group || ""))}</span><span class="chip">${esc(t(i.cat))}</span>${i.official ? `<span class="okmark" title="${esc(t("official"))}">✓</span>` : ""}</div><div class="dom">${esc(dirHost(i.url))}</div>${i.phone ? `<div class="dom">☎ <a href="tel:${esc(i.phone)}">${esc(i.phone)}</a></div>` : ""}<p class="dshort" title="${esc(desc)}">${esc(shortD(desc))}</p>${i.community ? `<p class="dsrc">${esc(t("community_run"))}. ${esc(t("data_updates"))}.</p>` : ""}<a class="btn sm svc-go" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(t("view_service"))}</a></article>`; };
+const svcCard = i => { const name = dirName(i), desc = dirDesc(i); return `<article class="svc">${favBtn(i._type || "directory", i.abbr || i.name, name, i.url)}<h3>${esc(i.role ? i.role + ": " + name : name)}</h3><div class="tags"><span class="chip">${esc(t(i.group || ""))}</span><span class="chip">${esc(t(i.cat))}</span>${i.official ? `<span class="okmark" title="${esc(t("official"))}">✓</span>` : ""}</div><div class="dom">${esc(dirHost(i.url))}</div>${i.phone ? `<div class="dom">☎ <a href="tel:${esc(i.phone)}">${esc(i.phone)}</a></div>` : ""}<p class="dshort" title="${esc(desc)}">${esc(shortD(desc))}</p>${i.community ? `<p class="dsrc">${esc(t("community_run"))}. ${esc(t("data_updates"))}.</p>` : ""}${i.asof ? `<p class="dsrc">${esc(t("asof"))} ${esc(i.asof)}</p>` : ""}<a class="btn sm svc-go" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(t("view_service"))}</a></article>`; };
 const schCard = x => `<div class="card glass dcard"><span class="chip ${x.scope === "Local" ? "ok" : ""}">${esc(x.scope)}</span> <span class="chip">${esc((x.levels || []).join("/"))}</span><h4>${esc(x.name)}</h4><p class="dshort" title="${esc(x.eligibility || "")}">${esc(x.provider || "")} · ${esc(shortD(x.coverage, 70))}</p><a class="btn sm" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(t("view_service"))}</a></div>`;
 async function viewDirectory2() {
   const [hub, gov, off, co, ct, dm, sch, acad] = await Promise.all([data("directory_hub"), data("gov_directory"), data("officials"), data("companies"), data("civic_transport").catch(() => ({ items: [] })), data("directory_more").catch(() => ({ items: [] })), data("scholarships").catch(() => ({ items: [] })), data("academy").catch(() => ({ online: [], offline: [] }))]);
   const mark = (list, official) => list.map(i => ({ ...i, official: official || i.official || i.label === "Government", group: groupOf(i.cat), _type: i._type || "directory" }));
   const govHost = u => { try { return new URL(u).hostname.endsWith(".gov.ph"); } catch { return false; } };
+  const extNote = acad.note || "External link. Civi does not host this page.";
+  const extNoteTl = acad.note_tl || extNote;
   const learn = [
-    ...CIVIC.map(([name, url, desc, name_tl, desc_tl]) => ({ name, name_tl, url, desc, desc_tl, cat: "Civic know-how", official: govHost(url), _type: "directory" })),
-    ...(acad.online || []).map(c => ({ name: c.name, url: c.url, desc: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. External course. Civi does not host it.`, desc_tl: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. Kursong panlabas. Hindi ito hino-host ng Civi.`, cat: "Free courses", official: govHost(c.url), _type: "directory" })),
-    ...(acad.offline || []).map(c => ({ name: c.name, url: c.url, desc: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. Link to the provider.`, desc_tl: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. Link sa provider.`, cat: /PAGASA|PHIVOLCS/i.test(c.name) ? "Civic know-how" : "Free courses", official: govHost(c.url), _type: "directory" }))
+    ...CIVIC.map(([name, url, desc, name_tl, desc_tl]) => ({ name, name_tl, url, desc: `${desc} ${extNote}`, desc_tl: `${desc_tl} ${extNoteTl}`, cat: "Civic know-how", official: govHost(url), asof: acad.as_of || "", _type: "directory" })),
+    ...(acad.online || []).map(c => ({ name: c.name, url: c.url, desc: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. ${extNote}`, desc_tl: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. ${extNoteTl}`, cat: "Free courses", official: govHost(c.url), asof: acad.as_of || "", _type: "directory" })),
+    ...(acad.offline || []).map(c => ({ name: c.name, url: c.url, desc: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. ${extNote}`, desc_tl: `${c.by || ""}${c.tags ? " · " + c.tags : ""}. ${extNoteTl}`, cat: /PAGASA|PHIVOLCS/i.test(c.name) ? "Civic know-how" : "Free courses", official: govHost(c.url), asof: acad.as_of || "", _type: "directory" }))
   ];
   const all = [...mark(hub.items, true), ...mark(gov.items, true), ...mark(ct.items || [], true), ...mark(dm.items || [], false), ...mark(learn, false), ...mark(off.items.map(i => ({ ...i, cat: "Public officials", _type: "official" })), true), ...mark(co.items.map(i => ({ ...i, cat: "Companies (PSE-listed)", desc: `${i.industry} · ${co.source}`, _type: "company" })), false), { name: "BetterGov FY 2026 Budget Dashboard", url: "https://2026-budget.bettergov.ph/", cat: "FY 2026 budget", desc: "Community-run dashboard of the FY 2026 national budget. Not a government website.", community: true, official: false, group: "Transparency", _type: "directory" }];
   const known = new Set(DIR_GROUPS.flatMap(g => g[1]));
@@ -78,7 +80,7 @@ async function viewDirectory2() {
   const RECYCLE = "Recycle & drop-off programs";
   const browsing = () => !group && !sub && !words.length;
   const inGroup = i => !group || i.group === group;
-  const hits = () => all.filter(i => (!sub || i.cat === sub) && inGroup(i) && (!words.length || score(i, words) >= 3 || words.some(w => w.length > 2 && norm(i.name + " " + (i.desc || "") + " " + i.cat).includes(w))));
+  const hits = () => all.filter(i => (!sub || i.cat === sub) && inGroup(i) && (!words.length || score(i, words) >= 3 || words.some(w => w.length > 2 && norm([i.name, i.name_tl, i.desc, i.desc_tl, i.cat].join(" ")).includes(w))));
   const sideBtn = (name, on, kind, val) => `<button type="button" class="${on ? "on" : ""}" data-kind="${kind}" data-v="${esc(val)}">${esc(name)}</button>`;
   page(`<h1>📇 ${t("dir_title")}</h1><p class="sub">${t("directory_sub")}</p>
    <form class="dir-search glass" role="search" id="dirSearch"><input type="search" id="needQ" placeholder="${esc(t("need_ph"))}" aria-label="${esc(t("need_q"))}" value="${esc(q0)}"><button type="submit" class="btn" id="needAI">${esc(t("ask_ai"))}</button></form>
@@ -226,10 +228,12 @@ async function loadCourses() {
   return { as_of: cat.as_of || how.as_of || "", courses, how };
 }
 const courseFind = c => norm([c.title, c.title_tl, c.id, ...c.modules.flatMap(m => [m.title, m.title_tl, ...m.sections.flatMap(s => [s.title, s.title_tl, ...(s.steps || []), ...(s.steps_tl || [])])])].join(" "));
+const illAlt = o => howPick(o && o.ill_alt, o && o.ill_alt_tl);
+const illImg = (file, alt, cls) => `<div class="${cls}"><img src="/assets/courses/${esc(file || "civics.svg")}" alt="${esc(alt || "")}" width="128" height="72" loading="lazy" decoding="async"></div>`;
 const acCard = c => {
   const st = courseStat(c), secs = flatSecs(c), next = secs.find(s => !sectionComplete(s)) || secs[0], href = courseHref(c, next), when = localStorage.getItem(badgeKey(c.id));
   return `<article class="ac-card card glass" data-find="${esc(courseFind(c))}">${favBtn("course", c.id, howPick(c.title, c.title_tl), href)}
-    <a class="ac-go" href="${href}"><div class="ac-plate"><img src="/assets/courses/${esc(c.ill || "civics.svg")}" alt="" width="128" height="72" loading="lazy" decoding="async"></div>
+    <a class="ac-go" href="${href}">${illImg(c.ill, illAlt(c), "ac-plate")}
     <h2><span aria-hidden="true">${esc(c.icon || "")}</span> ${esc(howPick(c.title, c.title_tl))}</h2>
     <p class="ac-meta"><span>${st.n} ${t("sections")}</span><span>· ${timeLabel(estMin(c))}</span>${when ? `<span>· ✓ ${esc(t("completed"))}</span>` : ""}</p>
     <progress max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress><span class="ac-pct">${st.p}%</span></a></article>`;
@@ -273,7 +277,7 @@ Object.assign(CIVI_I18N.en, { guide_level: "Guide", lessons: "Sections", course_
   disc_legal: "General information, not legal advice. Requirements and fees change. Read the official page.",
   disc_fin: "General information, not financial, tax, or benefits advice. Check the agency for current rules.",
   badge_course: "Course complete", sources: "Sources", progress_local: "Your section progress is saved only on this device.",
-  "Paano Kumita Online": "How to earn online", "Paano tumatakbo ang gobyerno natin": "How our government works", "Mga industriya sa Pilipinas": "Industries in the Philippines", "Buhay at kabuhayan": "Life and livelihood", "Pagsasaka at kalikasan": "Farming and nature", "Paano magsimula ng negosyo": "How to start a business", "Earn: Iwas scam": "Earn: Avoid scams", "Zoos, parks & pasyalan": "Zoos, parks and places to visit" });
+  "Paano Kumita Online": "Earning online", "Paano tumatakbo ang gobyerno natin": "How our government works", "Mga industriya sa Pilipinas": "Industries in the Philippines", "Buhay at kabuhayan": "Life & money skills", "Pagsasaka at kalikasan": "Farming & nature", "Paano magsimula ng negosyo": "How to start a business", "Earn: Iwas scam": "Earn: Avoid scams", "Zoos, parks & pasyalan": "Zoos, parks and places to visit" });
 Object.assign(CIVI_I18N.tl, { guide_level: "Gabay", lessons: "Mga seksyon", course_done: "Tapos na ang seksyon", prev_lesson: "Nakaraan", next_lesson: "Susunod",
   quiz_title: "Mabilisang quiz", quiz_check: "Suriin ang sagot", quiz_pass: "Pasado. Markahang tapos ang seksyon para mabilang ito sa badge.", quiz_retry: "{ok}/{n} tama — subukan ulit.", quiz_passed: "Pasado na", quiz_progress: "Progreso ng kurso", modules: "mga module", badge_civics: "Civi Civics Badge", badge_gov: "Alam ko kung paano tumatakbo ang gobyerno natin", quiz_sources: "Nasa itaas ang mga source. Sinuri noong 2026-10-29. Walang pinangalanang kasalukuyang opisyal.",
   sim_title: "Kung Ikaw ang Presidente", sim_ph: "Bakit ganito ang budget mo?", sim_share_as: "Kung ako ang Presidente: ",
@@ -293,9 +297,14 @@ async function viewHowto() {
   const qid = new URLSearchParams((location.hash.split("?")[1] || "")).get("id");
   let course, sec;
   if (parts[0] === "course" && parts[1]) {
-    course = pack.courses.find(c => c.id === parts[1]);
     const want = parts[2] || qid;
-    sec = course && (flatSecs(course).find(s => s.id === want) || flatSecs(course)[0]);
+    course = pack.courses.find(c => c.id === parts[1]);
+    sec = course && flatSecs(course).find(s => s.id === want);
+    if (!sec && want) {
+      const owner = pack.courses.find(c => flatSecs(c).some(s => s.id === want));
+      if (owner) { course = owner; sec = flatSecs(owner).find(s => s.id === want); }
+    }
+    if (course && !sec) sec = flatSecs(course)[0];
   } else if (qid) {
     course = pack.courses.find(c => flatSecs(c).some(s => s.id === qid));
     sec = course && flatSecs(course).find(s => s.id === qid);
@@ -310,10 +319,12 @@ async function viewHowto() {
   secs.forEach(s => { if (s.src && !seen.has(s.src)) { seen.add(s.src); sources.push(s.src); } });
   const asof = sec._asof || pack.as_of;
   const disc = course.disclaimer && t("disc_" + course.disclaimer) !== "disc_" + course.disclaimer ? t("disc_" + course.disclaimer) : t("not_advice");
+  const mod = course.modules.find(m => m.sections.some(s => s.id === sec.id));
+  const modPct = m => { const d = m.sections.filter(sectionComplete).length, n = m.sections.length; return { d, n, p: n ? Math.round(100 * d / n) : 0 }; };
   const outline = course.modules.map(m => {
-    const d = m.sections.filter(sectionComplete).length;
-    return `<details class="toc-mod" ${m.sections.some(s => s.id === sec.id) ? "open" : ""}><summary>${esc(howPick(m.title, m.title_tl))} <span>${d}/${m.sections.length}</span></summary>
-      <progress id="mod-${esc(m.id)}" max="${m.sections.length}" value="${d}" aria-label="${esc(t("module_progress"))}: ${esc(howPick(m.title, m.title_tl))}"></progress>
+    const mp = modPct(m);
+    return `<details class="toc-mod" ${m.sections.some(s => s.id === sec.id) ? "open" : ""}><summary>${esc(howPick(m.title, m.title_tl))} <span>${mp.d}/${mp.n} · ${mp.p}%</span></summary>
+      <progress id="mod-${esc(m.id)}" max="${mp.n}" value="${mp.d}" aria-label="${esc(t("module_progress"))}: ${esc(howPick(m.title, m.title_tl))} ${mp.p}%"></progress>
       <div class="toc-list">${m.sections.map(s => `<a class="${s.id === sec.id ? "on" : ""}" href="${courseHref(course, s)}"><span>${sectionComplete(s) ? "✓" : "·"}</span>${esc(howTitle(s))}</a>`).join("")}</div></details>`;
   }).join("");
   const st = courseStat(course);
@@ -332,13 +343,13 @@ async function viewHowto() {
      <div class="course-main card glass">
        <header class="course-head">
          ${favBtn("howto", sec.id, howTitle(sec), courseHref(course, sec))}
-         <div class="ac-plate ac-plate-sm"><img src="/assets/courses/${esc(course.ill || "civics.svg")}" alt="" width="128" height="72" loading="lazy" decoding="async"></div>
+         ${illImg(mod && mod.ill || course.ill, illAlt(mod) || illAlt(course), "ac-plate ac-plate-sm")}
          <p class="sub course-kicker">${esc(course.icon || "")} ${esc(howPick(course.title, course.title_tl))}</p>
          <h1>${esc(howTitle(sec))}</h1>
          <p class="course-meta"><span>${timeLabel(estMin(course))}</span><span>${st.n} ${t("sections")}</span><span>${idx + 1}/${secs.length}</span></p>
          <p class="course-src"><span>${t("sources")}:</span> ${sources.slice(0, 8).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(hostOf(u))} ↗</a>`).join(" · ")}${sources.length > 8 ? ` <span class="sub">+${sources.length - 8}</span>` : ""}</p>
          <p class="sub">${t("asof")} ${esc(asof)}</p>
-         <progress id="lessonBar" max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress>
+         <progress id="lessonBar" max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress><span id="lessonPct" class="sub">${st.p}%</span>
        </header>
        <div class="disc">📅 ${esc(howNote(sec) || pack.how.note || "")} ${esc(disc)}</div>
        <ol class="steps">${steps.map((s, n) => `<li class="step-card plain"><span class="step-n" aria-hidden="true">${n + 1}</span><p class="step-t">${esc(s)}</p></li>`).join("")}</ol>
@@ -357,7 +368,8 @@ async function viewHowto() {
     const stat = courseStat(course);
     const bar = $("#courseBar"), pct = $("#coursePct"), lesson = $("#lessonBar");
     if (bar) bar.value = stat.d; if (pct) pct.textContent = stat.p + "%"; if (lesson) lesson.value = stat.d;
-    course.modules.forEach(m => { const el = document.getElementById("mod-" + m.id); if (!el) return; el.value = m.sections.filter(sectionComplete).length; const sum = el.parentElement?.querySelector("summary span"); if (sum) sum.textContent = el.value + "/" + el.max; });
+    const lessonPct = $("#lessonPct"); if (lessonPct) lessonPct.textContent = stat.p + "%";
+    course.modules.forEach(m => { const el = document.getElementById("mod-" + m.id); if (!el) return; const d = m.sections.filter(sectionComplete).length; el.value = d; const sum = el.parentElement?.querySelector("summary span"); if (sum) sum.textContent = d + "/" + el.max + " · " + (el.max ? Math.round(100 * d / el.max) : 0) + "%"; });
     $$("#toc .toc-list a").forEach(a => { const id = decodeURIComponent((a.getAttribute("href") || "").split("/").pop()); const s = secs.find(x => x.id === id); if (!s) return; const mark = a.querySelector("span"); if (mark) mark.textContent = sectionComplete(s) ? "✓" : "·"; });
     const on = sectionComplete(sec), btn = $("#markSec");
     if (btn) { btn.setAttribute("aria-pressed", on ? "true" : "false"); btn.textContent = on ? t("completed") + " ✓" : t("mark_complete"); }
