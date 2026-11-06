@@ -237,13 +237,17 @@ const acCard = c => {
     <progress max="${st.n || 1}" value="${st.d}" aria-label="${esc(t("course_progress"))}"></progress><span class="ac-pct">${st.p}%</span></a></article>`;
 };
 async function viewAcademy2() {
-  const pack = await loadCourses();
+  const [pack, acad] = await Promise.all([loadCourses(), data("academy").catch(() => ({ online: [] }))]);
+  const civicCards = CIVIC.map(([name, url, desc, name_tl, desc_tl]) => `<div class="card glass"><h4>${esc(howPick(name, name_tl))}</h4><p>${esc(howPick(desc, desc_tl))}</p><a href="${esc(url)}" target="_blank" rel="noopener">${t("start")} ↗</a></div>`);
+  const freeCards = (acad.online || []).map(c => `<div class="card glass"><span class="chip">${esc(c.by || "")}</span><h4>${esc(c.name)}</h4><p>${esc(c.tags || "")}</p><a href="${esc(c.url)}" target="_blank" rel="noopener">${t("open")} ↗</a></div>`);
   page(`<h1>🎓 ${t("nav_academy")}</h1><p class="sub">${t("acad_sub")}</p>
    <div class="smart glass" role="search"><span style="font-size:22px" aria-hidden="true">🔎</span><input type="search" id="acQ" placeholder="${esc(t("acad_q"))}" aria-label="${esc(t("acad_q"))}"><button class="btn" id="acAI" title="${esc(t("ai_hint"))}">✨ ${t("ask")}</button></div>
    <p id="acNote" class="sub"></p>
    <div id="acGrid" class="ac-grid">${pack.courses.map(acCard).join("")}</div>
    <div id="acHits"></div>
+   <div id="acLinks">${rowc("civic", "🏛️ " + t("civic_knowhow"), civicCards)}${freeCards.length ? rowc("free", "💻 " + t("free_courses"), freeCards) : ""}</div>
    <p class="sub sims-note"><a href="#/sim">${esc(t("sim_title"))}</a> — ${esc(t("sim_blurb"))}</p>`);
+  wireCarousels($("#acLinks"));
   let words = [];
   const show = () => {
     const cards = $$("#acGrid .ac-card");
@@ -275,7 +279,7 @@ Object.assign(CIVI_I18N.en, { guide_level: "Guide", lessons: "Sections", course_
   disc_legal: "General information, not legal advice. Requirements and fees change. Read the official page.",
   disc_fin: "General information, not financial, tax, or benefits advice. Check the agency for current rules.",
   badge_course: "Course complete", sources: "Sources", progress_local: "Your section progress is saved only on this device.",
-  "Paano Kumita Online": "How to earn online", "Paano tumatakbo ang gobyerno natin": "How our government works", "Mga industriya sa Pilipinas": "Industries in the Philippines", "Buhay at kabuhayan": "Life and livelihood", "Pagsasaka at kalikasan": "Farming and nature", "Paano magsimula ng negosyo": "How to start a business", "Earn: Iwas scam": "Earn: Avoid scams", "Zoos, parks & pasyalan": "Zoos, parks and places to visit" });
+  "Paano Kumita Online": "Earning online", "Paano tumatakbo ang gobyerno natin": "How our government works", "Mga industriya sa Pilipinas": "Industries in the Philippines", "Buhay at kabuhayan": "Life & money skills", "Pagsasaka at kalikasan": "Farming & nature", "Paano magsimula ng negosyo": "How to start a business", "Earn: Iwas scam": "Earn: Avoid scams", "Zoos, parks & pasyalan": "Zoos, parks and places to visit" });
 Object.assign(CIVI_I18N.tl, { guide_level: "Gabay", lessons: "Mga seksyon", course_done: "Tapos na ang seksyon", prev_lesson: "Nakaraan", next_lesson: "Susunod",
   quiz_title: "Mabilisang quiz", quiz_check: "Suriin ang sagot", quiz_pass: "Pasado. Markahang tapos ang seksyon para mabilang ito sa badge.", quiz_retry: "{ok}/{n} tama — subukan ulit.", quiz_passed: "Pasado na", quiz_progress: "Progreso ng kurso", modules: "mga module", badge_civics: "Civi Civics Badge", badge_gov: "Alam ko kung paano tumatakbo ang gobyerno natin", quiz_sources: "Nasa itaas ang mga source. Sinuri noong 2026-10-29. Walang pinangalanang kasalukuyang opisyal.",
   sim_title: "Kung Ikaw ang Presidente", sim_ph: "Bakit ganito ang budget mo?", sim_share_as: "Kung ako ang Presidente: ",

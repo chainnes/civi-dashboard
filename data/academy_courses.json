@@ -1,66 +1,230 @@
 {
   "as_of": "2026-11-06",
-  "note": "One in-house course per topic. Section text is a guide. Fees, requirements, and benefit amounts change: use the linked official page.",
+  "note": "One in-house course per Academy category. Section text is a guide. Fees, requirements, and benefit amounts change: use the linked official page.",
   "courses": [
     {
-      "id": "disaster",
-      "icon": "🛟",
-      "ill": "disaster.svg",
-      "title": "Disaster preparedness & survival",
-      "title_tl": "Paghahanda sa sakuna at survival",
-      "disclaimer": "safe",
+      "id": "earn",
+      "icon": "💻",
+      "ill": "earn.svg",
+      "title": "Earning online",
+      "title_tl": "Paano kumita online",
+      "disclaimer": "fin",
+      "ill_alt": "A laptop",
+      "ill_alt_tl": "Isang laptop",
       "modules": [
         {
-          "id": "before",
-          "title": "Before a hazard",
-          "title_tl": "Bago dumating ang panganib",
+          "id": "safe",
+          "title": "Start safely",
+          "title_tl": "Magsimula nang ligtas",
           "sections": [
-            "disaster",
-            "life04"
+            "earn01",
+            "earn02"
           ],
-          "ill": "m-disaster-before.svg",
-          "ill_alt": "A packed go-bag",
-          "ill_alt_tl": "Isang go-bag"
+          "ill": "m-earn-safe.svg",
+          "ill_alt": "A padlock",
+          "ill_alt_tl": "Isang padlock"
         },
         {
-          "id": "hazards",
-          "title": "Hazards",
-          "title_tl": "Mga panganib",
+          "id": "ways",
+          "title": "Ways to earn",
+          "title_tl": "Mga paraan ng kita",
           "sections": [
-            "haz-typhoon",
-            "haz-flood",
-            "haz-quake",
-            "haz-fire",
-            "haz-volcano"
+            "earn03",
+            "earn04",
+            "earn05",
+            "earn06",
+            "earn07",
+            "earn08",
+            "earn09",
+            "earn10",
+            "earn11",
+            "earn12"
           ],
-          "ill": "m-disaster-hazards.svg",
-          "ill_alt": "A storm cloud",
-          "ill_alt_tl": "Ulap ng bagyo"
+          "ill": "m-earn-ways.svg",
+          "ill_alt": "A laptop",
+          "ill_alt_tl": "Isang laptop"
         },
         {
-          "id": "respond",
-          "title": "During and after",
-          "title_tl": "Habang at pagkatapos",
+          "id": "rules",
+          "title": "Tax and income",
+          "title_tl": "Buwis at kita",
           "sections": [
-            "haz-evac",
-            "haz-firstaid",
-            "haz-hotlines"
+            "earn13",
+            "earn14"
           ],
-          "ill": "m-disaster-respond.svg",
-          "ill_alt": "A first-aid cross",
-          "ill_alt_tl": "Krus ng first aid"
+          "ill": "m-earn-rules.svg",
+          "ill_alt": "A calculator",
+          "ill_alt_tl": "Isang calculator"
         }
-      ],
-      "ill_alt": "A go-bag",
-      "ill_alt_tl": "Isang go-bag"
+      ]
     },
     {
-      "id": "civics",
+      "id": "life-safety",
+      "icon": "🛟",
+      "ill": "disaster.svg",
+      "title": "Life & safety",
+      "title_tl": "Buhay at kaligtasan",
+      "disclaimer": "safe",
+      "ill_alt": "A go-bag",
+      "ill_alt_tl": "Isang go-bag",
+      "modules": [
+        {
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "scholar",
+            "disaster",
+            "foi"
+          ],
+          "ill": "disaster.svg",
+          "ill_alt": "A go-bag",
+          "ill_alt_tl": "Isang go-bag"
+        }
+      ]
+    },
+    {
+      "id": "life-money",
+      "icon": "🏠",
+      "ill": "home.svg",
+      "title": "Life & money skills",
+      "title_tl": "Buhay at kabuhayan",
+      "disclaimer": "",
+      "ill_alt": "A house",
+      "ill_alt_tl": "Isang bahay",
+      "modules": [
+        {
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "life01",
+            "life02",
+            "life03",
+            "life04",
+            "home-safe"
+          ],
+          "ill": "home.svg",
+          "ill_alt": "A house",
+          "ill_alt_tl": "Isang bahay"
+        }
+      ]
+    },
+    {
+      "id": "farming",
+      "icon": "🌱",
+      "ill": "planting.svg",
+      "title": "Farming & nature",
+      "title_tl": "Pagsasaka at kalikasan",
+      "disclaimer": "",
+      "ill_alt": "A seedling",
+      "ill_alt_tl": "Isang punla",
+      "modules": [
+        {
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "farm-da",
+            "life05",
+            "life06",
+            "life07"
+          ],
+          "ill": "planting.svg",
+          "ill_alt": "A seedling",
+          "ill_alt_tl": "Isang punla"
+        }
+      ]
+    },
+    {
+      "id": "careers",
+      "icon": "🧭",
+      "ill": "m-business-careers.svg",
+      "title": "Career roles 101",
+      "title_tl": "Mga role sa trabaho",
+      "disclaimer": "",
+      "ill_alt": "A briefcase",
+      "ill_alt_tl": "Isang briefcase",
+      "modules": [
+        {
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "car01",
+            "car02",
+            "car03",
+            "car04"
+          ],
+          "ill": "m-business-careers.svg",
+          "ill_alt": "A briefcase",
+          "ill_alt_tl": "Isang briefcase"
+        }
+      ]
+    },
+    {
+      "id": "start-biz",
+      "icon": "🏪",
+      "ill": "business.svg",
+      "title": "How to start a business in the Philippines",
+      "title_tl": "Paano magsimula ng negosyo sa Pilipinas",
+      "disclaimer": "fin",
+      "ill_alt": "A small shop",
+      "ill_alt_tl": "Maliit na tindahan",
+      "modules": [
+        {
+          "id": "steps",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "biz01",
+            "biz02",
+            "biz03",
+            "biz04",
+            "biz05",
+            "biz06"
+          ],
+          "ill": "m-business-start.svg",
+          "ill_alt": "A small shop",
+          "ill_alt_tl": "Maliit na tindahan"
+        }
+      ]
+    },
+    {
+      "id": "industries",
+      "icon": "🏭",
+      "ill": "m-business-industries.svg",
+      "title": "Industries in the Philippines",
+      "title_tl": "Mga industriya sa Pilipinas",
+      "disclaimer": "fin",
+      "ill_alt": "A factory",
+      "ill_alt_tl": "Isang pabrika",
+      "modules": [
+        {
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "ind01",
+            "ind02",
+            "ind03",
+            "ind04"
+          ],
+          "ill": "m-business-industries.svg",
+          "ill_alt": "A factory",
+          "ill_alt_tl": "Isang pabrika"
+        }
+      ]
+    },
+    {
+      "id": "gov",
       "icon": "🏛️",
       "ill": "civics.svg",
-      "title": "Government know-how & citizenship",
-      "title_tl": "Kaalaman sa gobyerno at pagkamamamayan",
+      "title": "How our government works",
+      "title_tl": "Paano tumatakbo ang gobyerno natin",
       "disclaimer": "legal",
+      "ill_alt": "A government building",
+      "ill_alt_tl": "Gusali ng gobyerno",
       "modules": [
         {
           "id": "charter",
@@ -129,73 +293,132 @@
         },
         {
           "id": "citizen",
-          "title": "Citizenship",
-          "title_tl": "Pagkamamamayan",
+          "title": "Using your rights",
+          "title_tl": "Paggamit ng karapatan",
           "sections": [
             "gov-rights",
-            "voter",
             "gov-privacy",
-            "gov-report",
-            "foi"
+            "gov-report"
           ],
           "ill": "m-civics-citizen.svg",
           "ill_alt": "A ballot with a check",
           "ill_alt_tl": "Balota na may tsek"
         }
-      ],
-      "ill_alt": "A government building",
-      "ill_alt_tl": "Gusali ng gobyerno"
+      ]
+    },
+    {
+      "id": "benefits",
+      "icon": "🛡️",
+      "ill": "benefits.svg",
+      "title": "Benefits & loans",
+      "title_tl": "Benepisyo at pautang",
+      "disclaimer": "fin",
+      "ill_alt": "A shield",
+      "ill_alt_tl": "Isang kalasag",
+      "modules": [
+        {
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "mysss",
+            "ssscl",
+            "mp2",
+            "pagloan",
+            "philhealth",
+            "ben-gsis"
+          ],
+          "ill": "benefits.svg",
+          "ill_alt": "A shield",
+          "ill_alt_tl": "Isang kalasag"
+        }
+      ]
     },
     {
       "id": "ids",
       "icon": "🪪",
       "ill": "ids.svg",
-      "title": "IDs & certificates",
-      "title_tl": "Mga ID at sertipiko",
+      "title": "Government IDs & documents",
+      "title_tl": "Mga ID at dokumento ng gobyerno",
       "disclaimer": "legal",
+      "ill_alt": "An identification card",
+      "ill_alt_tl": "Identification card",
       "modules": [
         {
-          "id": "identity",
-          "title": "Identity papers",
-          "title_tl": "Papeles ng pagkakakilanlan",
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
           "sections": [
             "philsys",
             "psa",
             "id-brgy",
-            "id-pwd"
-          ],
-          "ill": "m-ids-identity.svg",
-          "ill_alt": "An identification card",
-          "ill_alt_tl": "Isang identification card"
-        },
-        {
-          "id": "clear",
-          "title": "Clearances and passport",
-          "title_tl": "Clearance at pasaporte",
-          "sections": [
+            "id-pwd",
             "nbi",
             "police",
-            "passport"
-          ],
-          "ill": "m-ids-clear.svg",
-          "ill_alt": "A document and a stamp",
-          "ill_alt_tl": "Dokumento at selyo"
-        },
-        {
-          "id": "civicid",
-          "title": "Voter and driver's license",
-          "title_tl": "Botante at lisensya",
-          "sections": [
+            "passport",
             "voter",
             "license"
           ],
-          "ill": "m-ids-civicid.svg",
-          "ill_alt": "A driver's license card",
-          "ill_alt_tl": "Card ng driver's license"
+          "ill": "ids.svg",
+          "ill_alt": "An identification card",
+          "ill_alt_tl": "Identification card"
         }
-      ],
-      "ill_alt": "An identification card",
-      "ill_alt_tl": "Identification card"
+      ]
+    },
+    {
+      "id": "work",
+      "icon": "💼",
+      "ill": "m-business-tax.svg",
+      "title": "Work & business",
+      "title_tl": "Trabaho at negosyo",
+      "disclaimer": "fin",
+      "ill_alt": "A tax receipt",
+      "ill_alt_tl": "Resibo ng buwis",
+      "modules": [
+        {
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "tin",
+            "freelance",
+            "business"
+          ],
+          "ill": "m-business-tax.svg",
+          "ill_alt": "A tax receipt",
+          "ill_alt_tl": "Resibo ng buwis"
+        }
+      ]
+    },
+    {
+      "id": "hazards",
+      "icon": "🌀",
+      "ill": "disaster.svg",
+      "title": "Hazards and what to do",
+      "title_tl": "Mga panganib at ang gagawin",
+      "disclaimer": "safe",
+      "ill_alt": "A storm cloud",
+      "ill_alt_tl": "Ulap ng bagyo",
+      "modules": [
+        {
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
+          "sections": [
+            "haz-typhoon",
+            "haz-flood",
+            "haz-quake",
+            "haz-fire",
+            "haz-volcano",
+            "haz-evac",
+            "haz-firstaid",
+            "haz-hotlines"
+          ],
+          "ill": "m-disaster-hazards.svg",
+          "ill_alt": "A storm cloud",
+          "ill_alt_tl": "Ulap ng bagyo"
+        }
+      ]
     },
     {
       "id": "health",
@@ -204,37 +427,26 @@
       "title": "Healthcare",
       "title_tl": "Pangangalaga sa kalusugan",
       "disclaimer": "med",
+      "ill_alt": "A clinic cross",
+      "ill_alt_tl": "Krus ng klinika",
       "modules": [
         {
-          "id": "cover",
-          "title": "Coverage and assistance",
-          "title_tl": "Coverage at tulong",
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
           "sections": [
-            "philhealth",
             "hl-konsulta",
-            "hl-malasakit"
-          ],
-          "ill": "m-health-cover.svg",
-          "ill_alt": "A shield with a cross",
-          "ill_alt_tl": "Kalasag na may krus"
-        },
-        {
-          "id": "near",
-          "title": "Care near you",
-          "title_tl": "Pangangalaga malapit sa iyo",
-          "sections": [
+            "hl-malasakit",
             "hl-center",
             "hl-vax",
             "hl-rabies",
             "hl-mind"
           ],
-          "ill": "m-health-near.svg",
-          "ill_alt": "A small clinic",
-          "ill_alt_tl": "Maliit na klinika"
+          "ill": "health.svg",
+          "ill_alt": "A clinic cross",
+          "ill_alt_tl": "Krus ng klinika"
         }
-      ],
-      "ill_alt": "A clinic cross",
-      "ill_alt_tl": "Krus ng klinika"
+      ]
     },
     {
       "id": "education",
@@ -243,253 +455,23 @@
       "title": "Education",
       "title_tl": "Edukasyon",
       "disclaimer": "legal",
+      "ill_alt": "An open book",
+      "ill_alt_tl": "Bukas na aklat",
       "modules": [
         {
-          "id": "paths",
-          "title": "School paths",
-          "title_tl": "Mga landas sa pag-aaral",
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
           "sections": [
             "ed-als",
-            "ed-10931"
-          ],
-          "ill": "m-education-paths.svg",
-          "ill_alt": "An open book",
-          "ill_alt_tl": "Bukas na aklat"
-        },
-        {
-          "id": "aid",
-          "title": "Scholarships and skills",
-          "title_tl": "Iskolar at kasanayan",
-          "sections": [
-            "scholar",
+            "ed-10931",
             "ed-tesda"
           ],
-          "ill": "m-education-aid.svg",
-          "ill_alt": "A certificate",
-          "ill_alt_tl": "Isang sertipiko"
-        }
-      ],
-      "ill_alt": "An open book",
-      "ill_alt_tl": "Bukas na aklat"
-    },
-    {
-      "id": "business",
-      "icon": "🏪",
-      "ill": "business.svg",
-      "title": "Business, careers & industries",
-      "title_tl": "Negosyo, karera, at mga industriya",
-      "disclaimer": "fin",
-      "modules": [
-        {
-          "id": "careers",
-          "title": "Careers",
-          "title_tl": "Mga karera",
-          "sections": [
-            "car01",
-            "car02",
-            "car03",
-            "car04"
-          ],
-          "ill": "m-business-careers.svg",
-          "ill_alt": "A briefcase",
-          "ill_alt_tl": "Isang briefcase"
-        },
-        {
-          "id": "register",
-          "title": "Register a small business",
-          "title_tl": "Irehistro ang maliit na negosyo",
-          "sections": [
-            "business"
-          ],
-          "ill": "m-business-start.svg",
-          "ill_alt": "A small shop",
-          "ill_alt_tl": "Maliit na tindahan"
-        },
-        {
-          "id": "tax",
-          "title": "Tax and freelance registration",
-          "title_tl": "Buwis at rehistrasyon ng freelance",
-          "sections": [
-            "tin",
-            "freelance"
-          ],
-          "ill": "m-business-tax.svg",
-          "ill_alt": "A receipt",
-          "ill_alt_tl": "Isang resibo"
-        }
-      ],
-      "ill_alt": "A small shop",
-      "ill_alt_tl": "Maliit na tindahan"
-    },
-    {
-      "id": "start-biz",
-      "icon": "🏪",
-      "ill": "business.svg",
-      "title": "How to start a business in the Philippines",
-      "title_tl": "Paano magsimula ng negosyo sa Pilipinas",
-      "disclaimer": "fin",
-      "ill_alt": "A small shop",
-      "ill_alt_tl": "Maliit na tindahan",
-      "modules": [
-        {
-          "id": "idea",
-          "title": "Step 1: Idea and a simple plan",
-          "title_tl": "Hakbang 1: Ideya at plano",
-          "sections": ["biz01"],
-          "ill": "m-education-paths.svg",
-          "ill_alt": "A one-page plan",
-          "ill_alt_tl": "Isang pahinang plano"
-        },
-        {
-          "id": "name",
-          "title": "Step 2: Register the name or the company",
-          "title_tl": "Hakbang 2: DTI, SEC, o CDA",
-          "sections": ["biz02"],
-          "ill": "m-ids-clear.svg",
-          "ill_alt": "A name registration",
-          "ill_alt_tl": "Rehistrasyon ng pangalan"
-        },
-        {
-          "id": "permit",
-          "title": "Step 3: Barangay clearance and Mayor's permit",
-          "title_tl": "Hakbang 3: Barangay clearance at Mayor's permit",
-          "sections": ["biz03"],
-          "ill": "m-civics-local.svg",
-          "ill_alt": "A municipal hall",
-          "ill_alt_tl": "Munisipyo"
-        },
-        {
-          "id": "bir",
-          "title": "Step 4: BIR registration (including freelancers)",
-          "title_tl": "Hakbang 4: BIR (pati freelancer)",
-          "sections": ["biz04"],
-          "ill": "m-business-tax.svg",
-          "ill_alt": "A tax receipt",
-          "ill_alt_tl": "Resibo ng buwis"
-        },
-        {
-          "id": "contributions",
-          "title": "Step 5: SSS, PhilHealth, and Pag-IBIG",
-          "title_tl": "Hakbang 5: SSS, PhilHealth, Pag-IBIG",
-          "sections": ["biz05"],
-          "ill": "m-benefits-sss.svg",
-          "ill_alt": "A benefits shield",
-          "ill_alt_tl": "Kalasag ng benepisyo"
-        },
-        {
-          "id": "bmbe",
-          "title": "Step 6: Negosyo Center and BMBE",
-          "title_tl": "Hakbang 6: Negosyo Center at BMBE",
-          "sections": ["biz06"],
-          "ill": "m-business-start.svg",
-          "ill_alt": "A small shop",
-          "ill_alt_tl": "Maliit na tindahan"
+          "ill": "education.svg",
+          "ill_alt": "An open book",
+          "ill_alt_tl": "Bukas na aklat"
         }
       ]
-    },
-    {
-      "id": "industries",
-      "icon": "🏭",
-      "ill": "m-business-industries.svg",
-      "title": "Industries in the Philippines",
-      "title_tl": "Mga industriya sa Pilipinas",
-      "disclaimer": "fin",
-      "ill_alt": "A factory",
-      "ill_alt_tl": "Isang pabrika",
-      "modules": [
-        {
-          "id": "agri",
-          "title": "Agriculture & fisheries",
-          "title_tl": "Agrikultura at pangingisda",
-          "sections": ["ind01"],
-          "ill": "m-planting-grow.svg",
-          "ill_alt": "A seedling in a pot",
-          "ill_alt_tl": "Punla sa paso"
-        },
-        {
-          "id": "making",
-          "title": "Manufacturing & construction",
-          "title_tl": "Pagmamanupaktura at konstruksyon",
-          "sections": ["ind02"],
-          "ill": "m-business-industries.svg",
-          "ill_alt": "A factory",
-          "ill_alt_tl": "Isang pabrika"
-        },
-        {
-          "id": "digital",
-          "title": "IT-BPM & digital",
-          "title_tl": "IT-BPM at digital",
-          "sections": ["ind03"],
-          "ill": "m-earn-ways.svg",
-          "ill_alt": "A laptop",
-          "ill_alt_tl": "Isang laptop"
-        },
-        {
-          "id": "services",
-          "title": "Tourism, healthcare & creative",
-          "title_tl": "Turismo, kalusugan at creative",
-          "sections": ["ind04"],
-          "ill": "m-ofw-leave.svg",
-          "ill_alt": "An airplane",
-          "ill_alt_tl": "Isang eroplano"
-        }
-      ]
-    },
-    {
-      "id": "earn",
-      "icon": "💻",
-      "ill": "earn.svg",
-      "title": "Earning online & scam awareness",
-      "title_tl": "Kumita online at iwas-scam",
-      "disclaimer": "fin",
-      "modules": [
-        {
-          "id": "safe",
-          "title": "Start safely",
-          "title_tl": "Magsimula nang ligtas",
-          "sections": [
-            "earn01",
-            "earn02"
-          ],
-          "ill": "m-earn-safe.svg",
-          "ill_alt": "A padlock",
-          "ill_alt_tl": "Isang padlock"
-        },
-        {
-          "id": "ways",
-          "title": "Ways to earn",
-          "title_tl": "Mga paraan ng kita",
-          "sections": [
-            "earn03",
-            "earn04",
-            "earn05",
-            "earn06",
-            "earn07",
-            "earn08",
-            "earn09",
-            "earn10",
-            "earn11",
-            "earn12"
-          ],
-          "ill": "m-earn-ways.svg",
-          "ill_alt": "A laptop",
-          "ill_alt_tl": "Isang laptop"
-        },
-        {
-          "id": "rules",
-          "title": "Tax and managing income",
-          "title_tl": "Buwis at pag-asikaso ng kita",
-          "sections": [
-            "earn13",
-            "earn14"
-          ],
-          "ill": "m-earn-rules.svg",
-          "ill_alt": "A calculator",
-          "ill_alt_tl": "Isang calculator"
-        }
-      ],
-      "ill_alt": "A laptop",
-      "ill_alt_tl": "Isang laptop"
     },
     {
       "id": "food",
@@ -498,96 +480,24 @@
       "title": "Food, cooking & nutrition",
       "title_tl": "Pagkain, pagluluto, at nutrisyon",
       "disclaimer": "med",
+      "ill_alt": "A plate of food",
+      "ill_alt_tl": "Plato ng pagkain",
       "modules": [
         {
-          "id": "plate",
-          "title": "What to eat",
-          "title_tl": "Ano ang kainin",
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
           "sections": [
             "food-pinggang",
-            "food-budget"
-          ],
-          "ill": "m-food-plate.svg",
-          "ill_alt": "A plate",
-          "ill_alt_tl": "Isang plato"
-        },
-        {
-          "id": "keep",
-          "title": "Keep food safe",
-          "title_tl": "Panatilihing ligtas ang pagkain",
-          "sections": [
+            "food-budget",
             "food-safety",
             "food-storage"
           ],
-          "ill": "m-food-keep.svg",
-"ill_alt": "A storage jar",
-      "ill_alt_tl": "Garapon"
+          "ill": "food.svg",
+          "ill_alt": "A plate of food",
+          "ill_alt_tl": "Plato ng pagkain"
         }
-      ],
-      "ill_alt": "A plate of food",
-      "ill_alt_tl": "Plato ng pagkain"
-    },
-    {
-      "id": "planting",
-      "icon": "🌱",
-      "ill": "planting.svg",
-      "title": "Planting & farming",
-      "title_tl": "Pagtatanim at pagsasaka",
-      "disclaimer": "",
-      "modules": [
-        {
-          "id": "grow",
-          "title": "Grow food",
-          "title_tl": "Magtanim ng pagkain",
-          "sections": [
-            "farm-da",
-            "life07",
-            "life05",
-            "life06"
-          ],
-          "ill": "m-planting-grow.svg",
-          "ill_alt": "A seedling in a pot",
-          "ill_alt_tl": "Punla sa paso"
-        }
-      ],
-      "ill_alt": "A seedling",
-      "ill_alt_tl": "Isang punla"
-    },
-    {
-      "id": "home",
-      "icon": "🏠",
-      "ill": "home.svg",
-      "title": "Home & living",
-      "title_tl": "Bahay at pamumuhay",
-      "disclaimer": "safe",
-      "modules": [
-        {
-          "id": "money",
-          "title": "Budget, waste, and eco habits",
-          "title_tl": "Budget, basura, at eco",
-          "sections": [
-            "life01",
-            "life03",
-            "life02"
-          ],
-          "ill": "m-home-money.svg",
-          "ill_alt": "A house",
-          "ill_alt_tl": "Isang bahay"
-        },
-        {
-          "id": "safer",
-          "title": "Home safety",
-          "title_tl": "Kaligtasan sa bahay",
-          "sections": [
-            "home-safe"
-          ],
-          "ill": "m-home-safer.svg",
-          "ill_alt": "A house with a lock",
-          "ill_alt_tl": "Bahay na may kandado"
-        }
-      ],
-      "ill_alt": "A house",
-      "ill_alt_tl": "Isang bahay"
+      ]
     },
     {
       "id": "sports",
@@ -596,6 +506,8 @@
       "title": "Sports & active living",
       "title_tl": "Isports at aktibong pamumuhay",
       "disclaimer": "med",
+      "ill_alt": "A ball",
+      "ill_alt_tl": "Isang bola",
       "modules": [
         {
           "id": "move",
@@ -605,8 +517,8 @@
             "sport-move"
           ],
           "ill": "m-sports-move.svg",
-"ill_alt": "A person running",
-      "ill_alt_tl": "Tumatakbong tao"
+          "ill_alt": "A person running",
+          "ill_alt_tl": "Tumatakbong tao"
         },
         {
           "id": "court",
@@ -650,56 +562,7 @@
           "ill_alt": "A heart",
           "ill_alt_tl": "Isang puso"
         }
-      ],
-      "ill_alt": "A ball",
-      "ill_alt_tl": "Isang bola"
-    },
-    {
-      "id": "benefits",
-      "icon": "🛡️",
-      "ill": "benefits.svg",
-      "title": "SSS, Pag-IBIG & GSIS",
-      "title_tl": "SSS, Pag-IBIG, at GSIS",
-      "disclaimer": "fin",
-      "modules": [
-        {
-          "id": "sss",
-          "title": "Social Security",
-          "title_tl": "Social Security",
-          "sections": [
-            "mysss",
-            "ssscl"
-          ],
-          "ill": "m-benefits-sss.svg",
-          "ill_alt": "A shield",
-          "ill_alt_tl": "Isang kalasag"
-        },
-        {
-          "id": "pagibig",
-          "title": "Pag-IBIG",
-          "title_tl": "Pag-IBIG",
-          "sections": [
-            "mp2",
-            "pagloan"
-          ],
-          "ill": "m-benefits-pagibig.svg",
-          "ill_alt": "A key",
-          "ill_alt_tl": "Isang susi"
-        },
-        {
-          "id": "gsis",
-          "title": "Government workers",
-          "title_tl": "Manggagawa ng gobyerno",
-          "sections": [
-            "ben-gsis"
-          ],
-          "ill": "m-benefits-gsis.svg",
-          "ill_alt": "A public building",
-          "ill_alt_tl": "Gusali ng gobyerno"
-        }
-      ],
-      "ill_alt": "A shield",
-      "ill_alt_tl": "Isang kalasag"
+      ]
     },
     {
       "id": "ofw",
@@ -708,23 +571,23 @@
       "title": "OFW & family support",
       "title_tl": "OFW at suporta sa pamilya",
       "disclaimer": "legal",
+      "ill_alt": "An airplane",
+      "ill_alt_tl": "Isang eroplano",
       "modules": [
         {
-          "id": "leave",
-          "title": "Before you leave",
-          "title_tl": "Bago umalis",
+          "id": "all",
+          "title": "Lessons",
+          "title_tl": "Mga aralin",
           "sections": [
             "ofw-verify",
             "ofw-owwa",
             "ofw-family"
           ],
-          "ill": "m-ofw-leave.svg",
+          "ill": "ofw.svg",
           "ill_alt": "An airplane",
           "ill_alt_tl": "Isang eroplano"
         }
-      ],
-      "ill_alt": "An airplane",
-      "ill_alt_tl": "Isang eroplano"
+      ]
     }
   ],
   "illustrations": "Original simple drawings in this repository. Not government seals or agency logos."
