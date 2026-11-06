@@ -443,13 +443,29 @@
           "ill": "m-health-near.svg",
           "ill_alt": "A small clinic",
           "ill_alt_tl": "Maliit na klinika"
-        },
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "icon": "🏀",
+      "ill": "sports.svg",
+      "title": "Sports & active living",
+      "title_tl": "Isports at aktibong pamumuhay",
+      "disclaimer": "med",
+      "ill_alt": "A ball",
+      "ill_alt_tl": "Isang bola",
+      "modules": [
         {
-          "id": "move",
-          "title": "Move more",
-          "title_tl": "Kumilos nang mas madalas",
+          "id": "start",
+          "title": "Why move, and how to start",
+          "title_tl": "Bakit kumilos, at paano magsimula",
           "sections": [
-            "sport-move"
+            "sport-benefits",
+            "sport-guides",
+            "sport-move",
+            "sport-safe",
+            "sport-where"
           ],
           "ill": "m-sports-move.svg",
           "ill_alt": "A person running",
@@ -465,7 +481,7 @@
             "sport-badminton",
             "sport-takraw"
           ],
-          "ill": "sports.svg",
+          "ill": "m-sports-court.svg",
           "ill_alt": "A ball",
           "ill_alt_tl": "Isang bola"
         },
@@ -486,8 +502,8 @@
         },
         {
           "id": "body",
-          "title": "At home and culture",
-          "title_tl": "Sa bahay at kultura",
+          "title": "Arnis, dance, and home",
+          "title_tl": "Arnis, sayaw, at bahay",
           "sections": [
             "sport-arnis",
             "sport-dance",
